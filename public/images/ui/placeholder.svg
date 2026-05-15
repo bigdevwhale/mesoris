@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#20321c"/>
+      <stop offset="100%" stop-color="#0f180f"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d4a43a" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#d4a43a" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)" rx="16"/>
+  <ellipse cx="200" cy="240" rx="120" ry="28" fill="#081008" opacity="0.45"/>
+  <path d="M96 190c20-44 61-72 110-72 34 0 65 14 84 38l34-5c12-2 21 10 16 21l-11 25c-2 5-8 8-13 8h-18c-7 23-28 41-54 46l-28 6c-22 5-44 1-63-10l-24-14c-8-5-17-7-26-7H96c-14 0-23-15-17-28l17-38z" fill="#496a3b" opacity="0.95"/>
+  <path d="M142 150c18-13 38-20 60-20 31 0 56 13 72 35-22 8-47 12-73 12-24 0-46-3-59-10z" fill="#88a76d" opacity="0.55"/>
+  <circle cx="288" cy="148" r="6" fill="#e8e4d9" opacity="0.8"/>
+  <path d="M122 222l18-22 12 8-14 26zM178 230l16-27 13 8-10 30zM244 228l16-22 12 8-12 25z" fill="#355127"/>
+  <rect x="28" y="24" width="344" height="252" rx="16" fill="none" stroke="#d4a43a" stroke-opacity="0.08"/>
+  <text x="200" y="273" text-anchor="middle" fill="#9a9685" font-family="sans-serif" font-size="13" opacity="0.7">Illustration unavailable</text>
+</svg>

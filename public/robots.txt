@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dinosaurs.example.com/sitemap.xml
