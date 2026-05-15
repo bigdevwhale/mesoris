@@ -1,44 +1,155 @@
-# Dinosaurs
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bigdevwhale/dinosaurs/master/public/favicon.svg">
+    <img src="https://raw.githubusercontent.com/bigdevwhale/dinosaurs/master/public/favicon.svg" width="120" alt="Dinosaurs logo">
+  </picture>
+</p>
 
-An interactive dinosaur encyclopedia built with Vue 3 and TypeScript. Explore prehistoric creatures, play games, compare species, and learn about the Mesozoic era.
+<h1 align="center">🦖 Dinosaurs</h1>
+<p align="center">
+  <b>Step into the Mesozoic.</b> A rich, interactive encyclopedia of prehistoric life — built to explore, compare, and play.
+</p>
 
-## Features
+<p align="center">
+  <img src="https://img.shields.io/badge/status-active-brightgreen?style=flat-square" alt="Status: Active">
+  <img src="https://img.shields.io/badge/vue-3.x-4FC08D?style=flat-square&logo=vue.js&logoColor=white" alt="Vue 3">
+  <img src="https://img.shields.io/badge/typescript-5.7-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/tailwind-4.x-06B6D4?style=flat-square&logo=tailwind-css&logoColor=white" alt="Tailwind CSS">
+  <img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="License: MIT">
+</p>
 
-- Dinosaur encyclopedia with detailed profiles
-- Interactive timeline of prehistoric eras
-- Compare dinosaurs side by side
-- Quiz, puzzle, skeleton, and excavation games
-- Multi-language support (English, Russian)
-- Dark and light modes
-- Responsive design
+<br>
 
-## Tech Stack
+## ✨ What's Inside
 
-- **Vue 3** with Composition API
-- **TypeScript**
-- **Vite** for dev and build
-- **Tailwind CSS 4** for styling
-- **Pinia** for state management
-- **Vue Router** for routing
-- **vue-i18n** for internationalization
-- **GSAP** for animations
-- **Lucide** for icons
+<table>
+  <tr>
+    <td width="50%">
+      <h3>📖 Encyclopedia</h3>
+      <p>Deep profiles for dozens of dinosaurs — diet, size, era, habitat, and fascinating facts. Every creature gets its own detailed page with rich visuals.</p>
+    </td>
+    <td width="50%">
+      <h3>⏳ Timeline</h3>
+      <p>Travel through the Triassic, Jurassic, and Cretaceous periods. See how life evolved across 180 million years.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h3>⚖️ Compare Mode</h3>
+      <p>Put two dinosaurs side by side. Compare mass, length, era, and more — who was the real apex predator?</p>
+    </td>
+    <td>
+      <h3>🔬 Science Hub</h3>
+      <p>Dig into articles on paleontology, fossil formation, extinction theories, and the latest discoveries.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h3>🧠 Quiz</h3>
+      <p>Test your knowledge across 100+ questions. Track your score and keep improving.</p>
+    </td>
+    <td>
+      <h3>🧩 Puzzle</h3>
+      <p>Assemble dinosaur images from shuffled pieces. Three difficulty levels to match your skill.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h3>🦴 Skeleton Builder</h3>
+      <p>Drag and drop bones to reconstruct full dinosaur skeletons. Learn anatomy the hands-on way.</p>
+    </td>
+    <td>
+      <h3>⛏️ Excavation</h3>
+      <p>Uncover fossils buried beneath the dirt. Carefully brush away layers to reveal what's hidden.</p>
+    </td>
+  </tr>
+</table>
 
-## Getting Started
+<br>
+
+## 🌍 i18n & Accessibility
+
+- **English** and **Russian** translations throughout the UI, encyclopedia, and games
+- RTL-friendly layout engine
+- Keyboard-navigable components
+- Semantic HTML with ARIA labels
+- Respects `prefers-reduced-motion` and `prefers-color-scheme`
+
+<br>
+
+## 🧱 Tech Stack
+
+| Layer | Technology |
+|-------|------------|
+| **Framework** | Vue 3 · Composition API · `<script setup>` |
+| **Language** | TypeScript 5.7 (strict mode) |
+| **Bundler** | Vite 6 |
+| **Styling** | Tailwind CSS 4 · CSS custom properties · design tokens |
+| **Routing** | Vue Router 4 |
+| **State** | Pinia 2 |
+| **i18n** | vue-i18n 10 |
+| **Animation** | GSAP · CSS keyframes |
+| **Icons** | Lucide · custom SVG sprite |
+| **Markdown** | marked · DOMPurify |
+| **DX** | vue-tsc · hot reload · `@` path alias |
+
+<br>
+
+## 🚀 Getting Started
 
 ```bash
+# 1. Clone
+git clone git@github.com:bigdevwhale/dinosaurs.git
+cd dinosaurs
+
+# 2. Install
 npm install
+
+# 3. Dev server (http://localhost:5173)
 npm run dev
-```
 
-Build for production:
-
-```bash
+# 4. Production build
 npm run build
-```
 
-Preview the production build:
-
-```bash
+# 5. Preview build locally
 npm run preview
 ```
+
+<br>
+
+## 🤖 Open CLAW Agent — Coming Soon
+
+We're building an **Open CLAW agent** (Continuous Learning About the World) that will:
+
+- Crawl paleontology news sources, academic journals, and museum announcements daily
+- Filter, rank, and summarize the most significant discoveries
+- Push fresh, curated stories directly into the app's **Science Hub** — so the encyclopedia stays alive and current
+
+> *No more static data. The Mesozoic is still being uncovered — and the app will grow with it.*
+
+<br>
+
+## 📁 Project Structure
+
+```
+src/
+├── assets/styles/       # Design tokens, typography, animations
+├── components/
+│   ├── encyclopedia/    # Dino-specific components
+│   ├── layout/          # Shell, nav, footer, SEO
+│   └── ui/              # Generic design system (20+ components)
+├── composables/         # useMediaQuery, useParallax, useScrollAnimation…
+├── data/                # Dinosaur data, quiz questions, myths, eras
+├── i18n/                # i18n initialization
+├── locales/en/ ru/      # Translation files
+├── router/              # Vue Router config
+├── stores/              # Pinia stores
+├── types/               # TypeScript interfaces
+└── views/               # Page-level components
+```
+
+<br>
+
+## 📄 License
+
+MIT — explore, fork, learn, and build your own thing.
