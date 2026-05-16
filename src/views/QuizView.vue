@@ -2,12 +2,14 @@
 import { ref, computed } from 'vue'
 import { quizQuestions } from '@/data/quiz-questions'
 import { useGameStore } from '@/stores/useGameStore'
+import { useI18n } from 'vue-i18n'
 import BaseButton from '@/components/ui/BaseButton.vue'
 import BaseIcon from '@/components/ui/BaseIcon.vue'
 import BaseProgressBar from '@/components/ui/BaseProgressBar.vue'
 import BaseConfetti from '@/components/ui/BaseConfetti.vue'
 import SeoHead from '@/components/layout/SeoHead.vue'
 
+const { t, locale } = useI18n()
 const gameStore = useGameStore()
 
 const TOTAL_QUESTIONS = 10
@@ -22,6 +24,11 @@ const currentQ = computed(() => selectedQuestions.value[currentIdx.value])
 const score = computed(() => answers.value.filter((a, i) => a === selectedQuestions.value[i].correctIndex).length)
 const isLast = computed(() => currentIdx.value === TOTAL_QUESTIONS - 1)
 const isCorrect = computed(() => selectedAnswer.value === currentQ.value?.correctIndex)
+
+const isRu = computed(() => locale.value === 'ru')
+const currentQuestion = computed(() => isRu.value ? currentQ.value?.questionRu : currentQ.value?.question)
+const currentOptions = computed(() => isRu.value ? currentQ.value?.optionsRu : currentQ.value?.options)
+const currentExplanation = computed(() => isRu.value ? currentQ.value?.explanationRu : currentQ.value?.explanation)
 
 function select(idx: number) {
   if (selectedAnswer.value !== null) return
@@ -59,7 +66,7 @@ function restart() {
     <div class="flex items-center justify-between mb-8">
       <router-link to="/games" class="flex items-center gap-2 text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors">
         <BaseIcon name="arrow-left" :size="16" />
-        <span class="text-sm">Back to Games</span>
+        <span class="text-sm">{{ t('ui.games.backToGames') }}</span>
       </router-link>
       <div v-if="!gameComplete" class="text-sm text-[var(--color-text-tertiary)]">
         {{ currentIdx + 1 }} / {{ TOTAL_QUESTIONS }}
@@ -80,17 +87,17 @@ function restart() {
             'bg-[rgba(196,56,45,0.15)] text-[var(--color-error)]': currentQ.difficulty === 'hard',
           }"
         >
-          {{ currentQ.difficulty }}
+          {{ t('games.difficulty.' + currentQ.difficulty) }}
         </span>
       </div>
 
       <!-- Question -->
-      <h2 class="text-heading-lg mb-6">{{ currentQ.question }}</h2>
+      <h2 class="text-heading-lg mb-6">{{ currentQuestion }}</h2>
 
       <!-- Options -->
       <div class="space-y-3 mb-8">
         <button
-          v-for="(option, idx) in currentQ.options"
+          v-for="(option, idx) in currentOptions"
           :key="idx"
           type="button"
           :disabled="selectedAnswer !== null"
@@ -117,14 +124,14 @@ function restart() {
         <div class="flex items-center gap-2 mb-1">
           <BaseIcon :name="isCorrect ? 'check-circle' : 'x-circle'" :size="16" :class="isCorrect ? 'text-[var(--color-success)]' : 'text-[var(--color-error)]'" />
           <span class="text-sm font-semibold" :class="isCorrect ? 'text-[var(--color-success)]' : 'text-[var(--color-error)]'">
-            {{ isCorrect ? 'Correct!' : 'Incorrect' }}
+            {{ isCorrect ? t('games.quizGame.correct') : t('games.quizGame.incorrect') }}
           </span>
         </div>
-        <p class="text-body-sm ml-6">{{ currentQ.explanation }}</p>
+        <p class="text-body-sm ml-6">{{ currentExplanation }}</p>
       </div>
 
       <BaseButton :variant="selectedAnswer !== null ? 'primary' : 'ghost'" :disabled="selectedAnswer === null" size="md" @click="next" class="w-full">
-        {{ isLast ? 'See Results' : 'Next Question' }}
+        {{ isLast ? t('games.quizGame.seeResults') : t('games.quizGame.next') }}
       </BaseButton>
     </template>
 
@@ -135,20 +142,20 @@ function restart() {
         {{ score >= 8 ? '🏆' : score >= 5 ? '🦖' : '📚' }}
       </div>
       <h2 class="text-display-md mb-2">
-        {{ score >= 8 ? 'Amazing!' : score >= 5 ? 'Good job!' : 'Keep learning!' }}
+        {{ score >= 8 ? t('games.quizGame.amazing') : score >= 5 ? t('games.quizGame.goodJob') : t('games.quizGame.keepLearning') }}
       </h2>
       <p class="text-body-lg mb-2">
-        You scored <span class="text-[var(--color-brand-amber)] font-bold">{{ score }}</span> out of {{ TOTAL_QUESTIONS }}
+        {{ t('games.quizGame.resultsDesc', { score, total: TOTAL_QUESTIONS }) }}
       </p>
       <p class="text-body-md text-[var(--color-text-secondary)] mb-8">
-        {{ score >= 9 ? 'You\'re a true paleontologist! 🦴' : score >= 6 ? 'Nice work! You know your dinosaurs.' : 'Try again — you\'ll get better each time!' }}
+        {{ score >= 9 ? t('games.quizGame.paleontologistMsg') : score >= 6 ? t('games.quizGame.niceWorkMsg') : t('games.quizGame.tryHarderMsg') }}
       </p>
 
       <BaseProgressBar :value="score" :max="TOTAL_QUESTIONS" :show-value="true" label="Score" color="var(--color-brand-amber)" size="md" class="mb-8" />
 
       <div class="flex gap-4 justify-center">
-        <BaseButton variant="primary" @click="restart">Play Again</BaseButton>
-        <BaseButton variant="ghost" to="/games">Back to Games</BaseButton>
+        <BaseButton variant="primary" @click="restart">{{ t('games.quizGame.playAgain') }}</BaseButton>
+        <BaseButton variant="ghost" to="/games">{{ t('ui.games.backToGames') }}</BaseButton>
       </div>
     </div>
   </div>

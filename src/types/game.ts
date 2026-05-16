@@ -4,7 +4,9 @@ export interface GameDefinition {
   id: string
   type: GameType
   title: string
+  titleRu: string
   description: string
+  descriptionRu: string
   thumbnail?: string
   route: string
   difficulty: 'easy' | 'medium' | 'hard'

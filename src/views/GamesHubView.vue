@@ -1,14 +1,11 @@
 <script setup lang="ts">
 import { games } from '@/data/games'
-import { useGameStore } from '@/stores/useGameStore'
 import { useModeStore } from '@/stores/useModeStore'
 import { useI18n } from 'vue-i18n'
 import BaseIcon from '@/components/ui/BaseIcon.vue'
-import BaseBadge from '@/components/ui/BaseBadge.vue'
 import SeoHead from '@/components/layout/SeoHead.vue'
 
-const { t } = useI18n()
-const gameStore = useGameStore()
+const { t, locale } = useI18n()
 const modeStore = useModeStore()
 </script>
 
@@ -18,7 +15,7 @@ const modeStore = useModeStore()
       title="Dinosaur Games — Play & Learn"
       description="Play educational dinosaur games: quiz, puzzle, fossil excavation, and skeleton building. Test your knowledge and have fun learning about prehistoric life."
     />
-    <h1 class="text-display-lg mb-2">{{ t('ui.games.title') }}</h1>
+    <h1 class="text-display-lg mb-4">{{ t('ui.games.title') }}</h1>
     <p class="text-body-lg mb-10">
       {{ t('ui.games.description') }}
     </p>
@@ -34,19 +31,9 @@ const modeStore = useModeStore()
           <BaseIcon :name="game.icon" :size="64" class="text-white/80" />
         </div>
         <div class="p-5">
-          <div class="flex items-center justify-between mb-2">
-            <h3 class="text-heading-md">{{ game.title }}</h3>
-            <BaseBadge v-if="gameStore.progress[game.id]?.completed" variant="success" icon="check">
-              {{ t('ui.games.completed') }}
-            </BaseBadge>
-          </div>
-          <p class="text-body-sm mb-3">{{ game.description }}</p>
-          <div class="flex items-center justify-between">
-            <span class="text-xs text-[var(--color-text-tertiary)] capitalize">{{ game.difficulty }}</span>
-            <span v-if="gameStore.progress[game.id]?.bestScore" class="text-xs text-[var(--color-brand-amber)]">
-              Best: {{ gameStore.progress[game.id].bestScore }}
-            </span>
-          </div>
+          <h3 class="text-heading-md mb-2">{{ locale === 'ru' ? game.titleRu : game.title }}</h3>
+          <p class="text-body-sm mb-3">{{ locale === 'ru' ? game.descriptionRu : game.description }}</p>
+          <span class="text-xs text-[var(--color-text-tertiary)]">{{ t('games.difficulty.' + game.difficulty) }}</span>
         </div>
       </router-link>
     </div>

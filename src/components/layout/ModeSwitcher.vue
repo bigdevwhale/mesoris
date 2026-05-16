@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { useModeStore } from '@/stores/useModeStore'
 import BaseIcon from '@/components/ui/BaseIcon.vue'
 
+const { t } = useI18n()
 const modeStore = useModeStore()
 const icon = computed(() => modeStore.isKidsMode ? 'egg' : 'book-open')
-const label = computed(() => modeStore.isKidsMode ? 'Kids' : 'Adults')
+const label = computed(() => modeStore.isKidsMode ? t('ui.header.kidsMode') : t('ui.header.adultsMode'))
 </script>
 
 <template>

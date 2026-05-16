@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { ref, watch, onMounted, onUnmounted, nextTick } from 'vue'
+import { ref, computed, watch, onMounted, onUnmounted, nextTick } from 'vue'
 import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { dinosaurs } from '@/data/dinosaurs'
+import { useDinoTranslator } from '@/composables/useDinoTranslation'
 import BaseIcon from '@/components/ui/BaseIcon.vue'
 import BaseLazyImage from '@/components/ui/BaseLazyImage.vue'
 
@@ -10,12 +11,14 @@ const props = defineProps<{ isOpen: boolean }>()
 const emit = defineEmits<{ close: [] }>()
 
 const { t } = useI18n()
+const { translateDino } = useDinoTranslator()
 const router = useRouter()
 const query = ref('')
 const inputRef = ref<HTMLInputElement>()
 const panelRef = ref<HTMLElement | null>(null)
 
 const results = ref<typeof dinosaurs>([])
+const translatedResults = computed(() => results.value.map(translateDino))
 
 watch(query, (q) => {
   if (!q.trim()) {
@@ -124,7 +127,7 @@ onUnmounted(() => {
           </div>
           <div v-if="results.length > 0" class="py-2">
             <button
-              v-for="dino in results"
+              v-for="dino in translatedResults"
               :key="dino.id"
               class="w-full flex items-center gap-3 px-5 py-3 text-left hover:bg-[rgba(212,164,58,0.06)] focus-visible:bg-[rgba(212,164,58,0.08)] transition-colors"
               @click="navigateTo(dino.id)"
@@ -137,7 +140,7 @@ onUnmounted(() => {
               />
               <div class="min-w-0">
                 <div class="text-sm font-semibold text-[var(--color-text-primary)]">{{ dino.name }}</div>
-                <div class="text-xs text-[var(--color-text-tertiary)] truncate">{{ dino.era }} &middot; {{ dino.diet }} &middot; {{ dino.nameMeaning }}</div>
+                <div class="text-xs text-[var(--color-text-tertiary)] truncate">{{ t(`ui.encyclopedia.${dino.era}`) }} &middot; {{ t(`ui.encyclopedia.${dino.diet}`) }} &middot; {{ dino.nameMeaning }}</div>
               </div>
             </button>
           </div>

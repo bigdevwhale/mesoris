@@ -57,12 +57,6 @@ const routes: RouteRecordRaw[] = [
     meta: { title: 'Fossil Excavation | Dinosaurs' },
   },
   {
-    path: '/games/skeleton',
-    name: 'skeleton',
-    component: () => import('@/views/SkeletonView.vue'),
-    meta: { title: 'Build a Skeleton | Dinosaurs' },
-  },
-  {
     path: '/science',
     name: 'science',
     component: () => import('@/views/ScienceView.vue'),

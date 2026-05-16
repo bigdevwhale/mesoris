@@ -31,10 +31,10 @@ export const useComparisonStore = defineStore('comparison', () => {
     }
 
     const stats: ComparisonStat[] = [
-      makeStat('Height', a.dimensions.heightMeters, b.dimensions.heightMeters, 'm', true),
-      makeStat('Length', a.dimensions.lengthMeters, b.dimensions.lengthMeters, 'm', true),
-      makeStat('Weight', a.dimensions.weightKg, b.dimensions.weightKg, 'kg', true),
-      makeStat('Speed', a.dimensions.speedKmh, b.dimensions.speedKmh, 'km/h', true),
+      makeStat('height', a.dimensions.heightMeters, b.dimensions.heightMeters, 'm', true),
+      makeStat('length', a.dimensions.lengthMeters, b.dimensions.lengthMeters, 'm', true),
+      makeStat('weight', a.dimensions.weightKg, b.dimensions.weightKg, 'kg', true),
+      makeStat('speed', a.dimensions.speedKmh, b.dimensions.speedKmh, 'km/h', true),
     ]
 
     return { dinosaurA: a, dinosaurB: b, stats }

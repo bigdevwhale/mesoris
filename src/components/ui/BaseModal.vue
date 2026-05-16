@@ -67,21 +67,21 @@ onUnmounted(() => {
         />
         <div
           :class="sizeMap[size]"
-          class="relative w-full bg-[var(--color-bg-elevated)] border border-[var(--glass-border)] rounded-[var(--radius-xl)] shadow-[var(--shadow-modal)] overflow-y-auto max-h-[90vh]"
+          class="relative w-full max-h-[90vh] flex flex-col bg-[var(--color-bg-elevated)] border border-[var(--glass-border)] rounded-[var(--radius-xl)] shadow-[var(--shadow-modal)] overflow-hidden"
           role="dialog"
           aria-modal="true"
         >
-          <div class="flex items-center justify-between p-5 border-b border-[var(--glass-border)] sticky top-0 bg-[var(--color-bg-elevated)] z-10">
+          <div class="flex-none flex items-center justify-between p-5 border-b border-[var(--glass-border)] bg-[var(--color-bg-elevated)] z-10">
             <h2 v-if="title" class="text-heading-md">{{ title }}</h2>
             <span v-else />
             <BaseButton variant="icon" size="sm" @click="emit('close')" aria-label="Close">
               <BaseIcon name="x" :size="20" />
             </BaseButton>
           </div>
-          <div class="p-5">
+          <div class="flex-1 overflow-y-auto p-5">
             <slot />
           </div>
-          <div v-if="$slots.footer" class="p-5 border-t border-[var(--glass-border)] sticky bottom-0 bg-[var(--color-bg-elevated)]">
+          <div v-if="$slots.footer" class="flex-none p-5 border-t border-[var(--glass-border)] bg-[var(--color-bg-elevated)]">
             <slot name="footer" />
           </div>
         </div>

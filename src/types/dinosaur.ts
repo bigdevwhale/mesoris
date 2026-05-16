@@ -86,6 +86,7 @@ export interface Dinosaur {
   fossilLocations: FossilLocation[]
   dangerLevel: number
   intelligence: number
+  birdRelation?: string
 }
 
 export interface EraInfo {
@@ -95,8 +96,11 @@ export interface EraInfo {
   rangeMya: [number, number]
   durationMillionYears: number
   description: string
+  descriptionRu: string
   keyEvents: string[]
+  keyEventsRu: string[]
   climateDescription: string
+  climateDescriptionRu: string
   colorClass: string
   icon: string
   dinosaurs: string[]

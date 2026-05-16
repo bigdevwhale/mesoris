@@ -16,10 +16,26 @@ const { t } = useI18n()
 const modeStore = useModeStore()
 const { translated } = useDinoTranslation(props.dinosaur)
 
+const ERA_ACCENT: Record<string, string> = {
+  triassic: '#a855f7',
+  jurassic: '#4ade80',
+  cretaceous: '#d4a43a',
+}
+
+const eraAccent = computed(() => ERA_ACCENT[props.dinosaur.era] ?? '#d4a43a')
+
 const dangerLabel = computed(() => {
   if (props.dinosaur.dangerLevel >= 8) return t('ui.featured.apexPredator')
   if (props.dinosaur.dangerLevel >= 5) return t('ui.featured.formidable')
   return t('ui.featured.gentleGiant')
+})
+
+const dangerStyle = computed(() => {
+  if (props.dinosaur.dangerLevel >= 8)
+    return { bg: 'rgba(232,93,44,0.18)', border: 'rgba(232,93,44,0.38)', color: 'var(--color-brand-ember)' }
+  if (props.dinosaur.dangerLevel >= 5)
+    return { bg: 'rgba(212,164,58,0.15)', border: 'rgba(212,164,58,0.32)', color: 'var(--color-brand-amber)' }
+  return { bg: 'rgba(74,222,128,0.12)', border: 'rgba(74,222,128,0.28)', color: 'var(--color-brand-teal)' }
 })
 
 const categoryLabel = computed(() => {
@@ -29,92 +45,121 @@ const categoryLabel = computed(() => {
   return translated.value.diet
 })
 
+const massDisplay = computed(() => {
+  const kg = props.dinosaur.dimensions.weightKg
+  return kg >= 1000 ? `${(kg / 1000).toFixed(1)}t` : `${kg}kg`
+})
+
 onMounted(() => {
   const mq = window.matchMedia('(prefers-reduced-motion: reduce)')
   if (mq.matches) return
 
   const tl = gsap.timeline({ defaults: { ease: 'power3.out' } })
-  tl.fromTo('.fs-image', { opacity: 0, scale: 0.96 }, { opacity: 1, scale: 1, duration: 0.7 })
-  tl.fromTo('.fs-content', { opacity: 0, x: 20 }, { opacity: 1, x: 0, duration: 0.5 }, '-=0.3')
+  tl.fromTo('.fs-image', { opacity: 0, scale: 0.97 }, { opacity: 1, scale: 1, duration: 0.7 })
+  tl.fromTo('.fs-content', { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.5 }, '-=0.2')
   tl.fromTo('.fs-stats > *', { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.4, stagger: 0.08 }, '-=0.2')
 })
 </script>
 
 <template>
-  <div
-    class="rounded-[var(--radius-xl)] border border-[var(--glass-border)] bg-[rgba(23,34,22,0.72)] shadow-[var(--shadow-modal)] overflow-hidden"
-  >
-    <div class="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr]">
-      <!-- Artwork column -->
-      <div class="fs-image relative overflow-hidden">
-        <div class="aspect-[4/3] lg:aspect-auto lg:h-full min-h-[260px]">
-          <DinoCardImage
-            :dino="dinosaur"
-            variant="hero"
-            :priority="true"
-            class="w-full h-full"
-          />
+  <div class="rounded-[var(--radius-xl)] border border-[var(--glass-border)] bg-[var(--glass-bg)] backdrop-blur-[var(--glass-blur)] shadow-[var(--shadow-modal)] overflow-hidden">
+
+    <!-- Image — full width, fixed height -->
+    <div class="fs-image relative overflow-hidden" style="height: 280px;">
+      <DinoCardImage
+        :dino="dinosaur"
+        variant="hero"
+        :priority="true"
+        class="absolute inset-0 w-full h-full"
+      />
+
+      <!-- Top: header label + danger badge -->
+      <div class="absolute top-0 inset-x-0 z-20 flex items-center justify-between px-4 pt-3 pb-8"
+        style="background: linear-gradient(to bottom, rgba(0,0,0,0.55), transparent)">
+        <div class="flex items-center gap-2">
+          <span class="w-1.5 h-1.5 rounded-full bg-[var(--color-brand-amber)] animate-pulse" />
+          <span class="text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--color-brand-amber)]">
+            {{ t('ui.featured.title') }}
+          </span>
         </div>
-        <!-- Rarity badge overlay -->
         <div
-          class="absolute top-4 left-4 px-3 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase backdrop-blur-md border"
+          class="px-2.5 py-1 rounded-full text-[10px] font-bold tracking-wider uppercase backdrop-blur-md border"
           :style="{
-            background: dinosaur.dangerLevel >= 8 ? 'rgba(232,93,44,0.18)' : dinosaur.dangerLevel >= 5 ? 'rgba(212,164,58,0.15)' : 'rgba(74,222,128,0.12)',
-            borderColor: dinosaur.dangerLevel >= 8 ? 'rgba(232,93,44,0.3)' : dinosaur.dangerLevel >= 5 ? 'rgba(212,164,58,0.25)' : 'rgba(74,222,128,0.2)',
-            color: dinosaur.dangerLevel >= 8 ? 'var(--color-brand-ember)' : dinosaur.dangerLevel >= 5 ? 'var(--color-brand-amber)' : 'var(--color-brand-teal)',
+            background: dangerStyle.bg,
+            borderColor: dangerStyle.border,
+            color: dangerStyle.color,
           }"
         >
           {{ dangerLabel }}
         </div>
       </div>
 
-      <!-- Content column -->
-      <div class="fs-content p-6 sm:p-8 flex flex-col justify-center">
-        <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-semibold uppercase tracking-wide mb-3"
+      <!-- Bottom: name overlay -->
+      <div class="absolute bottom-0 inset-x-0 z-20 px-5 pb-4 pt-10"
+        style="background: linear-gradient(to top, rgba(8,14,8,0.88) 0%, rgba(8,14,8,0.55) 60%, transparent 100%)">
+        <div
+          class="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-semibold uppercase tracking-wide mb-2"
           :class="{
-            'bg-[rgba(232,93,44,0.12)] text-[var(--color-brand-ember)]': dinosaur.category === 'carnivore',
-            'bg-[rgba(74,222,128,0.1)] text-[var(--color-brand-teal)]': dinosaur.category === 'herbivore',
-            'bg-[rgba(212,164,58,0.12)] text-[var(--color-brand-amber)]': dinosaur.category === 'omnivore',
-            'bg-[rgba(96,165,250,0.12)] text-blue-300': dinosaur.category === 'flying-reptile',
-            'bg-[rgba(167,139,250,0.12)] text-purple-300': dinosaur.category === 'marine-reptile',
+            'bg-[rgba(232,93,44,0.18)] text-[var(--color-brand-ember)]': dinosaur.category === 'carnivore',
+            'bg-[rgba(74,222,128,0.15)] text-[var(--color-brand-teal)]': dinosaur.category === 'herbivore',
+            'bg-[rgba(212,164,58,0.18)] text-[var(--color-brand-amber)]': dinosaur.category === 'omnivore',
+            'bg-[rgba(96,165,250,0.18)] text-blue-300': dinosaur.category === 'flying-reptile',
+            'bg-[rgba(167,139,250,0.18)] text-purple-300': dinosaur.category === 'marine-reptile',
           }"
         >
           {{ categoryLabel }}
         </div>
-
-        <h2 class="text-display-md mb-1">{{ translated.displayName }}</h2>
-        <p class="text-body-sm text-[var(--color-text-tertiary)] italic mb-4">{{ translated.pronunciation }}</p>
-
-        <p class="text-body-md text-[var(--color-text-secondary)] mb-5 leading-relaxed">
-          {{ modeStore.isKidsMode ? translated.kidsDescription : translated.description }}
+        <h2 class="text-heading-lg leading-tight text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+          {{ translated.displayName }}
+        </h2>
+        <p v-if="translated.nameMeaning" class="text-[11px] italic text-white/50 mt-0.5">
+          {{ translated.nameMeaning }}
         </p>
+      </div>
 
-        <!-- Quick stats -->
-        <div class="fs-stats grid grid-cols-3 gap-3 mb-5">
-          <div class="rounded-[var(--radius-md)] bg-[var(--color-bg-overlay)]/80 border border-[var(--glass-border)] p-3 text-center">
-            <div class="text-sm font-bold text-[var(--color-brand-amber)]">{{ translated.era }}</div>
-            <div class="text-[10px] text-[var(--color-text-tertiary)]">{{ t('ui.featured.era') }}</div>
-          </div>
-          <div class="rounded-[var(--radius-md)] bg-[var(--color-bg-overlay)]/80 border border-[var(--glass-border)] p-3 text-center">
-            <div class="text-sm font-bold text-[var(--color-brand-ember)]">{{ translated.dimensions.lengthMeters }}m</div>
-            <div class="text-[10px] text-[var(--color-text-tertiary)]">{{ t('ui.featured.length') }}</div>
-          </div>
-          <div class="rounded-[var(--radius-md)] bg-[var(--color-bg-overlay)]/80 border border-[var(--glass-border)] p-3 text-center">
-            <div class="text-sm font-bold text-[var(--color-brand-teal)]">{{ translated.dimensions.weightKg.toLocaleString() }}kg</div>
-            <div class="text-[10px] text-[var(--color-text-tertiary)]">{{ t('ui.featured.mass') }}</div>
-          </div>
+      <!-- Era accent line -->
+      <div
+        class="absolute bottom-0 inset-x-0 h-0.5 z-30"
+        :style="{ background: `linear-gradient(to right, ${eraAccent}cc, ${eraAccent}44, transparent)` }"
+      />
+    </div>
+
+    <!-- Content section -->
+    <div class="fs-content relative overflow-hidden px-5 py-5 flex flex-col gap-4">
+      <!-- Ambient era glow -->
+      <div
+        class="absolute inset-0 pointer-events-none"
+        :style="{ background: `radial-gradient(ellipse at 100% 0%, ${eraAccent}0f 0%, transparent 55%)` }"
+      />
+
+      <!-- Description -->
+      <p class="relative text-sm leading-relaxed text-[var(--color-text-secondary)]">
+        {{ modeStore.isKidsMode ? translated.kidsDescription : translated.description }}
+      </p>
+
+      <!-- Quick stats -->
+      <div class="fs-stats relative grid grid-cols-3 gap-2.5">
+        <div class="rounded-[var(--radius-sm)] bg-[var(--color-bg-overlay)] border border-[var(--glass-border)] px-3 py-3 text-center">
+          <div class="text-sm font-bold text-[var(--color-brand-amber)] leading-tight mb-1 capitalize">{{ t(`ui.encyclopedia.${translated.era}`) }}</div>
+          <div class="text-[10px] uppercase tracking-wide text-[var(--color-text-tertiary)]">{{ t('ui.featured.era') }}</div>
         </div>
-
-        <!-- Fun fact callout -->
-        <div class="flex items-start gap-3 p-3 rounded-[var(--radius-md)] bg-[rgba(212,164,58,0.06)] border border-[rgba(212,164,58,0.12)] mb-5">
-          <span class="text-lg flex-shrink-0">💡</span>
-          <p class="text-[11px] text-[var(--color-text-secondary)] leading-relaxed">{{ translated.funFact }}</p>
+        <div class="rounded-[var(--radius-sm)] bg-[var(--color-bg-overlay)] border border-[var(--glass-border)] px-3 py-3 text-center">
+          <div class="text-sm font-bold text-[var(--color-brand-ember)] leading-tight mb-1">{{ translated.dimensions.lengthMeters }}m</div>
+          <div class="text-[10px] uppercase tracking-wide text-[var(--color-text-tertiary)]">{{ t('ui.featured.length') }}</div>
         </div>
+        <div class="rounded-[var(--radius-sm)] bg-[var(--color-bg-overlay)] border border-[var(--glass-border)] px-3 py-3 text-center">
+          <div class="text-sm font-bold text-[var(--color-brand-teal)] leading-tight mb-1">{{ massDisplay }}</div>
+          <div class="text-[10px] uppercase tracking-wide text-[var(--color-text-tertiary)]">{{ t('ui.featured.mass') }}</div>
+        </div>
+      </div>
 
+      <!-- CTA -->
+      <div class="relative">
         <BaseButton
           :to="`/encyclopedia/${dinosaur.id}`"
-          size="lg"
+          size="sm"
           icon="book-open"
+          class="w-full justify-center"
         >
           {{ t('ui.featured.discover', { name: translated.displayName }) }}
         </BaseButton>

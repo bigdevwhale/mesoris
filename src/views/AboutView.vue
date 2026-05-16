@@ -8,7 +8,7 @@ import SeoHead from '@/components/layout/SeoHead.vue'
       title="About — Dinosaurs Educational Website"
       description="Learn about the Dinosaurs educational project, built with Vue 3 and modern web technologies. Our mission is making science education beautiful and accessible."
     />
-    <h1 class="text-display-lg mb-2">About This Project</h1>
+    <h1 class="text-display-lg mb-4">About This Project</h1>
     <p class="text-body-lg mb-10">A premium educational website about dinosaurs, built with modern web technologies and a passion for science education.</p>
 
     <div class="space-y-8 text-body-md">

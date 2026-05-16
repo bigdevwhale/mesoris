@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 import gsap from 'gsap'
 import { useModeStore } from '@/stores/useModeStore'
+import { useDinoTranslator } from '@/composables/useDinoTranslation'
 import { dinosaurs, popularDinoIds } from '@/data/dinosaurs'
 import { games } from '@/data/games'
 import BaseButton from '@/components/ui/BaseButton.vue'
@@ -12,26 +13,30 @@ import FeaturedSpecimen from '@/components/encyclopedia/FeaturedSpecimen.vue'
 import SeoHead from '@/components/layout/SeoHead.vue'
 import { useScrollAnimation, useStaggerReveal } from '@/composables/useScrollAnimation'
 
-const { t } = useI18n()
+const { t, tm } = useI18n()
 const modeStore = useModeStore()
 
 const popularDinos = dinosaurs.filter(d => popularDinoIds.includes(d.id))
+
+const { translateDino } = useDinoTranslator()
+const translatedPopularDinos = computed(() => popularDinos.map(translateDino))
 
 function pickRandomDino() {
   return dinosaurs[Math.floor(Math.random() * dinosaurs.length)]
 }
 const featuredDino = ref(pickRandomDino())
 
-const dailyFacts = Array.isArray(t('ui.home.dailyFacts'))
-  ? (t('ui.home.dailyFacts') as unknown as string[])
-  : [
+const dailyFacts = computed(() => {
+  const msgs = tm('ui.home.dailyFacts')
+  return Array.isArray(msgs) ? msgs.map(String) : [
     'A dinosaur called Microraptor had four wings — two on its arms and two on its legs!',
     'Some dinosaurs swallowed stones called gastroliths to help grind food in their stomachs.',
     'The largest dinosaur eggs were about the size of a basketball.',
     'Dinosaur fossils have been found on every continent, including Antarctica.',
     'Sauropods like Brachiosaurus could live over 100 years!',
   ]
-const todayFact = dailyFacts[new Date().getDay() % dailyFacts.length]
+})
+const todayFact = computed(() => dailyFacts.value[new Date().getDay() % dailyFacts.value.length])
 
 const categoryKeys = ['carnivore', 'herbivore', 'omnivore', 'flying-reptile', 'marine-reptile'] as const
 const categoryIconMap: Record<string, string> = {
@@ -181,24 +186,26 @@ onMounted(() => {
           {{ t('ui.home.viewAll') }}
         </BaseButton>
       </div>
-      <div ref="popularRef" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div ref="popularRef" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <div
-          v-for="dino in popularDinos"
+          v-for="dino in translatedPopularDinos"
           :key="dino.id"
           class="dino-card group cursor-pointer"
           @click="$router.push(`/encyclopedia/${dino.id}`)"
         >
           <div class="bg-[var(--color-bg-elevated)] border border-[var(--glass-border)] rounded-[var(--radius-lg)] overflow-hidden shadow-[var(--shadow-card)] transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-[var(--shadow-card-hover)] group-hover:border-[var(--glass-border-hover)]">
-            <div class="aspect-[1/1] overflow-hidden">
+            <!-- Image block -->
+            <div class="aspect-[4/3] overflow-hidden">
               <DinoCardImage
                 :dino="dino"
-                class="w-full h-full transition-transform duration-500 group-hover:scale-[1.04]"
+                class="w-full h-full transition-transform duration-500 group-hover:scale-[1.05]"
               />
             </div>
-            <div class="p-4">
-              <h3 class="font-bold text-[var(--color-text-primary)] mb-1 text-sm">{{ dino.name }}</h3>
-              <p class="text-[11px] text-[var(--color-text-tertiary)] italic mb-2">{{ dino.nameMeaning }}</p>
-              <p class="text-[11px] text-[var(--color-text-secondary)] line-clamp-2">
+            <!-- Description block -->
+            <div class="p-5 flex flex-col gap-2">
+              <h3 class="font-bold text-[var(--color-text-primary)] text-sm leading-tight">{{ dino.name }}</h3>
+              <p class="text-[11px] text-[var(--color-text-tertiary)] italic leading-tight">{{ dino.nameMeaning }}</p>
+              <p class="text-[12px] text-[var(--color-text-secondary)] leading-relaxed line-clamp-2 mt-1">
                 {{ modeStore.isKidsMode ? dino.kidsDescription : dino.description }}
               </p>
             </div>

@@ -4,7 +4,7 @@ import ru from '@/locales/ru'
 
 const i18n = createI18n({
   legacy: false,
-  locale: localStorage.getItem('dino-locale') || 'en',
+  locale: localStorage.getItem('dino-locale') || (navigator.language.toLowerCase().startsWith('ru') ? 'ru' : 'en'),
   fallbackLocale: 'en',
   messages: { en, ru },
 })

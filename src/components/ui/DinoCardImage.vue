@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import type { Dinosaur } from '@/types/dinosaur'
 
+const { t } = useI18n()
 const props = withDefaults(defineProps<{
   dino: Dinosaur
   /** Aspect ratio applied to the container, e.g. '4/3' or '16/9' */
@@ -133,7 +135,8 @@ function onError() {
     >
       <!-- Fossil ring -->
       <div
-        class="w-16 h-16 sm:w-20 sm:h-20 rounded-full flex items-center justify-center border"
+        class="rounded-full flex items-center justify-center border"
+        :class="variant === 'hero' ? 'w-20 h-20 sm:w-24 sm:h-24' : 'w-16 h-16 sm:w-20 sm:h-20'"
         :style="{
           borderColor: `${era.accentColor}40`,
           background: `radial-gradient(circle, ${era.accentColor}18, transparent 70%)`,
@@ -141,7 +144,8 @@ function onError() {
         }"
       >
         <span
-          class="text-3xl sm:text-4xl leading-none"
+          class="leading-none"
+          :class="variant === 'hero' ? 'text-4xl sm:text-5xl' : 'text-3xl sm:text-4xl'"
           role="img"
           :aria-label="dino.name"
         >{{ emoji }}</span>
@@ -153,7 +157,7 @@ function onError() {
           class="text-[10px] font-bold tracking-[0.15em] uppercase mb-0.5"
           :style="{ color: era.accentColor }"
         >
-          {{ dino.era }}
+          {{ t(`ui.encyclopedia.${dino.era}`) }}
         </div>
         <div class="text-[9px] text-white/30 tracking-wider">{{ era.label }}</div>
       </div>

@@ -2,10 +2,12 @@
 import { ref, computed } from 'vue'
 import { dinosaurs } from '@/data/dinosaurs'
 import { useGameStore } from '@/stores/useGameStore'
+import { useI18n } from 'vue-i18n'
 import BaseButton from '@/components/ui/BaseButton.vue'
 import SeoHead from '@/components/layout/SeoHead.vue'
 import BaseIcon from '@/components/ui/BaseIcon.vue'
 
+const { t } = useI18n()
 const gameStore = useGameStore()
 const dino = dinosaurs[Math.floor(Math.random() * dinosaurs.length)]
 const gridSize = 3
@@ -58,12 +60,12 @@ function clickTile(index: number) {
     <div class="flex items-center justify-between mb-8">
       <router-link to="/games" class="flex items-center gap-2 text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors">
         <BaseIcon name="arrow-left" :size="16" />
-        <span class="text-sm">Back to Games</span>
+        <span class="text-sm">{{ t('ui.games.backToGames') }}</span>
       </router-link>
-      <span class="text-sm text-[var(--color-text-secondary)]">Moves: {{ moves }}</span>
+      <span class="text-sm text-[var(--color-text-secondary)]">{{ t('games.puzzleGame.moves', { count: moves }) }}</span>
     </div>
 
-    <h1 class="text-display-md mb-8 text-center">Dino Puzzle</h1>
+    <h1 class="text-display-md mb-8 text-center">{{ t('games.puzzleGame.title') }}</h1>
     <SeoHead
       title="Dino Puzzle — Solve the Picture"
       description="Solve a sliding puzzle featuring dinosaur illustrations. Swap tiles to reconstruct the picture in as few moves as possible."
@@ -75,7 +77,7 @@ function clickTile(index: number) {
         v-for="i in tileCount"
         :key="i"
         type="button"
-        class="aspect-square bg-[var(--color-bg-elevated)] border-2 rounded-[var(--radius-sm)] overflow-hidden transition-all duration-200"
+        class="aspect-[4/3] bg-[var(--color-bg-elevated)] border-2 rounded-[var(--radius-sm)] overflow-hidden transition-all duration-200"
         :class="[
           selectedTile === i - 1
             ? 'border-[var(--color-brand-amber)] shadow-[0_0_12px_rgba(212,164,58,0.4)]'
@@ -87,7 +89,8 @@ function clickTile(index: number) {
           class="w-full h-full"
           :style="{
             backgroundImage: `url(${dino.images.hero})`,
-            backgroundSize: `${gridSize * 100}%`,
+            backgroundSize: `${gridSize * 100}% ${gridSize * 100}%`,
+            backgroundRepeat: 'no-repeat',
             backgroundPosition: `${((tiles.find(t => t.pos === i - 1)?.id ?? 0) % gridSize) * (100 / (gridSize - 1))}% ${Math.floor((tiles.find(t => t.pos === i - 1)?.id ?? 0) / gridSize) * (100 / (gridSize - 1))}%`,
           }"
         />
@@ -97,11 +100,11 @@ function clickTile(index: number) {
     <!-- Complete -->
     <div v-else class="text-center py-12">
       <div class="text-6xl mb-4 animate-celebration-pop">🧩</div>
-      <h2 class="text-display-md mb-2">Puzzle Complete!</h2>
-      <p class="text-body-md mb-6">You solved it in {{ moves }} moves!</p>
+      <h2 class="text-display-md mb-2">{{ t('games.puzzleGame.complete') }}</h2>
+      <p class="text-body-md mb-6">{{ t('games.puzzleGame.solved', { moves }) }}</p>
       <div class="flex gap-4 justify-center">
-        <BaseButton variant="primary" @click="initPuzzle">Play Again</BaseButton>
-        <BaseButton variant="ghost" to="/games">Back to Games</BaseButton>
+        <BaseButton variant="primary" @click="initPuzzle">{{ t('games.puzzleGame.playAgain') }}</BaseButton>
+        <BaseButton variant="ghost" to="/games">{{ t('ui.games.backToGames') }}</BaseButton>
       </div>
     </div>
   </div>

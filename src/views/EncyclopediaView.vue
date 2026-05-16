@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
+import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useEncyclopediaStore, type SortOption } from '@/stores/useEncyclopediaStore'
+import { useDinoTranslator } from '@/composables/useDinoTranslation'
 import { useModeStore } from '@/stores/useModeStore'
 import { useStaggerReveal } from '@/composables/useScrollAnimation'
 import BaseInput from '@/components/ui/BaseInput.vue'
@@ -14,11 +16,12 @@ import BaseIcon from '@/components/ui/BaseIcon.vue'
 import BaseProgressBar from '@/components/ui/BaseProgressBar.vue'
 import BaseLazyImage from '@/components/ui/BaseLazyImage.vue'
 import DinoCardImage from '@/components/ui/DinoCardImage.vue'
-import SeoHead from '@/components/layout/SeoHead.vue'
+import ModeSwitcher from '@/components/layout/ModeSwitcher.vue'
 
 const { t } = useI18n()
 const store = useEncyclopediaStore()
 const modeStore = useModeStore()
+const { translateDino } = useDinoTranslator()
 
 const ERA_ACCENT: Record<string, string> = {
   triassic: '#a855f7',
@@ -58,14 +61,25 @@ const sizeChips = computed(() => [
   { label: t('ui.encyclopedia.gigantic'), value: 'gigantic' as const, icon: 'maximize' },
 ])
 
-const dinoDetail = computed(() =>
-  store.selectedDinoId
-    ? store.filteredDinosaurs.find(d => d.id === store.selectedDinoId) ?? null
-    : null
+const translatedPaginatedDinosaurs = computed(() =>
+  store.paginatedDinosaurs.map(translateDino)
 )
+
+const dinoDetail = computed(() => {
+  if (!store.selectedDinoId) return null
+  const dino = store.filteredDinosaurs.find(d => d.id === store.selectedDinoId)
+  return dino ? translateDino(dino) : null
+})
 
 const gridRef = ref<HTMLElement | null>(null)
 useStaggerReveal(gridRef, '.dino-card', { stagger: 0.08, duration: 0.55, y: 32 })
+
+const router = useRouter()
+
+function addToCompare(id: string) {
+  store.closeDetail()
+  router.push(`/compare?a=${id}`)
+}
 
 function onDetailRoute() {
   // Opens the modal via route param
@@ -78,7 +92,7 @@ function onDetailRoute() {
       title="Dinosaur Encyclopedia"
       description="Browse the complete dinosaur database with detailed information. Filter by era, diet, and size. Search and compare dinosaurs side by side."
     />
-    <h1 class="text-display-lg mb-2">{{ t('ui.encyclopedia.title') }}</h1>
+    <h1 class="text-display-lg mb-4">{{ t('ui.encyclopedia.title') }}</h1>
     <p class="text-body-lg mb-8">
       {{ modeStore.isKidsMode
         ? 'Знакомьтесь с каждым динозавром! Нажимайте на карточки, чтобы узнать интересные факты.'
@@ -87,11 +101,12 @@ function onDetailRoute() {
     </p>
 
     <!-- Search + Sort row -->
-    <div class="flex flex-col sm:flex-row gap-4 mb-6">
+    <div class="flex flex-col sm:flex-row sm:items-end gap-4 mb-6">
       <div class="flex-1">
         <BaseInput
           :model-value="store.searchQuery"
           :placeholder="t('ui.encyclopedia.searchPlaceholder', { count: 50 })"
+          :label="t('ui.encyclopedia.search')"
           icon-left="search"
           @update:model-value="store.setSearch"
         />
@@ -163,7 +178,7 @@ function onDetailRoute() {
     <!-- Grid -->
     <div v-if="store.paginatedDinosaurs.length > 0" ref="gridRef" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mb-8">
       <div
-        v-for="dino in store.paginatedDinosaurs"
+        v-for="dino in translatedPaginatedDinosaurs"
         :key="dino.id"
         class="dino-card group cursor-pointer"
         @click="store.openDetail(dino.id)"
@@ -185,7 +200,7 @@ function onDetailRoute() {
                 backdropFilter: 'blur(6px)',
               }"
             >
-              {{ dino.era }}
+              {{ t(`ui.encyclopedia.${dino.era}`) }}
             </div>
             <!-- Diet icon badge -->
             <div class="absolute top-3 right-3 z-20 w-6 h-6 rounded-full flex items-center justify-center text-[11px]"
@@ -212,10 +227,10 @@ function onDetailRoute() {
             <p class="text-[10px] text-[var(--color-text-tertiary)] mb-3 italic">{{ dino.nameMeaning }}</p>
             <div class="flex flex-wrap gap-1.5 mb-3">
               <span :class="['px-2 py-0.5 text-[9px] font-bold rounded-full uppercase tracking-wide', DIET_BADGE_CLASS[dino.diet] ?? 'bg-[rgba(255,255,255,0.06)] text-[var(--color-text-tertiary)]']">
-                {{ dino.diet }}
+                {{ t(`ui.encyclopedia.${dino.diet}`) }}
               </span>
               <span class="px-2 py-0.5 text-[9px] font-bold rounded-full uppercase tracking-wide bg-[rgba(255,255,255,0.05)] text-[var(--color-text-tertiary)]">
-                {{ dino.size }}
+                {{ t(`ui.encyclopedia.${dino.size}`) }}
               </span>
             </div>
             <p class="text-[11px] text-[var(--color-text-secondary)] line-clamp-2 leading-relaxed">
@@ -295,22 +310,28 @@ function onDetailRoute() {
               />
             </div>
             <div class="flex flex-wrap gap-2 mb-4">
-              <span class="px-3 py-1 text-sm font-semibold rounded-full bg-[rgba(212,164,58,0.12)] text-[var(--color-brand-amber)]">{{ dinoDetail.era }}</span>
-              <span class="px-3 py-1 text-sm font-semibold rounded-full bg-[rgba(232,93,44,0.1)] text-[var(--color-brand-ember)]">{{ dinoDetail.diet }}</span>
-              <span class="px-3 py-1 text-sm font-semibold rounded-full bg-[rgba(139,58,42,0.1)] text-[var(--color-brand-lava)]">{{ dinoDetail.size }}</span>
+              <span class="px-3 py-1 text-sm font-semibold rounded-full bg-[rgba(212,164,58,0.12)] text-[var(--color-brand-amber)]">{{ t(`ui.encyclopedia.${dinoDetail.era}`) }}</span>
+              <span class="px-3 py-1 text-sm font-semibold rounded-full bg-[rgba(232,93,44,0.1)] text-[var(--color-brand-ember)]">{{ t(`ui.encyclopedia.${dinoDetail.diet}`) }}</span>
+              <span class="px-3 py-1 text-sm font-semibold rounded-full bg-[rgba(139,58,42,0.1)] text-[var(--color-brand-lava)]">{{ t(`ui.encyclopedia.${dinoDetail.size}`) }}</span>
             </div>
           </div>
           <div>
             <h3 class="text-heading-md mb-1">{{ dinoDetail.nameMeaning }}</h3>
             <p class="text-body-sm text-[var(--color-text-tertiary)] mb-4 italic">{{ dinoDetail.pronunciation }}</p>
 
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-semibold uppercase tracking-wide text-[var(--color-text-tertiary)]">
+                {{ modeStore.isKidsMode ? t('ui.header.kidsMode') : t('ui.header.adultsMode') }}
+              </span>
+              <ModeSwitcher />
+            </div>
             <p class="text-body-md mb-6">{{ modeStore.isKidsMode ? dinoDetail.kidsDescription : dinoDetail.description }}</p>
 
             <div class="space-y-3 mb-6">
               <div class="flex items-center gap-3">
                 <BaseIcon name="ruler" :size="16" class="text-[var(--color-text-tertiary)]" />
                 <span class="text-sm text-[var(--color-text-secondary)]">
-                  {{ dinoDetail.dimensions.lengthMeters }}m long, {{ dinoDetail.dimensions.heightMeters }}m tall
+                  {{ t('ui.encyclopedia.dimensionsText', { length: dinoDetail.dimensions.lengthMeters, height: dinoDetail.dimensions.heightMeters }) }}
                 </span>
               </div>
               <div class="flex items-center gap-3">
@@ -322,13 +343,13 @@ function onDetailRoute() {
               <div class="flex items-center gap-3">
                 <BaseIcon name="zap" :size="16" class="text-[var(--color-text-tertiary)]" />
                 <span class="text-sm text-[var(--color-text-secondary)]">
-                  Up to {{ dinoDetail.dimensions.speedKmh }} km/h
+                  {{ t('ui.encyclopedia.speedText', { speed: dinoDetail.dimensions.speedKmh }) }}
                 </span>
               </div>
               <div class="flex items-center gap-3">
                 <BaseIcon name="map-pin" :size="16" class="text-[var(--color-text-tertiary)]" />
                 <span class="text-sm text-[var(--color-text-secondary)]">
-                  {{ dinoDetail.livedIn.join(', ') }}
+                  {{ dinoDetail.livedIn.map(loc => t(`ui.encyclopedia.locations.${loc}`, loc)).join(', ') }}
                 </span>
               </div>
             </div>
@@ -349,7 +370,7 @@ function onDetailRoute() {
               <p class="text-sm text-[var(--color-text-secondary)]">{{ dinoDetail.funFact }}</p>
             </div>
 
-            <BaseButton variant="ghost" size="sm" icon-right="arrow-right" @click="store.closeDetail(); $router.push(`/compare?a=${dinoDetail.id}`)">
+            <BaseButton variant="ghost" size="sm" icon-right="arrow-right" @click="addToCompare(dinoDetail.id)">
               {{ t('ui.encyclopedia.addToCompare') }}
             </BaseButton>
           </div>
