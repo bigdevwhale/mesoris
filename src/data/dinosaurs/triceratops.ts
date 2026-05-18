@@ -1,0 +1,50 @@
+import type { Dinosaur } from '@/types/dinosaur'
+import { img } from './img'
+
+export const Triceratops: Dinosaur = {
+    id: 'triceratops',
+    slug: 'triceratops',
+    displayName: 'Triceratops',
+    name: 'Triceratops',
+    pronunciation: 'try-SAIR-ah-tops',
+    nameMeaning: 'Three-Horned Face',
+    genusName: 'Triceratops',
+    era: 'cretaceous',
+    diet: 'herbivore',
+    category: 'herbivore',
+    size: 'large',
+    habitat: 'plains',
+    livedIn: ['North America'],
+    periodRangeMya: [68, 66],
+    dimensions: { lengthMeters: 8.0, heightMeters: 2.9, weightKg: 6000, speedKmh: 32 },
+    images: img('triceratops'),
+    facts: [
+      { label: 'Frill', value: '2 meters wide', icon: 'shield', description: 'A massive bony shield behind the head — for defense, display, and temperature control.' },
+      { label: 'Horns', value: '3 total', icon: 'triangle', description: 'Two brow horns over 1 meter long, plus a smaller nose horn.' },
+      { label: 'Beak', value: 'Parrot-like', icon: 'nut', description: 'A sharp, curved beak for cutting through tough palm fronds and cycads.' },
+      { label: 'Fossils', value: 'Hundreds', icon: 'archive', description: 'One of the most common fossil dinosaurs — we know more about Triceratops than most other species.' },
+    ],
+    description: 'A gentle giant with a fearsome face. Triceratops looked like a prehistoric rhinoceros with three horns and a massive frill. It was one of the last dinosaurs to ever exist.',
+    longDescription: 'Triceratops was one of the most abundant large dinosaurs of the Late Cretaceous and among the last non-avian dinosaurs before the K-Pg extinction. Its most distinctive features were its three facial horns and the large bony frill extending from the back of its skull. The frill likely served multiple functions: defense against predators like Tyrannosaurus rex, display during courtship and dominance contests, and possibly thermoregulation.',
+    kidsDescription: 'Imagine a dinosaur with THREE huge horns and a giant shield on its head! That\'s Triceratops. It looked scary but it only ate plants. Its head was so big it took up almost a third of its whole body!',
+    childFriendlyText: 'Triceratops had three big horns on its face and a giant shield around its neck. It used its horns to protect itself from scary meat-eating dinosaurs!',
+    scientificSummary: 'Triceratops (Marsh, 1889) is a chasmosaurine ceratopsid from the Late Cretaceous (Maastrichtian) of North America. Distinguished by a solid frill lacking fenestrae, two prominent supraorbital horns, and a rostral bone forming a parrot-like beak. Ontogenetic analysis reveals dramatic cranial remodeling during growth. Known from hundreds of specimens across multiple growth stages, making it an important model for dinosaur ontogeny and intraspecific variation.',
+    discoveries: [
+      { year: 1887, location: 'Colorado, USA', discoveredBy: 'Othniel Charles Marsh', note: 'Initially misidentified as a giant bison.' },
+      { year: 1889, location: 'Wyoming, USA', discoveredBy: 'John Bell Hatcher', note: 'First complete skull discovered and properly identified.' },
+    ],
+    funFact: 'Triceratops had one of the largest skulls of any land animal ever — over 2 meters long, about one-third of its entire body length.',
+    taxonomy: { kingdom: 'Animalia', phylum: 'Chordata', clade: 'Dinosauria', order: 'Ornithischia', suborder: 'Ceratopsia', family: 'Ceratopsidae', subfamily: 'Chasmosaurinae', genus: 'Triceratops', species: 'T. horridus' },
+    relatedDinosaurs: [
+      { id: 'tyrannosaurus-rex', relationship: 'Predator' },
+      { id: 'styracosaurus', relationship: 'Relative' },
+      { id: 'pachyrhinosaurus', relationship: 'Relative' },
+    ],
+    fossilLocations: [
+      { country: 'USA', region: 'Wyoming', coordinates: [43.0, -107.5] },
+      { country: 'USA', region: 'Montana', coordinates: [47.5, -106.5], specimenName: 'Hell Creek' },
+      { country: 'USA', region: 'Colorado', coordinates: [39.5, -105.0] },
+    ],
+    dangerLevel: 7,
+    intelligence: 4,
+  }

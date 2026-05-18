@@ -1,0 +1,51 @@
+import type { Dinosaur } from '@/types/dinosaur'
+import { img } from './img'
+
+export const TyrannosaurusRex: Dinosaur = {
+    id: 'tyrannosaurus-rex',
+    slug: 'tyrannosaurus-rex',
+    displayName: 'Tyrannosaurus Rex',
+    name: 'Tyrannosaurus Rex',
+    pronunciation: 'tie-RAN-oh-SORE-us rex',
+    nameMeaning: 'Tyrant Lizard King',
+    genusName: 'Tyrannosaurus',
+    era: 'cretaceous',
+    diet: 'carnivore',
+    category: 'carnivore',
+    size: 'gigantic',
+    habitat: 'forest',
+    livedIn: ['North America'],
+    periodRangeMya: [68, 66],
+    dimensions: { lengthMeters: 12.3, heightMeters: 4.0, weightKg: 8000, speedKmh: 27 },
+    images: img('tyrannosaurus-rex'),
+    facts: [
+      { label: 'Bite Force', value: '12,800 lbs', icon: 'zap', description: 'The strongest bite of any land animal ever — enough to crush a car.' },
+      { label: 'Teeth', value: '60 teeth', icon: 'triangle-alert', description: 'Each tooth was the size of a banana, serrated like a steak knife.' },
+      { label: 'Brain', value: 'Highly developed', icon: 'brain', description: 'Had excellent vision and sense of smell — could see prey from miles away.' },
+      { label: 'Arms', value: 'Tiny but strong', icon: 'hand', description: 'Only 1 meter long but could lift 200 kg — still a mystery to scientists.' },
+    ],
+    description: 'The most famous dinosaur of all time. A massive predator that ruled North America at the very end of the dinosaur age. Its name means "Tyrant Lizard King" — and it lived up to it.',
+    longDescription: 'Tyrannosaurus rex was one of the largest land predators ever to walk the Earth. Living at the very end of the Cretaceous Period (68-66 million years ago), it was the apex predator of its ecosystem. T. rex had massive hind limbs, a heavy tail for balance, and a skull over 1.5 meters long. Its powerful jaws could exert a bite force of up to 57,000 Newtons — the strongest of any terrestrial animal known. Despite its tiny arms, T. rex was perfectly adapted for hunting large prey like Triceratops and Edmontosaurus.',
+    kidsDescription: 'Meet the KING of the dinosaurs! T-Rex was as tall as a giraffe, as heavy as an elephant, and had teeth as big as bananas. Its bite was so strong it could crush a car! But here\'s a secret: its arms were super tiny — shorter than yours!',
+    childFriendlyText: 'T-Rex was the king of the dinosaurs! It had a big head, sharp teeth, and a loud roar. But its arms were very tiny and funny-looking!',
+    scientificSummary: 'Tyrannosaurus rex (Osborn, 1905) is a tyrannosaurid theropod from the Late Cretaceous (Maastrichtian) of Laramidia. It represents the largest known terrestrial hypercarnivore with estimated bite forces exceeding 57,000 N. Phylogenetic analyses place it within Tyrannosaurinae, sister to Tarbosaurus. Growth curves indicate a maximum somatic maturity at approximately 28 years with exponential growth during adolescence.',
+    discoveries: [
+      { year: 1902, location: 'Montana, USA', discoveredBy: 'Barnum Brown', note: 'First partial skeleton discovered in Hell Creek Formation.' },
+      { year: 1990, location: 'South Dakota, USA', discoveredBy: 'Susan Hendrickson', note: '"Sue" — the most complete T. rex skeleton ever found, over 90% intact.' },
+    ],
+    funFact: 'T. rex lived closer in time to humans (66 million years) than to Stegosaurus (80 million years earlier).',
+    taxonomy: { kingdom: 'Animalia', phylum: 'Chordata', clade: 'Dinosauria', order: 'Saurischia', suborder: 'Theropoda', family: 'Tyrannosauridae', subfamily: 'Tyrannosaurinae', genus: 'Tyrannosaurus', species: 'T. rex' },
+    relatedDinosaurs: [
+      { id: 'triceratops', relationship: 'Prey' },
+      { id: 'edmontosaurus', relationship: 'Prey' },
+      { id: 'daspletosaurus', relationship: 'Ancestor' },
+      { id: 'giganotosaurus', relationship: 'Convergent evolution' },
+    ],
+    fossilLocations: [
+      { country: 'USA', region: 'Montana', coordinates: [47.5, -106.5], specimenName: 'Hell Creek Formation' },
+      { country: 'USA', region: 'South Dakota', coordinates: [44.5, -102.5], specimenName: 'Sue' },
+      { country: 'USA', region: 'Wyoming', coordinates: [43.0, -107.5], specimenName: 'Lance Formation' },
+    ],
+    dangerLevel: 10,
+    intelligence: 6,
+  }

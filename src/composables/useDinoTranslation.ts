@@ -3,7 +3,7 @@ import { useI18n } from 'vue-i18n'
 import type { DinoFact, Dinosaur } from '@/types/dinosaur'
 
 type LocalizedDinoFact = Omit<DinoFact, 'icon'> & { icon?: string }
-type DinosaurTranslation = Omit<Partial<Dinosaur>, 'facts'> & { facts?: LocalizedDinoFact[] }
+type DinosaurTranslation = Partial<Omit<Dinosaur, 'facts'>> & { facts?: LocalizedDinoFact[] }
 
 function mergeDinoTranslation(dino: Dinosaur, translation: DinosaurTranslation | undefined): Dinosaur {
   if (!translation) return dino
@@ -15,35 +15,42 @@ function mergeDinoTranslation(dino: Dinosaur, translation: DinosaurTranslation |
   return { ...dino, ...translation, facts: translatedFacts }
 }
 
-// Lazy-loaded when locale switches to Russian
-const ruContent = ref<Record<string, DinosaurTranslation> | null>(null)
-let loadPromise: Promise<void> | null = null
+// Lazy-loaded locale content cache: locale -> dinosaur-id -> translation
+const localeContent = ref<Record<string, Record<string, DinosaurTranslation>>>({})
+const loadPromises = new Map<string, Promise<void>>()
 
-async function loadRussianContent() {
-  if (ruContent.value) return
-  if (!loadPromise) {
-    loadPromise = import('@/locales/ru/encyclopedia').then(m => {
-      ruContent.value = m.default
+async function loadLocaleContent(targetLocale: string) {
+  if (targetLocale === 'en' || localeContent.value[targetLocale]) return
+  if (!loadPromises.has(targetLocale)) {
+    const promise = import(`@/locales/${targetLocale}/dinosaurs`).then(m => {
+      localeContent.value = {
+        ...localeContent.value,
+        [targetLocale]: (m as { default: Record<string, DinosaurTranslation> }).default,
+      }
     })
+    loadPromises.set(targetLocale, promise)
   }
-  return loadPromise
+  return loadPromises.get(targetLocale)!
 }
 
 /**
- * Returns a translateDino function that merges Russian overrides when locale === 'ru'.
- * Calling translateDino inside a computed() will correctly track locale and ruContent
- * as reactive dependencies.
+ * Returns a translateDino function that merges locale-specific overrides for non-English locales.
  */
 export function useDinoTranslator() {
   const { locale } = useI18n()
 
   watch(locale, (newLocale) => {
-    if (newLocale === 'ru') loadRussianContent()
+    if (newLocale !== 'en') loadLocaleContent(newLocale)
   }, { immediate: true })
 
   function translateDino(dino: Dinosaur): Dinosaur {
-    if (locale.value !== 'ru' || !ruContent.value) return dino
-    return mergeDinoTranslation(dino, ruContent.value[dino.id])
+    if (locale.value === 'en') return dino
+    const content = localeContent.value[locale.value]
+    if (!content) return dino
+    // Prefer direct id/slug matches; attempt to load locale if missing
+    const translation = content[dino.id] ?? content[dino.slug] ?? content[dino.id.replace(/_/g, '-')] ?? content[dino.slug.replace(/_/g, '-')]
+    if (!translation) return dino
+    return mergeDinoTranslation(dino, translation as DinosaurTranslation)
   }
 
   return { translateDino }
@@ -51,17 +58,13 @@ export function useDinoTranslator() {
 
 export function useDinoTranslation(dino: Dinosaur) {
   const { locale } = useI18n()
+  const { translateDino } = useDinoTranslator()
 
-  const translated = computed<Dinosaur>(() => {
-    if (locale.value !== 'ru') return dino
-    if (!ruContent.value) return dino // fallback to English while loading
-    return mergeDinoTranslation(dino, ruContent.value[dino.id])
-  })
-
-  // Trigger load when locale switches to Russian
   watch(locale, (newLocale) => {
-    if (newLocale === 'ru') loadRussianContent()
+    if (newLocale !== 'en') loadLocaleContent(newLocale)
   }, { immediate: true })
 
-  return { translated }
+  return {
+    translated: computed(() => translateDino(dino)),
+  }
 }

@@ -1,0 +1,50 @@
+import type { Dinosaur } from '@/types/dinosaur'
+import { img } from './img'
+
+export const Velociraptor: Dinosaur = {
+    id: 'velociraptor',
+    slug: 'velociraptor',
+    displayName: 'Velociraptor',
+    name: 'Velociraptor',
+    pronunciation: 'vel-OSS-ee-rap-tor',
+    nameMeaning: 'Swift Thief',
+    genusName: 'Velociraptor',
+    era: 'cretaceous',
+    diet: 'carnivore',
+    category: 'carnivore',
+    size: 'small',
+    habitat: 'desert',
+    livedIn: ['Mongolia', 'China'],
+    periodRangeMya: [75, 71],
+    dimensions: { lengthMeters: 2.0, heightMeters: 0.5, weightKg: 15, speedKmh: 40 },
+    images: img('velociraptor'),
+    facts: [
+      { label: 'Claw', value: '6.5 cm', icon: 'sickle', description: 'A retractable, sickle-shaped killing claw on each foot — kept razor sharp.' },
+      { label: 'Feathers', value: 'Fully feathered', icon: 'feather', description: 'Had a full coat of feathers like a bird, confirmed by quill knobs on fossil bones.' },
+      { label: 'Size', value: 'Turkey-sized', icon: 'ruler', description: 'Much smaller than in movies — about the size of a large turkey or a small dog.' },
+      { label: 'Hunting', value: 'Pack predator', icon: 'users', description: 'Evidence suggests they hunted in groups, taking down prey much larger than themselves.' },
+    ],
+    description: 'Movie star dinosaur — but in reality, it was about the size of a turkey! Don\'t let the small size fool you though: Velociraptor was fast, intelligent, and armed with a deadly toe claw.',
+    longDescription: 'Velociraptor was a small dromaeosaurid dinosaur that lived in Asia during the Late Cretaceous. Despite its fame from popular culture, the real Velociraptor was dramatically smaller than its movie depiction — roughly the size of a turkey, standing only about 0.5 meters tall at the hip. It was covered in feathers, as confirmed by quill knobs found on fossilized forearm bones. Its most formidable weapon was a large, curved claw on the second toe of each foot, which could be retracted to keep it sharp.',
+    kidsDescription: 'You might know this dinosaur from movies — but they cheated! The real Velociraptor was the size of a big turkey. It had feathers all over its body, just like a bird. And it had one super-cool weapon: a giant sharp claw on each foot!',
+    childFriendlyText: 'Velociraptor was a small, speedy dinosaur covered in feathers like a bird! It had one very sharp claw on each foot for hunting.',
+    scientificSummary: 'Velociraptor mongoliensis (Osborn, 1924) is a velociraptorine dromaeosaurid from the Campanian of the Djadochta Formation, Mongolia. Characterized by a hyperextendible pedal digit II with an enlarged sickle claw, a propatagium-bearing forelimb with quill knobs, and extensive pennaceous feather coverage. Known from the iconic "Fighting Dinosaurs" specimen — a Velociraptor and Protoceratops preserved in direct combat pose.',
+    discoveries: [
+      { year: 1924, location: 'Gobi Desert, Mongolia', discoveredBy: 'Roy Chapman Andrews', note: 'First specimen discovered during a famous AMNH expedition.' },
+      { year: 1971, location: 'Mongolia', discoveredBy: 'Polish-Mongolian expedition', note: 'The "Fighting Dinosaurs" — a Velociraptor locked in combat with a Protoceratops.' },
+    ],
+    funFact: 'In 2007, scientists found quill knobs on a Velociraptor forearm — proof it had feathers! It couldn\'t fly, but its ancestors likely could.',
+    taxonomy: { kingdom: 'Animalia', phylum: 'Chordata', clade: 'Dinosauria', order: 'Saurischia', suborder: 'Theropoda', family: 'Dromaeosauridae', subfamily: 'Velociraptorinae', genus: 'Velociraptor', species: 'V. mongoliensis' },
+    relatedDinosaurs: [
+      { id: 'deinonychus', relationship: 'Close relative' },
+      { id: 'protoceratops', relationship: 'Prey' },
+      { id: 'oviraptor', relationship: 'Competitor' },
+    ],
+    fossilLocations: [
+      { country: 'Mongolia', region: 'Gobi Desert', coordinates: [44.0, 103.0], specimenName: 'Djadochta Formation' },
+      { country: 'China', region: 'Inner Mongolia', coordinates: [42.0, 113.0] },
+    ],
+    dangerLevel: 6,
+    intelligence: 9,
+    birdRelation: 'Velociraptor is one of the closest non-avian relatives to modern birds. Its feathered body, wishbone, and hollow bones show clear evolutionary links to avian dinosaurs.',
+  }

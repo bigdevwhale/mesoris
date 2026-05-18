@@ -1,0 +1,50 @@
+import type { Dinosaur } from '@/types/dinosaur'
+import { img } from './img'
+
+export const Allosaurus: Dinosaur = {
+    id: 'allosaurus',
+    slug: 'allosaurus',
+    displayName: 'Allosaurus',
+    name: 'Allosaurus',
+    pronunciation: 'AL-oh-SORE-us',
+    nameMeaning: 'Different Lizard',
+    genusName: 'Allosaurus',
+    era: 'jurassic',
+    diet: 'carnivore',
+    category: 'carnivore',
+    size: 'large',
+    habitat: 'plains',
+    livedIn: ['North America', 'Europe'],
+    periodRangeMya: [155, 150],
+    dimensions: { lengthMeters: 12.0, heightMeters: 3.0, weightKg: 4000, speedKmh: 45 },
+    images: img('allosaurus'),
+    facts: [
+      { label: 'Hunting', value: 'Pack attacks', icon: 'swords', description: 'Evidence suggests they hunted in groups, attacking prey much larger than themselves.' },
+      { label: 'Jaw', value: 'Flexible skull', icon: 'bone', description: 'Could open its jaws incredibly wide to deliver devastating top-down strikes.' },
+      { label: 'Speed', value: '45 km/h', icon: 'zap', description: 'One of the fastest large predators — could outrun most of its prey.' },
+      { label: 'Abundance', value: 'Most common', icon: 'layers', description: 'The most common large predator in the Morrison Formation — the lion of the Jurassic.' },
+    ],
+    description: 'The lion of the Jurassic — before T. rex, Allosaurus ruled. A sleek, fast, intelligent predator that was the apex carnivore of its time. It likely hunted in packs to bring down giant sauropods.',
+    longDescription: 'Allosaurus was a large carnosaurian theropod that dominated the Late Jurassic of North America. It was lighter and faster than later tyrannosaurs, with longer arms equipped with three razor-sharp claws. Allosaurus had a distinctive skull with bony ridges above its eyes and a jaw that could open remarkably wide.',
+    kidsDescription: 'Meet the king BEFORE the king! Allosaurus ruled the world before T-Rex came along. It was faster than T-Rex, had longer arms with three sharp claws, and hunted in teams — like a pack of wolves!',
+    childFriendlyText: 'Allosaurus was the top hunter of the Jurassic! It was fast, had sharp claws, and worked with friends to hunt the biggest plant-eating dinosaurs.',
+    scientificSummary: 'Allosaurus fragilis (Marsh, 1877) is an allosaurid carnosaur from the Kimmeridgian of the Morrison Formation. The dominant large-bodied predator of the Late Jurassic ecosystem, exhibiting a kinetic skull with a strongly recurved tooth row adapted for defleshing strikes. Taphonomic evidence from the Cleveland-Lloyd Dinosaur Quarry indicates gregarious behavior and possible cooperative hunting of sauropod and stegosaur prey.',
+    discoveries: [
+      { year: 1877, location: 'Colorado, USA', discoveredBy: 'Othniel Charles Marsh', note: 'First described during the Bone Wars.' },
+      { year: 1991, location: 'Wyoming, USA', discoveredBy: 'Kirby Siber', note: '"Big Al" — one of the most complete theropod skeletons.' },
+    ],
+    funFact: 'Scientists found an Allosaurus pelvis bone with a hole through it — perfectly matching a Stegosaurus tail spike. Evidence of an epic prehistoric battle!',
+    taxonomy: { kingdom: 'Animalia', phylum: 'Chordata', clade: 'Dinosauria', order: 'Saurischia', suborder: 'Theropoda', family: 'Allosauridae', genus: 'Allosaurus', species: 'A. fragilis' },
+    relatedDinosaurs: [
+      { id: 'stegosaurus', relationship: 'Prey' },
+      { id: 'diplodocus', relationship: 'Prey' },
+      { id: 'ceratosaurus', relationship: 'Competitor' },
+    ],
+    fossilLocations: [
+      { country: 'USA', region: 'Utah', coordinates: [39.0, -111.0], specimenName: 'Cleveland-Lloyd Quarry' },
+      { country: 'USA', region: 'Wyoming', coordinates: [43.0, -107.5] },
+      { country: 'Portugal', region: 'Lourinhã', coordinates: [39.3, -9.3] },
+    ],
+    dangerLevel: 8,
+    intelligence: 6,
+  }
