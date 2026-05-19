@@ -75,9 +75,6 @@ const dinoDetail = computed(() => {
 })
 
 const categoryChips = computed(() => [
-  { label: t('ui.home.categories.carnivores'), value: 'carnivore' as const, icon: 'skull' },
-  { label: t('ui.home.categories.herbivores'), value: 'herbivore' as const, icon: 'leaf' },
-  { label: t('ui.home.categories.omnivores'), value: 'omnivore' as const, icon: 'utensils-crossed' },
   { label: t('ui.home.categories.flyingReptiles'), value: 'flying-reptile' as const, icon: 'bird' },
   { label: t('ui.home.categories.marineReptiles'), value: 'marine-reptile' as const, icon: 'waves' },
 ])
