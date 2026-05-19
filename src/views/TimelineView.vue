@@ -34,11 +34,38 @@ watch(activeEraIndex, () => {
 const selectedEra = computed(() => eras[activeEraIndex.value])
 
 // Locale-aware era field helpers
-const isRu = computed(() => locale.value === 'ru')
-const eraName = (era: typeof eras[0]) => isRu.value ? era.nameRu : era.name
-const eraDesc = (era: typeof eras[0]) => isRu.value ? era.descriptionRu : era.description
-const eraKeyEvents = (era: typeof eras[0]) => isRu.value ? era.keyEventsRu : era.keyEvents
-const eraClimate = (era: typeof eras[0]) => isRu.value ? era.climateDescriptionRu : era.climateDescription
+const eraName = (era: typeof eras[0]) => {
+  if (locale.value === 'it') return era.nameIt
+  if (locale.value === 'fr') return era.nameFr
+  if (locale.value === 'de') return era.nameDe
+  if (locale.value === 'es') return era.nameEs
+  if (locale.value === 'ru') return era.nameRu
+  return era.name
+}
+const eraDesc = (era: typeof eras[0]) => {
+  if (locale.value === 'it') return era.descriptionIt
+  if (locale.value === 'fr') return era.descriptionFr
+  if (locale.value === 'de') return era.descriptionDe
+  if (locale.value === 'es') return era.descriptionEs
+  if (locale.value === 'ru') return era.descriptionRu
+  return era.description
+}
+const eraKeyEvents = (era: typeof eras[0]) => {
+  if (locale.value === 'it') return era.keyEventsIt
+  if (locale.value === 'fr') return era.keyEventsFr
+  if (locale.value === 'de') return era.keyEventsDe
+  if (locale.value === 'es') return era.keyEventsEs
+  if (locale.value === 'ru') return era.keyEventsRu
+  return era.keyEvents
+}
+const eraClimate = (era: typeof eras[0]) => {
+  if (locale.value === 'it') return era.climateDescriptionIt
+  if (locale.value === 'fr') return era.climateDescriptionFr
+  if (locale.value === 'de') return era.climateDescriptionDe
+  if (locale.value === 'es') return era.climateDescriptionEs
+  if (locale.value === 'ru') return era.climateDescriptionRu
+  return era.climateDescription
+}
 
 const { translateDino } = useDinoTranslator()
 const eraDinos = computed(() => {

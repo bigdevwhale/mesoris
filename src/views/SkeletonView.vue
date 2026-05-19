@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useGameStore } from '@/stores/useGameStore'
+import { useLocale } from '@/composables/useLocale'
 import BaseButton from '@/components/ui/BaseButton.vue'
 import BaseIcon from '@/components/ui/BaseIcon.vue'
 import SeoHead from '@/components/layout/SeoHead.vue'
 
 const gameStore = useGameStore()
+const { localRoute } = useLocale()
 const score = ref(0)
 const completed = ref(false)
 
@@ -61,7 +63,7 @@ function restart() {
 <template>
   <div class="max-w-lg mx-auto px-4 py-10">
     <div class="flex items-center justify-between mb-8">
-      <router-link to="/games" class="flex items-center gap-2 text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors">
+      <router-link :to="localRoute({ name: 'games' })" class="flex items-center gap-2 text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors">
         <BaseIcon name="arrow-left" :size="16" />
         <span class="text-sm">Back to Games</span>
       </router-link>

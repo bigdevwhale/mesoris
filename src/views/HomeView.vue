@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useLocale } from '@/composables/useLocale'
 import gsap from 'gsap'
 import { useModeStore } from '@/stores/useModeStore'
 import { useDinoTranslator } from '@/composables/useDinoTranslation'
@@ -14,6 +15,7 @@ import SeoHead from '@/components/layout/SeoHead.vue'
 import { useScrollAnimation, useStaggerReveal } from '@/composables/useScrollAnimation'
 
 const { t, tm } = useI18n()
+const { localRoute } = useLocale()
 const modeStore = useModeStore()
 
 const popularDinos = dinosaurs.filter(d => popularDinoIds.includes(d.id))
@@ -191,7 +193,7 @@ onMounted(() => {
           v-for="dino in translatedPopularDinos"
           :key="dino.id"
           class="dino-card group cursor-pointer"
-          @click="$router.push(`/encyclopedia/${dino.id}`)"
+          @click="$router.push(localRoute({ name: 'encyclopedia-detail', params: { id: dino.id } }))"
         >
           <div class="bg-[var(--color-bg-elevated)] border border-[var(--glass-border)] rounded-[var(--radius-lg)] overflow-hidden shadow-[var(--shadow-card)] transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-[var(--shadow-card-hover)] group-hover:border-[var(--glass-border-hover)]">
             <!-- Image block -->

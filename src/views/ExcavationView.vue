@@ -3,19 +3,26 @@ import { ref, computed, onMounted } from 'vue'
 import { dinosaurs } from '@/data/dinosaurs'
 import { useGameStore } from '@/stores/useGameStore'
 import { useDinoTranslator } from '@/composables/useDinoTranslation'
+import { useLocale } from '@/composables/useLocale'
 import { useI18n } from 'vue-i18n'
 import BaseButton from '@/components/ui/BaseButton.vue'
 import BaseIcon from '@/components/ui/BaseIcon.vue'
+import BaseLazyImage from '@/components/ui/BaseLazyImage.vue'
 import SeoHead from '@/components/layout/SeoHead.vue'
 import BaseProgressBar from '@/components/ui/BaseProgressBar.vue'
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
+const { localRoute } = useLocale()
 const gameStore = useGameStore()
 const { translateDino } = useDinoTranslator()
 
 function randomDino() { return dinosaurs[Math.floor(Math.random() * dinosaurs.length)] }
 const dino = ref(randomDino())
 const translatedDino = computed(() => translateDino(dino.value))
+
+// Era and diet translated via encyclopedia i18n keys
+const eraLabel = computed(() => t(`ui.encyclopedia.${translatedDino.value.era}`))
+const dietLabel = computed(() => t(`ui.encyclopedia.${translatedDino.value.diet}`))
 
 const imageCanvasRef = ref<HTMLCanvasElement>()
 const sandCanvasRef = ref<HTMLCanvasElement>()
@@ -61,7 +68,7 @@ function getPos(e: MouseEvent | TouchEvent): { x: number; y: number } | null {
 }
 
 function brush(e: MouseEvent | TouchEvent) {
-  if (!isDrawing.value || !sandCtx || completed.value) return
+  if (!isDrawing.value || !sandCtx) return
   const pos = getPos(e)
   if (!pos) return
 
@@ -104,7 +111,7 @@ function restart() {
 <template>
   <div class="max-w-lg mx-auto px-4 py-10">
     <div class="flex items-center justify-between mb-8">
-      <router-link to="/games" class="flex items-center gap-2 text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors">
+      <router-link :to="localRoute({ name: 'games' })" class="flex items-center gap-2 text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors">
         <BaseIcon name="arrow-left" :size="16" />
         <span class="text-sm">{{ t('ui.games.backToGames') }}</span>
       </router-link>
@@ -120,9 +127,7 @@ function restart() {
     <BaseProgressBar :value="progress" :show-value="true" :label="t('games.excavationGame.progress')" color="var(--color-brand-amber)" class="mb-6" />
 
     <div class="relative rounded-[var(--radius-lg)] overflow-hidden border-2 border-[var(--glass-border)] bg-[#c4a87c]">
-      <!-- Bottom canvas: dino image drawn here, revealed as sand is brushed away -->
       <canvas ref="imageCanvasRef" width="400" height="300" class="absolute inset-0 w-full h-full" />
-      <!-- Top canvas: sand overlay, erased by brushing to reveal image below -->
       <canvas
         ref="sandCanvasRef"
         width="400"
@@ -138,13 +143,62 @@ function restart() {
       />
     </div>
 
-    <div v-if="completed" class="text-center mt-8">
-      <div class="text-4xl mb-4 animate-celebration-pop">⛏️</div>
-      <h2 class="text-heading-md mb-2">{{ t('games.excavationGame.complete') }}</h2>
-      <p class="text-body-md mb-4">{{ t('games.excavationGame.revealed', { name: translatedDino.name }) }}</p>
-      <div class="flex gap-4 justify-center">
-        <BaseButton variant="primary" @click="restart">{{ t('games.excavationGame.digAgain') }}</BaseButton>
-        <BaseButton variant="ghost" to="/games">{{ t('ui.games.backToGames') }}</BaseButton>
+    <!-- After 75%+ revealed: dino info card -->
+    <div v-if="completed" class="mt-8 space-y-6">
+      <div class="text-center">
+        <div class="text-4xl mb-3 animate-celebration-pop">{{ progress >= 90 ? '🦴' : '⛏️' }}</div>
+        <h2 class="text-heading-md mb-1">{{ t('games.excavationGame.complete') }}</h2>
+        <p class="text-body-md">{{ t('games.excavationGame.revealed', { name: translatedDino.name }) }}</p>
+        <p v-if="progress < 90" class="text-sm text-[var(--color-text-tertiary)] mt-1">{{ t('games.excavationGame.keepBrushing') }}</p>
+      </div>
+
+      <!-- Dino info summary card -->
+      <div class="bg-[var(--color-bg-elevated)] border border-[var(--glass-border)] rounded-[var(--radius-xl)] overflow-hidden shadow-[var(--shadow-card)]">
+        <div class="aspect-[2/1] overflow-hidden">
+          <BaseLazyImage
+            :src="translatedDino.images.hero"
+            :alt="translatedDino.name"
+            aspect-ratio="2/1"
+            class="w-full h-full"
+          />
+        </div>
+        <div class="p-5">
+          <h3 class="text-heading-md mb-4">{{ t('games.excavationGame.aboutDino') }}</h3>
+
+          <div class="grid grid-cols-2 gap-3 mb-4">
+            <div class="flex flex-col gap-1">
+              <span class="text-xs text-[var(--color-text-tertiary)]">{{ t('games.excavationGame.era') }}</span>
+              <span class="text-sm font-semibold text-[var(--color-text-primary)]">{{ eraLabel }}</span>
+            </div>
+            <div class="flex flex-col gap-1">
+              <span class="text-xs text-[var(--color-text-tertiary)]">{{ t('games.excavationGame.diet') }}</span>
+              <span class="text-sm font-semibold text-[var(--color-text-primary)]">{{ dietLabel }}</span>
+            </div>
+            <div class="flex flex-col gap-1">
+              <span class="text-xs text-[var(--color-text-tertiary)]">{{ t('ui.compare.lengthLabel') }}</span>
+              <span class="text-sm font-semibold text-[var(--color-text-primary)]">{{ translatedDino.dimensions.lengthMeters }} {{ t('ui.compare.metersUnit') }}</span>
+            </div>
+            <div class="flex flex-col gap-1">
+              <span class="text-xs text-[var(--color-text-tertiary)]">{{ t('ui.compare.weightLabel') }}</span>
+              <span class="text-sm font-semibold text-[var(--color-text-primary)]">{{ translatedDino.dimensions.weightKg.toLocaleString(locale === 'it' ? 'it-IT' : locale === 'fr' ? 'fr-FR' : locale === 'de' ? 'de-DE' : locale === 'es' ? 'es-ES' : locale === 'ru' ? 'ru-RU' : 'en-US') }} {{ t('ui.compare.kgUnit') }}</span>
+            </div>
+          </div>
+
+          <div class="bg-[rgba(212,164,58,0.08)] border border-[rgba(212,164,58,0.15)] rounded-[var(--radius-md)] p-3 mb-4">
+            <span class="text-xs font-semibold text-[var(--color-brand-amber)]">{{ t('games.excavationGame.funFact') }}</span>
+            <p class="text-sm text-[var(--color-text-primary)] mt-1">{{ translatedDino.description }}</p>
+          </div>
+
+          <div class="flex gap-3">
+            <BaseButton variant="primary" @click="restart">{{ t('games.excavationGame.digAgain') }}</BaseButton>
+            <router-link
+              :to="localRoute({ name: 'encyclopedia-detail', params: { id: dino.id } })"
+              class="inline-flex items-center justify-center gap-2 font-semibold rounded-full px-5 py-2.5 text-base border border-current text-[var(--color-brand-teal)] hover:bg-[rgba(45,122,140,0.1)] transition-all duration-200"
+            >
+              {{ t('games.excavationGame.openCard') }}
+            </router-link>
+          </div>
+        </div>
       </div>
     </div>
   </div>

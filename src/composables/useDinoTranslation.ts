@@ -22,7 +22,7 @@ const loadPromises = new Map<string, Promise<void>>()
 async function loadLocaleContent(targetLocale: string) {
   if (targetLocale === 'en' || localeContent.value[targetLocale]) return
   if (!loadPromises.has(targetLocale)) {
-    const promise = import(`@/locales/${targetLocale}/dinosaurs`).then(m => {
+    const promise = import(`@/locales/${targetLocale}/dinosaurs/index.ts`).then(m => {
       localeContent.value = {
         ...localeContent.value,
         [targetLocale]: (m as { default: Record<string, DinosaurTranslation> }).default,

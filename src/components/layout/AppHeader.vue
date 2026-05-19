@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
+import { useLocale } from '@/composables/useLocale'
 import { useUiStore } from '@/stores/useUiStore'
 import BaseIcon from '@/components/ui/BaseIcon.vue'
 import MainNav from './MainNav.vue'
@@ -8,6 +9,7 @@ import ModeSwitcher from './ModeSwitcher.vue'
 import LanguageSwitcher from './LanguageSwitcher.vue'
 
 const { t } = useI18n()
+const { localRoute } = useLocale()
 const uiStore = useUiStore()
 </script>
 
@@ -15,7 +17,7 @@ const uiStore = useUiStore()
   <header class="fixed top-0 left-0 right-0 z-30 bg-[var(--color-bg-deep)]/80 backdrop-blur-xl border-b border-[var(--glass-border)]">
     <div class="max-w-7xl mx-auto flex items-center justify-between px-4 h-16">
       <!-- Logo -->
-      <router-link to="/" class="flex items-center gap-2 text-[var(--color-text-primary)] hover:text-[var(--color-brand-amber)] transition-colors shrink-0">
+      <router-link :to="localRoute({ name: 'home' })" class="flex items-center gap-2 text-[var(--color-text-primary)] hover:text-[var(--color-brand-amber)] transition-colors shrink-0">
         <span class="text-2xl">🦖</span>
         <span class="text-lg font-bold hidden sm:inline" style="font-family: var(--font-heading)">Dinosaurs</span>
       </router-link>

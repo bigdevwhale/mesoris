@@ -4,6 +4,7 @@ import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { dinosaurs } from '@/data/dinosaurs'
 import { useDinoTranslator } from '@/composables/useDinoTranslation'
+import { useLocale } from '@/composables/useLocale'
 import BaseIcon from '@/components/ui/BaseIcon.vue'
 import BaseLazyImage from '@/components/ui/BaseLazyImage.vue'
 
@@ -12,6 +13,7 @@ const emit = defineEmits<{ close: [] }>()
 
 const { t } = useI18n()
 const { translateDino } = useDinoTranslator()
+const { localRoute } = useLocale()
 const router = useRouter()
 const query = ref('')
 const inputRef = ref<HTMLInputElement>()
@@ -37,7 +39,7 @@ watch(query, (q) => {
 function navigateTo(id: string) {
   emit('close')
   query.value = ''
-  router.push(`/encyclopedia/${id}`)
+  router.push(localRoute({ name: 'encyclopedia-detail', params: { id } }))
 }
 
 function onKeydown(e: KeyboardEvent) {
@@ -106,7 +108,7 @@ onUnmounted(() => {
               ref="inputRef"
               v-model="query"
               type="text"
-              :placeholder="t('ui.search.placeholder', { count: 50 })"
+              :placeholder="t('ui.header.search')"
               class="w-full bg-transparent text-[var(--color-text-primary)] placeholder:text-[var(--color-text-tertiary)] text-base outline-none"
             />
             <kbd class="hidden sm:inline-flex items-center px-1.5 py-0.5 text-xs rounded bg-[var(--color-bg-overlay)] text-[var(--color-text-tertiary)]">ESC</kbd>

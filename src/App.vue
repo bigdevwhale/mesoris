@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { onMounted } from 'vue'
+import { onMounted, watch } from 'vue'
+import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import gsap from 'gsap'
 import { useDinoOfDayStore } from '@/stores/useDinoOfDayStore'
@@ -8,13 +9,25 @@ import AppHeader from '@/components/layout/AppHeader.vue'
 import AppFooter from '@/components/layout/AppFooter.vue'
 import SearchOverlay from '@/components/layout/SearchOverlay.vue'
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
+const route = useRoute()
 const dinoStore = useDinoOfDayStore()
 const uiStore = useUiStore()
 
 onMounted(() => {
   dinoStore.generateToday()
 })
+
+// Sync i18n locale with router locale param
+watch(
+  () => route.params.locale,
+  (newLocale) => {
+    if (newLocale && newLocale !== locale.value) {
+      locale.value = newLocale as string
+    }
+  },
+  { immediate: true },
+)
 
 function onEnter(el: Element, done: () => void) {
   gsap.fromTo(el, { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.35, ease: 'power2.out', onComplete: done })
@@ -46,5 +59,3 @@ function onLeave(el: Element, done: () => void) {
 
   <SearchOverlay :is-open="uiStore.isSearchOpen" @close="uiStore.closeSearch()" />
 </template>
-
-

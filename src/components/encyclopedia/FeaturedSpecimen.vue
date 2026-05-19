@@ -42,7 +42,7 @@ const categoryLabel = computed(() => {
   const cat = props.dinosaur.category
   if (cat === 'flying-reptile') return t('ui.featured.flyingReptile')
   if (cat === 'marine-reptile') return t('ui.featured.marineReptile')
-  return translated.value.diet
+  return t(`ui.encyclopedia.${translated.value.diet}`)
 })
 
 const massDisplay = computed(() => {

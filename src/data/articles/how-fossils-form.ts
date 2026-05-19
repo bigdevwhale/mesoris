@@ -5,10 +5,22 @@ export const HowFossilsForm: Article = {
     slug: 'how-fossils-form',
     title: 'How Do Fossils Form?',
     titleRu: 'Как образуются окаменелости?',
+    titleEs: 'Como se Forman los Fosiles',
+    titleDe: 'Wie entstehen Fossilien?',
+    titleFr: 'Comment se forment les fossiles ?',
+    titleIt: 'Come Si Formano i Fossili?',
     summary: 'The incredible journey from a living dinosaur to a fossil in a museum — a process that takes millions of years.',
     summaryRu: 'Невероятное путешествие от живого динозавра до окаменелости в музее — процесс, занимающий миллионы лет.',
+    summaryEs: 'El extraordinario proceso que convierte seres vivos en piedra a lo largo de millones de años.',
+    summaryDe: 'Die unglaubliche Reise von einem lebenden Dinosaurier zu einem Fossil im Museum — ein Prozess, der Millionen von Jahren dauert.',
+    summaryFr: `L'incroyable parcours d'un dinosaure vivant a un fossile dans un musee — un processus qui prend des millions d'annees.`,
+    summaryIt: `L'incredibile viaggio da un dinosauro vivente a un fossile in un museo — un processo che richiede milioni di anni.`,
     category: 'paleontology',
     categoryRu: 'палеонтология',
+    categoryEs: 'paleontologia',
+    categoryDe: 'Palaontologie',
+    categoryFr: 'paleontologie',
+    categoryIt: 'paleontologia',
     readingTimeMinutes: 6,
     image: '/images/dinosaurs/tyrannosaurus-rex/card.webp',
     relatedDinosaurIds: ['triceratops'],
@@ -18,6 +30,130 @@ export const HowFossilsForm: Article = {
     ],
     content: `## How Do Fossils Form?\n\nFossilization is an incredibly rare process. The vast majority of living things that ever existed were never fossilized — they were eaten, decayed, or weathered away. For a dinosaur to become a fossil, a very specific chain of events had to occur.\n\n### The Fossilization Process\n\n**1. Rapid Burial**\nAfter death, the dinosaur's body needed to be quickly buried by sediment — sand, mud, or silt. This protected the remains from scavengers and slowed decomposition. Floods, landslides, and sandstorms were common burial mechanisms.\n\n**2. Mineral Replacement**\nOver thousands of years, groundwater rich in dissolved minerals seeped through the buried bones. Minerals like silica and calcite slowly replaced the original organic material, molecule by molecule, turning bone into stone.\n\n**3. Pressure and Time**\nLayer upon layer of sediment piled up above. The immense pressure, combined with chemical changes, completed the transformation. What was once living bone was now solid rock.\n\n**4. Discovery**\nMillions of years later, erosion or excavation brought the fossil back to the surface, waiting to be discovered.\n\n### Types of Fossils\n\n- **Body fossils**: Actual parts of the organism (bones, teeth, shells)\n- **Trace fossils**: Evidence of activity (footprints, nests, droppings)\n- **Molds and casts**: Impressions left in rock`,
     contentRu: `## Как образуются окаменелости?\n\nФоссилизация — невероятно редкий процесс. Подавляющее большинство живых существ, когда-либо обитавших на Земле, никогда не стали окаменелостями — они были съедены, разложились или разрушились. Чтобы динозавр стал окаменелостью, должна была произойти особая цепочка событий.\n\n### Процесс фоссилизации\n\n**1. Быстрое погребение**\nПосле смерти тело динозавра должно было быть быстро погребено под осадочными породами — песком, илом или глиной. Это защищало останки от падальщиков и замедляло разложение. Наводнения, оползни и песчаные бури были обычными механизмами погребения.\n\n**2. Минеральное замещение**\nВ течение тысяч лет грунтовые воды, богатые растворёнными минералами, просачивались сквозь погребённые кости. Минералы, такие как кремнезём и кальцит, медленно замещали органический материал, молекула за молекулой, превращая кость в камень.\n\n**3. Давление и время**\nСлой за слоем осадки накапливались сверху. Колоссальное давление в сочетании с химическими изменениями завершало превращение. То, что некогда было живой костью, становилось твёрдой породой.\n\n**4. Обнаружение**\nМиллионы лет спустя эрозия или раскопки возвращали окаменелость на поверхность — ждущую своего открытия.\n\n### Типы окаменелостей\n\n- **Окаменелости тела**: Части самого организма (кости, зубы, раковины)\n- **Следовые окаменелости**: Свидетельства активности (отпечатки ног, гнёзда, помёт)\n- **Отпечатки и слепки**: Оттиски, оставленные в породе`,
+    contentEs: `## El Viaje de Hueso a Piedra
+
+La fosilizacion es extraordinariamente rara. De los miles de millones de dinosaurios que alguna vez vivieron, solo una fraccion minuscula se fosilizo, y menos aun han sido encontrados.
+
+### Las Condiciones Perfectas
+
+Para que un dinosaurio se fosilice, se necesita:
+
+1. **Enterramiento Rapido**: El cuerpo debe ser cubierto por sedimento rapidamente, antes de que los carroñeros lo dispersen o se descomponga.
+2. **Condiciones Bajas en Oxigeno**: Esto ralentiza la descomposicion.
+3. **Agua Rica en Minerales**: Los minerales disueltos reemplazan gradualmente el material organico.
+4. **Estabilidad Geologica**: El sedimento circundante debe litificarse en roca sin ser destruido.
+
+### Tipos de Fosilizacion
+
+- **Permineralizacion**: Los minerales llenan los poros del hueso
+- **Reemplazo**: La materia original se disuelve y es reemplazada molecula por molecula
+- **Moldes y Vaciados**: El hueso se disuelve dejando un molde en la roca`,
+    contentDe: `## Die Reise von Knochen zu Stein
+
+Die Fossilisation ist auserst selten. Von den Milliarden Dinosauriern, die jemals lebten, wurde nur ein winziger Bruchteil zu Fossilien, und noch weniger wurden gefunden.
+
+### Die perfekten Bedingungen
+
+Damit ein Dinosaurier versteinert, braucht es:
+
+1. **Schnelle Einbettung**: Der Korper muss rasch von Sediment bedeckt werden, bevor Aasfresser ihn zerstreuen oder er verwest.
+2. **Sauerstoffarme Bedingungen**: Dies verlangsamt die Zersetzung.
+3. **Mineralhaltiges Wasser**: Geloste Mineralien ersetzen nach und nach das organische Material.
+4. **Geologische Stabilitat**: Das umgebende Sediment muss zu Gestein werden, ohne zerstort zu werden.
+
+### Arten der Fossilisation
+
+- **Permineralisation**: Mineralien fullen die Poren des Knochens aus
+- **Substitution**: Das ursprungliche Material lost sich auf und wird Molekul fur Molekul ersetzt
+- **Abdrucke und Ausfullungen**: Der Knochen lost sich auf und hinterlasst einen Hohlraum im Gestein`,
+    contentFr: `## Le voyage de l'os a la pierre
+
+La fossilisation est un processus extremement rare. Sur les milliards de dinosaures qui ont vecu, seule une infime fraction s'est fossilisee, et encore moins ont ete retrouves.
+
+### Les conditions parfaites
+
+Pour qu'un dinosaure se fossilise, il faut :
+
+1. **Enfouissement rapide** : Le corps doit etre recouvert de sediments rapidement, avant que les charognards ne le dispersent ou qu'il ne se decompose.
+2. **Conditions pauvres en oxygene** : Cela ralentit la decomposition.
+3. **Eau riche en mineraux** : Les mineraux dissous remplacent progressivement la matiere organique.
+4. **Stabilite geologique** : Le sediment environnant doit se transformer en roche sans etre detruit.
+
+### Types de fossilisation
+
+- **Permineralisation** : Les mineraux remplissent les pores de l'os
+- **Remplacement** : La matiere d'origine se dissout et est remplacee molecule par molecule
+- **Moules et empreintes** : L'os se dissout en laissant une cavite dans la roche`,
+    contentIt: `## Il viaggio dall'osso alla pietra
+
+La fossilizzazione e un processo estremamente raro. Dei miliardi di dinosauri che sono vissuti, solo una minuscola frazione si e fossilizzata, e ancora meno sono stati ritrovati.
+
+### Le condizioni perfette
+
+Perche un dinosauro si fossilizzi, servono:
+
+1. **Seppellimento rapido** : Il corpo deve essere ricoperto dai sedimenti rapidamente, prima che gli spazzini lo disperdano o che si decomponga.
+2. **Condizioni povere di ossigeno** : Questo rallenta la decomposizione.
+3. **Acqua ricca di minerali** : I minerali disciolti sostituiscono gradualmente la materia organica.
+4. **Stabilita geologica** : Il sedimento circostante deve trasformarsi in roccia senza essere distrutto.
+
+### Tipi di fossilizzazione
+
+- **Permineralizzazione** : I minerali riempiono i pori dell'osso
+- **Sostituzione** : La materia originale si dissolve e viene sostituita molecola per molecola
+- **Calchi e impronte** : L'osso si dissolve lasciando una cavita nella roccia`,
     kidsVersion: `## How Do Fossils Form?\n\nImagine you find a T-Rex tooth that's been underground for 66 MILLION years. How did it get there?\n\n### The Magic Recipe\n\n1. **Hide it fast!** When a dinosaur died, mud or sand had to cover it quickly.\n2. **Add water!** Water with special minerals soaked into the bones.\n3. **Wait millions of years!** The minerals slowly turned the bones into stone.\n4. **Dig it up!** Wind and rain wore away the rock on top, and then...\n\nA lucky scientist finds a fossil that no one has seen for millions of years!`,
     kidsVersionRu: `## Как образуются окаменелости?\n\nПредставь, что ты находишь зуб тираннозавра, пролежавший под землёй 66 МИЛЛИОНОВ лет. Как он туда попал?\n\n### Волшебный рецепт\n\n1. **Спрятать быстро!** Когда динозавр умирал, грязь или песок должны были быстро его накрыть.\n2. **Добавить воды!** Вода с особыми минералами пропитывала кости.\n3. **Ждать миллионы лет!** Минералы медленно превращали кости в камень.\n4. **Откопать!** Ветер и дождь разрушали верхний слой породы, и тогда...\n\nСчастливый учёный находит окаменелость, которую никто не видел миллионы лет!`,
+    kidsVersionEs: `## Como se Convierten los Huesos en Piedra
+
+Cuando un dinosaurio moria, comenzaba un viaje increible.
+
+### Paso a Paso
+
+1. El dinosaurio muere y su cuerpo queda enterrado rapidamente en arena o lodo
+2. Capas y capas de sedimento se acumulan encima
+3. El agua rica en minerales empapa los huesos
+4. Lentamente, los minerales reemplazan el hueso — ¡convirtiendolo en roca!
+5. Millones de años despues, alguien lo encuentra
+
+¡Es por eso que los fosiles son tan raros — todo tiene que salir perfecto!`,
+    kidsVersionDe: `## Wie werden Knochen zu Stein?
+
+Wenn ein Dinosaurier starb, begann eine unglaubliche Reise.
+
+### Schritt fur Schritt
+
+1. Der Dinosaurier stirbt und sein Korper wird schnell von Sand oder Schlamm begraben
+2. Schicht um Schicht lagert sich Sediment daruber ab
+3. Mineralhaltiges Wasser durchtrankt die Knochen
+4. Langsam ersetzen Mineralien das Knochenmaterial — und machen es zu Stein!
+5. Millionen Jahre spater findet es jemand
+
+Deshalb sind Fossilien so selten — alles muss perfekt zusammenpassen!`,
+    kidsVersionFr: `## Comment se forment les fossiles ?
+
+Quand un dinosaure mourait, un incroyable voyage commencait.
+
+### Etape par etape
+
+1. Le dinosaure meurt et son corps est rapidement enterre dans du sable ou de la boue
+2. Des couches et des couches de sediments s'accumulent par-dessus
+3. L'eau riche en mineraux impregne les os
+4. Lentement, les mineraux remplacent l'os — le transformant en pierre !
+5. Des millions d'annees plus tard, quelqu'un le decouvre
+
+Voila pourquoi les fossiles sont si rares — tout doit etre parfait !`,
+    kidsVersionIt: `## Come si formano i fossili?
+
+Quando un dinosauro moriva, iniziava un viaggio incredibile.
+
+### Passo dopo passo
+
+1. Il dinosauro muore e il suo corpo viene rapidamente sepolto nella sabbia o nel fango
+2. Strati e strati di sedimenti si accumulano sopra
+3. L'acqua ricca di minerali impregna le ossa
+4. Lentamente, i minerali sostituiscono l'osso — trasformandolo in pietra!
+5. Milioni di anni dopo, qualcuno lo scopre
+
+Ecco perche i fossili sono cosi rari — tutto deve essere perfetto!`,
   }

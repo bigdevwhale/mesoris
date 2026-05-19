@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { computed } from 'vue'
+import type { RouteLocationRaw } from 'vue-router'
 import BaseIcon from './BaseIcon.vue'
 
 const props = withDefaults(defineProps<{
   variant?: 'primary' | 'ghost' | 'icon' | 'danger'
   size?: 'sm' | 'md' | 'lg'
-  to?: string
+  to?: RouteLocationRaw
   type?: 'button' | 'submit'
   disabled?: boolean
   loading?: boolean

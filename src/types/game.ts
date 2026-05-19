@@ -1,3 +1,5 @@
+import type { RouteLocationRaw } from 'vue-router'
+
 export type GameType = 'quiz' | 'puzzle' | 'excavation' | 'skeleton'
 
 export interface GameDefinition {
@@ -5,10 +7,18 @@ export interface GameDefinition {
   type: GameType
   title: string
   titleRu: string
+  titleEs: string
+  titleDe: string
+  titleFr: string
+  titleIt: string
   description: string
   descriptionRu: string
+  descriptionEs: string
+  descriptionDe: string
+  descriptionFr: string
+  descriptionIt: string
   thumbnail?: string
-  route: string
+  route: RouteLocationRaw
   difficulty: 'easy' | 'medium' | 'hard'
   icon: string
   colorClass: string

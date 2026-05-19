@@ -3,6 +3,7 @@ import { ref, computed } from 'vue'
 import { quizQuestions } from '@/data/quiz-questions'
 import { useGameStore } from '@/stores/useGameStore'
 import { useI18n } from 'vue-i18n'
+import { useLocale } from '@/composables/useLocale'
 import BaseButton from '@/components/ui/BaseButton.vue'
 import BaseIcon from '@/components/ui/BaseIcon.vue'
 import BaseProgressBar from '@/components/ui/BaseProgressBar.vue'
@@ -10,6 +11,7 @@ import BaseConfetti from '@/components/ui/BaseConfetti.vue'
 import SeoHead from '@/components/layout/SeoHead.vue'
 
 const { t, locale } = useI18n()
+const { localRoute } = useLocale()
 const gameStore = useGameStore()
 
 const TOTAL_QUESTIONS = 10
@@ -25,10 +27,33 @@ const score = computed(() => answers.value.filter((a, i) => a === selectedQuesti
 const isLast = computed(() => currentIdx.value === TOTAL_QUESTIONS - 1)
 const isCorrect = computed(() => selectedAnswer.value === currentQ.value?.correctIndex)
 
-const isRu = computed(() => locale.value === 'ru')
-const currentQuestion = computed(() => isRu.value ? currentQ.value?.questionRu : currentQ.value?.question)
-const currentOptions = computed(() => isRu.value ? currentQ.value?.optionsRu : currentQ.value?.options)
-const currentExplanation = computed(() => isRu.value ? currentQ.value?.explanationRu : currentQ.value?.explanation)
+const currentQuestion = computed(() => {
+  if (!currentQ.value) return ''
+  if (locale.value === 'it') return currentQ.value.questionIt
+  if (locale.value === 'fr') return currentQ.value.questionFr
+  if (locale.value === 'de') return currentQ.value.questionDe
+  if (locale.value === 'es') return currentQ.value.questionEs
+  if (locale.value === 'ru') return currentQ.value.questionRu
+  return currentQ.value.question
+})
+const currentOptions = computed(() => {
+  if (!currentQ.value) return []
+  if (locale.value === 'it') return currentQ.value.optionsIt
+  if (locale.value === 'fr') return currentQ.value.optionsFr
+  if (locale.value === 'de') return currentQ.value.optionsDe
+  if (locale.value === 'es') return currentQ.value.optionsEs
+  if (locale.value === 'ru') return currentQ.value.optionsRu
+  return currentQ.value.options
+})
+const currentExplanation = computed(() => {
+  if (!currentQ.value) return ''
+  if (locale.value === 'it') return currentQ.value.explanationIt
+  if (locale.value === 'fr') return currentQ.value.explanationFr
+  if (locale.value === 'de') return currentQ.value.explanationDe
+  if (locale.value === 'es') return currentQ.value.explanationEs
+  if (locale.value === 'ru') return currentQ.value.explanationRu
+  return currentQ.value.explanation
+})
 
 function select(idx: number) {
   if (selectedAnswer.value !== null) return
@@ -64,7 +89,7 @@ function restart() {
     />
     <!-- Header -->
     <div class="flex items-center justify-between mb-8">
-      <router-link to="/games" class="flex items-center gap-2 text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors">
+      <router-link :to="localRoute({ name: 'games' })" class="flex items-center gap-2 text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors">
         <BaseIcon name="arrow-left" :size="16" />
         <span class="text-sm">{{ t('ui.games.backToGames') }}</span>
       </router-link>

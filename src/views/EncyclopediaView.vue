@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
-import { useRouter } from 'vue-router'
+import { computed, ref, watch } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useEncyclopediaStore, type SortOption } from '@/stores/useEncyclopediaStore'
 import { useDinoTranslator } from '@/composables/useDinoTranslation'
+import { useLocale } from '@/composables/useLocale'
 import { useModeStore } from '@/stores/useModeStore'
 import { useStaggerReveal } from '@/composables/useScrollAnimation'
 import BaseInput from '@/components/ui/BaseInput.vue'
@@ -75,15 +76,36 @@ const gridRef = ref<HTMLElement | null>(null)
 useStaggerReveal(gridRef, '.dino-card', { stagger: 0.08, duration: 0.55, y: 32 })
 
 const router = useRouter()
+const { localRoute } = useLocale()
 
 function addToCompare(id: string) {
   store.closeDetail()
-  router.push(`/compare?a=${id}`)
+  router.push(localRoute({ name: 'compare', query: { a: id } }))
 }
 
-function onDetailRoute() {
-  // Opens the modal via route param
-}
+const route = useRoute()
+
+// When navigating to /encyclopedia/:id, open the detail modal
+watch(
+  () => route.params.id,
+  (id) => {
+    if (id && typeof id === 'string') {
+      store.openDetail(id)
+    }
+  },
+  { immediate: true },
+)
+
+// When modal is closed, navigate back to the encyclopedia list
+watch(
+  () => store.isModalOpen,
+  (open) => {
+    if (!open && route.params.id) {
+      router.replace(localRoute({ name: 'encyclopedia' }))
+    }
+  },
+)
+
 </script>
 
 <template>
@@ -105,7 +127,7 @@ function onDetailRoute() {
       <div class="flex-1">
         <BaseInput
           :model-value="store.searchQuery"
-          :placeholder="t('ui.encyclopedia.searchPlaceholder', { count: 50 })"
+          :placeholder="t('ui.encyclopedia.searchPlaceholder')"
           :label="t('ui.encyclopedia.search')"
           icon-left="search"
           @update:model-value="store.setSearch"
@@ -181,7 +203,7 @@ function onDetailRoute() {
         v-for="dino in translatedPaginatedDinosaurs"
         :key="dino.id"
         class="dino-card group cursor-pointer"
-        @click="store.openDetail(dino.id)"
+        @click="router.push(localRoute({ name: 'encyclopedia-detail', params: { id: dino.id } }))"
       >
         <div class="bg-[var(--color-bg-elevated)] border border-[var(--glass-border)] rounded-[var(--radius-lg)] overflow-hidden shadow-[var(--shadow-card)] transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-[var(--shadow-card-hover)] group-hover:border-[var(--glass-border-hover)]">
           <!-- Image area -->

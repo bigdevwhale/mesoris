@@ -93,14 +93,30 @@ export interface EraInfo {
   id: Era
   name: string
   nameRu: string
+  nameEs: string
+  nameDe: string
+  nameFr: string
+  nameIt: string
   rangeMya: [number, number]
   durationMillionYears: number
   description: string
   descriptionRu: string
+  descriptionEs: string
+  descriptionDe: string
+  descriptionFr: string
+  descriptionIt: string
   keyEvents: string[]
   keyEventsRu: string[]
+  keyEventsEs: string[]
+  keyEventsDe: string[]
+  keyEventsFr: string[]
+  keyEventsIt: string[]
   climateDescription: string
   climateDescriptionRu: string
+  climateDescriptionEs: string
+  climateDescriptionDe: string
+  climateDescriptionFr: string
+  climateDescriptionIt: string
   colorClass: string
   icon: string
   dinosaurs: string[]
