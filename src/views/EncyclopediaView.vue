@@ -18,6 +18,7 @@ import BaseProgressBar from '@/components/ui/BaseProgressBar.vue'
 import BaseLazyImage from '@/components/ui/BaseLazyImage.vue'
 import DinoCardImage from '@/components/ui/DinoCardImage.vue'
 import ModeSwitcher from '@/components/layout/ModeSwitcher.vue'
+import SeoHead from '@/components/layout/SeoHead.vue'
 
 const { t } = useI18n()
 const store = useEncyclopediaStore()
@@ -78,7 +79,10 @@ useStaggerReveal(gridRef, '.dino-card', { stagger: 0.08, duration: 0.55, y: 32 }
 const router = useRouter()
 const { localRoute } = useLocale()
 
+const navigatingToCompare = ref(false)
+
 function addToCompare(id: string) {
+  navigatingToCompare.value = true
   store.closeDetail()
   router.push(localRoute({ name: 'compare', query: { a: id } }))
 }
@@ -100,7 +104,7 @@ watch(
 watch(
   () => store.isModalOpen,
   (open) => {
-    if (!open && route.params.id) {
+    if (!open && route.params.id && !navigatingToCompare.value) {
       router.replace(localRoute({ name: 'encyclopedia' }))
     }
   },
@@ -117,7 +121,7 @@ watch(
     <h1 class="text-display-lg mb-4">{{ t('ui.encyclopedia.title') }}</h1>
     <p class="text-body-lg mb-8">
       {{ modeStore.isKidsMode
-        ? 'Знакомьтесь с каждым динозавром! Нажимайте на карточки, чтобы узнать интересные факты.'
+        ? t('ui.encyclopedia.kidsDescription')
         : t('ui.encyclopedia.description')
       }}
     </p>

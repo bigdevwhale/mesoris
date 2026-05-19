@@ -110,6 +110,7 @@ export default {
     gigantic: 'Gigantesco',
     size: 'Dimensione',
     description: 'Sfoglia il database completo dei dinosauri. Filtra per era, dieta e dimensione.',
+    kidsDescription: 'Conosci ogni dinosauro! Tocca le carte per scoprire fatti divertenti.',
     previous: 'Precedente',
     next: 'Successivo',
     viewDetail: 'Vedi →',

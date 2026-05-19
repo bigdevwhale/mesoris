@@ -139,7 +139,7 @@ router.afterEach((to) => {
 
 const PAGE_TITLES: Record<string, Record<string, string>> = {
   en: {
-    base: 'Dinosaurs',
+    base: 'Mesoris',
     home: 'Welcome to the Prehistoric World',
     encyclopedia: 'Dinosaur Encyclopedia',
     'encyclopedia-detail': 'Dinosaur Details',

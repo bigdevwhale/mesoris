@@ -19,7 +19,7 @@ const uiStore = useUiStore()
       <!-- Logo -->
       <router-link :to="localRoute({ name: 'home' })" class="flex items-center gap-2 text-[var(--color-text-primary)] hover:text-[var(--color-brand-amber)] transition-colors shrink-0">
         <span class="text-2xl">🦖</span>
-        <span class="text-lg font-bold hidden sm:inline" style="font-family: var(--font-heading)">Dinosaurs</span>
+        <span class="text-lg font-bold hidden sm:inline" style="font-family: var(--font-heading)">Mesoris</span>
       </router-link>
 
       <!-- Desktop Nav -->

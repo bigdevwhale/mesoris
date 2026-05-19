@@ -110,6 +110,7 @@ export default {
     gigantic: 'Gigantesque',
     size: 'Taille',
     description: 'Parcourez la base de donnees complete des dinosaures. Filtrez par ere, regime et taille.',
+    kidsDescription: 'Faites connaissance avec chaque dinosaure ! Appuyez sur les cartes pour decouvrir des faits amusants.',
     previous: 'Precedent',
     next: 'Suivant',
     viewDetail: 'Voir →',

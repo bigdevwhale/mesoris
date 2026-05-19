@@ -15,7 +15,7 @@ const { localRoute } = useLocale()
         <div>
           <router-link :to="localRoute({ name: 'home' })" class="flex items-center gap-2 text-[var(--color-text-primary)] mb-3">
             <span class="text-2xl">🦖</span>
-            <span class="text-lg font-bold" style="font-family: var(--font-heading)">Dinosaurs</span>
+            <span class="text-lg font-bold" style="font-family: var(--font-heading)">Mesoris</span>
           </router-link>
           <p class="text-body-sm">{{ t('ui.footer.tagline') }}</p>
         </div>

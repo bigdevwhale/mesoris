@@ -110,6 +110,7 @@ export default {
     gigantic: 'Gigantisch',
     size: 'Große',
     description: 'Durchsuche die vollstandige Dinosaurier-Datenbank. Filtern nach Epoche, Ernahrung und Große.',
+    kidsDescription: 'Lerne jeden Dinosaurier kennen! Tippe auf die Karten, um spannende Fakten zu entdecken.',
     previous: 'Zuruck',
     next: 'Weiter',
     viewDetail: 'Anzeigen →',

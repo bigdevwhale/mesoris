@@ -110,6 +110,7 @@ export default {
     gigantic: 'Gigantesco',
     size: 'Tamano',
     description: 'Navega y busca en la base de datos completa de dinosaurios. Filtra por era, dieta y tamano.',
+    kidsDescription: '¡Conoce a cada dinosaurio! Toca las tarjetas para descubrir datos curiosos.',
     previous: 'Anterior',
     next: 'Siguiente',
     viewDetail: 'Ver →',

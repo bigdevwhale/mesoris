@@ -110,6 +110,7 @@ export default {
     gigantic: 'Gigantic',
     size: 'Size',
     description: 'Browse and search the complete dinosaur database. Filter by era, diet, and size.',
+    kidsDescription: 'Meet each dinosaur! Tap the cards to discover fun facts.',
     previous: 'Previous',
     next: 'Next',
     viewDetail: 'View →',
