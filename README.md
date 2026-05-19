@@ -8,6 +8,8 @@
 <h1 align="center">Dinosaurs</h1>
 <p align="center">
   <b>Step into the Mesozoic.</b> A rich, interactive encyclopedia of prehistoric life — built to explore, compare, and play.
+  <br>
+  <a href="https://mesoris.com"><b>mesoris.com</b></a>
 </p>
 
 <p align="center">

@@ -42,7 +42,7 @@ const todayFact = computed(() => dailyFacts.value[new Date().getDay() % dailyFac
 
 const categoryKeys = ['carnivore', 'herbivore', 'omnivore', 'flying-reptile', 'marine-reptile'] as const
 const categoryIconMap: Record<string, string> = {
-  carnivore: '🦖', herbivore: '🦕', omnivore: '🥚', 'flying-reptile': '🦅', 'marine-reptile': '🌊',
+  carnivore: 'skull', herbivore: 'leaf', omnivore: 'utensils-crossed', 'flying-reptile': 'bird', 'marine-reptile': 'waves',
 }
 const categoryColorMap: Record<string, string> = {
   carnivore: 'var(--color-brand-ember)', herbivore: 'var(--color-brand-teal)', omnivore: 'var(--color-brand-amber)', 'flying-reptile': '#60a5fa', 'marine-reptile': '#a78bfa',
@@ -161,14 +161,14 @@ onMounted(() => {
         <router-link
           v-for="catKey in categoryKeys"
           :key="catKey"
-          :to="`/encyclopedia?category=${catKey}`"
+          :to="localRoute(`/encyclopedia?category=${catKey}`)"
           class="group flex flex-col items-center gap-3 p-6 rounded-[var(--radius-xl)] border transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg"
           :style="{
             background: categoryBgMap[catKey],
             borderColor: categoryBorderMap[catKey],
           }"
         >
-          <span class="text-3xl transition-transform duration-300 group-hover:scale-110">{{ categoryIconMap[catKey] }}</span>
+          <BaseIcon :name="categoryIconMap[catKey]" :size="28" class="transition-transform duration-300 group-hover:scale-110" :style="{ color: categoryColorMap[catKey] }" />
           <span
             class="text-sm font-bold"
             :style="{ color: categoryColorMap[catKey] }"

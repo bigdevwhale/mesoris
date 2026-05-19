@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
-import type { Era, Diet, SizeCategory } from '@/types/dinosaur'
+import type { Era, Diet, SizeCategory, DinosaurCategory } from '@/types/dinosaur'
 import { dinosaurs } from '@/data/dinosaurs'
 
 export type SortOption = 'name-asc' | 'name-desc' | 'era-asc' | 'size-desc'
@@ -9,6 +9,7 @@ export const useEncyclopediaStore = defineStore('encyclopedia', () => {
   const eraFilters = ref<Era[]>([])
   const dietFilters = ref<Diet[]>([])
   const sizeFilters = ref<SizeCategory[]>([])
+  const categoryFilter = ref<DinosaurCategory | null>(null)
   const searchQuery = ref('')
   const sortBy = ref<SortOption>('name-asc')
   const currentPage = ref(1)
@@ -17,7 +18,7 @@ export const useEncyclopediaStore = defineStore('encyclopedia', () => {
   const isModalOpen = ref(false)
 
   const hasActiveFilters = computed(() =>
-    eraFilters.value.length > 0 || dietFilters.value.length > 0 || sizeFilters.value.length > 0
+    eraFilters.value.length > 0 || dietFilters.value.length > 0 || sizeFilters.value.length > 0 || categoryFilter.value !== null
   )
 
   const filteredDinosaurs = computed(() => {
@@ -31,6 +32,9 @@ export const useEncyclopediaStore = defineStore('encyclopedia', () => {
     }
     if (sizeFilters.value.length > 0) {
       result = result.filter(d => sizeFilters.value.includes(d.size))
+    }
+    if (categoryFilter.value) {
+      result = result.filter(d => d.category === categoryFilter.value)
     }
 
     const query = searchQuery.value.toLowerCase().trim()
@@ -86,12 +90,27 @@ export const useEncyclopediaStore = defineStore('encyclopedia', () => {
     eraFilters.value = []
     dietFilters.value = []
     sizeFilters.value = []
+    categoryFilter.value = null
     searchQuery.value = ''
     currentPage.value = 1
   }
 
   function setSearch(query: string) {
     searchQuery.value = query
+    currentPage.value = 1
+  }
+
+  function setCategoryFilter(category: DinosaurCategory | null) {
+    categoryFilter.value = category
+    currentPage.value = 1
+  }
+
+  function toggleCategoryFilter(category: DinosaurCategory) {
+    if (categoryFilter.value === category) {
+      categoryFilter.value = null
+    } else {
+      categoryFilter.value = category
+    }
     currentPage.value = 1
   }
 
@@ -114,10 +133,10 @@ export const useEncyclopediaStore = defineStore('encyclopedia', () => {
   }
 
   return {
-    eraFilters, dietFilters, sizeFilters, searchQuery, sortBy, currentPage,
+    eraFilters, dietFilters, sizeFilters, categoryFilter, searchQuery, sortBy, currentPage,
     itemsPerPage, selectedDinoId, isModalOpen,
     hasActiveFilters, filteredDinosaurs, totalPages, paginatedDinosaurs,
     toggleEraFilter, toggleDietFilter, toggleSizeFilter, clearFilters,
-    setSearch, setSort, setPage, openDetail, closeDetail,
+    setSearch, setCategoryFilter, toggleCategoryFilter, setSort, setPage, openDetail, closeDetail,
   }
 })

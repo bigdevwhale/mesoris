@@ -3,6 +3,7 @@ import { computed, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useEncyclopediaStore, type SortOption } from '@/stores/useEncyclopediaStore'
+import type { DinosaurCategory } from '@/types/dinosaur'
 import { useDinoTranslator } from '@/composables/useDinoTranslation'
 import { useLocale } from '@/composables/useLocale'
 import { useModeStore } from '@/stores/useModeStore'
@@ -73,6 +74,14 @@ const dinoDetail = computed(() => {
   return dino ? translateDino(dino) : null
 })
 
+const categoryChips = computed(() => [
+  { label: t('ui.home.categories.carnivores'), value: 'carnivore' as const, icon: 'skull' },
+  { label: t('ui.home.categories.herbivores'), value: 'herbivore' as const, icon: 'leaf' },
+  { label: t('ui.home.categories.omnivores'), value: 'omnivore' as const, icon: 'utensils-crossed' },
+  { label: t('ui.home.categories.flyingReptiles'), value: 'flying-reptile' as const, icon: 'bird' },
+  { label: t('ui.home.categories.marineReptiles'), value: 'marine-reptile' as const, icon: 'waves' },
+])
+
 const gridRef = ref<HTMLElement | null>(null)
 useStaggerReveal(gridRef, '.dino-card', { stagger: 0.08, duration: 0.55, y: 32 })
 
@@ -88,6 +97,20 @@ function addToCompare(id: string) {
 }
 
 const route = useRoute()
+
+// Apply category filter from query parameter (e.g. /encyclopedia?category=carnivore)
+watch(
+  () => route.query.category,
+  (cat) => {
+    const validCategories: DinosaurCategory[] = ['carnivore', 'herbivore', 'omnivore', 'flying-reptile', 'marine-reptile']
+    if (cat && typeof cat === 'string' && validCategories.includes(cat as DinosaurCategory)) {
+      store.setCategoryFilter(cat as DinosaurCategory)
+    } else if (!cat) {
+      store.setCategoryFilter(null)
+    }
+  },
+  { immediate: true },
+)
 
 // When navigating to /encyclopedia/:id, open the detail modal
 watch(
@@ -185,6 +208,19 @@ watch(
             :icon="chip.icon"
             :selected="store.sizeFilters.includes(chip.value)"
             @toggle="store.toggleSizeFilter(chip.value)"
+          />
+        </div>
+      </div>
+      <div>
+        <div class="text-label text-[var(--color-text-secondary)] mb-2">{{ t('ui.encyclopedia.category') }}</div>
+        <div class="flex flex-wrap gap-2">
+          <BaseChip
+            v-for="chip in categoryChips"
+            :key="chip.value"
+            :label="chip.label"
+            :icon="chip.icon"
+            :selected="store.categoryFilter === chip.value"
+            @toggle="store.toggleCategoryFilter(chip.value)"
           />
         </div>
       </div>
