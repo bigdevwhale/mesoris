@@ -21,6 +21,15 @@
       gtag('js', new Date());
       gtag('config', 'G-P9JCN6B5PX');
     </script>
+    <script>
+      // Restore path encoded by 404.html for GitHub Pages SPA routing
+      (function() {
+        var p = new URLSearchParams(window.location.search).get('p');
+        if (p) {
+          window.history.replaceState(null, '', decodeURIComponent(p));
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="app"></div>
