@@ -285,7 +285,7 @@ const mya = computed(() => t('ui.timeline.millionsOfYears'))
 
           <!-- Era dinosaurs -->
           <div v-if="eraDinos.length > 0">
-            <h3 class="text-sm font-semibold text-[var(--color-text-primary)] mb-4 flex items-center gap-2">
+            <h3 class="text-sm font-semibold text-[var(--color-text-primary)] pb-4 flex items-center gap-2">
               <BaseIcon name="footprints" :size="14" class="text-[var(--color-brand-amber)]" />
               {{ t('ui.timeline.dinosaursOfEra', { era: eraName(selectedEra) }) }}
             </h3>

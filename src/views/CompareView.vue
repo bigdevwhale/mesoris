@@ -72,7 +72,7 @@ watch(() => store.bothSelected, (selected) => {
     <!-- Selectors -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
       <div class="bg-[var(--color-bg-elevated)] border border-[var(--glass-border)] rounded-[var(--radius-xl)] p-6">
-        <h3 class="text-heading-md mb-4">{{ t('ui.compare.dinoA') }}</h3>
+        <h3 class="text-heading-md pb-4">{{ t('ui.compare.dinoA') }}</h3>
         <BaseSelect
           :model-value="store.dinoIdA ?? ''"
           :options="dinoOptions"
@@ -94,7 +94,7 @@ watch(() => store.bothSelected, (selected) => {
       </div>
 
       <div class="bg-[var(--color-bg-elevated)] border border-[var(--glass-border)] rounded-[var(--radius-xl)] p-6">
-        <h3 class="text-heading-md mb-4">{{ t('ui.compare.dinoB') }}</h3>
+        <h3 class="text-heading-md pb-4">{{ t('ui.compare.dinoB') }}</h3>
         <BaseSelect
           :model-value="store.dinoIdB ?? ''"
           :options="dinoOptions"

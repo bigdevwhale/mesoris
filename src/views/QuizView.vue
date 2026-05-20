@@ -15,7 +15,13 @@ const { localRoute } = useLocale()
 const gameStore = useGameStore()
 
 const TOTAL_QUESTIONS = 10
+
+function shuffleIndices(length: number): number[] {
+  return Array.from({ length }, (_, i) => i).sort(() => Math.random() - 0.5)
+}
+
 const selectedQuestions = ref(quizQuestions.sort(() => Math.random() - 0.5).slice(0, TOTAL_QUESTIONS))
+const shuffleOrders = ref(selectedQuestions.value.map(q => shuffleIndices(q.options.length)))
 const currentIdx = ref(0)
 const selectedAnswer = ref<number | null>(null)
 const answers = ref<number[]>([])
@@ -23,9 +29,15 @@ const showResult = ref(false)
 const gameComplete = ref(false)
 
 const currentQ = computed(() => selectedQuestions.value[currentIdx.value])
-const score = computed(() => answers.value.filter((a, i) => a === selectedQuestions.value[i].correctIndex).length)
+const currentShuffleOrder = computed(() => shuffleOrders.value[currentIdx.value])
+const currentCorrectIndex = computed(() => currentShuffleOrder.value.indexOf(currentQ.value?.correctIndex ?? 0))
+const score = computed(() => answers.value.filter((a, i) => {
+  const order = shuffleOrders.value[i]
+  const originalCorrect = selectedQuestions.value[i].correctIndex
+  return a === order.indexOf(originalCorrect)
+}).length)
 const isLast = computed(() => currentIdx.value === TOTAL_QUESTIONS - 1)
-const isCorrect = computed(() => selectedAnswer.value === currentQ.value?.correctIndex)
+const isCorrect = computed(() => selectedAnswer.value === currentCorrectIndex.value)
 
 const currentQuestion = computed(() => {
   if (!currentQ.value) return ''
@@ -38,12 +50,15 @@ const currentQuestion = computed(() => {
 })
 const currentOptions = computed(() => {
   if (!currentQ.value) return []
-  if (locale.value === 'it') return currentQ.value.optionsIt
-  if (locale.value === 'fr') return currentQ.value.optionsFr
-  if (locale.value === 'de') return currentQ.value.optionsDe
-  if (locale.value === 'es') return currentQ.value.optionsEs
-  if (locale.value === 'ru') return currentQ.value.optionsRu
-  return currentQ.value.options
+  const order = currentShuffleOrder.value
+  let opts: string[]
+  if (locale.value === 'it') opts = currentQ.value.optionsIt
+  else if (locale.value === 'fr') opts = currentQ.value.optionsFr
+  else if (locale.value === 'de') opts = currentQ.value.optionsDe
+  else if (locale.value === 'es') opts = currentQ.value.optionsEs
+  else if (locale.value === 'ru') opts = currentQ.value.optionsRu
+  else opts = currentQ.value.options
+  return order.map(i => opts[i])
 })
 const currentExplanation = computed(() => {
   if (!currentQ.value) return ''
@@ -73,6 +88,7 @@ function next() {
 
 function restart() {
   selectedQuestions.value = quizQuestions.sort(() => Math.random() - 0.5).slice(0, TOTAL_QUESTIONS)
+  shuffleOrders.value = selectedQuestions.value.map(q => shuffleIndices(q.options.length))
   currentIdx.value = 0
   selectedAnswer.value = null
   answers.value = []
@@ -131,10 +147,10 @@ function restart() {
             selectedAnswer === null
               ? 'border-[var(--glass-border)] bg-[var(--color-bg-elevated)] text-[var(--color-text-primary)] hover:border-[var(--color-brand-amber)] hover:bg-[rgba(212,164,58,0.06)]'
               : '',
-            selectedAnswer !== null && idx === currentQ.correctIndex
+            selectedAnswer !== null && idx === currentCorrectIndex
               ? 'border-[var(--color-success)] bg-[rgba(61,140,64,0.1)] text-[var(--color-success)]'
               : '',
-            selectedAnswer !== null && idx === selectedAnswer && idx !== currentQ.correctIndex
+            selectedAnswer !== null && idx === selectedAnswer && idx !== currentCorrectIndex
               ? 'border-[var(--color-error)] bg-[rgba(196,56,45,0.1)] text-[var(--color-error)]'
               : '',
           ]"
