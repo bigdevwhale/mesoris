@@ -120,7 +120,7 @@ onMounted(() => {
               {{ t('ui.home.badge') }}
             </div>
             <div class="hero-dino text-8xl mb-6 lg:hidden">🦖</div>
-            <h1 class="hero-title text-display-xl !mb-8">
+            <h1 class="hero-title text-display-xl !mb-4">
               <span class="bg-gradient-to-r from-[var(--color-brand-amber)] via-[var(--color-brand-ember)] to-[var(--color-brand-sand)] bg-clip-text text-transparent">
                 {{ t('ui.home.title') }}
               </span>
