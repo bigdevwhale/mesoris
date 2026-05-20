@@ -1,9 +1,11 @@
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
-import type { Era, Diet, SizeCategory, DinosaurCategory } from '@/types/dinosaur'
+import type { Era, Diet, SizeCategory, DinosaurCategory, Dinosaur } from '@/types/dinosaur'
 import { dinosaurs } from '@/data/dinosaurs'
 
 export type SortOption = 'name-asc' | 'name-desc' | 'era-asc' | 'size-desc'
+
+type DinosaurTranslation = Partial<Omit<Dinosaur, 'facts'>>
 
 export const useEncyclopediaStore = defineStore('encyclopedia', () => {
   const eraFilters = ref<Era[]>([])
@@ -16,6 +18,34 @@ export const useEncyclopediaStore = defineStore('encyclopedia', () => {
   const itemsPerPage = 8
   const selectedDinoId = ref<string | null>(null)
   const isModalOpen = ref(false)
+
+  // Translation support for searching across locales
+  const locale = ref('en')
+  const translationCache = ref<Record<string, Record<string, DinosaurTranslation>>>({})
+
+  async function setLocale(newLocale: string) {
+    locale.value = newLocale
+    if (newLocale !== 'en' && !translationCache.value[newLocale]) {
+      try {
+        const m = await import(`@/locales/${newLocale}/dinosaurs/index.ts`)
+        translationCache.value = {
+          ...translationCache.value,
+          [newLocale]: (m as { default: Record<string, DinosaurTranslation> }).default,
+        }
+      } catch {
+        // Locale has no dinosaur translations; search will fall back to English fields
+      }
+    }
+  }
+
+  function getTranslatedField(d: Dinosaur, field: 'name' | 'description'): string {
+    if (locale.value === 'en') return String(d[field] ?? '')
+    const translations = translationCache.value[locale.value]
+    if (!translations) return String(d[field] ?? '')
+    const t = translations[d.id] ?? translations[d.slug]
+    if (!t) return String(d[field] ?? '')
+    return String(t[field] ?? d[field] ?? '')
+  }
 
   const hasActiveFilters = computed(() =>
     eraFilters.value.length > 0 || dietFilters.value.length > 0 || sizeFilters.value.length > 0 || categoryFilter.value !== null
@@ -37,14 +67,14 @@ export const useEncyclopediaStore = defineStore('encyclopedia', () => {
       result = result.filter(d => d.category === categoryFilter.value)
     }
 
-    const query = searchQuery.value.toLowerCase().trim()
+    const query = searchQuery.value.toLocaleLowerCase().trim()
     if (query) {
       result = result.filter(d =>
-        d.name.toLowerCase().includes(query) ||
-        d.description.toLowerCase().includes(query) ||
-        d.era.toLowerCase().includes(query) ||
-        d.diet.toLowerCase().includes(query) ||
-        d.habitat.toLowerCase().includes(query)
+        getTranslatedField(d, 'name').toLocaleLowerCase().includes(query) ||
+        getTranslatedField(d, 'description').toLocaleLowerCase().includes(query) ||
+        d.era.toLocaleLowerCase().includes(query) ||
+        d.diet.toLocaleLowerCase().includes(query) ||
+        d.habitat.toLocaleLowerCase().includes(query)
       )
     }
 
@@ -138,5 +168,6 @@ export const useEncyclopediaStore = defineStore('encyclopedia', () => {
     hasActiveFilters, filteredDinosaurs, totalPages, paginatedDinosaurs,
     toggleEraFilter, toggleDietFilter, toggleSizeFilter, clearFilters,
     setSearch, setCategoryFilter, toggleCategoryFilter, setSort, setPage, openDetail, closeDetail,
+    setLocale,
   }
 })

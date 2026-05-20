@@ -21,10 +21,12 @@ import DinoCardImage from '@/components/ui/DinoCardImage.vue'
 import ModeSwitcher from '@/components/layout/ModeSwitcher.vue'
 import SeoHead from '@/components/layout/SeoHead.vue'
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
 const store = useEncyclopediaStore()
 const modeStore = useModeStore()
 const { translateDino } = useDinoTranslator()
+
+watch(locale, (loc) => store.setLocale(loc), { immediate: true })
 
 const ERA_ACCENT: Record<string, string> = {
   triassic: '#a855f7',

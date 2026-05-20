@@ -1,5 +1,5 @@
 export default {
-    name: 'Тираннозаврекс',
+    name: 'Тираннозавр Рекс',
     displayName: 'Тираннозавр Рекс',
     pronunciation: 'ти-ран-но-ЗАВР рекс',
     nameMeaning: '«Королевский ящер-тиран»',

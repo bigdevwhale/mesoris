@@ -19,21 +19,26 @@ const query = ref('')
 const inputRef = ref<HTMLInputElement>()
 const panelRef = ref<HTMLElement | null>(null)
 
-const results = ref<typeof dinosaurs>([])
-const translatedResults = computed(() => results.value.map(translateDino))
+const allTranslated = computed(() => dinosaurs.map(translateDino))
 
-watch(query, (q) => {
-  if (!q.trim()) {
-    results.value = []
-    return
-  }
-  const lower = q.toLowerCase()
-  results.value = dinosaurs.filter(d =>
-    d.name.toLowerCase().includes(lower) ||
-    d.description.toLowerCase().includes(lower) ||
-    d.kidsDescription.toLowerCase().includes(lower) ||
-    d.nameMeaning.toLowerCase().includes(lower)
-  ).slice(0, 5)
+const results = computed(() => {
+  if (!query.value.trim()) return []
+  const lower = query.value.toLocaleLowerCase()
+  return allTranslated.value
+    .filter(d =>
+      d.name.toLocaleLowerCase().includes(lower) ||
+      d.description.toLocaleLowerCase().includes(lower) ||
+      d.kidsDescription.toLocaleLowerCase().includes(lower) ||
+      d.nameMeaning.toLocaleLowerCase().includes(lower)
+    )
+    .sort((a, b) => {
+      const aName = a.name.toLocaleLowerCase().includes(lower)
+      const bName = b.name.toLocaleLowerCase().includes(lower)
+      if (aName && !bName) return -1
+      if (!aName && bName) return 1
+      return 0
+    })
+    .slice(0, 5)
 })
 
 function navigateTo(id: string) {
@@ -75,7 +80,6 @@ watch(() => props.isOpen, async (isOpen) => {
     inputRef.value?.focus()
   } else {
     query.value = ''
-    results.value = []
   }
 })
 
@@ -129,7 +133,7 @@ onUnmounted(() => {
           </div>
           <div v-if="results.length > 0" class="py-2">
             <button
-              v-for="dino in translatedResults"
+              v-for="dino in results"
               :key="dino.id"
               class="w-full flex items-center gap-3 px-5 py-3 text-left hover:bg-[rgba(212,164,58,0.06)] focus-visible:bg-[rgba(212,164,58,0.08)] transition-colors"
               @click="navigateTo(dino.id)"
