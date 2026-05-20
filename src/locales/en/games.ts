@@ -70,6 +70,16 @@ export default {
     title: 'Skeleton Builder',
     description: 'Assemble the dinosaur skeleton!',
   },
+  runnerGame: {
+    title: 'Dino Runner',
+    hint: 'Jump over rocks and dodge pterodactyls — how far can you go?',
+    tapToStart: 'Press SPACE, ↑, or tap to start',
+    gameOver: 'GAME OVER',
+    tapToRestart: 'Press SPACE, ↑, or tap to restart',
+    controlsKey: 'Space / ↑ to jump',
+    controlsTap: 'Tap to jump',
+    controlsDouble: 'Double jump allowed',
+  },
   hub: {
     title: 'Dinosaur Games',
     description: 'Play and learn about dinosaurs through interactive games',

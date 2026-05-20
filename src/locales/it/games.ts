@@ -70,6 +70,16 @@ export default {
     title: 'Costruttore di Scheletri',
     description: 'Assembla lo scheletro del dinosauro!',
   },
+  runnerGame: {
+    title: 'Corsa del Dinosauro',
+    hint: 'Salta le rocce e schiva i pterodattili — fin dove arriverai?',
+    tapToStart: 'Premi SPAZIO, ↑ o tocca per iniziare',
+    gameOver: 'PARTITA FINITA',
+    tapToRestart: 'Premi SPAZIO, ↑ o tocca per ricominciare',
+    controlsKey: 'Spazio / ↑ per saltare',
+    controlsTap: 'Tocca per saltare',
+    controlsDouble: 'Doppio salto disponibile',
+  },
   hub: {
     title: 'Giochi di Dinosauri',
     description: 'Gioca e impara sui dinosauri attraverso giochi interattivi',

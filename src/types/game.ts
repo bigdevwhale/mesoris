@@ -1,6 +1,6 @@
 import type { RouteLocationRaw } from 'vue-router'
 
-export type GameType = 'quiz' | 'puzzle' | 'excavation' | 'skeleton' | 'memory'
+export type GameType = 'quiz' | 'puzzle' | 'excavation' | 'skeleton' | 'memory' | 'runner'
 
 export interface GameDefinition {
   id: string

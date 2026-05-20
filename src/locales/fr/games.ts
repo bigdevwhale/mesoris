@@ -70,6 +70,16 @@ export default {
     title: 'Constructeur de Squelette',
     description: 'Assemblez le squelette du dinosaure !',
   },
+  runnerGame: {
+    title: 'Course du Dinosaure',
+    hint: 'Sautez par-dessus les rochers et esquivez les ptérodactyles — jusqu\'où irez-vous ?',
+    tapToStart: 'Appuyez sur ESPACE, ↑ ou touchez pour démarrer',
+    gameOver: 'FIN DE PARTIE',
+    tapToRestart: 'Appuyez sur ESPACE, ↑ ou touchez pour recommencer',
+    controlsKey: 'Espace / ↑ pour sauter',
+    controlsTap: 'Toucher pour sauter',
+    controlsDouble: 'Double saut disponible',
+  },
   hub: {
     title: 'Jeux de Dinosaures',
     description: 'Jouez et apprenez sur les dinosaures a travers des jeux interactifs',

@@ -70,6 +70,16 @@ export default {
     title: 'Skelett-Bauer',
     description: 'Baue das Dinosaurier-Skelett zusammen!',
   },
+  runnerGame: {
+    title: 'Dino-Lauf',
+    hint: 'Spring uber Felsen und weiche Pterodaktylen aus — wie weit kommst du?',
+    tapToStart: 'Leertaste, ↑ drucken oder tippen zum Starten',
+    gameOver: 'SPIEL VORBEI',
+    tapToRestart: 'Leertaste, ↑ drucken oder tippen zum Neustart',
+    controlsKey: 'Leertaste / ↑ zum Springen',
+    controlsTap: 'Tippen zum Springen',
+    controlsDouble: 'Doppelsprung moglich',
+  },
   hub: {
     title: 'Dinosaurier-Spiele',
     description: 'Spiele und lerne uber Dinosaurier durch interaktive Spiele',

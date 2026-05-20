@@ -70,6 +70,16 @@ export default {
     title: 'Constructor de Esqueletos',
     description: '¡Ensambla el esqueleto del dinosaurio!',
   },
+  runnerGame: {
+    title: 'Carrera del Dinosaurio',
+    hint: '¡Salta rocas y esquiva pterodáctilos — hasta dónde llegarás?',
+    tapToStart: 'Presiona ESPACIO, ↑ o toca para empezar',
+    gameOver: 'FIN DEL JUEGO',
+    tapToRestart: 'Presiona ESPACIO, ↑ o toca para reiniciar',
+    controlsKey: 'Espacio / ↑ para saltar',
+    controlsTap: 'Toca para saltar',
+    controlsDouble: 'Doble salto disponible',
+  },
   hub: {
     title: 'Juegos de Dinosaurios',
     description: 'Juega y aprende sobre dinosaurios con juegos interactivos',
