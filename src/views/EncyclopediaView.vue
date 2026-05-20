@@ -416,7 +416,7 @@ watch(
             </div>
 
             <div class="space-y-3 mb-6">
-              <h4 class="text-sm font-semibold text-[var(--color-text-primary)]">{{ t('ui.encyclopedia.keyFacts') }}</h4>
+              <h4 class="text-sm font-semibold text-[var(--color-text-primary)] !mb-2">{{ t('ui.encyclopedia.keyFacts') }}</h4>
               <div v-for="fact in dinoDetail.facts" :key="fact.label" class="flex items-start gap-3">
                 <BaseIcon :name="fact.icon" :size="16" class="text-[var(--color-brand-amber)] mt-0.5 shrink-0" />
                 <div>
