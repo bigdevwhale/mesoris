@@ -77,7 +77,7 @@ function clickTile(index: number) {
       <span class="text-sm text-[var(--color-text-secondary)]">{{ t('games.puzzleGame.moves', { count: moves }) }}</span>
     </div>
 
-    <h1 class="text-display-md mb-6 text-center">{{ t('games.puzzleGame.title') }}</h1>
+    <h1 class="text-display-md pb-6 text-center">{{ t('games.puzzleGame.title') }}</h1>
 
     <!-- Difficulty Selector -->
     <div class="flex justify-center gap-2 mb-8">

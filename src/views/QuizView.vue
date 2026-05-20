@@ -133,7 +133,7 @@ function restart() {
       </div>
 
       <!-- Question -->
-      <h2 class="text-heading-lg mb-6">{{ currentQuestion }}</h2>
+      <h2 class="text-heading-lg pb-6">{{ currentQuestion }}</h2>
 
       <!-- Options -->
       <div class="space-y-3 mb-8">
