@@ -58,6 +58,14 @@ export default {
     openCard: 'Открыть карточку',
     keepBrushing: 'Продолжайте смахивать песок!',
   },
+  memoryGame: {
+    title: 'Найди пару',
+    description: 'Найдите пары одинаковых карточек с динозаврами!',
+    moves: 'Ходы: {count}',
+    solved: 'Вы очистили поле за {moves} ходов!',
+    complete: 'Поле очищено!',
+    playAgain: 'Играть снова',
+  },
   skeletonGame: {
     title: 'Собери скелет',
     description: 'Соберите скелет динозавра!',

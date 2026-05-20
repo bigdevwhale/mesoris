@@ -58,6 +58,14 @@ export default {
     openCard: 'Ouvrir la fiche',
     keepBrushing: 'Continuez a brosser pour decouvrir plus !',
   },
+  memoryGame: {
+    title: 'Memory Dinosaures',
+    description: 'Trouvez des paires de cartes de dinosaures !',
+    moves: 'Coups : {count}',
+    solved: 'Vous avez vide le plateau en {moves} coups !',
+    complete: 'Plateau Vide !',
+    playAgain: 'Rejouer',
+  },
   skeletonGame: {
     title: 'Constructeur de Squelette',
     description: 'Assemblez le squelette du dinosaure !',

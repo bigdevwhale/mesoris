@@ -58,6 +58,14 @@ export default {
     openCard: 'Open Full Card',
     keepBrushing: 'Keep brushing to reveal more!',
   },
+  memoryGame: {
+    title: 'Memory Match',
+    description: 'Find pairs of matching dinosaur cards!',
+    moves: 'Moves: {count}',
+    solved: 'You cleared the board in {moves} moves!',
+    complete: 'Board Cleared!',
+    playAgain: 'Play Again',
+  },
   skeletonGame: {
     title: 'Skeleton Builder',
     description: 'Assemble the dinosaur skeleton!',

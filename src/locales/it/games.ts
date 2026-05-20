@@ -58,6 +58,14 @@ export default {
     openCard: 'Apri la scheda',
     keepBrushing: 'Continua a spazzolare per scoprire di più!',
   },
+  memoryGame: {
+    title: 'Memory Dinosauri',
+    description: 'Trova coppie di carte di dinosauri!',
+    moves: 'Mosse: {count}',
+    solved: 'Hai liberato il tabellone in {moves} mosse!',
+    complete: 'Tabellone Liberato!',
+    playAgain: 'Gioca ancora',
+  },
   skeletonGame: {
     title: 'Costruttore di Scheletri',
     description: 'Assembla lo scheletro del dinosauro!',

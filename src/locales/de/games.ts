@@ -58,6 +58,14 @@ export default {
     openCard: 'Volle Karte offnen',
     keepBrushing: 'Burste weiter, um mehr zu entdecken!',
   },
+  memoryGame: {
+    title: 'Dino-Memo',
+    description: 'Finde passende Dinosaurier-Kartenpaare!',
+    moves: 'Zuge: {count}',
+    solved: 'Du hast das Spielfeld in {moves} Zugen abgeraumt!',
+    complete: 'Spielfeld Abgeraumt!',
+    playAgain: 'Nochmal spielen',
+  },
   skeletonGame: {
     title: 'Skelett-Bauer',
     description: 'Baue das Dinosaurier-Skelett zusammen!',

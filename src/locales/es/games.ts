@@ -58,6 +58,14 @@ export default {
     openCard: 'Abrir Ficha Completa',
     keepBrushing: '¡Sigue cepillando para revelar mas!',
   },
+  memoryGame: {
+    title: 'Memoria',
+    description: '¡Encuentra pares de cartas de dinosaurios!',
+    moves: 'Movimientos: {count}',
+    solved: '¡Despejaste el tablero en {moves} movimientos!',
+    complete: '¡Tablero Despejado!',
+    playAgain: 'Jugar de Nuevo',
+  },
   skeletonGame: {
     title: 'Constructor de Esqueletos',
     description: '¡Ensambla el esqueleto del dinosaurio!',
