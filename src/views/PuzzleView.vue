@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-import { dinosaurs } from '@/data/dinosaurs'
 import { useGameStore } from '@/stores/useGameStore'
 import { useI18n } from 'vue-i18n'
 import { useLocale } from '@/composables/useLocale'
 import { useDinoTranslator } from '@/composables/useDinoTranslation'
+import { useRecentDinos } from '@/composables/useRecentDinos'
 import BaseButton from '@/components/ui/BaseButton.vue'
 import BaseLazyImage from '@/components/ui/BaseLazyImage.vue'
 import SeoHead from '@/components/layout/SeoHead.vue'
@@ -14,12 +14,15 @@ const { t } = useI18n()
 const { localRoute } = useLocale()
 const { translateDino } = useDinoTranslator()
 const gameStore = useGameStore()
+const { pickRandomDino } = useRecentDinos()
 
-function randomDino() { return dinosaurs[Math.floor(Math.random() * dinosaurs.length)] }
-const dino = ref(randomDino())
+const dino = ref(pickRandomDino())
 const translatedDino = computed(() => translateDino(dino.value))
-const gridSize = 3
-const tileCount = gridSize * gridSize
+type Difficulty = 'easy' | 'medium' | 'hard'
+const difficultyMap: Record<Difficulty, number> = { easy: 3, medium: 4, hard: 5 }
+const difficulty = ref<Difficulty>('easy')
+const gridSize = computed(() => difficultyMap[difficulty.value])
+const tileCount = computed(() => gridSize.value * gridSize.value)
 const moves = ref(0)
 const completed = ref(false)
 
@@ -28,8 +31,8 @@ const tiles = ref<Tile[]>([])
 const selectedTile = ref<number | null>(null)
 
 function initPuzzle() {
-  dino.value = randomDino()
-  const arr: Tile[] = Array.from({ length: tileCount }, (_, i) => ({ id: i, pos: i }))
+  dino.value = pickRandomDino()
+  const arr: Tile[] = Array.from({ length: tileCount.value }, (_, i) => ({ id: i, pos: i }))
   for (let i = arr.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [arr[i].pos, arr[j].pos] = [arr[j].pos, arr[i].pos]
@@ -74,14 +77,30 @@ function clickTile(index: number) {
       <span class="text-sm text-[var(--color-text-secondary)]">{{ t('games.puzzleGame.moves', { count: moves }) }}</span>
     </div>
 
-    <h1 class="text-display-md mb-8 text-center">{{ t('games.puzzleGame.title') }}</h1>
+    <h1 class="text-display-md mb-6 text-center">{{ t('games.puzzleGame.title') }}</h1>
+
+    <!-- Difficulty Selector -->
+    <div class="flex justify-center gap-2 mb-8">
+      <button
+        v-for="lvl in (['easy', 'medium', 'hard'] as const)"
+        :key="lvl"
+        type="button"
+        class="px-4 py-1.5 text-sm font-semibold rounded-full border transition-all duration-200"
+        :class="difficulty === lvl
+          ? 'bg-[var(--color-brand-amber)] text-black border-[var(--color-brand-amber)]'
+          : 'bg-[var(--color-bg-elevated)] text-[var(--color-text-secondary)] border-[var(--glass-border)] hover:border-[var(--color-text-tertiary)]'"
+        @click="difficulty = lvl; initPuzzle()"
+      >
+        {{ t('games.difficulty.' + lvl) }} ({{ difficultyMap[lvl] }}x{{ difficultyMap[lvl] }})
+      </button>
+    </div>
     <SeoHead
       title="Dino Puzzle — Solve the Picture"
       description="Solve a sliding puzzle featuring dinosaur illustrations. Swap tiles to reconstruct the picture in as few moves as possible."
     />
 
     <!-- Puzzle Grid -->
-    <div v-if="!completed" class="grid grid-cols-3 gap-1.5 mb-8">
+    <div v-if="!completed" class="grid gap-1.5 mb-8" :style="{ gridTemplateColumns: `repeat(${gridSize}, 1fr)` }">
       <button
         v-for="i in tileCount"
         :key="i"

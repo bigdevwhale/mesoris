@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue'
-import { dinosaurs } from '@/data/dinosaurs'
 import { useGameStore } from '@/stores/useGameStore'
 import { useDinoTranslator } from '@/composables/useDinoTranslation'
 import { useLocale } from '@/composables/useLocale'
 import { useI18n } from 'vue-i18n'
+import { useRecentDinos } from '@/composables/useRecentDinos'
 import BaseButton from '@/components/ui/BaseButton.vue'
 import BaseIcon from '@/components/ui/BaseIcon.vue'
 import BaseLazyImage from '@/components/ui/BaseLazyImage.vue'
@@ -15,9 +15,9 @@ const { t, locale } = useI18n()
 const { localRoute } = useLocale()
 const gameStore = useGameStore()
 const { translateDino } = useDinoTranslator()
+const { pickRandomDino } = useRecentDinos()
 
-function randomDino() { return dinosaurs[Math.floor(Math.random() * dinosaurs.length)] }
-const dino = ref(randomDino())
+const dino = ref(pickRandomDino())
 const translatedDino = computed(() => translateDino(dino.value))
 
 // Era and diet translated via encyclopedia i18n keys
@@ -99,7 +99,7 @@ function stopBrush() { isDrawing.value = false }
 
 function restart() {
   if (!imgCtx || !sandCtx) return
-  dino.value = randomDino()
+  dino.value = pickRandomDino()
   imgCtx.clearRect(0, 0, W, H)
   loadDinoImage(imgCtx)
   fillSand()
