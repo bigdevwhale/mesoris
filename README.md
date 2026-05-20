@@ -49,7 +49,7 @@
   <tr>
     <td>
       <h3>Quiz</h3>
-      <p>Test your knowledge across 100+ questions spanning three difficulty levels. Full multi-language support with explanations for every answer.</p>
+      <p>Test your knowledge across 30 questions spanning three difficulty levels. Full multi-language support with explanations for every answer.</p>
     </td>
     <td>
       <h3>Puzzle</h3>
