@@ -1,8 +1,5 @@
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bigdevwhale/dinosaurs/master/public/favicon.svg">
-    <img src="https://raw.githubusercontent.com/bigdevwhale/dinosaurs/master/public/favicon.svg" width="120" alt="Dinosaurs logo">
-  </picture>
+  <span style="font-size: 96px;">🦖</span>
 </p>
 
 <h1 align="center">Dinosaurs</h1>
@@ -157,3 +154,5 @@ src/
 ## License
 
 MIT — explore, fork, learn, and build your own thing.
+
+

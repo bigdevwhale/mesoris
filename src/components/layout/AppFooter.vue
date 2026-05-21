@@ -54,10 +54,10 @@ const { localRoute } = useLocale()
       <div class="mt-10 pt-6 border-t border-[var(--glass-border)] flex flex-col sm:flex-row items-center justify-between gap-4">
         <p class="text-body-sm">{{ t('ui.footer.copyright', { year: new Date().getFullYear() }) }}</p>
         <div class="flex items-center gap-4">
-          <a href="#" class="text-[var(--color-text-tertiary)] hover:text-[var(--color-brand-amber)] transition-colors" aria-label="GitHub">
+          <a href="https://github.com/bigdevwhale/mesoris" target="_blank" rel="noopener" class="text-[var(--color-text-tertiary)] hover:text-[var(--color-brand-amber)] transition-colors" aria-label="GitHub">
             <BaseIcon name="github" :size="18" />
           </a>
-          <a href="#" class="text-[var(--color-text-tertiary)] hover:text-[var(--color-brand-amber)] transition-colors" aria-label="Twitter">
+          <a href="https://x.com/Mesoris_com" target="_blank" rel="noopener" class="text-[var(--color-text-tertiary)] hover:text-[var(--color-brand-amber)] transition-colors" aria-label="Twitter">
             <BaseIcon name="twitter" :size="18" />
           </a>
         </div>
