@@ -1,5 +1,5 @@
 <p align="center">
-  <span style="font-size: 96px;">🦖</span>
+  <span style="font-size: 128px;">🦖</span>
 </p>
 
 <h1 align="center">Dinosaurs</h1>
