@@ -3,6 +3,9 @@ export default {
   puzzle: 'Пазл',
   excavation: 'Раскопки',
   skeleton: 'Скелет',
+  memory: 'Мемори',
+  runner: 'Бег',
+  personality: 'Какой ты динозавр?',
   difficulty: {
     easy: 'Лёгкий',
     medium: 'Средний',
@@ -85,5 +88,15 @@ export default {
     description: 'Играйте и узнавайте новое о динозаврах',
     comingSoon: 'Скоро',
     play: 'Играть',
+  },
+  personalityGame: {
+    title: 'Какой ты динозавр?',
+    description: 'Ответь на 10 вопросов о своей личности и узнай своего внутреннего динозавра!',
+    start: 'Начать тест',
+    question: 'Вопрос {current} из {total}',
+    yourResult: 'Ты — ...',
+    funFact: 'Интересный факт',
+    playAgain: 'Пройти снова',
+    backToGames: 'К играм',
   },
 }

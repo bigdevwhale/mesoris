@@ -3,6 +3,9 @@ export default {
   puzzle: 'Puzzle',
   excavation: 'Excavation',
   skeleton: 'Skeleton',
+  memory: 'Memory',
+  runner: 'Runner',
+  personality: 'Which Dino Are You?',
   difficulty: {
     easy: 'Easy',
     medium: 'Medium',
@@ -85,5 +88,15 @@ export default {
     description: 'Play and learn about dinosaurs through interactive games',
     comingSoon: 'Coming Soon',
     play: 'Play',
+  },
+  personalityGame: {
+    title: 'Which Dinosaur Are You?',
+    description: 'Answer 10 personality questions and discover your inner dinosaur!',
+    start: 'Start Quiz',
+    question: 'Question {current} of {total}',
+    yourResult: "You're a...",
+    funFact: 'Fun Fact',
+    playAgain: 'Take Again',
+    backToGames: 'Back to Games',
   },
 }

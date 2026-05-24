@@ -3,6 +3,9 @@ export default {
   puzzle: 'Puzzle',
   excavation: 'Ausgrabung',
   skeleton: 'Skelett',
+  memory: 'Memo',
+  runner: 'Runner',
+  personality: 'Welcher Dino Bist Du?',
   difficulty: {
     easy: 'Leicht',
     medium: 'Mittel',
@@ -85,5 +88,15 @@ export default {
     description: 'Spiele und lerne uber Dinosaurier durch interaktive Spiele',
     comingSoon: 'Demnachst',
     play: 'Spielen',
+  },
+  personalityGame: {
+    title: 'Welcher Dinosaurier Bist Du?',
+    description: 'Beantworte 10 Persönlichkeitsfragen und entdecke deinen inneren Dinosaurier!',
+    start: 'Quiz Starten',
+    question: 'Frage {current} von {total}',
+    yourResult: 'Du bist ein...',
+    funFact: 'Interessante Tatsache',
+    playAgain: 'Nochmal Machen',
+    backToGames: 'Zurück zu Spielen',
   },
 }

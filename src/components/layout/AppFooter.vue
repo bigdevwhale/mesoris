@@ -37,7 +37,9 @@ const { localRoute } = useLocale()
             <router-link :to="localRoute({ name: 'quiz' })" class="text-body-sm hover:text-[var(--color-brand-amber)] transition-colors">{{ t('games.quiz') }}</router-link>
             <router-link :to="localRoute({ name: 'puzzle' })" class="text-body-sm hover:text-[var(--color-brand-amber)] transition-colors">{{ t('games.puzzle') }}</router-link>
             <router-link :to="localRoute({ name: 'excavation' })" class="text-body-sm hover:text-[var(--color-brand-amber)] transition-colors">{{ t('games.excavation') }}</router-link>
-            <router-link :to="localRoute({ name: 'excavation' })" class="text-body-sm hover:text-[var(--color-brand-amber)] transition-colors">{{ t('games.skeleton') }}</router-link>
+            <router-link :to="localRoute({ name: 'memory' })" class="text-body-sm hover:text-[var(--color-brand-amber)] transition-colors">{{ t('games.memory') }}</router-link>
+            <router-link :to="localRoute({ name: 'runner' })" class="text-body-sm hover:text-[var(--color-brand-amber)] transition-colors">{{ t('games.runner') }}</router-link>
+            <router-link :to="localRoute({ name: 'personality' })" class="text-body-sm hover:text-[var(--color-brand-amber)] transition-colors">{{ t('games.personality') }}</router-link>
           </nav>
         </div>
 

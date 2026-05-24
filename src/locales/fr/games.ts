@@ -3,6 +3,9 @@ export default {
   puzzle: 'Puzzle',
   excavation: 'Fouille',
   skeleton: 'Squelette',
+  memory: 'Memory',
+  runner: 'Course',
+  personality: 'Quel Dino Es-Tu ?',
   difficulty: {
     easy: 'Facile',
     medium: 'Moyen',
@@ -85,5 +88,15 @@ export default {
     description: 'Jouez et apprenez sur les dinosaures a travers des jeux interactifs',
     comingSoon: 'Bientot',
     play: 'Jouer',
+  },
+  personalityGame: {
+    title: 'Quel Dinosaure Es-Tu ?',
+    description: 'Réponds à 10 questions de personnalité et découvre ton dinosaure intérieur !',
+    start: 'Commencer le Quiz',
+    question: 'Question {current} sur {total}',
+    yourResult: 'Tu es un...',
+    funFact: 'Le Saviez-Vous ?',
+    playAgain: 'Recommencer',
+    backToGames: 'Retour aux Jeux',
   },
 }
