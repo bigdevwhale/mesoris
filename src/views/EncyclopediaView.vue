@@ -13,13 +13,12 @@ import BaseSelect from '@/components/ui/BaseSelect.vue'
 import BaseChip from '@/components/ui/BaseChip.vue'
 import BaseButton from '@/components/ui/BaseButton.vue'
 import BaseEmptyState from '@/components/ui/BaseEmptyState.vue'
-import BaseModal from '@/components/ui/BaseModal.vue'
 import BaseIcon from '@/components/ui/BaseIcon.vue'
 import BaseProgressBar from '@/components/ui/BaseProgressBar.vue'
 import BaseLazyImage from '@/components/ui/BaseLazyImage.vue'
 import DinoCardImage from '@/components/ui/DinoCardImage.vue'
-import ModeSwitcher from '@/components/layout/ModeSwitcher.vue'
 import SeoHead from '@/components/layout/SeoHead.vue'
+import DinoDetailModal from '@/components/encyclopedia/DinoDetailModal.vue'
 
 const { t, locale } = useI18n()
 const store = useEncyclopediaStore()
@@ -353,90 +352,11 @@ watch(
     </div>
 
     <!-- Detail Modal -->
-    <BaseModal
+    <DinoDetailModal
       :is-open="store.isModalOpen"
-      :title="dinoDetail?.name"
-      size="lg"
+      :dino="dinoDetail"
       @close="store.closeDetail()"
-    >
-      <template v-if="dinoDetail">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div>
-            <div class="aspect-[4/3] rounded-[var(--radius-md)] overflow-hidden mb-4">
-              <DinoCardImage
-                :dino="dinoDetail"
-                aspect-ratio="4/3"
-                :priority="true"
-                class="w-full h-full"
-              />
-            </div>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="px-3 py-1 text-sm font-semibold rounded-full bg-[rgba(212,164,58,0.12)] text-[var(--color-brand-amber)]">{{ t(`ui.encyclopedia.${dinoDetail.era}`) }}</span>
-              <span class="px-3 py-1 text-sm font-semibold rounded-full bg-[rgba(232,93,44,0.1)] text-[var(--color-brand-ember)]">{{ t(`ui.encyclopedia.${dinoDetail.diet}`) }}</span>
-              <span class="px-3 py-1 text-sm font-semibold rounded-full bg-[rgba(139,58,42,0.1)] text-[var(--color-brand-lava)]">{{ t(`ui.encyclopedia.${dinoDetail.size}`) }}</span>
-            </div>
-          </div>
-          <div>
-            <h3 class="text-heading-md mb-1">{{ dinoDetail.nameMeaning }}</h3>
-            <p class="text-body-sm text-[var(--color-text-tertiary)] mb-4 italic">{{ dinoDetail.pronunciation }}</p>
-
-            <div class="flex items-center justify-between mb-3">
-              <span class="text-xs font-semibold uppercase tracking-wide text-[var(--color-text-tertiary)]">
-                {{ modeStore.isKidsMode ? t('ui.header.kidsMode') : t('ui.header.adultsMode') }}
-              </span>
-              <ModeSwitcher />
-            </div>
-            <p class="text-body-md mb-6">{{ modeStore.isKidsMode ? dinoDetail.kidsDescription : dinoDetail.description }}</p>
-
-            <div class="space-y-3 mb-6">
-              <div class="flex items-center gap-3">
-                <BaseIcon name="ruler" :size="16" class="text-[var(--color-text-tertiary)]" />
-                <span class="text-sm text-[var(--color-text-secondary)]">
-                  {{ t('ui.encyclopedia.dimensionsText', { length: dinoDetail.dimensions.lengthMeters, height: dinoDetail.dimensions.heightMeters }) }}
-                </span>
-              </div>
-              <div class="flex items-center gap-3">
-                <BaseIcon name="weight" :size="16" class="text-[var(--color-text-tertiary)]" />
-                <span class="text-sm text-[var(--color-text-secondary)]">
-                  {{ dinoDetail.dimensions.weightKg.toLocaleString() }} kg
-                </span>
-              </div>
-              <div class="flex items-center gap-3">
-                <BaseIcon name="zap" :size="16" class="text-[var(--color-text-tertiary)]" />
-                <span class="text-sm text-[var(--color-text-secondary)]">
-                  {{ t('ui.encyclopedia.speedText', { speed: dinoDetail.dimensions.speedKmh }) }}
-                </span>
-              </div>
-              <div class="flex items-center gap-3">
-                <BaseIcon name="map-pin" :size="16" class="text-[var(--color-text-tertiary)]" />
-                <span class="text-sm text-[var(--color-text-secondary)]">
-                  {{ dinoDetail.livedIn.map(loc => t(`ui.encyclopedia.locations.${loc}`, loc)).join(', ') }}
-                </span>
-              </div>
-            </div>
-
-            <div class="space-y-3 mb-6">
-              <h4 class="text-sm font-semibold text-[var(--color-text-primary)] !mb-2">{{ t('ui.encyclopedia.keyFacts') }}</h4>
-              <div v-for="fact in dinoDetail.facts" :key="fact.label" class="flex items-start gap-3">
-                <BaseIcon :name="fact.icon" :size="16" class="text-[var(--color-brand-amber)] mt-0.5 shrink-0" />
-                <div>
-                  <div class="text-sm font-medium text-[var(--color-text-primary)]">{{ fact.label }}: {{ fact.value }}</div>
-                  <div class="text-xs text-[var(--color-text-tertiary)]">{{ fact.description }}</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="p-4 rounded-[var(--radius-md)] bg-[rgba(212,164,58,0.06)] border border-[rgba(212,164,58,0.1)] mb-4">
-              <div class="text-xs font-semibold text-[var(--color-brand-amber)] mb-1">{{ t('ui.encyclopedia.funFact') }}</div>
-              <p class="text-sm text-[var(--color-text-secondary)]">{{ dinoDetail.funFact }}</p>
-            </div>
-
-            <BaseButton variant="ghost" size="sm" icon-right="arrow-right" @click="addToCompare(dinoDetail.id)">
-              {{ t('ui.encyclopedia.addToCompare') }}
-            </BaseButton>
-          </div>
-        </div>
-      </template>
-    </BaseModal>
+      @add-to-compare="addToCompare"
+    />
   </div>
 </template>

@@ -38,7 +38,7 @@ const dailyFacts = computed(() => {
     'Sauropods like Brachiosaurus could live over 100 years!',
   ]
 })
-const todayFact = computed(() => dailyFacts.value[new Date().getDay() % dailyFacts.value.length])
+const todayFact = computed(() => dailyFacts.value[Math.floor(Math.random() * dailyFacts.value.length)])
 
 const categoryKeys = ['carnivore', 'herbivore', 'omnivore', 'flying-reptile', 'marine-reptile'] as const
 const categoryIconMap: Record<string, string> = {

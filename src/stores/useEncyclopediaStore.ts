@@ -131,6 +131,7 @@ export const useEncyclopediaStore = defineStore('encyclopedia', () => {
   }
 
   function setCategoryFilter(category: DinosaurCategory | null) {
+    if (categoryFilter.value === category) return
     categoryFilter.value = category
     currentPage.value = 1
   }

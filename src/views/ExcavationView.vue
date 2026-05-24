@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue'
+import { useRouter } from 'vue-router'
 import { useGameStore } from '@/stores/useGameStore'
 import { useDinoTranslator } from '@/composables/useDinoTranslation'
 import { useLocale } from '@/composables/useLocale'
@@ -10,15 +11,24 @@ import BaseIcon from '@/components/ui/BaseIcon.vue'
 import BaseLazyImage from '@/components/ui/BaseLazyImage.vue'
 import SeoHead from '@/components/layout/SeoHead.vue'
 import BaseProgressBar from '@/components/ui/BaseProgressBar.vue'
+import DinoDetailModal from '@/components/encyclopedia/DinoDetailModal.vue'
 
 const { t, locale } = useI18n()
 const { localRoute } = useLocale()
 const gameStore = useGameStore()
 const { translateDino } = useDinoTranslator()
 const { pickRandomDino } = useRecentDinos()
+const router = useRouter()
 
 const dino = ref(pickRandomDino())
 const translatedDino = computed(() => translateDino(dino.value))
+const showDinoModal = ref(false)
+
+function openDinoCard() { showDinoModal.value = true }
+function onAddToCompare(id: string) {
+  showDinoModal.value = false
+  router.push(localRoute({ name: 'compare', query: { a: id } }))
+}
 
 // Era and diet translated via encyclopedia i18n keys
 const eraLabel = computed(() => t(`ui.encyclopedia.${translatedDino.value.era}`))
@@ -191,15 +201,17 @@ function restart() {
 
           <div class="flex gap-3">
             <BaseButton variant="primary" @click="restart">{{ t('games.excavationGame.digAgain') }}</BaseButton>
-            <router-link
-              :to="localRoute({ name: 'encyclopedia-detail', params: { id: dino.id } })"
-              class="inline-flex items-center justify-center gap-2 font-semibold rounded-full px-5 py-2.5 text-base border border-current text-[var(--color-brand-teal)] hover:bg-[rgba(45,122,140,0.1)] transition-all duration-200"
-            >
-              {{ t('games.excavationGame.openCard') }}
-            </router-link>
+            <BaseButton variant="ghost" @click="openDinoCard">{{ t('games.excavationGame.openCard') }}</BaseButton>
           </div>
         </div>
       </div>
     </div>
+
+    <DinoDetailModal
+      :is-open="showDinoModal"
+      :dino="translatedDino"
+      @close="showDinoModal = false"
+      @add-to-compare="onAddToCompare"
+    />
   </div>
 </template>

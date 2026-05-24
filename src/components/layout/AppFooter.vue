@@ -22,7 +22,7 @@ const { localRoute } = useLocale()
 
         <!-- Explore -->
         <div>
-          <h4 class="text-sm font-semibold text-[var(--color-text-primary)] mb-3">{{ t('ui.nav.encyclopedia') }}</h4>
+          <h4 class="text-sm font-semibold text-[var(--color-text-primary)] pb-3">{{ t('ui.nav.encyclopedia') }}</h4>
           <nav class="flex flex-col gap-2">
             <router-link :to="localRoute({ name: 'encyclopedia' })" class="text-body-sm hover:text-[var(--color-brand-amber)] transition-colors">{{ t('ui.footer.encyclopedia') }}</router-link>
             <router-link :to="localRoute({ name: 'timeline' })" class="text-body-sm hover:text-[var(--color-brand-amber)] transition-colors">{{ t('ui.footer.timeline') }}</router-link>
@@ -32,7 +32,7 @@ const { localRoute } = useLocale()
 
         <!-- Play -->
         <div>
-          <h4 class="text-sm font-semibold text-[var(--color-text-primary)] mb-3">{{ t('ui.footer.play') }}</h4>
+          <h4 class="text-sm font-semibold text-[var(--color-text-primary)] pb-3">{{ t('ui.footer.play') }}</h4>
           <nav class="flex flex-col gap-2">
             <router-link :to="localRoute({ name: 'quiz' })" class="text-body-sm hover:text-[var(--color-brand-amber)] transition-colors">{{ t('games.quiz') }}</router-link>
             <router-link :to="localRoute({ name: 'puzzle' })" class="text-body-sm hover:text-[var(--color-brand-amber)] transition-colors">{{ t('games.puzzle') }}</router-link>
@@ -45,7 +45,7 @@ const { localRoute } = useLocale()
 
         <!-- Learn -->
         <div>
-          <h4 class="text-sm font-semibold text-[var(--color-text-primary)] mb-3">{{ t('ui.footer.learn') }}</h4>
+          <h4 class="text-sm font-semibold text-[var(--color-text-primary)] pb-3">{{ t('ui.footer.learn') }}</h4>
           <nav class="flex flex-col gap-2">
             <router-link :to="localRoute({ name: 'science' })" class="text-body-sm hover:text-[var(--color-brand-amber)] transition-colors">{{ t('ui.footer.scienceCenter') }}</router-link>
             <router-link :to="localRoute({ name: 'about' })" class="text-body-sm hover:text-[var(--color-brand-amber)] transition-colors">{{ t('ui.footer.about') }}</router-link>
