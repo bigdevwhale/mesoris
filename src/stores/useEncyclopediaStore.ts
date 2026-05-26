@@ -79,8 +79,8 @@ export const useEncyclopediaStore = defineStore('encyclopedia', () => {
     }
 
     switch (sortBy.value) {
-      case 'name-asc': result.sort((a, b) => a.name.localeCompare(b.name)); break
-      case 'name-desc': result.sort((a, b) => b.name.localeCompare(a.name)); break
+      case 'name-asc': result.sort((a, b) => getTranslatedField(a, 'name').localeCompare(getTranslatedField(b, 'name'))); break
+      case 'name-desc': result.sort((a, b) => getTranslatedField(b, 'name').localeCompare(getTranslatedField(a, 'name'))); break
       case 'era-asc': result.sort((a, b) => a.periodRangeMya[0] - b.periodRangeMya[0]); break
       case 'size-desc': result.sort((a, b) => b.dimensions.weightKg - a.dimensions.weightKg); break
     }
