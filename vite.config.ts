@@ -11,7 +11,7 @@ export default defineConfig({
     tailwindcss(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'robots.txt', 'apple-touch-icon.png'],
+      includeAssets: ['favicon-32x32.png', 'favicon-16x16.png', 'robots.txt', 'apple-touch-icon.png'],
       manifest: {
         name: 'Mesoris — Interactive Prehistoric World',
         short_name: 'Mesoris',
