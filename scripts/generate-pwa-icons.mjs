@@ -10,12 +10,12 @@ const svgContent = readFileSync(join(root, 'public', 'favicon.svg'), 'utf-8')
 
 // Create a square SVG with padding and dark background
 function wrapSvg(size) {
-  const padding = Math.round(size * 0.15)
+  const padding = Math.round(size * 0.1)
   const inner = size - padding * 2
   return Buffer.from(`
     <svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}">
       <rect width="${size}" height="${size}" fill="#0f180f"/>
-      <svg x="${padding}" y="${padding}" width="${inner}" height="${inner}" viewBox="0 0 48 46">
+      <svg x="${padding}" y="${padding}" width="${inner}" height="${inner}" viewBox="0 0 100 100">
         ${svgContent.replace(/<svg[^>]*>/, '').replace('</svg>', '')}
       </svg>
     </svg>
