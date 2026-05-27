@@ -7,6 +7,7 @@ export default {
     compare: 'Confronta',
     science: 'Scienze',
     about: 'Informazioni',
+    more: 'Altro',
   },
   header: {
     kidsMode: 'Modalità Bambini',
