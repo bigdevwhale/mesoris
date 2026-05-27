@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted } from 'vue'
-import { useRouter } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useLocale } from '@/composables/useLocale'
 import BaseIcon from '@/components/ui/BaseIcon.vue'
@@ -8,7 +7,6 @@ import SeoHead from '@/components/layout/SeoHead.vue'
 
 const { t } = useI18n()
 const { localRoute } = useLocale()
-const router = useRouter()
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 type DinoKind  = 'trex' | 'triceratops' | 'diplodocus'
@@ -243,10 +241,19 @@ function newGame() {
   animState = 'walk'; stars = []; zzzs = []
 }
 
+const showExitConfirm = ref(false)
+
 function exitGame() {
-  if (phase.value === 'playing') save()
+  showExitConfirm.value = true
+}
+
+function confirmExit() {
+  showExitConfirm.value = false
   stopTick(); cancelAnimationFrame(raf); raf = 0
-  router.push(localRoute({ name: 'games' }))
+  localStorage.removeItem(SAVE_KEY)
+  phase.value = 'select'; age.value = 0; ticks.value = 0
+  hunger.value = 80; happiness.value = 80; energy.value = 80; health.value = 100
+  animState = 'walk'; stars = []; zzzs = []
 }
 
 function setAnim(state: AnimState, ms: number) {
@@ -1020,9 +1027,50 @@ onUnmounted(() => {
       <p class="text-center text-xs text-[var(--color-text-tertiary)]">{{ t('games.tamagotchiGame.hint') }}</p>
     </div>
   </div>
+
+  <!-- ══════ EXIT CONFIRMATION MODAL ══════ -->
+  <Teleport to="body">
+    <Transition name="modal">
+      <div v-if="showExitConfirm"
+           class="fixed inset-0 z-50 flex items-center justify-center p-4"
+           @click.self="showExitConfirm = false">
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" @click="showExitConfirm = false" />
+        <div class="relative z-10 w-full max-w-sm rounded-2xl border border-[var(--glass-border)]
+                    bg-[var(--color-bg-elevated)] shadow-2xl p-6 space-y-5 text-center">
+          <div class="text-4xl">🦕</div>
+          <h2 class="text-lg font-bold text-[var(--color-text-primary)]">
+            {{ t('games.tamagotchiGame.exitTitle') }}
+          </h2>
+          <p class="text-sm text-[var(--color-text-secondary)]">
+            {{ t('games.tamagotchiGame.exitDesc') }}
+          </p>
+          <div class="flex gap-3 justify-center">
+            <button
+              class="flex-1 py-2.5 rounded-xl font-semibold text-sm
+                     bg-[var(--color-bg-base)] border border-[var(--glass-border)]
+                     text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)]
+                     transition-all duration-200 active:scale-95"
+              @click="showExitConfirm = false">
+              {{ t('games.tamagotchiGame.exitCancel') }}
+            </button>
+            <button
+              class="flex-1 py-2.5 rounded-xl font-semibold text-sm text-white
+                     bg-gradient-to-r from-red-500 to-rose-600
+                     hover:from-red-400 hover:to-rose-500
+                     transition-all duration-200 active:scale-95"
+              @click="confirmExit">
+              {{ t('games.tamagotchiGame.exitConfirm') }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </Transition>
+  </Teleport>
 </template>
 
 <style scoped>
 .msg-enter-active, .msg-leave-active { transition: opacity 0.3s, transform 0.3s; }
 .msg-enter-from, .msg-leave-to       { opacity: 0; transform: translateY(-6px); }
+.modal-enter-active, .modal-leave-active { transition: opacity 0.2s, transform 0.2s; }
+.modal-enter-from, .modal-leave-to       { opacity: 0; transform: scale(0.92); }
 </style>
