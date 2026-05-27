@@ -13,6 +13,7 @@ type DinoKind  = 'trex' | 'triceratops' | 'diplodocus'
 type AnimState = 'walk' | 'eat' | 'play' | 'sleep' | 'dead'
 type Stage     = 'baby' | 'juvenile' | 'teen' | 'adult'
 type Phase     = 'select' | 'playing' | 'grown' | 'dead'
+type Difficulty = 'easy' | 'medium' | 'hard'
 
 // ─── Canvas ───────────────────────────────────────────────────────────────────
 const canvasRef = ref<HTMLCanvasElement | null>(null)
@@ -28,8 +29,9 @@ const ART_GROUND = 130  // y-coord where dino feet stand on art canvas
 const STAGE_SCALE: Record<Stage, number> = { baby: 1, juvenile: 2, teen: 2, adult: 3 }
 
 // ─── Reactive state ───────────────────────────────────────────────────────────
-const phase     = ref<Phase>('select')
-const dinoKind  = ref<DinoKind>('trex')
+const phase      = ref<Phase>('select')
+const dinoKind   = ref<DinoKind>('trex')
+const difficulty = ref<Difficulty>('medium')
 const hunger    = ref(80)
 const happiness = ref(80)
 const energy    = ref(80)
@@ -47,6 +49,14 @@ const stageName = computed<Stage>(() => {
 })
 
 const stageScale = computed(() => STAGE_SCALE[stageName.value])
+
+// Difficulty multipliers: [hungerDrain, happinessDrain, energyDrain, healthThreshold, healthDrain]
+const DIFF_PARAMS: Record<Difficulty, { dH: number; dHa: number; dE: number; hThr: number; hdrain: number }> = {
+  easy:   { dH: 1,   dHa: 0.5, dE: 0.5, hThr: 10, hdrain: 0.5 },
+  medium: { dH: 2,   dHa: 1,   dE: 1,   hThr: 20, hdrain: 1   },
+  hard:   { dH: 3.5, dHa: 2,   dE: 1.8, hThr: 30, hdrain: 2   },
+}
+const dp = computed(() => DIFF_PARAMS[difficulty.value])
 
 const stageLabel  = computed(() => t(`games.tamagotchiGame.stage${cap(stageName.value)}`))
 const stageEmoji  = computed(() => ({ baby:'🥚', juvenile:'🐣', teen:'🦎', adult:'🦕' }[stageName.value]))
@@ -133,7 +143,8 @@ function spawnStars() {
 // ─── Persistence ─────────────────────────────────────────────────────────────
 function save() {
   localStorage.setItem(SAVE_KEY, JSON.stringify({
-    kind: dinoKind.value, hunger: hunger.value, happiness: happiness.value,
+    kind: dinoKind.value, difficulty: difficulty.value,
+    hunger: hunger.value, happiness: happiness.value,
     energy: energy.value, health: health.value, age: age.value,
     ticks: ticks.value, phase: phase.value, savedAt: Date.now(),
   }))
@@ -145,6 +156,7 @@ function load(): boolean {
     if (!raw) return false
     const s = JSON.parse(raw)
     dinoKind.value  = s.kind       ?? 'trex'
+    difficulty.value = s.difficulty ?? 'medium'
     hunger.value    = s.hunger     ?? 80
     happiness.value = s.happiness  ?? 80
     energy.value    = s.energy     ?? 80
@@ -177,12 +189,13 @@ function applyTicks(n: number) {
     const prevHunger    = hunger.value
     const prevHappiness = happiness.value
     const prevEnergy    = energy.value
+    const d             = dp.value
 
-    hunger.value    = Math.max(0, hunger.value    - 2)
-    happiness.value = Math.max(0, happiness.value - 1)
-    if (animState !== 'sleep') energy.value = Math.max(0, energy.value - 1)
-    if (hunger.value < 20 || happiness.value < 20 || energy.value < 10)
-      health.value = Math.max(0, health.value - 1)
+    hunger.value    = Math.max(0, hunger.value    - d.dH)
+    happiness.value = Math.max(0, happiness.value - d.dHa)
+    if (animState !== 'sleep') energy.value = Math.max(0, energy.value - d.dE)
+    if (hunger.value < d.hThr || happiness.value < d.hThr || energy.value < d.hThr / 2)
+      health.value = Math.max(0, health.value - d.hdrain)
     if (hunger.value > 60 && happiness.value > 60)
       health.value = Math.min(100, health.value + 0.4)
 
@@ -206,8 +219,9 @@ function startTick() { tickTimer = setInterval(() => { applyTicks(1); save() }, 
 function stopTick()  { if (tickTimer) { clearInterval(tickTimer); tickTimer = null } }
 
 // ─── Actions ─────────────────────────────────────────────────────────────────
-function startGame(kind: DinoKind) {
-  dinoKind.value  = kind
+function startGame(kind: DinoKind, diff: Difficulty) {
+  dinoKind.value   = kind
+  difficulty.value = diff
   hunger.value    = 80; happiness.value = 80; energy.value = 80; health.value = 100
   age.value       = 0; ticks.value = 0; phase.value = 'playing'
   animState       = 'walk'; animTimer = 0; walkFrame = false; walkTimer = 0
@@ -911,40 +925,71 @@ onUnmounted(() => {
     </p>
 
     <!-- ══════ SELECT ══════ -->
-    <div v-if="phase === 'select'" class="space-y-6">
-      <p class="text-center text-lg font-semibold text-[var(--color-text-primary)]">
-        {{ t('games.tamagotchiGame.selectTitle') }}
-      </p>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
-        <button
-          v-for="opt in ([
-            { kind:'trex',        emoji:'🦖', gradient:'from-emerald-500 to-green-700',  ring:'ring-emerald-400' },
-            { kind:'triceratops', emoji:'🦏', gradient:'from-amber-500  to-yellow-700',  ring:'ring-amber-400'   },
-            { kind:'diplodocus',  emoji:'🦕', gradient:'from-teal-500   to-cyan-700',    ring:'ring-teal-400'    },
-          ] as const)"
-          :key="opt.kind"
-          class="group flex flex-col items-center gap-3 p-6 rounded-2xl border border-[var(--glass-border)]
-                 bg-[var(--color-bg-elevated)] shadow-[var(--shadow-card)]
-                 hover:-translate-y-1.5 hover:shadow-[var(--shadow-card-hover)]
-                 hover:ring-2 transition-all duration-200 cursor-pointer"
-          :class="opt.ring"
-          @click="startGame(opt.kind)"
-        >
-          <div class="w-20 h-20 rounded-xl bg-gradient-to-br flex items-center justify-center text-5xl shadow-lg"
-               :class="opt.gradient">
-            {{ opt.emoji }}
-          </div>
-          <span class="font-bold text-[var(--color-text-primary)]">
-            {{ t(`games.tamagotchiGame.kind${opt.kind.charAt(0).toUpperCase()+opt.kind.slice(1)}`) }}
-          </span>
-          <span class="text-xs text-center text-[var(--color-text-secondary)] leading-relaxed">
-            {{ t(`games.tamagotchiGame.kind${opt.kind.charAt(0).toUpperCase()+opt.kind.slice(1)}Desc`) }}
-          </span>
-          <span class="mt-1 px-5 py-1.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r shadow"
-                :class="opt.gradient">
-            {{ t('games.tamagotchiGame.select') }}
-          </span>
-        </button>
+    <div v-if="phase === 'select'" class="space-y-8">
+
+      <!-- Difficulty picker -->
+      <div class="space-y-3">
+        <p class="text-center text-sm font-semibold text-[var(--color-text-secondary)] uppercase tracking-wider">
+          {{ t('games.tamagotchiGame.difficultyTitle') }}
+        </p>
+        <div class="flex justify-center gap-3">
+          <button
+            v-for="d in ([
+              { key:'easy',   icon:'🌿', cls:'border-emerald-500 bg-emerald-500/15 text-emerald-400', active:'ring-2 ring-emerald-400' },
+              { key:'medium', icon:'⚡', cls:'border-amber-500   bg-amber-500/15   text-amber-400',   active:'ring-2 ring-amber-400'   },
+              { key:'hard',   icon:'💀', cls:'border-red-500     bg-red-500/15     text-red-400',     active:'ring-2 ring-red-400'     },
+            ] as const)"
+            :key="d.key"
+            class="flex flex-col items-center gap-1 px-5 py-3 rounded-xl border font-semibold text-sm
+                   transition-all duration-200 active:scale-95"
+            :class="[d.cls, difficulty === d.key ? d.active : 'opacity-60 hover:opacity-90']"
+            @click="difficulty = d.key"
+          >
+            <span class="text-xl">{{ d.icon }}</span>
+            {{ t(`games.tamagotchiGame.difficulty${d.key.charAt(0).toUpperCase()+d.key.slice(1)}`) }}
+          </button>
+        </div>
+        <p class="text-center text-xs text-[var(--color-text-secondary)]">
+          {{ t(`games.tamagotchiGame.difficultyDesc${difficulty.charAt(0).toUpperCase()+difficulty.slice(1)}`) }}
+        </p>
+      </div>
+
+      <!-- Dino picker -->
+      <div class="space-y-3">
+        <p class="text-center text-sm font-semibold text-[var(--color-text-secondary)] uppercase tracking-wider">
+          {{ t('games.tamagotchiGame.selectTitle') }}
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+          <button
+            v-for="opt in ([
+              { kind:'trex',        emoji:'🦖', gradient:'from-emerald-500 to-green-700',  ring:'ring-emerald-400' },
+              { kind:'triceratops', emoji:'🦏', gradient:'from-amber-500  to-yellow-700',  ring:'ring-amber-400'   },
+              { kind:'diplodocus',  emoji:'🦕', gradient:'from-teal-500   to-cyan-700',    ring:'ring-teal-400'    },
+            ] as const)"
+            :key="opt.kind"
+            class="group flex flex-col items-center gap-3 p-6 rounded-2xl border border-[var(--glass-border)]
+                   bg-[var(--color-bg-elevated)] shadow-[var(--shadow-card)]
+                   hover:-translate-y-1.5 hover:shadow-[var(--shadow-card-hover)]
+                   hover:ring-2 transition-all duration-200 cursor-pointer"
+            :class="opt.ring"
+            @click="startGame(opt.kind, difficulty)"
+          >
+            <div class="w-20 h-20 rounded-xl bg-gradient-to-br flex items-center justify-center text-5xl shadow-lg"
+                 :class="opt.gradient">
+              {{ opt.emoji }}
+            </div>
+            <span class="font-bold text-[var(--color-text-primary)]">
+              {{ t(`games.tamagotchiGame.kind${opt.kind.charAt(0).toUpperCase()+opt.kind.slice(1)}`) }}
+            </span>
+            <span class="text-xs text-center text-[var(--color-text-secondary)] leading-relaxed">
+              {{ t(`games.tamagotchiGame.kind${opt.kind.charAt(0).toUpperCase()+opt.kind.slice(1)}Desc`) }}
+            </span>
+            <span class="mt-1 px-5 py-1.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r shadow"
+                  :class="opt.gradient">
+              {{ t('games.tamagotchiGame.select') }}
+            </span>
+          </button>
+        </div>
       </div>
     </div>
 
@@ -954,7 +999,18 @@ onUnmounted(() => {
       <!-- Stage + age -->
       <div class="flex items-center justify-between text-sm">
         <span class="font-semibold text-[var(--color-text-primary)]">{{ stageEmoji }} {{ stageLabel }}</span>
-        <span class="text-[var(--color-text-secondary)]">{{ t('games.tamagotchiGame.age', { n: age }) }}</span>
+        <div class="flex items-center gap-2">
+          <span class="text-xs px-2 py-0.5 rounded-full font-medium"
+                :class="{
+                  'bg-emerald-500/15 text-emerald-400': difficulty === 'easy',
+                  'bg-amber-500/15 text-amber-400':     difficulty === 'medium',
+                  'bg-red-500/15 text-red-400':         difficulty === 'hard',
+                }">
+            {{ { easy:'🌿', medium:'⚡', hard:'💀' }[difficulty] }}
+            {{ t(`games.tamagotchiGame.difficulty${difficulty.charAt(0).toUpperCase()+difficulty.slice(1)}`) }}
+          </span>
+          <span class="text-[var(--color-text-secondary)]">{{ t('games.tamagotchiGame.age', { n: age }) }}</span>
+        </div>
       </div>
 
       <!-- Day progress bar -->
