@@ -147,5 +147,9 @@ export default {
     msgMedicine: '药已服用 💊',
     msgTired: '太累了，无法玩耍！😴',
     msgHealthy: '我已经很好了！❤️',
+    warnHunger: '🍖 快饿死了！快喂我！',
+    warnHappiness: '😢 好伤心！陪我玩！',
+    warnEnergy: '💤 精疲力竭！让我休息！',
+    warnHealth: '❤️ 生命垂危！用药吧！',
   },
 }

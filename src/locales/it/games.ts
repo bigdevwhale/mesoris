@@ -147,5 +147,9 @@ export default {
     msgMedicine: 'Medicina presa 💊',
     msgTired: 'Troppo stanco per giocare! 😴',
     msgHealthy: 'Mi sento già benissimo! ❤️',
+    warnHunger: '🍖 Affamato! Nutrimi!',
+    warnHappiness: '😢 Molto triste! Gioca con me!',
+    warnEnergy: '💤 Esausto! Fammi riposare!',
+    warnHealth: '❤️ Salute critica! Usa medicina!',
   },
 }

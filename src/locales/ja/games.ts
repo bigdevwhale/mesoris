@@ -147,5 +147,9 @@ export default {
     msgMedicine: '薬を飲んだ 💊',
     msgTired: '疲れすぎて遊べない！😴',
     msgHealthy: 'もう元気いっぱい！❤️',
+    warnHunger: '🍖 お腹ペコペコ！ご飯をください！',
+    warnHappiness: '😢 悲しいよ！遊んで！',
+    warnEnergy: '💤 ヘトヘト！休ませて！',
+    warnHealth: '❤️ 体調危険！薬をください！',
   },
 }

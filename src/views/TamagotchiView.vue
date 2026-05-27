@@ -174,12 +174,31 @@ function applyTicks(n: number) {
       }
       growthFlash = 90
     }
+    const prevHunger    = hunger.value
+    const prevHappiness = happiness.value
+    const prevEnergy    = energy.value
+
     hunger.value    = Math.max(0, hunger.value    - 2)
     happiness.value = Math.max(0, happiness.value - 1)
     if (animState !== 'sleep') energy.value = Math.max(0, energy.value - 1)
-    if (hunger.value < 20 || happiness.value < 20) health.value = Math.max(0, health.value - 1)
-    if (hunger.value > 60 && happiness.value > 60)  health.value = Math.min(100, health.value + 0.4)
-    if (health.value <= 0) { phase.value = 'dead'; animState = 'dead'; stopTick(); save(); return }
+    if (hunger.value < 20 || happiness.value < 20 || energy.value < 10)
+      health.value = Math.max(0, health.value - 1)
+    if (hunger.value > 60 && happiness.value > 60)
+      health.value = Math.min(100, health.value + 0.4)
+
+    // Warn once when a stat first enters the danger zone
+    if (prevHunger    > 10 && hunger.value    <= 10) flash(t('games.tamagotchiGame.warnHunger'))
+    if (prevHappiness > 10 && happiness.value <= 10) flash(t('games.tamagotchiGame.warnHappiness'))
+    if (prevEnergy    > 10 && energy.value    <= 10) flash(t('games.tamagotchiGame.warnEnergy'))
+    if (health.value  > 10 && health.value    <= 10) flash(t('games.tamagotchiGame.warnHealth'))
+
+    const isDead =
+      health.value    <= 0 ||
+      hunger.value    <= 0 ||
+      happiness.value <= 0 ||
+      energy.value    <= 0
+
+    if (isDead) { phase.value = 'dead'; animState = 'dead'; stopTick(); save(); return }
   }
 }
 

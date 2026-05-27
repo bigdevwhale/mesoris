@@ -147,5 +147,9 @@ export default {
     msgMedicine: '약을 먹었어요 💊',
     msgTired: '너무 피곤해서 놀 수 없어요! 😴',
     msgHealthy: '이미 아주 건강해요! ❤️',
+    warnHunger: '🍖 너무 배고파! 먹여줘!',
+    warnHappiness: '😢 너무 슬퍼! 같이 놀아줘!',
+    warnEnergy: '💤 기진맥진! 쉬게 해줘!',
+    warnHealth: '❤️ 위험한 상태! 약 줘!',
   },
 }

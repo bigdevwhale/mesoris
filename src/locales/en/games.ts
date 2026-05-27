@@ -147,5 +147,9 @@ export default {
     msgMedicine: 'Medicine taken 💊',
     msgTired: 'Too tired to play! 😴',
     msgHealthy: 'Already feeling great! ❤️',
+    warnHunger: '🍖 Starving! Feed me now!',
+    warnHappiness: '😢 Very sad! Play with me!',
+    warnEnergy: '💤 Exhausted! Let me rest!',
+    warnHealth: '❤️ Critical health! Use medicine!',
   },
 }
