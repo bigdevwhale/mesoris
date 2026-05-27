@@ -114,6 +114,7 @@ export default {
     rest: 'Отдохнуть',
     medicine: 'Лекарство',
     newGame: 'Новая игра',
+    exitGame: '????? ?? ????',
     selectTitle: 'Выбери своего динозавра!',
     kindTrex: 'Тираннозавр',
     kindTriceratops: 'Трицератопс',

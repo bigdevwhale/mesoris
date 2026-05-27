@@ -114,6 +114,7 @@ export default {
     rest: '休息',
     medicine: '吃药',
     newGame: '新游戏',
+    exitGame: '????',
     selectTitle: '选择你的恐龙！',
     kindTrex: '霸王龙',
     kindTriceratops: '三角龙',

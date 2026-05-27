@@ -114,6 +114,7 @@ export default {
     rest: '쉬기',
     medicine: '약 주기',
     newGame: '새 게임',
+    exitGame: '?? ??',
     selectTitle: '공룡을 선택하세요!',
     kindTrex: '티라노사우루스',
     kindTriceratops: '트리케라톱스',

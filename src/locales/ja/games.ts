@@ -114,6 +114,7 @@ export default {
     rest: '休む',
     medicine: '薬を飲む',
     newGame: '新しいゲーム',
+    exitGame: '??????',
     selectTitle: '恐竜を選んでね！',
     kindTrex: 'ティラノサウルス',
     kindTriceratops: 'トリケラトプス',

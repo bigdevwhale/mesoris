@@ -114,6 +114,7 @@ export default {
     rest: 'Rest',
     medicine: 'Medicine',
     newGame: 'New Game',
+    exitGame: 'Exit Game',
     selectTitle: 'Choose your dinosaur!',
     kindTrex: 'T-Rex',
     kindTriceratops: 'Triceratops',
