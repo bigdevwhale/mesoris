@@ -43,7 +43,7 @@ function onLeave(el: Element, done: () => void) {
 
   <AppHeader />
 
-  <main id="main-content" class="pt-16">
+  <main id="main-content" class="pt-16 pb-16 md:pb-0">
     <router-view v-slot="{ Component, route }">
       <transition
         mode="out-in"

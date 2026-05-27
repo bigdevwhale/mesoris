@@ -12,6 +12,9 @@ export interface PersonalityOption {
   textDe: string
   textFr: string
   textIt: string
+  textZh: string
+  textJa: string
+  textKo: string
   traits: PersonalityTraitScore[]
 }
 
@@ -23,6 +26,9 @@ export interface PersonalityQuestion {
   questionDe: string
   questionFr: string
   questionIt: string
+  questionZh: string
+  questionJa: string
+  questionKo: string
   options: PersonalityOption[]
 }
 
@@ -34,6 +40,9 @@ export interface DinosaurPersonality {
   nameDe: string
   nameFr: string
   nameIt: string
+  nameZh: string
+  nameJa: string
+  nameKo: string
   emoji: string
   imageSlug: string
   traits: Record<PersonalityTrait, number>
@@ -43,18 +52,27 @@ export interface DinosaurPersonality {
   titleDe: string
   titleFr: string
   titleIt: string
+  titleZh: string
+  titleJa: string
+  titleKo: string
   description: string
   descriptionRu: string
   descriptionEs: string
   descriptionDe: string
   descriptionFr: string
   descriptionIt: string
+  descriptionZh: string
+  descriptionJa: string
+  descriptionKo: string
   funFact: string
   funFactRu: string
   funFactEs: string
   funFactDe: string
   funFactFr: string
   funFactIt: string
+  funFactZh: string
+  funFactJa: string
+  funFactKo: string
   colorClass: string
 }
 
@@ -67,6 +85,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
     questionDe: 'Wie verbringst du am liebsten deine Freizeit?',
     questionFr: 'Comment préfères-tu passer ton temps libre ?',
     questionIt: 'Come preferisci trascorrere il tuo tempo libero?',
+    questionZh: '你喜欢如何度过空闲时间？',
+    questionJa: '自由な時間はどのように過ごすのが好きですか？',
+    questionKo: '자유 시간을 어떻게 보내는 것을 선호하나요?',
     options: [
       {
         text: 'Ruling the room — you love being in charge',
@@ -75,6 +96,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Das Ruder übernehmen — du liebst es, der Chef zu sein',
         textFr: 'Diriger la situation — tu aimes être aux commandes',
         textIt: 'Dominare la scena — ti piace essere al comando',
+        textZh: '掌控全场——你喜欢主导一切',
+        textJa: 'その場を支配する — 指揮を執るのが好き',
+        textKo: '방을 지배하기 — 주도권을 쥐는 것을 좋아해요',
         traits: [{ key: 'dominant', value: 3 }, { key: 'social', value: 1 }],
       },
       {
@@ -84,6 +108,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Neue Orte mit Freunden erkunden',
         textFr: 'Explorer de nouveaux endroits avec des amis',
         textIt: 'Esplorare nuovi posti con gli amici',
+        textZh: '与朋友一起探索新地方',
+        textJa: '友達と新しい場所を探検する',
+        textKo: '친구들과 새로운 장소 탐험하기',
         traits: [{ key: 'curious', value: 2 }, { key: 'social', value: 2 }],
       },
       {
@@ -93,6 +120,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Entspannt in der Natur erholen',
         textFr: 'Se détendre paisiblement dans la nature',
         textIt: 'Rilassarsi tranquillamente nella natura',
+        textZh: '在大自然中安静地放松',
+        textJa: '自然の中で穏やかにリラックスする',
+        textKo: '자연 속에서 평화롭게 쉬기',
         traits: [{ key: 'peaceful', value: 3 }, { key: 'cautious', value: 1 }],
       },
       {
@@ -102,6 +132,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Laufen, trainieren oder deine Grenzen überwinden',
         textFr: 'Courir, s\'entraîner ou te dépasser',
         textIt: 'Correre, allenarsi o superare i propri limiti',
+        textZh: '跑步、训练或挑战自己的极限',
+        textJa: '走る、トレーニングする、限界に挑戦する',
+        textKo: '달리기, 훈련 또는 한계에 도전하기',
         traits: [{ key: 'agile', value: 3 }, { key: 'dominant', value: 1 }],
       },
     ],
@@ -114,6 +147,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
     questionDe: 'Jemand fordert dich direkt heraus. Was tust du?',
     questionFr: 'Quelqu\'un te défie directement. Que fais-tu ?',
     questionIt: 'Qualcuno ti sfida direttamente. Cosa fai?',
+    questionZh: '有人直接向你发起挑战。你会怎么做？',
+    questionJa: '誰かに直接挑戦されたら、どうしますか？',
+    questionKo: '누군가 직접 도전해 옵니다. 어떻게 하시겠어요?',
     options: [
       {
         text: 'Step up and face them — you never back down',
@@ -122,6 +158,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Entgegentreten — du weichst niemals zurück',
         textFr: 'Faire face — tu ne recules jamais',
         textIt: 'Affrontarlo — non ti ritiri mai',
+        textZh: '站出来面对他们——你从不退缩',
+        textJa: '前に出て立ち向かう — 決して引き下がらない',
+        textKo: '앞으로 나서 맞서기 — 절대 물러서지 않아요',
         traits: [{ key: 'dominant', value: 3 }],
       },
       {
@@ -131,6 +170,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Verbündete sammeln und sie überlisten',
         textFr: 'S\'allier et les déjouer',
         textIt: 'Fare squadra con gli alleati e aggirarli',
+        textZh: '联合盟友，智取对方',
+        textJa: '仲間と力を合わせて出し抜く',
+        textKo: '동료와 힘을 합쳐 상대를 제압하기',
         traits: [{ key: 'social', value: 2 }, { key: 'agile', value: 1 }, { key: 'curious', value: 1 }],
       },
       {
@@ -140,6 +182,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Defensiv standhalten — das Wichtige schützen',
         textFr: 'Tenir bon défensivement — protéger ce qui compte',
         textIt: 'Tenerti sulla difensiva — proteggere ciò che conta',
+        textZh: '坚守防线——保护重要的东西',
+        textJa: '守りを固める — 大切なものを守る',
+        textKo: '방어적으로 버티기 — 중요한 것을 지키기',
         traits: [{ key: 'cautious', value: 2 }, { key: 'peaceful', value: 1 }],
       },
       {
@@ -149,6 +194,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Schnelligkeit und Cleverness nutzen, um den Konflikt zu vermeiden',
         textFr: 'Utiliser la rapidité et l\'astuce pour éviter le conflit',
         textIt: 'Usare velocità e astuzia per evitare il conflitto',
+        textZh: '用速度和智慧完全避开冲突',
+        textJa: 'スピードと機知を活かして衝突を完全に避ける',
+        textKo: '속도와 재치로 갈등 자체를 피하기',
         traits: [{ key: 'agile', value: 2 }, { key: 'curious', value: 1 }],
       },
     ],
@@ -161,6 +209,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
     questionDe: 'Wie gehst du an ein Problem heran?',
     questionFr: 'Quelle est ton approche face à un problème ?',
     questionIt: 'Qual è il tuo approccio di fronte a un problema?',
+    questionZh: '面对问题时，你的处理方式是什么？',
+    questionJa: '問題に直面したときのあなたのアプローチは？',
+    questionKo: '문제에 직면했을 때 어떻게 접근하나요?',
     options: [
       {
         text: 'Attack it head-on with sheer force',
@@ -169,6 +220,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Direkt und mit voller Kraft angreifen',
         textFr: 'L\'attaquer de front avec toute ta force',
         textIt: 'Affrontarlo di petto con tutta la forza',
+        textZh: '正面迎击，以纯粹的力量碾压',
+        textJa: '正面から全力で攻める',
+        textKo: '정면으로 맞서 강력하게 공격하기',
         traits: [{ key: 'dominant', value: 3 }, { key: 'agile', value: 1 }],
       },
       {
@@ -178,6 +232,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Sorgfältig recherchieren und planen, bevor du handelst',
         textFr: 'Rechercher et planifier soigneusement avant d\'agir',
         textIt: 'Ricercare e pianificare con cura prima di agire',
+        textZh: '先仔细研究并制定计划再行动',
+        textJa: '行動する前に入念に調べて計画を練る',
+        textKo: '행동하기 전에 신중하게 조사하고 계획하기',
         traits: [{ key: 'curious', value: 3 }, { key: 'cautious', value: 1 }],
       },
       {
@@ -187,6 +244,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Geduldig auf den richtigen Moment warten',
         textFr: 'Attendre patiemment le bon moment',
         textIt: 'Aspettare pazientemente il momento giusto',
+        textZh: '耐心等待合适的时机',
+        textJa: '適切な瞬間まで辛抱強く待つ',
+        textKo: '적절한 순간을 인내심 있게 기다리기',
         traits: [{ key: 'peaceful', value: 2 }, { key: 'cautious', value: 2 }],
       },
       {
@@ -196,6 +256,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Eine kreative Lösung finden, auf die niemand sonst käme',
         textFr: 'Trouver une solution créative à laquelle personne d\'autre ne penserait',
         textIt: 'Trovare una soluzione creativa a cui nessun altro penserebbe',
+        textZh: '找到一个别人都想不到的创造性绕行方案',
+        textJa: '誰も思いつかないような創造的な回避策を見つける',
+        textKo: '아무도 생각하지 못할 창의적인 우회책 찾기',
         traits: [{ key: 'agile', value: 2 }, { key: 'curious', value: 2 }],
       },
     ],
@@ -208,6 +271,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
     questionDe: 'Welche Umgebung fühlt sich am meisten wie Zuhause an?',
     questionFr: 'Quel environnement ressemble le plus à chez toi ?',
     questionIt: 'Quale ambiente ti fa sentire più a casa?',
+    questionZh: '什么样的环境让你最有家的感觉？',
+    questionJa: 'どんな環境が最も「我が家」と感じますか？',
+    questionKo: '어떤 환경이 가장 집처럼 느껴지나요?',
     options: [
       {
         text: 'Open plains where you can see everything around you',
@@ -216,6 +282,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Offene Ebenen, wo du alles um dich herum siehst',
         textFr: 'Des plaines ouvertes où tu peux tout voir autour de toi',
         textIt: 'Pianure aperte dove puoi vedere tutto intorno',
+        textZh: '开阔的平原，可以看清周围的一切',
+        textJa: '周りをすべて見渡せる開けた平原',
+        textKo: '주변을 모두 볼 수 있는 탁 트인 평원',
         traits: [{ key: 'dominant', value: 2 }, { key: 'cautious', value: 1 }],
       },
       {
@@ -225,6 +294,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Dichter Wald voller Leben und Geheimnisse',
         textFr: 'Une forêt dense pleine de vie et de mystère',
         textIt: 'Una foresta densa piena di vita e mistero',
+        textZh: '充满生机与神秘的茂密森林',
+        textJa: '生命力と神秘に満ちた深い森',
+        textKo: '생명력과 신비로 가득한 울창한 숲',
         traits: [{ key: 'curious', value: 2 }, { key: 'social', value: 1 }, { key: 'agile', value: 1 }],
       },
       {
@@ -234,6 +306,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Üppige Täler mit viel Nahrung und ruhigem Wasser',
         textFr: 'Des vallées verdoyantes avec beaucoup de nourriture et des eaux calmes',
         textIt: 'Valli rigogliose con abbondante cibo e acque tranquille',
+        textZh: '食物丰盛、水源平静的葱郁山谷',
+        textJa: '豊かな食べ物と穏やかな水のある緑豊かな谷',
+        textKo: '음식과 잔잔한 물이 풍부한 무성한 계곡',
         traits: [{ key: 'peaceful', value: 3 }, { key: 'social', value: 1 }],
       },
       {
@@ -243,6 +318,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Hohe Klippen und offene Himmel — je höher desto besser',
         textFr: 'Des falaises élevées et des cieux ouverts — plus c\'est haut, mieux c\'est',
         textIt: 'Scogliere alte e cieli aperti — più in alto meglio è',
+        textZh: '高耸的悬崖和开阔的天空——越高越好',
+        textJa: '高い崖と広がる空 — 高ければ高いほどいい',
+        textKo: '높은 절벽과 탁 트인 하늘 — 높을수록 좋아요',
         traits: [{ key: 'agile', value: 3 }, { key: 'curious', value: 1 }],
       },
     ],
@@ -255,6 +333,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
     questionDe: 'Wie verhältst du dich in einer Gruppe?',
     questionFr: 'Comment te comportes-tu en groupe ?',
     questionIt: 'Come ti comporti in un gruppo?',
+    questionZh: '你在团队中表现如何？',
+    questionJa: 'グループの中ではどのように行動しますか？',
+    questionKo: '그룹 안에서 어떻게 행동하나요?',
     options: [
       {
         text: 'You\'re the leader — everyone follows your call',
@@ -263,6 +344,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Du bist der Anführer — alle folgen deinen Entscheidungen',
         textFr: 'Tu es le leader — tout le monde suit tes décisions',
         textIt: 'Sei il leader — tutti seguono le tue decisioni',
+        textZh: '你是领导者——大家都听从你的指挥',
+        textJa: 'あなたがリーダー — みんながあなたの指示に従う',
+        textKo: '리더 — 모두가 당신의 결정을 따라요',
         traits: [{ key: 'dominant', value: 3 }, { key: 'social', value: 1 }],
       },
       {
@@ -272,6 +356,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Ein gleichberechtigter Mitspieler, der die Stimmung hebt',
         textFr: 'Un joueur d\'équipe qui maintient le moral',
         textIt: 'Un giocatore di squadra che mantiene alto il morale',
+        textZh: '一个平等的团队成员，能让大家士气高昂',
+        textJa: 'チームの士気を高く保つ、対等なチームプレイヤー',
+        textKo: '분위기를 높이는 평등한 팀 플레이어',
         traits: [{ key: 'social', value: 3 }, { key: 'peaceful', value: 1 }],
       },
       {
@@ -281,6 +368,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Der stille Beobachter, der sich nur äußert, wenn es darauf ankommt',
         textFr: 'L\'observateur silencieux qui prend la parole quand c\'est important',
         textIt: 'L\'osservatore silenzioso che parla solo quando conta',
+        textZh: '安静的观察者，只在关键时刻发声',
+        textJa: 'ここぞという時だけ発言する静かな観察者',
+        textKo: '중요한 순간에만 발언하는 조용한 관찰자',
         traits: [{ key: 'cautious', value: 2 }, { key: 'curious', value: 2 }],
       },
       {
@@ -290,6 +380,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Du arbeitest lieber allein — Gruppen verlangsamen dich',
         textFr: 'Tu préfères travailler seul — les groupes te ralentissent',
         textIt: 'Preferisci lavorare da solo — i gruppi ti rallentano',
+        textZh: '你更喜欢独自工作——团队会拖慢你的速度',
+        textJa: '一人で作業する方が好き — グループは足手まとい',
+        textKo: '혼자 일하는 것을 선호 — 그룹은 속도를 늦춰요',
         traits: [{ key: 'agile', value: 2 }, { key: 'dominant', value: 1 }],
       },
     ],
@@ -302,6 +395,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
     questionDe: 'Was ist deine größte Stärke?',
     questionFr: 'Quelle est ta plus grande force ?',
     questionIt: 'Qual è il tuo punto di forza principale?',
+    questionZh: '你最大的优势是什么？',
+    questionJa: 'あなたの最大の強みは何ですか？',
+    questionKo: '당신의 가장 큰 강점은 무엇인가요?',
     options: [
       {
         text: 'Raw power — when you strike, everyone feels it',
@@ -310,6 +406,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Rohe Kraft — wenn du zuschlägst, spürt es jeder',
         textFr: 'Force brute — quand tu frappes, tout le monde le ressent',
         textIt: 'Forza bruta — quando colpisci, tutti lo sentono',
+        textZh: '原始力量——你的出击让每个人都感受到震撼',
+        textJa: '圧倒的な力 — あなたが放つ一撃は全員に響く',
+        textKo: '원초적인 힘 — 당신이 공격하면 모두가 느껴요',
         traits: [{ key: 'dominant', value: 3 }],
       },
       {
@@ -319,6 +418,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Intelligenz und Anpassungsfähigkeit',
         textFr: 'Intelligence et adaptabilité',
         textIt: 'Intelligenza e adattabilità',
+        textZh: '智慧和适应能力',
+        textJa: '知性と適応力',
+        textKo: '지능과 적응력',
         traits: [{ key: 'curious', value: 2 }, { key: 'agile', value: 1 }, { key: 'social', value: 1 }],
       },
       {
@@ -328,6 +430,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Ausdauer und unerschütterliche Ruhe',
         textFr: 'Endurance et calme inébranlable',
         textIt: 'Resistenza e calma inattaccabile',
+        textZh: '耐力和不可动摇的冷静',
+        textJa: '忍耐力と揺るぎない冷静さ',
+        textKo: '인내력과 흔들리지 않는 평온함',
         traits: [{ key: 'peaceful', value: 2 }, { key: 'cautious', value: 2 }],
       },
       {
@@ -337,6 +442,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Geschwindigkeit — du bist immer drei Schritte voraus',
         textFr: 'Vitesse — tu es toujours trois pas en avance',
         textIt: 'Velocità — sei sempre tre passi avanti',
+        textZh: '速度——你总是领先三步',
+        textJa: 'スピード — 常に三歩先を行く',
+        textKo: '속도 — 항상 세 발자국 앞에 있어요',
         traits: [{ key: 'agile', value: 3 }],
       },
     ],
@@ -349,6 +457,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
     questionDe: 'Wie reagierst du, wenn Gefahr naht?',
     questionFr: 'Comment réagis-tu quand le danger est proche ?',
     questionIt: 'Come reagisci quando il pericolo è vicino?',
+    questionZh: '当危险临近时，你如何反应？',
+    questionJa: '危険が近づいたとき、どう反応しますか？',
+    questionKo: '위험이 가까이 있을 때 어떻게 반응하나요?',
     options: [
       {
         text: 'Charge straight at it — offense is the best defense',
@@ -357,6 +468,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Direkt darauf losgehen — Angriff ist die beste Verteidigung',
         textFr: 'Foncer dessus — l\'attaque est la meilleure défense',
         textIt: 'Lanciarti direttamente — l\'attacco è la migliore difesa',
+        textZh: '直接冲上去——进攻是最好的防守',
+        textJa: '真っ向から突撃する — 攻撃は最大の防御',
+        textKo: '정면으로 돌진하기 — 공격이 최선의 방어',
         traits: [{ key: 'dominant', value: 3 }],
       },
       {
@@ -366,6 +480,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Deine Gruppe warnen und eine koordinierte Reaktion einleiten',
         textFr: 'Alerter ton groupe et organiser une réponse coordonnée',
         textIt: 'Avvisare il gruppo e creare una risposta coordinata',
+        textZh: '提醒团队成员，制定协调一致的对策',
+        textJa: 'グループに知らせて連携した対応をとる',
+        textKo: '그룹에 경고하고 조율된 대응 만들기',
         traits: [{ key: 'social', value: 3 }, { key: 'cautious', value: 1 }],
       },
       {
@@ -375,6 +492,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Dich ducken und warten, bis es vorbeigeht',
         textFr: 'Te blottir et attendre que ça passe',
         textIt: 'Abbassarti e aspettare che passi',
+        textZh: '蹲伏下来，等待危险过去',
+        textJa: '身を潜めて危険が過ぎ去るのを待つ',
+        textKo: '몸을 낮추고 지나갈 때까지 기다리기',
         traits: [{ key: 'cautious', value: 2 }, { key: 'peaceful', value: 2 }],
       },
       {
@@ -384,6 +504,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Im Nu verschwinden — niemand kann dich fangen',
         textFr: 'Disparaître en un instant — personne ne peut t\'attraper',
         textIt: 'Sparire in un istante — nessuno può prenderti',
+        textZh: '瞬间消失——没人能抓到你',
+        textJa: '一瞬で姿を消す — 誰もあなたを捕まえられない',
+        textKo: '순식간에 사라지기 — 아무도 당신을 잡을 수 없어요',
         traits: [{ key: 'agile', value: 3 }],
       },
     ],
@@ -396,6 +519,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
     questionDe: 'Was motiviert dich im Leben am meisten?',
     questionFr: 'Qu\'est-ce qui te motive le plus dans la vie ?',
     questionIt: 'Cosa ti motiva di più nella vita?',
+    questionZh: '生活中最能激励你的是什么？',
+    questionJa: '人生で最もあなたを動かすものは何ですか？',
+    questionKo: '삶에서 가장 큰 동기 부여는 무엇인가요?',
     options: [
       {
         text: 'Conquest and achievement — being the best',
@@ -404,6 +530,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Eroberung und Erfolg — der Beste zu sein',
         textFr: 'La conquête et les accomplissements — être le meilleur',
         textIt: 'Conquista e traguardi — essere il migliore',
+        textZh: '征服与成就——做最优秀的人',
+        textJa: '征服と達成 — 一番になること',
+        textKo: '정복과 성취 — 최고가 되기',
         traits: [{ key: 'dominant', value: 3 }],
       },
       {
@@ -413,6 +542,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Tiefe Bindungen — die Menschen, die dir wichtig sind',
         textFr: 'Des liens profonds — les gens qui te sont chers',
         textIt: 'Legami profondi — le persone a cui tieni',
+        textZh: '深厚的情感纽带——你关心的人',
+        textJa: '深いつながり — 大切な人たち',
+        textKo: '깊은 유대 — 당신이 소중히 여기는 사람들',
         traits: [{ key: 'social', value: 3 }, { key: 'peaceful', value: 1 }],
       },
       {
@@ -422,6 +554,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Entdeckung — jeden Tag etwas Neues lernen',
         textFr: 'La découverte — apprendre quelque chose de nouveau chaque jour',
         textIt: 'Scoperta — imparare qualcosa di nuovo ogni giorno',
+        textZh: '发现——每天学习新东西',
+        textJa: '発見 — 毎日何か新しいことを学ぶこと',
+        textKo: '발견 — 매일 새로운 것을 배우기',
         traits: [{ key: 'curious', value: 3 }, { key: 'agile', value: 1 }],
       },
       {
@@ -431,6 +566,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Frieden und Sicherheit — wissen, dass alles in Ordnung ist',
         textFr: 'La paix et la sécurité — savoir que tout va bien',
         textIt: 'Pace e sicurezza — sapere che tutto è al sicuro',
+        textZh: '和平与安全——知道一切都安好',
+        textJa: '平和と安全 — すべてが大丈夫だと知ること',
+        textKo: '평화와 안전 — 모든 것이 안전하다는 것을 알기',
         traits: [{ key: 'peaceful', value: 2 }, { key: 'cautious', value: 2 }],
       },
     ],
@@ -443,6 +581,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
     questionDe: 'Deine Freunde würden dich beschreiben als...',
     questionFr: 'Tes amis te décriraient comme...',
     questionIt: 'I tuoi amici ti descriverebbero come...',
+    questionZh: '你的朋友会这样描述你……',
+    questionJa: '友達はあなたのことをこう表現するでしょう…',
+    questionKo: '친구들은 당신을 어떻게 묘사할까요…',
     options: [
       {
         text: 'Fierce and unstoppable',
@@ -451,6 +592,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Wild und unaufhaltsam',
         textFr: 'Féroce et inarrêtable',
         textIt: 'Feroce e inarrestabile',
+        textZh: '凶猛且不可阻挡',
+        textJa: '獰猛で止められない',
+        textKo: '맹렬하고 멈출 수 없는',
         traits: [{ key: 'dominant', value: 2 }, { key: 'agile', value: 1 }],
       },
       {
@@ -460,6 +604,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Warmherzig, loyal und immer für andere da',
         textFr: 'Chaleureux, loyal et toujours là pour les autres',
         textIt: 'Caldo, leale e sempre disponibile per gli altri',
+        textZh: '温暖、忠诚，总是为他人着想',
+        textJa: '温かく、忠実で、いつも他者のためにいる',
+        textKo: '따뜻하고 충성스럽고 항상 다른 사람을 위해 있는',
         traits: [{ key: 'social', value: 3 }, { key: 'peaceful', value: 1 }],
       },
       {
@@ -469,6 +616,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Ruhig, beständig und nicht aus der Ruhe zu bringen',
         textFr: 'Calme, stable et impossible à déstabiliser',
         textIt: 'Calmo, stabile e impossibile da scuotere',
+        textZh: '冷静、沉稳、不可动摇',
+        textJa: '穏やかで、安定していて、動じない',
+        textKo: '차분하고 안정적이며 흔들리지 않는',
         traits: [{ key: 'peaceful', value: 2 }, { key: 'cautious', value: 2 }],
       },
       {
@@ -478,6 +628,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Schnell, clever und immer für Überraschungen gut',
         textFr: 'Rapide, intelligent et toujours surprenant',
         textIt: 'Veloce, intelligente e sempre sorprendente',
+        textZh: '敏捷、聪明，总是出人意料',
+        textJa: '素早く、賢く、常に驚きに満ちている',
+        textKo: '빠르고 영리하며 항상 놀라움을 주는',
         traits: [{ key: 'agile', value: 2 }, { key: 'curious', value: 2 }],
       },
     ],
@@ -490,6 +643,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
     questionDe: 'Was ist dein idealer Tagesabschluss?',
     questionFr: 'Quelle est ta façon idéale de terminer la journée ?',
     questionIt: 'Qual è il tuo modo ideale per concludere la giornata?',
+    questionZh: '你理想的结束一天的方式是什么？',
+    questionJa: '一日の終わりの理想的な過ごし方は？',
+    questionKo: '하루를 마무리하는 이상적인 방법은 무엇인가요?',
     options: [
       {
         text: 'Celebrating a victory — you conquered something today',
@@ -498,6 +654,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Einen Sieg feiern — du hast heute etwas erreicht',
         textFr: 'Célébrer une victoire — tu as conquis quelque chose aujourd\'hui',
         textIt: 'Celebrare una vittoria — oggi hai conquistato qualcosa',
+        textZh: '庆祝胜利——今天你又征服了某个目标',
+        textJa: '勝利を祝う — 今日も何かを成し遂げた',
+        textKo: '승리 축하하기 — 오늘 무언가를 이뤄냈어요',
         traits: [{ key: 'dominant', value: 3 }],
       },
       {
@@ -507,6 +666,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Eine Mahlzeit oder Geschichten mit geliebten Menschen teilen',
         textFr: 'Partager un repas ou des histoires avec les personnes que tu aimes',
         textIt: 'Condividere un pasto o storie con le persone che ami',
+        textZh: '与所爱的人分享一顿饭或故事',
+        textJa: '愛する人たちと食事や話を共にする',
+        textKo: '사랑하는 사람들과 식사나 이야기 나누기',
         traits: [{ key: 'social', value: 3 }, { key: 'peaceful', value: 1 }],
       },
       {
@@ -516,6 +678,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Still über alles nachdenken, was du beobachtet hast',
         textFr: 'Réfléchir tranquillement à tout ce que tu as observé',
         textIt: 'Riflettere tranquillamente su tutto ciò che hai osservato',
+        textZh: '安静地回顾你今天观察到的一切',
+        textJa: '観察したことすべてについて静かに振り返る',
+        textKo: '관찰한 모든 것에 대해 조용히 되새기기',
         traits: [{ key: 'curious', value: 2 }, { key: 'cautious', value: 1 }, { key: 'peaceful', value: 1 }],
       },
       {
@@ -525,6 +690,9 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textDe: 'Das nächste Abenteuer für morgen planen',
         textFr: 'Planifier l\'aventure de demain',
         textIt: 'Pianificare l\'avventura di domani',
+        textZh: '计划明天的冒险',
+        textJa: '明日の冒険の計画を立てる',
+        textKo: '내일의 모험 계획 세우기',
         traits: [{ key: 'agile', value: 2 }, { key: 'curious', value: 2 }],
       },
     ],
@@ -540,6 +708,9 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     nameDe: 'Tyrannosaurus Rex',
     nameFr: 'Tyrannosaure Rex',
     nameIt: 'Tirannosauro Rex',
+    nameZh: '霸王龙',
+    nameJa: 'ティラノサウルス・レックス',
+    nameKo: 'T-렉스',
     emoji: '🦖',
     imageSlug: 'tyrannosaurus-rex',
     traits: { dominant: 10, social: 2, curious: 3, cautious: 1, agile: 4, peaceful: 1 },
@@ -549,18 +720,27 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     titleDe: 'Der Spitzenräuber',
     titleFr: 'Le Prédateur Suprême',
     titleIt: 'Il Predatore Apex',
+    titleZh: '顶级掠食者',
+    titleJa: '頂点捕食者',
+    titleKo: '최강 포식자',
     description: 'You are bold, powerful, and born to lead. You don\'t wait for opportunities — you create them. Your presence commands respect, and you\'re not afraid to stand alone at the top.',
     descriptionRu: 'Ты смелый, могущественный и рождён, чтобы вести за собой. Ты не ждёшь возможностей — ты их создаёшь. Твоё присутствие вызывает уважение, и ты не боишься быть на вершине в одиночку.',
     descriptionEs: 'Eres audaz, poderoso y nacido para liderar. No esperas las oportunidades — las creas. Tu presencia exige respeto y no tienes miedo de estar solo en la cima.',
     descriptionDe: 'Du bist kühn, mächtig und zum Anführen geboren. Du wartest nicht auf Chancen — du schaffst sie. Deine Anwesenheit gebietet Respekt, und du scheust dich nicht, allein an der Spitze zu stehen.',
     descriptionFr: 'Tu es audacieux, puissant et né pour diriger. Tu n\'attends pas les opportunités — tu les crées. Ta présence impose le respect, et tu n\'as pas peur de te retrouver seul au sommet.',
     descriptionIt: 'Sei audace, potente e nato per guidare. Non aspetti le opportunità — le crei. La tua presenza impone rispetto e non hai paura di stare da solo in cima.',
+    descriptionZh: '你大胆、强大，天生就是领导者。你不等待机会——你创造机会。你的存在令人敬畏，你不惧怕独自站在顶峰。',
+    descriptionJa: 'あなたは大胆で、強力で、導くために生まれました。チャンスを待つのではなく、自ら作り出します。あなたの存在は尊敬を集め、頂点に一人立つことを恐れません。',
+    descriptionKo: '당신은 대담하고 강력하며 태어나면서부터 리더입니다. 기회를 기다리지 않고 직접 만들어냅니다. 당신의 존재는 존경을 불러일으키며, 정상에 홀로 서는 것을 두려워하지 않습니다.',
     funFact: 'T-Rex had a bite force of about 57,000 newtons — strong enough to crush bone like crackers.',
     funFactRu: 'Сила укуса тираннозавра составляла около 57 000 ньютонов — достаточно, чтобы раздробить кость как крекер.',
     funFactEs: 'El T-Rex tenía una fuerza de mordida de unos 57.000 newtons — suficiente para triturar huesos como galletas.',
     funFactDe: 'Der T-Rex hatte eine Beißkraft von etwa 57.000 Newton — stark genug, um Knochen wie Cracker zu zerquetschen.',
     funFactFr: 'Le T-Rex avait une force de morsure d\'environ 57 000 newtons — assez forte pour broyer des os comme des biscuits.',
     funFactIt: 'Il T-Rex aveva una forza di morso di circa 57.000 newton — abbastanza da schiacciare le ossa come cracker.',
+    funFactZh: '霸王龙的咬合力约为57,000牛顿——足以将骨头像饼干一样压碎。',
+    funFactJa: 'T-Rexの咬合力は約57,000ニュートン — 骨をクラッカーのように砕くほどの強さです。',
+    funFactKo: 'T-렉스의 교합력은 약 57,000뉴턴에 달했습니다 — 뼈를 크래커처럼 부술 만큼 강력했습니다.',
     colorClass: 'from-red-600 to-orange-700',
   },
   {
@@ -571,6 +751,9 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     nameDe: 'Velociraptor',
     nameFr: 'Vélociraptor',
     nameIt: 'Velociraptor',
+    nameZh: '迅猛龙',
+    nameJa: 'ヴェロキラプトル',
+    nameKo: '벨로키랍토르',
     emoji: '🦕',
     imageSlug: 'velociraptor',
     traits: { dominant: 4, social: 5, curious: 7, cautious: 3, agile: 9, peaceful: 2 },
@@ -580,18 +763,27 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     titleDe: 'Der Clevere Stratege',
     titleFr: 'Le Stratège Rusé',
     titleIt: 'Lo Stratega Astuto',
+    titleZh: '狡猾的战略家',
+    titleJa: '狡猾な戦略家',
+    titleKo: '교활한 전략가',
     description: 'You are fast, smart, and always thinking two moves ahead. You thrive in dynamic situations and love solving puzzles others find impossible. Working with a tight, trusted crew brings out your best.',
     descriptionRu: 'Ты быстрый, умный и всегда думаешь на два хода вперёд. Ты процветаешь в динамичных ситуациях и любишь решать задачи, которые другим кажутся невозможными. Работа с небольшой, надёжной командой раскрывает твой лучший потенциал.',
     descriptionEs: 'Eres rápido, inteligente y siempre piensas dos movimientos adelante. Prosperas en situaciones dinámicas y te encanta resolver problemas que otros encuentran imposibles. Trabajar con un equipo pequeño y de confianza saca lo mejor de ti.',
     descriptionDe: 'Du bist schnell, klug und denkst immer zwei Züge voraus. Du gedeihtst in dynamischen Situationen und liebst es, Rätsel zu lösen, die andere unmöglich finden. Mit einem kleinen, vertrauenswürdigen Team holst du das Beste aus dir heraus.',
     descriptionFr: 'Tu es rapide, intelligent et tu penses toujours deux coups en avance. Tu t\'épanouis dans des situations dynamiques et tu aimes résoudre des problèmes que les autres trouvent impossibles. Travailler avec une équipe petite et de confiance fait ressortir le meilleur de toi.',
     descriptionIt: 'Sei veloce, intelligente e pensi sempre due mosse avanti. Prosperi in situazioni dinamiche e ami risolvere problemi che gli altri trovano impossibili. Lavorare con un gruppo ristretto e fidato tira fuori il meglio di te.',
+    descriptionZh: '你快速、聪明，总是提前想好两步。你在动态情况下茁壮成长，喜欢解决别人认为不可能的难题。与小而信任的团队合作能让你发挥最佳水平。',
+    descriptionJa: 'あなたは速く、賢く、常に二手先を考えています。ダイナミックな状況で力を発揮し、他の人が不可能だと思うパズルを解くのが大好きです。少数の信頼できる仲間と協力することで最高の力を発揮します。',
+    descriptionKo: '당신은 빠르고 영리하며 항상 두 수 앞을 생각합니다. 역동적인 상황에서 번성하고 다른 이들이 불가능하다고 생각하는 수수께끼를 풀기를 좋아합니다. 소규모의 신뢰할 수 있는 팀과 협력할 때 최고의 능력을 발휘합니다.',
     funFact: 'Velociraptors were actually about the size of a turkey and likely had feathers — far smaller than the movies show!',
     funFactRu: 'Велоцирапторы были размером примерно с индейку и, вероятно, имели перья — намного меньше, чем показывают в кино!',
     funFactEs: '¡Los velociraptores eran en realidad del tamaño de un pavo y probablemente tenían plumas — mucho más pequeños de lo que muestran las películas!',
     funFactDe: 'Velociraptoren waren tatsächlich etwa so groß wie ein Truthahn und hatten wahrscheinlich Federn — viel kleiner als im Film gezeigt!',
     funFactFr: 'Les vélociapteurs étaient en réalité de la taille d\'une dinde et avaient probablement des plumes — bien plus petits que dans les films !',
     funFactIt: 'I velociraptor erano in realtà delle dimensioni di un tacchino e probabilmente avevano piume — molto più piccoli di come vengono mostrati nei film!',
+    funFactZh: '迅猛龙实际上大约只有火鸡那么大，而且很可能有羽毛——比电影里展示的小得多！',
+    funFactJa: 'ヴェロキラプトルは実際には七面鳥ほどの大きさで、羽毛があったとされています — 映画で描かれるよりずっと小さかったのです！',
+    funFactKo: '벨로키랍토르는 실제로 칠면조 크기 정도였고 깃털이 있었을 것으로 추정됩니다 — 영화에서 보여주는 것보다 훨씬 작았습니다!',
     colorClass: 'from-teal-500 to-cyan-700',
   },
   {
@@ -602,6 +794,9 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     nameDe: 'Triceratops',
     nameFr: 'Tricératops',
     nameIt: 'Triceratopo',
+    nameZh: '三角龙',
+    nameJa: 'トリケラトプス',
+    nameKo: '트리케라톱스',
     emoji: '🐊',
     imageSlug: 'triceratops',
     traits: { dominant: 5, social: 6, curious: 4, cautious: 7, agile: 3, peaceful: 5 },
@@ -611,18 +806,27 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     titleDe: 'Der Standfeste Beschützer',
     titleFr: 'Le Protecteur Inébranlable',
     titleIt: 'Il Protettore Irremovibile',
+    titleZh: '坚定的守护者',
+    titleJa: '不動の守護者',
+    titleKo: '굳건한 수호자',
     description: 'You are fiercely loyal, deeply principled, and always ready to defend what you love. You don\'t pick fights, but you never run from them either. Your friends know they can count on you no matter what.',
     descriptionRu: 'Ты безгранично преданный, принципиальный и всегда готов защитить то, что любишь. Ты не ищешь ссоры, но и никогда от них не убегаешь. Твои друзья знают, что могут на тебя рассчитывать при любых обстоятельствах.',
     descriptionEs: 'Eres ferozmente leal, profundamente íntegro y siempre listo para defender lo que amas. No buscas peleas, pero tampoco huyes de ellas. Tus amigos saben que pueden contar contigo pase lo que pase.',
     descriptionDe: 'Du bist zutiefst loyal, prinzipientreu und immer bereit, das zu verteidigen, was du liebst. Du suchst keine Streitigkeiten, läufst aber auch nicht vor ihnen davon. Deine Freunde wissen, dass sie sich immer auf dich verlassen können.',
     descriptionFr: 'Tu es farouchement loyal, profondément intègre et toujours prêt à défendre ce que tu aimes. Tu ne cherches pas les ennuis, mais tu ne les fuis pas non plus. Tes amis savent qu\'ils peuvent compter sur toi quoi qu\'il arrive.',
     descriptionIt: 'Sei ferocemente leale, profondamente onesto e sempre pronto a difendere ciò che ami. Non cerchi guai, ma non li fuggi nemmeno. I tuoi amici sanno che possono contare su di te in qualsiasi situazione.',
+    descriptionZh: '你极其忠诚、有原则，随时准备为你所爱的事物而战。你不主动挑衅，但也绝不退缩。你的朋友知道无论如何都可以依赖你。',
+    descriptionJa: 'あなたは非常に忠実で、強い信念を持ち、愛するものを常に守る準備ができています。自ら争いを求めませんが、争いから逃げることもありません。友達はどんな時でもあなたを頼りにできると知っています。',
+    descriptionKo: '당신은 극도로 충성스럽고 깊은 원칙을 가지며 항상 소중한 것을 지킬 준비가 되어 있습니다. 싸움을 먼저 걸지 않지만 절대 도망치지도 않습니다. 친구들은 어떤 상황에서도 당신을 믿을 수 있다는 것을 압니다.',
     funFact: 'Triceratops had one of the largest skulls of any land animal ever — up to a third of its entire body length!',
     funFactRu: 'Трицератопс имел один из самых больших черепов среди всех наземных животных — до трети длины всего тела!',
     funFactEs: '¡El triceratops tenía uno de los cráneos más grandes de cualquier animal terrestre — hasta un tercio de la longitud total de su cuerpo!',
     funFactDe: 'Der Triceratops hatte einen der größten Schädel aller Landtiere — bis zu einem Drittel seiner gesamten Körperlänge!',
     funFactFr: 'Le tricératops avait l\'un des plus grands crânes de tout animal terrestre — jusqu\'à un tiers de sa longueur corporelle totale !',
     funFactIt: 'Il triceratopo aveva uno dei crani più grandi di qualsiasi animale terrestre — fino a un terzo della lunghezza totale del suo corpo!',
+    funFactZh: '三角龙拥有任何陆地动物中最大的头骨之一——长达整个身体的三分之一！',
+    funFactJa: 'トリケラトプスは陸上動物の中で最大級の頭骨を持っていました — 体長の最大3分の1にも達しました！',
+    funFactKo: '트리케라톱스는 역대 육상 동물 중 가장 큰 두개골 중 하나를 가지고 있었습니다 — 전체 몸 길이의 최대 3분의 1에 달했습니다!',
     colorClass: 'from-blue-500 to-indigo-700',
   },
   {
@@ -633,6 +837,9 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     nameDe: 'Brachiosaurus',
     nameFr: 'Brachiosaure',
     nameIt: 'Brachiosaurus',
+    nameZh: '腕龙',
+    nameJa: 'ブラキオサウルス',
+    nameKo: '브라키오사우루스',
     emoji: '🌿',
     imageSlug: 'brachiosaurus',
     traits: { dominant: 2, social: 8, curious: 5, cautious: 3, agile: 2, peaceful: 10 },
@@ -642,18 +849,27 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     titleDe: 'Der Sanfte Riese',
     titleFr: 'Le Géant Doux',
     titleIt: 'Il Gigante Gentile',
+    titleZh: '温柔的巨人',
+    titleJa: '優しい巨人',
+    titleKo: '온순한 거인',
     description: 'You are calm, nurturing, and see the world from a higher vantage point — literally and figuratively. You value peace, community, and abundance. Your quiet confidence and warmth draw others naturally to you.',
     descriptionRu: 'Ты спокойный, заботливый и смотришь на мир с высоты — буквально и в переносном смысле. Ты ценишь мир, общество и изобилие. Твоя тихая уверенность и теплота естественно притягивают к тебе других.',
     descriptionEs: 'Eres tranquilo, protector y ves el mundo desde una perspectiva más elevada — literal y figurativamente. Valoras la paz, la comunidad y la abundancia. Tu confianza tranquila y tu calidez atraen naturalmente a otros hacia ti.',
     descriptionDe: 'Du bist ruhig, fürsorglich und siehst die Welt aus einer höheren Perspektive — buchstäblich und im übertragenen Sinne. Du schätzt Frieden, Gemeinschaft und Fülle. Deine stille Zuversicht und Wärme ziehen andere natürlich an.',
     descriptionFr: 'Tu es calme, bienveillant et tu vois le monde d\'un point de vue plus élevé — au sens propre comme au figuré. Tu accordes de la valeur à la paix, à la communauté et à l\'abondance. Ta confiance tranquille et ta chaleur attirent naturellement les autres vers toi.',
     descriptionIt: 'Sei calmo, premuroso e vedi il mondo da un punto di vista più elevato — letteralmente e figurativamente. Valorizzi la pace, la comunità e l\'abbondanza. La tua calma sicurezza e il tuo calore attirano naturalmente gli altri verso di te.',
+    descriptionZh: '你平静、细心，从更高的角度俯瞰世界——字面上和比喻上皆如此。你重视和平、社区和富足。你安静的自信和温暖自然吸引他人靠近你。',
+    descriptionJa: 'あなたは穏やかで、思いやり深く、文字通りにも比喩的にも高い視点から世界を見ています。平和、コミュニティ、豊かさを大切にします。あなたの静かな自信と温かさが自然と人を惹きつけます。',
+    descriptionKo: '당신은 차분하고 배려심이 깊으며 문자 그대로도 비유적으로도 더 높은 시각에서 세상을 바라봅니다. 평화, 공동체, 풍요를 소중히 여깁니다. 당신의 조용한 자신감과 따뜻함이 자연스럽게 다른 사람들을 끌어당깁니다.',
     funFact: 'Brachiosaurus could reach vegetation 9 metres off the ground — equivalent to a three-story building!',
     funFactRu: 'Брахиозавр мог дотянуться до растительности на высоте 9 метров — как трёхэтажный дом!',
     funFactEs: '¡El brachiosaurus podía alcanzar vegetación a 9 metros del suelo — equivalente a un edificio de tres pisos!',
     funFactDe: 'Der Brachiosaurus konnte Vegetation in 9 Metern Höhe erreichen — das entspricht einem dreigeschossigen Gebäude!',
     funFactFr: 'Le brachiosaurus pouvait atteindre la végétation à 9 mètres de hauteur — l\'équivalent d\'un immeuble de trois étages !',
     funFactIt: 'Il brachiosaurus poteva raggiungere la vegetazione a 9 metri di altezza — l\'equivalente di un edificio di tre piani!',
+    funFactZh: '腕龙可以够到地面9米高的植被——相当于三层楼的高度！',
+    funFactJa: 'ブラキオサウルスは地上9メートルの植物に届くことができました — 3階建てのビルに相当します！',
+    funFactKo: '브라키오사우루스는 지면에서 9미터 높이의 식물까지 닿을 수 있었습니다 — 3층 건물과 맞먹는 높이입니다!',
     colorClass: 'from-green-500 to-emerald-700',
   },
   {
@@ -664,6 +880,9 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     nameDe: 'Ankylosaurus',
     nameFr: 'Ankylosaure',
     nameIt: 'Anchilosauro',
+    nameZh: '甲龙',
+    nameJa: 'アンキロサウルス',
+    nameKo: '안킬로사우루스',
     emoji: '🛡️',
     imageSlug: 'ankylosaurus',
     traits: { dominant: 4, social: 4, curious: 3, cautious: 9, agile: 2, peaceful: 8 },
@@ -673,18 +892,27 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     titleDe: 'Der Gepanzerte Philosoph',
     titleFr: 'Le Philosophe Blindé',
     titleIt: 'Il Filosofo Corazzato',
+    titleZh: '铁甲哲学家',
+    titleJa: '鎧をまとった哲学者',
+    titleKo: '갑옷 입은 철학자',
     description: 'You are patient, grounded, and incredibly resilient. You prefer a peaceful life, but when pushed, no force in the world can move you. You think before you act, and your calm exterior hides a formidable inner strength.',
     descriptionRu: 'Ты терпеливый, приземлённый и невероятно стойкий. Ты предпочитаешь спокойную жизнь, но когда тебя подталкивают, никакая сила в мире не сможет тебя сдвинуть. Ты думаешь перед тем, как действовать, а твоё спокойное внешнее обличье скрывает внушительную внутреннюю силу.',
     descriptionEs: 'Eres paciente, arraigado e increíblemente resistente. Prefieres una vida tranquila, pero cuando te presionan, ninguna fuerza en el mundo puede moverte. Piensas antes de actuar, y tu exterior calmado esconde una formidable fuerza interior.',
     descriptionDe: 'Du bist geduldig, geerdet und unglaublich belastbar. Du bevorzugst ein friedliches Leben, aber wenn man dich drängt, kann keine Kraft der Welt dich bewegen. Du denkst nach, bevor du handelst, und dein ruhiges Äußeres verbirgt eine gewaltige innere Stärke.',
     descriptionFr: 'Tu es patient, ancré dans la réalité et incroyablement résilient. Tu préfères une vie paisible, mais quand on te pousse à bout, aucune force au monde ne peut te faire bouger. Tu réfléchis avant d\'agir, et ton extérieur calme cache une force intérieure redoutable.',
     descriptionIt: 'Sei paziente, radicato e incredibilmente resiliente. Preferisci una vita tranquilla, ma quando vieni spinto, nessuna forza al mondo può muoverti. Pensi prima di agire, e il tuo esteriore calmo nasconde una formidabile forza interiore.',
+    descriptionZh: '你有耐心、脚踏实地且极具韧性。你偏好平静的生活，但一旦被逼迫，世界上没有任何力量能动摇你。你思考后再行动，平静的外表下隐藏着令人生畏的内在力量。',
+    descriptionJa: 'あなたは忍耐強く、地に足が着いており、非常に強靭です。平和な人生を好みますが、追い詰められると世界中のどんな力もあなたを動かせません。行動する前に考え、その穏やかな外見の裏には圧倒的な内面の強さが隠れています。',
+    descriptionKo: '당신은 인내심이 강하고 현실적이며 믿기 힘들 정도로 강인합니다. 평화로운 삶을 선호하지만 압박받으면 세상 어떤 힘도 당신을 움직일 수 없습니다. 행동하기 전에 생각하며, 차분한 외모 뒤에 강력한 내면의 힘이 숨어 있습니다.',
     funFact: 'The tail club of Ankylosaurus could swing hard enough to shatter the bones of a T-Rex.',
     funFactRu: 'Хвостовая дубина анкилозавра могла ударить с такой силой, что могла сломать кости тираннозавра.',
     funFactEs: 'El garrote de la cola del ankylosaurus podía golpear con suficiente fuerza para romper los huesos de un T-Rex.',
     funFactDe: 'Der Schwanzclub des Ankylosaurus konnte hart genug schwingen, um die Knochen eines T-Rex zu zertrümmern.',
     funFactFr: 'La masse caudale de l\'ankylosaurus pouvait frapper assez fort pour briser les os d\'un T-Rex.',
     funFactIt: 'La clava caudale dell\'ankylosaurus poteva colpire con abbastanza forza da spezzare le ossa di un T-Rex.',
+    funFactZh: '甲龙的尾锤挥击力度足以击碎霸王龙的骨骼。',
+    funFactJa: 'アンキロサウルスの尾のハンマーはT-Rexの骨を粉砕できるほどの勢いで振ることができました。',
+    funFactKo: '안킬로사우루스의 꼬리 곤봉은 T-렉스의 뼈를 부술 만큼 강력하게 휘두를 수 있었습니다.',
     colorClass: 'from-yellow-600 to-amber-700',
   },
   {
@@ -695,6 +923,9 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     nameDe: 'Pteranodon',
     nameFr: 'Ptéranodon',
     nameIt: 'Pteranodonte',
+    nameZh: '无齿翼龙',
+    nameJa: 'プテラノドン',
+    nameKo: '프테라노돈',
     emoji: '🦅',
     imageSlug: 'pteranodon',
     traits: { dominant: 3, social: 3, curious: 8, cautious: 4, agile: 9, peaceful: 3 },
@@ -704,18 +935,27 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     titleDe: 'Der Freigeist-Entdecker',
     titleFr: 'L\'Explorateur Libre',
     titleIt: 'L\'Esploratore Libero',
+    titleZh: '自由奔放的探索者',
+    titleJa: '自由奔放な探検家',
+    titleKo: '자유로운 탐험가',
     description: 'You soar above the ordinary, driven by curiosity and a love of freedom. You see the big picture when others are lost in details, and you\'re always the first to spot new opportunities on the horizon.',
     descriptionRu: 'Ты паришь выше обычного, движимый любопытством и любовью к свободе. Ты видишь общую картину, когда другие теряются в деталях, и всегда первым замечаешь новые возможности на горизонте.',
     descriptionEs: 'Vuelas por encima de lo ordinario, impulsado por la curiosidad y el amor a la libertad. Ves el panorama general cuando otros se pierden en los detalles, y siempre eres el primero en detectar nuevas oportunidades en el horizonte.',
     descriptionDe: 'Du schwebst über das Gewöhnliche hinaus, angetrieben von Neugier und Freiheitsliebe. Du siehst das große Bild, wenn andere sich in Details verlieren, und bist immer der Erste, der neue Möglichkeiten am Horizont entdeckt.',
     descriptionFr: 'Tu planes au-dessus de l\'ordinaire, poussé par la curiosité et l\'amour de la liberté. Tu vois la vue d\'ensemble quand les autres se perdent dans les détails, et tu es toujours le premier à repérer de nouvelles opportunités à l\'horizon.',
     descriptionIt: 'Planeggi al di sopra dell\'ordinario, spinto dalla curiosità e dall\'amore per la libertà. Vedi il quadro generale quando gli altri si perdono nei dettagli, e sei sempre il primo a individuare nuove opportunità all\'orizzonte.',
+    descriptionZh: '你翱翔于平凡之上，由好奇心和对自由的热爱驱动。当别人迷失在细节中时，你能看到全局，并且总是第一个发现地平线上的新机遇。',
+    descriptionJa: 'あなたは好奇心と自由への愛に駆られて、平凡なものを超越して舞い上がります。他の人が細部に迷い込む中、あなたは全体像を見渡し、常に誰よりも早く地平線上の新しいチャンスを見つけます。',
+    descriptionKo: '당신은 호기심과 자유에 대한 사랑으로 평범함을 초월해 날아오릅니다. 다른 사람들이 세부 사항에 빠져 있을 때 큰 그림을 보며, 항상 지평선 너머의 새로운 기회를 가장 먼저 발견합니다.',
     funFact: 'Pteranodon had a wingspan of up to 7 metres but weighed less than 25 kg — lighter than a large dog!',
     funFactRu: 'Размах крыльев птеранодона достигал 7 метров, но весил он менее 25 кг — легче крупной собаки!',
     funFactEs: '¡El pteranodón tenía una envergadura de hasta 7 metros pero pesaba menos de 25 kg — más ligero que un perro grande!',
     funFactDe: 'Der Pteranodon hatte eine Flügelspannweite von bis zu 7 Metern, wog aber weniger als 25 kg — leichter als ein großer Hund!',
     funFactFr: 'Le ptéranodon avait une envergure allant jusqu\'à 7 mètres mais pesait moins de 25 kg — plus léger qu\'un grand chien !',
     funFactIt: 'Il pteranodonte aveva un\'apertura alare fino a 7 metri ma pesava meno di 25 kg — più leggero di un cane grande!',
+    funFactZh: '无齿翼龙的翼展可达7米，但体重不足25公斤——比一只大型犬还轻！',
+    funFactJa: 'プテラノドンの翼幅は最大7メートルでしたが、体重は25kg未満 — 大型犬よりも軽かったのです！',
+    funFactKo: '프테라노돈의 날개 폭은 최대 7미터였지만 무게는 25킬로그램 미만이었습니다 — 대형 개보다도 가벼웠습니다!',
     colorClass: 'from-violet-500 to-purple-700',
   },
 ]

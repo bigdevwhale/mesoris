@@ -8,7 +8,7 @@ import BaseButton from '@/components/ui/BaseButton.vue'
 import DinoCardImage from '@/components/ui/DinoCardImage.vue'
 import ModeSwitcher from '@/components/layout/ModeSwitcher.vue'
 
-defineProps<{
+const props = defineProps<{
   isOpen: boolean
   dino: Dinosaur | null
 }>()
@@ -47,7 +47,7 @@ const modeStore = useModeStore()
           </div>
         </div>
         <div>
-          <h3 class="text-heading-md mb-1">{{ dino.nameMeaning }}</h3>
+          <h3 class="text-heading-md mb-1">{{ dino.displayName }}</h3>
           <p class="text-body-sm text-[var(--color-text-tertiary)] mb-4 italic">{{ dino.pronunciation }}</p>
 
           <div class="flex items-center justify-between mb-3">

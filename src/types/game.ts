@@ -11,12 +11,18 @@ export interface GameDefinition {
   titleDe: string
   titleFr: string
   titleIt: string
+  titleJa: string
+  titleZh: string
+  titleKo: string
   description: string
   descriptionRu: string
   descriptionEs: string
   descriptionDe: string
   descriptionFr: string
   descriptionIt: string
+  descriptionJa: string
+  descriptionZh: string
+  descriptionKo: string
   thumbnail?: string
   route: RouteLocationRaw
   difficulty: 'easy' | 'medium' | 'hard'

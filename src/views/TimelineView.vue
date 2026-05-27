@@ -35,6 +35,9 @@ const selectedEra = computed(() => eras[activeEraIndex.value])
 
 // Locale-aware era field helpers
 const eraName = (era: typeof eras[0]) => {
+  if (locale.value === 'ko') return era.nameKo
+  if (locale.value === 'zh') return era.nameZh
+  if (locale.value === 'ja') return era.nameJa
   if (locale.value === 'it') return era.nameIt
   if (locale.value === 'fr') return era.nameFr
   if (locale.value === 'de') return era.nameDe
@@ -43,6 +46,9 @@ const eraName = (era: typeof eras[0]) => {
   return era.name
 }
 const eraDesc = (era: typeof eras[0]) => {
+  if (locale.value === 'ko') return era.descriptionKo
+  if (locale.value === 'zh') return era.descriptionZh
+  if (locale.value === 'ja') return era.descriptionJa
   if (locale.value === 'it') return era.descriptionIt
   if (locale.value === 'fr') return era.descriptionFr
   if (locale.value === 'de') return era.descriptionDe
@@ -51,6 +57,9 @@ const eraDesc = (era: typeof eras[0]) => {
   return era.description
 }
 const eraKeyEvents = (era: typeof eras[0]) => {
+  if (locale.value === 'ko') return era.keyEventsKo
+  if (locale.value === 'zh') return era.keyEventsZh
+  if (locale.value === 'ja') return era.keyEventsJa
   if (locale.value === 'it') return era.keyEventsIt
   if (locale.value === 'fr') return era.keyEventsFr
   if (locale.value === 'de') return era.keyEventsDe
@@ -59,6 +68,9 @@ const eraKeyEvents = (era: typeof eras[0]) => {
   return era.keyEvents
 }
 const eraClimate = (era: typeof eras[0]) => {
+  if (locale.value === 'ko') return era.climateDescriptionKo
+  if (locale.value === 'zh') return era.climateDescriptionZh
+  if (locale.value === 'ja') return era.climateDescriptionJa
   if (locale.value === 'it') return era.climateDescriptionIt
   if (locale.value === 'fr') return era.climateDescriptionFr
   if (locale.value === 'de') return era.climateDescriptionDe

@@ -14,7 +14,10 @@ const { t, tm, locale } = useI18n()
 const { localRoute } = useLocale()
 const modeStore = useModeStore()
 
-function pickLocale<T>(en: T, ru: T, es: T, de: T, fr: T, it: T): T {
+function pickLocale<T>(en: T, ru: T, es: T, de: T, fr: T, it: T, ja: T, zh: T, ko: T): T {
+  if (locale.value === 'ko') return ko
+  if (locale.value === 'zh') return zh
+  if (locale.value === 'ja') return ja
   if (locale.value === 'it') return it
   if (locale.value === 'fr') return fr
   if (locale.value === 'de') return de
@@ -30,6 +33,9 @@ const seoTitle = computed(() => pickLocale(
   'Wissenschaftszentrum — Dinosaurier-Forschung & Mythen',
   'Centre Scientifique — Recherche sur les Dinosaures & Mythes',
   'Centro Scientifico — Ricerca sui Dinosauri & Miti',
+  '科学センター — 恐竜の研究と神話',
+  '科学中心 — 恐龙研究与神话',
+  '과학 센터 — 공룡 연구와 신화',
 ))
 const seoDesc = computed(() => pickLocale(
   'Read science articles about dinosaurs, debunk common myths with evidence, and explore simple explanations of complex paleontology topics.',
@@ -38,6 +44,9 @@ const seoDesc = computed(() => pickLocale(
   'Lies wissenschaftliche Artikel uber Dinosaurier, entlarve gangige Mythen mit Beweisen und entdecke einfache Erklarungen komplexer palaontologischer Themen.',
   'Lisez des articles scientifiques sur les dinosaures, demystifiez les mythes courants avec des preuves et explorez des explications simples de sujets paleontologiques complexes.',
   'Leggi articoli scientifici sui dinosauri, sfata i miti comuni con prove ed esplora semplici spiegazioni di argomenti paleontologici complessi.',
+  '恐竜に関する科学記事を読み、証拠に基づいて一般的な神話を検証し、複雑な古生物学のトピックを簡単な説明で探求しましょう。',
+  '阅读恐龙科学文章，用证据揭穿常见神话，探索复杂古生物学主题的简单解释。',
+  '공룡 과학 기사를 읽고, 증거로 일반적인 오해를 검증하며, 복잡한 고생물학 주제를 쉽게 설명합니다.',
 ))
 
 const flippedCards = ref<Set<string>>(new Set())
@@ -64,7 +73,7 @@ const explainers = computed(() => {
 
     <!-- Articles -->
     <section class="mb-16">
-      <h2 class="text-display-md mb-6">{{ t('ui.science.articles') }}</h2>
+      <h2 class="text-display-md pb-6">{{ t('ui.science.articles') }}</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <router-link
           v-for="article in articles"
@@ -75,7 +84,7 @@ const explainers = computed(() => {
           <div class="aspect-[2/1] overflow-hidden">
             <BaseLazyImage
               :src="article.image"
-              :alt="pickLocale(article.title, article.titleRu, article.titleEs, article.titleDe, article.titleFr, article.titleIt)"
+              :alt="pickLocale(article.title, article.titleRu, article.titleEs, article.titleDe, article.titleFr, article.titleIt, article.titleJa, article.titleZh, article.titleKo)"
               :srcset="`${article.image} 960w`"
               sizes="(max-width: 1024px) 100vw, 33vw"
               class="w-full h-full group-hover:scale-105 transition-transform duration-500"
@@ -83,10 +92,10 @@ const explainers = computed(() => {
           </div>
           <div class="p-5">
             <span class="px-2 py-0.5 text-[10px] font-semibold rounded-full bg-[rgba(45,122,140,0.12)] text-[var(--color-info)]">
-              {{ pickLocale(article.category, article.categoryRu, article.categoryEs, article.categoryDe, article.categoryFr, article.categoryIt) }}
+              {{ pickLocale(article.category, article.categoryRu, article.categoryEs, article.categoryDe, article.categoryFr, article.categoryIt, article.categoryJa, article.categoryZh, article.categoryKo) }}
             </span>
-            <h3 class="text-heading-md mt-2 mb-2">{{ pickLocale(article.title, article.titleRu, article.titleEs, article.titleDe, article.titleFr, article.titleIt) }}</h3>
-            <p class="text-body-sm mb-3">{{ pickLocale(article.summary, article.summaryRu, article.summaryEs, article.summaryDe, article.summaryFr, article.summaryIt) }}</p>
+            <h3 class="text-heading-md mt-2 mb-2">{{ pickLocale(article.title, article.titleRu, article.titleEs, article.titleDe, article.titleFr, article.titleIt, article.titleJa, article.titleZh, article.titleKo) }}</h3>
+            <p class="text-body-sm mb-3">{{ pickLocale(article.summary, article.summaryRu, article.summaryEs, article.summaryDe, article.summaryFr, article.summaryIt, article.summaryJa, article.summaryZh, article.summaryKo) }}</p>
           </div>
         </router-link>
       </div>
@@ -94,7 +103,7 @@ const explainers = computed(() => {
 
     <!-- Myths vs Facts -->
     <section class="mb-16">
-      <h2 class="text-display-md mb-6">{{ t('ui.science.mythsAndFacts') }}</h2>
+      <h2 class="text-display-md pb-6">{{ t('ui.science.mythsAndFacts') }}</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div
           v-for="myth in myths"
@@ -106,14 +115,14 @@ const explainers = computed(() => {
             class="myth-inner w-full text-left"
             :class="{ flipped: flippedCards.has(myth.id) }"
             :aria-pressed="flippedCards.has(myth.id)"
-            :aria-label="`${t('ui.science.fact')}: ${pickLocale(myth.fact, myth.factRu, myth.factEs, myth.factDe, myth.factFr, myth.factIt)} — ${t('ui.science.clickToReveal').replace(' →', '')}`"
+            :aria-label="`${t('ui.science.fact')}: ${pickLocale(myth.fact, myth.factRu, myth.factEs, myth.factDe, myth.factFr, myth.factIt, myth.factJa, myth.factZh, myth.factKo)} — ${t('ui.science.clickToReveal').replace(' →', '')}`"
             @click="toggleCard(myth.id)"
           >
             <div class="myth-front bg-[var(--color-bg-elevated)] border border-[var(--glass-border)] rounded-[var(--radius-lg)] p-5 flex items-start gap-3">
               <span class="text-2xl shrink-0" aria-hidden="true">❓</span>
               <div>
                 <div class="text-xs font-semibold text-[var(--color-error)] mb-1">{{ t('ui.science.myth') }}</div>
-                <p class="text-sm text-[var(--color-text-primary)]">{{ pickLocale(myth.myth, myth.mythRu, myth.mythEs, myth.mythDe, myth.mythFr, myth.mythIt) }}</p>
+                <p class="text-sm text-[var(--color-text-primary)]">{{ pickLocale(myth.myth, myth.mythRu, myth.mythEs, myth.mythDe, myth.mythFr, myth.mythIt, myth.mythJa, myth.mythZh, myth.mythKo) }}</p>
                 <p class="text-xs text-[var(--color-text-tertiary)] mt-2">{{ t('ui.science.clickToReveal') }}</p>
               </div>
             </div>
@@ -121,7 +130,7 @@ const explainers = computed(() => {
               <span class="text-2xl shrink-0">✅</span>
               <div>
                 <div class="text-xs font-semibold text-[var(--color-success)] mb-1">{{ t('ui.science.fact') }}</div>
-                <p class="text-sm text-[var(--color-text-primary)]">{{ pickLocale(myth.fact, myth.factRu, myth.factEs, myth.factDe, myth.factFr, myth.factIt) }}</p>
+                <p class="text-sm text-[var(--color-text-primary)]">{{ pickLocale(myth.fact, myth.factRu, myth.factEs, myth.factDe, myth.factFr, myth.factIt, myth.factJa, myth.factZh, myth.factKo) }}</p>
               </div>
             </div>
           </button>
@@ -131,14 +140,14 @@ const explainers = computed(() => {
 
     <!-- Explainers -->
     <section class="mb-16">
-      <h2 class="text-display-md mb-6">{{ t('ui.science.explainers') }}</h2>
+      <h2 class="text-display-md pb-6">{{ t('ui.science.explainers') }}</h2>
       <div class="max-w-2xl">
         <BaseAccordion :items="explainers" />
       </div>
     </section>
 
     <section class="mb-16">
-      <h2 class="text-display-md mb-6">{{ t('ui.science.learningPaths') }}</h2>
+      <h2 class="text-display-md pb-6">{{ t('ui.science.learningPaths') }}</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div class="bg-[var(--color-bg-elevated)] border border-[var(--glass-border)] rounded-[var(--radius-xl)] p-5">
           <div class="text-label text-[var(--color-brand-amber)] mb-2">{{ t('ui.science.forKids') }}</div>

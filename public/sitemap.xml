@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
@@ -9,6 +9,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/" />
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -21,6 +24,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/" />
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -33,6 +39,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/" />
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -45,6 +54,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/" />
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -57,6 +69,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/" />
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -69,6 +84,54 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://dinosaurs.app/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinosaurs.app/en/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dinosaurs.app/ru/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinosaurs.app/es/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://dinosaurs.app/zh/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinosaurs.app/en/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dinosaurs.app/ru/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinosaurs.app/es/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+    <url>
+    <loc>https://dinosaurs.app/ko/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinosaurs.app/en/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dinosaurs.app/ru/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinosaurs.app/es/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/" />
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -81,6 +144,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/encyclopedia" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/encyclopedia" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/encyclopedia" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/encyclopedia" />
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -93,6 +159,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/encyclopedia" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/encyclopedia" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/encyclopedia" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/encyclopedia" />
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -105,6 +174,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/encyclopedia" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/encyclopedia" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/encyclopedia" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/encyclopedia" />
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -117,6 +189,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/encyclopedia" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/encyclopedia" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/encyclopedia" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/encyclopedia" />
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -129,6 +204,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/encyclopedia" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/encyclopedia" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/encyclopedia" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/encyclopedia" />
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -141,6 +219,54 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/encyclopedia" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/encyclopedia" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/encyclopedia" />
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dinosaurs.app/ja/encyclopedia</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinosaurs.app/en/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dinosaurs.app/ru/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinosaurs.app/es/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/encyclopedia" />
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://dinosaurs.app/zh/encyclopedia</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinosaurs.app/en/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dinosaurs.app/ru/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinosaurs.app/es/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/encyclopedia" />
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+    <url>
+    <loc>https://dinosaurs.app/ko/encyclopedia</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinosaurs.app/en/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dinosaurs.app/ru/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinosaurs.app/es/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/encyclopedia" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/encyclopedia" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/encyclopedia" />
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
@@ -153,6 +279,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/timeline" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/timeline" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/timeline" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/timeline" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/timeline" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/timeline" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/timeline" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -165,6 +294,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/timeline" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/timeline" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/timeline" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/timeline" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/timeline" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/timeline" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/timeline" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -177,6 +309,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/timeline" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/timeline" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/timeline" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/timeline" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/timeline" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/timeline" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/timeline" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -189,6 +324,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/timeline" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/timeline" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/timeline" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/timeline" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/timeline" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/timeline" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/timeline" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -201,6 +339,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/timeline" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/timeline" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/timeline" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/timeline" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/timeline" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/timeline" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/timeline" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -213,6 +354,54 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/timeline" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/timeline" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/timeline" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/timeline" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/timeline" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/timeline" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/timeline" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dinosaurs.app/ja/timeline</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinosaurs.app/en/timeline" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dinosaurs.app/ru/timeline" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinosaurs.app/es/timeline" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/timeline" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/timeline" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/timeline" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/timeline" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/timeline" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/timeline" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/timeline" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dinosaurs.app/zh/timeline</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinosaurs.app/en/timeline" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dinosaurs.app/ru/timeline" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinosaurs.app/es/timeline" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/timeline" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/timeline" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/timeline" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/timeline" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/timeline" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/timeline" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/timeline" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+    <url>
+    <loc>https://dinosaurs.app/ko/timeline</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinosaurs.app/en/timeline" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dinosaurs.app/ru/timeline" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinosaurs.app/es/timeline" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/timeline" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/timeline" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/timeline" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/timeline" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/timeline" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/timeline" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/timeline" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -225,6 +414,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/compare" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/compare" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/compare" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/compare" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/compare" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/compare" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/compare" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -237,6 +429,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/compare" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/compare" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/compare" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/compare" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/compare" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/compare" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/compare" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -249,6 +444,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/compare" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/compare" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/compare" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/compare" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/compare" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/compare" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/compare" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -261,6 +459,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/compare" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/compare" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/compare" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/compare" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/compare" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/compare" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/compare" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -273,6 +474,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/compare" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/compare" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/compare" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/compare" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/compare" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/compare" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/compare" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -285,6 +489,54 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/compare" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/compare" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/compare" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/compare" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/compare" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/compare" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/compare" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dinosaurs.app/ja/compare</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinosaurs.app/en/compare" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dinosaurs.app/ru/compare" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinosaurs.app/es/compare" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/compare" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/compare" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/compare" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/compare" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/compare" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/compare" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/compare" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dinosaurs.app/zh/compare</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinosaurs.app/en/compare" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dinosaurs.app/ru/compare" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinosaurs.app/es/compare" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/compare" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/compare" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/compare" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/compare" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/compare" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/compare" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/compare" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+    <url>
+    <loc>https://dinosaurs.app/ko/compare</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinosaurs.app/en/compare" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dinosaurs.app/ru/compare" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinosaurs.app/es/compare" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/compare" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/compare" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/compare" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/compare" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/compare" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/compare" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/compare" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -297,6 +549,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -309,6 +564,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -321,6 +579,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -333,6 +594,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -345,6 +609,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -357,6 +624,54 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dinosaurs.app/ja/games</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinosaurs.app/en/games" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dinosaurs.app/ru/games" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinosaurs.app/es/games" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dinosaurs.app/zh/games</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinosaurs.app/en/games" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dinosaurs.app/ru/games" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinosaurs.app/es/games" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+    <url>
+    <loc>https://dinosaurs.app/ko/games</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinosaurs.app/en/games" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dinosaurs.app/ru/games" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinosaurs.app/es/games" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -369,6 +684,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games/quiz" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games/quiz" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games/quiz" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games/quiz" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -381,6 +699,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games/quiz" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games/quiz" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games/quiz" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games/quiz" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -393,6 +714,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games/quiz" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games/quiz" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games/quiz" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games/quiz" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -405,6 +729,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games/quiz" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games/quiz" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games/quiz" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games/quiz" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -417,6 +744,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games/quiz" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games/quiz" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games/quiz" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games/quiz" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -429,6 +759,54 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games/quiz" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games/quiz" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games/quiz" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dinosaurs.app/ja/games/quiz</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinosaurs.app/en/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dinosaurs.app/ru/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinosaurs.app/es/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games/quiz" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dinosaurs.app/zh/games/quiz</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinosaurs.app/en/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dinosaurs.app/ru/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinosaurs.app/es/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games/quiz" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+    <url>
+    <loc>https://dinosaurs.app/ko/games/quiz</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinosaurs.app/en/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dinosaurs.app/ru/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinosaurs.app/es/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games/quiz" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games/quiz" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games/quiz" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -441,6 +819,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games/puzzle" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games/puzzle" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games/puzzle" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games/puzzle" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -453,6 +834,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games/puzzle" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games/puzzle" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games/puzzle" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games/puzzle" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -465,6 +849,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games/puzzle" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games/puzzle" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games/puzzle" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games/puzzle" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -477,6 +864,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games/puzzle" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games/puzzle" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games/puzzle" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games/puzzle" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -489,6 +879,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games/puzzle" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games/puzzle" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games/puzzle" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games/puzzle" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -501,6 +894,54 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games/puzzle" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games/puzzle" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games/puzzle" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dinosaurs.app/ja/games/puzzle</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinosaurs.app/en/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dinosaurs.app/ru/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinosaurs.app/es/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games/puzzle" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dinosaurs.app/zh/games/puzzle</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinosaurs.app/en/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dinosaurs.app/ru/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinosaurs.app/es/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games/puzzle" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+    <url>
+    <loc>https://dinosaurs.app/ko/games/puzzle</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinosaurs.app/en/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dinosaurs.app/ru/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinosaurs.app/es/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games/puzzle" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games/puzzle" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games/puzzle" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -513,6 +954,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games/excavation" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games/excavation" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games/excavation" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games/excavation" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -525,6 +969,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games/excavation" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games/excavation" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games/excavation" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games/excavation" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -537,6 +984,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games/excavation" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games/excavation" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games/excavation" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games/excavation" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -549,6 +999,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games/excavation" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games/excavation" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games/excavation" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games/excavation" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -561,6 +1014,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games/excavation" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games/excavation" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games/excavation" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games/excavation" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -573,6 +1029,54 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games/excavation" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games/excavation" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games/excavation" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dinosaurs.app/ja/games/excavation</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinosaurs.app/en/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dinosaurs.app/ru/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinosaurs.app/es/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games/excavation" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dinosaurs.app/zh/games/excavation</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinosaurs.app/en/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dinosaurs.app/ru/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinosaurs.app/es/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games/excavation" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+    <url>
+    <loc>https://dinosaurs.app/ko/games/excavation</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinosaurs.app/en/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dinosaurs.app/ru/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinosaurs.app/es/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/games/excavation" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/games/excavation" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/games/excavation" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -585,6 +1089,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/science" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/science" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/science" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/science" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/science" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/science" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/science" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -597,6 +1104,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/science" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/science" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/science" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/science" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/science" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/science" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/science" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -609,6 +1119,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/science" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/science" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/science" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/science" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/science" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/science" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/science" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -621,6 +1134,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/science" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/science" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/science" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/science" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/science" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/science" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/science" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -633,6 +1149,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/science" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/science" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/science" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/science" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/science" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/science" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/science" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -645,6 +1164,54 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/science" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/science" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/science" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/science" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/science" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/science" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/science" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dinosaurs.app/ja/science</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinosaurs.app/en/science" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dinosaurs.app/ru/science" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinosaurs.app/es/science" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/science" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/science" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/science" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/science" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/science" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/science" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/science" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dinosaurs.app/zh/science</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinosaurs.app/en/science" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dinosaurs.app/ru/science" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinosaurs.app/es/science" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/science" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/science" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/science" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/science" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/science" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/science" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/science" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+    <url>
+    <loc>https://dinosaurs.app/ko/science</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinosaurs.app/en/science" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dinosaurs.app/ru/science" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinosaurs.app/es/science" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/science" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/science" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/science" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/science" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/science" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/science" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/science" />
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -657,6 +1224,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/about" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/about" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/about" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/about" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/about" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/about" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/about" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -669,6 +1239,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/about" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/about" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/about" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/about" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/about" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/about" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/about" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -681,6 +1254,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/about" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/about" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/about" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/about" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/about" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/about" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/about" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -693,6 +1269,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/about" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/about" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/about" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/about" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/about" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/about" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/about" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -705,6 +1284,9 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/about" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/about" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/about" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/about" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/about" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/about" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/about" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -717,8 +1299,57 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/about" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/about" />
     <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/about" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/about" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/about" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/about" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dinosaurs.app/ja/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinosaurs.app/en/about" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dinosaurs.app/ru/about" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinosaurs.app/es/about" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/about" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/about" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/about" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/about" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/about" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/about" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dinosaurs.app/zh/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinosaurs.app/en/about" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dinosaurs.app/ru/about" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinosaurs.app/es/about" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/about" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/about" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/about" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/about" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/about" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/about" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dinosaurs.app/ko/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dinosaurs.app/en/about" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://dinosaurs.app/ru/about" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://dinosaurs.app/es/about" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://dinosaurs.app/de/about" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://dinosaurs.app/fr/about" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://dinosaurs.app/it/about" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://dinosaurs.app/ja/about" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://dinosaurs.app/zh/about" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://dinosaurs.app/ko/about" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/about" />
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 </urlset>
+

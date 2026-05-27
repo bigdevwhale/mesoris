@@ -279,11 +279,12 @@ watch(
           <!-- Card info -->
           <div class="p-4">
             <div class="flex items-start justify-between gap-2 mb-1">
-              <h3 class="font-bold text-[var(--color-text-primary)] leading-tight text-sm">{{ dino.name }}</h3>
+              <h3 class="font-bold text-[var(--color-text-primary)] leading-tight text-sm">{{ dino.displayName }}</h3>
               <span class="shrink-0 text-[10px] text-[var(--color-text-tertiary)] mt-0.5 whitespace-nowrap">
                 {{ dino.periodRangeMya[0] }}–{{ dino.periodRangeMya[1] }} Ma
               </span>
             </div>
+            <p v-if="dino.genusName !== dino.displayName" class="text-[9px] text-[var(--color-text-tertiary)] mb-1 italic">{{ dino.genusName }}</p>
             <p class="text-[10px] text-[var(--color-text-tertiary)] mb-3 italic">{{ dino.nameMeaning }}</p>
             <div class="flex flex-wrap gap-1.5 mb-3">
               <span :class="['px-2 py-0.5 text-[9px] font-bold rounded-full uppercase tracking-wide', DIET_BADGE_CLASS[dino.diet] ?? 'bg-[rgba(255,255,255,0.06)] text-[var(--color-text-tertiary)]']">

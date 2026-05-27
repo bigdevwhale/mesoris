@@ -2,7 +2,7 @@ import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import type { RouteLocationRaw } from 'vue-router'
 
-const LOCALE_PREFIX_RE = /^\/(en|ru|es|de|fr|it)(\/|$)/
+const LOCALE_PREFIX_RE = /^\/(en|ru|es|de|fr|it|ja|zh|ko)(\/|$)/
 
 export function useLocale() {
   const route = useRoute()

@@ -9,18 +9,27 @@ export const HowScientistsKnowDinosaurColors: Article = {
     titleDe: 'Woher Wissenschaftler wissen, wie Dinosaurier aussahen',
     titleFr: 'Comment les scientifiques savent a quoi ressemblaient les dinosaures',
     titleIt: 'Come Gli Scienziati Conoscono i Colori dei Dinosauri',
+    titleJa: '科学者はどうやって恐竜の見た目を知るのか',
+    titleZh: '科学家如何知道恐龙的样子',
+    titleKo: '과학자들은 어떻게 공룡의 모습을 알 수 있을까',
     summary: 'From feathers to pigments, scientists use fossils and modern biology to reconstruct dinosaur appearance with surprising accuracy.',
     summaryRu: 'От перьев до пигментов — учёные используют окаменелости и современную биологию для удивительно точной реконструкции облика динозавров.',
     summaryEs: 'La sorprendente ciencia que revela los colores reales de criaturas prehistoricas.',
     summaryDe: 'Von Federn bis zu Pigmenten: Wie Wissenschaftler mithilfe von Fossilien und moderner Biologie das Aussehen von Dinosauriern mit erstaunlicher Genauigkeit rekonstruieren.',
     summaryFr: `Des plumes aux pigments, les scientifiques utilisent les fossiles et la biologie moderne pour reconstituer l'apparence des dinosaures avec une precision etonnante.`,
     summaryIt: `Dalle piume ai pigmenti, gli scienziati usano i fossili e la biologia moderna per ricostruire l'aspetto dei dinosauri con sorprendente precisione.`,
+    summaryJa: '羽毛から色素まで、科学者たちは化石と現代生物学を駆使して、驚くべき精度で恐竜の外見を復元しています。',
+    summaryZh: '从羽毛到色素，科学家利用化石和现代生物学以惊人的准确性重建恐龙的外观。',
+    summaryKo: '깃털에서 색소까지, 과학자들은 화석과 현대 생물학을 사용하여 놀라운 정확도로 공룡의 외관을 재구성합니다.',
     category: 'science',
     categoryRu: 'наука',
     categoryEs: 'paleontologia',
     categoryDe: 'Wissenschaft',
     categoryFr: 'science',
     categoryIt: 'scienza',
+    categoryJa: '科学',
+    categoryZh: '科学',
+    categoryKo: '과학',
     readingTimeMinutes: 7,
     image: '/images/articles/how-scientists-know-dinosaur-colors.jpg',
     relatedDinosaurIds: ['velociraptor', 'tyrannosaurus-rex', 'triceratops'],
@@ -82,6 +91,81 @@ Nel 2008, degli scienziati che studiavano una piuma fossilizzata di 100 milioni 
 Nel 2010, un team ha studiato un fossile di Sinosauropteryx e ha trovato melanosomi che indicavano piume bruno-rossicce con una coda a strisce bianche e marroni — come un attuale lemure.
 
 Anchiornis si e rivelato ancora piu spettacolare: piume corporee grigio-nere, una cresta rossa come quella di un picchio, e piume bianche con punte nere sulle ali.`,
+    contentJa: `## 恐竜の外見の復元
+
+科学者は想像力だけで恐竜の外見を推測しているわけではありません。化石証拠、比較解剖学、現代の鳥類生物学を組み合わせて、可能な限り正確な復元を構築しています。
+
+### どのような証拠を使うのか
+
+**羽毛と皮膚の印象**は、質感と体の覆い方を明らかにします。
+
+**メラノソーム** — 色素に関連する微細構造 — は、色と模様の手がかりを保存することがあります。
+
+**骨の構造**は、姿勢、筋肉量、頭の形について教えてくれます。
+
+**鳥やワニなどの現生の近縁種**は、科学者が軟組織や行動を推定するのに役立ちます。
+
+### 復元できるもの
+
+- 全体的な体のシルエット
+- 羽毛の分布
+- 皮膚の質感と鱗
+- 一部の色彩パターン
+- トサカやフリルなどのディスプレイ構造
+
+### まだ不確かなもの
+
+すべての色を完全な確信を持って復元することはまだできません。多くの恐竜は、種、年齢、性別によって異なる模様、カモフラージュ、またはディスプレイ用の色彩を持っていた可能性が高いです。`,
+    contentZh: `## 重建恐龙外观
+
+科学家并非凭空想象恐龙的外观。他们结合化石证据、比较解剖学和现代鸟类生物学，构建尽可能准确的复原因。
+
+### 我们使用什么证据？
+
+**羽毛和皮肤印痕**揭示了质地和身体覆盖物。
+
+**黑色素体**——与色素相关的微小结构——可以保存颜色和图案的线索。
+
+**骨骼结构**告诉我们姿势、肌肉量和头部形状。
+
+**现生近亲**如鸟类和鳄鱼帮助科学家估算软组织和行为。
+
+### 可以复原什么？
+
+- 整体身体轮廓
+- 羽毛覆盖情况
+- 皮肤质地和鳞片
+- 部分颜色图案
+- 头冠和颈盾等展示结构
+
+### 什么仍然不确定？
+
+我们仍无法完全确定地复原每一种颜色。许多恐龙很可能具有依物种、年龄和性别而异的图案、伪装色或展示色彩。`,
+    contentKo: `## 공룡 외관 재구성
+
+과학자들은 상상만으로 공룡의 외관을 추측하지 않습니다. 그들은 화석 증거, 비교 해부학, 현대 조류 생물학을 결합하여 가능한 가장 정확한 복원을 구축합니다.
+
+### 어떤 증거를 사용하는가
+
+**깃털과 피부 자국**은 질감과 신체 덮개를 드러냅니다.
+
+**멜라노솜** — 색소와 관련된 미세 구조 — 은 색상과 무늬의 단서를 보존할 수 있습니다.
+
+**뼈 구조**는 자세, 근육량, 머리 모양을 알려줍니다.
+
+**조류나 악어와 같은 현생 근연종**은 과학자들이 연조직과 행동을 추정하는 데 도움이 됩니다.
+
+### 재구성할 수 있는 것
+
+- 전체적인 신체 실루엣
+- 깃털 분포
+- 피부 질감과 비늘
+- 일부 색상 패턴
+- 볏과 프릴 같은 과시 구조
+
+### 여전히 불확실한 것
+
+모든 색상을 완벽한 확신으로 재구성할 수는 아직 없습니다. 많은 공룡은 종, 나이, 성별에 따라 다양한 무늬, 위장색, 또는 과시용 색상을 가졌을 가능성이 높습니다.`,
     kidsVersion: `## How Do We Know What Dinosaurs Looked Like?\n\nScientists are like prehistoric detectives!\n\nThey look at:\n- feathers\n- skin prints\n- bones\n- and even tiny colour clues in fossils\n\nThat helps them draw dinosaurs in a way that is much closer to the real thing.`,
     kidsVersionRu: `## Откуда мы знаем, как выглядели динозавры?\n\nУчёные — как доисторические детективы!\n\nОни изучают:\n- перья\n- отпечатки кожи\n- кости\n- и даже крошечные цветовые подсказки в окаменелостях\n\nЭто помогает им рисовать динозавров гораздо ближе к реальности.`,
     kidsVersionEs: `## ¿Podemos Saber de Que Color Eran?
@@ -140,4 +224,37 @@ Confrontandoli con gli uccelli moderni, gli scienziati possono dire:
 - Questo aveva una coda AD ANELLI come un procione
 
 Non e incredibile?`,
+    kidsVersionJa: `## 恐竜の見た目はどうやってわかるの？
+
+科学者たちは先史時代の探偵みたいなものだよ！
+
+調べるものは：
+- 羽毛
+- 皮膚の痕跡
+- 骨
+- そして化石の中の小さな色の手がかり
+
+それらを手がかりに、ずっと本物に近い姿で恐竜を描くことができるんだ。`,
+    kidsVersionZh: `## 我们怎么知道恐龙长什么样？
+
+科学家就像史前侦探一样！
+
+他们观察：
+- 羽毛
+- 皮肤印痕
+- 骨骼
+- 甚至化石中微小的颜色线索
+
+这些帮助他们以更加接近真实的方式画出恐龙。`,
+    kidsVersionKo: `## 공룡이 어떻게 생겼는지 어떻게 알 수 있을까?
+
+과학자들은 선사 시대 탐정 같아요!
+
+그들이 보는 것들:
+- 깃털
+- 피부 자국
+- 뼈
+- 그리고 화석 속의 아주 작은 색깔 단서
+
+이것들이 진짜 모습에 더 가깝게 공룡을 그리는 데 도움이 돼요.`,
   }

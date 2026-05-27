@@ -40,6 +40,9 @@ const currentQ = computed<PersonalityQuestion>(() => personalityQuestions[curren
 const currentShuffleOrder = computed(() => shuffleOrders.value[currentIdx.value])
 
 function localizedQuestion(q: PersonalityQuestion): string {
+  if (locale.value === 'ko') return q.questionKo
+  if (locale.value === 'zh') return q.questionZh
+  if (locale.value === 'ja') return q.questionJa
   if (locale.value === 'ru') return q.questionRu
   if (locale.value === 'es') return q.questionEs
   if (locale.value === 'de') return q.questionDe
@@ -51,6 +54,9 @@ function localizedQuestion(q: PersonalityQuestion): string {
 function localizedOption(q: PersonalityQuestion, idx: number): string {
   const opt = q.options[idx]
   if (!opt) return ''
+  if (locale.value === 'ko') return opt.textKo
+  if (locale.value === 'zh') return opt.textZh
+  if (locale.value === 'ja') return opt.textJa
   if (locale.value === 'ru') return opt.textRu
   if (locale.value === 'es') return opt.textEs
   if (locale.value === 'de') return opt.textDe
@@ -60,6 +66,9 @@ function localizedOption(q: PersonalityQuestion, idx: number): string {
 }
 
 function localizedTitle(d: DinosaurPersonality): string {
+  if (locale.value === 'ko') return d.titleKo
+  if (locale.value === 'zh') return d.titleZh
+  if (locale.value === 'ja') return d.titleJa
   if (locale.value === 'ru') return d.titleRu
   if (locale.value === 'es') return d.titleEs
   if (locale.value === 'de') return d.titleDe
@@ -69,6 +78,9 @@ function localizedTitle(d: DinosaurPersonality): string {
 }
 
 function localizedDescription(d: DinosaurPersonality): string {
+  if (locale.value === 'ko') return d.descriptionKo
+  if (locale.value === 'zh') return d.descriptionZh
+  if (locale.value === 'ja') return d.descriptionJa
   if (locale.value === 'ru') return d.descriptionRu
   if (locale.value === 'es') return d.descriptionEs
   if (locale.value === 'de') return d.descriptionDe
@@ -78,6 +90,9 @@ function localizedDescription(d: DinosaurPersonality): string {
 }
 
 function localizedFunFact(d: DinosaurPersonality): string {
+  if (locale.value === 'ko') return d.funFactKo
+  if (locale.value === 'zh') return d.funFactZh
+  if (locale.value === 'ja') return d.funFactJa
   if (locale.value === 'ru') return d.funFactRu
   if (locale.value === 'es') return d.funFactEs
   if (locale.value === 'de') return d.funFactDe
@@ -87,6 +102,9 @@ function localizedFunFact(d: DinosaurPersonality): string {
 }
 
 function localizedName(d: DinosaurPersonality): string {
+  if (locale.value === 'ko') return d.nameKo
+  if (locale.value === 'zh') return d.nameZh
+  if (locale.value === 'ja') return d.nameJa
   if (locale.value === 'ru') return d.nameRu
   if (locale.value === 'es') return d.nameEs
   if (locale.value === 'de') return d.nameDe

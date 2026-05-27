@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import type { RouteRecordRaw, RouteLocationNormalized } from 'vue-router'
 
-const SUPPORTED_LOCALES = ['en', 'ru', 'es', 'de', 'fr', 'it'] as const
+const SUPPORTED_LOCALES = ['en', 'ru', 'es', 'de', 'fr', 'it', 'ja', 'zh', 'ko'] as const
 type Locale = (typeof SUPPORTED_LOCALES)[number]
 
 const DEFAULT_LOCALE: Locale = 'en'
@@ -30,7 +30,7 @@ function setLocaleCookie(locale: Locale) {
 }
 
 // Regex to detect if path starts with a supported locale prefix: /en/... or /ru/...
-const LOCALE_PREFIX_RE = /^\/(en|ru|es|de|fr|it)(\/|$)/
+const LOCALE_PREFIX_RE = /^\/(en|ru|es|de|fr|it|ja|zh|ko)(\/|$)/
 
 const childRoutes: RouteRecordRaw[] = [
   {
@@ -272,6 +272,66 @@ const PAGE_TITLES: Record<string, Record<string, string>> = {
     about: 'Informazioni',
     'not-found': 'Pagina Non Trovata',
     fallback: 'Mondo Preistorico Interattivo',
+  },
+  ja: {
+    base: '恐竜',
+    home: '先史時代の世界へようこそ',
+    encyclopedia: '恐竜図鑑',
+    'encyclopedia-detail': '恐竜の詳細',
+    timeline: '先史時代の年表',
+    compare: '恐竜を比較',
+    games: '恐竜ゲーム',
+    quiz: '恐竜クイズ',
+    puzzle: '恐竜パズル',
+    excavation: '化石発掘',
+    memory: '恐竜メモリー',
+    runner: '恐竜ランナー',
+    personality: 'あなたはどの恐竜？',
+    science: '科学センター',
+    article: '科学記事',
+    about: '概要',
+    'not-found': 'ページが見つかりません',
+    fallback: 'インタラクティブ先史時代の世界',
+  },
+  zh: {
+    base: '恐龙',
+    home: '欢迎来到史前世界',
+    encyclopedia: '恐龙百科全书',
+    'encyclopedia-detail': '恐龙详情',
+    timeline: '史前时间线',
+    compare: '比较恐龙',
+    games: '恐龙游戏',
+    quiz: '恐龙测验',
+    puzzle: '恐龙拼图',
+    excavation: '化石挖掘',
+    memory: '恐龙记忆配对',
+    runner: '恐龙跑酷',
+    personality: '你是哪种恐龙？',
+    science: '科学中心',
+    article: '科学文章',
+    about: '关于',
+    'not-found': '页面未找到',
+    fallback: '互动史前世界',
+  },
+  ko: {
+    base: '공룡',
+    home: '선사 시대 세계에 오신 것을 환영합니다',
+    encyclopedia: '공룡 백과사전',
+    'encyclopedia-detail': '공룡 상세 정보',
+    timeline: '선사 시대 연대표',
+    compare: '공룡 비교',
+    games: '공룡 게임',
+    quiz: '공룡 퀴즈',
+    puzzle: '공룡 퍼즐',
+    excavation: '화석 발굴',
+    memory: '공룡 기억력 게임',
+    runner: '공룡 러너',
+    personality: '당신은 어떤 공룡인가요?',
+    science: '과학 센터',
+    article: '과학 기사',
+    about: '소개',
+    'not-found': '페이지를 찾을 수 없습니다',
+    fallback: '인터랙티브 선사 시대 세계',
   },
 }
 

@@ -5,6 +5,7 @@ import { useUiStore } from '@/stores/useUiStore'
 import BaseIcon from '@/components/ui/BaseIcon.vue'
 import MainNav from './MainNav.vue'
 import MobileNav from './MobileNav.vue'
+import BottomNav from './BottomNav.vue'
 import ModeSwitcher from './ModeSwitcher.vue'
 import LanguageSwitcher from './LanguageSwitcher.vue'
 
@@ -39,10 +40,10 @@ const uiStore = useUiStore()
         <LanguageSwitcher />
         <ModeSwitcher />
 
-        <!-- Mobile hamburger -->
+        <!-- Mobile hamburger: hidden on mobile (BottomNav handles it), shown only on md if needed -->
         <button
           type="button"
-          class="md:hidden w-9 h-9 flex items-center justify-center rounded-full text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors"
+          class="hidden w-9 h-9 flex items-center justify-center rounded-full text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors"
           @click="uiStore.toggleMobileNav()"
           :aria-label="uiStore.isMobileNavOpen ? t('ui.header.closeMenu') : t('ui.header.openMenu')"
         >
@@ -53,4 +54,5 @@ const uiStore = useUiStore()
   </header>
 
   <MobileNav :is-open="uiStore.isMobileNavOpen" @close="uiStore.closeMobileNav()" />
+  <BottomNav />
 </template>
