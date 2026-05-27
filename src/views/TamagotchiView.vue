@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { ref, computed, onMounted, onUnmounted, nextTick } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useLocale } from '@/composables/useLocale'
 import BaseIcon from '@/components/ui/BaseIcon.vue'
@@ -850,11 +850,14 @@ onMounted(() => {
 
   const hadSave = load()
   if (hadSave && phase.value !== 'select') {
-    lastTs = performance.now()
-    if (phase.value === 'playing')  startTick()
-    if (phase.value === 'grown')   { animState = 'play'; spawnStars() }
-    if (phase.value === 'dead')      animState = 'dead'
-    raf = requestAnimationFrame(loop)
+    // Wait for Vue to render the canvas element (phase changed from 'select' default)
+    nextTick(() => {
+      lastTs = performance.now()
+      if (phase.value === 'playing')  startTick()
+      if (phase.value === 'grown')   { animState = 'play'; spawnStars() }
+      if (phase.value === 'dead')      animState = 'dead'
+      raf = requestAnimationFrame(loop)
+    })
   }
 })
 

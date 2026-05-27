@@ -116,7 +116,7 @@ export default {
     newGame: 'Neues Spiel',
     exitGame: 'Spiel beenden',
     exitTitle: 'Diesen Dinosaurier aufgeben?',
-    exitDesc: 'Dein Fortschritt geht verloren und du kannst einen neuen Dinosaurier w�hlen.',
+    exitDesc: 'Dein Fortschritt geht verloren und du kannst einen neuen Dinosaurier wählen.',
     exitCancel: 'Weiter spielen',
     exitConfirm: 'Aufgeben',
     selectTitle: 'Wähle deinen Dinosaurier!',
