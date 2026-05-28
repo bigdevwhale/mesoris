@@ -12,6 +12,7 @@ export const DinosaurSensesAndBehavior: Article = {
     titleJa: '恐竜は世界をどう感じていたか？',
     titleZh: '恐龙如何感知世界？',
     titleKo: '공룡은 세상을 어떻게 느꼈을까?',
+    titleKk: 'Динозаврлар әлемді қалай сезінді?',
     summary: 'A look at dinosaur vision, hearing, smell, and behavior — and how fossils help us infer their daily lives.',
     summaryRu: 'Взгляд на зрение, слух, обоняние и поведение динозавров — и как окаменелости помогают восстановить их повседневную жизнь.',
     summaryEs: 'Que sabemos sobre los cerebros, sentidos y comportamiento de los dinosaurios.',
@@ -21,6 +22,7 @@ export const DinosaurSensesAndBehavior: Article = {
     summaryJa: '恐竜の視覚、聴覚、嗅覚、そして行動について — 化石がどのように彼らの日常生活を推測する手がかりとなるのか。',
     summaryZh: '深入了解恐龙的视觉、听觉、嗅觉和行为——以及化石如何帮助我们推断它们的日常生活。',
     summaryKo: '공룡의 시각, 청각, 후각 및 행동에 대한 탐구 — 그리고 화석이 그들의 일상을 추론하는 데 어떻게 도움이 되는지.',
+    summaryKk: 'Динозаврлардың көру, есту, иіс сезу қабілеттері мен мінез-құлқына шолу — және қазбалар олардың күнделікті өмірін қалпына келтіруге қалай көмектеседі.',
     category: 'biology',
     categoryRu: 'биология',
     categoryEs: 'biologia',
@@ -30,6 +32,7 @@ export const DinosaurSensesAndBehavior: Article = {
     categoryJa: '生物学',
     categoryZh: '生物学',
     categoryKo: '생물학',
+    categoryKk: 'биология',
     readingTimeMinutes: 8,
     image: '/images/articles/dinosaur-senses-and-behavior.jpg',
     relatedDinosaurIds: ['triceratops', 'tyrannosaurus-rex', 'parasaurolophus'],
@@ -161,6 +164,24 @@ Le prove fossili mostrano che molti dinosauri vivevano in gruppi. Sono stati sco
 
 ### 큰 질문
 공룡은 활동적이고 사회적인 동물이었을까? 많은 경우에 — 그렇습니다, 하지만 행동은 종마다 크게 달랐을 것입니다.`,
+    contentKk: `## Динозаврлардың сезім мүшелері
+
+Динозаврлардың сезім мүшелері олардың қалай аң аулағанын, қалай қорғанғанын және топта қалай өмір сүргенін қалыптастырды. Қазба бас сүйектері, ми қораптары және із қазбалары таңғаларлық көп нәрсені аша алады.
+
+### Көру
+Кейбір жыртқыштардың алға бағытталған көздері және тамаша тереңдікті қабылдау қабілеті болды. Шөпқоректілер көбінесе қауіпті бақылау үшін кеңірек көру өрісіне ие болды.
+
+### Иіс сезу
+Көптеген тероподтардың үлкен иіс сезу баданалары болды, бұл күшті иіс сезу қабілетін көрсетеді.
+
+### Есту
+Кейбір түрлерде айдарлар мен бас сүйек пішіндері дыбысты күшейткен болуы мүмкін. Паразауролофус алыс қашықтыққа жететін төмен дыбыстар шығарған болуы мүмкін.
+
+### Мінез-құлық
+Қазба ұялары, із қазбалары және сүйек қабаттары әлеуметтік өмірді, ұрпақ күтімін және кейде топтық қозғалысты көрсетеді.
+
+### Үлкен сұрақ
+Динозаврлар белсенді, әлеуметтік жануарлар болды ма? Көп жағдайда — иә, бірақ мінез-құлық түрден түрге айтарлықтай өзгерген болуы мүмкін.`,
     kidsVersion: `## Dinosaur Senses\n\nDinosaurs could see, hear, and smell the world in cool ways!\n\nSome had huge eyes, some had super noses, and some may have made loud calls with their heads.\n\nScientists use fossils to figure out how they lived every day.`,
     kidsVersionRu: `## Чувства динозавров\n\nДинозавры видели, слышали и чувствовали запахи удивительными способами!\n\nУ кого-то были огромные глаза, у кого-то — супер-нос, а некоторые, возможно, издавали громкие звуки головой.\n\nУчёные используют окаменелости, чтобы понять их повседневную жизнь.`,
     kidsVersionEs: `## ¿Podian Pensar los Dinosaurios?
@@ -228,4 +249,11 @@ Troodon aveva il cervello piu grande in rapporto al suo corpo. Era piu o meno in
 어떤 공룡은 거대한 눈을, 어떤 공룡은 슈퍼 코를, 어떤 공룡은 머리로 큰 소리를 냈을 수도 있어요.
 
 과학자들은 화석을 이용해 그들이 매일 어떻게 살았는지 알아내고 있어요.`,
+    kidsVersionKk: `## Динозаврлардың сезім мүшелері
+
+Динозаврлар көре, ести және иіс сезе алды — керемет тәсілдермен!
+
+Кейбіреулерінің үлкен көздері, кейбіреулерінің супер мұрындары, ал кейбіреулері бастарымен қатты дыбыстар шығарған болуы мүмкін.
+
+Ғалымдар олардың күнделікті өмірін түсіну үшін қазбаларды пайдаланады.`,
   }

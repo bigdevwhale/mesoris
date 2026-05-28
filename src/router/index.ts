@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import type { RouteRecordRaw, RouteLocationNormalized } from 'vue-router'
 
-const SUPPORTED_LOCALES = ['en', 'ru', 'es', 'de', 'fr', 'it', 'ja', 'zh', 'ko'] as const
+const SUPPORTED_LOCALES = ['en', 'ru', 'es', 'de', 'fr', 'it', 'ja', 'zh', 'ko', 'kk'] as const
 type Locale = (typeof SUPPORTED_LOCALES)[number]
 
 const DEFAULT_LOCALE: Locale = 'en'
@@ -30,7 +30,7 @@ function setLocaleCookie(locale: Locale) {
 }
 
 // Regex to detect if path starts with a supported locale prefix: /en/... or /ru/...
-const LOCALE_PREFIX_RE = /^\/(en|ru|es|de|fr|it|ja|zh|ko)(\/|$)/
+const LOCALE_PREFIX_RE = /^\/(en|ru|es|de|fr|it|ja|zh|ko|kk)(\/|$)/
 
 const childRoutes: RouteRecordRaw[] = [
   {
@@ -92,6 +92,11 @@ const childRoutes: RouteRecordRaw[] = [
     path: 'games/runner',
     name: 'runner',
     component: () => import('@/views/RunnerView.vue'),
+  },
+  {
+    path: 'games/tamagotchi',
+    name: 'tamagotchi',
+    component: () => import('@/views/TamagotchiView.vue'),
   },
   {
     path: 'science',
@@ -167,6 +172,7 @@ const PAGE_TITLES: Record<string, Record<string, string>> = {
     memory: 'Memory Match',
     runner: 'Dino Runner',
     personality: 'Which Dino Are You?',
+    tamagotchi: 'Dino Tamagotchi',
     science: 'Science Center',
     article: 'Science Article',
     about: 'About',
@@ -187,6 +193,7 @@ const PAGE_TITLES: Record<string, Record<string, string>> = {
     memory: 'Найди пару',
     runner: 'Бег динозавра',
     personality: 'Какой ты динозавр?',
+    tamagotchi: 'Тамагочи с динозавром',
     science: 'Научный центр',
     article: 'Научная статья',
     about: 'О проекте',
@@ -207,6 +214,7 @@ const PAGE_TITLES: Record<string, Record<string, string>> = {
     memory: 'Memoria',
     runner: 'Carrera del Dinosaurio',
     personality: '¿Qué Dinosaurio Eres?',
+    tamagotchi: 'Dino Tamagotchi',
     science: 'Centro de Ciencias',
     article: 'Articulo Cientifico',
     about: 'Acerca de',
@@ -227,6 +235,7 @@ const PAGE_TITLES: Record<string, Record<string, string>> = {
     memory: 'Dino-Memo',
     runner: 'Dino-Lauf',
     personality: 'Welcher Dino Bist Du?',
+    tamagotchi: 'Dino Tamagotchi',
     science: 'Wissenschaftszentrum',
     article: 'Wissenschaftlicher Artikel',
     about: 'Uber uns',
@@ -247,6 +256,7 @@ const PAGE_TITLES: Record<string, Record<string, string>> = {
     memory: 'Memory Dinosaures',
     runner: 'Course du Dinosaure',
     personality: 'Quel Dinosaure Es-Tu ?',
+    tamagotchi: 'Dino Tamagotchi',
     science: 'Centre Scientifique',
     article: 'Article Scientifique',
     about: 'A propos',
@@ -267,6 +277,7 @@ const PAGE_TITLES: Record<string, Record<string, string>> = {
     memory: 'Memory Dinosauri',
     runner: 'Corsa del Dinosauro',
     personality: 'Che Dinosauro Sei?',
+    tamagotchi: 'Dino Tamagotchi',
     science: 'Centro Scientifico',
     article: 'Articolo Scientifico',
     about: 'Informazioni',
@@ -287,6 +298,7 @@ const PAGE_TITLES: Record<string, Record<string, string>> = {
     memory: '恐竜メモリー',
     runner: '恐竜ランナー',
     personality: 'あなたはどの恐竜？',
+    tamagotchi: '恐竜タマゴッチ',
     science: '科学センター',
     article: '科学記事',
     about: '概要',
@@ -307,6 +319,7 @@ const PAGE_TITLES: Record<string, Record<string, string>> = {
     memory: '恐龙记忆配对',
     runner: '恐龙跑酷',
     personality: '你是哪种恐龙？',
+    tamagotchi: '恐龙宠物',
     science: '科学中心',
     article: '科学文章',
     about: '关于',
@@ -327,11 +340,33 @@ const PAGE_TITLES: Record<string, Record<string, string>> = {
     memory: '공룡 기억력 게임',
     runner: '공룡 러너',
     personality: '당신은 어떤 공룡인가요?',
+    tamagotchi: '공룡 다마고치',
     science: '과학 센터',
     article: '과학 기사',
     about: '소개',
     'not-found': '페이지를 찾을 수 없습니다',
     fallback: '인터랙티브 선사 시대 세계',
+  },
+  kk: {
+    base: 'Динозаврлар',
+    home: 'Тарихқа дейінгі әлемге қош келдіңіз',
+    encyclopedia: 'Динозаврлар энциклопедиясы',
+    'encyclopedia-detail': 'Динозавр туралы мәлімет',
+    timeline: 'Тарихқа дейінгі уақыт шкаласы',
+    compare: 'Динозаврларды салыстыру',
+    games: 'Динозавр ойындары',
+    quiz: 'Динозавр викторинасы',
+    puzzle: 'Динозавр пазлы',
+    excavation: 'Қазба жұмыстары',
+    memory: 'Динозавр жады ойыны',
+    runner: 'Динозавр жүгіруші',
+    personality: 'Сіз қандай динозаврсыз?',
+    tamagotchi: 'Дино Тамагочи',
+    science: 'Ғылым орталығы',
+    article: 'Ғылыми мақала',
+    about: 'Біз туралы',
+    'not-found': 'Бет табылмады',
+    fallback: 'Интерактивті тарихқа дейінгі әлем',
   },
 }
 

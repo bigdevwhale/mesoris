@@ -190,7 +190,7 @@ function restart() {
             </div>
             <div class="flex flex-col gap-1">
               <span class="text-xs text-[var(--color-text-tertiary)]">{{ t('ui.compare.weightLabel') }}</span>
-              <span class="text-sm font-semibold text-[var(--color-text-primary)]">{{ translatedDino.dimensions.weightKg.toLocaleString(locale === 'ko' ? 'ko-KR' : locale === 'zh' ? 'zh-CN' : locale === 'ja' ? 'ja-JP' : locale === 'it' ? 'it-IT' : locale === 'fr' ? 'fr-FR' : locale === 'de' ? 'de-DE' : locale === 'es' ? 'es-ES' : locale === 'ru' ? 'ru-RU' : 'en-US') }} {{ t('ui.compare.kgUnit') }}</span>
+              <span class="text-sm font-semibold text-[var(--color-text-primary)]">{{ translatedDino.dimensions.weightKg.toLocaleString(locale === 'kk' ? 'kk-KZ' : locale === 'ko' ? 'ko-KR' : locale === 'zh' ? 'zh-CN' : locale === 'ja' ? 'ja-JP' : locale === 'it' ? 'it-IT' : locale === 'fr' ? 'fr-FR' : locale === 'de' ? 'de-DE' : locale === 'es' ? 'es-ES' : locale === 'ru' ? 'ru-RU' : 'en-US') }} {{ t('ui.compare.kgUnit') }}</span>
             </div>
           </div>
 

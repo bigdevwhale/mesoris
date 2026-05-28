@@ -170,7 +170,7 @@ onMounted(() => {
         >
           <BaseIcon :name="categoryIconMap[catKey]" :size="28" class="transition-transform duration-300 group-hover:scale-110" :style="{ color: categoryColorMap[catKey] }" />
           <span
-            class="text-sm font-bold"
+            class="text-sm font-bold text-center"
             :style="{ color: categoryColorMap[catKey] }"
           >{{ t(`ui.home.categories.${catKey === 'flying-reptile' ? 'flyingReptiles' : catKey === 'marine-reptile' ? 'marineReptiles' : catKey + 's'}`) }}</span>
         </router-link>

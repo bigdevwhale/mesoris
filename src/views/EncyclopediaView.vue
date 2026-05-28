@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { computed, ref, watch } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
-import { useI18n } from 'vue-i18n'
-import { useEncyclopediaStore, type SortOption } from '@/stores/useEncyclopediaStore'
-import type { DinosaurCategory } from '@/types/dinosaur'
-import { useDinoTranslator } from '@/composables/useDinoTranslation'
-import { useLocale } from '@/composables/useLocale'
-import { useModeStore } from '@/stores/useModeStore'
-import { useStaggerReveal } from '@/composables/useScrollAnimation'
+import {computed, ref, watch} from 'vue'
+import {useRoute, useRouter} from 'vue-router'
+import {useI18n} from 'vue-i18n'
+import {useEncyclopediaStore, type SortOption} from '@/stores/useEncyclopediaStore'
+import type {DinosaurCategory} from '@/types/dinosaur'
+import {useDinoTranslator} from '@/composables/useDinoTranslation'
+import {useLocale} from '@/composables/useLocale'
+import {useModeStore} from '@/stores/useModeStore'
+import {useStaggerReveal} from '@/composables/useScrollAnimation'
 import BaseInput from '@/components/ui/BaseInput.vue'
 import BaseSelect from '@/components/ui/BaseSelect.vue'
 import BaseChip from '@/components/ui/BaseChip.vue'
@@ -20,12 +20,12 @@ import DinoCardImage from '@/components/ui/DinoCardImage.vue'
 import SeoHead from '@/components/layout/SeoHead.vue'
 import DinoDetailModal from '@/components/encyclopedia/DinoDetailModal.vue'
 
-const { t, locale } = useI18n()
+const {t, locale} = useI18n()
 const store = useEncyclopediaStore()
 const modeStore = useModeStore()
-const { translateDino } = useDinoTranslator()
+const {translateDino} = useDinoTranslator()
 
-watch(locale, (loc) => store.setLocale(loc), { immediate: true })
+watch(locale, (loc) => store.setLocale(loc), {immediate: true})
 
 const ERA_ACCENT: Record<string, string> = {
   triassic: '#a855f7',
@@ -40,33 +40,33 @@ const DIET_BADGE_CLASS: Record<string, string> = {
 }
 
 const sortOptions = computed(() => [
-  { label: t('ui.encyclopedia.sortName'), value: 'name-asc' },
-  { label: t('ui.encyclopedia.sortNameDesc'), value: 'name-desc' },
-  { label: t('ui.encyclopedia.sortEra'), value: 'era-asc' },
-  { label: t('ui.encyclopedia.sortSize'), value: 'size-desc' },
+  {label: t('ui.encyclopedia.sortName'), value: 'name-asc'},
+  {label: t('ui.encyclopedia.sortNameDesc'), value: 'name-desc'},
+  {label: t('ui.encyclopedia.sortEra'), value: 'era-asc'},
+  {label: t('ui.encyclopedia.sortSize'), value: 'size-desc'},
 ])
 
 const eraChips = computed(() => [
-  { label: t('ui.encyclopedia.triassic'), value: 'triassic' as const, icon: 'sun' },
-  { label: t('ui.encyclopedia.jurassic'), value: 'jurassic' as const, icon: 'leaf' },
-  { label: t('ui.encyclopedia.cretaceous'), value: 'cretaceous' as const, icon: 'flame' },
+  {label: t('ui.encyclopedia.triassic'), value: 'triassic' as const, icon: 'sun'},
+  {label: t('ui.encyclopedia.jurassic'), value: 'jurassic' as const, icon: 'leaf'},
+  {label: t('ui.encyclopedia.cretaceous'), value: 'cretaceous' as const, icon: 'flame'},
 ])
 
 const dietChips = computed(() => [
-  { label: t('ui.encyclopedia.carnivore'), value: 'carnivore' as const, icon: 'skull' },
-  { label: t('ui.encyclopedia.herbivore'), value: 'herbivore' as const, icon: 'leaf' },
-  { label: t('ui.encyclopedia.omnivore'), value: 'omnivore' as const, icon: 'utensils-crossed' },
+  {label: t('ui.encyclopedia.carnivore'), value: 'carnivore' as const, icon: 'skull'},
+  {label: t('ui.encyclopedia.herbivore'), value: 'herbivore' as const, icon: 'leaf'},
+  {label: t('ui.encyclopedia.omnivore'), value: 'omnivore' as const, icon: 'utensils-crossed'},
 ])
 
 const sizeChips = computed(() => [
-  { label: t('ui.encyclopedia.small'), value: 'small' as const, icon: 'ruler' },
-  { label: t('ui.encyclopedia.medium'), value: 'medium' as const, icon: 'ruler' },
-  { label: t('ui.encyclopedia.large'), value: 'large' as const, icon: 'ruler' },
-  { label: t('ui.encyclopedia.gigantic'), value: 'gigantic' as const, icon: 'maximize' },
+  {label: t('ui.encyclopedia.small'), value: 'small' as const, icon: 'ruler'},
+  {label: t('ui.encyclopedia.medium'), value: 'medium' as const, icon: 'ruler'},
+  {label: t('ui.encyclopedia.large'), value: 'large' as const, icon: 'ruler'},
+  {label: t('ui.encyclopedia.gigantic'), value: 'gigantic' as const, icon: 'maximize'},
 ])
 
 const translatedPaginatedDinosaurs = computed(() =>
-  store.paginatedDinosaurs.map(translateDino)
+    store.paginatedDinosaurs.map(translateDino)
 )
 
 const dinoDetail = computed(() => {
@@ -76,59 +76,91 @@ const dinoDetail = computed(() => {
 })
 
 const categoryChips = computed(() => [
-  { label: t('ui.home.categories.flyingReptiles'), value: 'flying-reptile' as const, icon: 'bird' },
-  { label: t('ui.home.categories.marineReptiles'), value: 'marine-reptile' as const, icon: 'waves' },
+  {label: t('ui.home.categories.flyingReptiles'), value: 'flying-reptile' as const, icon: 'bird'},
+  {label: t('ui.home.categories.marineReptiles'), value: 'marine-reptile' as const, icon: 'waves'},
 ])
 
 const gridRef = ref<HTMLElement | null>(null)
-useStaggerReveal(gridRef, '.dino-card', { stagger: 0.08, duration: 0.55, y: 32 })
+useStaggerReveal(gridRef, '.dino-card', {stagger: 0.08, duration: 0.55, y: 32})
 
 const router = useRouter()
-const { localRoute } = useLocale()
+const {localRoute} = useLocale()
 
 const navigatingToCompare = ref(false)
 
 function addToCompare(id: string) {
   navigatingToCompare.value = true
   store.closeDetail()
-  router.push(localRoute({ name: 'compare', query: { a: id } }))
+  router.push(localRoute({name: 'compare', query: {a: id}}))
 }
 
 const route = useRoute()
 
+const visiblePages = computed(() => {
+  const total = store.totalPages
+  const current = store.currentPage
+
+  if (total <= 5) {
+    return Array.from({length: total}, (_, i) => i + 1)
+  }
+
+  const pages: (number | string)[] = []
+
+  pages.push(1)
+
+  if (current > 3) {
+    pages.push('...')
+  }
+
+  const start = Math.max(2, current - 1)
+  const end = Math.min(total - 1, current + 1)
+
+  for (let i = start; i <= end; i++) {
+    pages.push(i)
+  }
+
+  if (current < total - 2) {
+    pages.push('...')
+  }
+
+  pages.push(total)
+
+  return pages
+})
+
 // Apply category filter from query parameter (e.g. /encyclopedia?category=carnivore)
 watch(
-  () => route.query.category,
-  (cat) => {
-    const validCategories: DinosaurCategory[] = ['carnivore', 'herbivore', 'omnivore', 'flying-reptile', 'marine-reptile']
-    if (cat && typeof cat === 'string' && validCategories.includes(cat as DinosaurCategory)) {
-      store.setCategoryFilter(cat as DinosaurCategory)
-    } else if (!cat) {
-      store.setCategoryFilter(null)
-    }
-  },
-  { immediate: true },
+    () => route.query.category,
+    (cat) => {
+      const validCategories: DinosaurCategory[] = ['carnivore', 'herbivore', 'omnivore', 'flying-reptile', 'marine-reptile']
+      if (cat && typeof cat === 'string' && validCategories.includes(cat as DinosaurCategory)) {
+        store.setCategoryFilter(cat as DinosaurCategory)
+      } else if (!cat) {
+        store.setCategoryFilter(null)
+      }
+    },
+    {immediate: true},
 )
 
 // When navigating to /encyclopedia/:id, open the detail modal
 watch(
-  () => route.params.id,
-  (id) => {
-    if (id && typeof id === 'string') {
-      store.openDetail(id)
-    }
-  },
-  { immediate: true },
+    () => route.params.id,
+    (id) => {
+      if (id && typeof id === 'string') {
+        store.openDetail(id)
+      }
+    },
+    {immediate: true},
 )
 
 // When modal is closed, navigate back to the encyclopedia list
 watch(
-  () => store.isModalOpen,
-  (open) => {
-    if (!open && route.params.id && !navigatingToCompare.value) {
-      router.replace(localRoute({ name: 'encyclopedia' }))
-    }
-  },
+    () => store.isModalOpen,
+    (open) => {
+      if (!open && route.params.id && !navigatingToCompare.value) {
+        router.replace(localRoute({name: 'encyclopedia'}))
+      }
+    },
 )
 
 </script>
@@ -136,14 +168,15 @@ watch(
 <template>
   <div class="max-w-7xl mx-auto px-4 py-10">
     <SeoHead
-      title="Dinosaur Encyclopedia"
-      description="Browse the complete dinosaur database with detailed information. Filter by era, diet, and size. Search and compare dinosaurs side by side."
+        title="Dinosaur Encyclopedia"
+        description="Browse the complete dinosaur database with detailed information. Filter by era, diet, and size. Search and compare dinosaurs side by side."
     />
     <h1 class="text-display-lg mb-4">{{ t('ui.encyclopedia.title') }}</h1>
     <p class="text-body-lg mb-8">
-      {{ modeStore.isKidsMode
-        ? t('ui.encyclopedia.kidsDescription')
-        : t('ui.encyclopedia.description')
+      {{
+        modeStore.isKidsMode
+            ? t('ui.encyclopedia.kidsDescription')
+            : t('ui.encyclopedia.description')
       }}
     </p>
 
@@ -151,19 +184,19 @@ watch(
     <div class="flex flex-col sm:flex-row sm:items-end gap-4 mb-6">
       <div class="flex-1">
         <BaseInput
-          :model-value="store.searchQuery"
-          :placeholder="t('ui.encyclopedia.searchPlaceholder')"
-          :label="t('ui.encyclopedia.search')"
-          icon-left="search"
-          @update:model-value="store.setSearch"
+            :model-value="store.searchQuery"
+            :placeholder="t('ui.encyclopedia.searchPlaceholder')"
+            :label="t('ui.encyclopedia.search')"
+            icon-left="search"
+            @update:model-value="store.setSearch"
         />
       </div>
       <div class="w-full sm:w-48">
         <BaseSelect
-          :model-value="store.sortBy"
-          :options="sortOptions"
-          :label="t('ui.encyclopedia.sortBy')"
-          @update:model-value="(v: string) => store.setSort(v as SortOption)"
+            :model-value="store.sortBy"
+            :options="sortOptions"
+            :label="t('ui.encyclopedia.sortBy')"
+            @update:model-value="(v: string) => store.setSort(v as SortOption)"
         />
       </div>
     </div>
@@ -174,12 +207,12 @@ watch(
         <div class="text-label text-[var(--color-text-secondary)] mb-2">{{ t('ui.encyclopedia.era') }}</div>
         <div class="flex flex-wrap gap-2">
           <BaseChip
-            v-for="chip in eraChips"
-            :key="chip.value"
-            :label="chip.label"
-            :icon="chip.icon"
-            :selected="store.eraFilters.includes(chip.value)"
-            @toggle="store.toggleEraFilter(chip.value)"
+              v-for="chip in eraChips"
+              :key="chip.value"
+              :label="chip.label"
+              :icon="chip.icon"
+              :selected="store.eraFilters.includes(chip.value)"
+              @toggle="store.toggleEraFilter(chip.value)"
           />
         </div>
       </div>
@@ -187,12 +220,12 @@ watch(
         <div class="text-label text-[var(--color-text-secondary)] mb-2">{{ t('ui.encyclopedia.diet') }}</div>
         <div class="flex flex-wrap gap-2">
           <BaseChip
-            v-for="chip in dietChips"
-            :key="chip.value"
-            :label="chip.label"
-            :icon="chip.icon"
-            :selected="store.dietFilters.includes(chip.value)"
-            @toggle="store.toggleDietFilter(chip.value)"
+              v-for="chip in dietChips"
+              :key="chip.value"
+              :label="chip.label"
+              :icon="chip.icon"
+              :selected="store.dietFilters.includes(chip.value)"
+              @toggle="store.toggleDietFilter(chip.value)"
           />
         </div>
       </div>
@@ -200,12 +233,12 @@ watch(
         <div class="text-label text-[var(--color-text-secondary)] mb-2">{{ t('ui.encyclopedia.size') }}</div>
         <div class="flex flex-wrap gap-2">
           <BaseChip
-            v-for="chip in sizeChips"
-            :key="chip.value"
-            :label="chip.label"
-            :icon="chip.icon"
-            :selected="store.sizeFilters.includes(chip.value)"
-            @toggle="store.toggleSizeFilter(chip.value)"
+              v-for="chip in sizeChips"
+              :key="chip.value"
+              :label="chip.label"
+              :icon="chip.icon"
+              :selected="store.sizeFilters.includes(chip.value)"
+              @toggle="store.toggleSizeFilter(chip.value)"
           />
         </div>
       </div>
@@ -213,12 +246,12 @@ watch(
         <div class="text-label text-[var(--color-text-secondary)] mb-2">{{ t('ui.encyclopedia.category') }}</div>
         <div class="flex flex-wrap gap-2">
           <BaseChip
-            v-for="chip in categoryChips"
-            :key="chip.value"
-            :label="chip.label"
-            :icon="chip.icon"
-            :selected="store.categoryFilter === chip.value"
-            @toggle="store.toggleCategoryFilter(chip.value)"
+              v-for="chip in categoryChips"
+              :key="chip.value"
+              :label="chip.label"
+              :icon="chip.icon"
+              :selected="store.categoryFilter === chip.value"
+              @toggle="store.toggleCategoryFilter(chip.value)"
           />
         </div>
       </div>
@@ -232,28 +265,35 @@ watch(
 
     <!-- Results count -->
     <p class="text-body-sm text-[var(--color-text-tertiary)] mb-4">
-      {{ t('ui.encyclopedia.found', { count: store.filteredDinosaurs.length, plural: store.filteredDinosaurs.length !== 1 ? 's' : '' }) }}
+      {{
+        t('ui.encyclopedia.found', {
+          count: store.filteredDinosaurs.length,
+          plural: store.filteredDinosaurs.length !== 1 ? 's' : ''
+        })
+      }}
     </p>
 
     <!-- Grid -->
-    <div v-if="store.paginatedDinosaurs.length > 0" ref="gridRef" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mb-8">
+    <div v-if="store.paginatedDinosaurs.length > 0" ref="gridRef"
+         class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mb-8">
       <div
-        v-for="dino in translatedPaginatedDinosaurs"
-        :key="dino.id"
-        class="dino-card group cursor-pointer"
-        @click="router.push(localRoute({ name: 'encyclopedia-detail', params: { id: dino.id } }))"
+          v-for="dino in translatedPaginatedDinosaurs"
+          :key="dino.id"
+          class="dino-card group cursor-pointer"
+          @click="router.push(localRoute({ name: 'encyclopedia-detail', params: { id: dino.id } }))"
       >
-        <div class="bg-[var(--color-bg-elevated)] border border-[var(--glass-border)] rounded-[var(--radius-lg)] overflow-hidden shadow-[var(--shadow-card)] transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-[var(--shadow-card-hover)] group-hover:border-[var(--glass-border-hover)]">
+        <div
+            class="bg-[var(--color-bg-elevated)] border border-[var(--glass-border)] rounded-[var(--radius-lg)] overflow-hidden shadow-[var(--shadow-card)] transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-[var(--shadow-card-hover)] group-hover:border-[var(--glass-border-hover)]">
           <!-- Image area -->
           <div class="aspect-[4/3] overflow-hidden relative">
             <DinoCardImage
-              :dino="dino"
-              class="w-full h-full transition-transform duration-500 group-hover:scale-[1.04]"
+                :dino="dino"
+                class="w-full h-full transition-transform duration-500 group-hover:scale-[1.04]"
             />
             <!-- Era accent pill floating on image -->
             <div
-              class="absolute top-3 left-3 z-20 px-2 py-0.5 rounded-full text-[9px] font-bold uppercase tracking-wider"
-              :style="{
+                class="absolute top-3 left-3 z-20 px-2 py-0.5 rounded-full text-[9px] font-bold uppercase tracking-wider"
+                :style="{
                 background: `${ERA_ACCENT[dino.era]}22`,
                 color: ERA_ACCENT[dino.era],
                 border: `1px solid ${ERA_ACCENT[dino.era]}40`,
@@ -264,7 +304,7 @@ watch(
             </div>
             <!-- Diet icon badge -->
             <div class="absolute top-3 right-3 z-20 w-6 h-6 rounded-full flex items-center justify-center text-[11px]"
-              style="background: rgba(0,0,0,0.45); backdrop-filter: blur(6px);"
+                 style="background: rgba(0,0,0,0.45); backdrop-filter: blur(6px);"
             >
               {{ dino.diet === 'carnivore' ? '🦷' : dino.diet === 'herbivore' ? '🌿' : '🌾' }}
             </div>
@@ -272,8 +312,8 @@ watch(
 
           <!-- Era accent line -->
           <div
-            class="h-[2px] w-full"
-            :style="{ background: `linear-gradient(to right, ${ERA_ACCENT[dino.era]}80, ${ERA_ACCENT[dino.era]}20, transparent)` }"
+              class="h-[2px] w-full"
+              :style="{ background: `linear-gradient(to right, ${ERA_ACCENT[dino.era]}80, ${ERA_ACCENT[dino.era]}20, transparent)` }"
           />
 
           <!-- Card info -->
@@ -284,13 +324,16 @@ watch(
                 {{ dino.periodRangeMya[0] }}–{{ dino.periodRangeMya[1] }} Ma
               </span>
             </div>
-            <p v-if="dino.genusName !== dino.displayName" class="text-[9px] text-[var(--color-text-tertiary)] mb-1 italic">{{ dino.genusName }}</p>
+            <p v-if="dino.genusName !== dino.displayName"
+               class="text-[9px] text-[var(--color-text-tertiary)] mb-1 italic">{{ dino.genusName }}</p>
             <p class="text-[10px] text-[var(--color-text-tertiary)] mb-3 italic">{{ dino.nameMeaning }}</p>
             <div class="flex flex-wrap gap-1.5 mb-3">
-              <span :class="['px-2 py-0.5 text-[9px] font-bold rounded-full uppercase tracking-wide', DIET_BADGE_CLASS[dino.diet] ?? 'bg-[rgba(255,255,255,0.06)] text-[var(--color-text-tertiary)]']">
+              <span
+                  :class="['px-2 py-0.5 text-[9px] font-bold rounded-full uppercase tracking-wide', DIET_BADGE_CLASS[dino.diet] ?? 'bg-[rgba(255,255,255,0.06)] text-[var(--color-text-tertiary)]']">
                 {{ t(`ui.encyclopedia.${dino.diet}`) }}
               </span>
-              <span class="px-2 py-0.5 text-[9px] font-bold rounded-full uppercase tracking-wide bg-[rgba(255,255,255,0.05)] text-[var(--color-text-tertiary)]">
+              <span
+                  class="px-2 py-0.5 text-[9px] font-bold rounded-full uppercase tracking-wide bg-[rgba(255,255,255,0.05)] text-[var(--color-text-tertiary)]">
                 {{ t(`ui.encyclopedia.${dino.size}`) }}
               </span>
             </div>
@@ -305,8 +348,8 @@ watch(
               {{ dino.dimensions.lengthMeters }}m · {{ (dino.dimensions.weightKg / 1000).toFixed(1) }}t
             </span>
             <span
-              class="text-[10px] font-semibold transition-colors group-hover:text-[var(--color-brand-amber)]"
-              :style="{ color: `${ERA_ACCENT[dino.era]}99` }"
+                class="text-[10px] font-semibold transition-colors group-hover:text-[var(--color-brand-amber)]"
+                :style="{ color: `${ERA_ACCENT[dino.era]}99` }"
             >
               {{ t('ui.encyclopedia.viewDetail') }}
             </span>
@@ -317,47 +360,83 @@ watch(
 
     <!-- Empty state -->
     <BaseEmptyState
-      v-else
-      :title="t('ui.encyclopedia.noDinosFound')"
-      :description="store.hasActiveFilters || store.searchQuery ? t('ui.encyclopedia.adjustFilters') : ''"
-      icon="search"
-      :action-label="store.hasActiveFilters || store.searchQuery ? t('ui.encyclopedia.clearFilters') : undefined"
-      @action="store.clearFilters()"
+        v-else
+        :title="t('ui.encyclopedia.noDinosFound')"
+        :description="store.hasActiveFilters || store.searchQuery ? t('ui.encyclopedia.adjustFilters') : ''"
+        icon="search"
+        :action-label="store.hasActiveFilters || store.searchQuery ? t('ui.encyclopedia.clearFilters') : undefined"
+        @action="store.clearFilters()"
     />
 
     <!-- Pagination -->
-    <div v-if="store.totalPages > 1" class="flex items-center justify-center gap-2">
+    <div
+        v-if="store.totalPages > 1"
+        class="mt-8 flex items-center justify-center gap-1 sm:gap-2 flex-wrap"
+    >
+      <!-- Previous -->
       <BaseButton
-        variant="ghost" size="sm"
-        :disabled="store.currentPage === 1"
-        @click="store.setPage(store.currentPage - 1)"
+          variant="ghost"
+          size="sm"
+          class="px-2 sm:px-3"
+          :disabled="store.currentPage === 1"
+          @click="store.setPage(store.currentPage - 1)"
       >
-        {{ t('ui.encyclopedia.previous') }}
+    <span class="hidden sm:inline">
+      {{ t('ui.encyclopedia.previous') }}
+    </span>
+        <span class="sm:hidden">
+      ←
+    </span>
       </BaseButton>
-      <span
-        v-for="p in store.totalPages"
-        :key="p"
-        class="w-8 h-8 flex items-center justify-center rounded-full text-sm cursor-pointer transition-colors"
-        :class="store.currentPage === p ? 'bg-[var(--color-brand-amber)] text-black' : 'text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)]'"
-        @click="store.setPage(p)"
-      >
-        {{ p }}
-      </span>
+
+      <!-- Page Numbers -->
+      <template v-for="(p, index) in visiblePages" :key="`${p}-${index}`">
+        <!-- Ellipsis -->
+        <span
+            v-if="p === '...'"
+            class="px-1 text-sm text-[var(--color-text-tertiary)] select-none"
+        >
+      ...
+    </span>
+
+        <!-- Page Button -->
+        <button
+            v-else
+            type="button"
+            class="min-w-[36px] h-9 px-2 flex items-center justify-center rounded-full text-sm font-medium transition-all duration-200"
+            :class="
+        store.currentPage === p
+          ? 'bg-[var(--color-brand-amber)] text-black shadow-md'
+          : 'text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] hover:bg-white/5'
+      "
+            @click="store.setPage(Number(p))"
+        >
+          {{ p }}
+        </button>
+      </template>
+
+      <!-- Next -->
       <BaseButton
-        variant="ghost" size="sm"
+        variant="ghost"
+        size="sm"
+        class="px-2 sm:px-3"
         :disabled="store.currentPage === store.totalPages"
         @click="store.setPage(store.currentPage + 1)"
       >
-        {{ t('ui.encyclopedia.next') }}
+    <span class="hidden sm:inline">
+      {{ t('ui.encyclopedia.next') }}
+    </span>
+        <span class="sm:hidden">
+      →
+    </span>
       </BaseButton>
     </div>
-
     <!-- Detail Modal -->
     <DinoDetailModal
-      :is-open="store.isModalOpen"
-      :dino="dinoDetail"
-      @close="store.closeDetail()"
-      @add-to-compare="addToCompare"
+        :is-open="store.isModalOpen"
+        :dino="dinoDetail"
+        @close="store.closeDetail()"
+        @add-to-compare="addToCompare"
     />
   </div>
 </template>

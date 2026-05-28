@@ -100,6 +100,7 @@ export interface EraInfo {
   nameJa: string
   nameZh: string
   nameKo: string
+  nameKk: string
   rangeMya: [number, number]
   durationMillionYears: number
   description: string
@@ -111,6 +112,7 @@ export interface EraInfo {
   descriptionJa: string
   descriptionZh: string
   descriptionKo: string
+  descriptionKk: string
   keyEvents: string[]
   keyEventsRu: string[]
   keyEventsEs: string[]
@@ -120,6 +122,7 @@ export interface EraInfo {
   keyEventsJa: string[]
   keyEventsZh: string[]
   keyEventsKo: string[]
+  keyEventsKk: string[]
   climateDescription: string
   climateDescriptionRu: string
   climateDescriptionEs: string
@@ -129,6 +132,7 @@ export interface EraInfo {
   climateDescriptionJa: string
   climateDescriptionZh: string
   climateDescriptionKo: string
+  climateDescriptionKk: string
   colorClass: string
   icon: string
   dinosaurs: string[]

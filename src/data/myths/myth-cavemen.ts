@@ -11,6 +11,7 @@ export const MythCavemen: MythVsFact = {
     mythJa: '原始人と恐竜は一緒に暮らしていた。',
     mythZh: '原始人和恐龙生活在一起。',
     mythKo: '동굴인과 공룡이 함께 살았다.',
+    mythKk: 'Үңгір адамдары динозаврлармен бірге өмір сүрген.',
     fact: 'The last non-avian dinosaurs went extinct 66 million years before the first humans appeared. The Flintstones is pure fiction!',
     factDe: 'Die letzten Nicht-Vogel-Dinosaurier starben 66 Millionen Jahre vor dem Erscheinen der ersten Menschen aus. Die Feuersteins sind reine Fiktion!',
     factFr: 'Les derniers dinosaures non aviens ont disparu 66 millions d\'années avant l\'apparition des premiers humains. Les Pierrafeu, c\'est de la pure fiction !',
@@ -20,5 +21,6 @@ export const MythCavemen: MythVsFact = {
     factJa: '鳥類以外の最後の恐竜は、最初の人類が現れる6600万年前に絶滅しました。『原始家族フリントストーン』はまったくのフィクションです！',
     factZh: '最后一只非鸟类恐龙在第一批人类出现之前6600万年就已灭绝。《摩登原始人》纯属虚构！',
     factKo: '비조류 공룡의 마지막은 최초의 인류가 출현하기 6600만년 전에 멸종했습니다. 고인돌 가족 플린스톤은 완전한 허구입니다!',
+        factKk: 'Соңғы құс емес динозаврлар алғашқы адамдар пайда болғанға дейін 66 миллион жыл бұрын жойылып кеткен. «Флинтстоундар» — таза қиял!',
     category: 'history',
   }

@@ -12,6 +12,7 @@ const { localRoute } = useLocale()
 const modeStore = useModeStore()
 
 function gameTitle(g: typeof games[0]) {
+  if (locale.value === 'kk') return g.titleKk
   if (locale.value === 'ko') return g.titleKo
   if (locale.value === 'zh') return g.titleZh
   if (locale.value === 'ja') return g.titleJa
@@ -23,6 +24,7 @@ function gameTitle(g: typeof games[0]) {
   return g.title
 }
 function gameDesc(g: typeof games[0]) {
+  if (locale.value === 'kk') return g.descriptionKk
   if (locale.value === 'ko') return g.descriptionKo
   if (locale.value === 'zh') return g.descriptionZh
   if (locale.value === 'ja') return g.descriptionJa

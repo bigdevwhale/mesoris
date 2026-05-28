@@ -11,6 +11,7 @@ export const MythDinosaursFailure: MythVsFact = {
     mythJa: '恐竜は進化の失敗作で、絶滅して当然だった。',
     mythZh: '恐龙是进化中的失败者，灭绝是理所当然的。',
     mythKo: '공룡은 진화의 실패작이며 멸종될 만했다.',
+    mythKk: 'Динозаврлар эволюцияның сәтсіз өнімі болды және жойылуға лайық еді.',
     fact: 'Dinosaurs ruled the Earth for 165 million years. Modern humans have existed for about 300,000 years. Dinosaurs were incredibly successful.',
     factDe: 'Dinosaurier beherrschten die Erde 165 Millionen Jahre lang. Der moderne Mensch existiert erst seit etwa 300.000 Jahren. Dinosaurier waren unglaublich erfolgreich.',
     factFr: 'Les dinosaures ont régné sur la Terre pendant 165 millions d\'années. Les humains modernes n\'existent que depuis environ 300 000 ans. Les dinosaures ont connu un succès incroyable.',
@@ -20,5 +21,6 @@ export const MythDinosaursFailure: MythVsFact = {
     factJa: '恐竜は1億6500万年にわたって地球を支配しました。現代人は約30万年しか存在していません。恐竜は信じられないほど成功した生物群でした。',
     factZh: '恐龙统治地球长达1.65亿年。现代人类只存在了大约30万年。恐龙是极其成功的生物类群。',
     factKo: '공룡은 1억 6500만년 동안 지구를 지배했습니다. 현생 인류는 약 30만년 동안만 존재했습니다. 공룡은 믿을 수 없을 정도로 성공적인 동물군이었습니다.',
+    factKk: 'Динозаврлар Жерді 165 миллион жыл бойы биледі. Ал қазіргі адамдар шамамен 300 000 жыл ғана өмір сүріп келеді. Динозаврлар өте табысты тіршілік иелері болды.',
     category: 'evolution',
   }

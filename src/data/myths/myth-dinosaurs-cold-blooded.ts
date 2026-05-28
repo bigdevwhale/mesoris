@@ -11,6 +11,7 @@ export const MythDinosaursColdBlooded: MythVsFact = {
     mythJa: 'すべての恐竜は現代の爬虫類のように冷血でのろまだった。',
     mythZh: '所有恐龙都像现代爬行动物一样是冷血且行动迟缓的。',
     mythKo: '모든 공룡은 현대 파충류처럼 냉혈이며 느릿느릿했다.',
+    mythKk: 'Барлық динозаврлар қазіргі бауырымен жорғалаушылар сияқты суыққанды әрі баяу болған.',
     fact: 'Evidence suggests many dinosaurs were mesothermic or warm-blooded. Birds (which are dinosaurs) are fully warm-blooded.',
     factDe: 'Hinweise deuten darauf hin, dass viele Dinosaurier mesotherm oder warmblütig waren. Vögel (die Dinosaurier sind) sind vollständig warmblütig.',
     factFr: 'Les preuves suggèrent que de nombreux dinosaures étaient mésothermes ou à sang chaud. Les oiseaux (qui sont des dinosaures) sont entièrement à sang chaud.',
@@ -20,5 +21,6 @@ export const MythDinosaursColdBlooded: MythVsFact = {
     factJa: '証拠は、多くの恐竜が中温性または温血であったことを示唆しています。鳥類（恐竜の一種）は完全な温血です。',
     factZh: '证据表明许多恐龙是中等温血或温血动物。鸟类（即恐龙的一种）是完全温血的。',
     factKo: '증거는 많은 공룡이 중온성 또는 온혈이었음을 시사합니다. 조류(공룡의 일종)는 완전한 온혈 동물입니다.',
+    factKk: 'Дәлелдер көптеген динозаврлардың мезотермді немесе жылықанды болғанын көрсетеді. Құстар (яғни динозаврлардың бір тобы) толықтай жылықанды жануарлар.',
     category: 'biology',
   }

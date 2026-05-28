@@ -17,7 +17,8 @@ const { localRoute } = useLocale()
 const modeStore = useModeStore()
 const { t, locale } = useI18n()
 
-function pickLocale<T>(en: T, ru: T, es: T, de: T, fr: T, it: T, ja: T, zh: T, ko: T): T {
+function pickLocale<T>(en: T, ru: T, es: T, de: T, fr: T, it: T, ja: T, zh: T, ko: T, kk: T): T {
+  if (locale.value === 'kk') return kk
   if (locale.value === 'ko') return ko
   if (locale.value === 'zh') return zh
   if (locale.value === 'ja') return ja
@@ -33,7 +34,7 @@ const article = computed(() => articles.find(a => a.id === route.params.id))
 
 const seoTitle = computed(() => {
   if (!article.value) return ''
-  const title = pickLocale(article.value.title, article.value.titleRu, article.value.titleEs, article.value.titleDe, article.value.titleFr, article.value.titleIt, article.value.titleJa, article.value.titleZh, article.value.titleKo)
+  const title = pickLocale(article.value.title, article.value.titleRu, article.value.titleEs, article.value.titleDe, article.value.titleFr, article.value.titleIt, article.value.titleJa, article.value.titleZh, article.value.titleKo, article.value.titleKk)
   return pickLocale(
     `${title} — Dinosaur Science`,
     `${title} — Наука о динозаврах`,
@@ -44,14 +45,15 @@ const seoTitle = computed(() => {
     `${title} — 恐竜の科学`,
     `${title} — 恐龙科学`,
     `${title} — 공룡 과학`,
+    `${title} — Динозавр ғылымы`,
   )
 })
 
 const renderedContent = computed(() => {
   if (!article.value) return ''
   const raw = modeStore.isKidsMode
-    ? pickLocale(article.value.kidsVersion, article.value.kidsVersionRu, article.value.kidsVersionEs, article.value.kidsVersionDe, article.value.kidsVersionFr, article.value.kidsVersionIt, article.value.kidsVersionJa, article.value.kidsVersionZh, article.value.kidsVersionKo)
-    : pickLocale(article.value.content, article.value.contentRu, article.value.contentEs, article.value.contentDe, article.value.contentFr, article.value.contentIt, article.value.contentJa, article.value.contentZh, article.value.contentKo)
+    ? pickLocale(article.value.kidsVersion, article.value.kidsVersionRu, article.value.kidsVersionEs, article.value.kidsVersionDe, article.value.kidsVersionFr, article.value.kidsVersionIt, article.value.kidsVersionJa, article.value.kidsVersionZh, article.value.kidsVersionKo, article.value.kidsVersionKk)
+    : pickLocale(article.value.content, article.value.contentRu, article.value.contentEs, article.value.contentDe, article.value.contentFr, article.value.contentIt, article.value.contentJa, article.value.contentZh, article.value.contentKo, article.value.contentKk)
   marked.setOptions({ breaks: true })
   return DOMPurify.sanitize(
     marked.parse(raw, { async: false }),
@@ -62,7 +64,7 @@ const renderedContent = computed(() => {
 
 <template>
   <div v-if="article" class="max-w-3xl mx-auto px-4 py-10">
-    <SeoHead :title="seoTitle" :description="pickLocale(article.summary, article.summaryRu, article.summaryEs, article.summaryDe, article.summaryFr, article.summaryIt, article.summaryJa, article.summaryZh, article.summaryKo)" :og-type="'article'" />
+    <SeoHead :title="seoTitle" :description="pickLocale(article.summary, article.summaryRu, article.summaryEs, article.summaryDe, article.summaryFr, article.summaryIt, article.summaryJa, article.summaryZh, article.summaryKo, article.summaryKk)" :og-type="'article'" />
     <router-link :to="localRoute({ name: 'science' })" class="flex items-center gap-2 text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors mb-8">
       <BaseIcon name="arrow-left" :size="16" />
       <span class="text-sm">{{ t('ui.science.backToScience') }}</span>
@@ -71,7 +73,7 @@ const renderedContent = computed(() => {
     <div class="aspect-[2/1] rounded-[var(--radius-xl)] overflow-hidden mb-8">
       <BaseLazyImage
         :src="article.image"
-        :alt="pickLocale(article.title, article.titleRu, article.titleEs, article.titleDe, article.titleFr, article.titleIt, article.titleJa, article.titleZh, article.titleKo)"
+        :alt="pickLocale(article.title, article.titleRu, article.titleEs, article.titleDe, article.titleFr, article.titleIt, article.titleJa, article.titleZh, article.titleKo, article.titleKk)"
         aspect-ratio="2/1"
         :priority="true"
         class="w-full h-full"
@@ -80,12 +82,12 @@ const renderedContent = computed(() => {
 
     <div class="flex items-center gap-3 pb-4">
       <span class="px-2.5 py-0.5 text-xs font-semibold rounded-full bg-[rgba(45,122,140,0.12)] text-[var(--color-info)] capitalize">
-        {{ pickLocale(article.category, article.categoryRu, article.categoryEs, article.categoryDe, article.categoryFr, article.categoryIt, article.categoryJa, article.categoryZh, article.categoryKo) }}
+        {{ pickLocale(article.category, article.categoryRu, article.categoryEs, article.categoryDe, article.categoryFr, article.categoryIt, article.categoryJa, article.categoryZh, article.categoryKo, article.categoryKk) }}
       </span>
     </div>
 
-    <h1 class="text-display-md pb-4">{{ pickLocale(article.title, article.titleRu, article.titleEs, article.titleDe, article.titleFr, article.titleIt, article.titleJa, article.titleZh, article.titleKo) }}</h1>
-    <p class="text-body-lg mb-8">{{ pickLocale(article.summary, article.summaryRu, article.summaryEs, article.summaryDe, article.summaryFr, article.summaryIt, article.summaryJa, article.summaryZh, article.summaryKo) }}</p>
+    <h1 class="text-display-md pb-4">{{ pickLocale(article.title, article.titleRu, article.titleEs, article.titleDe, article.titleFr, article.titleIt, article.titleJa, article.titleZh, article.titleKo, article.titleKk) }}</h1>
+    <p class="text-body-lg mb-8">{{ pickLocale(article.summary, article.summaryRu, article.summaryEs, article.summaryDe, article.summaryFr, article.summaryIt, article.summaryJa, article.summaryZh, article.summaryKo, article.summaryKk) }}</p>
 
     <div
       class="prose-prehistoric [&_h2]:text-display-md [&_h2]:mt-10 [&_h2]:pb-4 [&_h3]:text-heading-md [&_h3]:mt-8 [&_h3]:mb-3 [&_p]:text-body-md [&_p]:pb-4 [&_li]:text-body-md"

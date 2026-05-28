@@ -40,24 +40,37 @@ body {
   font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
 }
 
-/* Russian locale — Cyrillic-compatible fonts */
+/* Russian + Kazakh locales — Cyrillic-compatible fonts */
 html[lang="ru"] h1,
 html[lang="ru"] h2,
 html[lang="ru"] h3,
 html[lang="ru"] h4,
 html[lang="ru"] h5,
-html[lang="ru"] h6 {
+html[lang="ru"] h6,
+html[lang="kk"] h1,
+html[lang="kk"] h2,
+html[lang="kk"] h3,
+html[lang="kk"] h4,
+html[lang="kk"] h5,
+html[lang="kk"] h6 {
   font-family: 'Nunito', 'Fredoka', 'Baloo 2', 'Segoe UI', sans-serif;
 }
 html[lang="ru"] .text-display-xl,
 html[lang="ru"] .text-display-lg,
 html[lang="ru"] .text-display-md,
 html[lang="ru"] .text-heading-lg,
-html[lang="ru"] .text-heading-md {
+html[lang="ru"] .text-heading-md,
+html[lang="kk"] .text-display-xl,
+html[lang="kk"] .text-display-lg,
+html[lang="kk"] .text-display-md,
+html[lang="kk"] .text-heading-lg,
+html[lang="kk"] .text-heading-md {
   font-family: 'Nunito', 'Fredoka', 'Baloo 2', 'Segoe UI', sans-serif;
 }
 html[lang="ru"] body,
-html[lang="ru"][data-mode="kids"] body {
+html[lang="ru"][data-mode="kids"] body,
+html[lang="kk"] body,
+html[lang="kk"][data-mode="kids"] body {
   font-family: 'Inter', 'Atkinson Hyperlegible', 'Segoe UI', system-ui, sans-serif;
 }
 /* adults mode already uses Source Serif 4 which supports Cyrillic — no override needed */

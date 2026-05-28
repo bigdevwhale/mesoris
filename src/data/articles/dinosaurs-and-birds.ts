@@ -1,4 +1,4 @@
-﻿import type { Article } from '@/types/content'
+﻿import type {Article} from '@/types/content'
 
 export const DinosaursAndBirds: Article = {
     id: 'dinosaurs-and-birds',
@@ -12,6 +12,7 @@ export const DinosaursAndBirds: Article = {
     titleJa: '恐竜は絶滅していない：鳥とのつながり',
     titleZh: '恐龙并未消失：与鸟类的联系',
     titleKo: '공룡은 사라지지 않았다: 새와의 연결',
+    titleKk: 'Динозаврлар жойылып кеткен жоқ: құстармен байланыс',
     summary: 'How modern birds are the direct descendants of dinosaurs — and what that means for how we understand dinosaur biology.',
     summaryRu: 'Как современные птицы являются прямыми потомками динозавров — и что это значит для нашего понимания биологии динозавров.',
     summaryEs: 'Como los dinosaurios sobrevivieron a la extincion convertidos en aves.',
@@ -21,6 +22,7 @@ export const DinosaursAndBirds: Article = {
     summaryJa: '現代の鳥類が恐竜の直系の子孫であること、そしてそれが恐竜の生物学の理解に何を意味するのか。',
     summaryZh: '现代鸟类如何成为恐龙的直系后代——以及这对我们理解恐龙生物学意味着什么。',
     summaryKo: '현대 조류가 어떻게 공룡의 직계 후손인지 — 그리고 이것이 공룡 생물학을 이해하는 데 어떤 의미를 갖는지.',
+    summaryKk: 'Қазіргі құстардың динозаврлардың тікелей ұрпағы екендігі — және бұл динозавр биологиясын түсінуіміз үшін нені білдіреді.',
     category: 'evolution',
     categoryRu: 'эволюция',
     categoryEs: 'evolucion',
@@ -30,12 +32,17 @@ export const DinosaursAndBirds: Article = {
     categoryJa: '進化',
     categoryZh: '进化',
     categoryKo: '진화',
+    categoryKk: 'эволюция',
     readingTimeMinutes: 7,
     image: '/images/articles/dinosaurs-and-birds.jpg',
     relatedDinosaurIds: ['velociraptor'],
     sources: [
-      { title: 'The Origin of Birds', url: 'https://evolution.berkeley.edu/evolibrary/article/evograms_06', year: 2023 },
-      { title: 'Feathered Dinosaurs', url: 'https://www.amnh.org/exhibitions/dinosaurs-among-us', year: 2024 },
+        {
+            title: 'The Origin of Birds',
+            url: 'https://evolution.berkeley.edu/evolibrary/article/evograms_06',
+            year: 2023
+        },
+        {title: 'Feathered Dinosaurs', url: 'https://www.amnh.org/exhibitions/dinosaurs-among-us', year: 2024},
     ],
     content: `## Birds Are Living Dinosaurs\n\nWhen a pigeon lands on your windowsill, you're looking at a dinosaur. This isn't a metaphor — it's scientific fact. Modern birds are the direct evolutionary descendants of theropod dinosaurs, making them the only dinosaur lineage to survive the K-Pg extinction.\n\n### The Evidence\n\n**1. Skeletal Similarities**\nBirds and theropod dinosaurs share hundreds of skeletal features: hollow bones, a wishbone (furcula), a specialized wrist bone that allows the hand to fold back, and the same hip and leg structure. The Archaeopteryx fossil (1861) was so bird-like with its feathers and so dinosaur-like with its teeth, claws, and long bony tail that it became the definitive "missing link."\n\n**2. Feathers Came Before Flight**\nFeathers evolved long before flight. Early feathered dinosaurs like Sinosauropteryx had simple, hair-like proto-feathers. Larger theropods like Velociraptor had complex, bird-like feathers including flight-capable quills — even though they couldn't fly. Feathers first evolved for insulation, display, or both.\n\n**3. Behavior**\nBirds share many behaviors with their dinosaur ancestors:\n- Brooding nests (fossilized oviraptorids found sitting on nests like modern birds)\n- Social flocking (trackways showing groups moving together)\n- Complex vocalization (Parasaurolophus crest resonators)\n- Tool use and problem-solving (corvids and parrots)\n\n### What This Means\n\nThe T. rex skeleton in the museum isn't the skeleton of a lizard — it's more like the skeleton of a giant, toothy chicken. Re-imagining dinosaurs as giant birds instead of giant lizards is one of the most profound paradigm shifts in modern paleontology.`,
     contentRu: `## Птицы — живые динозавры\n\nКогда голубь садится на ваш подоконник, вы смотрите на динозавра. Это не метафора — это научный факт. Современные птицы являются прямыми эволюционными потомками тероподных динозавров, что делает их единственной ветвью динозавров, пережившей мел-палеогеновое вымирание.\n\n### Доказательства\n\n**1. Сходство скелета**\nПтицы и тероподы имеют сотни общих особенностей скелета: полые кости, вилочку (furcula), особую кость запястья, позволяющую складывать кисть, и одинаковое строение таза и ног. Окаменелость археоптерикса (1861) была настолько похожа на птицу своими перьями и настолько похожа на динозавра зубами, когтями и длинным костным хвостом, что стала окончательным «недостающим звеном».\n\n**2. Перья появились раньше полёта**\nПерья эволюционировали задолго до полёта. Ранние оперённые динозавры, такие как синозавроптерикс, имели простые волосовидные прото-перья. Более крупные тероподы, такие как велоцираптор, имели сложные, похожие на птичьи перья, включая маховые — хотя летать не могли. Перья сначала развились для теплоизоляции, демонстрации или того и другого.\n\n**3. Поведение**\nПтицы разделяют многие формы поведения с предками-динозаврами:\n- Насиживание гнёзд (окаменелые овирапториды, сидящие на гнёздах подобно современным птицам)\n- Стайный образ жизни (цепочки следов, показывающие группы, движущиеся вместе)\n- Сложная вокализация (гребни-резонаторы паразауролофа)\n- Использование орудий и решение задач (врановые и попугаи)\n\n### Что это значит\n\nСкелет тираннозавра в музее — не скелет ящерицы; он больше похож на скелет гигантской зубастой курицы. Переосмысление динозавров как гигантских птиц вместо гигантских ящериц — один из глубочайших сдвигов парадигмы в современной палеонтологии.`,
@@ -185,6 +192,43 @@ Nel 2007, il collagene e stato estratto da un osso di T. rex. L'analisi molecola
 ### 이것이 의미하는 것
 
 박물관의 티라노사우루스 골격은 도마뱀의 골격이 아닙니다 — 거대하고 이빨 있는 닭의 골격에 더 가깝습니다. 공룡을 거대한 도마뱀 대신 거대한 새로 재상상하는 것은 현대 고생물학에서 가장 심오한 패러다임 전환 중 하나입니다.`,
+    contentKk: `## Құстар — тірі динозаврлар
+
+Терезеңіздің алдына көгершін қонса, сіз динозаврға қарап тұрсыз. Бұл жай ғана теңеу емес — ғылыми факт. Қазіргі құстар теропод динозаврлардың тікелей эволюциялық ұрпақтары болып табылады, сондықтан олар K-Pg жаппай жойылуынан аман қалған жалғыз динозавр тармағы.
+
+### Дәлелдер
+
+**1. Қаңқадағы ұқсастықтар**
+Құстар мен теропод динозаврлар жүздеген қаңқалық белгілерді бөліседі: қуыс сүйектер, айыр сүйек (furcula), қолды артқа бүгуге мүмкіндік беретін арнайы білезік сүйегі және ұқсас жамбас пен аяқ құрылысы. 1861 жылы табылған археоптерикс қазбасы қауырсындары арқылы құсқа, ал тістері, тырнақтары және ұзын сүйекті құйрығы арқылы динозаврға ұқсап, әйгілі «аралық буынға» айналды.
+
+**2. Қауырсындар ұшудан бұрын пайда болды**
+Қауырсындар ұшу қабілетінен әлдеқайда бұрын эволюцияланған. Синозавроптерикс сияқты ерте қауырсынды динозаврларда қарапайым, жүн тәрізді алғашқы қауырсындар болған. Велоцираптор сияқты ірі тероподтар ұша алмаса да, құстарға ұқсас күрделі қауырсындарға ие болды. Қауырсындар алғашында жылуды сақтау, көрініс көрсету немесе екеуі үшін де дамыған.
+
+**3. Мінез-құлық**
+Құстар өздерінің динозавр ата-бабаларымен көптеген мінез-құлықтарды бөліседі:
+- Ұя басу (қазіргі құстар сияқты ұяда отырған овирапторидтердің қазбалары)
+- Топтасып жүру (бірге қозғалған топтардың іздері)
+- Күрделі дыбыс шығару (паразавролофтың айдарындағы резонаторлар)
+- Құрал пайдалану және мәселе шешу (қарғалар мен тотықұстар)
+
+### Бұл нені білдіреді?
+
+Мұражайдағы T. rex қаңқасы кесірткенің емес — алып, тісті тауықтың қаңқасына көбірек ұқсайды. Динозаврларды алып кесірткелер емес, алып құстар ретінде қайта елестету — қазіргі палеонтологиядағы ең үлкен ғылыми өзгерістердің бірі.`,
+    kidsVersionKk: `## Динозаврлар әлі де бар!
+
+Терезеден сыртқа қараңыз. Құс көріп тұрсыз ба? ДЕМЕК, СІЗ ДИНОЗАВРҒА ҚАРАП ТҰРСЫЗ! 🦖🐦
+
+### Шынымен бе?
+
+ИЯ! Күнде көретін тауықтар, көгершіндер мен торғайлар — велоцираптор сияқты динозаврлардың өте алыс ұрпақтары.
+
+### Мұны қайдан білеміз?
+
+- Велоцирапторда ҚАУЫРСЫН болған — дәл құстар сияқты!
+- T-Rex-тің ҚУЫС СҮЙЕКТЕРІ болған — дәл құстар сияқты!
+- Кейбір динозаврлар ҰЯДА отырған — дәл құстар сияқты!
+
+Келесі жолы тауық наггетсін жегенде есіңізде болсын: сіз кішкентай динозавр жеп жатырсыз! 🍗🦖`,
     kidsVersion: `## Dinosaurs Are Still Here!\n\nLook out your window. See a bird? YOU ARE LOOKING AT A DINOSAUR!\n\n### Wait, Really?\n\nYES! The chickens, pigeons, and sparrows you see every day are the great-great-great-grandchildren of dinosaurs like Velociraptor.\n\n### How Do We Know?\n\n- Velociraptor had FEATHERS — just like a bird\n- T-Rex had HOLLOW BONES — just like a bird\n- Some dinosaurs sat on NESTS — just like birds\n\nNext time you see a chicken nugget, remember: you're eating a tiny dinosaur! 🍗🦖`,
     kidsVersionRu: `## Динозавры всё ещё здесь!\n\nВыгляни в окно. Видишь птицу? ТЫ СМОТРИШЬ НА ДИНОЗАВРА!\n\n### Правда?\n\nДА! Куры, голуби и воробьи, которых ты видишь каждый день — пра-пра-правнуки динозавров, таких как велоцираптор.\n\n### Откуда мы знаем?\n\n- У велоцираптора были ПЕРЬЯ — совсем как у птиц\n- У тираннозавра были ПОЛЫЕ КОСТИ — совсем как у птиц\n- Некоторые динозавры сидели на ГНЁЗДАХ — совсем как птицы\n\nКогда в следующий раз увидишь куриный наггетс, помни: ты ешь маленького динозавра! 🍗🦖`,
     kidsVersionEs: `## ¿Los Dinosaurios Se Convirtieron en Aves?
@@ -276,4 +320,4 @@ Quindi quando vedi un passero, vedi un piccolo dinosauro!`,
 - 어떤 공룡은 둥지에 앉아 알을 품었어요 — 새와 똑같아요!
 
 다음에 치킨 너겟을 먹을 때 기억하세요: 작은 공룡을 먹고 있는 거예요! 🍗🦖`,
-  }
+}

@@ -12,6 +12,7 @@ export const HowScientistsKnowDinosaurColors: Article = {
     titleJa: '科学者はどうやって恐竜の見た目を知るのか',
     titleZh: '科学家如何知道恐龙的样子',
     titleKo: '과학자들은 어떻게 공룡의 모습을 알 수 있을까',
+    titleKk: 'Ғалымдар динозаврлардың келбетін қалай біледі?',
     summary: 'From feathers to pigments, scientists use fossils and modern biology to reconstruct dinosaur appearance with surprising accuracy.',
     summaryRu: 'От перьев до пигментов — учёные используют окаменелости и современную биологию для удивительно точной реконструкции облика динозавров.',
     summaryEs: 'La sorprendente ciencia que revela los colores reales de criaturas prehistoricas.',
@@ -21,6 +22,7 @@ export const HowScientistsKnowDinosaurColors: Article = {
     summaryJa: '羽毛から色素まで、科学者たちは化石と現代生物学を駆使して、驚くべき精度で恐竜の外見を復元しています。',
     summaryZh: '从羽毛到色素，科学家利用化石和现代生物学以惊人的准确性重建恐龙的外观。',
     summaryKo: '깃털에서 색소까지, 과학자들은 화석과 현대 생물학을 사용하여 놀라운 정확도로 공룡의 외관을 재구성합니다.',
+    summaryKk: 'Қауырсындардан пигменттерге дейін, ғалымдар қазбалар мен заманауи биологияны қолдана отырып, динозаврлардың сыртқы келбетін таңғаларлық дәлдікпен қалпына келтіреді.',
     category: 'science',
     categoryRu: 'наука',
     categoryEs: 'paleontologia',
@@ -30,6 +32,7 @@ export const HowScientistsKnowDinosaurColors: Article = {
     categoryJa: '科学',
     categoryZh: '科学',
     categoryKo: '과학',
+    categoryKk: 'ғылым',
     readingTimeMinutes: 7,
     image: '/images/articles/how-scientists-know-dinosaur-colors.jpg',
     relatedDinosaurIds: ['velociraptor', 'tyrannosaurus-rex', 'triceratops'],
@@ -166,6 +169,31 @@ Anchiornis si e rivelato ancora piu spettacolare: piume corporee grigio-nere, un
 ### 여전히 불확실한 것
 
 모든 색상을 완벽한 확신으로 재구성할 수는 아직 없습니다. 많은 공룡은 종, 나이, 성별에 따라 다양한 무늬, 위장색, 또는 과시용 색상을 가졌을 가능성이 높습니다.`,
+    contentKk: `## Динозаврлардың келбетін қалпына келтіру
+
+Ғалымдар динозаврлардың келбетін тек қиялмен болжамайды. Олар қазба дәлелдерін, салыстырмалы анатомияны және қазіргі құс биологиясын біріктіріп, мүмкіндігінше дәл қалпына келтірулерді жасайды.
+
+### Қандай дәлелдерді қолданамыз?
+
+**Қауырсындар мен тері таңбалары** текстура мен дене жабынын ашады.
+
+**Меланосомалар** — пигментке қатысты ұсақ құрылымдар — түс пен өрнек туралы ақпаратты сақтай алады.
+
+**Сүйек құрылымы** тұрыс, бұлшықет массасы және бас пішіні туралы айтады.
+
+**Құстар мен қолтырауындар сияқты тірі туыстар** ғалымдарға жұмсақ тіндер мен мінез-құлықты бағалауға көмектеседі.
+
+### Нені қалпына келтіруге болады?
+
+- Жалпы дене силуэті
+- Қауырсын жабыны
+- Тері текстурасы мен қабыршақтары
+- Кейбір түс өрнектері
+- Айдарлар мен желбіректер сияқты көрсету құрылымдары
+
+### Әлі белгісіз не?
+
+Біз әлі әрбір түсті толық сенімділікпен қалпына келтіре алмаймыз. Көптеген динозаврлардың түрге, жасқа және жынысқа байланысты өрнектері, камуфляжы немесе көрсету түстері болған болуы мүмкін.`,
     kidsVersion: `## How Do We Know What Dinosaurs Looked Like?\n\nScientists are like prehistoric detectives!\n\nThey look at:\n- feathers\n- skin prints\n- bones\n- and even tiny colour clues in fossils\n\nThat helps them draw dinosaurs in a way that is much closer to the real thing.`,
     kidsVersionRu: `## Откуда мы знаем, как выглядели динозавры?\n\nУчёные — как доисторические детективы!\n\nОни изучают:\n- перья\n- отпечатки кожи\n- кости\n- и даже крошечные цветовые подсказки в окаменелостях\n\nЭто помогает им рисовать динозавров гораздо ближе к реальности.`,
     kidsVersionEs: `## ¿Podemos Saber de Que Color Eran?
@@ -257,4 +285,15 @@ Non e incredibile?`,
 - 그리고 화석 속의 아주 작은 색깔 단서
 
 이것들이 진짜 모습에 더 가깝게 공룡을 그리는 데 도움이 돼요.`,
+    kidsVersionKk: `## Динозаврлардың қалай көрінетінін қайдан білеміз?
+
+Ғалымдар — тарихқа дейінгі детективтер сияқты!
+
+Олар мыналарды қарайды:
+- қауырсындар
+- тері іздері
+- сүйектер
+- және тіпті қазбалардағы ұсақ түс анықтамалары
+
+Бұл оларға динозаврларды шынайы келбетіне әлдеқайда жақын етіп салуға көмектеседі.`,
   }

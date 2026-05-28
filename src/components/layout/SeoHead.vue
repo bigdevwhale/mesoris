@@ -29,10 +29,11 @@ const OG_LOCALE_MAP: Record<string, string> = {
   ja: 'ja_JP',
   zh: 'zh_CN',
   ko: 'ko_KR',
+  kk: 'kk_KZ',
 }
 
 const currentLocale = computed(() => {
-  const match = route.path.match(/^\/(en|ru|es|de|fr|it|ja|zh|ko)(\/|$)/)
+  const match = route.path.match(/^\/(en|ru|es|de|fr|it|ja|zh|ko|kk)(\/|$)/)
   return match ? match[1] : 'en'
 })
 
