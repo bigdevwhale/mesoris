@@ -626,9 +626,9 @@ function draw() {
   ac.save()
   ac.translate(Math.round(dinoX), Math.round(ART_GROUND + jumpY))
   if (!facingRight) ac.scale(-1, 1)
-  if (dinoKind.value === 'trex')             drawTrex(ac, s, animState, walkFrame)
-  else if (dinoKind.value === 'triceratops') drawTriceratops(ac, s, animState, walkFrame)
-  else                                        drawDiplodocus(ac, s, animState, walkFrame)
+  if (dinoKind.value === 'trex')             drawTrex(ac, s, animState.value, walkFrame)
+  else if (dinoKind.value === 'triceratops') drawTriceratops(ac, s, animState.value, walkFrame)
+  else                                        drawDiplodocus(ac, s, animState.value, walkFrame)
   ac.restore()
 
   // Reaction effects
