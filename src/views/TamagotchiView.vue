@@ -3,6 +3,8 @@ import { ref, computed, onMounted, onUnmounted, nextTick } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useLocale } from '@/composables/useLocale'
 import BaseIcon from '@/components/ui/BaseIcon.vue'
+import BaseModal from '@/components/ui/BaseModal.vue'
+import BaseBadge from '@/components/ui/BaseBadge.vue'
 import SeoHead from '@/components/layout/SeoHead.vue'
 
 const { t } = useI18n()
@@ -12,8 +14,30 @@ const { localRoute } = useLocale()
 type DinoKind  = 'trex' | 'triceratops' | 'diplodocus'
 type AnimState = 'walk' | 'eat' | 'play' | 'sleep' | 'dead'
 type Stage     = 'baby' | 'juvenile' | 'teen' | 'adult'
-type Phase     = 'select' | 'playing' | 'grown' | 'dead'
-type Difficulty = 'easy' | 'medium' | 'hard'
+type Phase        = 'select' | 'playing' | 'grown' | 'dead'
+type Difficulty    = 'easy' | 'medium' | 'hard'
+type Mood           = 'happy' | 'neutral' | 'sad' | 'angry' | 'sick' | 'sleeping' | 'dead'
+type HealthStatus   = 'healthy' | 'sick' | 'critical'
+type EventKind      = 'sickness' | 'found_item' | 'scared' | 'happy_surprise' | 'lucky'
+type ReactionAnim   = 'none' | 'bounce' | 'sparkle' | 'tears' | 'shake' | 'heart'
+
+interface LogEntry {
+  id: number
+  text: string
+  time: number
+  icon: string
+  category: 'action' | 'event' | 'warning' | 'life' | 'death'
+}
+
+interface EventDef {
+  kind: EventKind
+  weight: number
+  statEffects: Partial<Record<'hunger' | 'happiness' | 'energy' | 'health', number>>
+  msgKey: string
+  icon: string
+  reaction: ReactionAnim
+  reactionMs: number
+}
 
 // ─── Canvas ───────────────────────────────────────────────────────────────────
 const canvasRef = ref<HTMLCanvasElement | null>(null)
@@ -36,6 +60,10 @@ const health    = ref(100)
 const age       = ref(0)
 const ticks     = ref(0)
 
+const eventLog      = ref<LogEntry[]>([])
+const showEventLog  = ref(false)
+const reactionAnim  = ref<ReactionAnim>('none')
+
 // ─── Computed ─────────────────────────────────────────────────────────────────
 const stageName = computed<Stage>(() => {
   if (age.value < 3) return 'baby'
@@ -45,10 +73,10 @@ const stageName = computed<Stage>(() => {
 })
 const stageScale = computed(() => STAGE_SCALE[stageName.value])
 
-const DIFF_PARAMS: Record<Difficulty, { dH: number; dHa: number; dE: number; hThr: number; hdrain: number }> = {
-  easy:   { dH: 1,   dHa: 0.5, dE: 0.5, hThr: 10, hdrain: 0.5 },
-  medium: { dH: 2,   dHa: 1,   dE: 1,   hThr: 20, hdrain: 1   },
-  hard:   { dH: 3.5, dHa: 2,   dE: 1.8, hThr: 30, hdrain: 2   },
+const DIFF_PARAMS: Record<Difficulty, { dH: number; dHa: number; dE: number; hThr: number; hdrain: number; eventChance: number; eventInterval: number }> = {
+  easy:   { dH: 1,   dHa: 0.5, dE: 0.5, hThr: 25, hdrain: 0.6, eventChance: 0.15, eventInterval: 6 },
+  medium: { dH: 2,   dHa: 1,   dE: 1,   hThr: 35, hdrain: 1.2, eventChance: 0.25, eventInterval: 5 },
+  hard:   { dH: 3.5, dHa: 2,   dE: 1.8, hThr: 45, hdrain: 2.5, eventChance: 0.35, eventInterval: 4 },
 }
 const dp = computed(() => DIFF_PARAMS[difficulty.value])
 
@@ -56,8 +84,39 @@ const stageLabel  = computed(() => t(`games.tamagotchiGame.stage${cap(stageName.
 const stageEmoji  = computed(() => ({ baby:'🥚', juvenile:'🐣', teen:'🦎', adult:'🦕' }[stageName.value]))
 const dayProgress = computed(() => ((ticks.value % TICKS_PER_DAY) / TICKS_PER_DAY) * 100)
 
+const currentMood = computed<Mood>(() => {
+  if (phase.value === 'dead') return 'dead'
+  if (animState.value === 'sleep') return 'sleeping'
+  if (health.value < 25) return 'sick'
+  if (happiness.value > 70 && hunger.value > 50 && energy.value > 40) return 'happy'
+  if (happiness.value < 10 && hunger.value < 10) return 'angry'
+  if (happiness.value < 20 || hunger.value < 20 || energy.value < 10) return 'sad'
+  return 'neutral'
+})
+
+const healthStatus = computed<HealthStatus>(() => {
+  if (health.value < 25) return 'critical'
+  if (health.value < 60) return 'sick'
+  return 'healthy'
+})
+
+const moodEmoji = computed(() =>
+  ({ happy: '😄', neutral: '😐', sad: '😢', angry: '😤', sick: '🤒', sleeping: '💤', dead: '💀' } as Record<Mood, string>)[currentMood.value])
+
+const activityText = computed(() => {
+  if (phase.value !== 'playing') return ''
+  if (reactionAnim.value === 'tears')    return t('games.tamagotchiGame.activityScared')
+  if (reactionAnim.value === 'sparkle')  return t('games.tamagotchiGame.activityCelebrating')
+  if (animState.value === 'eat')              return t('games.tamagotchiGame.activityEating')
+  if (animState.value === 'play')             return t('games.tamagotchiGame.activityPlaying')
+  if (animState.value === 'sleep')            return t('games.tamagotchiGame.activitySleeping')
+  return t('games.tamagotchiGame.activityWalking')
+})
+
+const eventLogCount = computed(() => eventLog.value.length)
+
 // ─── Non-reactive animation state ─────────────────────────────────────────────
-let animState: AnimState = 'walk'
+const animState = ref<AnimState>('walk')
 let animTimer  = 0
 let walkFrame  = false
 let walkTimer  = 0
@@ -86,10 +145,43 @@ const clouds: Cloud[] = [
   { x: 214, y: 19, sz: 5, spd: 0.007 },
 ]
 
+let reactionTimer   = 0
+let eventTickCounter = 0
+let logIdCounter    = 0
+
 // ─── Constants ────────────────────────────────────────────────────────────────
-const SAVE_KEY = 'dino-tamago-v6'
+const SAVE_KEY = 'dino-tamago-v7'
 const TICK_MS = 4000
 const TICKS_PER_DAY = 20
+
+const EVENT_POOL: EventDef[] = [
+  {
+    kind: 'sickness', weight: 8,
+    statEffects: { health: -45, happiness: -15 },
+    msgKey: 'eventSickness', icon: '🤒', reaction: 'shake', reactionMs: 3000,
+  },
+  {
+    kind: 'found_item', weight: 12,
+    statEffects: { happiness: 15, hunger: 10 },
+    msgKey: 'eventFoundItem', icon: '🍎', reaction: 'heart', reactionMs: 2500,
+  },
+  {
+    kind: 'scared', weight: 10,
+    statEffects: { happiness: -20, energy: -10 },
+    msgKey: 'eventScared', icon: '😱', reaction: 'tears', reactionMs: 3000,
+  },
+  {
+    kind: 'happy_surprise', weight: 10,
+    statEffects: { happiness: 25, health: 5 },
+    msgKey: 'eventHappySurprise', icon: '🎁', reaction: 'sparkle', reactionMs: 3500,
+  },
+  {
+    kind: 'lucky', weight: 3,
+    statEffects: { hunger: 15, happiness: 15, energy: 15, health: 15 },
+    msgKey: 'eventLucky', icon: '⭐', reaction: 'bounce', reactionMs: 4000,
+  },
+]
+const EVENT_TOTAL_WEIGHT = EVENT_POOL.reduce((sum, e) => sum + e.weight, 0)
 
 let tickTimer: ReturnType<typeof setInterval> | null = null
 let flashTimer: ReturnType<typeof setTimeout> | null = null
@@ -136,6 +228,12 @@ function barColor(v: number) {
   return v > 60 ? 'bg-emerald-400' : v > 30 ? 'bg-amber-400' : 'bg-red-500'
 }
 
+function pickRandomEvent(): EventDef | null {
+  let roll = Math.random() * EVENT_TOTAL_WEIGHT
+  for (const e of EVENT_POOL) { roll -= e.weight; if (roll <= 0) return e }
+  return null
+}
+
 function getMargins(kind: DinoKind, s: number) {
   const sides: Record<DinoKind, [number, number]> = {
     trex:        [14, 16],
@@ -159,35 +257,76 @@ function spawnStars() {
   }
 }
 
+const MAX_LOG_ENTRIES = 50
+
+function addLogEntry(text: string, icon: string, category: LogEntry['category']) {
+  eventLog.value.unshift({ id: ++logIdCounter, text, time: Date.now(), icon, category })
+  if (eventLog.value.length > MAX_LOG_ENTRIES) eventLog.value.length = MAX_LOG_ENTRIES
+}
+
 // ─── Persistence ─────────────────────────────────────────────────────────────
 function save() {
   localStorage.setItem(SAVE_KEY, JSON.stringify({
+    version: 7,
     kind: dinoKind.value, difficulty: difficulty.value,
     hunger: hunger.value, happiness: happiness.value,
     energy: energy.value, health: health.value, age: age.value,
-    ticks: ticks.value, phase: phase.value, savedAt: Date.now(),
+    ticks: ticks.value, phase: phase.value,
+    eventLog: eventLog.value.map(e => ({ text: e.text, time: e.time, icon: e.icon, category: e.category })),
+    savedAt: Date.now(),
   }))
 }
 
 function load(): boolean {
   try {
-    const raw = localStorage.getItem(SAVE_KEY)
-    if (!raw) return false
+    let raw = localStorage.getItem(SAVE_KEY)
+    if (!raw) {
+      // Migrate from v6
+      const oldRaw = localStorage.getItem('dino-tamago-v6')
+      if (oldRaw) {
+        const old = JSON.parse(oldRaw)
+        raw = JSON.stringify({
+          version: 7,
+          kind: old.kind ?? 'trex', difficulty: old.difficulty ?? 'medium',
+          hunger: old.hunger ?? 80, happiness: old.happiness ?? 80,
+          energy: old.energy ?? 80, health: old.health ?? 100,
+          age: old.age ?? 0, ticks: old.ticks ?? 0, phase: old.phase ?? 'select',
+          eventLog: [], savedAt: old.savedAt ?? Date.now(),
+        })
+        localStorage.removeItem('dino-tamago-v6')
+      } else return false
+    }
+
     const s = JSON.parse(raw)
-    dinoKind.value  = s.kind       ?? 'trex'
-    difficulty.value = s.difficulty ?? 'medium'
-    hunger.value    = s.hunger     ?? 80
-    happiness.value = s.happiness  ?? 80
-    energy.value    = s.energy     ?? 80
-    health.value    = s.health     ?? 100
-    age.value       = s.age        ?? 0
-    ticks.value     = s.ticks      ?? 0
-    phase.value     = s.phase      ?? 'select'
-    lastStage       = stageName.value
+    dinoKind.value     = s.kind       ?? 'trex'
+    difficulty.value   = s.difficulty ?? 'medium'
+    hunger.value       = s.hunger     ?? 80
+    happiness.value    = s.happiness  ?? 80
+    energy.value       = s.energy     ?? 80
+    health.value       = s.health     ?? 100
+    age.value          = s.age        ?? 0
+    ticks.value        = s.ticks      ?? 0
+    phase.value        = s.phase      ?? 'select'
+    lastStage          = stageName.value
+
+    // Restore event log
+    eventLog.value = (s.eventLog || []).map((e: LogEntry) => ({
+      id: ++logIdCounter,
+      text: e.text, time: e.time, icon: e.icon, category: e.category,
+    }))
+
     if (s.phase === 'playing') {
-      const missed = Math.min(Math.floor((Date.now() - (s.savedAt ?? Date.now())) / TICK_MS), 20)
+      const elapsed = Date.now() - (s.savedAt ?? Date.now())
+      const missed = Math.min(Math.floor(elapsed / TICK_MS), 30)
+      // Inactivity penalty: if gone > 10 min, apply health drain
+      if (elapsed > 10 * 60 * 1000) {
+        const penaltyTicks = Math.min(Math.floor(elapsed / 600000), 5)
+        health.value = Math.max(0, health.value - penaltyTicks * 10)
+        if (penaltyTicks > 0) addLogEntry(t('games.tamagotchiGame.msgInactivePenalty'), '⏰', 'warning')
+      }
       if (missed > 0) applyTicks(missed)
     }
+
     return s.phase !== 'select'
   } catch { return false }
 }
@@ -200,10 +339,16 @@ function applyTicks(n: number) {
     if (ticks.value % TICKS_PER_DAY === 0) {
       age.value++
       if (stageName.value === 'adult') {
-        phase.value = 'grown'; animState = 'play'
-        spawnStars(); stopTick(); save(); return
+        phase.value = 'grown'; animState.value ='play'
+        spawnStars(); stopTick(); save()
+        addLogEntry(t('games.tamagotchiGame.grownMessage'), '🎉', 'life')
+        return
       }
       growthFlash = 90
+      addLogEntry(
+        `${t(`games.tamagotchiGame.stage${cap(stageName.value)}`)}! (${t('games.tamagotchiGame.age', { n: age.value })})`,
+        '🦕', 'life',
+      )
     }
     const prevHunger    = hunger.value
     const prevHappiness = happiness.value
@@ -212,10 +357,15 @@ function applyTicks(n: number) {
 
     hunger.value    = Math.max(0, hunger.value    - d.dH)
     happiness.value = Math.max(0, happiness.value - d.dHa)
-    if (animState !== 'sleep') energy.value = Math.max(0, energy.value - d.dE)
+    if (animState.value !== 'sleep') energy.value = Math.max(0, energy.value - d.dE)
+    // Health drain when any core stat is low
     if (hunger.value < d.hThr || happiness.value < d.hThr || energy.value < d.hThr / 2)
       health.value = Math.max(0, health.value - d.hdrain)
-    if (hunger.value > 60 && happiness.value > 60)
+    // Compounding: low health drains even faster (sickness spiral)
+    if (health.value < 35)
+      health.value = Math.max(0, health.value - d.hdrain * 0.8)
+    // Recovery when well-fed and happy
+    if (hunger.value > 60 && happiness.value > 60 && energy.value > 30)
       health.value = Math.min(100, health.value + 0.4)
 
     if (prevHunger    > 10 && hunger.value    <= 10) flash(t('games.tamagotchiGame.warnHunger'))
@@ -229,7 +379,28 @@ function applyTicks(n: number) {
         happiness.value <= 0 ||
         energy.value    <= 0
 
-    if (isDead) { phase.value = 'dead'; animState = 'dead'; stopTick(); save(); return }
+    if (isDead) { phase.value = 'dead'; animState.value ='dead'; stopTick(); save(); addLogEntry(t('games.tamagotchiGame.deadMessage'), '💀', 'death'); return }
+
+    // Random event check (once per tick, not per iteration)
+    eventTickCounter++
+    const d2 = dp.value
+    if (eventTickCounter >= d2.eventInterval) {
+      eventTickCounter = 0
+      if (Math.random() < d2.eventChance) {
+        const eventDef = pickRandomEvent()
+        if (eventDef) {
+          if (eventDef.statEffects.hunger)    hunger.value    = Math.max(0, Math.min(100, hunger.value    + eventDef.statEffects.hunger))
+          if (eventDef.statEffects.happiness) happiness.value = Math.max(0, Math.min(100, happiness.value + eventDef.statEffects.happiness))
+          if (eventDef.statEffects.energy)    energy.value    = Math.max(0, Math.min(100, energy.value    + eventDef.statEffects.energy))
+          if (eventDef.statEffects.health)    health.value    = Math.max(0, Math.min(100, health.value    + eventDef.statEffects.health))
+          reactionAnim.value = eventDef.reaction
+          reactionTimer = eventDef.reactionMs
+          const msg = t(`games.tamagotchiGame.${eventDef.msgKey}`)
+          flash(msg)
+          addLogEntry(msg, eventDef.icon, 'event')
+        }
+      }
+    }
   }
 }
 
@@ -242,10 +413,12 @@ function startGame(kind: DinoKind, diff: Difficulty) {
   difficulty.value = diff
   hunger.value    = 80; happiness.value = 80; energy.value = 80; health.value = 100
   age.value       = 0; ticks.value = 0; phase.value = 'playing'
-  animState       = 'walk'; animTimer = 0; walkFrame = false; walkTimer = 0
+  animState.value  = 'walk'; animTimer = 0; walkFrame = false; walkTimer = 0
   dinoX           = ART_W / 2; dinoVx = 0.75; facingRight = true
   lastStage       = 'baby'; growthFlash = 0; stars = []; zzzs = []; jumpY = 0; jumpVy = 0
   flashText = ''; if (flashTimer) clearTimeout(flashTimer)
+  eventLog.value = []; logIdCounter = 0
+  reactionAnim.value = 'none'; reactionTimer = 0; eventTickCounter = 0; showEventLog.value = false
   save(); startTick()
   lastTs = performance.now()
   if (raf) cancelAnimationFrame(raf)
@@ -254,36 +427,60 @@ function startGame(kind: DinoKind, diff: Difficulty) {
 }
 
 function feed() {
-  if (phase.value !== 'playing' || animState === 'sleep') return
+  if (phase.value !== 'playing' || animState.value === 'sleep') return
   hunger.value    = Math.min(100, hunger.value + 28)
   happiness.value = Math.min(100, happiness.value + 5)
   energy.value    = Math.max(0,   energy.value - 3)
   setAnim('eat', 2400)
   flash(t('games.tamagotchiGame.msgFed')); save()
+  addLogEntry(t('games.tamagotchiGame.msgFed'), '🍖', 'action')
 }
 
 function doPlay() {
-  if (phase.value !== 'playing' || animState === 'sleep') return
+  if (phase.value !== 'playing' || animState.value === 'sleep') return
   if (energy.value < 10) { flash(t('games.tamagotchiGame.msgTired')); return }
   happiness.value = Math.min(100, happiness.value + 22)
   energy.value    = Math.max(0,   energy.value - 16)
   hunger.value    = Math.max(0,   hunger.value - 8)
   setAnim('play', 3000); jumpVy = -3
   flash(t('games.tamagotchiGame.msgPlaying')); save()
+  addLogEntry(t('games.tamagotchiGame.msgPlaying'), '🎮', 'action')
 }
 
 function doRest() {
-  if (phase.value !== 'playing' || animState === 'sleep') return
+  if (phase.value !== 'playing' || animState.value === 'sleep') return
   setAnim('sleep', 8000); zzzs = []; zzzTimer = 0
   flash(t('games.tamagotchiGame.msgResting'))
+  addLogEntry(t('games.tamagotchiGame.msgResting'), '💤', 'action')
 }
 
 function doMedicine() {
-  if (phase.value !== 'playing' || animState === 'sleep') return
+  if (phase.value !== 'playing' || animState.value === 'sleep') return
   if (health.value >= 100) { flash(t('games.tamagotchiGame.msgHealthy')); return }
   health.value    = Math.min(100, health.value + 30)
   happiness.value = Math.max(0,   happiness.value - 5)
   flash(t('games.tamagotchiGame.msgMedicine')); save()
+  addLogEntry(t('games.tamagotchiGame.msgMedicine'), '💊', 'action')
+}
+
+function onCanvasClick(e: MouseEvent) {
+  if (phase.value !== 'playing' || animState.value === 'sleep') return
+  const cv = canvasRef.value; if (!cv) return
+  const rect = cv.getBoundingClientRect()
+  const scaleX = ART_W / rect.width
+  const scaleY = ART_H / rect.height
+  const clickX = (e.clientX - rect.left) * scaleX
+  const clickY = (e.clientY - rect.top) * scaleY
+  const s = stageScale.value
+  const dist = Math.sqrt((clickX - dinoX) ** 2 + (clickY - (ART_GROUND - 20 * s)) ** 2)
+  if (dist < 40 * s) {
+    reactionAnim.value = 'heart'
+    reactionTimer = 2000
+    happiness.value = Math.min(100, happiness.value + 3)
+    flash(t('games.tamagotchiGame.msgPetted'))
+    addLogEntry(t('games.tamagotchiGame.msgPetted'), '❤️', 'action')
+    save()
+  }
 }
 
 function newGame() {
@@ -291,8 +488,10 @@ function newGame() {
   localStorage.removeItem(SAVE_KEY)
   phase.value = 'select'; age.value = 0; ticks.value = 0
   hunger.value = 80; happiness.value = 80; energy.value = 80; health.value = 100
-  animState = 'walk'; stars = []; zzzs = []
+  animState.value ='walk'; stars = []; zzzs = []
   flashText = ''; if (flashTimer) clearTimeout(flashTimer)
+  eventLog.value = []; logIdCounter = 0
+  reactionAnim.value = 'none'; reactionTimer = 0; eventTickCounter = 0; showEventLog.value = false
 }
 
 const showExitConfirm = ref(false)
@@ -305,12 +504,14 @@ function confirmExit() {
   localStorage.removeItem(SAVE_KEY)
   phase.value = 'select'; age.value = 0; ticks.value = 0
   hunger.value = 80; happiness.value = 80; energy.value = 80; health.value = 100
-  animState = 'walk'; stars = []; zzzs = []
+  animState.value ='walk'; stars = []; zzzs = []
   flashText = ''; if (flashTimer) clearTimeout(flashTimer)
+  eventLog.value = []; logIdCounter = 0
+  reactionAnim.value = 'none'; reactionTimer = 0; eventTickCounter = 0; showEventLog.value = false
 }
 
 function setAnim(state: AnimState, ms: number) {
-  animState = state; animTimer = ms
+  animState.value =state; animTimer = ms
   if (state === 'sleep') energy.value = Math.min(100, energy.value + 40)
 }
 
@@ -325,17 +526,27 @@ function loop(ts: number) {
 function update(dt: number) {
   if (animTimer > 0) {
     animTimer -= dt
-    if (animTimer <= 0) { animTimer = 0; if (phase.value === 'playing') animState = 'walk' }
+    if (animTimer <= 0) {
+      animTimer = 0
+      if (phase.value === 'playing') {
+        if (animState.value === 'sleep') { flash(t('games.tamagotchiGame.msgRested')); addLogEntry(t('games.tamagotchiGame.msgRested'), '⚡', 'action') }
+        animState.value ='walk'
+      }
+    }
   }
   if (growthFlash > 0) growthFlash--
+  if (reactionTimer > 0) {
+    reactionTimer -= dt
+    if (reactionTimer <= 0) { reactionTimer = 0; reactionAnim.value = 'none' }
+  }
   if (lastStage !== stageName.value) lastStage = stageName.value
 
-  if (animState === 'walk' || animState === 'play') {
+  if (animState.value === 'walk' || animState.value === 'play') {
     walkTimer += dt
     if (walkTimer >= 200) { walkTimer = 0; walkFrame = !walkFrame }
   } else { walkFrame = false; walkTimer = 0 }
 
-  if (animState === 'walk') {
+  if (animState.value === 'walk') {
     const s   = stageScale.value
     const spd = dinoVx * (energy.value > 30 ? 1 : 0.5) * (dt / 16)
     dinoX += spd
@@ -344,7 +555,7 @@ function update(dt: number) {
     if (dinoX > ART_W - m.right) { dinoX = ART_W - m.right; dinoVx = -Math.abs(dinoVx); facingRight = false }
   }
 
-  if (animState === 'play') {
+  if (animState.value === 'play') {
     jumpVy += 0.15; jumpY += jumpVy * (dt / 16)
     if (jumpY >= 0) { jumpY = 0; jumpVy = -3 }
   } else if (phase.value === 'grown') {
@@ -352,7 +563,7 @@ function update(dt: number) {
     if (jumpY >= 0) { jumpY = 0; jumpVy = -2 }
   } else { jumpY = 0; jumpVy = 0 }
 
-  if (animState === 'sleep') {
+  if (animState.value === 'sleep') {
     zzzTimer += dt
     if (zzzTimer > 1300) {
       zzzTimer = 0
@@ -402,7 +613,7 @@ function draw() {
     ac.fillRect(0, 0, ART_W, ART_H)
   }
 
-  if (animState === 'eat') {
+  if (animState.value === 'eat') {
     const s   = stageScale.value
     const dir = facingRight ? 1 : -1
     drawBowl(ac, Math.round(dinoX + dir * 14 * s), ART_GROUND, s)
@@ -419,6 +630,30 @@ function draw() {
   else if (dinoKind.value === 'triceratops') drawTriceratops(ac, s, animState, walkFrame)
   else                                        drawDiplodocus(ac, s, animState, walkFrame)
   ac.restore()
+
+  // Reaction effects
+  if (reactionAnim.value === 'heart') {
+    const hx = Math.round(dinoX)
+    const hy = Math.round(ART_GROUND + jumpY - 28 * s)
+    ac.fillStyle = '#ff4d6a'
+    ac.font = `${Math.round(10 * s)}px monospace`
+    ac.textAlign = 'center'
+    ac.fillText('❤️', hx, hy)
+    ac.textAlign = 'left'
+  } else if (reactionAnim.value === 'tears') {
+    const dir = facingRight ? 1 : -1
+    const tx = Math.round(dinoX + dir * 6 * s)
+    const ty = Math.round(ART_GROUND + jumpY - 22 * s)
+    ac.fillStyle = '#6cb4ee'
+    for (let i = 0; i < 3; i++) {
+      ac.fillRect(tx + i * 3, ty + i * 4, 2, 3)
+    }
+  } else if (reactionAnim.value === 'shake') {
+    // Slight horizontal oscillation is applied in update via walkTimer acceleration
+    if (Math.random() < 0.3 && stars.length < 30) spawnStars()
+  } else if (reactionAnim.value === 'sparkle') {
+    if (Math.random() < 0.4 && stars.length < 30) spawnStars()
+  }
 
   // Zzz particles
   for (const z of zzzs) {
@@ -735,13 +970,13 @@ onMounted(() => {
     stars = []
     starTimer = 0
     animTimer = 0
-    animState = phase.value === 'dead' ? 'dead' : 'walk'
+    animState.value =phase.value === 'dead' ? 'dead' : 'walk'
     nextTick(() => {
       lastTs = performance.now()
       running = true
       if (phase.value === 'playing')  startTick()
-      if (phase.value === 'grown')   { animState = 'play'; spawnStars() }
-      if (phase.value === 'dead')      animState = 'dead'
+      if (phase.value === 'grown')   { animState.value ='play'; spawnStars() }
+      if (phase.value === 'dead')      animState.value ='dead'
       raf = requestAnimationFrame(loop)
     })
   }
@@ -846,8 +1081,16 @@ onUnmounted(() => {
 
       <!-- GAME -->
       <div v-else class="space-y-4">
-        <div class="flex items-center justify-between text-sm">
-          <span class="font-semibold text-[var(--color-text-primary)]">{{ stageEmoji }} {{ stageLabel }}</span>
+        <div class="flex items-center justify-between text-sm flex-wrap gap-2">
+          <div class="flex items-center gap-2">
+            <span class="font-semibold text-[var(--color-text-primary)]">{{ stageEmoji }} {{ stageLabel }}</span>
+            <BaseBadge
+              :variant="currentMood === 'happy' ? 'success' : currentMood === 'sad' || currentMood === 'angry' ? 'era' : currentMood === 'sick' ? 'size' : 'default'"
+              size="sm"
+            >
+              {{ moodEmoji }} {{ t(`games.tamagotchiGame.mood${cap(currentMood)}`) }}
+            </BaseBadge>
+          </div>
           <div class="flex items-center gap-2">
             <span class="text-xs px-2 py-0.5 rounded-full font-medium"
                   :class="{
@@ -856,7 +1099,7 @@ onUnmounted(() => {
                     'bg-red-500/15 text-red-400':         difficulty === 'hard',
                   }">
               {{ { easy:'🌿', medium:'⚡', hard:'💀' }[difficulty] }}
-              {{ t(`games.tamagotchiGame.difficulty${difficulty.charAt(0).toUpperCase()+difficulty.slice(1)}`) }}
+              {{ t(`games.tamagotchiGame.difficulty${cap(difficulty)}`) }}
             </span>
             <span class="text-[var(--color-text-secondary)]">{{ t('games.tamagotchiGame.age', { n: age }) }}</span>
           </div>
@@ -867,13 +1110,29 @@ onUnmounted(() => {
                :style="{ width: dayProgress + '%' }" />
         </div>
 
+        <!-- Activity & health status -->
+        <div v-if="phase === 'playing'" class="flex items-center justify-between text-xs text-[var(--color-text-tertiary)]">
+          <span>{{ activityText }}</span>
+          <span>
+            {{ t('games.tamagotchiGame.healthStatus') }}:
+            <span :class="{
+              'text-emerald-400': healthStatus === 'healthy',
+              'text-amber-400': healthStatus === 'sick',
+              'text-red-400': healthStatus === 'critical',
+            }">
+              {{ t(`games.tamagotchiGame.status${cap(healthStatus)}`) }}
+            </span>
+          </span>
+        </div>
+
         <div class="rounded-2xl overflow-hidden border border-[var(--glass-border)] shadow-[var(--shadow-card)]">
           <canvas
               ref="canvasRef"
               width="560"
               height="320"
               class="block w-full h-auto select-none"
-              style="image-rendering: pixelated; image-rendering: crisp-edges; cursor: default"
+              :style="{ imageRendering: 'pixelated', cursor: phase === 'playing' ? 'pointer' : 'default' }"
+              @click="onCanvasClick"
           />
         </div>
 
@@ -928,7 +1187,22 @@ onUnmounted(() => {
           </button>
         </div>
 
-        <div class="flex justify-center pt-1">
+        <div class="flex justify-center pt-1 gap-3">
+          <!-- Event Log button -->
+          <button
+            class="flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium
+                 text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)]
+                 bg-[var(--color-bg-elevated)] border border-[var(--glass-border)]
+                 hover:border-[var(--color-text-tertiary)]
+                 transition-all duration-200 active:scale-95"
+            @click="showEventLog = true"
+          >
+            📋 {{ t('games.tamagotchiGame.log') }}
+            <span v-if="eventLogCount > 0"
+                  class="text-xs px-1.5 py-0.5 rounded-full bg-amber-500/20 text-amber-400">
+              {{ eventLogCount }}
+            </span>
+          </button>
           <button
               class="flex items-center gap-2 px-5 py-2 rounded-xl text-sm font-medium
                    text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)]
@@ -946,43 +1220,81 @@ onUnmounted(() => {
     </div>
 
     <!-- Exit confirmation modal -->
-    <Teleport to="body">
-      <Transition name="modal">
-        <div v-if="showExitConfirm"
-             class="fixed inset-0 z-50 flex items-center justify-center p-4"
-             @click.self="showExitConfirm = false">
-          <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" @click="showExitConfirm = false" />
-          <div class="relative z-10 w-full max-w-sm rounded-2xl border border-[var(--glass-border)]
-                      bg-[var(--color-bg-elevated)] shadow-2xl p-6 space-y-5 text-center">
-            <div class="text-4xl">🦕</div>
-            <h2 class="text-lg font-bold text-[var(--color-text-primary)]">
-              {{ t('games.tamagotchiGame.exitTitle') }}
-            </h2>
-            <p class="text-sm text-[var(--color-text-secondary)]">
-              {{ t('games.tamagotchiGame.exitDesc') }}
-            </p>
-            <div class="flex gap-3 justify-center">
-              <button
-                  class="flex-1 py-2.5 rounded-xl font-semibold text-sm
-                       bg-[var(--color-bg-base)] border border-[var(--glass-border)]
-                       text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)]
-                       transition-all duration-200 active:scale-95"
-                  @click="showExitConfirm = false">
-                {{ t('games.tamagotchiGame.exitCancel') }}
-              </button>
-              <button
-                  class="flex-1 py-2.5 rounded-xl font-semibold text-sm text-white
-                       bg-gradient-to-r from-red-500 to-rose-600
-                       hover:from-red-400 hover:to-rose-500
-                       transition-all duration-200 active:scale-95"
-                  @click="confirmExit">
-                {{ t('games.tamagotchiGame.exitConfirm') }}
-              </button>
-            </div>
-          </div>
+    <BaseModal
+      :is-open="showExitConfirm"
+      :title="t('games.tamagotchiGame.exitTitle')"
+      size="sm"
+      @close="showExitConfirm = false"
+    >
+      <div class="text-center space-y-4">
+        <div class="text-4xl">🦕</div>
+        <p class="text-sm text-[var(--color-text-secondary)]">
+          {{ t('games.tamagotchiGame.exitDesc') }}
+        </p>
+      </div>
+      <template #footer>
+        <div class="flex gap-3 justify-center">
+          <button
+              class="flex-1 py-2.5 rounded-xl font-semibold text-sm
+                   bg-[var(--color-bg-base)] border border-[var(--glass-border)]
+                   text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)]
+                   transition-all duration-200 active:scale-95"
+              @click="showExitConfirm = false">
+            {{ t('games.tamagotchiGame.exitCancel') }}
+          </button>
+          <button
+              class="flex-1 py-2.5 rounded-xl font-semibold text-sm text-white
+                   bg-gradient-to-r from-red-500 to-rose-600
+                   hover:from-red-400 hover:to-rose-500
+                   transition-all duration-200 active:scale-95"
+              @click="confirmExit">
+            {{ t('games.tamagotchiGame.exitConfirm') }}
+          </button>
         </div>
-      </Transition>
-    </Teleport>
+      </template>
+    </BaseModal>
+
+    <!-- Event Log modal -->
+    <BaseModal
+      :is-open="showEventLog"
+      :title="t('games.tamagotchiGame.eventLog')"
+      size="md"
+      @close="showEventLog = false"
+    >
+      <div v-if="eventLog.length === 0" class="text-center py-8 text-[var(--color-text-tertiary)]">
+        {{ t('games.tamagotchiGame.eventLogEmpty') }}
+      </div>
+      <div v-else class="space-y-2 max-h-96 overflow-y-auto">
+        <div
+          v-for="entry in eventLog"
+          :key="entry.id"
+          class="flex items-start gap-3 px-3 py-2 rounded-lg text-sm"
+          :class="{
+            'bg-amber-500/5': entry.category === 'event',
+            'bg-red-500/5': entry.category === 'warning' || entry.category === 'death',
+            'bg-emerald-500/5': entry.category === 'life',
+          }"
+        >
+          <span class="text-lg flex-shrink-0">{{ entry.icon }}</span>
+          <span class="flex-1 text-[var(--color-text-primary)]">{{ entry.text }}</span>
+          <span class="text-xs text-[var(--color-text-tertiary)] flex-shrink-0">
+            {{ new Date(entry.time).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) }}
+          </span>
+        </div>
+      </div>
+      <template #footer>
+        <div class="flex justify-end">
+          <button
+            class="px-4 py-2 rounded-xl font-semibold text-sm text-white
+                 bg-gradient-to-r from-amber-500 to-orange-500
+                 hover:from-amber-400 hover:to-orange-400
+                 transition-all duration-200 active:scale-95"
+            @click="showEventLog = false">
+            {{ t('games.tamagotchiGame.close') }}
+          </button>
+        </div>
+      </template>
+    </BaseModal>
   </div>
 </template>
 
