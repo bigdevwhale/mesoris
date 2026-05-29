@@ -1160,20 +1160,24 @@ onUnmounted(() => {
         </div>
 
         <!-- Action buttons -->
-        <div v-if="phase === 'playing'" class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-          <button v-for="btn in [
-                    { action:feed,       icon:'🍖', key:'feed',     cls:'bg-amber-500/15 hover:bg-amber-500/25 text-amber-300'   },
-                    { action:doPlay,     icon:'🎮', key:'play',     cls:'bg-purple-500/15 hover:bg-purple-500/25 text-purple-300' },
-                    { action:doRest,     icon:'💤', key:'rest',     cls:'bg-blue-500/15 hover:bg-blue-500/25 text-blue-300'       },
-                    { action:doMedicine, icon:'💊', key:'medicine', cls:'bg-rose-500/15 hover:bg-rose-500/25 text-rose-300'       },
-                  ]"
-                  :key="btn.key"
-                  class="flex flex-col items-center gap-1.5 py-3 rounded-xl font-semibold text-sm
-                         transition-all duration-200 active:scale-95"
-                  :class="btn.cls"
-                  @click="btn.action()">
+        <div v-if="phase === 'playing'" class="flex flex-row gap-2 sm:gap-3">
+          <button
+              v-for="btn in [
+      { action: feed,       icon: '🍖', key: 'feed'     },
+      { action: doPlay,     icon: '🎮', key: 'play'     },
+      { action: doRest,     icon: '💤', key: 'rest'     },
+      { action: doMedicine, icon: '💊', key: 'medicine' }
+    ]"
+              :key="btn.key"
+              class="flex-1 flex flex-col items-center gap-1 py-3 rounded-xl font-semibold text-sm
+           transition-all duration-200 active:scale-95
+           bg-amber-500/15 hover:bg-amber-500/25 text-amber-300"
+              @click="btn.action()"
+          >
             <span class="text-2xl">{{ btn.icon }}</span>
-            {{ t(`games.tamagotchiGame.${btn.key}`) }}
+            <span class="hidden sm:inline text-xs mt-0.5">
+      {{ t(`games.tamagotchiGame.${btn.key}`) }}
+    </span>
           </button>
         </div>
 
