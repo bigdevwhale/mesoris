@@ -13,6 +13,11 @@ const LOCALE_TO_LANG: Record<string, string> = {
   kk: 'kk-KZ',
 }
 
+// Fallback chain for languages rarely supported by browser TTS
+const LANG_FALLBACK: Record<string, string> = {
+  'kk-KZ': 'ru-RU',
+}
+
 /** Polls until voices are available (handles Opera's delayed loading). */
 function getVoices(): Promise<SpeechSynthesisVoice[]> {
   return new Promise((resolve) => {
@@ -61,18 +66,30 @@ function scoreVoice(v: SpeechSynthesisVoice): number {
 }
 
 /**
- * Pick the best voice for the given BCP-47 lang.
- * ONLY matches voices with the same language prefix — never falls back
- * to a voice of a completely different language (fixes Opera Russian fallback).
+ * Pick the best voice for the given BCP-47 lang, with fallback chain.
+ * Never picks a voice of a completely unrelated language.
  */
-function pickVoice(voices: SpeechSynthesisVoice[], lang: string): SpeechSynthesisVoice | null {
-  const prefix = lang.split('-')[0]
-  const candidates = voices.filter(v => v.lang.startsWith(prefix))
-  if (!candidates.length) return null
+function pickVoice(voices: SpeechSynthesisVoice[], lang: string): { voice: SpeechSynthesisVoice | null; lang: string } {
+  const tryLang = (target: string) => {
+    const prefix = target.split('-')[0]
+    const candidates = voices.filter(v => v.lang.startsWith(prefix))
+    if (!candidates.length) return null
+    const exact = candidates.filter(v => v.lang === target)
+    const pool = exact.length ? exact : candidates
+    return pool.reduce((best, v) => scoreVoice(v) >= scoreVoice(best) ? v : best)
+  }
 
-  const exact = candidates.filter(v => v.lang === lang)
-  const pool = exact.length ? exact : candidates
-  return pool.reduce((best, v) => scoreVoice(v) >= scoreVoice(best) ? v : best)
+  const voice = tryLang(lang)
+  if (voice) return { voice, lang }
+
+  // Try fallback language if defined
+  const fallbackLang = LANG_FALLBACK[lang]
+  if (fallbackLang) {
+    const fallbackVoice = tryLang(fallbackLang)
+    if (fallbackVoice) return { voice: fallbackVoice, lang: fallbackLang }
+  }
+
+  return { voice: null, lang }
 }
 
 export function useSpeechSynthesis() {
@@ -83,9 +100,9 @@ export function useSpeechSynthesis() {
     if (!isSupported) return
     stop()
 
-    const lang = LOCALE_TO_LANG[locale] ?? 'en-US'
+    const targetLang = LOCALE_TO_LANG[locale] ?? 'en-US'
     const voices = await getVoices()
-    const voice = pickVoice(voices, lang)
+    const { voice, lang } = pickVoice(voices, targetLang)
 
     const utterance = new SpeechSynthesisUtterance(text)
     utterance.lang = lang
