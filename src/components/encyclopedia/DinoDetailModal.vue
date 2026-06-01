@@ -1,7 +1,9 @@
 <script setup lang="ts">
+import { computed, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useModeStore } from '@/stores/useModeStore'
 import type { Dinosaur } from '@/types/dinosaur'
+import { useSpeechSynthesis } from '@/composables/useSpeechSynthesis'
 import BaseModal from '@/components/ui/BaseModal.vue'
 import BaseIcon from '@/components/ui/BaseIcon.vue'
 import BaseButton from '@/components/ui/BaseButton.vue'
@@ -18,8 +20,38 @@ const emit = defineEmits<{
   addToCompare: [id: string]
 }>()
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
 const modeStore = useModeStore()
+const { isSupported: ttsSupported, isSpeaking, speak, stop } = useSpeechSynthesis()
+
+const ttsText = computed(() => {
+  const d = props.dino
+  if (!d) return ''
+  const description = modeStore.isKidsMode ? d.kidsDescription : d.description
+  const facts = d.facts.map((f, i) => `${t('ui.encyclopedia.ttsFact', { n: i + 1 })}. ${f.label}: ${f.value}. ${f.description}`).join('. ')
+  const parts = [
+    d.displayName,
+    description,
+    t('ui.encyclopedia.dimensionsText', { length: d.dimensions.lengthMeters, height: d.dimensions.heightMeters }),
+    `${d.dimensions.weightKg.toLocaleString()} kg.`,
+    t('ui.encyclopedia.speedText', { speed: d.dimensions.speedKmh }),
+    facts,
+    d.funFact,
+  ]
+  return parts.filter(Boolean).join('. ')
+})
+
+function toggleSpeech() {
+  if (isSpeaking.value) {
+    stop()
+  } else {
+    speak(ttsText.value, locale.value)
+  }
+}
+
+watch(() => props.isOpen, (open) => {
+  if (!open) stop()
+})
 </script>
 
 <template>
@@ -54,7 +86,21 @@ const modeStore = useModeStore()
             <span class="text-xs font-semibold uppercase tracking-wide text-[var(--color-text-tertiary)]">
               {{ modeStore.isKidsMode ? t('ui.header.kidsMode') : t('ui.header.adultsMode') }}
             </span>
-            <ModeSwitcher />
+            <div class="flex items-center gap-2">
+              <button
+                v-if="ttsSupported"
+                type="button"
+                :title="isSpeaking ? t('ui.encyclopedia.ttsStop') : t('ui.encyclopedia.ttsPlay')"
+                :aria-label="isSpeaking ? t('ui.encyclopedia.ttsStop') : t('ui.encyclopedia.ttsPlay')"
+                :aria-pressed="isSpeaking"
+                class="w-8 h-8 flex items-center justify-center rounded-full transition-all duration-200 hover:bg-[rgba(212,164,58,0.12)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-brand-amber)]"
+                :class="isSpeaking ? 'text-[var(--color-brand-amber)]' : 'text-[var(--color-text-tertiary)] hover:text-[var(--color-brand-amber)]'"
+                @click="toggleSpeech"
+              >
+                <BaseIcon :name="isSpeaking ? 'volume-x' : 'volume-2'" :size="16" />
+              </button>
+              <ModeSwitcher />
+            </div>
           </div>
           <p class="text-body-md mb-6">{{ modeStore.isKidsMode ? dino.kidsDescription : dino.description }}</p>
 

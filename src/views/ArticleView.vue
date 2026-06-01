@@ -7,6 +7,7 @@ import DOMPurify from 'dompurify'
 import { articles } from '@/data/articles'
 import { useModeStore } from '@/stores/useModeStore'
 import { useLocale } from '@/composables/useLocale'
+import { useSpeechSynthesis } from '@/composables/useSpeechSynthesis'
 import BaseIcon from '@/components/ui/BaseIcon.vue'
 import BaseButton from '@/components/ui/BaseButton.vue'
 import BaseLazyImage from '@/components/ui/BaseLazyImage.vue'
@@ -16,6 +17,7 @@ const route = useRoute()
 const { localRoute } = useLocale()
 const modeStore = useModeStore()
 const { t, locale } = useI18n()
+const { isSupported: ttsSupported, isSpeaking, speak, stop } = useSpeechSynthesis()
 
 function pickLocale<T>(en: T, ru: T, es: T, de: T, fr: T, it: T, ja: T, zh: T, ko: T, kk: T): T {
   if (locale.value === 'kk') return kk
@@ -60,6 +62,38 @@ const renderedContent = computed(() => {
     { USE_PROFILES: { html: true } },
   )
 })
+
+function stripMarkdown(md: string): string {
+  return md
+    .replace(/#{1,6}\s+/g, '')
+    .replace(/\*\*(.+?)\*\*/g, '$1')
+    .replace(/\*(.+?)\*/g, '$1')
+    .replace(/\[(.+?)\]\(.+?\)/g, '$1')
+    .replace(/`(.+?)`/g, '$1')
+    .replace(/^\s*[-*+]\s+/gm, '')
+    .replace(/^\s*\d+\.\s+/gm, '')
+    .replace(/\n{2,}/g, '. ')
+    .replace(/\n/g, ' ')
+    .trim()
+}
+
+const ttsText = computed(() => {
+  if (!article.value) return ''
+  const title = pickLocale(article.value.title, article.value.titleRu, article.value.titleEs, article.value.titleDe, article.value.titleFr, article.value.titleIt, article.value.titleJa, article.value.titleZh, article.value.titleKo, article.value.titleKk)
+  const summary = pickLocale(article.value.summary, article.value.summaryRu, article.value.summaryEs, article.value.summaryDe, article.value.summaryFr, article.value.summaryIt, article.value.summaryJa, article.value.summaryZh, article.value.summaryKo, article.value.summaryKk)
+  const raw = modeStore.isKidsMode
+    ? pickLocale(article.value.kidsVersion, article.value.kidsVersionRu, article.value.kidsVersionEs, article.value.kidsVersionDe, article.value.kidsVersionFr, article.value.kidsVersionIt, article.value.kidsVersionJa, article.value.kidsVersionZh, article.value.kidsVersionKo, article.value.kidsVersionKk)
+    : pickLocale(article.value.content, article.value.contentRu, article.value.contentEs, article.value.contentDe, article.value.contentFr, article.value.contentIt, article.value.contentJa, article.value.contentZh, article.value.contentKo, article.value.contentKk)
+  return [title, summary, stripMarkdown(raw)].join('. ')
+})
+
+function toggleSpeech() {
+  if (isSpeaking.value) {
+    stop()
+  } else {
+    speak(ttsText.value, locale.value)
+  }
+}
 </script>
 
 <template>
@@ -86,7 +120,21 @@ const renderedContent = computed(() => {
       </span>
     </div>
 
-    <h1 class="text-display-md pb-4">{{ pickLocale(article.title, article.titleRu, article.titleEs, article.titleDe, article.titleFr, article.titleIt, article.titleJa, article.titleZh, article.titleKo, article.titleKk) }}</h1>
+    <div class="flex items-center gap-3 pb-4">
+      <h1 class="text-display-md flex-1">{{ pickLocale(article.title, article.titleRu, article.titleEs, article.titleDe, article.titleFr, article.titleIt, article.titleJa, article.titleZh, article.titleKo, article.titleKk) }}</h1>
+      <button
+        v-if="ttsSupported"
+        type="button"
+        :title="isSpeaking ? t('ui.encyclopedia.ttsStop') : t('ui.encyclopedia.ttsPlay')"
+        :aria-label="isSpeaking ? t('ui.encyclopedia.ttsStop') : t('ui.encyclopedia.ttsPlay')"
+        :aria-pressed="isSpeaking"
+        class="shrink-0 w-9 h-9 flex items-center justify-center rounded-full transition-all duration-200 hover:bg-[rgba(212,164,58,0.12)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-brand-amber)]"
+        :class="isSpeaking ? 'text-[var(--color-brand-amber)]' : 'text-[var(--color-text-tertiary)] hover:text-[var(--color-brand-amber)]'"
+        @click="toggleSpeech"
+      >
+        <BaseIcon :name="isSpeaking ? 'volume-x' : 'volume-2'" :size="18" />
+      </button>
+    </div>
     <p class="text-body-lg mb-8">{{ pickLocale(article.summary, article.summaryRu, article.summaryEs, article.summaryDe, article.summaryFr, article.summaryIt, article.summaryJa, article.summaryZh, article.summaryKo, article.summaryKk) }}</p>
 
     <div
