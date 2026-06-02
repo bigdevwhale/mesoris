@@ -112,8 +112,8 @@ function restart() {
 <template>
   <div class="max-w-2xl mx-auto px-4 py-10">
     <SeoHead
-      title="Dinosaur Quiz — Test Your Knowledge"
-      description="Answer 10 random dinosaur trivia questions across easy, medium, and hard difficulties. How much do you really know about dinosaurs?"
+      :title="t('games.quizGame.title')"
+      :description="t('games.quizGame.description')"
     />
     <!-- Header -->
     <div class="flex items-center justify-between mb-8">

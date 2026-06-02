@@ -87,8 +87,8 @@ onMounted(() => {
 <template>
   <div>
     <SeoHead
-      title="Dinosaurs — Explore the Prehistoric World"
-      description="Discover amazing dinosaurs through an interactive encyclopedia, timeline, comparison tools, games, and science articles. For curious minds of all ages."
+      :title="t('ui.home.seoTitle')"
+      :description="t('ui.home.seoDescription')"
     />
     <!-- Hero Section -->
     <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden">

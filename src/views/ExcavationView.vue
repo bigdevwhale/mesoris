@@ -129,8 +129,8 @@ function restart() {
 
     <h1 class="text-display-md mb-4 text-center">{{ t('games.excavationGame.title') }}</h1>
     <SeoHead
-      title="Fossil Excavation — Dig Up Dinosaurs"
-      description="Use your brush to carefully excavate a dinosaur fossil. Reveal the skeleton hidden beneath the sand and discover which dinosaur you've uncovered."
+      :title="t('games.excavationGame.title')"
+      :description="t('games.excavationGame.description')"
     />
     <p class="text-body-md text-center mb-6">{{ t('games.excavationGame.description') }}</p>
 

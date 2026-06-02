@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { useGameStore } from '@/stores/useGameStore'
 import { useLocale } from '@/composables/useLocale'
 import BaseButton from '@/components/ui/BaseButton.vue'
 import BaseIcon from '@/components/ui/BaseIcon.vue'
 import SeoHead from '@/components/layout/SeoHead.vue'
 
+const { t } = useI18n()
 const gameStore = useGameStore()
 const { localRoute } = useLocale()
 const score = ref(0)
@@ -72,8 +74,8 @@ function restart() {
 
     <h1 class="text-display-md mb-8 text-center">Build a Skeleton</h1>
     <SeoHead
-      title="Build a Skeleton — Assemble Dinosaur Bones"
-      description="Drag and drop dinosaur bones into their correct positions. Learn about dinosaur anatomy by assembling a complete skeleton."
+      :title="t('games.skeletonGame.title')"
+      :description="t('games.skeletonGame.description')"
     />
 
     <!-- Drop zone -->

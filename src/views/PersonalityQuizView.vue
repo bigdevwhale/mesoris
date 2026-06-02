@@ -149,8 +149,8 @@ function restart() {
 <template>
   <div class="max-w-2xl mx-auto px-4 py-10">
     <SeoHead
-      title="Which Dinosaur Are You? — Personality Quiz"
-      description="Answer 10 fun personality questions and discover which dinosaur truly matches your character. Are you a mighty T-Rex or a soaring Pteranodon?"
+      :title="t('games.personalityGame.title')"
+      :description="t('games.personalityGame.description')"
     />
 
     <!-- Back link -->

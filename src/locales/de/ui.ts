@@ -53,6 +53,8 @@ export default {
     marineReptile: 'Meeresreptil',
   },
   home: {
+    seoTitle: 'Dinosaurier — Erkunde die Urzeit',
+    seoDescription: 'Entdecke erstaunliche Dinosaurier durch eine interaktive Enzyklopädie, Zeitstrahl, Vergleichswerkzeuge, Spiele und Wissenschaftsartikel. Für neugierige Köpfe jeden Alters.',
     badge: 'Interaktives prahistorisches Museum',
     title: 'Erkunde die prahistorische Welt',
     kidsText: 'Triff erstaunliche Dinosaurier, spiele lustige Spiele und entdecke eine Welt, die vor Millionen von Jahren existierte!',
@@ -258,6 +260,10 @@ export default {
       { title: 'Wie bestimmen Wissenschaftler das Verhalten von Dinosauriern?', content: 'Fahrten, Nester, Bissspuren, Knochenlager und Anatomie helfen Palaontologen, soziales Verhalten, Jagdstil und Brutpflege zu erschließen. Wissenschaftler unterscheiden stets zwischen direkten Beweisen und fundierten Schlussfolgerungen.' },
       { title: 'Warum hatten manche Dinosaurier Federn?', content: 'Federn entwickelten sich wahrscheinlich zuerst zur Isolierung und Zurschaustellung, lange vor dem Flug. Bei einigen Arten wurden sie spater nutzlich fur die Brutpflege, Balz und schließlich — den aktiven Flug bei den Vorfahren der Vogel.' },
     ],
+  },
+  notFound: {
+    seoTitle: 'Seite Nicht Gefunden — Dinosaurier',
+    seoDescription: 'Diese Seite existiert nicht oder ist ausgestorben. Kehre zur interaktiven Dinosaurier-Enzyklopädie und den Spielen zurück.',
   },
   about: {
     seoTitle: 'Über uns — Dinosaurier-Bildungswebsite',

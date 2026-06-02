@@ -53,6 +53,8 @@ export default {
     marineReptile: 'Reptile Marin',
   },
   home: {
+    seoTitle: 'Dinosaures — Explorez le Monde Préhistorique',
+    seoDescription: "Découvrez des dinosaures incroyables à travers une encyclopédie interactive, une chronologie, des outils de comparaison, des jeux et des articles scientifiques. Pour les esprits curieux de tout âge.",
     badge: 'Musee Prehistorique Interactif',
     title: 'Explorez le Monde Prehistorique',
     kidsText: 'Rencontrez des dinosaures incroyables, jouez a des jeux amusants et decouvrez un monde qui existait il y a des millions d\'annees !',
@@ -258,6 +260,10 @@ export default {
       { title: 'Comment les scientifiques determinent-ils le comportement des dinosaures ?', content: 'Les pistes, les nids, les marques de morsures, les lits d\'ossements et l\'anatomie aident les paleontologues a deduire le comportement social, le style de chasse et les soins parentaux. Les scientifiques distinguent toujours les preuves directes des inferences solides.' },
       { title: 'Pourquoi certains dinosaures avaient-ils des plumes ?', content: 'Les plumes ont probablement evolue d\'abord pour l\'isolation et l\'affichage, bien avant le vol. Chez certaines especes, elles sont ensuite devenues utiles pour la couvaison, la parade nuptiale et finalement — le vol actif chez les ancetres des oiseaux.' },
     ],
+  },
+  notFound: {
+    seoTitle: 'Page Non Trouvée — Dinosaures',
+    seoDescription: "Cette page n'existe pas ou a disparu. Retournez à l'encyclopédie interactive des dinosaures et aux jeux.",
   },
   about: {
     seoTitle: 'À propos — Site Éducatif sur les Dinosaures',

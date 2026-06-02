@@ -53,6 +53,8 @@ export default {
     marineReptile: 'Marine Reptile',
   },
   home: {
+    seoTitle: 'Dinosaurs — Explore the Prehistoric World',
+    seoDescription: 'Discover amazing dinosaurs through an interactive encyclopedia, timeline, comparison tools, games, and science articles. For curious minds of all ages.',
     badge: 'Interactive prehistoric museum',
     title: 'Explore the Prehistoric World',
     kidsText: 'Meet amazing dinosaurs, play fun games, and discover a world that existed millions of years ago!',
@@ -258,6 +260,10 @@ export default {
       { title: 'How Do Scientists Determine Dinosaur Behavior?', content: 'Trackways, nests, bite marks, bonebeds, and anatomy help paleontologists infer social behavior, hunting style, and parental care. Scientists always distinguish between direct evidence and well-reasoned inferences.' },
       { title: 'Why Did Some Dinosaurs Have Feathers?', content: 'Feathers likely first evolved for insulation and display, long before flight. In some species they later became useful for egg incubation, courtship, and eventually — powered flight in the ancestors of birds.' },
     ],
+  },
+  notFound: {
+    seoTitle: 'Page Not Found — Dinosaurs',
+    seoDescription: "This page doesn't exist or went extinct. Navigate back to the interactive dinosaur encyclopedia and games.",
   },
   about: {
     seoTitle: 'About — Dinosaurs Educational Website',

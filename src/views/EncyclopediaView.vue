@@ -168,8 +168,8 @@ watch(
 <template>
   <div class="max-w-7xl mx-auto px-4 py-10">
     <SeoHead
-        title="Dinosaur Encyclopedia"
-        description="Browse the complete dinosaur database with detailed information. Filter by era, diet, and size. Search and compare dinosaurs side by side."
+        :title="t('ui.encyclopedia.title')"
+        :description="t('ui.encyclopedia.description')"
     />
     <h1 class="text-display-lg mb-4">{{ t('ui.encyclopedia.title') }}</h1>
     <p class="text-body-lg mb-8">

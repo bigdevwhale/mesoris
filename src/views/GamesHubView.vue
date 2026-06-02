@@ -69,8 +69,8 @@ const localizedGames = computed(() =>
 <template>
   <div class="max-w-7xl mx-auto px-4 py-10">
     <SeoHead
-      title="Dinosaur Games — Play & Learn"
-      description="Play educational dinosaur games: quiz, puzzle, fossil excavation, and skeleton building. Test your knowledge and have fun learning about prehistoric life."
+      :title="t('games.hub.title')"
+      :description="t('games.hub.description')"
     />
     <h1 class="text-display-lg mb-4">{{ t('ui.games.title') }}</h1>
     <p class="text-body-lg mb-10">

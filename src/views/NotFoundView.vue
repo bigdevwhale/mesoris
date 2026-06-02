@@ -1,13 +1,16 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import BaseButton from '@/components/ui/BaseButton.vue'
 import SeoHead from '@/components/layout/SeoHead.vue'
+
+const { t } = useI18n()
 </script>
 
 <template>
   <div class="flex flex-col items-center justify-center min-h-[70vh] text-center px-4">
     <SeoHead
-      title="Page Not Found — Dinosaurs"
-      description="This page doesn't exist or went extinct. Navigate back to the interactive dinosaur encyclopedia and games."
+      :title="t('ui.notFound.seoTitle')"
+      :description="t('ui.notFound.seoDescription')"
     />
     <div class="text-8xl mb-6">🦴</div>
     <h1 class="text-display-lg mb-4">404</h1>

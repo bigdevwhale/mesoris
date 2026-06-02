@@ -53,6 +53,8 @@ export default {
     marineReptile: 'Rettile Marino',
   },
   home: {
+    seoTitle: 'Dinosauri — Esplora il Mondo Preistorico',
+    seoDescription: "Scopri dinosauri straordinari attraverso un'enciclopedia interattiva, una timeline, strumenti di confronto, giochi e articoli scientifici. Per menti curiose di tutte le età.",
     badge: 'Museo Preistorico Interattivo',
     title: 'Esplora il Mondo Preistorico',
     kidsText: 'Incontra dinosauri incredibili, gioca a giochi divertenti e scopri un mondo che esisteva milioni di anni fa!',
@@ -258,6 +260,10 @@ export default {
       { title: 'Come determinano gli scienziati il comportamento dei dinosauri?', content: 'Impronte, nidi, segni di morsi, letti d\'ossa e anatomia aiutano i paleontologi a dedurre il comportamento sociale, lo stile di caccia e le cure parentali. Gli scienziati distinguono sempre le prove dirette dalle inferenze solide.' },
       { title: 'Perché alcuni dinosauri avevano le piume?', content: 'Le piume si sono probabilmente evolute prima per l\'isolamento e l\'esibizione, molto prima del volo. In alcune specie, sono poi diventate utili per la cova, il corteggiamento e infine — il volo attivo negli antenati degli uccelli.' },
     ],
+  },
+  notFound: {
+    seoTitle: 'Pagina Non Trovata — Dinosauri',
+    seoDescription: "Questa pagina non esiste o si è estinta. Torna all'enciclopedia interattiva dei dinosauri e ai giochi.",
   },
   about: {
     seoTitle: 'Informazioni — Sito Educativo sui Dinosauri',

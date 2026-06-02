@@ -27,31 +27,6 @@ function pickLocale<T>(en: T, ru: T, es: T, de: T, fr: T, it: T, ja: T, zh: T, k
   return en
 }
 
-const seoTitle = computed(() => pickLocale(
-  'Science Center — Dinosaur Research & Myths',
-  'Научный центр — исследования динозавров и мифы',
-  'Centro de Ciencias — Investigacion de Dinosaurios y Mitos',
-  'Wissenschaftszentrum — Dinosaurier-Forschung & Mythen',
-  'Centre Scientifique — Recherche sur les Dinosaures & Mythes',
-  'Centro Scientifico — Ricerca sui Dinosauri & Miti',
-  '科学センター — 恐竜の研究と神話',
-  '科学中心 — 恐龙研究与神话',
-  '과학 센터 — 공룡 연구와 신화',
-  'Ғылым орталығы — Динозавр зерттеулері мен мифтер',
-))
-const seoDesc = computed(() => pickLocale(
-  'Read science articles about dinosaurs, debunk common myths with evidence, and explore simple explanations of complex paleontology topics.',
-  'Читайте научные статьи о динозаврах, развенчивайте распространённые мифы с помощью доказательств и изучайте простые объяснения сложных тем палеонтологии.',
-  'Lea articulos cientificos sobre dinosaurios, desmienta mitos comunes con evidencia y explore explicaciones simples de temas complejos de paleontologia.',
-  'Lies wissenschaftliche Artikel uber Dinosaurier, entlarve gangige Mythen mit Beweisen und entdecke einfache Erklarungen komplexer palaontologischer Themen.',
-  'Lisez des articles scientifiques sur les dinosaures, demystifiez les mythes courants avec des preuves et explorez des explications simples de sujets paleontologiques complexes.',
-  'Leggi articoli scientifici sui dinosauri, sfata i miti comuni con prove ed esplora semplici spiegazioni di argomenti paleontologici complessi.',
-  '恐竜に関する科学記事を読み、証拠に基づいて一般的な神話を検証し、複雑な古生物学のトピックを簡単な説明で探求しましょう。',
-  '阅读恐龙科学文章，用证据揭穿常见神话，探索复杂古生物学主题的简单解释。',
-  '공룡 과학 기사를 읽고, 증거로 일반적인 오해를 검증하며, 복잡한 고생물학 주제를 쉽게 설명합니다.',
-  'Динозаврлар туралы ғылыми мақалаларды оқыңыз, дәлелдемелермен кең таралған мифтерді жоққа шығарыңыз және күрделі палеонтология тақырыптарының қарапайым түсіндірмелерін зерттеңіз.',
-))
-
 const flippedCards = ref<Set<string>>(new Set())
 
 function toggleCard(id: string) {
@@ -70,7 +45,7 @@ const explainers = computed(() => {
 
 <template>
   <div class="max-w-7xl mx-auto px-4 py-10">
-    <SeoHead :title="seoTitle" :description="seoDesc" />
+    <SeoHead :title="t('ui.science.title')" :description="t('ui.science.description')" />
     <h1 class="text-display-lg mb-4">{{ t('ui.science.title') }}</h1>
     <p class="text-body-lg mb-10">{{ t('ui.science.description') }}</p>
 

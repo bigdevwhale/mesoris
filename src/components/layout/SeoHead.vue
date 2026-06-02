@@ -57,7 +57,7 @@ const linkTags = computed(() => {
   return tags
 })
 
-useHead({
+useHead(computed(() => ({
   title: props.title,
   htmlAttrs: { lang: currentLocale.value },
   meta: [
@@ -76,7 +76,7 @@ useHead({
     { name: 'twitter:image', content: props.image },
   ],
   link: linkTags.value,
-})
+})))
 </script>
 
 <template>

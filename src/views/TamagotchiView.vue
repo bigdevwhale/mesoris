@@ -995,8 +995,8 @@ onUnmounted(() => {
   <div>
     <div class="max-w-2xl mx-auto px-4 py-10">
       <SeoHead
-          title="Dino Tamagotchi — Raise Your Dinosaur"
-          description="Pick a dinosaur, keep it fed and happy, watch it grow from baby to adult!"
+          :title="t('games.tamagotchiGame.title')"
+          :description="t('games.tamagotchiGame.subtitle')"
       />
       <div class="flex items-center justify-between mb-6">
         <router-link

@@ -53,6 +53,8 @@ export default {
     marineReptile: 'Reptil Marino',
   },
   home: {
+    seoTitle: 'Dinosaurios — Explora el Mundo Prehistórico',
+    seoDescription: 'Descubre dinosaurios increíbles a través de una enciclopedia interactiva, cronología, herramientas de comparación, juegos y artículos científicos. Para mentes curiosas de todas las edades.',
     badge: 'Museo prehistorico interactivo',
     title: 'Explora el Mundo Prehistorico',
     kidsText: '¡Conoce dinosaurios increibles, juega y descubre un mundo que existio hace millones de anos!',
@@ -258,6 +260,10 @@ export default {
       { title: '¿Como Determinan los Cientificos el Comportamiento de los Dinosaurios?', content: 'Huellas, nidos, marcas de mordeduras, lechos de huesos y anatomia ayudan a los paleontologos a inferir el comportamiento social, el estilo de caza y el cuidado parental. Los cientificos siempre distinguen entre evidencia directa e inferencias bien fundamentadas.' },
       { title: '¿Por Que Algunos Dinosaurios Tenian Plumas?', content: 'Las plumas probablemente evolucionaron primero para aislamiento y exhibicion, mucho antes del vuelo. En algunas especies luego se volvieron utiles para la incubacion de huevos, el cortejo y eventualmente el vuelo propulsado en los ancestros de las aves.' },
     ],
+  },
+  notFound: {
+    seoTitle: 'Página No Encontrada — Dinosaurios',
+    seoDescription: 'Esta página no existe o se extinguió. Navega de vuelta a la enciclopedia interactiva de dinosaurios y juegos.',
   },
   about: {
     seoTitle: 'Acerca de — Sitio Educativo de Dinosaurios',

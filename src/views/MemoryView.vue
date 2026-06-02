@@ -123,8 +123,8 @@ const gridStyle = computed(() => ({
 
     <h1 class="text-display-md pb-6 text-center">{{ t('games.memoryGame.title') }}</h1>
     <SeoHead
-      title="Memory Match — Find the Pairs"
-      description="Flip cards to find matching dinosaur pairs. Train your memory by uncovering beautiful prehistoric illustrations."
+      :title="t('games.memoryGame.title')"
+      :description="t('games.memoryGame.description')"
     />
 
     <!-- Difficulty Selector -->

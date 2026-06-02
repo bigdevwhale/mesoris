@@ -105,8 +105,8 @@ function clickTile(index: number) {
       </button>
     </div>
     <SeoHead
-      title="Dino Puzzle — Solve the Picture"
-      description="Solve a sliding puzzle featuring dinosaur illustrations. Swap tiles to reconstruct the picture in as few moves as possible."
+      :title="t('games.puzzleGame.title')"
+      :description="t('games.puzzleGame.description')"
     />
 
     <!-- Puzzle Grid -->

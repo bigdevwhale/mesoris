@@ -459,8 +459,8 @@ onUnmounted(() => {
 <template>
   <div class="max-w-4xl mx-auto px-4 py-10">
     <SeoHead
-      title="Dino Runner — Endless Prehistoric Run"
-      description="Run, jump, and dodge obstacles in this endless dinosaur runner game. How far can you go?"
+      :title="t('games.runnerGame.title')"
+      :description="t('games.runnerGame.hint')"
     />
 
     <div class="flex items-center justify-between mb-6">

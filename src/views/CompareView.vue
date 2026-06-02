@@ -63,8 +63,8 @@ watch(() => store.bothSelected, (selected) => {
 <template>
   <div class="max-w-7xl mx-auto px-4 py-10">
     <SeoHead
-      title="Compare Dinosaurs"
-      description="Compare any two dinosaurs side by side. See how they stack up in size, weight, speed, and height with interactive visual comparison bars."
+      :title="t('ui.compare.title')"
+      :description="t('ui.compare.description')"
     />
     <h1 class="text-display-lg mb-4">{{ t('ui.compare.title') }}</h1>
     <p class="text-body-lg mb-10">{{ t('ui.compare.subtitle') }}</p>
