@@ -288,5 +288,9 @@ export default {
       title: 'Barrierefreiheit',
       content: 'Diese Website ist mit Barrierefreiheit als Kernprinzip erstellt: Tastaturnavigation, Screenreader-Unterstützung, Fokusindikatoren und reduzierte Bewegungseinstellungen werden durchgängig berücksichtigt. Alle interaktiven Elemente erfüllen die WCAG 2.1 AA-Standards.',
     },
+    contact: {
+      title: 'Kontakt',
+      content: 'Haben Sie Fragen oder Anregungen? Schreiben Sie uns:',
+    },
   },
 }

@@ -32,7 +32,7 @@ const moreLinks = computed<NavLink[]>(() => [
     <Transition name="fade">
       <div
         v-if="isMoreOpen"
-        class="fixed inset-0 z-[35] md:hidden"
+        class="fixed inset-0 z-[35] lg:hidden"
         aria-hidden="true"
         @click="closeMore"
       />
@@ -42,7 +42,7 @@ const moreLinks = computed<NavLink[]>(() => [
     <Transition name="slide-up">
       <div
         v-if="isMoreOpen"
-        class="fixed left-0 right-0 z-[36] md:hidden popup-bottom"
+        class="fixed left-0 right-0 z-[36] lg:hidden popup-bottom"
         role="menu"
         aria-label="More navigation options"
       >
@@ -69,7 +69,7 @@ const moreLinks = computed<NavLink[]>(() => [
 
   <!-- Bottom navigation bar -->
   <nav
-    class="fixed bottom-0 left-0 right-0 z-30 md:hidden bg-[var(--color-bg-elevated)]/90 backdrop-blur-xl border-t border-[var(--glass-border)] safe-bottom"
+    class="fixed bottom-0 left-0 right-0 z-30 lg:hidden bg-[var(--color-bg-elevated)]/90 backdrop-blur-xl border-t border-[var(--glass-border)] safe-bottom"
     aria-label="Mobile navigation"
   >
     <div class="flex items-stretch h-16">

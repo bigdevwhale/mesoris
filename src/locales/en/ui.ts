@@ -269,7 +269,7 @@ export default {
     seoTitle: 'About — Dinosaurs Educational Website',
     seoDescription: 'Learn about the Dinosaurs educational project, built with Vue 3 and modern web technologies. Our mission is making science education beautiful and accessible.',
     title: 'About This Project',
-    description: 'A premium educational website about dinosaurs, built with modern web technologies and a passion for science education.',
+    description: 'An educational website about dinosaurs, built with modern web technologies and a passion for science education.',
     mission: {
       title: 'Our Mission',
       content: 'We believe that science education should be beautiful, engaging, and accessible to everyone — regardless of age. This project brings paleontology to life through interactive tools, games, and beautifully presented scientific information.',
@@ -287,6 +287,10 @@ export default {
     accessibility: {
       title: 'Accessibility',
       content: 'This site is built with accessibility as a core principle: keyboard navigation, screen reader support, focus indicators, and reduced motion preferences are respected throughout. All interactive elements meet WCAG 2.1 AA standards.',
+    },
+    contact: {
+      title: 'Contact',
+      content: 'Have questions or suggestions? Feel free to reach out:',
     },
   },
 }

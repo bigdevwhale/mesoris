@@ -2,6 +2,7 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import SeoHead from '@/components/layout/SeoHead.vue'
+import BaseIcon from '@/components/ui/BaseIcon.vue'
 
 const { t, tm } = useI18n()
 
@@ -37,6 +38,38 @@ const sourceItems = computed(() => {
       <section class="bg-[var(--color-bg-elevated)] border border-[var(--glass-border)] rounded-[var(--radius-xl)] p-6">
         <h2 class="text-heading-md mb-3">{{ t('ui.about.accessibility.title') }}</h2>
         <p>{{ t('ui.about.accessibility.content') }}</p>
+      </section>
+
+      <section>
+        <h2 class="text-heading-md mb-3">{{ t('ui.about.contact.title') }}</h2>
+        <p class="mb-3">{{ t('ui.about.contact.content') }}</p>
+        <ul class="space-y-2">
+          <li>
+            <a href="mailto:marat.badykov.555@gmail.com" class="inline-flex items-center gap-2 text-[var(--color-brand-amber)] hover:underline">
+              <BaseIcon name="mail" :size="16" /> marat.badykov.555@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="https://t.me/marat_badykov" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-[var(--color-brand-amber)] hover:underline">
+              <BaseIcon name="send" :size="16" /> @marat_badykov
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/Mesoris_com" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-[var(--color-brand-amber)] hover:underline">
+              <BaseIcon name="twitter" :size="16" /> @Mesoris_com
+            </a>
+          </li>
+          <li>
+            <a href="https://www.threads.com/@be_till_the_end" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-[var(--color-brand-amber)] hover:underline">
+              <BaseIcon name="at-sign" :size="16" /> @be_till_the_end
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/bigdevwhale/mesoris" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-[var(--color-brand-amber)] hover:underline">
+              <BaseIcon name="github" :size="16" /> github.com/bigdevwhale/mesoris
+            </a>
+          </li>
+        </ul>
       </section>
     </div>
   </div>

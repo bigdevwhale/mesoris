@@ -38,7 +38,7 @@ watch(() => props.isOpen, (open) => {
 <template>
   <Teleport to="body">
     <Transition name="drawer">
-      <div v-if="isOpen" class="fixed inset-0 z-40 md:hidden">
+      <div v-if="isOpen"       class="fixed inset-0 z-40 lg:hidden">
         <div class="absolute inset-0 bg-black/50 backdrop-blur-sm" @click="emit('close')" />
         <nav
           class="absolute top-0 right-0 w-[280px] h-full bg-[var(--color-bg-elevated)] border-l border-[var(--glass-border)] shadow-[var(--shadow-modal)] flex flex-col pt-20 px-4 gap-1"

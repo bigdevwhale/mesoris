@@ -14,11 +14,12 @@ const links = computed<NavLink[]>(() => [
   { label: t('ui.nav.compare'), to: localRoute({ name: 'compare' }), icon: 'scaling' },
   { label: t('ui.nav.games'), to: localRoute({ name: 'games' }), icon: 'gamepad-2' },
   { label: t('ui.nav.science'), to: localRoute({ name: 'science' }), icon: 'flask-conical' },
+  { label: t('ui.nav.about'), to: localRoute({ name: 'about' }), icon: 'info' },
 ])
 </script>
 
 <template>
-  <nav class="hidden md:flex items-center gap-1">
+  <nav class="hidden lg:flex items-center gap-1">
     <router-link
       v-for="link in links"
       :key="link.label"

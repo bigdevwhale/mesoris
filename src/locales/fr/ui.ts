@@ -288,5 +288,9 @@ export default {
       title: 'Accessibilité',
       content: 'Ce site est construit avec l\'accessibilité comme principe fondamental : navigation au clavier, prise en charge des lecteurs d\'écran, indicateurs de focus et respect des préférences de mouvement réduit. Tous les éléments interactifs sont conformes aux normes WCAG 2.1 AA.',
     },
+    contact: {
+      title: 'Contact',
+      content: 'Vous avez des questions ou des suggestions ? N\'hésitez pas à nous contacter :',
+    },
   },
 }
