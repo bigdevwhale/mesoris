@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, nextTick, onBeforeUnmount, ref, watch } from 'vue'
+import { computed, nextTick, onBeforeUnmount, onMounted, onUnmounted, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 import SeoHead from '@/components/layout/SeoHead.vue'
 import BaseButton from '@/components/ui/BaseButton.vue'
@@ -560,6 +560,15 @@ function logClass(kind: LogKind) {
   if (kind === 'round') return 'border-sky-200 bg-sky-50/80 text-sky-900 dark:border-sky-900/70 dark:bg-sky-950/30 dark:text-sky-100'
   return 'border-slate-200 bg-white/80 text-slate-700 dark:border-slate-800 dark:bg-slate-900/70 dark:text-slate-200'
 }
+
+const scrollY = ref(0)
+const showScrollTop = computed(() => phase.value === 'select' && scrollY.value > 300)
+
+function onScroll() { scrollY.value = window.scrollY }
+function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }) }
+
+onMounted(() => window.addEventListener('scroll', onScroll, { passive: true }))
+onUnmounted(() => window.removeEventListener('scroll', onScroll))
 </script>
 
 <template>
@@ -664,7 +673,7 @@ function logClass(kind: LogKind) {
         <span>🔴 {{ t('games.battleGame.legendDanger') }}</span>
       </div>
 
-      <div class="max-h-[32rem] overflow-y-auto rounded-2xl border border-slate-200 bg-white/80 p-3 shadow-sm dark:border-slate-800 dark:bg-slate-900/80 sm:rounded-3xl sm:p-4">
+      <div class="rounded-2xl border border-slate-200 bg-white/80 p-3 shadow-sm dark:border-slate-800 dark:bg-slate-900/80 sm:rounded-3xl sm:p-4">
         <div class="grid grid-cols-2 gap-3 xl:grid-cols-3">
           <button
             v-for="dino in filteredDinosaurs"
@@ -930,6 +939,26 @@ function logClass(kind: LogKind) {
         </BaseButton>
       </div>
     </div>
+
+    <!-- Scroll to top (select phase only, appears after scrolling 300px) -->
+    <Teleport to="body">
+      <Transition
+        enter-active-class="transition duration-200 ease-out"
+        enter-from-class="translate-y-4 opacity-0"
+        leave-active-class="transition duration-150 ease-in"
+        leave-to-class="translate-y-4 opacity-0"
+      >
+        <button
+          v-if="showScrollTop"
+          type="button"
+          aria-label="Scroll to top"
+          class="fixed bottom-20 right-4 z-50 flex h-9 w-9 items-center justify-center rounded-full bg-black/20 text-sm text-white backdrop-blur-sm transition hover:bg-black/40 active:scale-95 md:bottom-6"
+          @click="scrollToTop"
+        >
+          ↑
+        </button>
+      </Transition>
+    </Teleport>
   </div>
 </template>
 
