@@ -640,7 +640,7 @@ function logClass(kind: LogKind) {
           <BaseButton v-if="canFight" size="lg" class="w-full sm:w-auto" @click="prepareBattle">
             {{ t('games.battleGame.fight') }}
           </BaseButton>
-          <div v-else class="w-full rounded-2xl border border-dashed border-slate-300 bg-slate-50/60 py-3 text-center text-sm font-medium text-slate-400 dark:border-slate-700 dark:bg-slate-900/40 sm:py-4">
+          <div v-else class="w-full rounded-2xl border border-dashed border-slate-300 bg-slate-50/60 px-3 py-3 text-center text-xs font-medium text-slate-400 dark:border-slate-700 dark:bg-slate-900/40 sm:py-4 sm:text-sm">
             {{ t('games.battleGame.selectHint') }}
           </div>
         </div>
