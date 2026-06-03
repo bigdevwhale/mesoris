@@ -113,6 +113,13 @@ const currentDinoImage = computed(() => {
   return d.images.hero
 })
 
+// Translated version of the current dino — passed to the detail modal
+// so name, description, facts, funFact etc. render in the active locale
+const translatedCurrentDino = computed(() => {
+  const d = currentDino.value
+  return d ? translateDino(d) : null
+})
+
 const correctBin = computed<BinKey | null>(() => {
   const d = currentDino.value
   if (!d) return null
@@ -368,7 +375,7 @@ onMounted(() => {
 
     <DinoDetailModal
       :is-open="showDinoModal"
-      :dino="currentDino"
+      :dino="translatedCurrentDino"
       @close="showDinoModal = false"
     />
   </div>
