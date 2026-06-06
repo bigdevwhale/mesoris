@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, nextTick, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useRouter } from 'vue-router'
 import { useLocale } from '@/composables/useLocale'
 import { useGameStore } from '@/stores/useGameStore'
 import { dinosaurs } from '@/data/dinosaurs'
@@ -14,6 +15,7 @@ import DinoDetailModal from '@/components/encyclopedia/DinoDetailModal.vue'
 import type { Dinosaur } from '@/types/dinosaur'
 
 const { t } = useI18n()
+const router = useRouter()
 const { localRoute } = useLocale()
 const gameStore = useGameStore()
 const { translateDino } = useDinoTranslator()
@@ -180,6 +182,11 @@ function nextRound() {
 
 function playAgain() {
   startGame()
+}
+
+function onAddToCompare(id: string) {
+  showDinoModal.value = false
+  router.push(localRoute({ name: 'compare', query: { a: id } }))
 }
 
 onMounted(() => {
@@ -377,6 +384,7 @@ onMounted(() => {
       :is-open="showDinoModal"
       :dino="translatedCurrentDino"
       @close="showDinoModal = false"
+      @add-to-compare="onAddToCompare"
     />
   </div>
 </template>
