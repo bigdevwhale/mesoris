@@ -649,73 +649,74 @@ onBeforeUnmount(() => { /* no timers to clean up */ })
       </section>
     </div>
 
-    <!-- (Legacy result section removed — see BaseModal below.) -->
+    <!-- RESULT MODAL: appears over the board/journal as soon as a winner
+         is set. Three actions: race again (same length), pick a different
+         length, or back to the games hub. The <BaseModal> teleports its
+         content to <body>, so it lives inside this div for a single root
+         template only — Vue's <transition> refuses to animate a
+         multi-root component and that broke navigation. -->
+    <BaseModal
+      :is-open="showResultModal"
+      :title="state.winner === 'dino' ? t('games.meteorRun.dinoWins') : t('games.meteorRun.meteorWins')"
+      size="sm"
+      :close-on-overlay="false"
+      @close="showResultModal = false"
+    >
+      <div class="text-center space-y-4">
+        <BaseConfetti v-if="showConfetti" />
+        <div class="text-5xl sm:text-6xl" aria-hidden="true">
+          {{ state.winner === 'dino' ? '🎉' : '💥' }}
+        </div>
+        <p class="text-sm sm:text-base text-[var(--color-text-secondary)]">
+          {{ t('games.meteorRun.finalScore', { n: state.turnCount }) }}
+        </p>
+
+        <div class="grid grid-cols-3 gap-2">
+          <div class="p-2.5 rounded-[var(--radius-md)] bg-[var(--color-bg-base)] border border-[var(--glass-border)]">
+            <p class="text-lg sm:text-xl font-bold text-[var(--color-brand-amber)]">{{ state.turnCount }}</p>
+            <p class="text-[10px] text-[var(--color-text-tertiary)] mt-0.5">{{ t('games.meteorRun.stats.turns') }}</p>
+          </div>
+          <div class="p-2.5 rounded-[var(--radius-md)] bg-[var(--color-bg-base)] border border-[var(--glass-border)]">
+            <p class="text-lg sm:text-xl">
+              <MeteorRunPawn :player="state.winner ?? 'dino'" size="sm" class="inline-block" />
+            </p>
+            <p class="text-[10px] text-[var(--color-text-tertiary)] mt-0.5">{{ t('games.meteorRun.stats.winner') }}</p>
+          </div>
+          <div class="p-2.5 rounded-[var(--radius-md)] bg-[var(--color-bg-base)] border border-[var(--glass-border)]">
+            <p class="text-lg sm:text-xl font-bold text-[var(--color-brand-amber)]">{{ state.boardLength }}</p>
+            <p class="text-[10px] text-[var(--color-text-tertiary)] mt-0.5">{{ t('games.meteorRun.stats.track') }}</p>
+          </div>
+        </div>
+      </div>
+
+      <template #footer>
+        <div class="flex flex-col sm:flex-row gap-2">
+          <BaseButton
+            variant="primary"
+            icon="refresh-ccw"
+            class="flex-1"
+            @click="resetGame"
+          >
+            {{ t('games.meteorRun.playAgain') }}
+          </BaseButton>
+          <BaseButton
+            variant="ghost"
+            icon="sliders"
+            class="flex-1"
+            @click="goToLengthPicker"
+          >
+            {{ t('games.meteorRun.pickLength') }}
+          </BaseButton>
+          <BaseButton
+            variant="ghost"
+            icon="home"
+            class="flex-1"
+            :to="localRoute({ name: 'games' })"
+          >
+            {{ t('games.meteorRun.backToGames') }}
+          </BaseButton>
+        </div>
+      </template>
+    </BaseModal>
   </div>
-
-  <!-- RESULT MODAL: appears over the board/journal as soon as a winner
-       is set. Three actions: race again (same length), pick a different
-       length, or back to the games hub. -->
-  <BaseModal
-    :is-open="showResultModal"
-    :title="state.winner === 'dino' ? t('games.meteorRun.dinoWins') : t('games.meteorRun.meteorWins')"
-    size="sm"
-    :close-on-overlay="false"
-    @close="showResultModal = false"
-  >
-    <div class="text-center space-y-4">
-      <BaseConfetti v-if="showConfetti" />
-      <div class="text-5xl sm:text-6xl" aria-hidden="true">
-        {{ state.winner === 'dino' ? '🎉' : '💥' }}
-      </div>
-      <p class="text-sm sm:text-base text-[var(--color-text-secondary)]">
-        {{ t('games.meteorRun.finalScore', { n: state.turnCount }) }}
-      </p>
-
-      <div class="grid grid-cols-3 gap-2">
-        <div class="p-2.5 rounded-[var(--radius-md)] bg-[var(--color-bg-base)] border border-[var(--glass-border)]">
-          <p class="text-lg sm:text-xl font-bold text-[var(--color-brand-amber)]">{{ state.turnCount }}</p>
-          <p class="text-[10px] text-[var(--color-text-tertiary)] mt-0.5">{{ t('games.meteorRun.stats.turns') }}</p>
-        </div>
-        <div class="p-2.5 rounded-[var(--radius-md)] bg-[var(--color-bg-base)] border border-[var(--glass-border)]">
-          <p class="text-lg sm:text-xl">
-            <MeteorRunPawn :player="state.winner ?? 'dino'" size="sm" class="inline-block" />
-          </p>
-          <p class="text-[10px] text-[var(--color-text-tertiary)] mt-0.5">{{ t('games.meteorRun.stats.winner') }}</p>
-        </div>
-        <div class="p-2.5 rounded-[var(--radius-md)] bg-[var(--color-bg-base)] border border-[var(--glass-border)]">
-          <p class="text-lg sm:text-xl font-bold text-[var(--color-brand-amber)]">{{ state.boardLength }}</p>
-          <p class="text-[10px] text-[var(--color-text-tertiary)] mt-0.5">{{ t('games.meteorRun.stats.track') }}</p>
-        </div>
-      </div>
-    </div>
-
-    <template #footer>
-      <div class="flex flex-col sm:flex-row gap-2">
-        <BaseButton
-          variant="primary"
-          icon="refresh-ccw"
-          class="flex-1"
-          @click="resetGame"
-        >
-          {{ t('games.meteorRun.playAgain') }}
-        </BaseButton>
-        <BaseButton
-          variant="ghost"
-          icon="sliders"
-          class="flex-1"
-          @click="goToLengthPicker"
-        >
-          {{ t('games.meteorRun.pickLength') }}
-        </BaseButton>
-        <BaseButton
-          variant="ghost"
-          icon="home"
-          class="flex-1"
-          :to="localRoute({ name: 'games' })"
-        >
-          {{ t('games.meteorRun.backToGames') }}
-        </BaseButton>
-      </div>
-    </template>
-  </BaseModal>
 </template>
