@@ -50,7 +50,11 @@ function onLeave(el: Element, done: () => void) {
         @enter="onEnter"
         @leave="onLeave"
       >
-        <component :is="Component" :key="route.path" />
+        <!-- Key by path-without-locale so changing only the language
+             doesn't unmount the current view. The previous `:key="route.path"`
+             caused Meteor Run (and other heavy game views) to render as a
+             blank main block right after locale switch. -->
+        <component :is="Component" :key="route.path.replace(/^\/[a-z]{2}/, '')" />
       </transition>
     </router-view>
   </main>
