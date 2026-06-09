@@ -119,6 +119,11 @@ const childRoutes: RouteRecordRaw[] = [
     component: () => import('@/views/MeteorRunView.vue'),
   },
   {
+    path: 'games/dino-duel',
+    name: 'dino-duel',
+    component: () => import('@/views/DinoDuelView.vue'),
+  },
+  {
     path: 'science',
     name: 'science',
     component: () => import('@/views/ScienceView.vue'),
@@ -197,6 +202,7 @@ const PAGE_TITLES: Record<string, Record<string, string>> = {
     'diet-detective': 'Diet Detective',
     'dino-map': 'Dino Map',
     'meteor-run': 'Meteor Run',
+    'dino-duel': 'Who Is Greater?',
     science: 'Science Center',
     article: 'Science Article',
     about: 'About',
