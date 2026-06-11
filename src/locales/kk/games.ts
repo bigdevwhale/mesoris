@@ -1,10 +1,11 @@
-export default {
+﻿export default {
   quiz: 'Викторина',
   puzzle: 'Пазл',
   excavation: 'Қазба жұмыстары',
   skeleton: 'Қаңқа',
   memory: 'Есте сақтау ойыны',
-  runner: 'Жүгірме',
+  runner: 'Динозавр жүгірме',
+  'ptero-glide': 'Птеродактиль ұшуы',
   battle: 'Шайқас',
   personality: 'Сіз қандай динозавр типісіз?',
   'diet-detective': 'Диета детективі',
@@ -100,6 +101,16 @@ export default {
     controlsKey: 'Space / ↑ секіру',
     controlsTap: 'Түрту арқылы секіру',
     controlsDouble: 'Қосарлы секіру мүмкіндігі',
+  },
+  pteroGlide: {
+    title: 'Птеродактиль ұшуы',
+    hint: 'Птеродактильге мініп, жартас аркаларының арасымен ұшыңыз — қанат қағу үшін басыңыз!',
+    tapToStart: 'БОС ОРЫН, ↑ немесе басу арқылы ұшу',
+    gameOver: 'ОЙЫН АЯҚТАЛДЫ',
+    tapToRestart: 'БОС ОРЫН, ↑ немесе басу арқылы қайталау',
+    controlsKey: 'Бос орын / ↑ — қанат қағу',
+    controlsTap: 'Басу — қанат қағу',
+    controlsObstacle: 'Жартас аркаларынан жалтарыңыз',
   },
   battleGame: {
     title: 'Динозавр шайқас симуляторы',

@@ -1,10 +1,11 @@
-export default {
+﻿export default {
   quiz: 'Quiz',
   puzzle: 'Rompecabezas',
   excavation: 'Excavacion',
   skeleton: 'Esqueleto',
   memory: 'Memoria',
-  runner: 'Carrera',
+  runner: 'Carrera del Dinosaurio',
+  'ptero-glide': 'Vuelo del pterodáctilo',
   battle: 'Batalla',
   personality: '¿Qué Dino Eres?',
   'diet-detective': 'Detective de Dietas',
@@ -100,6 +101,16 @@ export default {
     controlsKey: 'Espacio / ↑ para saltar',
     controlsTap: 'Toca para saltar',
     controlsDouble: 'Doble salto disponible',
+  },
+  pteroGlide: {
+    title: 'Vuelo del pterodáctilo',
+    hint: '¡Surca los arcos rocosos a lomos de un pterodáctilo! Toca para aletear.',
+    tapToStart: 'Pulsa ESPACIO, ↑ o toca para despegar',
+    gameOver: 'FIN DE LA PARTIDA',
+    tapToRestart: 'Pulsa ESPACIO, ↑ o toca para reintentar',
+    controlsKey: 'Espacio / ↑ para aletear',
+    controlsTap: 'Toca para aletear',
+    controlsObstacle: 'Esquiva los arcos de roca',
   },
   battleGame: {
     title: 'Simulador de Batalla de Dinosaurios',

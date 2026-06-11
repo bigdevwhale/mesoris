@@ -1,10 +1,11 @@
-export default {
+﻿export default {
   quiz: 'クイズ',
   puzzle: 'パズル',
   excavation: '発掘',
   skeleton: '骨格',
   memory: '神経衰弱',
-  runner: 'ランナー',
+  runner: '恐竜ランナー',
+  'ptero-glide': 'プテロダクティルスの滑空',
   battle: 'バトル',
   personality: 'あなたはどの恐竜タイプ？',
   'diet-detective': '食事探偵',
@@ -100,6 +101,16 @@ export default {
     controlsKey: 'スペース / ↑ でジャンプ',
     controlsTap: 'タップでジャンプ',
     controlsDouble: '二段ジャンプ可能',
+  },
+  pteroGlide: {
+    title: 'プテロダクティルスの滑空',
+    hint: 'プテロダクティルに乗って岩のアーチをくぐろう — タップで羽ばたく！',
+    tapToStart: 'スペース / ↑ / タップで飛び立て',
+    gameOver: 'ゲームオーバー',
+    tapToRestart: 'スペース / ↑ / タップでもう一度',
+    controlsKey: 'スペース / ↑ で羽ばたく',
+    controlsTap: 'タップで羽ばたく',
+    controlsObstacle: '岩のアーチを避けろ',
   },
   battleGame: {
     title: '恐竜バトルシミュレーター',

@@ -1,10 +1,11 @@
-export default {
+﻿export default {
   quiz: 'Quiz',
   puzzle: 'Puzzle',
   excavation: 'Ausgrabung',
   skeleton: 'Skelett',
   memory: 'Memo',
-  runner: 'Runner',
+  runner: 'Dino-Lauf',
+  'ptero-glide': 'Pterodaktylus-Gleitflug',
   battle: 'Kampf',
   personality: 'Welcher Dino Bist Du?',
   'diet-detective': 'Dino-Detektiv',
@@ -100,6 +101,16 @@ export default {
     controlsKey: 'Leertaste / ↑ zum Springen',
     controlsTap: 'Tippen zum Springen',
     controlsDouble: 'Doppelsprung moglich',
+  },
+  pteroGlide: {
+    title: 'Pterodaktylus-Gleitflug',
+    hint: 'Gleite auf dem Rücken eines Pterodaktylus durch Felsbögen — tippe zum Flattern!',
+    tapToStart: 'LEERTASTE, ↑ oder Tippen zum Abheben',
+    gameOver: 'SPIEL VORBEI',
+    tapToRestart: 'LEERTASTE, ↑ oder Tippen für einen neuen Versuch',
+    controlsKey: 'Leertaste / ↑ zum Flattern',
+    controlsTap: 'Tippen zum Flattern',
+    controlsObstacle: 'Felsbögen ausweichen',
   },
   battleGame: {
     title: 'Dino Kampf-Simulator',

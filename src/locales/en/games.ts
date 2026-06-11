@@ -1,10 +1,11 @@
-export default {
+﻿export default {
   quiz: 'Quiz',
   puzzle: 'Puzzle',
   excavation: 'Excavation',
   skeleton: 'Skeleton',
   memory: 'Memory',
   runner: 'Runner',
+  'ptero-glide': 'Ptero Glide',
   battle: 'Battle',
   personality: 'Which Dino Are You?',
   'diet-detective': 'Diet Detective',
@@ -100,6 +101,16 @@ export default {
     controlsKey: 'Space / ↑ to jump',
     controlsTap: 'Tap to jump',
     controlsDouble: 'Double jump allowed',
+  },
+  pteroGlide: {
+    title: 'Ptero Glide',
+    hint: 'Soar through rocky arches on a pterodactyl — tap to flap!',
+    tapToStart: 'Press SPACE, ↑, or tap to take off',
+    gameOver: 'GAME OVER',
+    tapToRestart: 'Press SPACE, ↑, or tap to try again',
+    controlsKey: 'Space / ↑ to flap',
+    controlsTap: 'Tap to flap',
+    controlsObstacle: 'Dodge rock arches',
   },
   battleGame: {
     title: 'Dino Battle Simulator',

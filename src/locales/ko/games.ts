@@ -1,10 +1,11 @@
-export default {
+﻿export default {
   quiz: '퀴즈',
   puzzle: '퍼즐',
   excavation: '발굴',
   skeleton: '골격',
   memory: '기억력 게임',
-  runner: '러너',
+  runner: '공룡 러너',
+  'ptero-glide': '프테로닥틸 글라이드',
   battle: '배틀',
   personality: '당신은 어떤 공룡 타입?',
   'diet-detective': '식성 탐정',
@@ -100,6 +101,16 @@ export default {
     controlsKey: '스페이스 / ↑ 로 점프',
     controlsTap: '탭하여 점프',
     controlsDouble: '이중 점프 가능',
+  },
+  pteroGlide: {
+    title: '프테로닥틸 글라이드',
+    hint: '프테로닥틸을 타고 바위 아치를 통과하세요 — 탭하여 날갯짓!',
+    tapToStart: '스페이스 / ↑ / 탭하여 이륙',
+    gameOver: '게임 오버',
+    tapToRestart: '스페이스 / ↑ / 탭하여 다시 시도',
+    controlsKey: '스페이스 / ↑ 로 날갯짓',
+    controlsTap: '탭하여 날갯짓',
+    controlsObstacle: '바위 아치를 피하세요',
   },
   battleGame: {
     title: '공룡 배틀 시뮬레이터',

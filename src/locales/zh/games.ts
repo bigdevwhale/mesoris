@@ -1,10 +1,11 @@
-export default {
+﻿export default {
   quiz: '测验',
   puzzle: '拼图',
   excavation: '化石发掘',
   skeleton: '骨骼组装',
   memory: '记忆翻牌',
-  runner: '跑酷',
+  runner: '恐龙跑酷',
+  'ptero-glide': '翼龙滑翔',
   battle: '战斗',
   personality: '你是哪种恐龙？',
   'diet-detective': '饮食侦探',
@@ -100,6 +101,16 @@ export default {
     controlsKey: '空格键 / ↑键跳跃',
     controlsTap: '点击屏幕跳跃',
     controlsDouble: '支持二段跳',
+  },
+  pteroGlide: {
+    title: '翼龙滑翔',
+    hint: '驾驭翼龙穿越岩石拱门 — 点击拍打翅膀！',
+    tapToStart: '按空格键、↑ 或点击起飞',
+    gameOver: '游戏结束',
+    tapToRestart: '按空格键、↑ 或点击再试一次',
+    controlsKey: '空格 / ↑ 拍打翅膀',
+    controlsTap: '点击拍打翅膀',
+    controlsObstacle: '躲避岩石拱门',
   },
   battleGame: {
     title: '恐龙战斗模拟器',

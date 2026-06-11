@@ -1,10 +1,11 @@
-export default {
+﻿export default {
   quiz: 'Викторина',
   puzzle: 'Пазл',
   excavation: 'Раскопки',
   skeleton: 'Скелет',
   memory: 'Мемори',
-  runner: 'Бег',
+  runner: 'Бег динозавра',
+  'ptero-glide': 'Полёт птеродактиля',
   battle: 'Битва',
   personality: 'Какой ты динозавр?',
   'diet-detective': 'Детектив диеты',
@@ -100,6 +101,16 @@ export default {
     controlsKey: 'Пробел / ↑ — прыжок',
     controlsTap: 'Тап — прыжок',
     controlsDouble: 'Двойной прыжок доступен',
+  },
+  pteroGlide: {
+    title: 'Полёт птеродактиля',
+    hint: 'Пронеситесь сквозь скальные арки верхом на птеродактиле — нажимайте, чтобы взмахнуть крыльями!',
+    tapToStart: 'Нажмите ПРОБЕЛ, ↑ или тапните, чтобы взлететь',
+    gameOver: 'КОНЕЦ ИГРЫ',
+    tapToRestart: 'Нажмите ПРОБЕЛ, ↑ или тапните, чтобы начать заново',
+    controlsKey: 'Пробел / ↑ — взмах крыльями',
+    controlsTap: 'Тап — взмах крыльями',
+    controlsObstacle: 'Уворачивайтесь от скальных арок',
   },
   battleGame: {
     title: 'Симулятор битв динозавров',
