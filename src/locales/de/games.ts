@@ -156,6 +156,17 @@
     description: 'Spiele und lerne uber Dinosaurier durch interaktive Spiele',
     comingSoon: 'Demnachst',
     play: 'Spielen',
+    empty: 'In dieser Kategorie gibt es noch keine Spiele.',
+    scrollLeft: 'Kategorien nach links scrollen',
+    scrollRight: 'Kategorien nach rechts scrollen',
+    categories: {
+      all: 'Alle',
+      quiz: 'Quiz',
+      puzzle: 'Puzzles',
+      arcade: 'Arcade',
+      strategy: 'Strategie',
+      sim: 'Simulation',
+    },
   },
   personalityGame: {
     title: 'Welcher Dinosaurier Bist Du?',

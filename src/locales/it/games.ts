@@ -156,6 +156,17 @@
     description: 'Gioca e impara sui dinosauri attraverso giochi interattivi',
     comingSoon: 'Prossimamente',
     play: 'Gioca',
+    empty: 'Non ci sono ancora giochi in questa categoria.',
+    scrollLeft: 'Scorri le categorie a sinistra',
+    scrollRight: 'Scorri le categorie a destra',
+    categories: {
+      all: 'Tutti',
+      quiz: 'Quiz',
+      puzzle: 'Puzzle',
+      arcade: 'Arcade',
+      strategy: 'Strategia',
+      sim: 'Simulazione',
+    },
   },
   personalityGame: {
     title: 'Che Dinosauro Sei?',

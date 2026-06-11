@@ -149,6 +149,17 @@
     description: 'Jouez et apprenez sur les dinosaures a travers des jeux interactifs',
     comingSoon: 'Bientot',
     play: 'Jouer',
+    empty: 'Pas encore de jeu dans cette categorie.',
+    scrollLeft: 'Faire defiler les categories vers la gauche',
+    scrollRight: 'Faire defiler les categories vers la droite',
+    categories: {
+      all: 'Tous',
+      quiz: 'Quiz',
+      puzzle: 'Puzzles',
+      arcade: 'Arcade',
+      strategy: 'Strategie',
+      sim: 'Simulation',
+    },
   },
   personalityGame: {
     title: 'Quel Dinosaure Es-Tu ?',

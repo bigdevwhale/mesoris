@@ -156,6 +156,17 @@
     description: '通过互动游戏边玩边学恐龙知识',
     comingSoon: '即将推出',
     play: '开始',
+    empty: '该分类下还没有游戏。',
+    scrollLeft: '向左滚动分类',
+    scrollRight: '向右滚动分类',
+    categories: {
+      all: '全部',
+      quiz: '问答',
+      puzzle: '拼图',
+      arcade: '街机',
+      strategy: '策略',
+      sim: '模拟',
+    },
   },
   personalityGame: {
     title: '你是哪种恐龙？',

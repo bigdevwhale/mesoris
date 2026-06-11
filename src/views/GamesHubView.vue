@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { games } from '@/data/games'
-import { useModeStore } from '@/stores/useModeStore'
+import type { GameDefinition } from '@/types/game'
 import { useI18n } from 'vue-i18n'
 import { useLocale } from '@/composables/useLocale'
 import BaseIcon from '@/components/ui/BaseIcon.vue'
@@ -9,35 +9,21 @@ import SeoHead from '@/components/layout/SeoHead.vue'
 
 const { t, locale } = useI18n()
 const { localRoute } = useLocale()
-const modeStore = useModeStore()
 
-const scrollContainer = ref<HTMLElement | null>(null)
-const activeIndex = ref(0)
+type GameCategory = 'all' | 'quiz' | 'puzzle' | 'arcade' | 'strategy' | 'sim'
 
-function onScroll() {
-  const el = scrollContainer.value
-  if (!el) return
-  const children = Array.from(el.children) as HTMLElement[]
-  const scrollMid = el.scrollLeft + 16
-  let closest = 0
-  let minDist = Infinity
-  children.forEach((child, i) => {
-    const dist = Math.abs(child.offsetLeft - scrollMid)
-    if (dist < minDist) { minDist = dist; closest = i }
-  })
-  activeIndex.value = closest
+const CATEGORY_MAP: Record<Exclude<GameCategory, 'all'>, (g: GameDefinition) => boolean> = {
+  quiz: g => g.type === 'quiz' || g.type === 'personality' || g.type === 'dino-duel' || g.type === 'diet-detective' || g.type === 'dino-map',
+  puzzle: g => g.type === 'puzzle' || g.type === 'memory' || g.type === 'excavation' || g.type === 'skeleton',
+  arcade: g => g.type === 'runner' || g.type === 'meteor-run' || g.type === 'ptero-glide',
+  strategy: g => g.type === 'battle' || g.type === 'dino-duel' || g.type === 'dino-map' || g.type === 'diet-detective',
+  sim: g => g.type === 'tamagotchi',
 }
 
-function scrollTo(index: number) {
-  const el = scrollContainer.value
-  if (!el) return
-  const card = el.children[index] as HTMLElement | null
-  if (!card) return
-  el.scrollTo({ left: card.offsetLeft - 16, behavior: 'smooth' })
-}
+const activeCategory = ref<GameCategory>('all')
 
-function gameTitle(g: typeof games[0]) {
-  if (locale.value === 'kk') return g.titleKk
+function gameTitle(g: GameDefinition) {
+  if (locale.value === 'kk') return g.titleKk ?? g.title
   if (locale.value === 'ko') return g.titleKo
   if (locale.value === 'zh') return g.titleZh
   if (locale.value === 'ja') return g.titleJa
@@ -48,8 +34,8 @@ function gameTitle(g: typeof games[0]) {
   if (locale.value === 'ru') return g.titleRu
   return g.title
 }
-function gameDesc(g: typeof games[0]) {
-  if (locale.value === 'kk') return g.descriptionKk
+function gameDesc(g: GameDefinition) {
+  if (locale.value === 'kk') return g.descriptionKk ?? g.description
   if (locale.value === 'ko') return g.descriptionKo
   if (locale.value === 'zh') return g.descriptionZh
   if (locale.value === 'ja') return g.descriptionJa
@@ -64,6 +50,27 @@ function gameDesc(g: typeof games[0]) {
 const localizedGames = computed(() =>
   games.map(g => ({ ...g, route: localRoute(g.route) })),
 )
+
+const filteredGames = computed(() => {
+  if (activeCategory.value === 'all') return localizedGames.value
+  const predicate = CATEGORY_MAP[activeCategory.value]
+  return localizedGames.value.filter(predicate)
+})
+
+const categories: { key: GameCategory; label: string; icon: string }[] = [
+  { key: 'all', label: 'all', icon: 'layout-grid' },
+  { key: 'quiz', label: 'quiz', icon: 'help-circle' },
+  { key: 'puzzle', label: 'puzzle', icon: 'puzzle' },
+  { key: 'arcade', label: 'arcade', icon: 'gamepad-2' },
+  { key: 'strategy', label: 'strategy', icon: 'swords' },
+  { key: 'sim', label: 'sim', icon: 'heart' },
+]
+
+const DIFFICULTY_STYLES: Record<'easy' | 'medium' | 'hard', string> = {
+  easy: 'bg-emerald-500/15 text-emerald-300 border-emerald-500/30',
+  medium: 'bg-amber-500/15 text-amber-300 border-amber-500/30',
+  hard: 'bg-rose-500/15 text-rose-300 border-rose-500/30',
+}
 </script>
 
 <template>
@@ -72,55 +79,85 @@ const localizedGames = computed(() =>
       :title="t('games.hub.title')"
       :description="t('games.hub.description')"
     />
-    <h1 class="text-display-lg mb-4">{{ t('ui.games.title') }}</h1>
-    <p class="text-body-lg mb-10">
-      {{ t('ui.games.description') }}
-    </p>
+    <div class="mb-10 text-center sm:text-left">
+      <h1 class="text-display-lg mb-3">{{ t('ui.games.title') }}</h1>
+      <p class="text-body-lg max-w-2xl sm:mx-0 mx-auto">
+        {{ t('ui.games.description') }}
+      </p>
+    </div>
+
+    <!-- Category filter -->
+    <div class="mb-6 flex flex-wrap items-center gap-2" role="tablist">
+      <button
+        v-for="cat in categories"
+        :key="cat.key"
+        type="button"
+        role="tab"
+        :aria-selected="activeCategory === cat.key"
+        class="category-chip inline-flex items-center gap-2 px-4 py-2 rounded-full border text-sm font-semibold transition-all duration-200"
+        :class="activeCategory === cat.key
+          ? 'is-active border-[var(--color-brand-amber)] bg-[var(--color-brand-amber)]/15 text-[var(--color-brand-amber)]'
+          : 'border-[var(--glass-border)] bg-[var(--color-bg-elevated)] text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] hover:border-[var(--glass-border-hover)]'"
+        @click="activeCategory = cat.key"
+      >
+        <BaseIcon :name="cat.icon" :size="16" />
+        <span>{{ t(`games.hub.categories.${cat.label}`) }}</span>
+      </button>
+    </div>
 
     <div
-      ref="scrollContainer"
-      class="games-scroll -mx-4 flex gap-4 overflow-x-auto scroll-pl-4 snap-x snap-mandatory px-4 pb-2 sm:mx-0 sm:grid sm:grid-cols-2 sm:gap-6 sm:overflow-visible sm:px-0 sm:pb-0 lg:grid-cols-4"
-      @scroll.passive="onScroll"
+      v-if="filteredGames.length"
+      class="games-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6"
     >
       <router-link
-        v-for="game in localizedGames"
+        v-for="game in filteredGames"
         :key="game.id"
         :to="game.route"
-        class="group flex-none w-[75vw] snap-start bg-[var(--color-bg-elevated)] border border-[var(--glass-border)] rounded-[var(--radius-xl)] overflow-hidden shadow-[var(--shadow-card)] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[var(--shadow-card-hover)] sm:w-auto"
+        class="game-card group relative flex flex-col bg-[var(--color-bg-elevated)] border border-[var(--glass-border)] rounded-[var(--radius-xl)] overflow-hidden shadow-[var(--shadow-card)] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[var(--shadow-card-hover)] hover:border-[var(--glass-border-hover)]"
       >
-        <div class="aspect-[4/3] bg-gradient-to-br flex items-center justify-center" :class="game.colorClass">
-          <BaseIcon :name="game.icon" :size="64" class="text-white/80" />
+        <div
+          class="game-card__cover aspect-[4/3] bg-gradient-to-br flex items-center justify-center relative overflow-hidden"
+          :class="game.colorClass"
+        >
+          <div class="game-card__glow absolute inset-0 bg-black/0 group-hover:bg-black/15 transition-colors duration-300" />
+          <BaseIcon :name="game.icon" :size="56" class="text-white/85 drop-shadow-sm transition-transform duration-300 group-hover:scale-110" />
+          <span
+            class="game-card__difficulty absolute top-3 right-3 inline-flex items-center px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider rounded-full border backdrop-blur-sm"
+            :class="DIFFICULTY_STYLES[game.difficulty]"
+          >
+            {{ t('games.difficulty.' + game.difficulty) }}
+          </span>
         </div>
-        <div class="p-5">
-          <h3 class="text-heading-md mb-2">{{ gameTitle(game) }}</h3>
-          <p class="text-body-sm mb-3">{{ gameDesc(game) }}</p>
-          <span class="text-xs text-[var(--color-text-tertiary)]">{{ t('games.difficulty.' + game.difficulty) }}</span>
+        <div class="p-5 flex flex-col gap-2 flex-1">
+          <h3 class="game-card__title text-heading-md leading-snug">{{ gameTitle(game) }}</h3>
+          <p class="game-card__desc text-body-sm line-clamp-3">{{ gameDesc(game) }}</p>
+          <span
+            class="game-card__cta mt-auto inline-flex items-center gap-1 text-xs font-semibold text-[var(--color-brand-amber)] transition-transform duration-300 group-hover:translate-x-1"
+          >
+            {{ t('games.hub.play') }}
+            <BaseIcon name="arrow-right" :size="14" />
+          </span>
         </div>
       </router-link>
     </div>
-
-    <!-- Mobile pagination dots -->
-    <div class="flex justify-center items-center gap-2 mt-4 sm:hidden">
-      <button
-        v-for="(game, i) in localizedGames"
-        :key="game.id"
-        class="h-2 rounded-full transition-all duration-300"
-        :class="activeIndex === i
-          ? 'w-5 bg-[var(--color-brand-amber)]'
-          : 'w-2 bg-[var(--color-text-tertiary)]'"
-        :aria-label="gameTitle(game)"
-        @click="scrollTo(i)"
-      />
+    <div
+      v-else
+      class="rounded-[var(--radius-xl)] border border-dashed border-[var(--glass-border)] p-10 text-center text-body-md"
+    >
+      {{ t('games.hub.empty') }}
     </div>
   </div>
 </template>
 
 <style scoped>
-.games-scroll::-webkit-scrollbar {
-  display: none;
+.category-chip {
+  white-space: nowrap;
 }
-.games-scroll {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+.category-chip:focus-visible {
+  outline: 2px solid var(--color-brand-amber);
+  outline-offset: 2px;
+}
+.games-grid > .game-card {
+  min-width: 0;
 }
 </style>

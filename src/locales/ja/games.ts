@@ -156,6 +156,17 @@
     description: 'インタラクティブなゲームで遊びながら恐竜について学ぼう',
     comingSoon: '近日公開',
     play: '遊ぶ',
+    empty: 'このカテゴリのゲームはまだありません。',
+    scrollLeft: 'カテゴリを左にスクロール',
+    scrollRight: 'カテゴリを右にスクロール',
+    categories: {
+      all: 'すべて',
+      quiz: 'クイズ',
+      puzzle: 'パズル',
+      arcade: 'アーケード',
+      strategy: 'ストラテジー',
+      sim: 'シミュレーション',
+    },
   },
   personalityGame: {
     title: 'あなたはどの恐竜タイプ？',

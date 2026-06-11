@@ -156,6 +156,17 @@
     description: '인터랙티브 게임으로 놀면서 공룡에 대해 배워보세요',
     comingSoon: '곧 출시 예정',
     play: '플레이',
+    empty: '이 카테고리에는 아직 게임이 없습니다.',
+    scrollLeft: '카테고리를 왼쪽으로 스크롤',
+    scrollRight: '카테고리를 오른쪽으로 스크롤',
+    categories: {
+      all: '전체',
+      quiz: '퀴즈',
+      puzzle: '퍼즐',
+      arcade: '아케이드',
+      strategy: '전략',
+      sim: '시뮬레이션',
+    },
   },
   personalityGame: {
     title: '당신은 어떤 공룡 타입?',
