@@ -32,6 +32,13 @@ export default {
     scienceCenter: 'Wissenschaftszentrum',
     copyright: '© {year} Dino-Enzyklopadie. Alle Rechte vorbehalten.',
   },
+  support: {
+    title: 'Projekt unterstutzen',
+    tagline: 'Gefallt dir die Enzyklopadie? Hilf uns, sie kostenlos und wachsend zu halten.',
+    boosty: 'Boosty',
+    paypal: 'PayPal',
+    heartTooltip: 'Unterstutze uns',
+  },
   search: {
     placeholder: 'Dinosaurier suchen...',
     noResults: 'Keine Dinosaurier gefunden',
@@ -291,6 +298,12 @@ export default {
     contact: {
       title: 'Kontakt',
       content: 'Haben Sie Fragen oder Anregungen? Schreiben Sie uns:',
+    },
+    support: {
+      title: 'Projekt unterstutzen',
+      content: 'Mesoris ist und bleibt fur immer kostenlos. Wenn dir die Enzyklopadie geholfen hat, etwas Neues zu lernen — oder dir einfach ein Lacheln geschenkt hat — kannst du die Entwicklung unterstutzen. Jeder Beitrag fliesst in Infrastruktur und neue Funktionen.',
+      boostyCta: 'Auf Boosty unterstutzen',
+      paypalCta: 'Uber PayPal spenden',
     },
   },
 }

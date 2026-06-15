@@ -32,6 +32,13 @@ export default {
     scienceCenter: 'サイエンスセンター',
     copyright: '© {year} Dino Encyclopedia. All rights reserved.',
   },
+  support: {
+    title: 'プロジェクトを支援',
+    tagline: '図鑑は楽しんでいただけていますか？無料で運営を続けるためにご協力ください。',
+    boosty: 'Boosty',
+    paypal: 'PayPal',
+    heartTooltip: 'サポートする',
+  },
   search: {
     placeholder: '恐竜を検索...',
     noResults: '恐竜が見つかりません',
@@ -291,6 +298,12 @@ export default {
     contact: {
       title: 'お問い合わせ',
       content: 'ご質問やご提案がありましたら、お気軽にご連絡ください：',
+    },
+    support: {
+      title: 'プロジェクトを支援',
+      content: 'Mesorisは今も、これからもずっと無料です。もし図鑑が新しいことを学ぶお役に立てたなら — もしくは笑顔をお届けできたなら — 開発をサポートしていただけます。いただいたご支援は、インフラ整備と新しい機能の追加に充てられます。',
+      boostyCta: 'Boostyで支援',
+      paypalCta: 'PayPalで寄付',
     },
   },
 }

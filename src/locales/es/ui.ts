@@ -32,6 +32,13 @@ export default {
     scienceCenter: 'Centro de Ciencias',
     copyright: '© {year} Dino Enciclopedia. Todos los derechos reservados.',
   },
+  support: {
+    title: 'Apoya el Proyecto',
+    tagline: '¿Te gusta la enciclopedia? Ayudanos a mantenerla gratis y en crecimiento.',
+    boosty: 'Boosty',
+    paypal: 'PayPal',
+    heartTooltip: 'Apoyanos',
+  },
   search: {
     placeholder: 'Buscar dinosaurios...',
     noResults: 'No se encontraron dinosaurios',
@@ -291,6 +298,12 @@ export default {
     contact: {
       title: 'Contacto',
       content: '¿Tienes preguntas o sugerencias? No dudes en contactarnos:',
+    },
+    support: {
+      title: 'Apoya el Proyecto',
+      content: 'Mesoris es y siempre sera gratis para todos. Si la enciclopedia te ha ayudado a aprender algo nuevo — o simplemente te ha sacado una sonrisa — puedes apoyar su desarrollo. Cada contribucion se destina a infraestructura y nuevas funciones.',
+      boostyCta: 'Apoyar en Boosty',
+      paypalCta: 'Donar via PayPal',
     },
   },
 }

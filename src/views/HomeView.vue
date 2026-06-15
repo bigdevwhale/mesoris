@@ -224,5 +224,44 @@ onMounted(() => {
         <p class="text-body-lg">{{ todayFact }}</p>
       </div>
     </section>
+
+    <!-- Support the Project -->
+    <section class="max-w-5xl mx-auto px-4 pb-16">
+      <div class="bg-[var(--color-bg-elevated)] border border-[var(--glass-border)] rounded-[var(--radius-xl)] p-8 md:p-10 relative overflow-hidden">
+        <div class="absolute -top-16 -left-16 w-56 h-56 rounded-full bg-[var(--color-brand-ember)]/10 blur-3xl pointer-events-none" />
+        <div class="relative flex flex-col md:flex-row items-center gap-6 md:gap-8 text-center md:text-left">
+          <div class="shrink-0 w-16 h-16 rounded-full bg-[rgba(232,93,44,0.12)] flex items-center justify-center text-3xl">
+            💛
+          </div>
+          <div class="flex-1">
+            <h3 class="text-heading-md mb-2 flex items-center justify-center md:justify-start gap-2">
+              <BaseIcon name="heart" :size="18" class="text-[var(--color-brand-ember)]" />
+              {{ t('ui.support.title') }}
+            </h3>
+            <p class="text-body-md">{{ t('ui.support.tagline') }}</p>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-3 shrink-0 w-full md:w-auto">
+            <a
+              href="https://boosty.to/mesoris"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-[var(--radius-md)] border border-[rgba(255,90,60,0.35)] bg-[rgba(255,90,60,0.1)] hover:bg-[rgba(255,90,60,0.18)] hover:border-[rgba(255,90,60,0.5)] text-sm font-semibold transition-all duration-200"
+            >
+              {{ t('ui.support.boosty') }}
+              <BaseIcon name="external-link" :size="14" class="text-[var(--color-text-tertiary)] group-hover:text-[var(--color-brand-ember)] transition-colors" />
+            </a>
+            <a
+              href="https://www.paypal.com/paypalme/AyratBadykov"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-[var(--radius-md)] border border-[rgba(59,130,246,0.35)] bg-[rgba(59,130,246,0.1)] hover:bg-[rgba(59,130,246,0.18)] hover:border-[rgba(59,130,246,0.5)] text-sm font-semibold transition-all duration-200"
+            >
+              {{ t('ui.support.paypal') }}
+              <BaseIcon name="external-link" :size="14" class="text-[var(--color-text-tertiary)] group-hover:text-[#3b82f6] transition-colors" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>

@@ -32,6 +32,13 @@ export default {
     scienceCenter: '科学中心',
     copyright: '© {year} 恐龙百科。保留所有权利。',
   },
+  support: {
+    title: '支持我们',
+    tagline: '喜欢这个图鉴吗？帮助我们保持免费并不断成长。',
+    boosty: 'Boosty',
+    paypal: 'PayPal',
+    heartTooltip: '支持我们',
+  },
   search: {
     placeholder: '搜索恐龙...',
     noResults: '未找到恐龙',
@@ -291,6 +298,12 @@ export default {
     contact: {
       title: '联系我们',
       content: '有问题或建议？欢迎联系我们：',
+    },
+    support: {
+      title: '支持项目',
+      content: 'Mesoris 一直并将永远是免费的。如果这本图鉴帮助您学到新东西 — 或者只是带来了微笑 — 您可以支持它的发展。每一份贡献都将用于基础设施和添加新的功能。',
+      boostyCta: '在 Boosty 支持',
+      paypalCta: '通过 PayPal 捐赠',
     },
   },
 }

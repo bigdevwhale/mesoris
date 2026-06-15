@@ -32,6 +32,13 @@ export default {
     scienceCenter: '과학 센터',
     copyright: '© {year} Dino Encyclopedia. All rights reserved.',
   },
+  support: {
+    title: '프로젝트 후원',
+    tagline: '도감이 마음에 드시나요? 무료로 운영되고 성장할 수 있도록 도와주세요.',
+    boosty: 'Boosty',
+    paypal: 'PayPal',
+    heartTooltip: '후원하기',
+  },
   search: {
     placeholder: '공룡 검색...',
     noResults: '공룡을 찾을 수 없습니다',
@@ -291,6 +298,12 @@ export default {
     contact: {
       title: '연락처',
       content: '질문이나 제안이 있으신가요? 언제든지 연락주세요:',
+    },
+    support: {
+      title: '프로젝트 후원',
+      content: 'Mesoris는 앞으로도 영원히 무료로 운영됩니다. 도감을 통해 새로운 것을 배우셨거나 — 그저 미소를 짓게 해드렸다면 — 개발을 후원하실 수 있습니다. 모든 기부는 인프라와 새로운 기능 추가에 사용됩니다.',
+      boostyCta: 'Boosty에서 후원',
+      paypalCta: 'PayPal로 기부',
     },
   },
 }

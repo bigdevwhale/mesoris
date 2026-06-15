@@ -32,6 +32,13 @@ export default {
     scienceCenter: 'Centre Scientifique',
     copyright: '© {year} Encyclopedie des Dinosaures. Tous droits reserves.',
   },
+  support: {
+    title: 'Soutenir le Projet',
+    tagline: 'Vous appreciez l\'encyclopedie ? Aidez-nous a la garder gratuite.',
+    boosty: 'Boosty',
+    paypal: 'PayPal',
+    heartTooltip: 'Soutenez-nous',
+  },
   search: {
     placeholder: 'Rechercher un dinosaure...',
     noResults: 'Aucun dinosaure trouve',
@@ -291,6 +298,12 @@ export default {
     contact: {
       title: 'Contact',
       content: 'Vous avez des questions ou des suggestions ? N\'hésitez pas à nous contacter :',
+    },
+    support: {
+      title: 'Soutenir le Projet',
+      content: 'Mesoris est et restera toujours gratuit pour tous. Si l\'encyclopedie vous a aide a apprendre quelque chose de nouveau — ou vous a simplement fait sourire — vous pouvez soutenir son developpement. Chaque contribution sert a l\'infrastructure et a l\'ajout de nouvelles fonctionnalites.',
+      boostyCta: 'Soutenir sur Boosty',
+      paypalCta: 'Donner via PayPal',
     },
   },
 }

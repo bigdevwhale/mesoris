@@ -52,8 +52,8 @@ const classes = computed(() => {
     @click="emit('click', $event)"
   >
     <BaseIcon v-if="loading" name="loader-circle" :size="size === 'sm' ? 14 : 18" class="animate-spin" />
-    <BaseIcon v-else-if="icon && !iconRight" :name="icon" :size="size === 'sm' ? 14 : 18" />
-    <span v-if="$slots.default"><slot /></span>
-    <BaseIcon v-if="iconRight && !loading" :name="iconRight" :size="size === 'sm' ? 14 : 18" />
+    <BaseIcon v-else-if="icon && !iconRight" :name="icon" :size="size === 'sm' ? 14 : 18" class="shrink-0" />
+    <span v-if="$slots.default" class="inline-flex items-center gap-2 whitespace-nowrap"><slot /></span>
+    <BaseIcon v-if="iconRight && !loading" :name="iconRight" :size="size === 'sm' ? 14 : 18" class="shrink-0" />
   </component>
 </template>

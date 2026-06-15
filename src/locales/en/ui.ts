@@ -32,6 +32,13 @@ export default {
     scienceCenter: 'Science Center',
     copyright: '© {year} Dino Encyclopedia. All rights reserved.',
   },
+  support: {
+    title: 'Support the Project',
+    tagline: 'Enjoying the encyclopedia? Help us keep it free and growing.',
+    boosty: 'Boosty',
+    paypal: 'PayPal',
+    heartTooltip: 'Support us',
+  },
   search: {
     placeholder: 'Search dinosaurs...',
     noResults: 'No dinosaurs found',
@@ -291,6 +298,12 @@ export default {
     contact: {
       title: 'Contact',
       content: 'Have questions or suggestions? Feel free to reach out:',
+    },
+    support: {
+      title: 'Support the Project',
+      content: 'Mesoris is and will always remain free for everyone. If the encyclopedia has helped you learn something new — or just brought a smile — you can support its development. Every contribution goes into infrastructure and adding new features.',
+      boostyCta: 'Support on Boosty',
+      paypalCta: 'Donate via PayPal',
     },
   },
 }

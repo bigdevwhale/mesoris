@@ -10,7 +10,7 @@ const { localRoute } = useLocale()
 <template>
   <footer class="bg-[var(--color-bg-deep)] border-t border-[var(--glass-border)] mt-24">
     <div class="max-w-7xl mx-auto px-4 py-12">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
         <!-- Brand -->
         <div>
           <router-link :to="localRoute({ name: 'home' })" class="flex items-center gap-2 text-[var(--color-text-primary)] mb-3">
@@ -50,6 +50,35 @@ const { localRoute } = useLocale()
             <router-link :to="localRoute({ name: 'science' })" class="text-body-sm hover:text-[var(--color-brand-amber)] transition-colors">{{ t('ui.footer.scienceCenter') }}</router-link>
             <router-link :to="localRoute({ name: 'about' })" class="text-body-sm hover:text-[var(--color-brand-amber)] transition-colors">{{ t('ui.footer.about') }}</router-link>
           </nav>
+        </div>
+
+        <!-- Support -->
+        <div>
+          <h4 class="text-sm font-semibold text-[var(--color-text-primary)] pb-3 flex items-center gap-1.5">
+            <BaseIcon name="heart" :size="14" class="text-[var(--color-brand-ember)]" />
+            {{ t('ui.support.title') }}
+          </h4>
+          <p class="text-body-sm mb-3">{{ t('ui.support.tagline') }}</p>
+          <div class="flex flex-col gap-2">
+            <a
+              href="https://boosty.to/mesoris"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group inline-flex items-center justify-between gap-2 px-3 py-2 rounded-[var(--radius-md)] border border-[var(--glass-border)] bg-[rgba(255,90,60,0.06)] hover:bg-[rgba(255,90,60,0.12)] hover:border-[rgba(255,90,60,0.35)] transition-all duration-200"
+            >
+              <span class="text-body-sm font-semibold text-[var(--color-text-primary)]">{{ t('ui.support.boosty') }}</span>
+              <BaseIcon name="external-link" :size="14" class="text-[var(--color-text-tertiary)] group-hover:text-[var(--color-brand-ember)] transition-colors" />
+            </a>
+            <a
+              href="https://www.paypal.com/paypalme/AyratBadykov"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group inline-flex items-center justify-between gap-2 px-3 py-2 rounded-[var(--radius-md)] border border-[var(--glass-border)] bg-[rgba(59,130,246,0.06)] hover:bg-[rgba(59,130,246,0.12)] hover:border-[rgba(59,130,246,0.35)] transition-all duration-200"
+            >
+              <span class="text-body-sm font-semibold text-[var(--color-text-primary)]">{{ t('ui.support.paypal') }}</span>
+              <BaseIcon name="external-link" :size="14" class="text-[var(--color-text-tertiary)] group-hover:text-[#3b82f6] transition-colors" />
+            </a>
+          </div>
         </div>
       </div>
 
