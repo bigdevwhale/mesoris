@@ -8,8 +8,8 @@ const route = useRoute()
 const router = useRouter()
 const { locale } = useI18n()
 
-const FLAG: Record<string, string> = { en: '🇬🇧', ru: '🇷🇺', es: '🇪🇸', de: '🇩🇪', fr: '🇫🇷', it: '🇮🇹', ja: '🇯🇵', zh: '🇨🇳', ko: '🇰🇷', kk: '🇰🇿' }
-const NAME: Record<string, string> = { en: 'English', ru: 'Русский', es: 'Espanol', de: 'Deutsch', fr: 'Francais', it: 'Italiano', ja: '日本語', zh: '中文', ko: '한국어', kk: 'Қазақша' }
+const FLAG: Record<string, string> = { en: '🇬🇧', ru: '🇷🇺', es: '🇪🇸', de: '🇩🇪', fr: '🇫🇷', it: '🇮🇹', ja: '🇯🇵', zh: '🇨🇳', ko: '🇰🇷', kk: '🇰🇿', hi: '🇮🇳' }
+const NAME: Record<string, string> = { en: 'English', ru: 'Русский', es: 'Espanol', de: 'Deutsch', fr: 'Francais', it: 'Italiano', ja: '日本語', zh: '中文', ko: '한국어', kk: 'Қазақша', hi: 'हिन्दी' }
 
 const isOpen = ref(false)
 const btnRef = ref<HTMLButtonElement | null>(null)

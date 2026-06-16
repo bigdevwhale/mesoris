@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import type { RouteRecordRaw, RouteLocationNormalized } from 'vue-router'
 
-const SUPPORTED_LOCALES = ['en', 'ru', 'es', 'de', 'fr', 'it', 'ja', 'zh', 'ko', 'kk'] as const
+const SUPPORTED_LOCALES = ['en', 'ru', 'es', 'de', 'fr', 'it', 'ja', 'zh', 'ko', 'kk', 'hi'] as const
 type Locale = (typeof SUPPORTED_LOCALES)[number]
 
 const DEFAULT_LOCALE: Locale = 'en'
@@ -30,7 +30,7 @@ function setLocaleCookie(locale: Locale) {
 }
 
 // Regex to detect if path starts with a supported locale prefix: /en/... or /ru/...
-const LOCALE_PREFIX_RE = /^\/(en|ru|es|de|fr|it|ja|zh|ko|kk)(\/|$)/
+const LOCALE_PREFIX_RE = /^\/(en|ru|es|de|fr|it|ja|zh|ko|kk|hi)(\/|$)/
 
 const childRoutes: RouteRecordRaw[] = [
   {
@@ -472,6 +472,34 @@ const PAGE_TITLES: Record<string, Record<string, string>> = {
     about: 'Біз туралы',
     'not-found': 'Бет табылмады',
     fallback: 'Интерактивті тарихқа дейінгі әлем',
+  },
+  hi: {
+    base: 'डायनासोर',
+    home: 'प्रागैतिहासिक दुनिया में आपका स्वागत है',
+    encyclopedia: 'डायनासोर विश्वकोश',
+    'encyclopedia-detail': 'डायनासोर विवरण',
+    timeline: 'प्रागैतिहासिक कालक्रम',
+    compare: 'डायनासोर तुलना',
+    games: 'डायनासोर खेल',
+    quiz: 'डायनासोर प्रश्नोत्तरी',
+    puzzle: 'डायनासोर पज़ल',
+    excavation: 'जीवाश्म उत्खनन',
+    memory: 'स्मृति मिलान',
+    runner: 'डायनासोर धावक',
+    personality: 'आप कौन से डायनासोर हैं?',
+    tamagotchi: 'डायनासोर तमागोची',
+    battle: 'डायनासोर युद्ध सिम्युलेटर',
+    'diet-detective': 'आहार जासूस',
+    'dino-map': 'डायनासोर मानचित्र',
+    'meteor-run': 'उल्का से भागो!',
+    'dino-duel': 'कौन है बड़ा?',
+    'ptero-glide': 'टेरोडैक्टाइल की उड़ान',
+    'dino-match3': 'डायनासोर मैच-3',
+    science: 'विज्ञान केंद्र',
+    article: 'विज्ञान लेख',
+    about: 'परिचय',
+    'not-found': 'पृष्ठ नहीं मिला',
+    fallback: 'इंटरैक्टिव प्रागैतिहासिक दुनिया',
   },
 }
 

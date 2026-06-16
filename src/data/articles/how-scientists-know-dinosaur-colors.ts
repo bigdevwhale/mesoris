@@ -13,6 +13,7 @@ export const HowScientistsKnowDinosaurColors: Article = {
     titleZh: '科学家如何知道恐龙的样子',
     titleKo: '과학자들은 어떻게 공룡의 모습을 알 수 있을까',
     titleKk: 'Ғалымдар динозаврлардың келбетін қалай біледі?',
+    titleHi: 'वैज्ञानिकों को डायनासोरों के रंग कैसे पता चलते हैं?',
     summary: 'From feathers to pigments, scientists use fossils and modern biology to reconstruct dinosaur appearance with surprising accuracy.',
     summaryRu: 'От перьев до пигментов — учёные используют окаменелости и современную биологию для удивительно точной реконструкции облика динозавров.',
     summaryEs: 'La sorprendente ciencia que revela los colores reales de criaturas prehistoricas.',
@@ -23,6 +24,7 @@ export const HowScientistsKnowDinosaurColors: Article = {
     summaryZh: '从羽毛到色素，科学家利用化石和现代生物学以惊人的准确性重建恐龙的外观。',
     summaryKo: '깃털에서 색소까지, 과학자들은 화석과 현대 생물학을 사용하여 놀라운 정확도로 공룡의 외관을 재구성합니다.',
     summaryKk: 'Қауырсындардан пигменттерге дейін, ғалымдар қазбалар мен заманауи биологияны қолдана отырып, динозаврлардың сыртқы келбетін таңғаларлық дәлдікпен қалпына келтіреді.',
+    summaryHi: 'पंखों से लेकर वर्णकों (pigments) तक, वैज्ञानिक जीवाश्मों और आधुनिक जीवविज्ञान का उपयोग करके आश्चर्यजनक सटीकता के साथ डायनासोरों की शक्ल-सूरत फिर से बनाते हैं।',
     category: 'science',
     categoryRu: 'наука',
     categoryEs: 'paleontologia',
@@ -33,6 +35,7 @@ export const HowScientistsKnowDinosaurColors: Article = {
     categoryZh: '科学',
     categoryKo: '과학',
     categoryKk: 'ғылым',
+    categoryHi: 'रंग',
     readingTimeMinutes: 7,
     image: '/images/articles/how-scientists-know-dinosaur-colors.jpg',
     relatedDinosaurIds: ['velociraptor', 'tyrannosaurus-rex', 'triceratops'],
@@ -194,6 +197,31 @@ Anchiornis si e rivelato ancora piu spettacolare: piume corporee grigio-nere, un
 ### Әлі белгісіз не?
 
 Біз әлі әрбір түсті толық сенімділікпен қалпына келтіре алмаймыз. Көптеген динозаврлардың түрге, жасқа және жынысқа байланысты өрнектері, камуфляжы немесе көрсету түстері болған болуы мүмкін.`,
+    contentHi: `## डायनासोरों की शक्ल-सूरत का पुनर्निर्माण
+
+वैज्ञानिक केवल कल्पना से डायनासोरों की शक्ल-सूरत का अनुमान नहीं लगाते। वे जीवाश्म प्रमाण, तुलनात्मक शारीरिकी और आधुनिक पक्षी जीवविज्ञान को मिलाकर यथासंभव सटीक पुनर्निर्माण करते हैं।
+
+### हम किन प्रमाणों का उपयोग करते हैं?
+
+**पंखों और त्वचा के छापे** बनावट और शरीर के ढकने (body coverage) को उजागर करते हैं।
+
+**मेलैनोसोम** (Melanosomes) — वर्णक से जुड़ी सूक्ष्म संरचनाएँ — रंग और पैटर्न के संकेत सुरक्षित रख सकती हैं।
+
+**हड्डी की संरचना** हमें मुद्रा, मांसपेशी द्रव्यमान और सिर की आकृति के बारे में बताती है।
+
+**पक्षी और मगरमच्छ जैसे जीवित रिश्तेदार** वैज्ञानिकों को कोमल ऊतक (soft tissue) और व्यवहार का अनुमान लगाने में मदद करते हैं।
+
+### क्या पुनर्निर्मित किया जा सकता है?
+
+- समग्र शारीरिक रूपरेखा
+- पंखों का आवरण
+- त्वचा की बनावट और शल्क (scales)
+- कुछ रंग पैटर्न
+- शिखाओं और फ़्रिल जैसी प्रदर्शन संरचनाएँ
+
+### क्या अभी भी अनिश्चित है?
+
+हम अभी भी हर रंग को पूर्ण विश्वास के साथ पुनर्निर्मित नहीं कर सकते। बहुत से डायनासोर संभवतः प्रजाति, आयु और लिंग के अनुसार भिन्न पैटर्न, छलावरण (camouflage) या प्रदर्शन-रंगों वाले रहे होंगे।`,
     kidsVersion: `## How Do We Know What Dinosaurs Looked Like?\n\nScientists are like prehistoric detectives!\n\nThey look at:\n- feathers\n- skin prints\n- bones\n- and even tiny colour clues in fossils\n\nThat helps them draw dinosaurs in a way that is much closer to the real thing.`,
     kidsVersionRu: `## Откуда мы знаем, как выглядели динозавры?\n\nУчёные — как доисторические детективы!\n\nОни изучают:\n- перья\n- отпечатки кожи\n- кости\n- и даже крошечные цветовые подсказки в окаменелостях\n\nЭто помогает им рисовать динозавров гораздо ближе к реальности.`,
     kidsVersionEs: `## ¿Podemos Saber de Que Color Eran?
@@ -296,4 +324,15 @@ Non e incredibile?`,
 - және тіпті қазбалардағы ұсақ түс анықтамалары
 
 Бұл оларға динозаврларды шынайы келбетіне әлдеқайда жақын етіп салуға көмектеседі.`,
+    kidsVersionHi: `## हमें डायनासोर कैसे दिखते थे, यह कैसे पता चलता है?
+
+वैज्ञानिक बिल्कुल «पूर्व-ऐतिहासिक जासूसों» जैसे हैं!
+
+वे देखते हैं:
+- पंख
+- त्वचा के छापे
+- हड्डियाँ
+- और यहाँ तक कि जीवाश्मों में छोटे-छोटे रंग-संकेत
+
+इनसे उन्हें डायनासोरों को असली के कहीं अधिक करीब बनाकर चित्रित करने में मदद मिलती है।`,
   }

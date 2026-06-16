@@ -12,6 +12,7 @@ export const MythBrontosaurus: MythVsFact = {
     mythZh: '雷龙从未存在过——它只是被误认的迷惑龙。',
     mythKo: '브론토사우루스는 한 번도 존재한 적이 없으며 — 단지 아파토사우루스를 잘못 식별한 것에 불과하다.',
     mythKk: 'Бронтозавр ешқашан болмаған — ол тек апатозаврмен шатастырылған.',
+    mythHi: 'ब्रोंटोसॉरस कभी अस्तित्व में नहीं था — यह बस गलती से पहचाना गया एपैटोसॉरस था।',
     fact: 'A comprehensive 2015 study actually reinstated Brontosaurus as a valid, distinct genus. The dinosaur that "never existed" actually does exist!',
     factDe: 'Eine umfassende Studie aus dem Jahr 2015 hat den Brontosaurus tatsächlich als gültige, eigenständige Gattung wieder eingesetzt. Der Dinosaurier, der „nie existiert hat", existiert tatsächlich!',
     factFr: 'Une étude approfondie de 2015 a en fait rétabli le Brontosaure en tant que genre valide et distinct. Le dinosaure qui « n\'a jamais existé » existe bel et bien !',
@@ -22,6 +23,7 @@ export const MythBrontosaurus: MythVsFact = {
     factZh: '2015年的一项全面研究实际上将雷龙恢复为一个有效的独立属。这种"从未存在过"的恐龙其实确实存在！',
     factKo: '2015년의 포괄적인 연구는 브론토사우루스를 유효한 독립 속으로 실제로 복원했습니다. "한 번도 존재한 적이 없는" 공룡이 실제로 존재하는 것입니다!',
     factKk: '2015 жылғы ауқымды зерттеу Бронтозаврды жеке әрі жарамды туыс ретінде қайта растады. «Ешқашан болмаған» деп есептелген динозавр шын мәнінде бар!',
+    factHi: 'वास्तव में 2015 के एक व्यापक अध्ययन ने ब्रोंटोसॉरस को एक वैध, विशिष्ट वंश के रूप में पुनर्स्थापित किया। «जो कभी अस्तित्व में नहीं था» वह डायनासोर वास्तव में मौजूद है!',
     category: 'history',
     dinosaurId: 'diplodocus',
   }

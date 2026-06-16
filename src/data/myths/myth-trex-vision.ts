@@ -12,6 +12,7 @@ export const MythTrexVision: MythVsFact = {
     mythZh: '霸王龙看不见静止不动的物体。',
     mythKo: '티라노사우루스는 가만히 있으면 당신을 볼 수 없었다.',
     mythKk: 'Егер сен қимылдамай тұрсаң, T. rex сені көрмейді.',
+    mythHi: 'यदि आप स्थिर खड़े रहते तो T. rex आपको नहीं देख सकता था।',
     fact: 'T. rex had excellent binocular vision — among the best of any dinosaur. Standing still would not have saved you.',
     factDe: 'Der T. rex hatte ausgezeichnetes binokulares Sehen — eines der besten unter allen Dinosauriern. Stillzustehen hätte dich nicht gerettet.',
     factFr: 'Le T. rex possédait une excellente vision binoculaire — l\'une des meilleures parmi tous les dinosaures. Rester immobile ne vous aurait pas sauvé.',
@@ -22,6 +23,7 @@ export const MythTrexVision: MythVsFact = {
     factZh: '霸王龙拥有出色的双眼视觉——是所有恐龙中最好的之一。站着不动也救不了你。',
     factKo: '티라노사우루스는 뛰어난 양안 시야를 가졌습니다 — 모든 공룡 중에서 최고 수준입니다. 가만히 서 있어도 살아남지 못했을 것입니다.',
         factKk: 'T. rex өте жақсы бинокулярлық көру қабілетіне ие болған — бұл барлық динозаврлар арасындағы ең үздіктердің бірі. Қозғалмай тұру сені құтқармас еді.',
+        factHi: 'वास्तव में T. rex की उत्कृष्ट द्विनेत्री दृष्टि थी — किसी भी डायनासोर में सर्वश्रेष्ठ में से एक। स्थिर खड़े रहना आपको नहीं बचा पाता।',
     category: 'biology',
     dinosaurId: 'tyrannosaurus-rex',
   }

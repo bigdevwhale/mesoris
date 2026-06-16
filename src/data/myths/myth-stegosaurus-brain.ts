@@ -12,6 +12,7 @@ export const MythStegosaurusBrain: MythVsFact = {
     mythZh: '剑龙的臀部有一个"第二大脑"。',
     mythKo: '스테고사우루스는 엉덩이에 두 번째 뇌를 가지고 있었다.',
     mythKk: 'Стегозаврдың жамбасында екінші миы болған.',
+    mythHi: 'स्टेगोसॉरस के पिछले हिस्से में दूसरा मस्तिष्क था।',
     fact: 'The cavity in the hip area was likely a glycogen body — an energy storage organ found in modern birds. No second brain.',
     factDe: 'Die Höhle im Hüftbereich war wahrscheinlich ein Glykogenkörper — ein Energiespeicherorgan, das bei modernen Vögeln vorkommt. Kein zweites Gehirn.',
     factFr: 'La cavité dans la région de la hanche était probablement un corps glycogénique — un organe de stockage d\'énergie que l\'on trouve chez les oiseaux modernes. Pas de deuxième cerveau.',
@@ -22,6 +23,7 @@ export const MythStegosaurusBrain: MythVsFact = {
     factZh: '髋部区域的空腔很可能是糖原体——一种存在于现代鸟类体内的能量储存器官。不存在第二大脑。',
     factKo: '엉덩이 부위의 공동은 글리코겐체 — 현대 조류에서 발견되는 에너지 저장 기관 — 일 가능성이 높습니다. 두 번째 뇌는 없습니다.',
     factKk: 'Жамбас аймағындағы қуыс, бәлкім, гликоген денесі болған — бұл қазіргі құстарда кездесетін энергия сақтау мүшесі. Екінші ми болмаған.',
+    factHi: 'वास्तव में कूल्हे के क्षेत्र में गुहा संभवतः ग्लाइकोजन पिंड थी — आधुनिक पक्षियों में पाया जाने वाला ऊर्जा भंडारण अंग। कोई दूसरा मस्तिष्क नहीं था।',
     category: 'biology',
     dinosaurId: 'stegosaurus',
   }

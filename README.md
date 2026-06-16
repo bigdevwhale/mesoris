@@ -14,7 +14,7 @@
   <img src="https://img.shields.io/badge/vue-3.x-4FC08D?style=flat-square&logo=vue.js&logoColor=white" alt="Vue 3">
   <img src="https://img.shields.io/badge/typescript-5.7-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
   <img src="https://img.shields.io/badge/tailwind-4.x-06B6D4?style=flat-square&logo=tailwind-css&logoColor=white" alt="Tailwind CSS">
-  <img src="https://img.shields.io/badge/i18n-6_languages-8B5CF6?style=flat-square" alt="6 languages">
+  <img src="https://img.shields.io/badge/i18n-11_languages-8B5CF6?style=flat-square" alt="11 languages">
   <img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="License: MIT">
 </p>
 
@@ -60,7 +60,7 @@
     </td>
     <td>
       <h3>Multi-Language Routing</h3>
-      <p>Locale-prefixed URLs (<code>/en/...</code>, <code>/ru/...</code>, <code>/es/...</code>) with automatic browser language detection. Six languages across every corner of the app.</p>
+      <p>Locale-prefixed URLs (<code>/en/...</code>, <code>/ru/...</code>, <code>/hi/...</code>) with automatic browser language detection. Eleven languages across every corner of the app.</p>
     </td>
   </tr>
 </table>
@@ -69,7 +69,7 @@
 
 ## i18n & Accessibility
 
-- **6 languages:** English, Russian, Spanish, German, French, Italian — every dinosaur profile, article, quiz question, and game is fully translated
+- **11 languages:** English, Russian, Spanish, German, French, Italian, Japanese, Chinese, Korean, Kazakh, Hindi — every dinosaur profile, article, quiz question, and game is fully translated
 - Locale-prefixed routing with automatic browser language detection and manual switcher
 - RTL-friendly layout engine
 - Keyboard-navigable components

@@ -41,6 +41,7 @@ const isCorrect = computed(() => selectedAnswer.value === currentCorrectIndex.va
 
 const currentQuestion = computed(() => {
   if (!currentQ.value) return ''
+  if (locale.value === 'hi') return currentQ.value.questionHi
   if (locale.value === 'kk') return currentQ.value.questionKk
   if (locale.value === 'ko') return currentQ.value.questionKo
   if (locale.value === 'zh') return currentQ.value.questionZh
@@ -56,7 +57,8 @@ const currentOptions = computed(() => {
   if (!currentQ.value) return []
   const order = currentShuffleOrder.value
   let opts: string[]
-  if (locale.value === 'kk') opts = currentQ.value.optionsKk
+  if (locale.value === 'hi') opts = currentQ.value.optionsHi
+  else if (locale.value === 'kk') opts = currentQ.value.optionsKk
   else if (locale.value === 'ko') opts = currentQ.value.optionsKo
   else if (locale.value === 'zh') opts = currentQ.value.optionsZh
   else if (locale.value === 'ja') opts = currentQ.value.optionsJa
@@ -70,6 +72,7 @@ const currentOptions = computed(() => {
 })
 const currentExplanation = computed(() => {
   if (!currentQ.value) return ''
+  if (locale.value === 'hi') return currentQ.value.explanationHi
   if (locale.value === 'kk') return currentQ.value.explanationKk
   if (locale.value === 'ko') return currentQ.value.explanationKo
   if (locale.value === 'zh') return currentQ.value.explanationZh

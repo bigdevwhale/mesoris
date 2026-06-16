@@ -18,6 +18,7 @@ export interface Article {
   titleZh: string
   titleKo: string
   titleKk: string
+  titleHi: string
   summary: string
   summaryRu: string
   summaryEs: string
@@ -28,6 +29,7 @@ export interface Article {
   summaryZh: string
   summaryKo: string
   summaryKk: string
+  summaryHi: string
   content: string
   contentRu: string
   contentEs: string
@@ -38,6 +40,7 @@ export interface Article {
   contentZh: string
   contentKo: string
   contentKk: string
+  contentHi: string
   category: 'extinction' | 'evolution' | 'discovery' | 'biology' | 'paleontology' | 'science'
   categoryRu: string
   categoryEs: string
@@ -48,6 +51,7 @@ export interface Article {
   categoryZh: string
   categoryKo: string
   categoryKk: string
+  categoryHi: string
   readingTimeMinutes: number
   image: string
   relatedDinosaurIds: string[]
@@ -62,6 +66,7 @@ export interface Article {
   kidsVersionZh: string
   kidsVersionKo: string
   kidsVersionKk: string
+  kidsVersionHi: string
 }
 
 export interface MythVsFact {
@@ -76,6 +81,7 @@ export interface MythVsFact {
   mythZh: string
   mythKo: string
   mythKk: string
+  mythHi: string
   fact: string
   factRu: string
   factEs: string
@@ -86,6 +92,7 @@ export interface MythVsFact {
   factZh: string
   factKo: string
   factKk: string
+  factHi: string
   category: string
   dinosaurId?: string
 }
@@ -102,6 +109,7 @@ export interface QuizQuestion {
   questionZh: string
   questionKo: string
   questionKk: string
+  questionHi: string
   difficulty: 'easy' | 'medium' | 'hard'
   options: string[]
   optionsRu: string[]
@@ -113,6 +121,7 @@ export interface QuizQuestion {
   optionsZh: string[]
   optionsKo: string[]
   optionsKk: string[]
+  optionsHi: string[]
   correctIndex: number
   explanation: string
   explanationRu: string
@@ -124,5 +133,6 @@ export interface QuizQuestion {
   explanationZh: string
   explanationKo: string
   explanationKk: string
+  explanationHi: string
   dinosaurId?: string
 }

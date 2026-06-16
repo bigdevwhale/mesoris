@@ -11,6 +11,7 @@ const LOCALE_TO_LANG: Record<string, string> = {
   zh: 'zh-CN',
   ko: 'ko-KR',
   kk: 'kk-KZ',
+  hi: 'hi-IN',
 }
 
 // Fallback chain for languages rarely supported by browser TTS

@@ -13,6 +13,7 @@ export const DinosaurSensesAndBehavior: Article = {
     titleZh: '恐龙如何感知世界？',
     titleKo: '공룡은 세상을 어떻게 느꼈을까?',
     titleKk: 'Динозаврлар әлемді қалай сезінді?',
+    titleHi: 'डायनासोर दुनिया को कैसे महसूस करते थे?',
     summary: 'A look at dinosaur vision, hearing, smell, and behavior — and how fossils help us infer their daily lives.',
     summaryRu: 'Взгляд на зрение, слух, обоняние и поведение динозавров — и как окаменелости помогают восстановить их повседневную жизнь.',
     summaryEs: 'Que sabemos sobre los cerebros, sentidos y comportamiento de los dinosaurios.',
@@ -23,6 +24,7 @@ export const DinosaurSensesAndBehavior: Article = {
     summaryZh: '深入了解恐龙的视觉、听觉、嗅觉和行为——以及化石如何帮助我们推断它们的日常生活。',
     summaryKo: '공룡의 시각, 청각, 후각 및 행동에 대한 탐구 — 그리고 화석이 그들의 일상을 추론하는 데 어떻게 도움이 되는지.',
     summaryKk: 'Динозаврлардың көру, есту, иіс сезу қабілеттері мен мінез-құлқына шолу — және қазбалар олардың күнделікті өмірін қалпына келтіруге қалай көмектеседі.',
+    summaryHi: 'डायनासोरों की दृष्टि, श्रवण, घ्राण और व्यवहार पर एक नज़र — और कैसे जीवाश्म हमें उनके दैनंदिन जीवन का अनुमान लगाने में मदद करते हैं।',
     category: 'biology',
     categoryRu: 'биология',
     categoryEs: 'biologia',
@@ -33,6 +35,7 @@ export const DinosaurSensesAndBehavior: Article = {
     categoryZh: '生物学',
     categoryKo: '생물학',
     categoryKk: 'биология',
+    categoryHi: 'इंद्रियाँ',
     readingTimeMinutes: 8,
     image: '/images/articles/dinosaur-senses-and-behavior.jpg',
     relatedDinosaurIds: ['triceratops', 'tyrannosaurus-rex', 'parasaurolophus'],
@@ -182,6 +185,24 @@ Le prove fossili mostrano che molti dinosauri vivevano in gruppi. Sono stati sco
 
 ### Үлкен сұрақ
 Динозаврлар белсенді, әлеуметтік жануарлар болды ма? Көп жағдайда — иә, бірақ мінез-құлық түрден түрге айтарлықтай өзгерген болуы мүмкін.`,
+    contentHi: `## डायनासोरों की इंद्रियाँ
+
+किसी डायनासोर की इंद्रियों ने यह तय किया कि वह कैसे शिकार करेगा, कैसे अपनी रक्षा करेगा, और समूहों में कैसे रहेगा। जीवाश्म खोपड़ियाँ, मस्तिष्क-गुहाएँ (brain cases) और पदचिह्न मार्ग (trackways) आश्चर्यजनक रूप से बहुत कुछ बता सकते हैं।
+
+### दृष्टि
+कुछ परभक्षियों (predators) की आगे की ओर देखने वाली आँखें और मज़बूत गहराई-बोध (depth perception) क्षमता थी। शाकाहारियों का अक्सर ख़तरे पर नज़र रखने के लिए व्यापक दृष्टि-क्षेत्र होता था।
+
+### घ्राण (smell)
+कई थेरोपोडों में बड़ी घ्राण बल्ब (olfactory bulbs) होती थीं, जो तेज़ घ्राण शक्ति का संकेत देती हैं।
+
+### श्रवण (hearing)
+कुछ प्रजातियों में शिखाएँ और खोपड़ी की आकृतियाँ ध्वनि को प्रवर्धित करती होंगी। पैरासॉरोलोफ़स (Parasaurolophus) शायद लंबी दूरी तक पहुँचने वाली निम्न आवाज़ें निकालता होगा।
+
+### व्यवहार
+जीवाश्म घोंसले, पदचिह्न मार्ग और हड्डी-संचय (bone beds) सामूहिक जीवन, संतान-पालन और कभी-कभी समूह में गति का संकेत देते हैं।
+
+### बड़ा सवाल
+क्या डायनासोर सक्रिय, सामाजिक जीव थे? कई मामलों में — हाँ, लेकिन व्यवहार संभवतः प्रजाति-दर-प्रजाति बहुत भिन्न रहा होगा।`,
     kidsVersion: `## Dinosaur Senses\n\nDinosaurs could see, hear, and smell the world in cool ways!\n\nSome had huge eyes, some had super noses, and some may have made loud calls with their heads.\n\nScientists use fossils to figure out how they lived every day.`,
     kidsVersionRu: `## Чувства динозавров\n\nДинозавры видели, слышали и чувствовали запахи удивительными способами!\n\nУ кого-то были огромные глаза, у кого-то — супер-нос, а некоторые, возможно, издавали громкие звуки головой.\n\nУчёные используют окаменелости, чтобы понять их повседневную жизнь.`,
     kidsVersionEs: `## ¿Podian Pensar los Dinosaurios?
@@ -256,4 +277,11 @@ Troodon aveva il cervello piu grande in rapporto al suo corpo. Era piu o meno in
 Кейбіреулерінің үлкен көздері, кейбіреулерінің супер мұрындары, ал кейбіреулері бастарымен қатты дыбыстар шығарған болуы мүмкін.
 
 Ғалымдар олардың күнделікті өмірін түсіну үшін қазбаларды пайдаланады.`,
+    kidsVersionHi: `## डायनासोरों की इंद्रियाँ
+
+डायनासोर दुनिया को देख, सुन और सूँघ सकते थे — अद्भुत तरीकों से!
+
+किसी की आँखें बहुत बड़ी थीं, किसी की सुपर नाक थी, और कुछ ने शायद अपने सिर से तेज़ आवाज़ें भी निकाली होंगी।
+
+वैज्ञानिक उनके रोज़मर्रा के जीवन को समझने के लिए जीवाश्मों का उपयोग करते हैं।`,
   }

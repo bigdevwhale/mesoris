@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+/* Devanagari (Hindi) — load separately to avoid bloating other locales. */
+/* unicode-range restricts the font to U+0900–U+097F + extensions, so the */
+/* browser only downloads the woff2 subset for users that actually need it. */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@400;500;600;700&display=swap');
 @import 'tailwindcss';
 @import './tokens.css';
 @import './animations.css';
@@ -74,6 +78,33 @@ html[lang="kk"][data-mode="kids"] body {
   font-family: 'Inter', 'Atkinson Hyperlegible', 'Segoe UI', system-ui, sans-serif;
 }
 /* adults mode already uses Source Serif 4 which supports Cyrillic — no override needed */
+
+/* ===== Hindi (Devanagari) =====
+   Latin/Cyrillic fonts (Atkinson, Source Serif, Nunito, Inter) ship without
+   full Devanagari glyph coverage — leading to tofu boxes or cramped
+   vertical metrics on Hindi text. Force Noto Devanagari and lift line-height
+   so conjuncts (क्ष, ज्ञ) and the headline-mark (ा ि ी) don't overlap. */
+html[lang="hi"] body,
+html[lang="hi"][data-mode="kids"] body,
+html[lang="hi"][data-mode="adults"] body {
+  font-family: 'Noto Sans Devanagari', 'Atkinson Hyperlegible', 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.55;
+}
+
+html[lang="hi"] h1,
+html[lang="hi"] h2,
+html[lang="hi"] h3,
+html[lang="hi"] h4,
+html[lang="hi"] h5,
+html[lang="hi"] h6,
+html[lang="hi"] .text-display-xl,
+html[lang="hi"] .text-display-lg,
+html[lang="hi"] .text-display-md,
+html[lang="hi"] .text-heading-lg,
+html[lang="hi"] .text-heading-md {
+  font-family: 'Noto Serif Devanagari', 'Noto Sans Devanagari', 'Nunito', 'Fredoka', sans-serif;
+  letter-spacing: 0;
+}
 
 /* Focus ring */
 :focus-visible {

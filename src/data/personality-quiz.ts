@@ -16,6 +16,7 @@ export interface PersonalityOption {
   textJa: string
   textKo: string
   textKk: string
+  textHi: string
   traits: PersonalityTraitScore[]
 }
 
@@ -31,6 +32,7 @@ export interface PersonalityQuestion {
   questionJa: string
   questionKo: string
   questionKk: string
+  questionHi: string
   options: PersonalityOption[]
 }
 
@@ -46,6 +48,7 @@ export interface DinosaurPersonality {
   nameJa: string
   nameKo: string
   nameKk: string
+  nameHi: string
   emoji: string
   imageSlug: string
   traits: Record<PersonalityTrait, number>
@@ -59,6 +62,7 @@ export interface DinosaurPersonality {
   titleJa: string
   titleKo: string
   titleKk: string
+  titleHi: string
   description: string
   descriptionRu: string
   descriptionEs: string
@@ -69,6 +73,7 @@ export interface DinosaurPersonality {
   descriptionJa: string
   descriptionKo: string
   descriptionKk: string
+  descriptionHi: string
   funFact: string
   funFactRu: string
   funFactEs: string
@@ -79,6 +84,7 @@ export interface DinosaurPersonality {
   funFactJa: string
   funFactKo: string
   funFactKk: string
+  funFactHi: string
   colorClass: string
 }
 
@@ -95,6 +101,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
     questionJa: '自由な時間はどのように過ごすのが好きですか？',
     questionKo: '자유 시간을 어떻게 보내는 것을 선호하나요?',
     questionKk: 'Бос уақытыңды қалай өткізуді жөн көресің?',
+    questionHi: 'आप अपना खाली समय कैसे बिताना पसंद करते हैं?',
     options: [
       {
         text: 'Ruling the room — you love being in charge',
@@ -107,6 +114,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: 'その場を支配する — 指揮を執るのが好き',
         textKo: '방을 지배하기 — 주도권을 쥐는 것을 좋아해요',
         textKk: 'Командалау — бастық болуды ұнатасың',
+        textHi: 'कमरा संभालना — आप नेतृत्व करना पसंद करते हैं',
         traits: [{ key: 'dominant', value: 3 }, { key: 'social', value: 1 }],
       },
       {
@@ -120,6 +128,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: '友達と新しい場所を探検する',
         textKo: '친구들과 새로운 장소 탐험하기',
         textKk: 'Достарыңмен жаңа жерлерді зерттеу',
+        textHi: 'दोस्तों के साथ नई जगहें खोजना',
         traits: [{ key: 'curious', value: 2 }, { key: 'social', value: 2 }],
       },
       {
@@ -133,6 +142,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: '自然の中で穏やかにリラックスする',
         textKo: '자연 속에서 평화롭게 쉬기',
         textKk: 'Табиғатта тыныш демалу',
+        textHi: 'प्रकृति में शांति से आराम करना',
         traits: [{ key: 'peaceful', value: 3 }, { key: 'cautious', value: 1 }],
       },
       {
@@ -146,6 +156,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: '走る、トレーニングする、限界に挑戦する',
         textKo: '달리기, 훈련 또는 한계에 도전하기',
         textKk: 'Жүгіру, жаттығу немесе шегіңді сынау',
+        textHi: 'दौड़ना, प्रशिक्षण, या अपनी सीमाएँ तोड़ना',
         traits: [{ key: 'agile', value: 3 }, { key: 'dominant', value: 1 }],
       },
     ],
@@ -162,6 +173,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
     questionJa: '誰かに直接挑戦されたら、どうしますか？',
     questionKo: '누군가 직접 도전해 옵니다. 어떻게 하시겠어요?',
     questionKk: 'Біреу сені тікелей сынаса, не жасайсың?',
+    questionHi: 'जब कोई आपको सीधे चुनौती देता है तो आप क्या करते हैं?',
     options: [
       {
         text: 'Step up and face them — you never back down',
@@ -174,6 +186,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: '前に出て立ち向かう — 決して引き下がらない',
         textKo: '앞으로 나서 맞서기 — 절대 물러서지 않아요',
         textKk: 'Алға шығып қарсылас — ешқашан шегінбейсің',
+        textHi: 'सामने आकर सामना करना — आप कभी पीछे नहीं हटते',
         traits: [{ key: 'dominant', value: 3 }],
       },
       {
@@ -187,6 +200,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: '仲間と力を合わせて出し抜く',
         textKo: '동료와 힘을 합쳐 상대를 제압하기',
         textKk: 'Одақтастармен бірлесіп оларды алып озу',
+        textHi: 'साथियों से जुड़कर उन्हें चकमा देना',
         traits: [{ key: 'social', value: 2 }, { key: 'agile', value: 1 }, { key: 'curious', value: 1 }],
       },
       {
@@ -200,6 +214,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: '守りを固める — 大切なものを守る',
         textKo: '방어적으로 버티기 — 중요한 것을 지키기',
         textKk: 'Қорғаныс жағдайда тұру — маңызды нәрсені қорғау',
+        textHi: 'रक्षात्मक रूप से डटे रहना — ज़रूरी चीज़ों की रक्षा करना',
         traits: [{ key: 'cautious', value: 2 }, { key: 'peaceful', value: 1 }],
       },
       {
@@ -213,6 +228,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: 'スピードと機知を活かして衝突を完全に避ける',
         textKo: '속도와 재치로 갈등 자체를 피하기',
         textKk: 'Жылдамдық пен тапқырлықпен жанжалды мүлде болдырмау',
+        textHi: 'गति और चतुराई से टकराव से बचना',
         traits: [{ key: 'agile', value: 2 }, { key: 'curious', value: 1 }],
       },
     ],
@@ -229,6 +245,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
     questionJa: '問題に直面したときのあなたのアプローチは？',
     questionKo: '문제에 직면했을 때 어떻게 접근하나요?',
     questionKk: 'Мәселеге тап болғанда қандай тәсіл қолданасың?',
+    questionHi: 'किसी समस्या का सामना करते समय आपका तरीका क्या होता है?',
     options: [
       {
         text: 'Attack it head-on with sheer force',
@@ -241,6 +258,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: '正面から全力で攻める',
         textKo: '정면으로 맞서 강력하게 공격하기',
         textKk: 'Толық күшпен тікелей шабуыл',
+        textHi: 'पूरी ताकत से सीधा हमला करना',
         traits: [{ key: 'dominant', value: 3 }, { key: 'agile', value: 1 }],
       },
       {
@@ -254,6 +272,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: '行動する前に入念に調べて計画を練る',
         textKo: '행동하기 전에 신중하게 조사하고 계획하기',
         textKk: 'Іс жасамас бұрын мұқият зерттеп жоспарлау',
+        textHi: 'काम करने से पहले गहराई से शोध और योजना बनाना',
         traits: [{ key: 'curious', value: 3 }, { key: 'cautious', value: 1 }],
       },
       {
@@ -267,6 +286,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: '適切な瞬間まで辛抱強く待つ',
         textKo: '적절한 순간을 인내심 있게 기다리기',
         textKk: 'Қолайлы сәтті шыдамдылықпен күту',
+        textHi: 'सही क्षण के लिए धैर्यपूर्वक प्रतीक्षा करना',
         traits: [{ key: 'peaceful', value: 2 }, { key: 'cautious', value: 2 }],
       },
       {
@@ -280,6 +300,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: '誰も思いつかないような創造的な回避策を見つける',
         textKo: '아무도 생각하지 못할 창의적인 우회책 찾기',
         textKk: 'Ешкім ойламайтын шығармашылық шешім табу',
+        textHi: 'एक रचनात्मक हल ढूँढना जो कोई और न सोचे',
         traits: [{ key: 'agile', value: 2 }, { key: 'curious', value: 2 }],
       },
     ],
@@ -296,6 +317,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
     questionJa: 'どんな環境が最も「我が家」と感じますか？',
     questionKo: '어떤 환경이 가장 집처럼 느껴지나요?',
     questionKk: 'Қандай орта ең үйдей сезіндіреді?',
+    questionHi: 'किस प्रकार का माहौल सबसे अधिक घर जैसा लगता है?',
     options: [
       {
         text: 'Open plains where you can see everything around you',
@@ -308,6 +330,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: '周りをすべて見渡せる開けた平原',
         textKo: '주변을 모두 볼 수 있는 탁 트인 평원',
         textKk: 'Айнала барлығы көрінетін ашық жазықтар',
+        textHi: 'खुले मैदान जहाँ चारों ओर सब दिखता है',
         traits: [{ key: 'dominant', value: 2 }, { key: 'cautious', value: 1 }],
       },
       {
@@ -321,6 +344,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: '生命力と神秘に満ちた深い森',
         textKo: '생명력과 신비로 가득한 울창한 숲',
         textKk: 'Өмір мен жұмбаққа толы тығыз орман',
+        textHi: 'जीवन और रहस्य से भरा घना जंगल',
         traits: [{ key: 'curious', value: 2 }, { key: 'social', value: 1 }, { key: 'agile', value: 1 }],
       },
       {
@@ -334,6 +358,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: '豊かな食べ物と穏やかな水のある緑豊かな谷',
         textKo: '음식과 잔잔한 물이 풍부한 무성한 계곡',
         textKk: 'Тамақ пен тыныш сулары мол жайлы жазырық',
+        textHi: 'खाने और शांत पानी से भरी हरी-भरी घाटियाँ',
         traits: [{ key: 'peaceful', value: 3 }, { key: 'social', value: 1 }],
       },
       {
@@ -347,6 +372,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: '高い崖と広がる空 — 高ければ高いほどいい',
         textKo: '높은 절벽과 탁 트인 하늘 — 높을수록 좋아요',
         textKk: 'Биік жарлар мен ашық аспан — неғұрлым биік, соғұрлым жақсы',
+        textHi: 'ऊँची चट्टानें और खुला आसमान — ऊँचा हो तो बेहतर',
         traits: [{ key: 'agile', value: 3 }, { key: 'curious', value: 1 }],
       },
     ],
@@ -363,6 +389,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
     questionJa: 'グループの中ではどのように行動しますか？',
     questionKo: '그룹 안에서 어떻게 행동하나요?',
     questionKk: 'Топта қалай жүресің?',
+    questionHi: 'समूह में आप कैसे व्यवहार करते हैं?',
     options: [
       {
         text: 'You\'re the leader — everyone follows your call',
@@ -375,6 +402,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: 'あなたがリーダー — みんながあなたの指示に従う',
         textKo: '리더 — 모두가 당신의 결정을 따라요',
         textKk: 'Сен жетекшісің — барлығы сенің шешімдеріңді ұстанады',
+        textHi: 'आप नेता हैं — सब आपके फ़ैसलों का पालन करते हैं',
         traits: [{ key: 'dominant', value: 3 }, { key: 'social', value: 1 }],
       },
       {
@@ -388,6 +416,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: 'チームの士気を高く保つ、対等なチームプレイヤー',
         textKo: '분위기를 높이는 평등한 팀 플레이어',
         textKk: 'Рухты жоғары ұстайтын тең мүшелі командалық ойыншы',
+        textHi: 'समान टीम सदस्य जो सबका उत्साह ऊँचा रखता है',
         traits: [{ key: 'social', value: 3 }, { key: 'peaceful', value: 1 }],
       },
       {
@@ -401,6 +430,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: 'ここぞという時だけ発言する静かな観察者',
         textKo: '중요한 순간에만 발언하는 조용한 관찰자',
         textKk: 'Тек маңызды сәтте сөз алатын үнсіз бақылаушы',
+        textHi: 'शांत प्रेक्षक जो सिर्फ़ सही वक़्त पर बोलता है',
         traits: [{ key: 'cautious', value: 2 }, { key: 'curious', value: 2 }],
       },
       {
@@ -414,6 +444,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: '一人で作業する方が好き — グループは足手まとい',
         textKo: '혼자 일하는 것을 선호 — 그룹은 속도를 늦춰요',
         textKk: 'Жалғыз жұмыс істеуді жөн көресің — топ саған кедергі',
+        textHi: 'अकेले काम करना पसंद करते हैं — समूह धीमा करते हैं',
         traits: [{ key: 'agile', value: 2 }, { key: 'dominant', value: 1 }],
       },
     ],
@@ -430,6 +461,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
     questionJa: 'あなたの最大の強みは何ですか？',
     questionKo: '당신의 가장 큰 강점은 무엇인가요?',
     questionKk: 'Ең үлкен күшің неде?',
+    questionHi: 'आपकी सबसे बड़ी ताकत क्या है?',
     options: [
       {
         text: 'Raw power — when you strike, everyone feels it',
@@ -442,6 +474,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: '圧倒的な力 — あなたが放つ一撃は全員に響く',
         textKo: '원초적인 힘 — 당신이 공격하면 모두가 느껴요',
         textKk: 'Шикі күш — соқсаң, барлығы сезеді',
+        textHi: 'कच्ची ताकत — जब आप वार करते हैं तो सब महसूस करते हैं',
         traits: [{ key: 'dominant', value: 3 }],
       },
       {
@@ -455,6 +488,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: '知性と適応力',
         textKo: '지능과 적응력',
         textKk: 'Зерделілік пен бейімделгіштік',
+        textHi: 'बुद्धि और अनुकूलन क्षमता',
         traits: [{ key: 'curious', value: 2 }, { key: 'agile', value: 1 }, { key: 'social', value: 1 }],
       },
       {
@@ -468,6 +502,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: '忍耐力と揺るぎない冷静さ',
         textKo: '인내력과 흔들리지 않는 평온함',
         textKk: 'Шыдамдылық пен берік сабырлылық',
+        textHi: 'सहनशक्ति और अटूट शांति',
         traits: [{ key: 'peaceful', value: 2 }, { key: 'cautious', value: 2 }],
       },
       {
@@ -481,6 +516,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: 'スピード — 常に三歩先を行く',
         textKo: '속도 — 항상 세 발자국 앞에 있어요',
         textKk: 'Жылдамдық — әрдайым үш қадам алдасың',
+        textHi: 'गति — आप हमेशा तीन क़दम आगे रहते हैं',
         traits: [{ key: 'agile', value: 3 }],
       },
     ],
@@ -497,6 +533,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
     questionJa: '危険が近づいたとき、どう反応しますか？',
     questionKo: '위험이 가까이 있을 때 어떻게 반응하나요?',
     questionKk: 'Қауіп жақын болғанда қалай жауап бересің?',
+    questionHi: 'जब ख़तरा पास होता है तो आप कैसे प्रतिक्रिया करते हैं?',
     options: [
       {
         text: 'Charge straight at it — offense is the best defense',
@@ -509,6 +546,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: '真っ向から突撃する — 攻撃は最大の防御',
         textKo: '정면으로 돌진하기 — 공격이 최선의 방어',
         textKk: 'Тікелей шабуылдау — шабуыл ең жақсы қорғаныс',
+        textHi: 'सीधा टक्कर — हमला ही सबसे अच्छी रक्षा है',
         traits: [{ key: 'dominant', value: 3 }],
       },
       {
@@ -522,6 +560,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: 'グループに知らせて連携した対応をとる',
         textKo: '그룹에 경고하고 조율된 대응 만들기',
         textKk: 'Топты хабарлап, үйлестірілген жауап ұйымдастыру',
+        textHi: 'समूह को सचेत करना और समन्वित प्रतिक्रिया बनाना',
         traits: [{ key: 'social', value: 3 }, { key: 'cautious', value: 1 }],
       },
       {
@@ -535,6 +574,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: '身を潜めて危険が過ぎ去るのを待つ',
         textKo: '몸을 낮추고 지나갈 때까지 기다리기',
         textKk: 'Бүгіліп, өте кеткенше күту',
+        textHi: 'दुबक कर बैठना और गुज़र जाने तक इंतज़ार करना',
         traits: [{ key: 'cautious', value: 2 }, { key: 'peaceful', value: 2 }],
       },
       {
@@ -548,6 +588,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: '一瞬で姿を消す — 誰もあなたを捕まえられない',
         textKo: '순식간에 사라지기 — 아무도 당신을 잡을 수 없어요',
         textKk: 'Бір сәтте жоғалу — ешкім ұстай алмайды',
+        textHi: 'पल भर में ग़ायब — कोई आपको पकड़ नहीं सकता',
         traits: [{ key: 'agile', value: 3 }],
       },
     ],
@@ -564,6 +605,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
     questionJa: '人生で最もあなたを動かすものは何ですか？',
     questionKo: '삶에서 가장 큰 동기 부여는 무엇인가요?',
     questionKk: 'Өмірде сені не ең көп ынталандырады?',
+    questionHi: 'जीवन में आपको सबसे अधिक क्या प्रेरित करता है?',
     options: [
       {
         text: 'Conquest and achievement — being the best',
@@ -576,6 +618,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: '征服と達成 — 一番になること',
         textKo: '정복과 성취 — 최고가 되기',
         textKk: 'Жеңіс пен жетістік — ең үздік болу',
+        textHi: 'विजय और उपलब्धि — सबसे अच्छे बनना',
         traits: [{ key: 'dominant', value: 3 }],
       },
       {
@@ -589,6 +632,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: '深いつながり — 大切な人たち',
         textKo: '깊은 유대 — 당신이 소중히 여기는 사람들',
         textKk: 'Терең байланыстар — ізетті адамдарың',
+        textHi: 'गहरे रिश्ते — आप जिन लोगों की परवाह करते हैं',
         traits: [{ key: 'social', value: 3 }, { key: 'peaceful', value: 1 }],
       },
       {
@@ -602,6 +646,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: '発見 — 毎日何か新しいことを学ぶこと',
         textKo: '발견 — 매일 새로운 것을 배우기',
         textKk: 'Ашу — күнде жаңа нәрсе үйрену',
+        textHi: 'खोज — रोज़ कुछ नया सीखना',
         traits: [{ key: 'curious', value: 3 }, { key: 'agile', value: 1 }],
       },
       {
@@ -615,6 +660,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: '平和と安全 — すべてが大丈夫だと知ること',
         textKo: '평화와 안전 — 모든 것이 안전하다는 것을 알기',
         textKk: 'Тыныштық пен қауіпсіздік — бәрі жақсы екенін білу',
+        textHi: 'शांति और सुरक्षा — यह जानना कि सब ठीक है',
         traits: [{ key: 'peaceful', value: 2 }, { key: 'cautious', value: 2 }],
       },
     ],
@@ -631,6 +677,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
     questionJa: '友達はあなたのことをこう表現するでしょう…',
     questionKo: '친구들은 당신을 어떻게 묘사할까요…',
     questionKk: 'Достарың сені... деп суреттейді',
+    questionHi: 'आपके दोस्त आपका वर्णन इस तरह करेंगे...',
     options: [
       {
         text: 'Fierce and unstoppable',
@@ -643,6 +690,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: '獰猛で止められない',
         textKo: '맹렬하고 멈출 수 없는',
         textKk: 'Ашулы және тоқтатылмайтын',
+        textHi: 'भयंकर और अजेय',
         traits: [{ key: 'dominant', value: 2 }, { key: 'agile', value: 1 }],
       },
       {
@@ -656,6 +704,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: '温かく、忠実で、いつも他者のためにいる',
         textKo: '따뜻하고 충성스럽고 항상 다른 사람을 위해 있는',
         textKk: 'Жылы, адал және әрдайым басқалар үшін бар',
+        textHi: 'गर्मजोशी, वफ़ादार, और हमेशा दूसरों के लिए',
         traits: [{ key: 'social', value: 3 }, { key: 'peaceful', value: 1 }],
       },
       {
@@ -669,6 +718,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: '穏やかで、安定していて、動じない',
         textKo: '차분하고 안정적이며 흔들리지 않는',
         textKk: 'Сабырлы, тұрақты және шайқалмайтын',
+        textHi: 'शांत, स्थिर और विचलित होने से रहित',
         traits: [{ key: 'peaceful', value: 2 }, { key: 'cautious', value: 2 }],
       },
       {
@@ -682,6 +732,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: '素早く、賢く、常に驚きに満ちている',
         textKo: '빠르고 영리하며 항상 놀라움을 주는',
         textKk: 'Жылдам, зерек және әрдайым тосын',
+        textHi: 'तेज़, चतुर और हमेशा चौंकाने वाला',
         traits: [{ key: 'agile', value: 2 }, { key: 'curious', value: 2 }],
       },
     ],
@@ -698,6 +749,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
     questionJa: '一日の終わりの理想的な過ごし方は？',
     questionKo: '하루를 마무리하는 이상적인 방법은 무엇인가요?',
     questionKk: 'Күнді аяқтаудың ең тамаша жолы қандай?',
+    questionHi: 'दिन को ख़त्म करने का आपका आदर्श तरीका क्या है?',
     options: [
       {
         text: 'Celebrating a victory — you conquered something today',
@@ -710,6 +762,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: '勝利を祝う — 今日も何かを成し遂げた',
         textKo: '승리 축하하기 — 오늘 무언가를 이뤄냈어요',
         textKk: 'Жеңісті тойлау — бүгін бір нәрсені жеңдің',
+        textHi: 'जीत का जश्न मनाना — आज आपने कुछ जीता',
         traits: [{ key: 'dominant', value: 3 }],
       },
       {
@@ -723,6 +776,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: '愛する人たちと食事や話を共にする',
         textKo: '사랑하는 사람들과 식사나 이야기 나누기',
         textKk: 'Сүйетін адамдарыңмен тамақ немесе әңгіме бөлісу',
+        textHi: 'प्रियजनों के साथ खाना या कहानियाँ साझा करना',
         traits: [{ key: 'social', value: 3 }, { key: 'peaceful', value: 1 }],
       },
       {
@@ -736,6 +790,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: '観察したことすべてについて静かに振り返る',
         textKo: '관찰한 모든 것에 대해 조용히 되새기기',
         textKk: 'Байқаған нәрселеріңнің барлығын тыныш ой елегінен өткізу',
+        textHi: 'जो कुछ भी देखा उस पर शांति से चिंतन करना',
         traits: [{ key: 'curious', value: 2 }, { key: 'cautious', value: 1 }, { key: 'peaceful', value: 1 }],
       },
       {
@@ -749,6 +804,7 @@ export const personalityQuestions: PersonalityQuestion[] = [
         textJa: '明日の冒険の計画を立てる',
         textKo: '내일의 모험 계획 세우기',
         textKk: 'Ертеңгі шытырманды жоспарлау',
+        textHi: 'कल के रोमांच की योजना बनाना',
         traits: [{ key: 'agile', value: 2 }, { key: 'curious', value: 2 }],
       },
     ],
@@ -768,6 +824,7 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     nameJa: 'ティラノサウルス・レックス',
     nameKo: 'T-렉스',
     nameKk: 'Тираннозавр Рекс',
+    nameHi: 'टायरानोसॉरस रेक्स',
     emoji: '🦖',
     imageSlug: 'tyrannosaurus-rex',
     traits: { dominant: 10, social: 2, curious: 3, cautious: 1, agile: 4, peaceful: 1 },
@@ -781,6 +838,7 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     titleJa: '頂点捕食者',
     titleKo: '최강 포식자',
     titleKk: 'Жыртқыштардың Патшасы',
+    titleHi: 'शिखर परभक्षी',
     description: 'You are bold, powerful, and born to lead. You don\'t wait for opportunities — you create them. Your presence commands respect, and you\'re not afraid to stand alone at the top.',
     descriptionRu: 'Ты смелый, могущественный и рождён, чтобы вести за собой. Ты не ждёшь возможностей — ты их создаёшь. Твоё присутствие вызывает уважение, и ты не боишься быть на вершине в одиночку.',
     descriptionEs: 'Eres audaz, poderoso y nacido para liderar. No esperas las oportunidades — las creas. Tu presencia exige respeto y no tienes miedo de estar solo en la cima.',
@@ -791,6 +849,7 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     descriptionJa: 'あなたは大胆で、強力で、導くために生まれました。チャンスを待つのではなく、自ら作り出します。あなたの存在は尊敬を集め、頂点に一人立つことを恐れません。',
     descriptionKo: '당신은 대담하고 강력하며 태어나면서부터 리더입니다. 기회를 기다리지 않고 직접 만들어냅니다. 당신의 존재는 존경을 불러일으키며, 정상에 홀로 서는 것을 두려워하지 않습니다.',
     descriptionKk: 'Сен батыл, қуатты және жетекші болуға туылдың. Мүмкіндіктерді күтпейсің — оларды өзің жасайсың. Сенің болуың сыйлас тудырады, және биікте жалғыз тұрудан қорықпайсың.',
+    descriptionHi: 'आप निडर, शक्तिशाली और नेतृत्व करने के लिए जन्मे हैं। आप अवसरों की प्रतीक्षा नहीं करते — आप उन्हें स्वयं बनाते हैं। आपकी मौजूदगी सम्मान माँगती है, और आप शिखर पर अकेले खड़े होने से नहीं डरते।',
     funFact: 'T-Rex had a bite force of about 57,000 newtons — strong enough to crush bone like crackers.',
     funFactRu: 'Сила укуса тираннозавра составляла около 57 000 ньютонов — достаточно, чтобы раздробить кость как крекер.',
     funFactEs: 'El T-Rex tenía una fuerza de mordida de unos 57.000 newtons — suficiente para triturar huesos como galletas.',
@@ -801,6 +860,7 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     funFactJa: 'T-Rexの咬合力は約57,000ニュートン — 骨をクラッカーのように砕くほどの強さです。',
     funFactKo: 'T-렉스의 교합력은 약 57,000뉴턴에 달했습니다 — 뼈를 크래커처럼 부술 만큼 강력했습니다.',
     funFactKk: 'T-Rexтің тістеу күші шамамен 57 000 ньютон болды — сүйекті крекер сияқты мыжып тастайтын күш.',
+    funFactHi: 'टायरानोसॉरस रेक्स का काटने का बल लगभग 57,000 न्यूटन था — हड्डी को बिस्कुट की तरह चकनाचूर करने के लिए पर्याप्त।',
     colorClass: 'from-red-600 to-orange-700',
   },
   {
@@ -815,6 +875,7 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     nameJa: 'ヴェロキラプトル',
     nameKo: '벨로키랍토르',
     nameKk: 'Велоцираптор',
+    nameHi: 'वेलोसिरैप्टर',
     emoji: '🦕',
     imageSlug: 'velociraptor',
     traits: { dominant: 4, social: 5, curious: 7, cautious: 3, agile: 9, peaceful: 2 },
@@ -828,6 +889,7 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     titleJa: '狡猾な戦略家',
     titleKo: '교활한 전략가',
     titleKk: 'Айлалы Стратег',
+    titleHi: 'चतुर रणनीतिकार',
     description: 'You are fast, smart, and always thinking two moves ahead. You thrive in dynamic situations and love solving puzzles others find impossible. Working with a tight, trusted crew brings out your best.',
     descriptionRu: 'Ты быстрый, умный и всегда думаешь на два хода вперёд. Ты процветаешь в динамичных ситуациях и любишь решать задачи, которые другим кажутся невозможными. Работа с небольшой, надёжной командой раскрывает твой лучший потенциал.',
     descriptionEs: 'Eres rápido, inteligente y siempre piensas dos movimientos adelante. Prosperas en situaciones dinámicas y te encanta resolver problemas que otros encuentran imposibles. Trabajar con un equipo pequeño y de confianza saca lo mejor de ti.',
@@ -838,6 +900,7 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     descriptionJa: 'あなたは速く、賢く、常に二手先を考えています。ダイナミックな状況で力を発揮し、他の人が不可能だと思うパズルを解くのが大好きです。少数の信頼できる仲間と協力することで最高の力を発揮します。',
     descriptionKo: '당신은 빠르고 영리하며 항상 두 수 앞을 생각합니다. 역동적인 상황에서 번성하고 다른 이들이 불가능하다고 생각하는 수수께끼를 풀기를 좋아합니다. 소규모의 신뢰할 수 있는 팀과 협력할 때 최고의 능력을 발휘합니다.',
     descriptionKk: 'Сен жылдам, зерек және әрдайым екі қадам алда ойлайсың. Серпінді жағдайларда гүлденесің және басқалар мүмкін емес деп санайтын жұмбақтарды шешуді ұнатасың. Аз санды, сенімді командамен жұмыс жасаған кезде ең жақсы нәтиже береді.',
+    descriptionHi: 'आप तेज़, स्मार्ट और हमेशा दो क़दम आगे सोचते हैं। आप गतिशील परिस्थितियों में पनपते हैं और उन पहेलियों को सुलझाना पसंद करते हैं जो दूसरों को असंभव लगती हैं। एक छोटे, भरोसेमंद दल के साथ काम करने में आप सबसे अच्छे होते हैं।',
     funFact: 'Velociraptors were actually about the size of a turkey and likely had feathers — far smaller than the movies show!',
     funFactRu: 'Велоцирапторы были размером примерно с индейку и, вероятно, имели перья — намного меньше, чем показывают в кино!',
     funFactEs: '¡Los velociraptores eran en realidad del tamaño de un pavo y probablemente tenían plumas — mucho más pequeños de lo que muestran las películas!',
@@ -848,6 +911,7 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     funFactJa: 'ヴェロキラプトルは実際には七面鳥ほどの大きさで、羽毛があったとされています — 映画で描かれるよりずっと小さかったのです！',
     funFactKo: '벨로키랍토르는 실제로 칠면조 크기 정도였고 깃털이 있었을 것으로 추정됩니다 — 영화에서 보여주는 것보다 훨씬 작았습니다!',
     funFactKk: 'Велоцирапторлар шын мәнінде күркетауық мөлшеріндей болды және бірақ қауырсындары болған — фильмдерде көрсетілгеннен әлдеқайда кіші!',
+    funFactHi: 'वेलोसिरैप्टर वास्तव में एक टर्की जितने बड़े थे और संभवतः उनके पंख भी होते थे — फ़िल्मों में दिखाए जाने से बहुत छोटे!',
     colorClass: 'from-teal-500 to-cyan-700',
   },
   {
@@ -862,6 +926,7 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     nameJa: 'トリケラトプス',
     nameKo: '트리케라톱스',
     nameKk: 'Трицератопс',
+    nameHi: 'ट्राइसिरैटॉप्स',
     emoji: '🐊',
     imageSlug: 'triceratops',
     traits: { dominant: 5, social: 6, curious: 4, cautious: 7, agile: 3, peaceful: 5 },
@@ -875,6 +940,7 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     titleJa: '不動の守護者',
     titleKo: '굳건한 수호자',
     titleKk: 'Берік Қорғаушы',
+    titleHi: 'अडिग रक्षक',
     description: 'You are fiercely loyal, deeply principled, and always ready to defend what you love. You don\'t pick fights, but you never run from them either. Your friends know they can count on you no matter what.',
     descriptionRu: 'Ты безгранично преданный, принципиальный и всегда готов защитить то, что любишь. Ты не ищешь ссоры, но и никогда от них не убегаешь. Твои друзья знают, что могут на тебя рассчитывать при любых обстоятельствах.',
     descriptionEs: 'Eres ferozmente leal, profundamente íntegro y siempre listo para defender lo que amas. No buscas peleas, pero tampoco huyes de ellas. Tus amigos saben que pueden contar contigo pase lo que pase.',
@@ -885,6 +951,7 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     descriptionJa: 'あなたは非常に忠実で、強い信念を持ち、愛するものを常に守る準備ができています。自ら争いを求めませんが、争いから逃げることもありません。友達はどんな時でもあなたを頼りにできると知っています。',
     descriptionKo: '당신은 극도로 충성스럽고 깊은 원칙을 가지며 항상 소중한 것을 지킬 준비가 되어 있습니다. 싸움을 먼저 걸지 않지만 절대 도망치지도 않습니다. 친구들은 어떤 상황에서도 당신을 믿을 수 있다는 것을 압니다.',
     descriptionKk: 'Сен өте адал, терең принциптерге ие және сүйетін нәрсеңді қорғауға әрдайым дайынсың. Сен алдымен ұрыс шықпайсың, бірақ ешқашан қашпайсың да. Достарың кез келген жағдайда сенімен есептесе алатынын біледі.',
+    descriptionHi: 'आप जानदार वफ़ादार, गहरे सिद्धांतों वाले, और जिसे प्यार करते हैं उसकी रक्षा के लिए हमेशा तैयार रहते हैं। आप लड़ाई नहीं ढूँढते, लेकिन उससे कभी नहीं भागते। आपके मित्र जानते हैं कि वे किसी भी हाल में आप पर भरोसा कर सकते हैं।',
     funFact: 'Triceratops had one of the largest skulls of any land animal ever — up to a third of its entire body length!',
     funFactRu: 'Трицератопс имел один из самых больших черепов среди всех наземных животных — до трети длины всего тела!',
     funFactEs: '¡El triceratops tenía uno de los cráneos más grandes de cualquier animal terrestre — hasta un tercio de la longitud total de su cuerpo!',
@@ -895,6 +962,7 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     funFactJa: 'トリケラトプスは陸上動物の中で最大級の頭骨を持っていました — 体長の最大3分の1にも達しました！',
     funFactKo: '트리케라톱스는 역대 육상 동물 중 가장 큰 두개골 중 하나를 가지고 있었습니다 — 전체 몸 길이의 최대 3분의 1에 달했습니다!',
     funFactKk: 'Трицератопстың кез-келген жер үсті жануарларының ішіндегі ең үлкен бас сүйектерінің бірі болды — тұтас дене ұзындығының үштен бірінен асты!',
+    funFactHi: 'ट्राइसिरैटॉप्स के पास किसी भी स्थलीय जीव का सबसे बड़ी खोपड़ियों में से एक थी — पूरे शरीर की लंबाई का एक तिहाई तक!',
     colorClass: 'from-blue-500 to-indigo-700',
   },
   {
@@ -909,6 +977,7 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     nameJa: 'ブラキオサウルス',
     nameKo: '브라키오사우루스',
     nameKk: 'Брахиозавр',
+    nameHi: 'ब्राहीओसॉरस',
     emoji: '🌿',
     imageSlug: 'brachiosaurus',
     traits: { dominant: 2, social: 8, curious: 5, cautious: 3, agile: 2, peaceful: 10 },
@@ -922,6 +991,7 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     titleJa: '優しい巨人',
     titleKo: '온순한 거인',
     titleKk: 'Момын Алып',
+    titleHi: 'निर्दोष विशालकाय',
     description: 'You are calm, nurturing, and see the world from a higher vantage point — literally and figuratively. You value peace, community, and abundance. Your quiet confidence and warmth draw others naturally to you.',
     descriptionRu: 'Ты спокойный, заботливый и смотришь на мир с высоты — буквально и в переносном смысле. Ты ценишь мир, общество и изобилие. Твоя тихая уверенность и теплота естественно притягивают к тебе других.',
     descriptionEs: 'Eres tranquilo, protector y ves el mundo desde una perspectiva más elevada — literal y figurativamente. Valoras la paz, la comunidad y la abundancia. Tu confianza tranquila y tu calidez atraen naturalmente a otros hacia ti.',
@@ -932,6 +1002,7 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     descriptionJa: 'あなたは穏やかで、思いやり深く、文字通りにも比喩的にも高い視点から世界を見ています。平和、コミュニティ、豊かさを大切にします。あなたの静かな自信と温かさが自然と人を惹きつけます。',
     descriptionKo: '당신은 차분하고 배려심이 깊으며 문자 그대로도 비유적으로도 더 높은 시각에서 세상을 바라봅니다. 평화, 공동체, 풍요를 소중히 여깁니다. 당신의 조용한 자신감과 따뜻함이 자연스럽게 다른 사람들을 끌어당깁니다.',
     descriptionKk: 'Сен сабырлы, қамқор және дүниені жоғарыдан — сөзбе-сөз де, бейнелі мағынада да — қарайсың. Бейбітшілікті, қауымдастықты және молшылықты бағалайсың. Сенің тыныш сенімділігің мен жылуың адамдарды табиғи түрде өзіне тартады.',
+    descriptionHi: 'आप शांत, पोषण करने वाले हैं और दुनिया को ऊँचे दृष्टिकोण से देखते हैं — शाब्दिक और लाक्षणिक दोनों रूप से। आप शांति, समुदाय और बहुलता को महत्व देते हैं। आपका शांत आत्मविश्वास और गर्मजोशी स्वाभाविक रूप से दूसरों को अपनी ओर खींचती है।',
     funFact: 'Brachiosaurus could reach vegetation 9 metres off the ground — equivalent to a three-story building!',
     funFactRu: 'Брахиозавр мог дотянуться до растительности на высоте 9 метров — как трёхэтажный дом!',
     funFactEs: '¡El brachiosaurus podía alcanzar vegetación a 9 metros del suelo — equivalente a un edificio de tres pisos!',
@@ -942,6 +1013,7 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     funFactJa: 'ブラキオサウルスは地上9メートルの植物に届くことができました — 3階建てのビルに相当します！',
     funFactKo: '브라키오사우루스는 지면에서 9미터 높이의 식물까지 닿을 수 있었습니다 — 3층 건물과 맞먹는 높이입니다!',
     funFactKk: 'Брахиозавр жерден 9 метр биіктіктегі өсімдіктерге жете алды — үш қабатты ғимаратқа тең!',
+    funFactHi: 'ब्राहीओसॉरस ज़मीन से 9 मीटर ऊँची वनस्पति तक पहुँच सकता था — तीन मंज़िला इमारत के बराबर!',
     colorClass: 'from-green-500 to-emerald-700',
   },
   {
@@ -956,6 +1028,7 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     nameJa: 'アンキロサウルス',
     nameKo: '안킬로사우루스',
     nameKk: 'Анкилозавр',
+    nameHi: 'एंकायलोसॉरस',
     emoji: '🛡️',
     imageSlug: 'ankylosaurus',
     traits: { dominant: 4, social: 4, curious: 3, cautious: 9, agile: 2, peaceful: 8 },
@@ -969,6 +1042,7 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     titleJa: '鎧をまとった哲学者',
     titleKo: '갑옷 입은 철학자',
     titleKk: 'Сауытты Философ',
+    titleHi: 'कवचधारी दार्शनिक',
     description: 'You are patient, grounded, and incredibly resilient. You prefer a peaceful life, but when pushed, no force in the world can move you. You think before you act, and your calm exterior hides a formidable inner strength.',
     descriptionRu: 'Ты терпеливый, приземлённый и невероятно стойкий. Ты предпочитаешь спокойную жизнь, но когда тебя подталкивают, никакая сила в мире не сможет тебя сдвинуть. Ты думаешь перед тем, как действовать, а твоё спокойное внешнее обличье скрывает внушительную внутреннюю силу.',
     descriptionEs: 'Eres paciente, arraigado e increíblemente resistente. Prefieres una vida tranquila, pero cuando te presionan, ninguna fuerza en el mundo puede moverte. Piensas antes de actuar, y tu exterior calmado esconde una formidable fuerza interior.',
@@ -979,6 +1053,7 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     descriptionJa: 'あなたは忍耐強く、地に足が着いており、非常に強靭です。平和な人生を好みますが、追い詰められると世界中のどんな力もあなたを動かせません。行動する前に考え、その穏やかな外見の裏には圧倒的な内面の強さが隠れています。',
     descriptionKo: '당신은 인내심이 강하고 현실적이며 믿기 힘들 정도로 강인합니다. 평화로운 삶을 선호하지만 압박받으면 세상 어떤 힘도 당신을 움직일 수 없습니다. 행동하기 전에 생각하며, 차분한 외모 뒤에 강력한 내면의 힘이 숨어 있습니다.',
     descriptionKk: 'Сен шыдамды, жер бетінде және ерекше берік. Тыныш өмірді жөн көресің, бірақ итерілсең, дүниедегі ешбір күш сені қозғалта алмайды. Іс жасамас бұрын ойланасың, ал сабырлы сыртқы пішінің ішкі ерен күшті жасырады.',
+    descriptionHi: 'आप धैर्यवान, ज़मीन से जुड़े और अविश्वसनीय रूप से मज़बूत हैं। आप शांत जीवन पसंद करते हैं, लेकिन जब धक्का दिया जाता है तो दुनिया की कोई ताकत आपको हिला नहीं सकती। आप काम करने से पहले सोचते हैं, और आपका शांत बाहरी आवरण भीतर की भारी शक्ति को छिपाता है।',
     funFact: 'The tail club of Ankylosaurus could swing hard enough to shatter the bones of a T-Rex.',
     funFactRu: 'Хвостовая дубина анкилозавра могла ударить с такой силой, что могла сломать кости тираннозавра.',
     funFactEs: 'El garrote de la cola del ankylosaurus podía golpear con suficiente fuerza para romper los huesos de un T-Rex.',
@@ -989,6 +1064,7 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     funFactJa: 'アンキロサウルスの尾のハンマーはT-Rexの骨を粉砕できるほどの勢いで振ることができました。',
     funFactKo: '안킬로사우루스의 꼬리 곤봉은 T-렉스의 뼈를 부술 만큼 강력하게 휘두를 수 있었습니다.',
     funFactKk: 'Анкилозаврдың құйрық таяғы T-Rexтің сүйектерін сындыра алатындай қатты сілте алды.',
+    funFactHi: 'एंकायलोसॉरस की पूँछ का गदा इतनी ज़ोर से घूम सकता था कि टायरानोसॉरस रेक्स की हड्डियाँ चकनाचूर हो जाएँ।',
     colorClass: 'from-yellow-600 to-amber-700',
   },
   {
@@ -1003,6 +1079,7 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     nameJa: 'プテラノドン',
     nameKo: '프테라노돈',
     nameKk: 'Птеранодон',
+    nameHi: 'टेरानोडॉन',
     emoji: '🦅',
     imageSlug: 'pteranodon',
     traits: { dominant: 3, social: 3, curious: 8, cautious: 4, agile: 9, peaceful: 3 },
@@ -1016,6 +1093,7 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     titleJa: '自由奔放な探検家',
     titleKo: '자유로운 탐험가',
     titleKk: 'Еркін Тыныстаушы Зерттеуші',
+    titleHi: 'स्वछंद खोजी',
     description: 'You soar above the ordinary, driven by curiosity and a love of freedom. You see the big picture when others are lost in details, and you\'re always the first to spot new opportunities on the horizon.',
     descriptionRu: 'Ты паришь выше обычного, движимый любопытством и любовью к свободе. Ты видишь общую картину, когда другие теряются в деталях, и всегда первым замечаешь новые возможности на горизонте.',
     descriptionEs: 'Vuelas por encima de lo ordinario, impulsado por la curiosidad y el amor a la libertad. Ves el panorama general cuando otros se pierden en los detalles, y siempre eres el primero en detectar nuevas oportunidades en el horizonte.',
@@ -1026,6 +1104,7 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     descriptionJa: 'あなたは好奇心と自由への愛に駆られて、平凡なものを超越して舞い上がります。他の人が細部に迷い込む中、あなたは全体像を見渡し、常に誰よりも早く地平線上の新しいチャンスを見つけます。',
     descriptionKo: '당신은 호기심과 자유에 대한 사랑으로 평범함을 초월해 날아오릅니다. 다른 사람들이 세부 사항에 빠져 있을 때 큰 그림을 보며, 항상 지평선 너머의 새로운 기회를 가장 먼저 발견합니다.',
     descriptionKk: 'Сен қызығушылық пен бостандыққа деген сүйіспеншілікпен қарапайымды аттап ұшасың. Басқалар бөлшектерге батып қалғанда, сен жалпы бейнені көресің және горизонтта жаңа мүмкіндіктерді барлығынан бұрын байқайсың.',
+    descriptionHi: 'आप साधारण से ऊपर उड़ते हैं, जिज्ञासा और स्वतंत्रता के प्रेम से प्रेरित। जब दूसरे विवरणों में खो जाते हैं, आप बड़ा चित्र देखते हैं, और क्षितिज पर नए अवसरों को सबसे पहले पहचानते हैं।',
     funFact: 'Pteranodon had a wingspan of up to 7 metres but weighed less than 25 kg — lighter than a large dog!',
     funFactRu: 'Размах крыльев птеранодона достигал 7 метров, но весил он менее 25 кг — легче крупной собаки!',
     funFactEs: '¡El pteranodón tenía una envergadura de hasta 7 metros pero pesaba menos de 25 kg — más ligero que un perro grande!',
@@ -1036,6 +1115,7 @@ export const dinosaurPersonalities: DinosaurPersonality[] = [
     funFactJa: 'プテラノドンの翼幅は最大7メートルでしたが、体重は25kg未満 — 大型犬よりも軽かったのです！',
     funFactKo: '프테라노돈의 날개 폭은 최대 7미터였지만 무게는 25킬로그램 미만이었습니다 — 대형 개보다도 가벼웠습니다!',
     funFactKk: 'Птеранодонның қанат ені 7 метрге дейін жетті, бірақ салмағы 25 кг-дан аз болды — ірі итке қарағанда жеңіл!',
+    funFactHi: 'टेरानोडॉन के पंखों का फैलाव 7 मीटर तक था, लेकिन वज़न 25 किलो से भी कम था — एक बड़े कुत्ते से हल्का!',
     colorClass: 'from-violet-500 to-purple-700',
   },
 ]

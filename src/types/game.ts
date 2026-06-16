@@ -15,6 +15,7 @@ export interface GameDefinition {
   titleZh: string
   titleKo: string
   titleKk?: string
+  titleHi?: string
   description: string
   descriptionRu: string
   descriptionEs: string
@@ -25,6 +26,7 @@ export interface GameDefinition {
   descriptionZh: string
   descriptionKo: string
   descriptionKk?: string
+  descriptionHi?: string
   thumbnail?: string
   route: RouteLocationRaw
   difficulty: 'easy' | 'medium' | 'hard'

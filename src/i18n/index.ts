@@ -9,8 +9,9 @@ import ja from '@/locales/ja'
 import zh from '@/locales/zh'
 import ko from '@/locales/ko'
 import kk from '@/locales/kk'
+import hi from '@/locales/hi'
 
-const SUPPORTED = ['en', 'ru', 'es', 'de', 'fr', 'it', 'ja', 'zh', 'ko', 'kk']
+const SUPPORTED = ['en', 'ru', 'es', 'de', 'fr', 'it', 'ja', 'zh', 'ko', 'kk', 'hi']
 const LOCALE_CHOSEN_KEY = 'dino-locale-chosen'
 const LOCALE_STORAGE_KEY = 'dino-locale'
 
@@ -29,7 +30,7 @@ const i18n = createI18n({
   legacy: false,
   locale: getInitialLocale(),
   fallbackLocale: 'en',
-  messages: { en, ru, es, de, fr, it, ja, zh, ko, kk },
+  messages: { en, ru, es, de, fr, it, ja, zh, ko, kk, hi },
 })
 
 export default i18n

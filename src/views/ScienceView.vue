@@ -14,7 +14,8 @@ const { t, tm, locale } = useI18n()
 const { localRoute } = useLocale()
 const modeStore = useModeStore()
 
-function pickLocale<T>(en: T, ru: T, es: T, de: T, fr: T, it: T, ja: T, zh: T, ko: T, kk: T): T {
+function pickLocale<T>(en: T, ru: T, es: T, de: T, fr: T, it: T, ja: T, zh: T, ko: T, kk: T, hi: T): T {
+  if (locale.value === 'hi') return hi
   if (locale.value === 'kk') return kk
   if (locale.value === 'ko') return ko
   if (locale.value === 'zh') return zh
@@ -62,7 +63,7 @@ const explainers = computed(() => {
           <div class="aspect-[2/1] overflow-hidden">
             <BaseLazyImage
               :src="article.image"
-              :alt="pickLocale(article.title, article.titleRu, article.titleEs, article.titleDe, article.titleFr, article.titleIt, article.titleJa, article.titleZh, article.titleKo, article.titleKk)"
+              :alt="pickLocale(article.title, article.titleRu, article.titleEs, article.titleDe, article.titleFr, article.titleIt, article.titleJa, article.titleZh, article.titleKo, article.titleKk, article.titleHi)"
               :srcset="`${article.image} 960w`"
               sizes="(max-width: 1024px) 100vw, 33vw"
               class="w-full h-full group-hover:scale-105 transition-transform duration-500"
@@ -70,10 +71,10 @@ const explainers = computed(() => {
           </div>
           <div class="p-5">
             <span class="px-2 py-0.5 text-[10px] font-semibold rounded-full bg-[rgba(45,122,140,0.12)] text-[var(--color-info)]">
-              {{ pickLocale(article.category, article.categoryRu, article.categoryEs, article.categoryDe, article.categoryFr, article.categoryIt, article.categoryJa, article.categoryZh, article.categoryKo, article.categoryKk) }}
+              {{ pickLocale(article.category, article.categoryRu, article.categoryEs, article.categoryDe, article.categoryFr, article.categoryIt, article.categoryJa, article.categoryZh, article.categoryKo, article.categoryKk, article.categoryHi) }}
             </span>
-            <h3 class="text-heading-md mt-2 mb-2">{{ pickLocale(article.title, article.titleRu, article.titleEs, article.titleDe, article.titleFr, article.titleIt, article.titleJa, article.titleZh, article.titleKo, article.titleKk) }}</h3>
-            <p class="text-body-sm mb-3">{{ pickLocale(article.summary, article.summaryRu, article.summaryEs, article.summaryDe, article.summaryFr, article.summaryIt, article.summaryJa, article.summaryZh, article.summaryKo, article.summaryKk) }}</p>
+            <h3 class="text-heading-md mt-2 mb-2">{{ pickLocale(article.title, article.titleRu, article.titleEs, article.titleDe, article.titleFr, article.titleIt, article.titleJa, article.titleZh, article.titleKo, article.titleKk, article.titleHi) }}</h3>
+            <p class="text-body-sm mb-3">{{ pickLocale(article.summary, article.summaryRu, article.summaryEs, article.summaryDe, article.summaryFr, article.summaryIt, article.summaryJa, article.summaryZh, article.summaryKo, article.summaryKk, article.summaryHi) }}</p>
           </div>
         </router-link>
       </div>
@@ -93,14 +94,14 @@ const explainers = computed(() => {
             class="myth-inner w-full text-left"
             :class="{ flipped: flippedCards.has(myth.id) }"
             :aria-pressed="flippedCards.has(myth.id)"
-            :aria-label="`${t('ui.science.fact')}: ${pickLocale(myth.fact, myth.factRu, myth.factEs, myth.factDe, myth.factFr, myth.factIt, myth.factJa, myth.factZh, myth.factKo, myth.factKk)} — ${t('ui.science.clickToReveal').replace(' →', '')}`"
+            :aria-label="`${t('ui.science.fact')}: ${pickLocale(myth.fact, myth.factRu, myth.factEs, myth.factDe, myth.factFr, myth.factIt, myth.factJa, myth.factZh, myth.factKo, myth.factKk, myth.factHi)} — ${t('ui.science.clickToReveal').replace(' →', '')}`"
             @click="toggleCard(myth.id)"
           >
             <div class="myth-front bg-[var(--color-bg-elevated)] border border-[var(--glass-border)] rounded-[var(--radius-lg)] p-5 flex items-start gap-3">
               <span class="text-2xl shrink-0" aria-hidden="true">❓</span>
               <div>
                 <div class="text-xs font-semibold text-[var(--color-error)] mb-1">{{ t('ui.science.myth') }}</div>
-                <p class="text-sm text-[var(--color-text-primary)]">{{ pickLocale(myth.myth, myth.mythRu, myth.mythEs, myth.mythDe, myth.mythFr, myth.mythIt, myth.mythJa, myth.mythZh, myth.mythKo, myth.mythKk) }}</p>
+                <p class="text-sm text-[var(--color-text-primary)]">{{ pickLocale(myth.myth, myth.mythRu, myth.mythEs, myth.mythDe, myth.mythFr, myth.mythIt, myth.mythJa, myth.mythZh, myth.mythKo, myth.mythKk, myth.mythHi) }}</p>
                 <p class="text-xs text-[var(--color-text-tertiary)] mt-2">{{ t('ui.science.clickToReveal') }}</p>
               </div>
             </div>
@@ -108,7 +109,7 @@ const explainers = computed(() => {
               <span class="text-2xl shrink-0">✅</span>
               <div>
                 <div class="text-xs font-semibold text-[var(--color-success)] mb-1">{{ t('ui.science.fact') }}</div>
-                <p class="text-sm text-[var(--color-text-primary)]">{{ pickLocale(myth.fact, myth.factRu, myth.factEs, myth.factDe, myth.factFr, myth.factIt, myth.factJa, myth.factZh, myth.factKo, myth.factKk) }}</p>
+                <p class="text-sm text-[var(--color-text-primary)]">{{ pickLocale(myth.fact, myth.factRu, myth.factEs, myth.factDe, myth.factFr, myth.factIt, myth.factJa, myth.factZh, myth.factKo, myth.factKk, myth.factHi) }}</p>
               </div>
             </div>
           </button>

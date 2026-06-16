@@ -40,6 +40,7 @@ const currentQ = computed<PersonalityQuestion>(() => personalityQuestions[curren
 const currentShuffleOrder = computed(() => shuffleOrders.value[currentIdx.value])
 
 function localizedQuestion(q: PersonalityQuestion): string {
+  if (locale.value === 'hi') return q.questionHi
   if (locale.value === 'kk') return q.questionKk
   if (locale.value === 'ko') return q.questionKo
   if (locale.value === 'zh') return q.questionZh
@@ -55,6 +56,7 @@ function localizedQuestion(q: PersonalityQuestion): string {
 function localizedOption(q: PersonalityQuestion, idx: number): string {
   const opt = q.options[idx]
   if (!opt) return ''
+  if (locale.value === 'hi') return opt.textHi
   if (locale.value === 'kk') return opt.textKk
   if (locale.value === 'ko') return opt.textKo
   if (locale.value === 'zh') return opt.textZh
@@ -68,6 +70,7 @@ function localizedOption(q: PersonalityQuestion, idx: number): string {
 }
 
 function localizedTitle(d: DinosaurPersonality): string {
+  if (locale.value === 'hi') return d.titleHi
   if (locale.value === 'kk') return d.titleKk
   if (locale.value === 'ko') return d.titleKo
   if (locale.value === 'zh') return d.titleZh
@@ -81,6 +84,7 @@ function localizedTitle(d: DinosaurPersonality): string {
 }
 
 function localizedDescription(d: DinosaurPersonality): string {
+  if (locale.value === 'hi') return d.descriptionHi
   if (locale.value === 'kk') return d.descriptionKk
   if (locale.value === 'ko') return d.descriptionKo
   if (locale.value === 'zh') return d.descriptionZh
@@ -94,6 +98,7 @@ function localizedDescription(d: DinosaurPersonality): string {
 }
 
 function localizedFunFact(d: DinosaurPersonality): string {
+  if (locale.value === 'hi') return d.funFactHi
   if (locale.value === 'kk') return d.funFactKk
   if (locale.value === 'ko') return d.funFactKo
   if (locale.value === 'zh') return d.funFactZh
@@ -107,6 +112,7 @@ function localizedFunFact(d: DinosaurPersonality): string {
 }
 
 function localizedName(d: DinosaurPersonality): string {
+  if (locale.value === 'hi') return d.nameHi
   if (locale.value === 'kk') return d.nameKk
   if (locale.value === 'ko') return d.nameKo
   if (locale.value === 'zh') return d.nameZh

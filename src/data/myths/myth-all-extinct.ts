@@ -12,6 +12,7 @@ export const MythAllExtinct: MythVsFact = {
     mythZh: '所有恐龙都在6600万年前灭绝了。',
     mythKo: '모든 공룡은 6600만년 전에 멸종했다.',
     mythKk: 'Барлық динозаврлар 66 миллион жыл бұрын жойылып кетті.',
+    mythHi: '66 लाख वर्ष पहले सभी डायनासोर विलुप्त हो गए।',
     fact: 'One group of dinosaurs survived: birds. There are about 10,000 species of living dinosaurs (birds) today — more than the number of mammal species!',
     factDe: 'Eine Gruppe der Dinosaurier hat überlebt: die Vögel. Es gibt heute etwa 10.000 Arten lebender Dinosaurier (Vögel) — mehr als die Anzahl der Säugetierarten!',
     factFr: 'Un groupe de dinosaures a survécu : les oiseaux. Il existe aujourd\'hui environ 10 000 espèces de dinosaures vivants (les oiseaux) — soit plus que le nombre d\'espèces de mammifères !',
@@ -22,5 +23,6 @@ export const MythAllExtinct: MythVsFact = {
     factZh: '有一类恐龙存活了下来：鸟类。今天大约有10,000种活着的恐龙（鸟类）——比哺乳动物的种类还要多！',
     factKo: '공룡의 한 그룹이 살아남았습니다: 바로 조류입니다. 오늘날 약 10,000종의 살아있는 공룡(조류)이 존재하며, 이는 포유류 종의 수보다 많습니다!',
     factKk: 'Динозаврлардың бір тобы аман қалды: құстар. Бүгінде тірі динозаврлардың (құстардың) шамамен 10 000 түрі бар — бұл сүтқоректілер түрлерінің санынан да көп!',
+    factHi: 'वास्तव में डायनासोरों का एक समूह बच गया: पक्षी। आज जीवित डायनासोरों (पक्षियों) की लगभग 10,000 प्रजातियाँ हैं — जो स्तनधारियों की प्रजातियों से भी अधिक हैं!',
     category: 'evolution',
   }

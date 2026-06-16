@@ -23,6 +23,7 @@ const CATEGORY_MAP: Record<Exclude<GameCategory, 'all'>, (g: GameDefinition) => 
 const activeCategory = ref<GameCategory>('all')
 
 function gameTitle(g: GameDefinition) {
+  if (locale.value === 'hi') return g.titleHi ?? g.title
   if (locale.value === 'kk') return g.titleKk ?? g.title
   if (locale.value === 'ko') return g.titleKo
   if (locale.value === 'zh') return g.titleZh
@@ -35,6 +36,7 @@ function gameTitle(g: GameDefinition) {
   return g.title
 }
 function gameDesc(g: GameDefinition) {
+  if (locale.value === 'hi') return g.descriptionHi ?? g.description
   if (locale.value === 'kk') return g.descriptionKk ?? g.description
   if (locale.value === 'ko') return g.descriptionKo
   if (locale.value === 'zh') return g.descriptionZh

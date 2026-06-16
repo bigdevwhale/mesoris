@@ -12,6 +12,7 @@ export const MythVelociraptorSize: MythVsFact = {
     mythZh: '伶盗龙（迅猛龙）像《侏罗纪公园》里那样是人类大小的群体猎手。',
     mythKo: '벨로키랍토르는 영화 쥬라기 공원에서처럼 인간 크기의 무리 사냥꾼이었다.',
     mythKk: 'Велоцираптор «Юра дәуірі саябағындағыдай» адам өлшеміндегі топпен аң аулайтын жыртқыш болған.',
+    mythHi: 'वेलोसिरैप्टर «जुरासिक पार्क» की तरह मानव-आकार के झुंड में शिकार करने वाले थे।',
     fact: 'Real Velociraptors were the size of turkeys. The movie "raptors" were based on Deinonychus, a much larger relative discovered later.',
     factDe: 'Echte Velociraptoren hatten die Größe von Truthähnen. Die „Raptoren" im Film basierten auf Deinonychus, einem viel größeren Verwandten.',
     factFr: 'Les vrais vélociraptors avaient la taille d\'une dinde. Les « raptors » du film étaient basés sur le Deinonychus, un parent bien plus grand découvert plus tard.',
@@ -22,6 +23,7 @@ export const MythVelociraptorSize: MythVsFact = {
     factZh: '真正的伶盗龙只有火鸡大小。电影中的"迅猛龙"是基于后来发现的更大的近亲——恐爪龙。',
     factKo: '실제 벨로키랍토르는 칠면조 크기였습니다. 영화 속 "랍토르"는 나중에 발견된 훨씬 더 큰 친척인 데이노니쿠스를 기반으로 했습니다.',
     factKk: 'Нағыз велоцирапторлар күркетауықтай ғана болған. Фильмдегі «рапторлар» кейінірек табылған әлдеқайда ірі туысы — дейнонихқа негізделген.',
+    factHi: 'वास्तव में असली वेलोसिरैप्टर केवल टर्की के आकार के थे। फिल्म के «रैप्टर» बाद में खोजे गए एक बहुत बड़े रिश्तेदार डायनोनिकस पर आधारित थे।',
     category: 'biology',
     dinosaurId: 'velociraptor',
   }
