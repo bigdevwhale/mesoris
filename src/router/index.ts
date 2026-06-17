@@ -160,6 +160,18 @@ const routes: RouteRecordRaw[] = [
     path: '/:locale',
     children: childRoutes,
   },
+  {
+    // QR landing — outside the locale prefix so it works regardless of
+    // the visitor's preferred language. The view lets the user pick one.
+    path: '/qr',
+    name: 'qr',
+    component: () => import('@/views/QrLandingView.vue'),
+  },
+  {
+    path: '/qr/:slug',
+    name: 'qr-slug',
+    component: () => import('@/views/QrLandingView.vue'),
+  },
 ]
 
 const router = createRouter({
@@ -171,6 +183,11 @@ const router = createRouter({
 })
 
 router.beforeEach((to, _from, next) => {
+  // QR landing is locale-agnostic by design — never auto-prefix it.
+  if (to.path === '/qr' || to.path.startsWith('/qr/')) {
+    return next()
+  }
+
   const match = to.path.match(LOCALE_PREFIX_RE)
 
   if (!match) {
