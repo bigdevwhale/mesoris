@@ -17,7 +17,7 @@ export const Pteranodon: Dinosaur = {
     livedIn: ['North America'],
     periodRangeMya: [86, 84],
     dimensions: { lengthMeters: 2.0, heightMeters: 1.8, weightKg: 25, speedKmh: 55 },
-    images: img('pteranodon'),
+    images: { ...img('pteranodon'), video: '/videos/dinosaurs/pteranodon/video.mp4' },
     facts: [
       { label: 'Wingspan', value: '7 meters', icon: 'bird', description: 'A wingspan wider than a small plane — nearly the width of a tennis court.' },
       { label: 'Weight', value: 'Only 25 kg', icon: 'feather', description: 'Incredibly lightweight for its size — hollow bones like a modern bird.' },

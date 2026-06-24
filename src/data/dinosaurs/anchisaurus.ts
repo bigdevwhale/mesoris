@@ -7,7 +7,7 @@ export const Anchisaurus: Dinosaur = {
   era: 'jurassic', diet: 'herbivore', category: 'herbivore', size: 'small', habitat: 'forest',
   livedIn: ['North America'], periodRangeMya: [200, 188],
   dimensions: { lengthMeters: 2.1, heightMeters: 0.7, weightKg: 27, speedKmh: 20 },
-  images: img('anchisaurus'),
+  images: { ...img('anchisaurus'), video: '/videos/dinosaurs/anchisaurus/video.mp4' },
   facts: [
     { label: 'Discovery', value: '1818 find', icon: 'star', description: 'Anchisaurus bones were found in Connecticut in 1818 — among the very first dinosaur remains discovered in North America, though initially mistaken for human fossils.' },
     { label: 'Locomotion', value: 'Bi/quadrupedal', icon: 'arrow-up', description: 'Anchisaurus could walk on two legs or drop to all fours, making it one of the most versatile early dinosaurs in terms of movement.' },

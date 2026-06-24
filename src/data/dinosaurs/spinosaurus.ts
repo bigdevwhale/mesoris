@@ -17,7 +17,7 @@ export const Spinosaurus: Dinosaur = {
     livedIn: ['North Africa'],
     periodRangeMya: [99, 93],
     dimensions: { lengthMeters: 15.0, heightMeters: 5.5, weightKg: 7500, speedKmh: 25 },
-    images: img('spinosaurus'),
+    images: { ...img('spinosaurus'), video: '/videos/dinosaurs/spinosaurus/video.mp4' },
     facts: [
       { label: 'Sail', value: '2 meters tall', icon: 'sailboat', description: 'A massive sail of skin stretched over 2-meter-long neural spines on its back.' },
       { label: 'Lifestyle', value: 'Semi-aquatic', icon: 'waves', description: 'The only known aquatic dinosaur — it swam and hunted giant fish in rivers.' },

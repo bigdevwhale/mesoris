@@ -17,7 +17,7 @@ export const TyrannosaurusRex: Dinosaur = {
     livedIn: ['North America'],
     periodRangeMya: [68, 66],
     dimensions: { lengthMeters: 12.3, heightMeters: 4.0, weightKg: 8000, speedKmh: 27 },
-    images: img('tyrannosaurus-rex'),
+    images: { ...img('tyrannosaurus-rex'), video: '/videos/dinosaurs/tyrannosaurus-rex/video.mp4' },
     facts: [
       { label: 'Bite Force', value: '12,800 lbs', icon: 'zap', description: 'The strongest bite of any land animal ever — enough to crush a car.' },
       { label: 'Teeth', value: '60 teeth', icon: 'triangle-alert', description: 'Each tooth was the size of a banana, serrated like a steak knife.' },

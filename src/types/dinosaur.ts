@@ -16,6 +16,10 @@ export interface DinosaurImages {
   card: string
   gallery: string[]
   skeleton?: string
+  /** Optional autoplay-muted loop video shown in the detail modal */
+  video?: string
+  /** Lightweight animated GIF used as a preview in grid cards. */
+  previewGif?: string
 }
 
 export interface Discovery {

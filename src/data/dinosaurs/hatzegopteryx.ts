@@ -7,7 +7,7 @@ export const Hatzegopteryx: Dinosaur = {
   era: 'cretaceous', diet: 'carnivore', category: 'flying-reptile', size: 'gigantic', habitat: 'coastal',
   livedIn: ['Europe'], periodRangeMya: [66, 66],
   dimensions: { lengthMeters: 10.0, heightMeters: 4.5, weightKg: 250, speedKmh: 60 },
-  images: img('hatzegopteryx'),
+  images: { ...img('hatzegopteryx'), video: '/videos/dinosaurs/hatzegopteryx/video.mp4' },
   facts: [
     { label: 'Wingspan', value: '10–12 m', icon: 'plane', description: 'An estimated wingspan of 10–12 metres — possibly the largest pterosaur of all.' },
     { label: 'Skull', value: 'Sturdy and wide', icon: 'shield', description: 'A massive, robust skull 2.5–3 metres long — built with internal spongy struts to handle impact stress.' },

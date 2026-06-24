@@ -67,6 +67,7 @@ watch(() => props.isOpen, (open) => {
           <div class="aspect-[4/3] rounded-[var(--radius-md)] overflow-hidden mb-4">
             <DinoCardImage
               :dino="dino"
+              variant="hero"
               aspect-ratio="4/3"
               :priority="true"
               class="w-full h-full"

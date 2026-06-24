@@ -7,7 +7,7 @@ export const Elasmosaurus: Dinosaur = {
     era: 'cretaceous', diet: 'carnivore', category: 'marine-reptile', size: 'large', habitat: 'ocean',
     livedIn: ['North America'], periodRangeMya: [80, 80],
     dimensions: { lengthMeters: 14.0, heightMeters: 1.5, weightKg: 2000, speedKmh: 25 },
-    images: img('elasmosaurus'),
+    images: { ...img('elasmosaurus'), video: '/videos/dinosaurs/elasmosaurus/video.mp4' },
     facts: [
       { label: 'Neck', value: 'Half its body', icon: 'ruler', description: 'Its neck was 7 meters — half its total length — with an incredible 72 vertebrae.' },
       { label: 'Head', value: 'Tiny', icon: 'minus', description: 'Had a surprisingly tiny head at the end of its enormous neck — like a snake.' },

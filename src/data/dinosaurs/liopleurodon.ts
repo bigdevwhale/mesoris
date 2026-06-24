@@ -17,7 +17,7 @@ export const Liopleurodon: Dinosaur = {
     livedIn: ['Europe'],
     periodRangeMya: [166, 155],
     dimensions: { lengthMeters: 7.0, heightMeters: 1.5, weightKg: 1700, speedKmh: 35 },
-    images: img('liopleurodon'),
+    images: { ...img('liopleurodon'), video: '/videos/dinosaurs/liopleurodon/video.mp4' },
     facts: [
       { label: 'Predator', value: 'Short-necked pliosaur', icon: 'anchor', description: 'Liopleurodon belonged to the pliosaur branch of plesiosaurs — big-headed ambush hunters with powerful flippers.' },
       { label: 'Skull', value: 'About 1.5 meters', icon: 'skull', description: 'Its skull was huge for its body size, packed with conical teeth for seizing fish and marine reptiles.' },

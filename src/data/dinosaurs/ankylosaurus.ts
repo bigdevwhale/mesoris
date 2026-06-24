@@ -17,7 +17,7 @@ export const Ankylosaurus: Dinosaur = {
     livedIn: ['North America'],
     periodRangeMya: [68, 66],
     dimensions: { lengthMeters: 8.0, heightMeters: 1.7, weightKg: 6000, speedKmh: 10 },
-    images: img('ankylosaurus'),
+    images: { ...img('ankylosaurus'), video: '/videos/dinosaurs/ankylosaurus/video.mp4' },
     facts: [
       { label: 'Armor', value: 'Bony plates', icon: 'shield-check', description: 'Thick bony plates and knobs covered its back — like a living tank.' },
       { label: 'Tail Club', value: '50 kg', icon: 'hammer', description: 'A massive bony club at the end of its tail — strong enough to shatter T. rex bones.' },

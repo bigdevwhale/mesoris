@@ -17,7 +17,7 @@ export const Triceratops: Dinosaur = {
     livedIn: ['North America'],
     periodRangeMya: [68, 66],
     dimensions: { lengthMeters: 8.0, heightMeters: 2.9, weightKg: 6000, speedKmh: 32 },
-    images: img('triceratops'),
+    images: { ...img('triceratops'), video: '/videos/dinosaurs/triceratops/video.mp4' },
     facts: [
       { label: 'Frill', value: '2 meters wide', icon: 'shield', description: 'A massive bony shield behind the head — for defense, display, and temperature control.' },
       { label: 'Horns', value: '3 total', icon: 'triangle', description: 'Two brow horns over 1 meter long, plus a smaller nose horn.' },

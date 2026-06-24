@@ -7,7 +7,7 @@ export const Anchiornis: Dinosaur = {
   era: 'jurassic', diet: 'carnivore', category: 'carnivore', size: 'small', habitat: 'forest',
   livedIn: ['China'], periodRangeMya: [161, 160],
   dimensions: { lengthMeters: 0.4, heightMeters: 0.18, weightKg: 0.2, speedKmh: 25 },
-  images: img('anchiornis'),
+  images: { ...img('anchiornis'), video: '/videos/dinosaurs/anchiornis/video.mp4' },
   facts: [
     { label: 'Color', value: 'First known color', icon: 'award', description: 'The first Mesozoic dinosaur for which true colors were reconstructed — black and white wings with a rusty crown.' },
     { label: 'Wings', value: 'Four-winged', icon: 'feather', description: 'Long pennaceous feathers on both arms and legs — a four-winged body plan like Microraptor.' },

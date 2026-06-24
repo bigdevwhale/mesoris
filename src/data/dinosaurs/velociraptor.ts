@@ -17,7 +17,7 @@ export const Velociraptor: Dinosaur = {
     livedIn: ['Mongolia', 'China'],
     periodRangeMya: [75, 71],
     dimensions: { lengthMeters: 2.0, heightMeters: 0.5, weightKg: 15, speedKmh: 40 },
-    images: img('velociraptor'),
+    images: { ...img('velociraptor'), video: '/videos/dinosaurs/velociraptor/video.mp4' },
     facts: [
       { label: 'Claw', value: '6.5 cm', icon: 'sickle', description: 'A retractable, sickle-shaped killing claw on each foot — kept razor sharp.' },
       { label: 'Feathers', value: 'Fully feathered', icon: 'feather', description: 'Had a full coat of feathers like a bird, confirmed by quill knobs on fossil bones.' },

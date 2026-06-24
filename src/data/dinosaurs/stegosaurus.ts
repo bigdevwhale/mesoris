@@ -17,7 +17,7 @@ export const Stegosaurus: Dinosaur = {
     livedIn: ['North America'],
     periodRangeMya: [155, 150],
     dimensions: { lengthMeters: 9.0, heightMeters: 2.7, weightKg: 3500, speedKmh: 10 },
-    images: img('stegosaurus'),
+    images: { ...img('stegosaurus'), video: '/videos/dinosaurs/stegosaurus/video.mp4' },
     facts: [
       { label: 'Plates', value: '17 plates', icon: 'layers', description: 'Large, diamond-shaped bony plates along its back — likely for display and temperature control.' },
       { label: 'Tail Spikes', value: '4 spikes', icon: 'swords', description: 'A deadly weapon called a "thagomizer" — each spike up to 1 meter long.' },

@@ -17,7 +17,7 @@ export const Albertosaurus: Dinosaur = {
     livedIn: ['North America'],
     periodRangeMya: [71, 68],
     dimensions: { lengthMeters: 9.0, heightMeters: 3.2, weightKg: 2500, speedKmh: 45 },
-    images: img('albertosaurus'),
+    images: { ...img('albertosaurus'), video: '/videos/dinosaurs/albertosaurus/video.mp4' },
     facts: [
       { label: 'Bonebed', value: '20+ individuals', icon: 'users', description: 'A famous Alberta bonebed preserves many animals together, suggesting social behavior or at least group feeding.' },
       { label: 'Build', value: 'Lighter tyrannosaur', icon: 'zap', description: 'Albertosaurus was slimmer and likely faster than the heavier, later Tyrannosaurus rex.' },

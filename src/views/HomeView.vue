@@ -23,8 +23,13 @@ const popularDinos = dinosaurs.filter(d => popularDinoIds.includes(d.id))
 const { translateDino } = useDinoTranslator()
 const translatedPopularDinos = computed(() => popularDinos.map(translateDino))
 
+const featuredDinos = dinosaurs.filter(d => d.images?.previewGif && d.images?.video)
+
 function pickRandomDino() {
-  return dinosaurs[Math.floor(Math.random() * dinosaurs.length)]
+  // Pick from the subset that has both a video (for the modal) and a GIF
+  // preview (for the card thumbnail). Without both, the hero variant would
+  // show a static still — defeating the point of the featured specimen.
+  return featuredDinos[Math.floor(Math.random() * featuredDinos.length)]
 }
 const featuredDino = ref(pickRandomDino())
 
@@ -141,7 +146,7 @@ onMounted(() => {
             </div>
           </div>
 
-          <FeaturedSpecimen :dinosaur="featuredDino" />
+          <FeaturedSpecimen v-if="featuredDino" :dinosaur="featuredDino" />
         </div>
 
         <!-- Scroll indicator -->

@@ -133,6 +133,8 @@ export default {
     ttsPlay: 'Read aloud',
     ttsStop: 'Stop reading',
     ttsFact: 'Fact {n}',
+    videoUnmute: 'Unmute video',
+    videoMute: 'Mute video',
     noDinosFound: 'No dinosaurs found',
     adjustFilters: 'Try adjusting your filters or search query.',
     dimensionsText: '{length}m long, {height}m tall',

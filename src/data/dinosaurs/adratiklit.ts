@@ -7,7 +7,7 @@ export const Adratiklit: Dinosaur = {
   era: 'jurassic', diet: 'herbivore', category: 'herbivore', size: 'medium', habitat: 'plains',
   livedIn: ['Africa'], periodRangeMya: [168, 164],
   dimensions: { lengthMeters: 5.5, heightMeters: 1.8, weightKg: 1500, speedKmh: 10 },
-  images: img('adratiklit'),
+  images: { ...img('adratiklit'), video: '/videos/dinosaurs/adratiklit/video.mp4' },
   facts: [
     { label: 'Oldest', value: 'Oldest known stegosaur', icon: 'clock', description: 'The oldest definitive stegosaur ever found — pushing the origin of the group back to the Middle Jurassic.' },
     { label: 'Origin', value: 'Morocco', icon: 'map-pin', description: 'Discovered in the Middle Atlas Mountains of Morocco — the first stegosaur ever named from North Africa.' },

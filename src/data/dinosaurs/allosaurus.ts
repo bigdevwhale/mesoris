@@ -17,7 +17,7 @@ export const Allosaurus: Dinosaur = {
     livedIn: ['North America', 'Europe'],
     periodRangeMya: [155, 150],
     dimensions: { lengthMeters: 12.0, heightMeters: 3.0, weightKg: 4000, speedKmh: 45 },
-    images: img('allosaurus'),
+    images: { ...img('allosaurus'), video: '/videos/dinosaurs/allosaurus/video.mp4' },
     facts: [
       { label: 'Hunting', value: 'Pack attacks', icon: 'swords', description: 'Evidence suggests they hunted in groups, attacking prey much larger than themselves.' },
       { label: 'Jaw', value: 'Flexible skull', icon: 'bone', description: 'Could open its jaws incredibly wide to deliver devastating top-down strikes.' },

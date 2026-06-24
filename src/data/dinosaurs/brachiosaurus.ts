@@ -17,7 +17,7 @@ export const Brachiosaurus: Dinosaur = {
     livedIn: ['North America', 'Africa'],
     periodRangeMya: [154, 150],
     dimensions: { lengthMeters: 26.0, heightMeters: 13.0, weightKg: 56000, speedKmh: 20 },
-    images: img('brachiosaurus'),
+    images: { ...img('brachiosaurus'), video: '/videos/dinosaurs/brachiosaurus/video.mp4' },
     facts: [
       { label: 'Neck', value: '9 meters', icon: 'arrow-up', description: 'A giraffe-like neck that could reach treetops 13 meters high — the height of a 4-story building.' },
       { label: 'Front Legs', value: 'Longer than hind', icon: 'move-up', description: 'Uniquely, its front legs were longer than its back legs — giving it that iconic sloping posture.' },

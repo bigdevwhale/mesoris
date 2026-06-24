@@ -17,7 +17,7 @@ export const Amargasaurus: Dinosaur = {
     livedIn: ['South America'],
     periodRangeMya: [129, 122],
     dimensions: { lengthMeters: 10.0, heightMeters: 3.3, weightKg: 2600, speedKmh: 15 },
-    images: img('amargasaurus'),
+    images: { ...img('amargasaurus'), video: '/videos/dinosaurs/amargasaurus/video.mp4' },
     facts: [
       { label: 'Neck spines', value: 'Up to 60 cm', icon: 'triangle', description: 'Its neck vertebrae carried paired spines so tall they may have supported a display structure or defensive keratin sheath.' },
       { label: 'Sauropod', value: 'Compact giant', icon: 'maximize', description: 'Unlike massive titanosaurs, Amargasaurus was a relatively short-necked sauropod built low and sturdy.' },

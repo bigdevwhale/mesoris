@@ -17,7 +17,7 @@ export const Acrocanthosaurus: Dinosaur = {
     livedIn: ['North America'],
     periodRangeMya: [116, 110],
     dimensions: { lengthMeters: 11.5, heightMeters: 4.0, weightKg: 6200, speedKmh: 30 },
-    images: img('acrocanthosaurus'),
+    images: { ...img('acrocanthosaurus'), video: '/videos/dinosaurs/acrocanthosaurus/video.mp4' },
     facts: [
       { label: 'Spines', value: 'Tall back ridge', icon: 'layers', description: 'Long neural spines over the neck, back, and hips formed a dramatic ridge or low sail.' },
       { label: 'Size', value: '11.5 meters', icon: 'maximize', description: 'It was the top predator of Early Cretaceous North America before tyrannosaurs took over.' },

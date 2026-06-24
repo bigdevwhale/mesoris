@@ -7,7 +7,7 @@ export const Alamosaurus: Dinosaur = {
   era: 'cretaceous', diet: 'herbivore', category: 'herbivore', size: 'gigantic', habitat: 'plains',
   livedIn: ['North America'], periodRangeMya: [73, 66],
   dimensions: { lengthMeters: 30.0, heightMeters: 7.0, weightKg: 73000, speedKmh: 10 },
-  images: img('alamosaurus'),
+  images: { ...img('alamosaurus'), video: '/videos/dinosaurs/alamosaurus/video.mp4' },
   facts: [
     { label: 'Size', value: 'Among the largest ever', icon: 'maximize', description: 'Recent size estimates place Alamosaurus among the very largest dinosaurs that ever lived — comparable to Argentinosaurus — with some specimens suggesting lengths up to 30 metres and masses up to 73,000 kg.' },
     { label: 'Immigration', value: 'South American migrant', icon: 'anchor', description: 'Alamosaurus migrated into North America from South America via Central America — its presence shows the Great American Biotic Interchange beginning in the Cretaceous, long before most such exchanges.' },
