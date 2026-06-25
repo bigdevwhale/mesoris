@@ -4,6 +4,7 @@ import {useRoute, useRouter} from 'vue-router'
 import {useI18n} from 'vue-i18n'
 import {useEncyclopediaStore, type SortOption} from '@/stores/useEncyclopediaStore'
 import type {DinosaurCategory} from '@/types/dinosaur'
+import {dinosaurs} from '@/data/dinosaurs'
 import {useDinoTranslator} from '@/composables/useDinoTranslation'
 import {useLocale} from '@/composables/useLocale'
 import {useModeStore} from '@/stores/useModeStore'
@@ -71,7 +72,10 @@ const translatedPaginatedDinosaurs = computed(() =>
 
 const dinoDetail = computed(() => {
   if (!store.selectedDinoId) return null
-  const dino = store.filteredDinosaurs.find(d => d.id === store.selectedDinoId)
+  // Look up from the full catalog, not filteredDinosaurs — opening a detail
+  // via the top-bar search (which navigates to /encyclopedia/:id) must
+  // work even if the current filter context would otherwise hide the dino.
+  const dino = dinosaurs.find(d => d.id === store.selectedDinoId)
   return dino ? translateDino(dino) : null
 })
 
