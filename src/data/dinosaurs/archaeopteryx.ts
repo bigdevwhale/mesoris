@@ -7,7 +7,7 @@ export const Archaeopteryx: Dinosaur = {
   era: 'jurassic', diet: 'carnivore', category: 'carnivore', size: 'small', habitat: 'forest',
   livedIn: ['Europe'], periodRangeMya: [151, 148],
   dimensions: { lengthMeters: 0.5, heightMeters: 0.25, weightKg: 1, speedKmh: 18 },
-  images: img('archaeopteryx'),
+  images: { ...img('archaeopteryx'), video: '/videos/dinosaurs/archaeopteryx/video.mp4' },
   facts: [
     { label: 'Bridge Fossil', value: 'Dino + bird traits', icon: 'feather', description: 'Archaeopteryx preserved both classic theropod features like teeth and a long bony tail, and bird-like wing feathers, making it a key transition fossil.' },
     { label: 'Famous Discovery', value: '1861 specimen', icon: 'star', description: 'Its first skeleton was announced just two years after Darwin published On the Origin of Species, quickly becoming an icon of evolution.' },

@@ -7,7 +7,7 @@ export const Camptosaurus: Dinosaur = {
   era: 'jurassic', diet: 'herbivore', category: 'herbivore', size: 'large', habitat: 'plains',
   livedIn: ['North America'], periodRangeMya: [155, 145],
   dimensions: { lengthMeters: 7.5, heightMeters: 2.0, weightKg: 875, speedKmh: 22 },
-  images: img('camptosaurus'),
+  images: { ...img('camptosaurus'), video: '/videos/dinosaurs/camptosaurus/video.mp4' },
   facts: [
     { label: 'Locomotion', value: 'Biped or quadruped', icon: 'arrow-up', description: 'Camptosaurus could switch between running on two legs and ambling on all four — a versatile strategy that gave it both speed for escape and stability while feeding.' },
     { label: 'Beak', value: 'Horny beak', icon: 'leaf', description: 'A horny, toothless beak at the front of the snout was used to crop vegetation, while cheek teeth processed the food further back in the jaws — an efficient herbivore system.' },

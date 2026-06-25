@@ -7,7 +7,7 @@ export const Ornithomimus: Dinosaur = {
     era: 'cretaceous', diet: 'omnivore', category: 'omnivore', size: 'medium', habitat: 'plains',
     livedIn: ['North America'], periodRangeMya: [76, 66],
     dimensions: { lengthMeters: 4.0, heightMeters: 1.5, weightKg: 170, speedKmh: 65 },
-    images: img('ornithomimus'),
+    images: { ...img('ornithomimus'), video: '/videos/dinosaurs/ornithomimus/video.mp4' },
     facts: [
       { label: 'Speed', value: 'Up to 65 km/h', icon: 'zap', description: 'Among the fastest dinosaurs ever — the cheetah of the Cretaceous.' },
       { label: 'Feathers', value: 'Confirmed plumage', icon: 'feather', description: 'One of the first non-bird dinosaurs proven to have pennaceous feathers.' },

@@ -7,7 +7,7 @@ export const Protoceratops: Dinosaur = {
     era: 'cretaceous', diet: 'herbivore', category: 'herbivore', size: 'medium', habitat: 'desert',
     livedIn: ['Mongolia', 'China'], periodRangeMya: [75, 71],
     dimensions: { lengthMeters: 2.0, heightMeters: 0.7, weightKg: 180, speedKmh: 25 },
-    images: img('protoceratops'),
+    images: { ...img('protoceratops'), video: '/videos/dinosaurs/protoceratops/video.mp4' },
     facts: [
       { label: 'Famous Fight', value: 'Fighting Dinosaurs', icon: 'swords', description: 'Fossilized locked in combat with a Velociraptor — the most dramatic fossil ever.' },
       { label: 'Eggs', value: 'First dino eggs', icon: 'egg', description: 'The first dinosaur eggs ever discovered belonged to Protoceratops.' },

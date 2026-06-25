@@ -7,7 +7,7 @@ export const Barapasaurus: Dinosaur = {
   era: 'jurassic', diet: 'herbivore', category: 'herbivore', size: 'large', habitat: 'forest',
   livedIn: ['India'], periodRangeMya: [199, 189],
   dimensions: { lengthMeters: 14.0, heightMeters: 4.5, weightKg: 7000, speedKmh: 8 },
-  images: img('barapasaurus'),
+  images: { ...img('barapasaurus'), video: '/videos/dinosaurs/barapasaurus/video.mp4' },
   facts: [
     { label: 'Name', value: 'Big-leg lizard', icon: 'footprints', description: 'Its name means "big leg lizard" — referring to the unusually massive femur bones found in its skeleton.' },
     { label: 'Origin', value: 'Oldest Indian sauropod', icon: 'map-pin', description: 'One of the oldest known sauropods, from the Early Jurassic of central India — a rare Gondwanan giant.' },

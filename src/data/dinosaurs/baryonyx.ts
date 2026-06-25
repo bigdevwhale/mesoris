@@ -7,7 +7,7 @@ export const Baryonyx: Dinosaur = {
     era: 'cretaceous', diet: 'carnivore', category: 'carnivore', size: 'large', habitat: 'swamp',
     livedIn: ['Europe'], periodRangeMya: [130, 125],
     dimensions: { lengthMeters: 10.0, heightMeters: 2.5, weightKg: 2000, speedKmh: 30 },
-    images: img('baryonyx'),
+    images: { ...img('baryonyx'), video: '/videos/dinosaurs/baryonyx/video.mp4' },
     facts: [
       { label: 'Giant Claw', value: '31 cm', icon: 'sickle', description: 'A massive 31 cm thumb claw — one of the largest claws of any dinosaur — for hooking fish.' },
       { label: 'Diet', value: 'Fish-eater', icon: 'fish', description: 'Stomach contents found with fish scales — the first definitive evidence of a dinosaur\'s diet.' },

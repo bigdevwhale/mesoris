@@ -7,7 +7,7 @@ export const Maiasaura: Dinosaur = {
     era: 'cretaceous', diet: 'herbivore', category: 'herbivore', size: 'large', habitat: 'plains',
     livedIn: ['North America'], periodRangeMya: [80, 75],
     dimensions: { lengthMeters: 9.0, heightMeters: 2.3, weightKg: 3000, speedKmh: 35 },
-    images: img('maiasaura'),
+    images: { ...img('maiasaura'), video: '/videos/dinosaurs/maiasaura/video.mp4' },
     facts: [
       { label: 'Parenting', value: 'First evidence', icon: 'baby', description: 'First dinosaur proven to care for its young — nests, eggs, and babies found together.' },
       { label: 'Colony', value: 'Mass nesting', icon: 'home', description: 'Nesting colonies covered acres — thousands of dinosaurs nested together like seabirds.' },

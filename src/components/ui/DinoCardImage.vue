@@ -345,7 +345,13 @@ function onGifError() {
       :class="[
         'absolute inset-0 z-10 w-full h-full object-cover transition-opacity duration-700',
         // Hide the still once the video OR the GIF has loaded.
-        (showVideo && videoLoaded) || gifLoaded ? 'opacity-0' : (imageLoaded ? 'opacity-100' : 'opacity-0'),
+        // In the hero variant the still must also stay visible while the
+        // <video> is mounted but hasn't loaded its first frame yet — that
+        // way the user always sees the dinosaur hero image as a placeholder
+        // before playback starts.
+        (showVideo && videoLoaded) || gifLoaded
+          ? 'opacity-0'
+          : (imageLoaded ? 'opacity-100' : 'opacity-0'),
       ]"
       @load="onLoad"
       @error="onError"
@@ -380,7 +386,7 @@ function onGifError() {
       aria-hidden="true"
       :class="[
         'absolute inset-0 z-20 w-full h-full object-cover transition-opacity duration-700',
-        videoLoaded ? 'opacity-100' : 'opacity-0',
+        videoLoaded ? 'opacity-100' : 'opacity-0 pointer-events-none',
       ]"
       @loadeddata="onVideoLoaded"
       @error="onVideoError"

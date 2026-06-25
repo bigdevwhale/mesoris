@@ -7,7 +7,7 @@ export const Brontosaurus: Dinosaur = {
   era: 'jurassic', diet: 'herbivore', category: 'herbivore', size: 'gigantic', habitat: 'plains',
   livedIn: ['North America'], periodRangeMya: [156, 146],
   dimensions: { lengthMeters: 22.0, heightMeters: 5.5, weightKg: 17000, speedKmh: 12 },
-  images: img('brontosaurus'),
+  images: { ...img('brontosaurus'), video: '/videos/dinosaurs/brontosaurus/video.mp4' },
   facts: [
     { label: 'Comeback', value: 'Reinstated in 2015', icon: 'rotate-cw', description: 'For over a century, Brontosaurus was considered the same animal as Apatosaurus and "invalid". A landmark 2015 study proved it was a genuinely distinct genus — a remarkable scientific resurrection.' },
     { label: 'Size', value: '22 metres long', icon: 'maximize', description: 'At 22 metres and 17 tonnes, Brontosaurus was one of the largest animals to ever walk the Earth — its footsteps would have literally thundered across the Jurassic plains.' },

@@ -17,7 +17,7 @@ export const Argentinosaurus: Dinosaur = {
     livedIn: ['South America'],
     periodRangeMya: [97, 94],
     dimensions: { lengthMeters: 33.0, heightMeters: 16.0, weightKg: 70000, speedKmh: 8 },
-    images: img('argentinosaurus'),
+    images: { ...img('argentinosaurus'), video: '/videos/dinosaurs/argentinosaurus/video.mp4' },
     facts: [
       { label: 'Length', value: '33 meters', icon: 'trophy', description: 'Estimates place Argentinosaurus among the longest land animals ever discovered — longer than three cars parked end to end.' },
       { label: 'Weight', value: '70 tonnes', icon: 'layers', description: 'It may have weighed as much as a dozen large elephants, making every step shake the ground.' },

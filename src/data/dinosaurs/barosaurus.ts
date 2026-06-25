@@ -7,7 +7,7 @@ export const Barosaurus: Dinosaur = {
   era: 'jurassic', diet: 'herbivore', category: 'herbivore', size: 'gigantic', habitat: 'plains',
   livedIn: ['North America', 'Africa'], periodRangeMya: [155, 145],
   dimensions: { lengthMeters: 25.0, heightMeters: 6.0, weightKg: 12000, speedKmh: 12 },
-  images: img('barosaurus'),
+  images: { ...img('barosaurus'), video: '/videos/dinosaurs/barosaurus/video.mp4' },
   facts: [
     { label: 'Neck', value: 'Super long', icon: 'arrow-up', description: 'One of the longest necks of any animal — up to 9 metres — built from elongated cervical vertebrae.' },
     { label: 'Family', value: 'Diplodocid', icon: 'link', description: 'A diplodocid sauropod — the same family as Diplodocus and Apatosaurus.' },

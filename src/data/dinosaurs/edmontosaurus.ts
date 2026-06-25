@@ -7,7 +7,7 @@ export const Edmontosaurus: Dinosaur = {
     era: 'cretaceous', diet: 'herbivore', category: 'herbivore', size: 'large', habitat: 'plains',
     livedIn: ['North America'], periodRangeMya: [73, 66],
     dimensions: { lengthMeters: 13.0, heightMeters: 2.8, weightKg: 5000, speedKmh: 40 },
-    images: img('edmontosaurus'),
+    images: { ...img('edmontosaurus'), video: '/videos/dinosaurs/edmontosaurus/video.mp4' },
     facts: [
       { label: 'Mummy', value: 'Skin preserved', icon: 'scroll', description: 'Several "mummy" specimens exist with skin and even stomach contents preserved.' },
       { label: 'Size', value: 'One of the largest', icon: 'maximize', description: 'Reached 13 meters — among the largest hadrosaurs and a primary T. rex prey.' },

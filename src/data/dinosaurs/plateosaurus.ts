@@ -7,7 +7,7 @@ export const Plateosaurus: Dinosaur = {
     era: 'triassic', diet: 'herbivore', category: 'herbivore', size: 'large', habitat: 'plains',
     livedIn: ['Europe'], periodRangeMya: [214, 204],
     dimensions: { lengthMeters: 8.0, heightMeters: 2.2, weightKg: 4000, speedKmh: 15 },
-    images: img('plateosaurus'),
+    images: { ...img('plateosaurus'), video: '/videos/dinosaurs/plateosaurus/video.mp4' },
     facts: [
       { label: 'Ancestry', value: 'Sauropod ancestor', icon: 'git-branch', description: 'An early ancestor of the giant sauropods — the prototype for Brachiosaurus and Diplodocus.' },
       { label: 'Posture', value: 'Bipedal or quadrupedal', icon: 'redo', description: 'Could walk on two legs to reach high plants or drop to all fours for grazing.' },

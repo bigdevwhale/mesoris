@@ -7,7 +7,7 @@ export const Oviraptor: Dinosaur = {
     era: 'cretaceous', diet: 'omnivore', category: 'omnivore', size: 'small', habitat: 'desert',
     livedIn: ['Mongolia'], periodRangeMya: [75, 71],
     dimensions: { lengthMeters: 1.6, heightMeters: 0.6, weightKg: 25, speedKmh: 45 },
-    images: img('oviraptor'),
+    images: { ...img('oviraptor'), video: '/videos/dinosaurs/oviraptor/video.mp4' },
     facts: [
       { label: 'Name', value: 'Unfairly accused!', icon: 'scale', description: 'Named "egg thief" because it was found near eggs — but it was actually BROODING its own nest.' },
       { label: 'Beak', value: 'Toothless parrot-beak', icon: 'nut', description: 'A powerful beak for cracking hard food — nuts, seeds, shellfish, and possibly eggs.' },

@@ -17,7 +17,7 @@ export const Dilophosaurus: Dinosaur = {
     livedIn: ['North America'],
     periodRangeMya: [193, 183],
     dimensions: { lengthMeters: 7.0, heightMeters: 1.9, weightKg: 400, speedKmh: 35 },
-    images: img('dilophosaurus'),
+    images: { ...img('dilophosaurus'), video: '/videos/dinosaurs/dilophosaurus/video.mp4' },
     facts: [
       { label: 'Crests', value: 'Twin skull crests', icon: 'triangle', description: 'Two thin bony crests ran along the top of its skull, probably used for display rather than combat.' },
       { label: 'Size', value: '7 meters', icon: 'maximize', description: 'Much bigger than the movie version — a true early Jurassic apex predator about as long as a bus.' },

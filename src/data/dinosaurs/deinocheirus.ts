@@ -7,7 +7,7 @@ export const Deinocheirus: Dinosaur = {
     era: 'cretaceous', diet: 'omnivore', category: 'omnivore', size: 'large', habitat: 'swamp',
     livedIn: ['Mongolia'], periodRangeMya: [70, 69],
     dimensions: { lengthMeters: 11.0, heightMeters: 4.5, weightKg: 6500, speedKmh: 30 },
-    images: img('deinocheirus'),
+    images: { ...img('deinocheirus'), video: '/videos/dinosaurs/deinocheirus/video.mp4' },
     facts: [
       { label: 'Arms', value: '2.4 m long', icon: 'sickle', description: 'Each arm was 2.4 meters long — longer than a tall person — ending in three huge, blunt claws.' },
       { label: 'Sail', value: 'Back hump', icon: 'triangle', description: 'Tall neural spines along its back formed a sail-like hump, possibly for display or fat storage.' },

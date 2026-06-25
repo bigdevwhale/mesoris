@@ -7,7 +7,7 @@ export const Camarasaurus: Dinosaur = {
   era: 'jurassic', diet: 'herbivore', category: 'herbivore', size: 'gigantic', habitat: 'plains',
   livedIn: ['North America'], periodRangeMya: [161, 145],
   dimensions: { lengthMeters: 18.0, heightMeters: 5.0, weightKg: 20000, speedKmh: 12 },
-  images: img('camarasaurus'),
+  images: { ...img('camarasaurus'), video: '/videos/dinosaurs/camarasaurus/video.mp4' },
   facts: [
     { label: 'Abundance', value: 'Most common Morrison sauropod', icon: 'users', description: 'Camarasaurus is the most frequently found sauropod in the Morrison Formation — hundreds of specimens are known, including complete skeletons at all growth stages, from hatchlings to adults.' },
     { label: 'Skull', value: 'Box-like head', icon: 'layers', description: 'Unlike the small-headed diplodocids, Camarasaurus had a large, box-shaped skull with robust, spoon-shaped teeth — better suited for tough vegetation than the peg-like teeth of Diplodocus.' },

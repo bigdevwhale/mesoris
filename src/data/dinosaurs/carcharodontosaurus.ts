@@ -17,7 +17,7 @@ export const Carcharodontosaurus: Dinosaur = {
     livedIn: ['Africa'],
     periodRangeMya: [100, 94],
     dimensions: { lengthMeters: 12.5, heightMeters: 4.0, weightKg: 7500, speedKmh: 32 },
-    images: img('carcharodontosaurus'),
+    images: { ...img('carcharodontosaurus'), video: '/videos/dinosaurs/carcharodontosaurus/video.mp4' },
     facts: [
       { label: 'Teeth', value: 'Shark-like blades', icon: 'triangle', description: 'Its serrated teeth were named for their resemblance to great white shark teeth — perfect for slicing flesh.' },
       { label: 'Skull', value: '1.6 meters', icon: 'skull', description: 'The skull was longer than that of most tyrannosaurs, built for huge slashing bites.' },

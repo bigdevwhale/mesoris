@@ -7,7 +7,7 @@ export const Apatosaurus: Dinosaur = {
     era: 'jurassic', diet: 'herbivore', category: 'herbivore', size: 'gigantic', habitat: 'plains',
     livedIn: ['North America'], periodRangeMya: [154, 150],
     dimensions: { lengthMeters: 23.0, heightMeters: 4.5, weightKg: 20000, speedKmh: 18 },
-    images: img('apatosaurus'),
+    images: { ...img('apatosaurus'), video: '/videos/dinosaurs/apatosaurus/video.mp4' },
     facts: [
       { label: 'Neck Whip', value: 'Sonic cracks', icon: 'whip', description: 'Could swing its neck like a bullwhip — creating supersonic cracks as a defense or display.' },
       { label: 'Name Mix-up', value: 'Brontosaurus debate', icon: 'help-circle', description: 'For over 100 years, people called it Brontosaurus. The name was officially brought back in 2015.' },

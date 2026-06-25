@@ -7,7 +7,7 @@ export const Nanotyrannus: Dinosaur = {
     era: 'cretaceous', diet: 'carnivore', category: 'carnivore', size: 'small', habitat: 'forest',
     livedIn: ['North America'], periodRangeMya: [68, 67],
     dimensions: { lengthMeters: 5.0, heightMeters: 2.0, weightKg: 1000, speedKmh: 40 },
-    images: img('nanotyrannus'),
+    images: { ...img('nanotyrannus'), video: '/videos/dinosaurs/nanotyrannus/video.mp4' },
     facts: [
       { label: 'Size', value: 'Pocket T-Rex', icon: 'ruler', description: 'At ~5 m long it was only a fraction of T. rex — but with the same terrifying proportions.' },
       { label: 'Controversy', value: 'Juvenile T. rex?', icon: 'help-circle', description: 'Some scientists think "Nanotyrannus" is actually a teenage Tyrannosaurus rex, not a separate genus.' },
