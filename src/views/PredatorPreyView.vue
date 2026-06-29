@@ -546,38 +546,40 @@ onUnmounted(() => {
       </span>
     </div>
 
-    <div
-      class="relative rounded-[var(--radius-xl)] overflow-hidden border border-[var(--glass-border)] shadow-[var(--shadow-card)] bg-[#0c2417]"
-    >
-      <canvas
-        ref="canvasRef"
-        :width="W"
-        :height="H"
-        class="block mx-auto select-none"
-        style="touch-action: none; cursor: crosshair; max-width: 100%; max-height: 70vh; width: auto; height: auto"
-        @pointerdown="onPointerDown"
-      />
-
-      <!-- idle / game-over overlay -->
+    <div class="flex justify-center">
       <div
-        v-if="phase !== 'playing'"
-        class="absolute inset-0 flex flex-col items-center justify-center bg-black/55 text-white text-center px-4 cursor-pointer"
-        @pointerdown="press"
+        class="relative inline-block rounded-[var(--radius-xl)] overflow-hidden border border-[var(--glass-border)] shadow-[var(--shadow-card)] bg-[#0c2417]"
       >
-        <div class="text-5xl sm:text-6xl mb-2 sm:mb-3">{{ phase === 'over' ? '💀' : '🦖' }}</div>
-        <p v-if="phase === 'over'" class="text-base sm:text-lg font-semibold mb-1">
-          {{ t('games.predatorPrey.finalScore', { n: score }) }}
-        </p>
-        <p class="text-xs sm:text-sm opacity-80">
-          {{ phase === 'over' ? t('games.predatorPrey.tapToRestart') : t('games.predatorPrey.tapToStart') }}
-        </p>
+        <canvas
+          ref="canvasRef"
+          :width="W"
+          :height="H"
+          class="block select-none"
+          style="touch-action: none; cursor: crosshair; max-width: 100%; max-height: 70vh; width: auto; height: auto"
+          @pointerdown="onPointerDown"
+        />
+
+        <!-- idle / game-over overlay -->
         <div
-          v-if="phase === 'over'"
-          class="mt-2 sm:mt-3 text-xs opacity-70 flex items-center gap-2"
+          v-if="phase !== 'playing'"
+          class="absolute inset-0 flex flex-col items-center justify-center bg-black/55 text-white text-center px-4 cursor-pointer"
+          @pointerdown="press"
         >
-          <span>🏆 {{ best }}</span>
-          <span>·</span>
-          <span>{{ t('games.predatorPrey.eaten') }}</span>
+          <div class="text-5xl sm:text-6xl mb-2 sm:mb-3">{{ phase === 'over' ? '💀' : '🦖' }}</div>
+          <p v-if="phase === 'over'" class="text-base sm:text-lg font-semibold mb-1">
+            {{ t('games.predatorPrey.finalScore', { n: score }) }}
+          </p>
+          <p class="text-xs sm:text-sm opacity-80">
+            {{ phase === 'over' ? t('games.predatorPrey.tapToRestart') : t('games.predatorPrey.tapToStart') }}
+          </p>
+          <div
+            v-if="phase === 'over'"
+            class="mt-2 sm:mt-3 text-xs opacity-70 flex items-center gap-2"
+          >
+            <span>🏆 {{ best }}</span>
+            <span>·</span>
+            <span>{{ t('games.predatorPrey.eaten') }}</span>
+          </div>
         </div>
       </div>
     </div>
