@@ -458,4 +458,18 @@
     legendEgg: '🥚 Œuf de dino — 4 d\'affilée. Nettoie la ligne ET la colonne.',
     legendMeteor: '☄️ Météorite — 5 d\'affilée. Supprime toutes les cases de la couleur la plus commune.',
   },
+  predatorPrey: {
+    title: 'Prédateur et proie',
+    tagline: 'Mange les dinos plus petits, esquive les plus gros — jusqu’où grandiras-tu ?',
+    tapToStart: 'Touche, clique ou Espace pour commencer',
+    tapToRestart: 'Touche pour rejouer',
+    controlsKey: 'Déplacer : flèches / ZQSD',
+    controlsTap: 'Touche et glisse pour diriger',
+    legendEat: 'Vert — plus petit, mange',
+    legendAvoid: 'Rouge — plus gros, fuis !',
+    youLabel: 'Toi',
+    best: 'Record',
+    eaten: 'Mangés',
+    finalScore: 'Tu as mangé {n} dinosaures !',
+  },
 }

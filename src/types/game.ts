@@ -1,6 +1,6 @@
 import type { RouteLocationRaw } from 'vue-router'
 
-export type GameType = 'quiz' | 'puzzle' | 'excavation' | 'skeleton' | 'memory' | 'runner' | 'personality' | 'tamagotchi' | 'battle' | 'diet-detective' | 'dino-map' | 'meteor-run' | 'dino-duel' | 'ptero-glide' | 'dino-match3'
+export type GameType = 'quiz' | 'puzzle' | 'excavation' | 'skeleton' | 'memory' | 'runner' | 'personality' | 'tamagotchi' | 'battle' | 'diet-detective' | 'dino-map' | 'meteor-run' | 'dino-duel' | 'ptero-glide' | 'dino-match3' | 'predator-prey'
 
 export interface GameDefinition {
   id: string

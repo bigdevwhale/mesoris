@@ -465,4 +465,18 @@
     legendEgg: '🥚 공룡 알 — 4연타. 가로와 세로 전체를 제거.',
     legendMeteor: '☄️ 메테오 — 5연타. 가장 많은 색의 타일을 전부 제거.',
   },
+  predatorPrey: {
+    title: '포식자와 먹이',
+    tagline: '더 작은 공룡은 먹고, 더 큰 공룡은 피하세요 — 얼마나 커질 수 있을까요?',
+    tapToStart: '탭, 클릭 또는 스페이스로 시작',
+    tapToRestart: '탭하여 다시 플레이',
+    controlsKey: '이동: 화살표 / WASD',
+    controlsTap: '탭하고 드래그하여 조종',
+    legendEat: '초록 — 더 작음, 먹자',
+    legendAvoid: '빨강 — 더 큼, 도망쳐!',
+    youLabel: '나',
+    best: '최고',
+    eaten: '먹은 수',
+    finalScore: '{n}마리의 공룡을 먹었어요!',
+  },
 }

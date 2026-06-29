@@ -458,4 +458,18 @@
     legendEgg: '🥚 Uovo di dino — 4 in fila. Pulisce tutta la riga E la colonna.',
     legendMeteor: '☄️ Meteora — 5 in fila. Elimina tutte le tessere del colore più comune.',
   },
+  predatorPrey: {
+    title: 'Predatore e preda',
+    tagline: 'Mangia dinosauri più piccoli e schiva i più grandi — quanto crescerai?',
+    tapToStart: 'Tocca, clicca o Spazio per iniziare',
+    tapToRestart: 'Tocca per rigiocare',
+    controlsKey: 'Muovi: frecce / WASD',
+    controlsTap: 'Tocca e trascina per muoverti',
+    legendEat: 'Verde — più piccolo, mangia',
+    legendAvoid: 'Rosso — più grande, scappa!',
+    youLabel: 'Tu',
+    best: 'Record',
+    eaten: 'Mangiati',
+    finalScore: 'Hai mangiato {n} dinosauri!',
+  },
 }

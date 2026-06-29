@@ -465,4 +465,18 @@
     legendEgg: '🥚 Dino Egg — match 4 in a row. Clears the whole row AND column when matched.',
     legendMeteor: '☄️ Meteor — match 5 in a row. Clears every tile of the most common color.',
   },
+  predatorPrey: {
+    title: 'Predator & Prey',
+    tagline: 'Eat the smaller dinosaurs, dodge the bigger ones — how big can you grow?',
+    tapToStart: 'Tap, click or press Space to start',
+    tapToRestart: 'Tap to play again',
+    controlsKey: 'Move: Arrows / WASD',
+    controlsTap: 'Tap and drag to steer',
+    legendEat: 'Green — smaller, eat it',
+    legendAvoid: 'Red — bigger, run!',
+    youLabel: 'You',
+    best: 'Best',
+    eaten: 'Eaten',
+    finalScore: 'You ate {n} dinosaurs!',
+  },
 }

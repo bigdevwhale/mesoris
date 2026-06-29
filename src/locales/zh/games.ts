@@ -465,4 +465,18 @@
     legendEgg: '🥚 恐龙蛋 — 连成 4 个。清除整行和整列。',
     legendMeteor: '☄️ 陨石 — 连成 5 个。消除所有最常见颜色的方块。',
   },
+  predatorPrey: {
+    title: '捕食者与猎物',
+    tagline: '吃掉更小的恐龙，躲避更大的恐龙 — 你能长到多大？',
+    tapToStart: '点击、轻触或按空格开始',
+    tapToRestart: '轻触再玩一次',
+    controlsKey: '移动：方向键 / WASD',
+    controlsTap: '轻触并拖动来转向',
+    legendEat: '绿色 — 更小，吃掉它',
+    legendAvoid: '红色 — 更大，快跑！',
+    youLabel: '你',
+    best: '最佳',
+    eaten: '已吃',
+    finalScore: '你吃掉了 {n} 只恐龙！',
+  },
 }

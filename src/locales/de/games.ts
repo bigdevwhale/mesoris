@@ -465,4 +465,18 @@
     legendEgg: '🥚 Dino-Ei — 4 in einer Reihe. Räumt die ganze Reihe UND Spalte ab.',
     legendMeteor: '☄️ Meteorit — 5 in einer Reihe. Entfernt alle Plättchen der häufigsten Farbe.',
   },
+  predatorPrey: {
+    title: 'Jäger und Beute',
+    tagline: 'Friss kleinere Dinosaurier und weiche den größeren aus — wie groß wirst du?',
+    tapToStart: 'Tippe, klicke oder drücke Leertaste zum Start',
+    tapToRestart: 'Tippe, um nochmal zu spielen',
+    controlsKey: 'Bewegen: Pfeile / WASD',
+    controlsTap: 'Tippen und ziehen zum Steuern',
+    legendEat: 'Grün — kleiner, fressen',
+    legendAvoid: 'Rot — größer, renn!',
+    youLabel: 'Du',
+    best: 'Bestleistung',
+    eaten: 'Gefressen',
+    finalScore: 'Du hast {n} Dinosaurier gefressen!',
+  },
 }

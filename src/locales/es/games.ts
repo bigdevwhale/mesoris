@@ -465,4 +465,18 @@
     legendEgg: '🥚 Huevo de dinosaurio — 4 en fila. Limpia toda la fila Y la columna.',
     legendMeteor: '☄️ Meteorito — 5 en fila. Borra todas las fichas del color más común.',
   },
+  predatorPrey: {
+    title: 'Depredador y presa',
+    tagline: 'Come dinosaurios más pequeños y esquiva los más grandes — ¿cuánto crecerás?',
+    tapToStart: 'Toca, haz clic o pulsa Espacio para empezar',
+    tapToRestart: 'Toca para jugar otra vez',
+    controlsKey: 'Mover: flechas / WASD',
+    controlsTap: 'Toca y arrastra para moverte',
+    legendEat: 'Verde — más pequeño, cómelo',
+    legendAvoid: 'Rojo — más grande, ¡corre!',
+    youLabel: 'Tú',
+    best: 'Récord',
+    eaten: 'Comidos',
+    finalScore: '¡Comiste {n} dinosaurios!',
+  },
 }

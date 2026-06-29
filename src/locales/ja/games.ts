@@ -465,4 +465,18 @@
     legendEgg: '🥚 恐竜の卵 — 4つ揃え。行と列をすべて消去。',
     legendMeteor: '☄️ 隕石 — 5つ揃え。最も多い色のタイルをすべて消去。',
   },
+  predatorPrey: {
+    title: '捕食者と獲物',
+    tagline: '小さい恐竜を食べ、大きい恐竜から逃げよう — どれくらい大きくなれるかな？',
+    tapToStart: 'タップ、クリック、スペースでスタート',
+    tapToRestart: 'タップでもう一度遊ぶ',
+    controlsKey: '移動：矢印 / WASD',
+    controlsTap: 'タップしてドラッグで移動',
+    legendEat: '緑 — 小さい、食べよう',
+    legendAvoid: '赤 — 大きい、逃げろ！',
+    youLabel: 'あなた',
+    best: 'ベスト',
+    eaten: '食べた数',
+    finalScore: '{n}匹の恐竜を食べた！',
+  },
 }
