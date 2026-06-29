@@ -139,6 +139,11 @@ const childRoutes: RouteRecordRaw[] = [
     component: () => import('@/views/PredatorPreyView.vue'),
   },
   {
+    path: 'games/dino-defense',
+    name: 'dino-defense',
+    component: () => import('@/views/DinoDefenseView.vue'),
+  },
+  {
     path: 'science',
     name: 'science',
     component: () => import('@/views/ScienceView.vue'),

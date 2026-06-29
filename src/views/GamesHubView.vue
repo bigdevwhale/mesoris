@@ -15,8 +15,8 @@ type GameCategory = 'all' | 'quiz' | 'puzzle' | 'arcade' | 'strategy' | 'sim'
 const CATEGORY_MAP: Record<Exclude<GameCategory, 'all'>, (g: GameDefinition) => boolean> = {
   quiz: g => g.type === 'quiz' || g.type === 'personality' || g.type === 'dino-duel' || g.type === 'diet-detective' || g.type === 'dino-map',
   puzzle: g => g.type === 'puzzle' || g.type === 'memory' || g.type === 'excavation' || g.type === 'skeleton' || g.type === 'dino-match3',
-  arcade: g => g.type === 'runner' || g.type === 'meteor-run' || g.type === 'ptero-glide' || g.type === 'predator-prey',
-  strategy: g => g.type === 'battle' || g.type === 'dino-duel' || g.type === 'dino-map' || g.type === 'diet-detective',
+  arcade: g => g.type === 'runner' || g.type === 'meteor-run' || g.type === 'ptero-glide' || g.type === 'predator-prey' || g.type === 'dino-defense',
+  strategy: g => g.type === 'battle' || g.type === 'dino-duel' || g.type === 'dino-map' || g.type === 'diet-detective' || g.type === 'dino-defense',
   sim: g => g.type === 'tamagotchi',
 }
 

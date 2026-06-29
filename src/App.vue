@@ -41,9 +41,9 @@ function onLeave(el: Element, done: () => void) {
 <template>
   <a href="#main-content" class="skip-to-content">{{ t('ui.header.skipToContent') }}</a>
 
-  <AppHeader />
+  <AppHeader v-if="!uiStore.isImmersive" />
 
-  <main id="main-content" class="pt-16 pb-16 md:pb-0">
+  <main id="main-content" :class="uiStore.isImmersive ? '' : 'pt-16 pb-16 md:pb-0'">
     <router-view v-slot="{ Component, route }">
       <transition
         mode="out-in"
@@ -59,7 +59,7 @@ function onLeave(el: Element, done: () => void) {
     </router-view>
   </main>
 
-  <AppFooter />
+  <AppFooter v-if="!uiStore.isImmersive" />
 
   <SearchOverlay :is-open="uiStore.isSearchOpen" @close="uiStore.closeSearch()" />
 </template>
