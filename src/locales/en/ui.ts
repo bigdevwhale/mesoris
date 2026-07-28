@@ -244,10 +244,6 @@ export default {
     metersUnit: 'm',
     kgUnit: 'kg',
     kmhUnit: 'km/h',
-    kgUnit: 'kg',
-    kmhUnit: 'km/h',
-    kgUnit: 'kg',
-    kmhUnit: 'km/h',
     traitValues: {
       'Era': 'era',
       'Diet': 'diet',
