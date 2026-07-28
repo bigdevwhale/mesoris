@@ -14,4 +14,15 @@
     { label: '骨の成長', value: '急速な成長', description: '骨組織学は急速で持続的な成長率を示す — 恐竜の特徴。' },
     { label: 'タンザニア', value: '三畳紀中期', description: '三畳紀中期のマンダ層で発見 — 最初の恐竜的動物が出現していた時代。' },
   ],
+  relatedDinosaurs: [
+    { id: 'eoraptor', relationship: '後代のアルゼンチン初期恐竜' },
+    { id: 'herrerasaurus', relationship: '後代の初期恐竜' },
+  ],
+  discoveries: [
+    { discoveredBy: 'レックス・パリントン', note: '1930年代に収集されたが、2013年にスターリング・ネスビットらによって正式に記載された。' },
+    { discoveredBy: 'スターリング・ネスビットら', note: 'Biology Lettersに掲載された正式記載は、この標本を世界最古の恐竜の可能性があると認定した。' },
+  ],
+  fossilLocations: [
+    { region: 'ルフフ盆地、マンダ層、ルヴマ州', specimenName: 'NHMUK PV R6856 — ホロタイプ上腕骨と椎骨' },
+  ],
 }

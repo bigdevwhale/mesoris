@@ -14,4 +14,16 @@ export default {
     { label: 'Esqueleto', value: 'Casi completo', description: 'Se recuperaron más de 300 huesos de al menos seis individuos, ofreciendo una imagen casi completa de su esqueleto.' },
     { label: 'Importancia', value: 'Origen de los saurópodos', description: 'Un taxón clave para entender la evolución temprana de los saurópodos gigantes a partir de sus ancestros prosaurópodos.' },
   ],
+  relatedDinosaurs: [
+    { id: 'vulcanodon', relationship: 'Sauropodo basal contemporáneo' },
+    { id: 'brachiosaurus', relationship: 'Sauropodo descendiente posterior' },
+    { id: 'plateosaurus', relationship: 'Pariente prosauropodo ancestral' },
+  ],
+  discoveries: [
+    { year: 1960, location: 'Formación Kota, Telangana/Andhra Pradesh, India', discoveredBy: 'Equipo del Indian Statistical Institute', note: 'Las excavaciones recuperaron huesos de al menos seis individuos en el yacimiento.' },
+    { year: 1975, location: 'Formación Kota, India', discoveredBy: 'Sohan Lal Jain y colegas', note: 'Descrito formalmente y nombrado como Barapasaurus tagorei.' },
+  ],
+  fossilLocations: [
+    { country: 'India', region: 'Formación Kota, Telangana', coordinates: [17.97, 79.5], specimenName: 'Serie de moldes ISI R, paratipos' },
+  ],
 }

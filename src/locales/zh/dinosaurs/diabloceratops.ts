@@ -14,4 +14,15 @@
     { label: '犹他州', value: '瓦维普组', description: '发现于瓦维普组——属于与北部不同的丰富的南方动物群。' },
     { label: '角', value: '颈盾角和鼻角', description: '除了颈盾上弯曲的棘刺外，还有一根鼻角和小型眉角。' },
   ],
+  relatedDinosaurs: [
+    { id: 'styracosaurus', relationship: '后期的尖角龙亚科近亲' },
+    { id: 'triceratops', relationship: '后期的角龙科近亲' },
+    { id: 'protoceratops', relationship: '祖先型角龙类近亲' },
+  ],
+  discoveries: [
+    { year: 2002, location: '美国犹他州加菲尔德县瓦维普组', discoveredBy: '詹姆斯·柯克兰和唐纳德·德布利厄', note: '犹他自然历史博物馆团队采集了部分头骨；于2010年由柯克兰和德布利厄正式描述。' },
+  ],
+  fossilLocations: [
+    { country: '美国', region: '犹他州加菲尔德县（瓦维普组）', coordinates: [37.5, -111.5], specimenName: 'UMNH VP 16699 — 正模标本，部分头骨' },
+  ],
 }

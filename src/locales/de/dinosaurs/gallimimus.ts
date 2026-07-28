@@ -14,4 +14,14 @@ export default {
     { label: 'Hals', value: 'Lang und flexibel', description: 'Ein straußenartiger langer Hals zum Absuchen der Landschaft nach Gefahr und Nahrung.' },
     { label: 'Ernährung', value: 'Opportunistisch', description: 'Aß Pflanzen, kleine Tiere und Insekten — eine Müllabfuhr auf Beinen.' },
   ],
+  relatedDinosaurs: [
+    { id: 'ornithomimus', relationship: 'Enger Verwandter' },
+    { id: 'struthiomimus', relationship: 'Enger Verwandter' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Polnisch-Mongolische Expedition', note: 'Erste Exemplare im Nemegt-Becken entdeckt.' },
+  ],
+  fossilLocations: [
+    { region: 'Gobi-Wüste', specimenName: 'Nemegt-Formation' },
+  ],
 }

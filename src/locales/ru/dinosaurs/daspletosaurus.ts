@@ -14,4 +14,14 @@ export default {
       { label: 'Охота', value: 'Активный хищник', description: 'Находки показывают, что он активно охотился и вступал в схватки с добычей, а не был просто падальщиком.' },
       { label: 'Укус', value: 'Дробящий кости', description: 'Уже обладал мощным укусом, способным ломать кости, — той самой чертой, которая позже прославила тираннозавра.' },
     ],
-  }
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Потомок' },
+  ],
+  discoveries: [
+    { year: 1921, location: 'Альберта, Канада', discoveredBy: 'Чарльз М. Стернберг', note: 'Первый череп найден в формации Олдман.' },
+  ],
+  fossilLocations: [
+    { country: 'Канада', region: 'Альберта', coordinates: [49.5, -112.0], specimenName: 'Формация Олдман' },
+    { country: 'США', region: 'Монтана', coordinates: [47.5, -110.5], specimenName: 'Формация Ту-Медисин' },
+  ],
+}

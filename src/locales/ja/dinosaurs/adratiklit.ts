@@ -14,4 +14,15 @@ export default {
     { label: '半球', value: 'ゴンドワナの剣竜', description: 'ほとんどの剣竜が北半球のローラシアから産出する中、稀な南半球産（ゴンドワナ産）の剣竜です。' },
     { label: '系統', value: '剣竜の祖先', description: '剣竜類のごく初期の枝を表し、グループの古代の起源を理解するうえで重要です。' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: '有名な後年の近縁種' },
+    { id: 'loricatosaurus', relationship: 'ヨーロッパの剣竜の近縁種' },
+    { id: 'dacentrurus', relationship: 'ヨーロッパの剣竜' },
+  ],
+  discoveries: [
+    { discoveredBy: 'スザンナ・メイドメントと研究チーム', note: '椎骨と部分的な大腿骨が記載され、Adratiklit boulahfaと命名されました。' },
+  ],
+  fossilLocations: [
+    { region: 'エル・メルス累層、中部アトラス山脈、ブーラファ', specimenName: 'NHMUK PV R 37166 — ホロタイプの椎骨' },
+  ],
 }

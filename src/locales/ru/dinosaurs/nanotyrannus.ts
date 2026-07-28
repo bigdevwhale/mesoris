@@ -14,4 +14,20 @@ export default {
     { label: 'Укус', value: 'Крушащий кости', description: 'Несмотря на малый размер, обладал мощным, пробивающим кости укусом, как у любого тираннозаврида.' },
     { label: 'Скорость', value: '40+ км/ч', description: 'Длинные тонкие ноги делали его быстрым и вертлявым хищником — шустрее гигантского кузена T. rex.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Оспариваемый синоним / близкий родственник' },
+    { id: 'albertosaurus', relationship: 'Кузин тираннозаврид' },
+    { id: 'daspletosaurus', relationship: 'Кузин тираннозаврид' },
+    { id: 'gorgosaurus', relationship: 'Кузин тираннозаврид' },
+    { id: 'triceratops', relationship: 'Возможная добыча' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Экспедиция Кливлендского музея', note: 'Первый череп, найденный в формации Хелл-Крик, первоначально считался таксоном, подобным Gorgosaurus.' },
+    { discoveredBy: 'Роберт Баккер, Филип Карри и Майкл Уильямс', note: 'Переименован в Nanotyrannus после повторного анализа черепа из Кливлендского музея.' },
+    { discoveredBy: 'Коммерческие охотники за окаменелостями', note: 'Знаменитый экземпляр «Dueling Dinosaurs», вцепившийся в трицератопса.' },
+  ],
+  fossilLocations: [
+    { region: 'Монтана', specimenName: 'Формация Хелл-Крик' },
+    { region: 'Вайоминг', specimenName: 'Формация Лэнс' },
+  ],
 }

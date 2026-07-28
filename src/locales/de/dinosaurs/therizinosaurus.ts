@@ -14,4 +14,14 @@ export default {
     { label: 'Körperbau', value: 'Wanstig', description: 'Ein riesiger Bauch zum Fermentieren von Pflanzen, langer Hals und winzige blattförmige Zähne.' },
     { label: 'Größe', value: '10 Meter', description: 'Ein gigantischer Therizinosaurier und der größte bekannte Maniraptorier.' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'Entfernter Verwandter (Maniraptora)' },
+    { id: 'tyrannosaurus-rex', relationship: 'Entfernter Verwandter (Theropode)' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Sowjetisch-Mongolische Expedition', note: 'Erste Fossilien — nur die riesigen Klauen wurden gefunden. Wissenschaftler hielten sie zunächst für Schildkrötenrippen!' },
+  ],
+  fossilLocations: [
+    { region: 'Gobi-Wüste', specimenName: 'Nemegt-Formation' },
+  ],
 }

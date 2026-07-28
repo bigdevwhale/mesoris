@@ -13,4 +13,14 @@ export default {
     { label: 'आहार', value: 'अतिमांसाहारी', description: 'सब कुछ खाता था — शार्क, मछली, गोताखोर पक्षी, अन्य मोसासॉर, और प्लीसियोसॉर।' },
     { label: 'प्रभुत्व', value: 'शिखर शिकारी', description: 'वेस्टर्न इंटीरियर सीवे का निर्विवाद शिखर शिकारी — कोई भी इसे नहीं मारता था।' },
   ],
+  relatedDinosaurs: [
+    { id: 'mosasaurus', relationship: 'निकट संबंधी' },
+    { id: 'plesiosaurus', relationship: 'शिकार' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ओथनिएल चार्ल्स मार्श', note: 'कैंसास के चॉक बेड्स से बोन वॉर्स के दौरान पहली बार वर्णित।' },
+  ],
+  fossilLocations: [
+    { region: 'कैंसास', specimenName: 'नायोब्रारा चॉक, स्मोकी हिल' },
+  ],
 }

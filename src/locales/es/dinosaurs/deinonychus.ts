@@ -14,4 +14,15 @@ export default {
     { label: 'Cola', value: 'Rigida', description: 'Varas oseas entrelazadas para equilibrio' },
     { label: 'Impacto', value: 'Renacimiento', description: 'Cambio la vision de los dinosaurios para siempre' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'Pariente cercano' },
+    { id: 'oviraptor', relationship: 'Contemporaneo' },
+  ],
+  discoveries: [
+    { year: 1931, location: 'Montana, EE. UU.', discoveredBy: 'Barnum Brown', note: 'Primeros fosiles encontrados pero no estudiados hasta decadas despues.' },
+    { year: 1964, location: 'Montana, EE. UU.', discoveredBy: 'John Ostrom', note: 'El descubrimiento y el articulo de 1969 de Ostrom revolucionaron la ciencia de los dinosaurios.' },
+  ],
+  fossilLocations: [
+    { country: 'EE. UU.', region: 'Montana', coordinates: [45.5, -108.5], specimenName: 'Formacion Cloverly' },
+  ],
 }

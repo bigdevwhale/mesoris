@@ -14,4 +14,15 @@ export default {
     { label: 'Origine', value: 'Marocco', description: 'Scoperto nei fosfati del Bacino di Oulad Abdoun in Marocco, un tesoro marino del Cretaceo.' },
     { label: 'Collo', value: 'Molto lungo', description: 'Un collo lungo con oltre 50 vertebre cervicali, usato per tendere imboscate ai banchi di pesci.' },
   ],
+  relatedDinosaurs: [
+    { id: 'elasmosaurus', relationship: 'Cugino elasmosauride più grande' },
+    { id: 'plesiosaurus', relationship: 'Parente plesiosauro dal collo lungo' },
+    { id: 'mosasaurus', relationship: 'Predatore marino contemporaneo' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Peggy Vincent e team', note: 'Cranio parziale e vertebre cervicali descritti e nominati.' },
+  ],
+  fossilLocations: [
+    { region: 'Bacino di Oulad Abdoun', specimenName: 'OCP DEK/GE 307 — olotipo cranio parziale e vertebre' },
+  ],
 }

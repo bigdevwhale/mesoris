@@ -14,4 +14,17 @@
     { label: '鼻', value: '頭頂部に位置', description: '鼻孔は頭蓋骨のてっぺんのドーム状の隆起の上にあり、共鳴音を出すために使われた可能性があります。' },
     { label: '脚', value: '前脚が後脚より長い', description: '恐竜では珍しい体型で、前肢が後肢より長いため、キリンに似た姿勢をとっていました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: '同時代の竜脚類' },
+    { id: 'allosaurus', relationship: '捕食者の脅威' },
+    { id: 'apatosaurus', relationship: '同時代の竜脚類' },
+  ],
+  discoveries: [
+    { year: 1900, location: 'アメリカ合衆国コロラド州', discoveredBy: 'エルマー・リグス', note: 'モリソン累層からブラキオサウルスの最初の化石が発見された。' },
+    { year: 1909, location: 'タンザニア', discoveredBy: 'ヴェルナー・イェネッシュ', note: 'テンダグルでの大遠征でほぼ完全な骨格が発掘された。' },
+  ],
+  fossilLocations: [
+    { country: 'アメリカ合衆国', region: 'コロラド州', coordinates: [39.5, -105.0], specimenName: 'モリソン累層' },
+    { country: 'タンザニア', region: 'テンダグル', coordinates: [-10.5, 39.5] },
+  ],
 }

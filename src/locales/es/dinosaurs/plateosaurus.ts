@@ -14,4 +14,16 @@ export default {
     { label: 'Epoca', value: 'Triasico Tardio', description: 'Hace 214-204 millones de anos' },
     { label: 'Distribucion', value: 'Europa central', description: 'Alemania, Suiza, Francia' },
   ],
+  relatedDinosaurs: [
+    { id: 'brachiosaurus', relationship: 'Descendiente' },
+    { id: 'diplodocus', relationship: 'Descendiente' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Johann Friedrich Engelhardt', note: 'Primeros fósiles descubiertos — uno de los hallazgos de dinosaurios más tempranos en la Europa continental.' },
+    { discoveredBy: 'Eberhard Fraas', note: 'Sitio de entierro masivo con docenas de esqueletos.' },
+  ],
+  fossilLocations: [
+    { region: 'Trossingen', specimenName: 'Miembro Knollenmergel' },
+    { region: 'Baviera', specimenName: '' },
+  ],
 }

@@ -14,4 +14,15 @@ export default {
     { label: 'Epoca', value: 'Giurassico inferiore', description: '~195 milioni di anni fa.' },
     { label: 'Sito', value: 'Inghilterra', description: 'Jurassic Coast, Dorset.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Linea discendente tireofora più tarda' },
+    { id: 'ankylosaurus', relationship: 'Linea discendente tireofora più tarda' },
+    { id: 'euoplocephalus', relationship: 'Parente anchilosauro più tardo' },
+  ],
+  discoveries: [
+    { discoveredBy: 'James Harrison', note: 'Scheletro completo scoperto; descritto da Richard Owen nel 1861 in un articolo fondamentale sull\'anatomia precoce dei dinosauri.' },
+  ],
+  fossilLocations: [
+    { region: 'Charmouth, Dorset, Inghilterra (Lias inferiore)', specimenName: 'NHMUK PV R1111 — olotipo, scheletro quasi completo' },
+  ],
 }

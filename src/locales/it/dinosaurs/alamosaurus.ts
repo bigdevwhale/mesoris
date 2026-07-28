@@ -14,4 +14,17 @@ export default {
     { label: 'Coesistenza', value: 'Visse con il T. rex', description: 'L\'Alamosaurus condivideva l\'habitat con il Tyrannosaurus rex — l\'unico sauropode noto ad averlo fatto in Nord America.' },
     { label: 'Titanosauro', value: 'Sauropode corazzato', description: 'Come titanosauro, l\'Alamosaurus possedeva piccoli osteodermi ossei nella pelle — una caratteristica unica tra i sauropodi.' },
   ],
+  relatedDinosaurs: [
+    { id: 'argentinosaurus', relationship: 'Parente titanosauro sudamericano' },
+    { id: 'sauroposeidon', relationship: 'Sauropode gigante nordamericano precedente' },
+    { id: 'diplodocus', relationship: 'Sauropode nordamericano precedente (famiglia diversa)' },
+  ],
+  discoveries: [
+    { year: 1921, location: 'Contea di San Juan, Nuovo Messico, Stati Uniti', discoveredBy: 'Charles W. Gilmore', note: 'Il materiale iniziale fu raccolto e descritto da Gilmore nel 1922 nel Nuovo Messico; successivamente in Texas furono rinvenuti esemplari molto più grandi.' },
+    { year: 2003, location: 'Parco nazionale di Big Bend, Texas, Stati Uniti', discoveredBy: 'Thomas Lehman e Kenneth Carpenter', note: 'Enormi vertebre e ossa degli arti provenienti dal Texas hanno rivisto drasticamente verso l\'alto le stime di dimensione, suggerendo che l\'Alamosaurus rivaleggiasse con i più grandi titanosauri sudamericani.' },
+  ],
+  fossilLocations: [
+    { country: 'Stati Uniti', region: 'Contea di San Juan, Nuovo Messico (formazione di Ojo Alamo)', coordinates: [36.5, -108.2], specimenName: 'USNM 10487 — vertebre e arto anteriore olotipi' },
+    { country: 'Stati Uniti', region: 'Contea di Brewster, Texas, Big Bend (formazione di Javelina)', coordinates: [29.3, -103.2], specimenName: 'Enormi esemplari texani indicativi della dimensione massima' },
+  ],
 }

@@ -14,4 +14,16 @@ export default {
     { label: '체격', value: '기둥 같은 다리', description: '튼튼한 다리와 넓은 몸은 부드러운 범람원과 습지 지면을 이동할 때 거대한 몸통을 지탱했습니다.' },
     { label: '시대', value: '백악기 전기', description: '에우헬로푸스는 많은 고전적 쥐라기 용각류 그룹이 타지역에서 쇠퇴한 후에도 아시아 생태계에서 살아남았습니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'mamenchisaurus', relationship: '해부학적으로 자주 비교되는 또 다른 아시아 장경 용각류' },
+    { id: 'brachiosaurus', relationship: '전지 비율이 다른 대형 고위 채식 용각류' },
+    { id: 'sauroposeidon', relationship: '목이 극도로 길어진 후대의 거대한 티타노사우루스형류' },
+  ],
+  discoveries: [
+    { discoveredBy: '오토 즈단스키 탐사대', note: '이후 정식 기술에 사용된 원래 화석 자료를 수집했다.' },
+    { discoveredBy: '칼 위만', note: 'Euhelopus zdanskyi를 정식으로 기술하고 그 특이한 용각류 해부학적 구조를 강조했다.' },
+  ],
+  fossilLocations: [
+    { region: '산둥성', specimenName: '원래 에우헬로푸스 표본' },
+  ],
 }

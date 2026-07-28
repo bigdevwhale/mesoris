@@ -14,4 +14,16 @@ export default {
     { label: '뇌', value: '호두만함', description: '공룡 중 가장 작은 뇌 대 몸 비율 중 하나를 가졌다.' },
     { label: '제2의 뇌', value: '그냥 신화!', description: '한때 과학자들은 허리에 제2의 뇌가 있다고 생각했으나, 그것은 단순한 글리코겐체였다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: '포식자' },
+    { id: 'diplodocus', relationship: '동시대 공룡' },
+  ],
+  discoveries: [
+    { discoveredBy: '오스니얼 찰스 마쉬', note: '모리슨층에서 처음 기재된 스테고사우루스 화석.' },
+    { discoveredBy: '밥 사이먼', note: '"소피" — 지금까지 발견된 스테고사우루스 중 가장 완전한 골격.' },
+  ],
+  fossilLocations: [
+    { region: '콜로라도주', specimenName: '모리슨층' },
+    { region: '와이오밍주' },
+  ],
 }

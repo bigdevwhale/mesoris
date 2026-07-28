@@ -14,4 +14,14 @@ export default {
     { label: 'Alter', value: 'Früher Jura', description: 'Einer der frühesten Flugsaurier — aus einer Zeit, als Fliegen brandneue Technologie war.' },
     { label: 'Flug', value: 'Flatternd', description: 'Kurze, breite Flügel — flog eher wie eine Fledermaus als wie spätere Segelflieger.' },
   ],
+  relatedDinosaurs: [
+    { id: 'pterodactylus', relationship: 'Weiterentwickelter Nachfahr' },
+    { id: 'rhamphorhynchus', relationship: 'Zeitgenosse' },
+  ],
+  discoveries: [
+    { year: 1828, location: 'Dorset, Vereinigtes Königreich', discoveredBy: 'Mary Anning', note: 'Entdeckt von der legendären Fossiliensammlerin Mary Anning an der Jurassic Coast.' },
+  ],
+  fossilLocations: [
+    { country: 'Vereinigtes Königreich', region: 'Dorset', coordinates: [50.6, -2.9], specimenName: 'Blue-Lias-Formation, Jurassic Coast' },
+  ],
 }

@@ -14,4 +14,17 @@
     { label: '体长', value: '23 米', description: '侏罗纪最大的蜥脚类恐龙之一，长约23米，体重超过20吨。' },
     { label: '混淆', value: '曾被称雷龙', description: '几十年来在科学上与雷龙混淆，如今被确认为独立的属。' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: '近亲' },
+    { id: 'allosaurus', relationship: '捕食者' },
+    { id: 'brachiosaurus', relationship: '同时代蜥脚类' },
+  ],
+  discoveries: [
+    { year: 1877, location: '美国科罗拉多州', discoveredBy: '奥塞内尔·查尔斯·马什', note: '在"化石大战"期间首次被描述。' },
+    { year: 1895, location: '美国怀俄明州', discoveredBy: '美国自然历史博物馆考察', note: '最为完整的标本。' },
+  ],
+  fossilLocations: [
+    { country: '美国', region: '怀俄明州', coordinates: [43.0, -107.5], specimenName: '莫里逊组' },
+    { country: '美国', region: '科罗拉多州', coordinates: [39.5, -105.0] },
+  ],
 }

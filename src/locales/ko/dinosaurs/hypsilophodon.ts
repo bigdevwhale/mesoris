@@ -14,4 +14,15 @@ export default {
     { label: '이빨', value: '자기 연마식', description: '편측 에나멜질 융기가 있는 협치 — 자기 연마로 항상 면도날처럼 날카로운 상태였습니다.' },
     { label: '와이트섬', value: '웨섹스층', description: '20개체 이상의 산지 — 무리 또는 사회적 행동을 시사합니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'iguanodon', relationship: '더 큰 조각류 동시대자 및 친척' },
+    { id: 'deinonychus', relationship: '동시대 포식자' },
+  ],
+  discoveries: [
+    { discoveredBy: '윌리엄 폭스(William Fox)', note: '초기 표본들이 발견됨; 윌리엄 폭스(William Fox) 신부가 주요 표본을 수집했고 이 종은 그의 명예를 기려 명명되었다.' },
+    { discoveredBy: 'T. H. 헉슬리(T. H. Huxley)', note: '1869년 헉슬리가 공식적으로 기재함; 1882년 헉슬리는 잘못하여 수상 서식 행위를 제시했다.' },
+  ],
+  fossilLocations: [
+    { region: '와이트섬, 웨섹스층 (윌든층군)', specimenName: 'NHMUK PV R192 — 홀로타입; 20개체 이상의 화석층' },
+  ],
 }

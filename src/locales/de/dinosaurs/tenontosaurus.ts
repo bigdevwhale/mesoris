@@ -14,4 +14,16 @@ export default {
     { label: 'Größe', value: 'Mittelgroßer Pflanzenfresser', description: '8 Meter und 1 Tonne — zu groß für die meisten kleinen Räuber, aber Beute für rudeljagende Deinonychus.' },
     { label: 'Häufigkeit', value: 'Häufiges Fossil', description: 'Einer der am häufigsten gefundenen Dinosaurier aus dem Aptium–Albium Nordamerikas.' },
   ],
+  relatedDinosaurs: [
+    { id: 'deinonychus', relationship: 'Haupträuber (durch verlorene Zähne belegt)' },
+    { id: 'iguanodon', relationship: 'Größerer iguanodontier Verwandter' },
+    { id: 'camptosaurus', relationship: 'Früherer Ornithopoden-Verwandter' },
+  ],
+  discoveries: [
+    { discoveredBy: 'John H. Ostrom', note: 'Ostrom beschrieb Tenontosaurus 1970 anhand von Cloverly-Material; dieselbe Expedition lieferte auch die heute berühmten Deinonychus-Exemplare.' },
+  ],
+  fossilLocations: [
+    { region: 'Wheatland County, Montana (Cloverly-Formation)', specimenName: 'AMNH 3040 — Holotyp-Skelett' },
+    { region: 'Carter County, Oklahoma (Antlers-Formation)', specimenName: 'Bezugsexemplare aus Oklahoma' },
+  ],
 }

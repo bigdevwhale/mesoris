@@ -14,4 +14,14 @@ export default {
     { label: 'Inde', value: 'Survivant du Gondwana', description: 'Trouvé dans le Crétacé supérieur de l\'Inde — quand le sous-continent était une île dérivant vers l\'Asie.' },
     { label: 'Controverse', value: 'Très débattu', description: 'Le matériel fragmentaire rend une classification définitive presque impossible.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Parent stégosauridé possible' },
+    { id: 'kentrosaurus', relationship: 'Parent stégosauridé possible' },
+  ],
+  discoveries: [
+    { year: 1979, location: 'Trichinopoly, Tamil Nadu, Inde', discoveredBy: 'P. Yadagiri et K. Ayyasami', note: 'Matériel fragmentaire décrit comme un stégosaure par Yadagiri et Ayyasami en 1979 ; réinterprété plus tard comme possible matériel de plésiosaure par Chatterjee et Rudra (1991).' },
+  ],
+  fossilLocations: [
+    { country: 'Inde', region: 'Tiruchirappalli (Trichinopoly), Tamil Nadu (groupe de Trichinopoly)', coordinates: [10.79, 78.7], specimenName: 'GSI SR PAL 1 — holotype, matériel fragmentaire' },
+  ],
 }

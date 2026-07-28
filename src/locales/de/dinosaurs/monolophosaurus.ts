@@ -14,4 +14,16 @@ export default {
     { label: 'Lebensraum', value: 'Feuchte Umgebungen', description: 'Er lebte in feuchten, flussreichen Ökosystemen des Jura im Nordwesten Chinas.' },
     { label: 'Rolle', value: 'Mittelgroßer Räuber', description: 'Monolophosaurus jagte wahrscheinlich kleine bis mittelgroße Tiere und nutzte jede Gelegenheit zum Aasfressen.' },
   ],
+  relatedDinosaurs: [
+    { id: 'megalosaurus', relationship: 'Vergleichbarer früher tetanurer Fleischfresser' },
+    { id: 'allosaurus', relationship: 'Späterer und größerer tetanurer Räuber' },
+    { id: 'yangchuanosaurus', relationship: 'Ein weiterer chinesischer Jura-Theropode' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Feldteams aus Xinjiang', note: 'Erste Überreste aus den Shishugou-Ablagerungen geborgen.' },
+    { discoveredBy: 'Zhao Xijin und Philip Currie', note: 'Die formelle Beschreibung hob die einzelne Schädelkrause und detaillierte Schädelanatomie hervor.' },
+  ],
+  fossilLocations: [
+    { region: 'Shishugou-Formation, Xinjiang, China', specimenName: 'Holotyp und zugehöriges Skelettmaterial' },
+  ],
 }

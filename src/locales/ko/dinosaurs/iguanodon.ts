@@ -14,4 +14,16 @@ export default {
     { label: '자세', value: '수정된 인식', description: '당초 사족 보행 도마뱀로 그려짐 — 현재는 주로 이족 보행이었음이 밝혀졌습니다.' },
     { label: '식성', value: '다재다능한 초식', description: '먹이를 씹을 수 있었습니다 — 단단한 식물을 처리하기 위한 혁명적 적응입니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'megalosaurus', relationship: '최초로 발견된 공룡들' },
+    { id: 'maiasaura', relationship: '관련 계통' },
+  ],
+  discoveries: [
+    { discoveredBy: '기디온 맨텔 / 메리 앤 맨텔 (Gideon Mantell / Mary Ann Mantell)', note: '처음 발견된 이빨 — 당시 거대 이구아나의 이빨로 여겨졌다.' },
+    { discoveredBy: '석탄 광부들', note: '322m 깊이의 석탄 광산에서 38구의 완전한 골격이 발견됨 — 전례 없는 발견.' },
+  ],
+  fossilLocations: [
+    { region: '베르니사르', specimenName: '생트바브 석탄 광산' },
+    { region: '서식스', specimenName: 'IVPP — 후기 추가 자료' },
+  ],
 }

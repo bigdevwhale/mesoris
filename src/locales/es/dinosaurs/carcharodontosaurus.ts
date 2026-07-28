@@ -14,4 +14,17 @@ export default {
     { label: 'Epoca', value: '~100 Ma', description: 'Cretacico, Cenomaniano' },
     { label: 'Habitat', value: 'Norte de Africa', description: 'Egipto, Marruecos, Niger' },
   ],
+  relatedDinosaurs: [
+    { id: 'giganotosaurus', relationship: 'Pariente cercano' },
+    { id: 'spinosaurus', relationship: 'Competidor contemporáneo' },
+    { id: 'acrocanthosaurus', relationship: 'Pariente norteamericano' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Charles Depéret y J. Savornin', note: 'El material original estableció al gigante de dientes de tiburón de África del Norte.' },
+    { discoveredBy: 'Paul Sereno', note: 'Nuevo material craneal ayudó a los científicos a redescribir al animal tras la pérdida de los fósiles originales.' },
+  ],
+  fossilLocations: [
+    { region: 'Lechos de Kem Kem', specimenName: 'Grupo Kem Kem' },
+    { region: 'Tegama', specimenName: 'Continental Intercalaire' },
+  ],
 }

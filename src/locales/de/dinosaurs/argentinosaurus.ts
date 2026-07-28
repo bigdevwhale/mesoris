@@ -14,4 +14,16 @@ export default {
     { label: 'Wirbel', value: 'Riesige Knochen', description: 'Seine Rückenwirbel waren so enorm, dass ein einzelner größer als ein Mensch sein konnte.' },
     { label: 'Seltenheit', value: 'Von Fragmenten bekannt', description: 'Wissenschaftler wissen, dass er gigantisch war, obwohl das fossile Material unvollständig ist — die erhaltenen Knochen sind so riesig.' },
   ],
+  relatedDinosaurs: [
+    { id: 'giganotosaurus', relationship: 'Bedrohung durch Räuber' },
+    { id: 'apatosaurus', relationship: 'Entfernter Sauropoden-Verwandter' },
+    { id: 'sauroposeidon', relationship: 'Rivale um den Gigantentitel' },
+  ],
+  discoveries: [
+    { year: 1987, location: 'Neuquén, Argentinien', discoveredBy: 'Guillermo Heredia', note: 'Ein Farmarbeiter bemerkte die riesigen Knochen in der Huincul-Formation.' },
+    { year: 1993, location: 'Patagonien, Argentinien', discoveredBy: 'José Bonaparte und Rodolfo Coria', note: 'Die formelle Beschreibung etablierte Argentinosaurus als einen der größten bekannten Titanosaurier.' },
+  ],
+  fossilLocations: [
+    { country: 'Argentinien', region: 'Neuquén', coordinates: [-38.7, -69.8], specimenName: 'Huincul-Formation' },
+  ],
 }

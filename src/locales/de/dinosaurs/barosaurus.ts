@@ -14,4 +14,17 @@ export default {
     { label: 'Schwanz', value: 'Peitschenartig', description: 'Ein langer, dünner, peitschenartiger Schwanz, der zur Verteidigung und möglicherweise sogar zur Erzeugung von Überschallgeräuschen gedient haben könnte.' },
     { label: 'Verbreitung', value: 'Zwei Kontinente', description: 'Gefunden in der Morrison-Formation in Nordamerika und in der Tendaguru-Formation in Tansania.' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: 'Naher Diplodocid-Verwandter' },
+    { id: 'apatosaurus', relationship: 'Naher Diplodocid-Verwandter' },
+    { id: 'brontosaurus', relationship: 'Diplodocid-Verwandter' },
+  ],
+  discoveries: [
+    { year: 1889, location: 'Como Bluff, Wyoming, USA', discoveredBy: 'O.C. Marsh', note: 'Teilskelett von Marshs Teams während der Bone Wars entdeckt.' },
+    { year: 1907, location: 'Tendaguru, Tansania', discoveredBy: 'Deutsche Tendaguru-Expedition', note: 'Diplodociden-Material aus Ostafrika wurde später Barosaurus zugeordnet.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Como Bluff, Wyoming (Morrison-Formation)', coordinates: [41.8, -106.0], specimenName: 'YPM 429 — Holotyp-Teilskelett' },
+    { country: 'Tansania', region: 'Tendaguru-Formation', coordinates: [-10.2, 39.4], specimenName: 'Tendaguru-Diplodociden-Material' },
+  ],
 }

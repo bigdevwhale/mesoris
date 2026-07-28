@@ -14,4 +14,16 @@ export default {
     { label: 'कंकाल', value: 'अधिकांशतः पूर्ण', icon: 'bone', description: 'कम से कम छह व्यक्तियों से 300 से अधिक हड्डियाँ प्राप्त हुईं, जो इसके कंकाल का लगभग पूर्ण चित्र प्रदान करती हैं।' },
     { label: 'महत्व', value: 'सॉरोपॉड उत्पत्ति', icon: 'star', description: 'अपने प्रोसॉरोपॉड पूर्वजों से विशाल सॉरोपॉड के प्रारंभिक विकास को समझने के लिए एक प्रमुख टैक्सॉन।' },
   ],
+  relatedDinosaurs: [
+    { id: 'vulcanodon', relationship: 'समकालीन आधारभूत सॉरोपॉड' },
+    { id: 'brachiosaurus', relationship: 'बाद का सॉरोपॉड वंशज' },
+    { id: 'plateosaurus', relationship: 'पूर्वज-स्तरीय प्रोसॉरोपॉड संबंधी' },
+  ],
+  discoveries: [
+    { year: 1960, location: 'कोटा शैलसमूह, तेलंगाना/आंध्र प्रदेश, भारत', discoveredBy: 'भारतीय सांख्यिकी संस्थान की टीम', note: 'उत्खनन में कम से कम छह व्यक्तियों की हड्डियाँ एक ही स्थल से प्राप्त हुईं।' },
+    { year: 1975, location: 'कोटा शैलसमूह, भारत', discoveredBy: 'सोहन लाल जैन और सहयोगी', note: 'औपचारिक रूप से वर्णित कर Barapasaurus tagorei नाम दिया गया।' },
+  ],
+  fossilLocations: [
+    { country: 'भारत', region: 'कोटा शैलसमूह, तेलंगाना', coordinates: [17.97, 79.5], specimenName: 'ISI R ढलाई श्रृंखला, पैराटाइप' },
+  ],
 }

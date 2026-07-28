@@ -14,4 +14,16 @@ export default {
     { label: 'Renommé', value: 'Jadis Lexovisaurus', description: 'Décrit à l\'origine comme une espèce de Lexovisaurus ; reconnu plus tard comme un genre européen distinct.' },
     { label: 'Habitat', value: 'Plaines côtières', description: 'Vivait dans des milieux côtiers et des plaines alluviales de l\'Europe et de l\'Afrique du Nord du Jurassique moyen.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Célèbre parent' },
+    { id: 'kentrosaurus', relationship: 'Cousin stégosaure africain' },
+    { id: 'dacentrurus', relationship: 'Parent stégosaure européen' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Franz Nopcsa', note: 'Matériel original décrit comme Lexovisaurus priscus.' },
+    { discoveredBy: 'Susannah Maidment et équipe', note: 'Réérigé comme genre distinct Loricatosaurus, avec attribution de matériel africain.' },
+  ],
+  fossilLocations: [
+    { region: 'Angleterre, Royaume-Uni', specimenName: 'Matériel holotype NHMUK' },
+  ],
 }

@@ -14,4 +14,16 @@ export default {
     { label: '환경', value: '해안 평야의 사냥꾼', description: '서부 내륙 해로의 가장자리에 가까운 습윤한 동부 해안 저지대에 서식했습니다.' },
     { label: '예술적 유산', value: '고전 그림의 아이콘', description: '1897년 그림 "도약하는 라엘라프스"로 인해 드립토사우루스는 활발하고 동적인 모습으로 그려진 최초의 공룡 중 하나가 되었습니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: '후대의 거대 티라노사우루스과 친척' },
+    { id: 'albertosaurus', relationship: '서부 북아메리카의 더 진화한 티라노사우루스과' },
+    { id: 'gorgosaurus', relationship: '캄파니안-마스트리흐트기의 또 다른 티라노사우루스상과 계통' },
+  ],
+  discoveries: [
+    { year: 1866, location: '미국 뉴저지주 반스보로', discoveredBy: '채석장 노동자; 기술은 에드워드 드링커 코프가 작성', note: '백악기의 해안 퇴적물에서 처음에 Laelaps aquilunguis로 명명되었다.' },
+    { year: 1877, location: '분류학적 개정', discoveredBy: '오스니얼 찰스 마시', note: 'Laelaps라는 이름이 이미 선점되어 있는 것으로 판명되어 Dryptosaurus로 개명되었다.' },
+  ],
+  fossilLocations: [
+    { country: '미국', region: '뉴저지주 나브싱크층', coordinates: [39.82, -75.13], specimenName: '홀로타입 관련 표본' },
+  ],
 }

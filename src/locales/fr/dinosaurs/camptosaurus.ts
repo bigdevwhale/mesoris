@@ -14,4 +14,16 @@ export default {
     { label: 'Alimentation', value: 'Fougères et prêles', description: 'Son bec dentelé était idéal pour arracher la végétation basse dans les forêts alluviales du Jurassique.' },
     { label: 'Danger', value: 'Proie d\'Allosaurus', description: 'Sa taille modeste en faisait une proie de choix pour le superprédateur Allosaurus.' },
   ],
+  relatedDinosaurs: [
+    { id: 'iguanodon', relationship: 'Proche parent iguanodontien' },
+    { id: 'edmontosaurus', relationship: 'Lignée descendante des hadrosaures' },
+    { id: 'muttaburrasaurus', relationship: 'Parent ornithopode plus tardif' },
+  ],
+  discoveries: [
+    { discoveredBy: 'O.C. Marsh', note: 'Plusieurs spécimens récupérés pendant la guerre des os ; Marsh décrivit le genre en 1879.' },
+  ],
+  fossilLocations: [
+    { region: 'Comté d\'Albany, Wyoming (formation de Morrison)', specimenName: 'YPM 1877 — matériel holotype' },
+    { region: 'Dinosaur National Monument, Utah', specimenName: 'Spécimens attribués de séries de croissance' },
+  ],
 }

@@ -14,4 +14,17 @@ export default {
     { label: 'Troupeau', value: 'Troupeaux sociaux', description: 'Plusieurs spécimens trouvés ensemble et des traces suggèrent de grands troupeaux migrateurs.' },
     { label: 'Dents', value: 'Batterie dentaire', description: 'Des centaines de dents broyeuses auto-renouvelées pour traiter efficacement la végétation coriace.' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: 'Parent hadrosaure — évolution convergente de la crête' },
+    { id: 'edmontosaurus', relationship: 'Parent saurophiné proche' },
+    { id: 'corythosaurus', relationship: 'Hadrosaure lambeosauriné à crête' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Barnum Brown', note: 'S. osborni décrit par Brown en 1912 à partir de matériel d\'Alberta collecté pour le Musée américain d\'histoire naturelle.' },
+    { discoveredBy: 'Expéditions soviéto-mongoles', note: 'Espèce asiatique S. angustirostris décrite de la formation de Nemegt; plus grande que l\'espèce nord-américaine.' },
+  ],
+  fossilLocations: [
+    { region: 'Alberta (formation de Horseshoe Canyon)', specimenName: 'AMNH 5220 — holotype, crâne complet et squelette' },
+    { region: 'Province d\'Ömnögovi (formation de Nemegt)', specimenName: 'S. angustirostris — grands spécimens asiatiques' },
+  ],
 }

@@ -14,4 +14,18 @@ export default {
     { label: '嘴', value: 'オウム状', description: '硬いヤシの葉やソテツ類を切り裂くための鋭く湾曲した嘴。' },
     { label: '化石', value: '数百点', description: '最も一般的な化石恐竜の一つで、他のほとんどの種よりも詳しく知られています。' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: '捕食者' },
+    { id: 'styracosaurus', relationship: '近縁種' },
+    { id: 'pachyrhinosaurus', relationship: '近縁種' },
+  ],
+  discoveries: [
+    { discoveredBy: 'オスニエル・チャールズ・マーシュ', note: '最初は巨大なバイソンとして誤認された。' },
+    { discoveredBy: 'ジョン・ベル・ハッチャー', note: '完全で初の頭骨が発見・正しく同定された。' },
+  ],
+  fossilLocations: [
+    { region: 'ワイオミング州', specimenName: '' },
+    { region: 'モンタナ州', specimenName: 'ヘルクリーク' },
+    { region: 'コロラド州', specimenName: '' },
+  ],
 }

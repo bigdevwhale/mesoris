@@ -14,4 +14,14 @@ export default {
     { label: '翼開長', value: '約1.8 m', description: '中型の翼竜で、翼を広げると約1.8メートル。' },
     { label: '時代', value: '約1億5000万年前', description: 'ジュラ紀後期、ゾルンホーフェン石灰岩。' },
   ],
+  relatedDinosaurs: [
+    { id: 'pterodactylus', relationship: '同時代' },
+    { id: 'dimorphodon', relationship: '古い近縁種' },
+  ],
+  discoveries: [
+    { year: 1830, location: 'Bavaria, Germany', discoveredBy: 'ゲオルク・アウグスト・ゴルトフス', note: 'アーケオプテリクスとともに、ゾルンホーフェン石切り場から初めて記載された。' },
+  ],
+  fossilLocations: [
+    { country: 'Germany', region: 'ゾルンホーフェン石灰岩、バイエルン', coordinates: [48.9, 11.0], specimenName: 'ゾルンホーフェン石灰岩のタイプ標本' },
+  ],
 }

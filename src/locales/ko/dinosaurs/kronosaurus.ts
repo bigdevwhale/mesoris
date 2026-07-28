@@ -14,4 +14,15 @@ export default {
     { label: '교합력', value: '플리오사우루스의 힘', description: '단경 플리오사우루스류로, 압도적 교합력으로 먹이를 매복 공격했습니다.' },
     { label: '사냥', value: '어뢰 같은 공격', description: '4개의 근육질 지느러미에 의한 단시간의 놀라운 가속으로 매복 공격을 걸었습니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'elasmosaurus', relationship: '먼 친척' },
+    { id: 'tylosaurus', relationship: '생태학적 라이벌 (더 오래된)' },
+  ],
+  discoveries: [
+    { discoveredBy: '앤드루 크롬비', note: '퀸즐랜드 외곽에서 최초의 부분 턱 발견.' },
+    { discoveredBy: '앨버트 히버 롱맨', note: '휴엔덴 근처에서 더 완전한 표본 발견.' },
+  ],
+  fossilLocations: [
+    { region: '퀸즐랜드주, 오스트레일리아', specimenName: '툴북층' },
+  ],
 }

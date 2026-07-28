@@ -13,4 +13,15 @@ export default {
     { label: 'सिर टक्कर', value: 'विवादित', icon: 'help-circle', description: 'शायद पहाड़ी भेड़ों की तरह सिर से टक्कर मारते थे — या गुंबद केवल प्रदर्शन के लिए था।' },
     { label: 'दाँत', value: 'छोटे और पत्ती के आकार', icon: 'leaf', description: 'छोटे दाँत बताते हैं कि यह नरम पौधे, फल और संभवतः कीड़े खाता था।' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'परभक्षी' },
+    { id: 'triceratops', relationship: 'समकालीन' },
+  ],
+  discoveries: [
+    { year: 1931, location: 'व्योमिंग, अमेरिका', discoveredBy: 'चार्ल्स गिलमोर', note: 'पहला खोपड़ी गुंबद खोजा गया।' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'व्योमिंग', coordinates: [44.5, -105.0], specimenName: 'लांस फॉर्मेशन' },
+    { country: 'USA', region: 'मोंटाना', coordinates: [47.5, -106.5] },
+  ],
 }

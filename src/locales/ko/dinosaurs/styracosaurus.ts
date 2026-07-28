@@ -14,4 +14,14 @@ export default {
     { label: '프릴 개구부', value: '창(페네스트라)', description: '프릴에 있는 큰 구멍(창)이 위압적 실루엣을 유지하면서도 경량화했다.' },
     { label: '몸길이', value: '약 5.5m', description: '체중 약 2.7톤에 달하는 대형 각룡.' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: '근연종' },
+    { id: 'pachyrhinosaurus', relationship: '가까운 근연종' },
+  ],
+  discoveries: [
+    { discoveredBy: '찰스 M. 스턴버그', note: '최초의 두개골이 발견되었다.' },
+  ],
+  fossilLocations: [
+    { region: '앨버타주', specimenName: '다이노소어 파크층' },
+  ],
 }

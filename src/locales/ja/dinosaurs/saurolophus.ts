@@ -14,4 +14,17 @@ export default {
     { label: '群れ', value: '社会性の群れ', description: '複数の同所的な標本と足跡から、数十から数百頭の大規模な群れで生活していたことが示唆されています。' },
     { label: '歯', value: 'デンタルバッテリー', description: '何百本もの自生交換する臼歯が、硬い植物を効率的にすりつぶす連続的な咀嚼面を形成していました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: 'ハドロサウルス類近縁種 — 収斂進化によるトサカ' },
+    { id: 'edmontosaurus', relationship: '近縁のサウロロフィン類' },
+    { id: 'corythosaurus', relationship: 'トサカを持つランベオサウルス類ハドロサウルス' },
+  ],
+  discoveries: [
+    { discoveredBy: 'バーナム・ブラウン', note: 'S. osborniは1912年にブラウンにより、米国自然史博物館のために集められたアルバータの標本から記載された。' },
+    { discoveredBy: 'ソ連・モンゴル共同調査隊', note: 'ネメグト層から記載されたアジア種S. angustirostris; 北米種より大型。' },
+  ],
+  fossilLocations: [
+    { region: 'アルバータ州（ホースシューキャニオン層）', specimenName: 'AMNH 5220 — ホロタイプ、完全な頭骨と骨格' },
+    { region: 'オムノゴヴィ県（ネメグト層）', specimenName: 'S. angustirostris — 大型のアジア産標本' },
+  ],
 }

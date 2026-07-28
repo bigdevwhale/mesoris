@@ -14,4 +14,14 @@ export default {
     { label: 'Beute', value: 'Riesige Sauropoden', description: 'Jagte Argentinosaurus — die größten Landtiere aller Zeiten — wahrscheinlich im Rudel.' },
     { label: 'Gehirn', value: 'Klein für die Größe', description: 'Hatte ein relativ kleineres Gehirn als T. rex, was auf andere Jagdstrategien hindeutet.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Größenrivale' },
+    { id: 'spinosaurus', relationship: 'Größenrivale' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Ruben Carolini', note: 'Nahezu vollständiges Skelett, gefunden von einem Amateur-Fossilsammler.' },
+  ],
+  fossilLocations: [
+    { region: 'Neuquén', specimenName: 'Candeleros-Formation' },
+  ],
 }

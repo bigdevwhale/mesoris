@@ -14,4 +14,17 @@ export default {
     { label: '이빨', value: '연필형', description: '가늘고 길쭉한 이빨로, 가지에서 잎을 긁어내어 먹었습니다.' },
     { label: '콧구멍', value: '머리 꼭대기에', description: '두개골 정상에 있는 하나의 콧구멍 — 과학자들은 수십 년 동안 그 역할을 논쟁해 왔습니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'apatosaurus', relationship: '근연종' },
+    { id: 'allosaurus', relationship: '포식자' },
+    { id: 'brachiosaurus', relationship: '동시대' },
+  ],
+  discoveries: [
+    { year: 1877, location: '미국 콜로라도주', discoveredBy: '사무엘 웬들 윌리스턴', note: '캐논 시티에서 최초의 화석이 발견되었다.' },
+    { year: 1899, location: '미국 와이오밍주', discoveredBy: 'AMNH 원정대', note: '십크릭에서 가장 완전한 골격이 발견되었다.' },
+  ],
+  fossilLocations: [
+    { country: '미국', region: '와이오밍주', coordinates: [43.0, -107.5], specimenName: '모리슨층' },
+    { country: '미국', region: '콜로라도주', coordinates: [39.5, -105.0] },
+  ],
 }

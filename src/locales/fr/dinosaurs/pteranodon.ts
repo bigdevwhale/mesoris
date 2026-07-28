@@ -14,4 +14,16 @@ export default {
     { label: 'Pas un dinosaure', value: 'Ptérosaure', description: 'En réalité un reptile volant (ptérosaure), pas un vrai dinosaure — mais il vivait à leurs côtés.' },
     { label: 'Alimentation', value: 'Piscivore', description: 'Planait au-dessus de la Voie Maritime Intérieure en attrapant des poissons avec son long bec.' },
   ],
+  relatedDinosaurs: [
+    { id: 'quetzalcoatlus', relationship: 'Parent plus grand' },
+    { id: 'pterodactylus', relationship: 'Parent plus petit' },
+    { id: 'mosasaurus', relationship: 'Écosystème partagé' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Othniel Charles Marsh', note: 'Premiers fossiles de Pteranodon trouvés.' },
+    { discoveredBy: 'S. W. Williston', note: 'Crâne complet révélant la crête céphalique distinctive.' },
+  ],
+  fossilLocations: [
+    { region: 'Kansas', specimenName: 'Craie de Niobrara' },
+  ],
 }

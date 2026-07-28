@@ -14,4 +14,15 @@ export default {
     { label: 'Zeitalter', value: 'Späte Kreidezeit', description: '~72 Millionen Jahre' },
     { label: 'Fundort', value: 'Shandong, China', description: 'Ostchina' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: 'Verwandter Ceratopsidae' },
+    { id: 'protoceratops', relationship: 'Früherer asiatischer Ceratopsier-Vorfahre' },
+    { id: 'psittacosaurus', relationship: 'Ursprünglicher asiatischer Ceratopsier' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Xu Xing und Kollegen', note: '2010 von Xu Xing und Kollegen anhand von Material aus Zhucheng beschrieben; der Fund erweiterte das bekannte Verbreitungsgebiet großer Ceratopsidae auf Asien.' },
+  ],
+  fossilLocations: [
+    { region: 'Zhucheng, Provinz Shandong (Wangshi-Gruppe)', specimenName: 'ZCDM V0010 — Holotyp, Teilschädel' },
+  ],
 }

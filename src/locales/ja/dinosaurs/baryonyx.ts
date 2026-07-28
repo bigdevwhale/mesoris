@@ -14,4 +14,14 @@
     { label: '食性', value: '魚食性', description: '胃の内容物から魚の遺骸が発見された、魚食が確認されている数少ない恐竜の一つです。' },
     { label: '発見', value: '1983年、イングランド', description: 'サリー州の粘土採掘場でアマチュア化石収集家によって発見された、ヨーロッパで最も重要な恐竜発見の一つです。' },
   ],
+  relatedDinosaurs: [
+    { id: 'spinosaurus', relationship: '近縁種' },
+    { id: 'suchomimus', relationship: '近縁種' },
+  ],
+  discoveries: [
+    { year: 1983, location: 'イギリス・サリー州', discoveredBy: 'ウィリアム・ウォーカー', note: 'アマチュアの化石愛好家が粘土採掘場で巨大な爪を発見した。' },
+  ],
+  fossilLocations: [
+    { country: 'イギリス', region: 'サリー州', coordinates: [51.2, -0.5], specimenName: 'ウィールドクレイ層' },
+  ],
 }

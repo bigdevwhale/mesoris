@@ -14,4 +14,17 @@ export default {
     { label: 'Coda', value: 'Simile a uno squalo', description: 'Una potente pinna caudale come quella di uno squalo per una velocità incredibile.' },
     { label: 'Denti', value: 'Conici', description: 'Enormi denti conici, perfettamente adatti ad afferrare e stritolare prede scivolose.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tylosaurus', relationship: 'Parente stretto' },
+    { id: 'plesiosaurus', relationship: 'Concorrente' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Lavoratori locali di cava', note: 'Primo rettile preistorico gigante mai scoperto — decenni prima che qualcuno conoscesse i dinosauri.' },
+    { discoveredBy: 'Progetto PaleoAngola', note: 'Scoperte importanti lungo la costa sudafricana.' },
+  ],
+  fossilLocations: [
+    { region: 'Maastricht, Paesi Bassi', specimenName: 'Formazione di Maastricht' },
+    { region: 'Bacino del Benguela, Angola' },
+    { region: 'Kansas, Stati Uniti' },
+  ],
 }

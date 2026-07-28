@@ -13,4 +13,15 @@ export default {
       { label: 'Бодание', value: 'Спорно', description: 'Возможно, бодался, как толстороги, но купол мог служить и просто для демонстрации.' },
       { label: 'Зубы', value: 'Маленькие и листовидные', description: 'Крошечные зубы указывают на питание мягкими растениями, плодами и, возможно, насекомыми.' },
     ],
+    relatedDinosaurs: [
+      { id: 'tyrannosaurus-rex', relationship: 'Хищник' },
+      { id: 'triceratops', relationship: 'Современник' },
+    ],
+    discoveries: [
+      { discoveredBy: 'Чарльз Гилмор', note: 'Первый обнаруженный черепной купол.' },
+    ],
+    fossilLocations: [
+      { region: 'Вайоминг', specimenName: 'Формация Ланс' },
+      { region: 'Монтана', specimenName: 'Формация Ланс' },
+    ],
   }

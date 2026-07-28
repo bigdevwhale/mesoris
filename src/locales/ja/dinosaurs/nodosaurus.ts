@@ -14,4 +14,15 @@
     { label: '体型', value: '戦車のよう', description: '分厚い皮膚の中に楕円形の骨の結節がある、幅広で平らな体。' },
     { label: '生息地', value: '内海の沿岸', description: '西部内陸海道の沿岸に生息 — 北アメリカの巨大な内海。' },
   ],
+  relatedDinosaurs: [
+    { id: 'ankylosaurus', relationship: 'アンキロサウルス類の近縁種（異なる科、尾のハンマーを持つ）' },
+    { id: 'euoplocephalus', relationship: '尾のハンマーを持つアンキロサウルス類の近縁種' },
+    { id: 'stegosaurus', relationship: '曲竜類の近縁種' },
+  ],
+  discoveries: [
+    { discoveredBy: 'O.C.マーシュ', note: '1889年にマーシュが記載した断片的な資料; 二つの主要なアンキロサウルス科の一つであるノドサウルス科を定義する名前を提供した。' },
+  ],
+  fossilLocations: [
+    { region: 'オールバニー郡、ワイオミング州（モウリー頁岩層）、アメリカ合衆国', specimenName: 'YPM 1815 — 断片的なホロタイプ標本' },
+  ],
 }

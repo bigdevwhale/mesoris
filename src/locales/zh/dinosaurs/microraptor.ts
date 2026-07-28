@@ -14,4 +14,16 @@
     { label: '颜色', value: '彩虹黑色', description: '微观色素结构表明羽毛像乌鸦一样具有光泽。' },
     { label: '食性', value: '一切能入口之物', description: '化石胃内容物中发现了鱼类、哺乳动物和鸟类——一个多才多艺的小型捕食者。' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: '远亲驰龙类' },
+    { id: 'troodon', relationship: '似鸟近亲兽脚类' },
+    { id: 'psittacosaurus', relationship: '同时代邻居' },
+  ],
+  discoveries: [
+    { discoveredBy: '当地化石收藏者', note: '热河生物群中保存异常的标本揭示了一种小型四翼恐龙。' },
+    { discoveredBy: '徐星及同事', note: '正式描述使小盗龙成为最清晰的有羽毛非鸟类恐龙之一。' },
+  ],
+  fossilLocations: [
+    { region: '辽宁省，中国', specimenName: '九佛堂组' },
+  ],
 }

@@ -14,4 +14,14 @@ export default {
     { label: 'Époque', value: 'Crétacé supérieur', description: '~80 millions d\'années' },
     { label: 'Site', value: 'Mongolie', description: 'Désert de Gobi' },
   ],
+  relatedDinosaurs: [
+    { id: 'therizinosaurus', relationship: 'Proche parent thérizinosaurien' },
+    { id: 'oviraptor', relationship: 'Théropode mongol contemporain' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Altangerel Perle', note: 'Décrit par Perle en 1979 ; la classification initiale était incertaine, mais des travaux ultérieurs l\'ont placé fermement chez les Therizinosauria.' },
+  ],
+  fossilLocations: [
+    { region: 'Province de Dornogovi, Formation Bayan Shireh', specimenName: 'IGM 100/80 — holotype, squelette partiel' },
+  ],
 }

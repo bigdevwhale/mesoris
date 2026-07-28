@@ -14,4 +14,16 @@ export default {
     { label: '크기', value: '참새 크기', description: '아주 작아서, 몸무게가 겨우 200그램 정도의 참새 크기였어요.' },
     { label: '비행', value: '활공 능력', description: '강한 비행은 불가능했지만, 깃털로 활공하고 몸을 제어하여 나뭇가지 사이를 이동했을 거예요.' },
   ],
+  relatedDinosaurs: [
+    { id: 'microraptor', relationship: '네 날개의 근조류 사촌' },
+    { id: 'archaeopteryx', relationship: '초기 익안류 동시대자' },
+    { id: 'troodon', relationship: '더 큰 트로오돈과 친척' },
+  ],
+  discoveries: [
+    { year: 2009, location: '중국 랴오닝성 티아오지산층', discoveredBy: '쉬 싱과 연구팀', note: '표본들은 처음에 작은 깃털 달린 근조류로 명명되고 인식되었습니다.' },
+    { year: 2010, location: '중국', discoveredBy: '장 푸청과 연구팀', note: '안키오르니스의 실제 체색 첫 복원 연구가 네이처지에 발표되었습니다.' },
+  ],
+  fossilLocations: [
+    { country: '중국', region: '랴오닝성 티아오지산층', coordinates: [41.6, 120.7], specimenName: 'IVPP V14378 — 모식표본, 수백 점의 참조표본' },
+  ],
 }

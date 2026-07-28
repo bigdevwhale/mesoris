@@ -14,4 +14,14 @@ export default {
     { label: 'Groae', value: 'Winziger Pionier', description: 'Nur 1 Meter lang und unter 3 kg — winzig selbst fur Trias-Dinosaurier.' },
     { label: 'Fundort', value: 'Ischigualasto', description: 'Argentinien — eine der wichtigsten Fundstatten fur fruhe Dinosaurier.' },
   ],
+  relatedDinosaurs: [
+    { id: 'eoraptor', relationship: 'Zeitgenosse aus derselben Formation' },
+    { id: 'herrerasaurus', relationship: 'Zeitgenössischer Rauber aus derselben Formation' },
+  ],
+  discoveries: [
+    { year: 1962, location: 'Ischigualasto, Provinz San Juan, Argentinien', discoveredBy: 'Galileo J. Scaglia', note: 'Einzelnes fragmentarisches Exemplar geborgen; 1967 von Rodolfo Casamiquela formal beschrieben.' },
+  ],
+  fossilLocations: [
+    { country: 'Argentinien', region: 'Provinz San Juan, Ischigualasto-Formation', coordinates: [-30.0, -67.9], specimenName: 'PULR 08 — Holotyp-Teilskelett' },
+  ],
 }

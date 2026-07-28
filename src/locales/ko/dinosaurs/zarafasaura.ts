@@ -14,4 +14,15 @@ export default {
     { label: '원산지', value: '모로코', description: '모로코 울라드 압둔 분지의 인산염암에서 발견되었어요.' },
     { label: '목', value: '매우 길다', description: '50개 이상의 경추로 이루어진 긴 목으로 물고기 떼를 기습했어요.' },
   ],
+  relatedDinosaurs: [
+    { id: 'elasmosaurus', relationship: '더 큰 엘라스모사우루스과 사촌' },
+    { id: 'plesiosaurus', relationship: '긴 목 플레시오사우루스 친척' },
+    { id: 'mosasaurus', relationship: '동시대 해양 포식자' },
+  ],
+  discoveries: [
+    { discoveredBy: '페기 빈센트 및 연구진', note: '부분 두개골과 경추가 기재되어 명명됨.' },
+  ],
+  fossilLocations: [
+    { region: '울라드 압둔 분지', specimenName: 'OCP DEK/GE 307 — 홀로타입 부분 두개골 및 척추' },
+  ],
 }

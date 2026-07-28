@@ -14,4 +14,15 @@ export default {
     { label: 'Sens', value: 'Ouïe fine', description: 'Excellente audition — la crête aidait à amplifier et diriger le son pour la communication.' },
     { label: 'Âge', value: 'Crête révèle l\'âge', description: 'Juvéniles sans crête, subadultes avec petite bosse, adultes avec crête majestueuse pleinement développée.' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: 'Proche parent' },
+    { id: 'corythosaurus', relationship: 'Proche parent' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Lawrence Lambe', note: 'Premier spécimen découvert.' },
+    { discoveredBy: 'William Parks', note: 'Squelette complet à crête nommé.' },
+  ],
+  fossilLocations: [
+    { region: 'Alberta, Canada', specimenName: 'Formation de Dinosaur Park' },
+  ],
 }

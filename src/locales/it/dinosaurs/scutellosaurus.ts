@@ -14,4 +14,15 @@ export default {
     { label: 'Epoca', value: 'Giurassico inferiore', description: '~195 milioni di anni fa.' },
     { label: 'Locomozione', value: 'Bipede', description: 'Camminava probabilmente su due zampe.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Discendente tireoforo molto più tardo' },
+    { id: 'ankylosaurus', relationship: 'Discendente tireoforo molto più tardo' },
+    { id: 'scelidosaurus', relationship: 'Tireoforo precoce strettamente imparentato' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Edwin H. Colbert', note: 'Descritto da Colbert nel 1981 dalla Formazione Kayenta; importante come il più antico tireoforo conosciuto.' },
+  ],
+  fossilLocations: [
+    { region: 'Contea di Coconino, Arizona (Formazione Kayenta)', specimenName: 'UCMP 129015 — olotipo, scheletro parziale' },
+  ],
 }

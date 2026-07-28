@@ -14,4 +14,15 @@ export default {
     { label: 'Yacimiento', value: 'Rancho Ghost', description: 'Cientos de esqueletos juntos en un solo lugar' },
     { label: 'Tamaño', value: '3 m', description: 'Esbelto y ligero, pesaba solo 30 kg' },
   ],
+  relatedDinosaurs: [
+    { id: 'herrerasaurus', relationship: 'Contemporaneo' },
+    { id: 'eoraptor', relationship: 'Contemporaneo' },
+  ],
+  discoveries: [
+    { year: 1881, location: 'Nuevo Mexico, EE. UU.', discoveredBy: 'David Baldwin', note: 'Primer especimen encontrado en depositos del Triasico.' },
+    { year: 1947, location: 'Rancho Ghost, Nuevo Mexico, EE. UU.', discoveredBy: 'Edwin Colbert', note: 'Yacimiento masivo con cientos de esqueletos completos descubierto.' },
+  ],
+  fossilLocations: [
+    { country: 'EE. UU.', region: 'Nuevo Mexico', coordinates: [36.3, -106.0], specimenName: 'Rancho Ghost, Formacion Chinle' },
+  ],
 }

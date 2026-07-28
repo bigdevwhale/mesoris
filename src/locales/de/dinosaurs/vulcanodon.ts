@@ -14,4 +14,14 @@ export default {
     { label: 'Afrika', value: 'Frühester afrikanischer Sauropode', description: 'Einer der ersten bekannten Sauropoden Afrikas, wichtig für die Biogeographie.' },
     { label: 'Körperbau', value: 'Stämmig', description: 'Robuste, säulenartige Gliedmaßen zeigen den Beginn der Gewichtsarchitektur der Sauropoden.' },
   ],
+  relatedDinosaurs: [
+    { id: 'plateosaurus', relationship: 'Frühere Prosauropoden-Vorfahrenlinie' },
+    { id: 'brachiosaurus', relationship: 'Späterer abgeleiteter Sauropoden-Verwandter' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Michael Raath', note: 'Teilskelett zwischen Basaltschichten entdeckt; 1972 von Raath formal beschrieben — einer der frühesten bekannten Sauropoden Afrikas.' },
+  ],
+  fossilLocations: [
+    { region: 'Mashonaland West, Vulcanodon Beds, Karibasee-Gebiet', specimenName: 'QG 24 — Holotyp-Teilskelett' },
+  ],
 }

@@ -14,4 +14,15 @@ export default {
     { label: '歯', value: 'デンタルバッテリー', description: '何百本もの密に詰まった歯が効率的なすりつぶし面として機能していました。' },
     { label: 'とさかなし', value: '平らな頭', description: '巨大な体にもかかわらず骨質のとさかはなく、サウロロフス亜科の平たい頭骨を持っていました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'edmontosaurus', relationship: '北米産の近いサウロロフィン亜科の近縁種' },
+    { id: 'parasaurolophus', relationship: 'ハドロサウルス科の近縁種' },
+    { id: 'tarbosaurus', relationship: '同時代のアジア産捕食者' },
+  ],
+  discoveries: [
+    { discoveredBy: '胡承志とその同僚たち', note: '1960年代から山東省で行われた大規模な発掘により膨大な量のハドロサウルス類化石が発見された。胡は1973年にShantungosaurus giganteusを正式に記載した。' },
+  ],
+  fossilLocations: [
+    { region: '中国山東省諸城（王氏層群）', specimenName: 'IVPP V2659 — ホロタイプと複合組み立て骨格' },
+  ],
 }

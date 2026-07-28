@@ -14,4 +14,16 @@ export default {
     { label: 'Bras', value: 'Très petits', description: 'Comme les autres tyrannosaurinés, il avait de petits bras à deux doigts éclipsés par sa tête géante.' },
     { label: 'Niche', value: 'Superprédateur du Nemegt', description: 'Chassait les grands hadrosaures et titanosaures dans les plaines inondables fluviales de l\'ancienne Mongolie.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Proche parent' },
+    { id: 'velociraptor', relationship: 'Contemporain régional' },
+    { id: 'oviraptor', relationship: 'Voisin de Nemegt' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Expéditions soviéto-mongoles', note: 'Les premières expéditions au Gobi ont récupéré d\'importants matériaux de tyrannosaure dans le bassin de Nemegt.' },
+    { discoveredBy: 'Evgeny Maleev', note: 'Maleev a nommé formellement Tarbosaurus à partir de fossiles mongols.' },
+  ],
+  fossilLocations: [
+    { region: 'Ömnögovi', specimenName: 'Formation Nemegt' },
+  ],
 }

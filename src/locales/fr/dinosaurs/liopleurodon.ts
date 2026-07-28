@@ -14,4 +14,17 @@ export default {
     { label: 'Mythe', value: 'Pas 25 mètres', description: 'La télévision a rendu Liopleurodon célèbre comme monstre marin de 20 mètres — les preuves réelles indiquent un animal bien plus petit.' },
     { label: 'Nage', value: 'Propulsion à quatre nageoires', description: 'Volait sous l\'eau avec ses quatre nageoires en mouvements coordonnés, comme les autres plésiosaures.' },
   ],
+  relatedDinosaurs: [
+    { id: 'kronosaurus', relationship: 'Analogue pliosaure plus tardif' },
+    { id: 'plesiosaurus', relationship: 'Parent plésiosaure éloigné' },
+    { id: 'ichthyosaurus', relationship: 'Contemporain marin' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Henri-Émile Sauvage', note: 'Des dents et du matériel de mâchoire ont constitué la base pour nommer Liopleurodon.' },
+    { discoveredBy: 'Nombreux collectionneurs et musées', note: 'Le matériel d\'Oxford Clay de Grande-Bretagne a aidé plus tard les paléontologues à mieux comprendre l\'animal.' },
+  ],
+  fossilLocations: [
+    { region: 'Pas-de-Calais', specimenName: 'Dépôts marins du Callovien' },
+    { region: 'Oxfordshire', specimenName: 'Formation d\'Oxford Clay' },
+  ],
 }

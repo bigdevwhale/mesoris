@@ -14,4 +14,16 @@ export default {
     { label: '본베드', value: '거대한 무리', description: '수천 마리 개체의 거대한 무리로 생활했다.' },
     { label: '몸길이', value: '8미터', description: '약 4톤의 대형 각룡류.' },
   ],
+  relatedDinosaurs: [
+    { id: 'styracosaurus', relationship: '가까운 친척' },
+    { id: 'triceratops', relationship: '친척' },
+  ],
+  discoveries: [
+    { year: 1946, location: '앨버타, 캐나다', discoveredBy: '찰스 M. 스턴버그', note: '첫 번째 두개골이 발견되었다.' },
+    { year: 1970, location: '앨버타, 캐나다', discoveredBy: '앨 러커스타', note: '수백 개체로 구성된 대규모 본베드.' },
+  ],
+  fossilLocations: [
+    { country: '캐나다', region: '앨버타', coordinates: [55.0, -118.0], specimenName: '와피티 층' },
+    { country: '미국', region: '알래스카', coordinates: [69.0, -151.0], specimenName: '프린스 크릭 층' },
+  ],
 }

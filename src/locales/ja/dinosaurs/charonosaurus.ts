@@ -14,4 +14,15 @@ export default {
     { label: '群れ', value: '群居性', description: '複数の個体が一緒に発見されており、中国北東部の古代の景観を移動する群れの動物だったことを示唆しています。' },
     { label: '音', value: '共鳴する鳴き声', description: 'トサカの中空の管はトロンボーンのように機能し、コミュニケーションのための鳴き声を増幅しました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: '最も近い既知の近縁種 — ほぼ同じトサカ' },
+    { id: 'corythosaurus', relationship: 'ランベオサウルス亜科のハドロサウルス類近縁種' },
+    { id: 'lambeosaurus', relationship: 'ランベオサウルス亜科のハドロサウルス類近縁種' },
+  ],
+  discoveries: [
+    { year: 2000, location: '中国黒竜江省嘉蔭', discoveredBy: 'パスカル・ゴッドフロワ他', note: '2000年にゴッドフロワと共同研究者によりアムール川近くで採集された資料に基づき記載。川の境界という立地から神話のカロンにちなんで命名された。' },
+  ],
+  fossilLocations: [
+    { country: '中国', region: '黒竜江省嘉蔭地区（ユリャンゼ層）', coordinates: [48.8, 130.4], specimenName: 'IVPP V12735 — ホロタイプ部分頭骨と骨格' },
+  ],
 }

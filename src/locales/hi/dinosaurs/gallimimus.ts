@@ -14,4 +14,14 @@ export default {
     { label: 'गर्दन', value: 'लंबी और लचीली', icon: 'move', description: 'खतरे और भोजन के लिए परिदृश्य को स्कैन करने हेतु शुतुरमुर्ग-जैसी लंबी गर्दन।' },
     { label: 'आहार', value: 'अवसरवादी', icon: 'utensils', description: 'पौधे, छोटे जानवर और कीड़े खाता था — पैरों वाला कचरा निपटानकर्ता।' },
   ],
+  relatedDinosaurs: [
+    { id: 'ornithomimus', relationship: 'निकट संबंधी' },
+    { id: 'struthiomimus', relationship: 'निकट संबंधी' },
+  ],
+  discoveries: [
+    { discoveredBy: 'पोलिश-मंगोलियाई अभियान', note: 'नेमेगत बेसिन में पहले नमूने खोजे गए।' },
+  ],
+  fossilLocations: [
+    { region: 'गोबी मरुस्थल', specimenName: 'नेमेगत शैलसमूह' },
+  ],
 }

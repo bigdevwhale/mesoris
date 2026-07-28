@@ -14,4 +14,15 @@ export default {
     { label: 'Dents', value: 'Tranchantes comme des lames', description: 'Dents distinctives recourbées, en forme de lame, dotées de dentelures — parfaites pour trancher la chair des grands sauropodes.' },
     { label: 'Aire', value: 'Patagonie', description: 'Découvert dans la formation Cerro Barcino, province de Chubut, Patagonie, Argentine.' },
   ],
+  relatedDinosaurs: [
+    { id: 'giganotosaurus', relationship: 'Parent carcharodontosauridé' },
+    { id: 'carcharodontosaurus', relationship: 'Parent carcharodontosauridé africain' },
+    { id: 'concavenator', relationship: 'Parent carcharodontosauridé basal' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Fernando Novas et équipe', note: 'Squelette postcrânien partiel décrit et nommé Tyrannotitan chubutensis.' },
+  ],
+  fossilLocations: [
+    { region: 'Formation Cerro Barcino, Chubut', specimenName: 'MPEF-PV 1156 — squelette partiel holotype' },
+  ],
 }

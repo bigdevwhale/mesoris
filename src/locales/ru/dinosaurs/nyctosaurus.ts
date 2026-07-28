@@ -14,4 +14,15 @@ export default {
     { label: 'Крылья', value: 'Узкие и длинные', description: 'Длинные узкие крылья, приспособленные к динамическому парению над Западным внутренним морем — как меловой альбатрос.' },
     { label: 'Полёт', value: 'Воздушный рыболов', description: 'Парит над меловым морем и погружает беззубый клюв, выхватывая рыбу.' },
   ],
+  relatedDinosaurs: [
+    { id: 'pteranodon', relationship: 'Современный птеранодонтидный родственник' },
+    { id: 'dimorphodon', relationship: 'Ранний базальный птерозавр' },
+    { id: 'quetzalcoatlus', relationship: 'Дальний аждархидный родственник' },
+  ],
+  discoveries: [
+    { discoveredBy: 'О.С. Марш', note: 'Первый Nyctosaurus, описанный из меловых отложений Канзаса.' },
+  ],
+  fossilLocations: [
+    { region: 'Мел Ниобрара, Канзас', specimenName: 'Типовой материал из мела Ниобрара' },
+  ],
 }

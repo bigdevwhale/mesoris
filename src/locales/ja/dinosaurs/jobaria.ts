@@ -14,4 +14,15 @@
     { label: '原始的', value: '古い特徴', description: '比較的新しい地質年代にもかかわらず、驚くほど原始的な解剖学的特徴を保持していました。' },
     { label: '名前', value: 'トゥアレグ神話', description: 'サハラのトゥアレグ族の口承伝統に登場する神話上の生き物「ジョバル」にちなんで名付けられました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'brachiosaurus', relationship: '後代の新竜脚類の親類' },
+    { id: 'diplodocus', relationship: '同時代の竜脚類の親類' },
+    { id: 'nigersaurus', relationship: 'アフリカの同時代種' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ポール・セレノと共同研究者', note: '大規模なサハラ探検中に約95%完全な骨格を発見；1999年にScience誌で正式に記載された。' },
+  ],
+  fossilLocations: [
+    { region: 'アガデス地方、ティウラレン層', specimenName: 'MNN TIG3 — ほぼ完全なホロタイプ' },
+  ],
 }

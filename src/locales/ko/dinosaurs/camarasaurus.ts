@@ -14,4 +14,18 @@ export default {
     { label: '이빨', value: '숟가락 모양', description: '다른 용각류의 말뚝 모양 이빨보다, 거친 식물질에 더 적합한 튼튼한 숟가락형 이빨.' },
     { label: '몸길이', value: '약 15미터', description: '최장은 아니지만, 당시 용각류 중에서도 가장 탄탄한 체격을 가진 종 중 하나였습니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'brachiosaurus', relationship: '마크로나리아류 용각류의 친척' },
+    { id: 'diplodocus', relationship: '동시대의 디플로도쿠스류 용각류' },
+    { id: 'apatosaurus', relationship: '모리슨층의 동시대 디플로도쿠스류' },
+  ],
+  discoveries: [
+    { year: 1877, location: '미국 콜로라도주 가든파크', discoveredBy: '에드워드 드링커 코프', note: '1877년 «뼈 전쟁»의 절정기에 코프가 최초의 표본을 기술했으며, 모리슨층 산출물에서 여러 종이 설립되었다.' },
+    { year: 1925, location: '미국 유타주 공룡 국립기념공원', discoveredBy: '카네기 박물관 팀', note: '«Camarasaurus lentus»의 유명한 어린 개체를 포함해, 놀라울 정도로 잘 보존된 연결된 부분 골격이 발굴되어 이 종의 빠른 성장을 보여주었다.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: '콜로라도주 가든파크 (모리슨층)', coordinates: [38.4, -105.1], specimenName: 'AMNH 5761 — 완모식 표본 재료' },
+    { country: 'USA', region: '유타주 공룡 국립기념공원', coordinates: [40.43, -108.98], specimenName: 'CM 11338 — 거의 완전한 어린 개체' },
+    { country: 'USA', region: '와이오밍주 코모 블러프 (모리슨층)', coordinates: [41.8, -106.0], specimenName: '여러 참조 표본' },
+  ],
 }

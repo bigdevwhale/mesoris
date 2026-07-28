@@ -14,4 +14,16 @@ export default {
     { label: 'Nome', value: '"Imitatore di uccello"', description: 'Assomiglia incredibilmente a uno struzzo attuale — stessa forma corporea, stesso stile di vita.' },
     { label: 'Dimensioni', value: '4 metri', description: 'Teropode di taglia media, circa delle dimensioni di un grande struzzo.' },
   ],
+  relatedDinosaurs: [
+    { id: 'gallimimus', relationship: 'Parente stretto' },
+    { id: 'struthiomimus', relationship: 'Parente stretto' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Othniel Charles Marsh', note: 'Descritto per la prima volta durante le Guerre delle Ossa.' },
+    { discoveredBy: 'Francois Therrien', note: 'Esemplari piumati scoperti con piumaggio preservato.' },
+  ],
+  fossilLocations: [
+    { region: 'Alberta', specimenName: 'Formazione Horseshoe Canyon' },
+    { region: 'Colorado', specimenName: '' },
+  ],
 }

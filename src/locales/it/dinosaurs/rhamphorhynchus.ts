@@ -14,4 +14,14 @@ export default {
     { label: 'Apertura alare', value: '1,8 m', description: 'Uno pterosauro di medie dimensioni.' },
     { label: 'Età', value: '150 milioni di anni', description: 'Giurassico superiore, Solnhofen.' },
   ],
+  relatedDinosaurs: [
+    { id: 'pterodactylus', relationship: 'Contemporaneo' },
+    { id: 'dimorphodon', relationship: 'Parente più antico' },
+  ],
+  discoveries: [
+    { year: 1830, location: 'Bavaria, Germany', discoveredBy: 'Georg August Goldfuss', note: 'Descritto per la prima volta nelle cave di Solnhofen, insieme ad Archaeopteryx.' },
+  ],
+  fossilLocations: [
+    { country: 'Germany', region: 'Calcare di Solnhofen, Baviera', coordinates: [48.9, 11.0], specimenName: 'Calcare di Solnhofen, materiale tipo' },
+  ],
 }

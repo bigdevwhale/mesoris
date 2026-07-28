@@ -14,5 +14,15 @@ const translations = {
     { label: '体型', value: '5.5 米', description: '中等体型的角龙科。' },
     { label: '时代', value: '7600–7500 万年前', description: '阿尔伯塔省的白垩纪晚期。' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: '近亲' },
+    { id: 'pachyrhinosaurus', relationship: '近亲' },
+  ],
+  discoveries: [
+    { discoveredBy: '查尔斯·M·斯特恩伯格', note: '发现首个头骨。' },
+  ],
+  fossilLocations: [
+    { region: '艾伯塔省', specimenName: '恐龙公园组' },
+  ],
 }
 export default translations

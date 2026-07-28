@@ -14,4 +14,14 @@ export default {
     { label: 'Caccia', value: 'Cacciatore attivo', description: 'Le prove mostrano che cacciava attivamente e combatteva le sue prede — non era uno spazzino.' },
     { label: 'Morso', value: 'Spacca-ossa', description: 'Stava già sviluppando il potente morso spacca-ossa che ha reso celebre T. rex.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Discendente' },
+  ],
+  discoveries: [
+    { year: 1921, location: 'Alberta, Canada', discoveredBy: 'Charles M. Sternberg', note: 'Primo cranio scoperto nella Formazione Oldman.' },
+  ],
+  fossilLocations: [
+    { country: 'Canada', region: 'Alberta', coordinates: [49.5, -112.0], specimenName: 'Formazione Oldman' },
+    { country: 'USA', region: 'Montana', coordinates: [47.5, -110.5], specimenName: 'Formazione Two Medicine' },
+  ],
 }

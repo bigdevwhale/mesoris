@@ -14,4 +14,18 @@ export default {
     { label: 'Dents', value: 'En lame de scie', description: 'Des dents dentelées en forme de lame, parfaites pour trancher la chair.' },
     { label: 'Répartition', value: 'Amérique du Nord et Europe', description: 'Des fossiles découverts aux États-Unis et au Portugal, indiquant une vaste répartition.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Proie' },
+    { id: 'diplodocus', relationship: 'Proie' },
+    { id: 'ceratosaurus', relationship: 'Concurrent' },
+  ],
+  discoveries: [
+    { year: 1877, location: 'Colorado, États-Unis', discoveredBy: 'Othniel Charles Marsh', note: 'Décrit pour la première fois pendant les Guerres des Os.' },
+    { year: 1991, location: 'Wyoming, États-Unis', discoveredBy: 'Kirby Siber', note: '"Big Al" — l\'un des squelettes de théropode les plus complets jamais trouvés.' },
+  ],
+  fossilLocations: [
+    { country: 'États-Unis', region: 'Utah', coordinates: [39.0, -111.0], specimenName: 'Carrière de Cleveland-Lloyd' },
+    { country: 'États-Unis', region: 'Wyoming', coordinates: [43.0, -107.5] },
+    { country: 'Portugal', region: 'Lourinhã', coordinates: [39.3, -9.3] },
+  ],
 }

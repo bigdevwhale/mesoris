@@ -14,4 +14,16 @@ export default {
     { label: 'Gehirngröße', value: 'Wallnussgroß', description: 'Eines der kleinsten Gehirne im Verhältnis zum Körper' },
     { label: 'Nahrung', value: 'Niedrige Pflanzen', description: 'Fraß wahrscheinlich Moose, Farne und Palmfarne' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: 'Räuber' },
+    { id: 'diplodocus', relationship: 'Zeitgenosse' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Othniel Charles Marsh', note: 'Erste Stegosaurus-Fossilien aus der Morrison-Formation beschrieben.' },
+    { discoveredBy: 'Bob Simon', note: '"Sophie" — das vollständigste je gefundene Stegosaurus-Skelett.' },
+  ],
+  fossilLocations: [
+    { region: 'Colorado', specimenName: 'Morrison-Formation' },
+    { region: 'Wyoming' },
+  ],
 }

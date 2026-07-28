@@ -14,4 +14,15 @@ export default {
     { label: '갑옷', value: '원시적 방어', description: '후기 안킬로사우루스과의 발달된 꼬리 곤봉이 없으며, 오스테오덤과 피부 뼈 판으로 구성된 갑옷은 보다 조상적인 방어 상태를 보여준다.' },
     { label: '몸길이', value: '약 4.5 미터', description: '몸길이 약 4~5미터, 체중 수백 kg으로 추정되는 그 지층의 중형 사족 초식 공룡이다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'ankylosaurus', relationship: '후대의 안킬로사우루스과 친척' },
+    { id: 'euoplocephalus', relationship: '후대의 안킬로사우루스과 친척' },
+    { id: 'nodosaurus', relationship: '안킬로사우루스 친척 (노도사우루스과 가지)' },
+  ],
+  discoveries: [
+    { discoveredBy: '뤼 준창 외', note: '망촨층에서 기재됨; 고비사우루스와 사모사우루스와 밀접한 관련이 있는 원시적 안킬로사우루스과.' },
+  ],
+  fossilLocations: [
+    { region: '허난성 (망촨층)', specimenName: '망촨층, 전기 백악기' },
+  ],
 }

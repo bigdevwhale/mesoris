@@ -14,4 +14,15 @@
     { label: 'ワイト島', value: 'ウェセックス累層のハンター', description: 'イグアノドン、ヒプシロフォドン、バリオニクスと同じ化石豊富な累層から発見。' },
     { label: '系統', value: 'カルカロドントサウルス科の祖先？', description: '巨大なカルカロドントサウルス科に近縁 — ヨーロッパはこれらの巨大恐竜の出現に重要な役割を果たした。' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: 'アロサウルス上科の近縁種' },
+    { id: 'acrocanthosaurus', relationship: 'ネオヴェナトル科の近縁種' },
+    { id: 'carcharodontosaurus', relationship: '関連する大型アロサウルス上科' },
+  ],
+  discoveries: [
+    { discoveredBy: 'アマチュア収集家（ワイト島の化石収集家）', note: '1978年にアマチュア収集家により最初の発見があり、ハットと同僚によるその後の発掘で大量の資料が得られた。1996年に正式記載。' },
+  ],
+  fossilLocations: [
+    { region: 'ブライトストーンベイ、ワイト島（ウェセックス累層）、イギリス', specimenName: 'MIWG.6348 — 約70%完全なホロタイプ骨格' },
+  ],
 }

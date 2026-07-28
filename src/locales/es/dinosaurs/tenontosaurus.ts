@@ -14,4 +14,16 @@ export default {
     { label: 'Epoca', value: 'Cretacico Temprano', description: '~115 millones de anos' },
     { label: 'Tendones', value: 'Osificados', description: 'Tendones rigidos en la cola' },
   ],
+  relatedDinosaurs: [
+    { id: 'deinonychus', relationship: 'Depredador principal (documentado por dientes caídos)' },
+    { id: 'iguanodon', relationship: 'Pariente iguanodontiano más grande' },
+    { id: 'camptosaurus', relationship: 'Pariente ornitópodo más temprano' },
+  ],
+  discoveries: [
+    { discoveredBy: 'John H. Ostrom', note: 'Ostrom describió a Tenontosaurus en 1970 a partir de material del Cloverly; la misma expedición produjo los famosos especímenes de Deinonychus.' },
+  ],
+  fossilLocations: [
+    { region: 'Condado de Wheatland, Montana (Formación Cloverly)', specimenName: 'AMNH 3040 — holotipo, esqueleto' },
+    { region: 'Condado de Carter, Oklahoma (Formación Antlers)', specimenName: 'Especímenes referidos de Oklahoma' },
+  ],
 }

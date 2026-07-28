@@ -14,5 +14,15 @@ const translations = {
     { label: '发现地', value: '阿根廷', description: '阿根廷西北部。' },
     { label: '体重', value: '约 2 吨', description: '在当时算是相当重的。' },
   ],
+  relatedDinosaurs: [
+    { id: 'plateosaurus', relationship: '近缘蜥脚形类' },
+    { id: 'eoraptor', relationship: '同时代的早期恐龙' },
+  ],
+  discoveries: [
+    { year: 1967, location: 'La Rioja Province, Argentina', discoveredBy: '何塞·波拿巴', note: '在 Los Colorados 组发现的大量标本；波拿巴于 1969 年正式描述，使其成为最知名的三叠纪蜥脚形类之一。' },
+  ],
+  fossilLocations: [
+    { country: 'Argentina', region: '拉里奥哈省，Los Colorados 组', coordinates: [-29.5, -67.5], specimenName: 'PVL 3808 — 归入标本，多个个体' },
+  ],
 }
 export default translations

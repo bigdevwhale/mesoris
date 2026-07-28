@@ -14,4 +14,16 @@
     { label: '近縁', value: 'アフリカの剣竜類', description: 'ステゴサウルスの近いいとこ — 剣竜類が北アメリカをはるかに超えて分布していたことを示しています。' },
     { label: '後肢', value: '強力な後ろ足', description: '前が軽く後ろが重い体型で、尾をトゲ付き棍棒のように振り回すのに役立ちました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: '近縁種' },
+    { id: 'brachiosaurus', relationship: 'テンダグルの同時代種' },
+    { id: 'allosaurus', relationship: '捕食者の対比種' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ドイツ・テンダグル探検隊', note: '大規模な発掘調査により、有名なジュラ紀の地層から複数の骨格が発見されました。' },
+    { discoveredBy: 'エドウィン・ヘニング', note: 'ヘニングが正式にケントロサウルスを記載し、独特なトゲの配置を強調しました。' },
+  ],
+  fossilLocations: [
+    { region: 'テンダグル、タンザニア', specimenName: 'テンダグル層' },
+  ],
 }

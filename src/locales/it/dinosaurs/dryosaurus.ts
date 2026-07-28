@@ -14,4 +14,17 @@ export default {
     { label: 'Denti', value: 'Becco tagliafoglie', description: 'Il becco e i denti guanciali erano adattati a recidere e lavorare la vegetazione bassa nelle pianure alluvionali boscose.' },
     { label: 'Areale', value: 'Due continenti', description: 'Fossili del Nord America e dell\'Africa orientale mostrano che gli stretti parenti driosauridi erano ampiamente diffusi negli ecosistemi del Giurassico superiore.' },
   ],
+  relatedDinosaurs: [
+    { id: 'camptosaurus', relationship: 'Ornitopode più grande di habitat simili' },
+    { id: 'iguanodon', relationship: 'Stirpe di ornitopodi successiva e più derivata' },
+    { id: 'allosaurus', relationship: 'Grande predatore contemporaneo' },
+  ],
+  discoveries: [
+    { year: 1878, location: 'Formazione Morrison, Wyoming, USA', discoveredBy: 'O.C. Marsh', note: 'Marsh denominò Dryosaurus sulla base di resti di ornitopode dalla corporatura leggera.' },
+    { year: 1910, location: 'Tendaguru, Tanzania', discoveredBy: 'Spedizione tedesca di Tendaguru', note: 'I fossili di driosauridi dell\'Africa orientale ampliarono la comprensione della distribuzione globale del gruppo.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Como Bluff, Wyoming (Formazione Morrison)', coordinates: [41.8, -106.0], specimenName: 'Materiale di Dryosaurus altus' },
+    { country: 'Tanzania', region: 'Formazione Tendaguru', coordinates: [-10.2, 39.4], specimenName: 'Resti riferiti a driosauridi' },
+  ],
 }

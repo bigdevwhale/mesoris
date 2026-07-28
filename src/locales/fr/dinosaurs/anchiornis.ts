@@ -14,4 +14,16 @@ export default {
     { label: 'Taille', value: 'De la taille d\'un moineau', description: 'Minuscule, à peine plus gros qu\'un moineau, ne pesant qu\'environ 200 grammes.' },
     { label: 'Vol', value: 'Planage assisté', description: 'Incapable de voler puissamment, il utilisait probablement ses ailes pour planer et contrôler son corps en sautant de branche en branche.' },
   ],
+  relatedDinosaurs: [
+    { id: 'microraptor', relationship: 'Cousin paravien à quatre ailes' },
+    { id: 'archaeopteryx', relationship: 'Contemporain avialien ancien' },
+    { id: 'troodon', relationship: 'Parent troodontidé plus grand' },
+  ],
+  discoveries: [
+    { year: 2009, location: 'Formation de Tiaojishan, Liaoning, Chine', discoveredBy: 'Xu Xing et équipe', note: 'Spécimens initialement nommés et reconnus comme petits paraviens à plumes.' },
+    { year: 2010, location: 'Chine', discoveredBy: 'Zhang Fucheng et équipe', note: 'Première publication de la véritable coloration d\'Anchiornis dans la revue Nature.' },
+  ],
+  fossilLocations: [
+    { country: 'Chine', region: 'Formation de Tiaojishan, Liaoning', coordinates: [41.6, 120.7], specimenName: 'IVPP V14378 — matériel type, centaines de spécimens rattachés' },
+  ],
 }

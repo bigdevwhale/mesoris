@@ -14,4 +14,15 @@
     { label: '体長', value: '約3メートル', description: '後のティラノサウルス科とは対照的に、小型で華奢な捕食者でした。' },
     { label: '発見地', value: '中国・新疆', description: '2006年に記載され、ティラノサウルス類の進化史を書き換えた重要な発見です。' },
   ],
+  relatedDinosaurs: [
+    { id: 'proceratosaurus', relationship: 'トサカのあるプロケラトサウルス科の親類' },
+    { id: 'tyrannosaurus-rex', relationship: '遠い子孫' },
+    { id: 'dilophosaurus', relationship: '同時代のトサカのある獣脚類' },
+  ],
+  discoveries: [
+    { discoveredBy: '徐 Xing とそのチーム', note: '中米合同探検によって2体のよく保存された骨格が採集された。' },
+  ],
+  fossilLocations: [
+    { region: '石樹溝層、新疆', specimenName: 'IVPP V14531 — ホロタイプ関節骨格' },
+  ],
 }

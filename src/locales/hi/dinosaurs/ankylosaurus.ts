@@ -14,4 +14,16 @@ export default {
     { label: 'पलकें', value: 'कवचयुक्त', icon: 'eye', description: 'इसकी पलकों पर भी हड्डी का कवच था — इस डायनासोर का कोई कमज़ोर बिंदु नहीं था।' },
     { label: 'आहार', value: 'निचली वनस्पति', icon: 'leaf', description: 'अपने छोटे, पत्ती के आकार वाले दाँतों से फ़र्न और नीचे उगने वाले पौधे खाता था।' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'शिकारी' },
+    { id: 'euoplocephalus', relationship: 'निकट संबंधी' },
+  ],
+  discoveries: [
+    { year: 1906, location: 'मोंटाना, अमेरिका', discoveredBy: 'बार्नम ब्राउन', note: 'पहले एंकायलोसॉरस के जीवाश्म हेल क्रीक शैलसमूह में पाए गए।' },
+    { year: 1910, location: 'अल्बर्टा, कनाडा', discoveredBy: 'पीटर सी. काइसेन', note: 'अब तक प्राप्त सबसे पूर्ण नमूना।' },
+  ],
+  fossilLocations: [
+    { country: 'अमेरिका', region: 'मोंटाना', coordinates: [47.5, -106.5], specimenName: 'हेल क्रीक' },
+    { country: 'कनाडा', region: 'अल्बर्टा', coordinates: [54.5, -113.0] },
+  ],
 }

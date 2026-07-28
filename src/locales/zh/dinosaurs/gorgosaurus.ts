@@ -14,4 +14,16 @@
     { label: '牙齿', value: '锯齿切割型', description: '强壮颚部与带锯齿的牙齿适合撕裂鸭嘴龙和角龙类猎物。' },
     { label: '生态', value: '阿尔伯塔顶级猎手', description: '在晚白垩世加拿大的河漫滩环境中，它是最重要的超级捕食者之一。' },
   ],
+  relatedDinosaurs: [
+    { id: 'albertosaurus', relationship: '非常接近的阿尔伯塔龙亚科近亲' },
+    { id: 'daspletosaurus', relationship: '同时代更为粗壮的暴龙科成员' },
+    { id: 'tyrannosaurus-rex', relationship: '后期巨型暴龙科的支系' },
+  ],
+  discoveries: [
+    { discoveredBy: '查尔斯·H·斯特恩伯格', note: '收集了后来构成兰姆描述基础的标本。' },
+    { discoveredBy: '劳伦斯·兰布', note: '正式命名了蛇发女怪龙（Gorgosaurus libratus），并将其确立为一种独立的暴龙科恐龙。' },
+  ],
+  fossilLocations: [
+    { region: '艾伯塔省恐龙省立公园', specimenName: '恐龙公园组的骨架' },
+  ],
 }

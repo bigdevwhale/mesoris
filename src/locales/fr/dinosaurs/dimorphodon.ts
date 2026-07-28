@@ -14,4 +14,14 @@ export default {
     { label: 'Âge', value: 'Jurassique inférieur', description: 'L\'un des premiers ptérosaures — d\'une époque où le vol était une technologie toute nouvelle.' },
     { label: 'Vol', value: 'Voletant', description: 'Des ailes courtes et larges — volait plutôt comme une chauve-souris que comme les planeurs ultérieurs.' },
   ],
+  relatedDinosaurs: [
+    { id: 'pterodactylus', relationship: 'Descendant plus avancé' },
+    { id: 'rhamphorhynchus', relationship: 'Contemporain' },
+  ],
+  discoveries: [
+    { year: 1828, location: 'Dorset, Royaume-Uni', discoveredBy: 'Mary Anning', note: 'Découvert par la légendaire chasseuse de fossiles Mary Anning sur la côte jurassique.' },
+  ],
+  fossilLocations: [
+    { country: 'Royaume-Uni', region: 'Dorset', coordinates: [50.6, -2.9], specimenName: 'Formation de Blue Lias, côte jurassique' },
+  ],
 }

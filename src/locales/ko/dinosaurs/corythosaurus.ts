@@ -14,4 +14,14 @@ export default {
     { label: '사회성', value: '무리', description: '대규모 사회적 집단으로 생활했으며, 오리주둥이 공룡판 누우 떼와 같았습니다.' },
     { label: '이빨', value: '수백 개', description: '단단한 식물을 갈아내기 위한, 수백 개의 이빨로 이루어진 복잡한 덴탈 배터리를 가졌습니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: '근연종' },
+    { id: 'lambeosaurus', relationship: '근연종' },
+  ],
+  discoveries: [
+    { year: 1912, location: '캐나다 앨버타주', discoveredBy: '바넘 브라운', note: 'AMNH 원정에서 최초의 완전한 골격이 발견되었다.' },
+  ],
+  fossilLocations: [
+    { country: '캐나다', region: '앨버타주', coordinates: [50.8, -111.5], specimenName: '다이노소어파크층' },
+  ],
 }

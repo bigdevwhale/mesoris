@@ -14,4 +14,16 @@ export default {
     { label: 'Verwandtschaft', value: 'Afrikanischer Stegosaurier', description: 'Ein enger Cousin von Stegosaurus — zeigt, dass Stegosaurier weit über Nordamerika hinaus verbreitet waren.' },
     { label: 'Hinterbeine', value: 'Kräftige Hinterhand', description: 'Vorne leicht, hinten schwer gebaut — half, den Schwanz wie einen Stachelmorgenstern zu schwingen.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Enger Verwandter' },
+    { id: 'brachiosaurus', relationship: 'Tendaguru-Zeitgenosse' },
+    { id: 'allosaurus', relationship: 'Räuberisches Pendant' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Deutsche Tendaguru-Expedition', note: 'Umfangreiche Ausgrabungen förderten mehrere Skelette aus den berühmten Jura-Schichten zutage.' },
+    { discoveredBy: 'Edwin Hennig', note: 'Hennig beschrieb Kentrosaurus formell und hob die ungewöhnliche Stachelanordnung hervor.' },
+  ],
+  fossilLocations: [
+    { region: 'Tendaguru, Tansania', specimenName: 'Tendaguru-Formation' },
+  ],
 }

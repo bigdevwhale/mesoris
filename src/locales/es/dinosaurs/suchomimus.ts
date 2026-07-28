@@ -14,4 +14,16 @@ export default {
     { label: 'Tamaño', value: '11 m', description: 'Un gran espinosaurido' },
     { label: 'Dieta', value: 'Piscivora', description: 'Peces de agua dulce' },
   ],
+  relatedDinosaurs: [
+    { id: 'baryonyx', relationship: 'Pariente cercano' },
+    { id: 'spinosaurus', relationship: 'Primo mayor' },
+    { id: 'nigersaurus', relationship: 'Vecino contemporáneo' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Paul Sereno y equipo', note: 'Se descubrió un esqueleto notablemente completo durante una gran expedición sahariana.' },
+    { discoveredBy: 'Paul Sereno y colegas', note: 'La descripción formal estableció a Suchomimus como un espinosáurido barionicino gigante.' },
+  ],
+  fossilLocations: [
+    { region: 'Gadoufaoua', specimenName: 'Formación Elrhaz' },
+  ],
 }

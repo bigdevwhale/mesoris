@@ -14,4 +14,16 @@ export default {
     { label: 'Dieta', value: 'Predatore di taglia media', description: 'Probabilmente cacciava dinosauri più piccoli e prede di dimensioni moderate nel suo ecosistema.' },
     { label: 'Posizione', value: 'Tetanuro basale', description: 'Rappresenta una posizione vicina alla base dei Tetanurae, illuminando l\'evoluzione precoce dei teropodi moderni.' },
   ],
+  relatedDinosaurs: [
+    { id: 'megalosaurus', relationship: 'Carnivoro comparabile di grado tetanuro primitivo' },
+    { id: 'allosaurus', relationship: 'Predatore tetanuro più grande e successivo' },
+    { id: 'yangchuanosaurus', relationship: 'Altro teropode predatore del Giurassico cinese' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Squadre sul campo dello Xinjiang', note: 'Resti iniziali recuperati dai depositi di Shishugou.' },
+    { discoveredBy: 'Zhao Xijin e Philip Currie', note: 'La descrizione formale evidenziò l\'unica cresta e la dettagliata anatomia del cranio.' },
+  ],
+  fossilLocations: [
+    { region: 'Formazione Shishugou, Xinjiang, Cina', specimenName: 'Olotipo e materiale scheletrico associato' },
+  ],
 }

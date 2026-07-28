@@ -14,4 +14,13 @@ export default {
     { label: 'Babys', value: 'Nesthocker', description: 'Babys konnten anfangs kaum laufen — die Eltern brachten Futter zum Nest.' },
     { label: 'Wachstum', value: 'Rasant', description: 'Babys wuchsen von 40 cm auf Erwachsenengröße in nur 7–8 Jahren — unglaublich schnell.' },
   ],
+  relatedDinosaurs: [
+    { id: 'edmontosaurus', relationship: 'Enger Verwandter' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Jack Horner', note: 'Die Nistkolonie «Egg Mountain» — revolutionierte die Sicht auf Dinosaurier-Verhalten.' },
+  ],
+  fossilLocations: [
+    { region: 'Montana', specimenName: 'Egg Mountain, Two-Medicine-Formation' },
+  ],
 }

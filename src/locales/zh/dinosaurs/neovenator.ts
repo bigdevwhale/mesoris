@@ -14,4 +14,15 @@
     { label: '怀特岛', value: '韦塞克斯组的猎手', description: '与禽龙、棱齿龙和重爪龙发现于同一富含化石的地层。' },
     { label: '亲缘', value: '鲨齿龙科的祖先？', description: '与巨大的鲨齿龙科密切相关——欧洲在这些巨兽的出现中扮演了重要角色。' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: '异特龙超科近亲' },
+    { id: 'acrocanthosaurus', relationship: '新猎龙科近亲' },
+    { id: 'carcharodontosaurus', relationship: '相关的大型异特龙超科' },
+  ],
+  discoveries: [
+    { discoveredBy: '业余收藏者（怀特岛化石收藏者）', note: '1978年由业余收藏者发现最初材料；Hutt 和同事的后续发掘获得了大量材料；1996年正式描述。' },
+  ],
+  fossilLocations: [
+    { region: '布赖特斯通湾，怀特岛（韦塞克斯组），英格兰', specimenName: 'MIWG.6348 — 正模标本，约70%完整的骨架' },
+  ],
 }

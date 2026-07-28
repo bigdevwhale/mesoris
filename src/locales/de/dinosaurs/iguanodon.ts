@@ -14,4 +14,16 @@ export default {
     { label: 'Haltung', value: 'Im Lauf der Zeit korrigiert', description: 'Ursprünglich als vierbeinige Echse gezeigt — heute wissen wir, dass er meist auf zwei Beinen ging.' },
     { label: 'Ernährung', value: 'Vielseitiger Pflanzenfresser', description: 'Konnte seine Nahrung kauen — eine revolutionäre Anpassung zur Verarbeitung zäher Pflanzen.' },
   ],
+  relatedDinosaurs: [
+    { id: 'megalosaurus', relationship: 'Erste entdeckte Dinosaurier' },
+    { id: 'maiasaura', relationship: 'Verwandte Linie' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Gideon Mantell / Mary Ann Mantell', note: 'Erste Zähne entdeckt, anfangs für Zähne einer riesigen Leguane gehalten.' },
+    { discoveredBy: 'Kohlebergleute', note: '38 vollständige Skelette in einer Kohlemine in 322 Metern Tiefe gefunden — ein beispielloser Fund.' },
+  ],
+  fossilLocations: [
+    { region: 'Bernissart', specimenName: 'Sainte-Barbe-Kohlemine' },
+    { region: 'Sussex', specimenName: '—' },
+  ],
 }

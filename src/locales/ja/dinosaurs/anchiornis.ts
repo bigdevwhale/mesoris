@@ -14,4 +14,16 @@ export default {
     { label: 'サイズ', value: 'スズメ大', description: '体重わずか約200グラムで、現代のスズメほどの小さな体でした。' },
     { label: '飛翔', value: '滑空能力', description: '強い飛行はできなかったものの、枝から枝へ滑空し、翼で体を制御していたと考えられています。' },
   ],
+  relatedDinosaurs: [
+    { id: 'microraptor', relationship: '四翼の近鳥類の親戚' },
+    { id: 'archaeopteryx', relationship: '初期の鳥翼類の同時代種' },
+    { id: 'troodon', relationship: 'より大型のトロオドン科の近縁種' },
+  ],
+  discoveries: [
+    { year: 2009, location: '中国遼寧省・髫髻山層', discoveredBy: '徐星とその研究チーム', note: '化石標本は当初、小型の羽毛を持つ近鳥類として命名・認識された。' },
+    { year: 2010, location: '中国', discoveredBy: '張福成とその研究チーム', note: 'アンヒオルニスの実際の体色の初の復元がNature誌に発表された。' },
+  ],
+  fossilLocations: [
+    { country: '中国', region: '遼寧省・髫髻山層', coordinates: [41.6, 120.7], specimenName: 'IVPP V14378 — 模式標本、多数の参照標本' },
+  ],
 }

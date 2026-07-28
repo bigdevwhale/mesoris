@@ -14,4 +14,16 @@ export default {
     { label: 'Tamaño', value: '9 m', description: 'Similar a Triceratops' },
     { label: 'Epoca', value: 'Cretacico Tardio', description: '~68-66 millones de anos' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: 'Pariente más cercano: alguna vez propuesto como la misma especie' },
+    { id: 'styracosaurus', relationship: 'Pariente ceratópsido' },
+    { id: 'pentaceratops', relationship: 'Pariente chasmosaurino más temprano' },
+  ],
+  discoveries: [
+    { discoveredBy: 'John Bell Hatcher', note: 'Material descrito por O.C. Marsh en 1891; posteriormente se encontraron múltiples especímenes por el oeste de EE. UU. en las formaciones Lance y Hell Creek.' },
+  ],
+  fossilLocations: [
+    { region: 'Condado de Niobrara, Wyoming (Formación Lance)', specimenName: 'YPM 1830 — holotipo, cráneo parcial' },
+    { region: 'Condado de Harding, Dakota del Sur (Formación Hell Creek)', specimenName: 'Cráneos referidos' },
+  ],
 }

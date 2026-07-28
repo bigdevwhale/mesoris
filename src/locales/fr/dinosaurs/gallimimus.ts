@@ -14,4 +14,14 @@ export default {
     { label: 'Cou', value: 'Long et flexible', description: 'Un long cou semblable à celui d\'une autruche pour scruter le paysage en quête de danger et de nourriture.' },
     { label: 'Régime', value: 'Opportuniste', description: 'Mangeait des plantes, des petits animaux et des insectes — un éboueur sur pattes.' },
   ],
+  relatedDinosaurs: [
+    { id: 'ornithomimus', relationship: 'Proche parent' },
+    { id: 'struthiomimus', relationship: 'Proche parent' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Expédition polono-mongole', note: 'Premiers spécimens découverts dans le bassin de Nemegt.' },
+  ],
+  fossilLocations: [
+    { region: 'Désert de Gobi', specimenName: 'Formation de Nemegt' },
+  ],
 }

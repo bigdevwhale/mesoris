@@ -14,4 +14,15 @@ export default {
     { label: 'Primitif', value: 'Caractéristiques anciennes', description: 'Conservait des traits anatomiques étonnamment primitifs malgré son âge géologique relativement récent.' },
     { label: 'Nom', value: 'Mythologie touareg', description: 'Nommé d\'après « Jobar », une créature mythique des traditions orales du peuple touareg du Sahara.' },
   ],
+  relatedDinosaurs: [
+    { id: 'brachiosaurus', relationship: 'Parent néosauropode ultérieur' },
+    { id: 'diplodocus', relationship: 'Parent sauropode contemporain' },
+    { id: 'nigersaurus', relationship: 'Contemporain africain' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Paul Sereno et collègues', note: 'Récupération spectaculaire d\'un squelette complet à ~95 % lors d\'une grande expédition saharienne ; formellement décrit dans Science en 1999.' },
+  ],
+  fossilLocations: [
+    { region: 'Région d\'Agadez, formation de Tiourarén', specimenName: 'MNN TIG3 — holotype quasi complet' },
+  ],
 }

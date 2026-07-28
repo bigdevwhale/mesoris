@@ -14,4 +14,15 @@
     { label: '知能', value: '賢いオヴィラプトル類', description: '比較的大きな脳と複雑な社会行動。' },
     { label: '産地', value: 'モンゴルのゴビ', description: 'ネメグト層 — 世界で最も豊かな恐竜産地の一つ。' },
   ],
+  relatedDinosaurs: [
+    { id: 'oviraptor', relationship: '近縁なオヴィラプトル類' },
+    { id: 'velociraptor', relationship: 'マニラプトル類の獣脚類近縁種' },
+    { id: 'troodon', relationship: '小型の同時代獣脚類' },
+  ],
+  discoveries: [
+    { discoveredBy: 'リンチェン・バルスボルトと同僚', note: '2000年にバルスボルトらによって記載され、尾端骨は恐竜から鳥類への進化物語の中で重要な証拠となった。' },
+  ],
+  fossilLocations: [
+    { region: 'オムノゴビ県、ネメグト累層、モンゴル', specimenName: 'GIN 100/119 — 尾端骨を含むホロタイプ部分骨格' },
+  ],
 }

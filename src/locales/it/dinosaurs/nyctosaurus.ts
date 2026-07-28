@@ -14,4 +14,15 @@ export default {
     { label: 'Ali', value: 'Strette e lunghe', description: 'Ali lunghe e strette, adattate al volo dinamico sopra la Western Interior Seaway — come un albatro del Cretaceo.' },
     { label: 'Volo', value: 'Pescatore aereo', description: 'Planava sul mare del Cretaceo e tuffava il becco privo di denti per raccogliere pesci.' },
   ],
+  relatedDinosaurs: [
+    { id: 'pteranodon', relationship: 'Parente pteranodontide contemporaneo' },
+    { id: 'dimorphodon', relationship: 'Pterosauro basale anteriore' },
+    { id: 'quetzalcoatlus', relationship: 'Parente azhdarchide lontano' },
+  ],
+  discoveries: [
+    { year: 1876, location: 'Niobrara Chalk, Kansas, USA', discoveredBy: 'O.C. Marsh', note: 'Primo Nyctosaurus descritto dai depositi di gesso del Kansas.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Niobrara Chalk, Kansas', coordinates: [38.7, -98.5], specimenName: 'Materiale tipo della Niobrara Chalk' },
+  ],
 }

@@ -14,4 +14,15 @@ export default {
     { label: 'Ubicacion', value: 'Alemania', description: 'Europa central' },
     { label: 'Dieta', value: 'Carnivoro', description: 'Cazaba prosauropodos y reptiles' },
   ],
+  relatedDinosaurs: [
+    { id: 'coelophysis', relationship: 'Pariente celofisoide cercano' },
+    { id: 'herrerasaurus', relationship: 'Pariente teropodo temprano' },
+    { id: 'dilophosaurus', relationship: 'Descendiente celofisoide posterior' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Hugo Ruhle von Lilienstern', note: 'Dos esqueletos parciales recuperados de la Formacion Trossingen; descritos por von Huene y nombrados en honor a von Lilienstern.' },
+  ],
+  fossilLocations: [
+    { region: 'Turingia (Formacion Trossingen), Alemania', specimenName: 'MB.R. 2175 — holotipo principal' },
+  ],
 }

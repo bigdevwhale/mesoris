@@ -14,4 +14,14 @@ export default {
     { label: 'थूथन', value: 'मगरमच्छ जैसा', icon: 'crocodile', description: 'शंक्वाकार दाँतों वाला एक लंबा, संकरा थूथन — फिसलन भरे शिकार को पकड़ने के लिए उपयुक्त।' },
     { label: 'खोज', value: 'मिट्टी की खदान', icon: 'pickaxe', description: 'एक शौकिया व्यक्ति द्वारा सरे की मिट्टी की खदान में खोजा गया — यूके का सबसे पूर्ण थेरोपॉड कंकाल।' },
   ],
+  relatedDinosaurs: [
+    { id: 'spinosaurus', relationship: 'निकट संबंधी' },
+    { id: 'suchomimus', relationship: 'निकट संबंधी' },
+  ],
+  discoveries: [
+    { year: 1983, location: 'सरे, यूनाइटेड किंगडम', discoveredBy: 'विलियम वॉकर', note: 'एक शौकिया जीवाश्म शिकारी ने मिट्टी की खदान में विशाल पंजा खोजा।' },
+  ],
+  fossilLocations: [
+    { country: 'यूनाइटेड किंगडम', region: 'सरे', coordinates: [51.2, -0.5], specimenName: 'वील्ड क्ले शैलसमूह' },
+  ],
 }

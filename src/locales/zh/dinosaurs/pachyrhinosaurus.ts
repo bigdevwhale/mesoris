@@ -14,4 +14,16 @@
     { label: '骨床', value: '巨大的群体', description: '生活在上千个体的巨大群体中。' },
     { label: '体型', value: '8米', description: '一种约4吨重的大型角龙。' },
   ],
+  relatedDinosaurs: [
+    { id: 'styracosaurus', relationship: '近亲' },
+    { id: 'triceratops', relationship: '近亲' },
+  ],
+  discoveries: [
+    { year: 1946, location: '加拿大艾伯塔省', discoveredBy: '查尔斯·M·斯特恩伯格', note: '发现的第一具头骨。' },
+    { year: 1970, location: '加拿大艾伯塔省', discoveredBy: '阿尔·拉库斯塔', note: '含数百个体的巨大骨床。' },
+  ],
+  fossilLocations: [
+    { country: '加拿大', region: '艾伯塔省', coordinates: [55.0, -118.0], specimenName: '瓦皮蒂组' },
+    { country: '美国', region: '阿拉斯加州', coordinates: [69.0, -151.0], specimenName: '王子溪组' },
+  ],
 }

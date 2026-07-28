@@ -14,4 +14,15 @@ export default {
     { label: 'Île de Wight', value: 'Chasseur de la formation Wessex', description: 'Trouvé dans la même formation riche en fossiles qu\'Iguanodon, Hypsilophodon et Baryonyx.' },
     { label: 'Allosauroïde', value: 'Ancêtre des carcharodontosauridés ?', description: 'Étroitement apparenté aux gigantesques Carcharodontosauridae — l\'Europe a joué un rôle important dans l\'émergence de ces géants.' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: 'Parent allosauroïde' },
+    { id: 'acrocanthosaurus', relationship: 'Parent néovénatoridé' },
+    { id: 'carcharodontosaurus', relationship: 'Grand allosauroïde apparenté' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Collectionneurs amateurs (collectionneurs de fossiles de l\'île de Wight)', note: 'Matériel initial trouvé en 1978 par des collectionneurs amateurs ; fouilles ultérieures par Hutt et collègues ont produit un matériel substantiel ; formellement décrit en 1996.' },
+  ],
+  fossilLocations: [
+    { region: 'Brighstone Bay, île de Wight (formation de Wessex), Angleterre', specimenName: 'MIWG.6348 — holotype, squelette complet à ~70%' },
+  ],
 }

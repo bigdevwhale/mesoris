@@ -14,4 +14,16 @@ export default {
     { label: 'Craneo', value: 'Ligero', description: 'Grandes aberturas' },
     { label: 'Dieta', value: 'Pastador bajo', description: 'Helechos a ras de suelo' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: 'Primo diplodocoideo lejano' },
+    { id: 'suchomimus', relationship: 'Vecino contemporaneo' },
+    { id: 'sauroposeidon', relationship: 'Estrategia de alimentacion diferente en sauropodos' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Philippe Taquet', note: 'Las expediciones francesas recuperaron material del Sahara que luego se demostro pertenecia a Nigersaurus.' },
+    { discoveredBy: 'Paul Sereno y equipo', note: 'Nuevas expediciones produjeron el material del craneo que revelo la extrana anatomia alimentaria del dinosaurio.' },
+  ],
+  fossilLocations: [
+    { region: 'Gadoufaoua, Niger', specimenName: 'Formacion de Elrhaz' },
+  ],
 }

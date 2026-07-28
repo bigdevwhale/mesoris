@@ -13,4 +13,14 @@ export default {
     { label: 'शारीरिक रचना', value: 'आदिम शिकारी', icon: 'git-branch', description: 'एक बेसल डायनासोर जिसकी विशेषताएँ इतनी आदिम हैं कि वैज्ञानिक बहस करते हैं कि क्या यह सच्चा डायनासोर है।' },
     { label: 'जबड़ा', value: 'लचीला जोड़', icon: 'unfold-vertical', description: 'एक अनूठा स्लाइडिंग जबड़ा जोड़ — बड़े शिकार को निगलने के लिए एक प्रारंभिक नवाचार।' },
   ],
+  relatedDinosaurs: [
+    { id: 'eoraptor', relationship: 'समकालीन' },
+    { id: 'coelophysis', relationship: 'थोड़ा बाद का समकालीन' },
+  ],
+  discoveries: [
+    { discoveredBy: 'विक्टोरिनो एर्रेरा (Victorino Herrera)', note: 'चाँद की घाटी में एक स्थानीय बकरी चरवाहे ने पहला नमूना खोजा।' },
+  ],
+  fossilLocations: [
+    { region: 'वाले दे ला लूना, इस्चिगुआलास्टो शैलसमूह', specimenName: 'वाले दे ला लूना, इस्चिगुआलास्टो शैलसमूह' },
+  ],
 }

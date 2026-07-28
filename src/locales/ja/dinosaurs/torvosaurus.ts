@@ -14,4 +14,17 @@ export default {
     { label: '分布', value: '大西洋を越えた捕食者', description: '北アメリカとポルトガルの両方で発見され、ジュラ紀後期の大西洋がまだ狭かった証拠です。' },
     { label: '競争相手', value: 'アロサウルスと競合', description: 'トルヴォサウルスとアロサウルスはモリソン層の二大頂点捕食者で、同じ大型竜脚類の獲物をめぐって競合していました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: '同時代の頂点捕食者ライバル' },
+    { id: 'megalosaurus', relationship: '近縁のメガロサウルス科' },
+    { id: 'ceratosaurus', relationship: '同時代のモリソン層の捕食者' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ジェームズ・ジェンセン', note: '1972年に最初に標本が収集され、1979年にピーター・ギャルトンとジェームズ・ジェンセンにより Torvosaurus tanneri として正式に記載された。' },
+    { discoveredBy: 'オクタヴィオ・マテウスら', note: 'ヨーロッパ種 T. gurneyi が記載され、卵に保存された胚も発見され、ジュラ紀獣脚類の繁殖に関する貴重なデータを提供した。' },
+  ],
+  fossilLocations: [
+    { region: 'ドライメサ採石場、コロラド州デルタ郡（モリソン層）', specimenName: 'BYU 2002 — ホロタイプ部分骨格' },
+    { region: 'ロウリニャン層、トーレス・ヴェドラシュ', specimenName: 'ML 632 — T. gurneyi ホロタイプ；胚資料' },
+  ],
 }

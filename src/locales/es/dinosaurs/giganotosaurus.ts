@@ -14,4 +14,14 @@ export default {
     { label: 'Presas', value: 'Sauropodos gigantes', description: 'Cazaba los animales terrestres mas grandes' },
     { label: 'Epoca', value: 'Cretacico Tardio', description: '95 millones de anos, antes del T. rex' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Rival en tamaño' },
+    { id: 'spinosaurus', relationship: 'Rival en tamaño' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Ruben Carolini', note: 'Esqueleto casi completo encontrado por un cazador de fósiles aficionado.' },
+  ],
+  fossilLocations: [
+    { region: 'Neuquén', specimenName: 'Formación Candeleros' },
+  ],
 }

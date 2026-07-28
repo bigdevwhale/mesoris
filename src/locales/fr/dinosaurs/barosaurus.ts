@@ -14,4 +14,17 @@ export default {
     { label: 'Queue', value: 'En fouet', description: 'Une longue queue fine en forme de fouet, qui a pu servir à la défense et peut-être même à produire des sons supersoniques.' },
     { label: 'Aire', value: 'Deux continents', description: 'Trouvé dans la formation de Morrison en Amérique du Nord et dans la formation de Tendaguru en Tanzanie.' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: 'Proche parent diplodocidé' },
+    { id: 'apatosaurus', relationship: 'Proche parent diplodocidé' },
+    { id: 'brontosaurus', relationship: 'Parent diplodocidé' },
+  ],
+  discoveries: [
+    { year: 1889, location: 'Como Bluff, Wyoming, États-Unis', discoveredBy: 'O.C. Marsh', note: 'Squelette partiel découvert par les équipes de Marsh pendant les Guerres des Os.' },
+    { year: 1907, location: 'Tendaguru, Tanzanie', discoveredBy: 'Expédition allemande de Tendaguru', note: 'Du matériel de diplodocidé d\'Afrique de l\'Est fut ensuite attribué à Barosaurus.' },
+  ],
+  fossilLocations: [
+    { country: 'États-Unis', region: 'Como Bluff, Wyoming (formation de Morrison)', coordinates: [41.8, -106.0], specimenName: 'YPM 429 — squelette partiel holotype' },
+    { country: 'Tanzanie', region: 'Formation de Tendaguru', coordinates: [-10.2, 39.4], specimenName: 'Matériel de diplodocidé de Tendaguru' },
+  ],
 }

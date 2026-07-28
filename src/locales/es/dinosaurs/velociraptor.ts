@@ -14,4 +14,17 @@ export default {
     { label: 'Tamaño Real', value: 'Como un pavo', description: 'Mucho mas pequeño que en Jurassic Park' },
     { label: 'Velocidad', value: '40 km/h', description: 'Construido para la velocidad, su nombre lo dice todo' },
   ],
+  relatedDinosaurs: [
+    { id: 'deinonychus', relationship: 'Pariente cercano' },
+    { id: 'protoceratops', relationship: 'Presa' },
+    { id: 'oviraptor', relationship: 'Competidor' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Roy Chapman Andrews', note: 'Primer espécimen descubierto durante una famosa expedición del AMNH.' },
+    { discoveredBy: 'Expedición polaco-mongola', note: 'Los «Dinosaurios en combate» — un Velociraptor trabado en combate con un Protoceratops.' },
+  ],
+  fossilLocations: [
+    { region: 'Desierto de Gobi', specimenName: 'Formación Djadochta' },
+    { region: 'Mongolia Interior', specimenName: '' },
+  ],
 }

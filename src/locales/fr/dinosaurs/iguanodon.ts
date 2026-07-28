@@ -14,4 +14,16 @@ export default {
     { label: 'Posture', value: 'Corrigée au fil du temps', description: 'D\'abord montré comme un lézard quadrupède — on sait maintenant qu\'il marchait surtout sur deux pattes.' },
     { label: 'Régime', value: 'Herbivore polyvalent', description: 'Pouvait mâcher sa nourriture — une adaptation révolutionnaire pour traiter les plantes coriaces.' },
   ],
+  relatedDinosaurs: [
+    { id: 'megalosaurus', relationship: 'Premiers dinosaures découverts' },
+    { id: 'maiasaura', relationship: 'Lignée apparentée' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Gideon Mantell / Mary Ann Mantell', note: 'Premières dents découvertes, d\'abord considérées comme celles d\'un iguane géant.' },
+    { discoveredBy: 'Mineurs de charbon', note: '38 squelettes complets trouvés dans une mine de charbon à 322 mètres de profondeur — une découverte sans précédent.' },
+  ],
+  fossilLocations: [
+    { region: 'Bernissart', specimenName: 'Mine de charbon Sainte-Barbe' },
+    { region: 'Sussex', specimenName: '—' },
+  ],
 }

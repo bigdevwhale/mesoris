@@ -14,4 +14,18 @@ export default {
     { label: '이빨', value: '톱날 모양', description: '살을 베는 데 최적인 톱니 모양 칼날 같은 이빨.' },
     { label: '분포', value: '북아메리카와 유럽', description: '미국과 포르투갈에서 화석이 발견되어 넓은 분포를 보여줍니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: '먹이' },
+    { id: 'diplodocus', relationship: '먹이' },
+    { id: 'ceratosaurus', relationship: '경쟁자' },
+  ],
+  discoveries: [
+    { year: 1877, location: '미국 콜로라도주', discoveredBy: '오스니얼 찰스 마쉬', note: '본 워즈(Bone Wars) 기간에 처음으로 기재되었습니다.' },
+    { year: 1991, location: '미국 와이오밍주', discoveredBy: '커비 시버', note: '"빅 앨" — 가장 완전한 수각류 골격 중 하나입니다.' },
+  ],
+  fossilLocations: [
+    { country: '미국', region: '유타주', coordinates: [39.0, -111.0], specimenName: '클리블랜드-로이드 채석장' },
+    { country: '미국', region: '와이오밍주', coordinates: [43.0, -107.5] },
+    { country: '포르투갈', region: '로우리냔', coordinates: [39.3, -9.3] },
+  ],
 }

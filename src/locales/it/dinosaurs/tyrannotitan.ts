@@ -14,4 +14,15 @@ export default {
     { label: 'Denti', value: 'A lama seghettata', description: 'Denti distintivi ricurvi, a lama, con seghettature — perfetti per affettare la carne delle prede sauropodi giganti.' },
     { label: 'Areale', value: 'Patagonia', description: 'Scoperto nella Formazione Cerro Barcino, provincia di Chubut, Patagonia, Argentina.' },
   ],
+  relatedDinosaurs: [
+    { id: 'giganotosaurus', relationship: 'Parente carcarodontosauride' },
+    { id: 'carcharodontosaurus', relationship: 'Parente carcarodontosauride africano' },
+    { id: 'concavenator', relationship: 'Parente carcarodontosauride basale' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Fernando Novas e team', note: 'Scheletro postcraniale parziale descritto e nominato Tyrannotitan chubutensis.' },
+  ],
+  fossilLocations: [
+    { region: 'Formazione Cerro Barcino, Chubut', specimenName: 'MPEF-PV 1156 — scheletro parziale olotipo' },
+  ],
 }

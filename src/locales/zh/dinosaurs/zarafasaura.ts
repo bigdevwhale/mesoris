@@ -14,4 +14,15 @@ export default {
     { label: '产地', value: '摩洛哥', description: '发现于摩洛哥 Oulad Abdoun 盆地的磷矿层——白垩纪海洋化石宝库。' },
     { label: '颈部', value: '非常长', description: '拥有50多节颈椎的长颈，用于伏击鱼群。' },
   ],
+  relatedDinosaurs: [
+    { id: 'elasmosaurus', relationship: '更大体型的蛇颈龙科近亲' },
+    { id: 'plesiosaurus', relationship: '长颈蛇颈龙类近亲' },
+    { id: 'mosasaurus', relationship: '同时代海洋捕食者' },
+  ],
+  discoveries: [
+    { discoveredBy: '佩吉·文森特及团队', note: '描述并命名了部分头骨和颈椎。' },
+  ],
+  fossilLocations: [
+    { region: '乌拉德阿卜杜恩盆地', specimenName: 'OCP DEK/GE 307 — 正模标本部分头骨和脊椎' },
+  ],
 }

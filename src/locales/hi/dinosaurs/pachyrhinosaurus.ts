@@ -13,4 +13,16 @@ export default {
     { label: 'सींग', value: 'फ्रिल के काँटे', icon: 'swords', description: 'सींग फ्रिल से उगते थे, भौंहों से नहीं — ट्राइसिरैटॉप्स से उलटी व्यवस्था।' },
     { label: 'हड्डी बिस्तर', value: 'विशाल झुंड', icon: 'users', description: 'विशाल हड्डी बिस्तरों से ज्ञात — हज़ारों की संख्या में विशाल झुंडों में रहते थे।' },
   ],
+  relatedDinosaurs: [
+    { id: 'styracosaurus', relationship: 'निकट संबंधी' },
+    { id: 'triceratops', relationship: 'संबंधी' },
+  ],
+  discoveries: [
+    { year: 1946, location: 'अल्बर्टा, कनाडा', discoveredBy: 'चार्ल्स एम. स्टर्नबर्ग', note: 'पहली खोपड़ी खोजी गई।' },
+    { year: 1970, location: 'अल्बर्टा, कनाडा', discoveredBy: 'आल लकुस्ता', note: 'सैकड़ों जीवों वाला विशाल हड्डी बिस्तर।' },
+  ],
+  fossilLocations: [
+    { country: 'कनाडा', region: 'अल्बर्टा', coordinates: [55.0, -118.0], specimenName: 'वापिटी फॉर्मेशन' },
+    { country: 'USA', region: 'अलास्का', coordinates: [69.0, -151.0], specimenName: 'प्रिंस क्रीक फॉर्मेशन' },
+  ],
 }

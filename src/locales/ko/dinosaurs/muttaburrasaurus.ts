@@ -14,4 +14,16 @@ export default {
     { label: '이빨', value: '절삭형 이빨', description: '구치가 아닌 예리한 이빨 — 단단한 식물을 먹었음을 시사.' },
     { label: '고립', value: '남쪽 대륙', description: '오스트레일리아가 남극에서 분리되기 시작하는 가운데, 비교적 고립된 환경에서 진화함.' },
   ],
+  relatedDinosaurs: [
+    { id: 'iguanodon', relationship: '가까운 이구아노돈류 조각류 친척' },
+    { id: 'camptosaurus', relationship: '초기 조각류 친척' },
+  ],
+  discoveries: [
+    { discoveredBy: '더그 랭던', note: '1963년에 목축업자 더그 랭던이 자신의 토지에서 거의 완전한 골격을 발견; 1981년에 바르톨로마이와 몰나르가 공식 기술.' },
+    { discoveredBy: '고생물학 팀', note: '1987년에 오팔이 포함된 퇴적층에서 라이트닝리지에 두 번째 표본이 발견되어 추가 해부학 자료 제공.' },
+  ],
+  fossilLocations: [
+    { region: '무타부라, 바칼딘 지역, 퀸즐랜드, 오스트레일리아 (마쿤다층)', specimenName: 'QM F6140 — 거의 완전한 홀로타입 골격' },
+    { region: '라이트닝리지, 뉴사우스웨일스, 오스트레일리아', specimenName: '부분 두개골 및 두개후 재료' },
+  ],
 }

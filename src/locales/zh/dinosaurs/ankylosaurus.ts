@@ -14,4 +14,16 @@
     { label: '体长', value: '约 8 米', description: '大约一辆公交车的大小，但体型极低极宽，体重约6吨。' },
     { label: '防御', value: '几乎无敌', description: '装甲厚重到连霸王龙都要费力才能把它翻过来攻击柔软的腹部。' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: '捕食者' },
+    { id: 'euoplocephalus', relationship: '近亲' },
+  ],
+  discoveries: [
+    { year: 1906, location: '美国蒙大拿州', discoveredBy: '巴纳姆·布朗', note: '首批甲龙化石发现于地狱溪组。' },
+    { year: 1910, location: '加拿大艾伯塔省', discoveredBy: '彼得·C·凯森', note: '迄今所发现的最完整的甲龙标本。' },
+  ],
+  fossilLocations: [
+    { country: '美国', region: '蒙大拿州', coordinates: [47.5, -106.5], specimenName: '地狱溪' },
+    { country: '加拿大', region: '艾伯塔省', coordinates: [54.5, -113.0] },
+  ],
 }

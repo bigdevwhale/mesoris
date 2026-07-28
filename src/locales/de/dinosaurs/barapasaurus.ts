@@ -14,4 +14,16 @@ export default {
     { label: 'Skelett', value: 'Fast vollständig', description: 'Über 300 Knochen von mindestens sechs Individuen wurden geborgen und ergeben ein fast vollständiges Bild seines Skeletts.' },
     { label: 'Bedeutung', value: 'Ursprung der Sauropoden', description: 'Ein Schlüssel-Taxon zum Verständnis der frühen Evolution der Riesensauropoden aus ihren Prosauropoden-Vorfahren.' },
   ],
+  relatedDinosaurs: [
+    { id: 'vulcanodon', relationship: 'Zeitgenössischer basaler Sauropode' },
+    { id: 'brachiosaurus', relationship: 'Späterer Sauropoden-Nachkomme' },
+    { id: 'plateosaurus', relationship: 'Vorfahr-ähnlicher Prosauropode-Verwandter' },
+  ],
+  discoveries: [
+    { year: 1960, location: 'Kota-Formation, Telangana/Andhra Pradesh, Indien', discoveredBy: 'Team des Indian Statistical Institute', note: 'Ausgrabungen bargen Knochen von mindestens sechs Individuen an der Fundstelle.' },
+    { year: 1975, location: 'Kota-Formation, Indien', discoveredBy: 'Sohan Lal Jain und Kollegen', note: 'Formell beschrieben und als Barapasaurus tagorei benannt.' },
+  ],
+  fossilLocations: [
+    { country: 'Indien', region: 'Kota-Formation, Telangana', coordinates: [17.97, 79.5], specimenName: 'ISI-R-Gussreihen, Paratypen' },
+  ],
 }

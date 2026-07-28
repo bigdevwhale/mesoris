@@ -14,4 +14,17 @@
     { label: '取食', value: '覆盖范围广', description: '长颈能在不同高度和距离上扫食植物，减少身体频繁移动。' },
     { label: '地区', value: '中国侏罗纪巨龙', description: '它是中国最经典、最具代表性的巨型恐龙之一。' },
   ],
+  relatedDinosaurs: [
+    { id: 'euhelopus', relationship: '常被用于颈部演化对比的亚洲长颈蜥脚类' },
+    { id: 'diplodocus', relationship: '另一种长颈蜥脚类，但体型方案不同' },
+    { id: 'brachiosaurus', relationship: '同时代的大型蜥脚类，前肢较高' },
+  ],
+  discoveries: [
+    { discoveredBy: '道路工程调查野外团队', note: '首次在马鸣溪渡口附近发现化石，命名了该属。' },
+    { discoveredBy: '杨钟健 (C.C. Young)', note: '正式描述将马门溪龙确立为中国重要的蜥脚类属。' },
+  ],
+  fossilLocations: [
+    { region: '四川省，中国', specimenName: '马鸣溪/宜宾材料' },
+    { region: '重庆地区，中国', specimenName: 'M. hochuanensis 标本' },
+  ],
 }

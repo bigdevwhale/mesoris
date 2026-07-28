@@ -14,4 +14,16 @@
     { label: '武器', value: '鋸歯状の歯', description: '長く刃のような歯と強力な顎は、巨大な竜脚類の獲物から肉を切り裂くのに適していました。' },
     { label: '議論', value: '別属かアロサウルスか？', description: 'いくつかの研究はサウロファガナクスを別属として扱い、他の研究はアロサウルスの非常に大きな種と考えています。' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: '非常に近いアロサウルス科の近縁種；時に同属とされる' },
+    { id: 'torvosaurus', relationship: '北米のもう一体の巨大なジュラ紀捕食者' },
+    { id: 'stegosaurus', relationship: '潜在的な獲物であり同時代の草食恐竜' },
+  ],
+  discoveries: [
+    { discoveredBy: 'J.W. Stovall率いるチーム', note: 'モリソン層から大型獣脚類の化石が回収された。' },
+    { discoveredBy: 'ダニエル・チャー', note: 'Saurophaganax maximusと命名され、Allosaurusとは別種と主張された。' },
+  ],
+  fossilLocations: [
+    { region: 'オクラホマ州シマロン郡（モリソン層）', specimenName: 'Saurophaganax maximus の模式標本' },
+  ],
 }

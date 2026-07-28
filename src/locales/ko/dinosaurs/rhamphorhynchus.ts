@@ -14,4 +14,14 @@ export default {
     { label: '익개장', value: '약 1.8m', description: '중형 익룡으로, 날개를 펼치면 약 1.8미터.' },
     { label: '시대', value: '약 1억 5000만 년 전', description: '쥐라기 후기, 졸른호펜 석회암.' },
   ],
+  relatedDinosaurs: [
+    { id: 'pterodactylus', relationship: '동시대' },
+    { id: 'dimorphodon', relationship: '이른 시기의 친척' },
+  ],
+  discoveries: [
+    { year: 1830, location: 'Bavaria, Germany', discoveredBy: '게오르크 아우구스트 골트푸스', note: '시조새와 함께 졸른호펜 채석장에서 처음 기재되었어요.' },
+  ],
+  fossilLocations: [
+    { country: 'Germany', region: '졸른호펜 석회암, 바이에른', coordinates: [48.9, 11.0], specimenName: '졸른호펜 석회암 모식표본' },
+  ],
 }

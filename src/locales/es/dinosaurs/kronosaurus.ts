@@ -14,4 +14,15 @@ export default {
     { label: 'Epoca', value: '120 Ma', description: 'Cretacico Temprano' },
     { label: 'Clasificacion', value: 'Pliosaurio', description: 'Reptil marino, no dinosaurio' },
   ],
+  relatedDinosaurs: [
+    { id: 'elasmosaurus', relationship: 'Pariente lejano' },
+    { id: 'tylosaurus', relationship: 'Rival ecologico (anterior)' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Andrew Crombie', note: 'Primera mandibula parcial hallada en el outback de Queensland.' },
+    { discoveredBy: 'Albert Heber Longman', note: 'Ejemplar mas completo descubierto cerca de Hughenden.' },
+  ],
+  fossilLocations: [
+    { region: 'Queensland, Australia', specimenName: 'Formacion Toolebuc' },
+  ],
 }

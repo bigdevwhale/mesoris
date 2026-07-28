@@ -14,4 +14,15 @@ export default {
     { label: 'Acoustique', value: 'Résonateur sonore', description: 'La structure creuse de la crête amplifiait probablement les appels pour reconnaître les membres du troupeau à grande distance.' },
     { label: 'Chine', value: 'Province du Shandong', description: 'Trouvé dans la province du Shandong, riche en fossiles, qui a produit certains des plus grands dinosaures d\'Asie.' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: 'Parent hadrosaure lambéosauriné' },
+    { id: 'corythosaurus', relationship: 'Parent hadrosaure à crête' },
+    { id: 'edmontosaurus', relationship: 'Parent hadrosaure' },
+  ],
+  discoveries: [
+    { discoveredBy: 'C.C. Young', note: 'Décrit par Young en 1958 ; la conservation imparfaite a entraîné des décennies de débat sur la morphologie de la crête, résolu avec un meilleur matériel.' },
+  ],
+  fossilLocations: [
+    { region: 'Zhucheng, province du Shandong (Groupe Wangshi)', specimenName: 'IVPP V725 — crâne holotype avec crête' },
+  ],
 }

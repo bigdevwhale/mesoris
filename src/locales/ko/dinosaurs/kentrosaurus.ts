@@ -14,4 +14,16 @@ export default {
     { label: '근연', value: '아프리카의 검룡류', description: '스테고사우루스의 가까운 사촌 — 검룡류가 북아메리카를 훨씬 넘어 분포했음을 보여줍니다.' },
     { label: '뒷다리', value: '강력한 뒷다리', description: '앞이 가볍고 뒤가 무거운 체형으로, 꼬리를 가시 달린 곤봉처럼 휘두르는 데 도움이 되었습니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: '가까운 친척' },
+    { id: 'brachiosaurus', relationship: '텐다구루의 동시대 생물' },
+    { id: 'allosaurus', relationship: '포식자 대응종' },
+  ],
+  discoveries: [
+    { discoveredBy: '독일 텐다구루 탐사대', note: '대규모 발굴로 유명한 쥐라기 지층에서 여러 골격이 발견되었습니다.' },
+    { discoveredBy: '에드윈 헤닝', note: '헤닝은 켄트로사우루스를 공식적으로 기술하고 이 독특한 가시 배열을 강조했습니다.' },
+  ],
+  fossilLocations: [
+    { region: '텐다구루, 탄자니아', specimenName: '텐다구루층' },
+  ],
 }

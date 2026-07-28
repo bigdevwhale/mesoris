@@ -13,4 +13,15 @@ export default {
     { label: 'दाँत', value: 'केले के आकार के', icon: 'triangle', description: '12 सेमी लंबे शंक्वाकार दाँत — प्रत्येक टायरानोसॉर के दाँत से भी बड़ा।' },
     { label: 'काटना', value: 'प्लायोसॉर शक्ति', icon: 'zap', description: 'विनाशकारी काटने की शक्ति वाला छोटी-गर्दन का प्लायोसॉर — भयंकर हमलों से शिकार पर घात लगाकर हमला करता था।' },
   ],
+  relatedDinosaurs: [
+    { id: 'elasmosaurus', relationship: 'दूर का रिश्तेदार' },
+    { id: 'tylosaurus', relationship: 'पारिस्थितिक प्रतिद्वंद्वी (पहले का)' },
+  ],
+  discoveries: [
+    { discoveredBy: 'एंड्रयू क्रॉम्बी', note: 'क्वींसलैंड के आउटबैक में पहला आंशिक जबड़ा मिला।' },
+    { discoveredBy: 'अल्बर्ट हीबर लॉन्गमैन', note: 'ह्यूजेंडेन के पास अधिक पूर्ण नमूना खोजा गया।' },
+  ],
+  fossilLocations: [
+    { region: 'क्वींसलैंड, ऑस्ट्रेलिया', specimenName: 'टूलेबुक फॉर्मेशन' },
+  ],
 }

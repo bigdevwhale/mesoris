@@ -14,4 +14,14 @@ export default {
     { label: 'インド', value: 'ゴンドワナの生き残り', description: 'インド亜大陸がアジアに向かって漂流する島だった時代の、白亜紀後期のインドで発見されました。' },
     { label: '論争', value: '激しい議論', description: '断片的な資料のため、確定的な分類はほぼ不可能です。' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: '可能性のある剣竜類の近縁種' },
+    { id: 'kentrosaurus', relationship: '可能性のある剣竜類の近縁種' },
+  ],
+  discoveries: [
+    { year: 1979, location: 'インド・タミル・ナードゥ州トリチノポリ', discoveredBy: 'P. ヤダギリと K. アーヤサミ', note: '1979年にヤダギリとアーヤサミにより剣竜類として記載された断片的な資料；後にChatterjeeとRudra（1991）により首長竜の資料の可能性として再解釈された。' },
+  ],
+  fossilLocations: [
+    { country: 'インド', region: 'タミル・ナードゥ州ティルッチラーパッリ（トリチノポリ層群）', coordinates: [10.79, 78.7], specimenName: 'GSI SR PAL 1 — ホロタイプ、断片的な資料' },
+  ],
 }

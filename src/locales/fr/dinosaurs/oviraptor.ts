@@ -14,4 +14,15 @@ export default {
     { label: 'Plumes', value: 'Plumage complet', description: 'Entièrement emplumé avec un éventail de plumes caudales.' },
     { label: 'Crête', value: 'Semblable au casoar', description: 'Une haute crête osseuse sur la tête comme chez un casoar moderne.' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'Parent éloigné (maniraptoran)' },
+    { id: 'protoceratops', relationship: 'Vécut aux côtés (pas proie)' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Roy Chapman Andrews', note: 'Trouvé près d\'une couvée — identifié à tort comme voleur d\'œufs pendant 70 ans.' },
+    { discoveredBy: 'Mark Norell', note: 'La découverte d\'embryons a réhabilité l\'Oviraptor — il couvait, ne volait pas.' },
+  ],
+  fossilLocations: [
+    { region: 'Désert de Gobi', specimenName: 'Formation de Djadochta' },
+  ],
 }

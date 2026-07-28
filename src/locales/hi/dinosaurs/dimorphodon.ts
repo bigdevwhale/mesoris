@@ -13,4 +13,14 @@ export default {
     { label: 'खोपड़ी', value: 'पफिन जैसी', icon: 'bird', description: 'असामान्य रूप से गहरी, भारी खोपड़ी — काँटों और पंखों वाले पफिन जैसी दिखती है।' },
     { label: 'काल', value: 'प्रारंभिक जुरासिक', icon: 'clock', description: 'सबसे पुराने टेरोसॉरों में से एक — उस समय की जब उड़ान अभी बिल्कुल नई तकनीक थी।' },
   ],
+  relatedDinosaurs: [
+    { id: 'pterodactylus', relationship: 'अधिक उन्नत वंशज' },
+    { id: 'rhamphorhynchus', relationship: 'समकालीन' },
+  ],
+  discoveries: [
+    { year: 1828, location: 'डोर्सेट, यूके', discoveredBy: 'मैरी ऐनिंग', note: 'जीवाश्म क्षेत्र की प्रसिद्ध खोजी मैरी ऐनिंग ने जुरासिक तट पर खोजा।' },
+  ],
+  fossilLocations: [
+    { country: 'यूके', region: 'डोर्सेट', coordinates: [50.6, -2.9], specimenName: 'ब्लू लियास शैलसमूह, जुरासिक तट' },
+  ],
 }

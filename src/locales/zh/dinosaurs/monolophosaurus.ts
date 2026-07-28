@@ -14,4 +14,16 @@
     { label: '环境', value: '湿润河湖地带', description: '它生活在拥有河流、湖泊和季节性湿润环境的侏罗纪生态系统中。' },
     { label: '角色', value: '中大型猎手', description: '它可能捕食小到中型动物，也会利用腐肉等机会性食物资源。' },
   ],
+  relatedDinosaurs: [
+    { id: 'megalosaurus', relationship: '可比的早期坚尾龙级肉食恐龙' },
+    { id: 'allosaurus', relationship: '后期更大型的坚尾龙类捕食者' },
+    { id: 'yangchuanosaurus', relationship: '另一个中国侏罗纪兽脚类捕食者' },
+  ],
+  discoveries: [
+    { discoveredBy: '新疆野外工作队', note: '最初化石从石树沟地层中出土。' },
+    { discoveredBy: '赵喜进与菲利普·柯里', note: '正式命名突出了其独特的单一骨冠和详细的颅骨解剖。' },
+  ],
+  fossilLocations: [
+    { region: '石树沟组，新疆，中国', specimenName: '正模标本及相关骨骼材料' },
+  ],
 }

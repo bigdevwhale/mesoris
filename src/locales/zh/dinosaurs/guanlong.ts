@@ -14,4 +14,15 @@ export default {
     { label: '家族', value: '早期暴龙超科', description: '已知最早和最原始的暴龙超科之一——暴龙的微小祖先。' },
     { label: '年代', value: '早于暴龙', description: '生活在暴龙出现之前约9000万年——这位"暴君之王"的微小先驱。' },
   ],
+  relatedDinosaurs: [
+    { id: 'proceratosaurus', relationship: '有头冠的原暴龙类近亲' },
+    { id: 'tyrannosaurus-rex', relationship: '远代后裔' },
+    { id: 'dilophosaurus', relationship: '同时代的有冠兽脚类' },
+  ],
+  discoveries: [
+    { discoveredBy: '徐星及其团队', note: '一支中美联合考察队采集了两具保存完好的骨架。' },
+  ],
+  fossilLocations: [
+    { region: '石树沟组，新疆', specimenName: 'IVPP V14531 — 正模标本完整骨架' },
+  ],
 }

@@ -14,4 +14,16 @@ export default {
     { label: '이빨', value: '다수의 칼날', description: '턱에는 살을 찌르고 사냥감에서 살점을 찢어내기 위해 설계된 두껍고 톱니가 있는 이빨이 줄지어 있었습니다.' },
     { label: '성장', value: '청소년기 급성장', description: '성장 연구에 따르면, 어린 개체가 빠르게 성숙하여 불과 몇 년 만에 강력한 포식자로 성장했습니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: '더 큰 근연종' },
+    { id: 'daspletosaurus', relationship: '동과의 티라노사우루스류' },
+    { id: 'pachyrhinosaurus', relationship: '가능성 있는 먹이' },
+  ],
+  discoveries: [
+    { year: 1884, location: '캐나다 앨버타주 레드디어강', discoveredBy: '조지프 버 트러렐', note: '지질조사 원정 도중 최초의 두개골 화석이 발견되었습니다.' },
+    { year: 1910, location: '캐나다 앨버타주', discoveredBy: '바넘 브라운', note: '브라운은 이 종에 대한 이해를 완전히 바꾼 유명한 대규모 뼈층을 발견했습니다.' },
+  ],
+  fossilLocations: [
+    { country: '캐나다', region: '앨버타주', coordinates: [51.9, -112.9], specimenName: '홀슈캐년층' },
+  ],
 }

@@ -14,4 +14,14 @@ export default {
     { label: '먹잇감', value: '거대 용각류', description: '역사상 가장 큰 육상 동물 아르젠티노사우루스를, 아마도 무리로 사냥했습니다.' },
     { label: '뇌', value: '몸에 비해 작음', description: '티렉스보다 비례적으로 작은 뇌를 가져, 다른 사냥 전략을 시사합니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: '크기 경쟁자' },
+    { id: 'spinosaurus', relationship: '크기 경쟁자' },
+  ],
+  discoveries: [
+    { discoveredBy: '루벤 카롤리니', note: '아마추어 화석 수집가가 발견한 거의 완전한 골격.' },
+  ],
+  fossilLocations: [
+    { region: '네우켄', specimenName: '칸델레로스층' },
+  ],
 }

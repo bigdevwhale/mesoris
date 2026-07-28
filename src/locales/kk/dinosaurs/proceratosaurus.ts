@@ -14,4 +14,15 @@ export default {
     { label: 'Өлшемі', value: 'Глостершир', description: '1910 жылы Англияның Глостершир Минчингемптондағы кірпіш карьерінен табылған.' },
     { label: 'Тұқымдасы', value: 'Ерте тираннозавроид', description: 'Proceratosauridae тұқымына жатады - Гуаньлун мен Килескусты қоса алғандағы базальды тираннозавроидтар.' },
   ],
+  relatedDinosaurs: [
+    { id: 'guanlong', relationship: 'Айдары бар прозератозаврид туысы' },
+    { id: 'dilophosaurus', relationship: 'Заманауыс айдары бар теропод' },
+    { id: 'tyrannosaurus-rex', relationship: 'Алыстағы ұрпағы' },
+  ],
+  discoveries: [
+    { year: 1910, location: 'Minchinhampton, Gloucestershire, England', discoveredBy: 'F. Lewis Bradley', note: 'Кірпіш карьерінен табылған бас сүйектің бір бөлігі; Артур Смит Вудворд сипаттаған.' },
+  ],
+  fossilLocations: [
+    { country: 'United Kingdom', region: 'Минчингемптон, Глостершир', coordinates: [51.7, -2.2], specimenName: 'NHMUK PV R 4860 — голотип, бас сүйектің бір бөлігі' },
+  ],
 }

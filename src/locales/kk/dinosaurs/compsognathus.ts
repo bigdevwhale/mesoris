@@ -14,4 +14,14 @@ export default {
     { label: 'Қоректенуі', value: 'Кесірткелер', description: 'Табылған үлгілердің бірінде асқазанында тұтас кесіртке сақталған.' },
     { label: 'Маңызы', value: 'Құстармен байланысы', description: 'Құсқа ұқсас қаңқасы құстардың динозаврлардан шыққаны туралы алғашқы ғылыми дәлелдердің бірі болған.' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'Алыс туыс' },
+  ],
+  discoveries: [
+    { year: 1859, location: 'Бавария, Германия', discoveredBy: 'Йозеф Оберндорфер', note: 'Зольнхофен әктасынан тұңғыш үлгі табылды, Archaeopteryx шыққан сол шөгінділерден.' },
+  ],
+  fossilLocations: [
+    { country: 'Германия', region: 'Бавария', coordinates: [48.8, 11.0], specimenName: 'Зольнхофен әктасы' },
+    { country: 'Франция', region: 'Прованс', coordinates: [43.5, 6.5] },
+  ],
 }

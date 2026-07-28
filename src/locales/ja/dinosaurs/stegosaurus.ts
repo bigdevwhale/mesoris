@@ -14,4 +14,16 @@ export default {
     { label: '脳', value: 'クルミ大', description: '恐竜の中で最も小さい脳対体比の一つを持っていました。' },
     { label: '第二の脳', value: 'ただの神話！', description: 'かつて科学者たちは腰に第二の脳があると考えましたが、それは単なるグリコーゲン体でした。' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: '捕食者' },
+    { id: 'diplodocus', relationship: '同時代の恐竜' },
+  ],
+  discoveries: [
+    { discoveredBy: 'オスニエル・チャールズ・マーシュ', note: 'モリソン層から初めてステゴサウルスの化石が記載された。' },
+    { discoveredBy: 'ボブ・サイモン', note: '「ソフィー」 — これまで発見された中で最も完全なステゴサウルスの骨格。' },
+  ],
+  fossilLocations: [
+    { region: 'コロラド州', specimenName: 'モリソン層' },
+    { region: 'ワイオミング州' },
+  ],
 }

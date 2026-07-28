@@ -14,4 +14,17 @@ export default {
     { label: 'Nase', value: 'Oben auf dem Kopf', description: 'Seine Nasenlöcher saßen auf einem gewölbten Kamm oben auf dem Schädel, möglicherweise zur Resonanzerzeugung.' },
     { label: 'Beine', value: 'Länger vorne', description: 'Ein seltener Körperbau unter Dinosauriern, bei dem die Vorderbeine länger als die Hinterbeine waren.' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: 'Zeitgenosse' },
+    { id: 'allosaurus', relationship: 'Bedrohung durch Räuber' },
+    { id: 'apatosaurus', relationship: 'Zeitgenosse' },
+  ],
+  discoveries: [
+    { year: 1900, location: 'Colorado, USA', discoveredBy: 'Elmer Riggs', note: 'Erste Brachiosaurus-Fossilien in der Morrison-Formation entdeckt.' },
+    { year: 1909, location: 'Tansania, Afrika', discoveredBy: 'Werner Janensch', note: 'Großexpedition fand in Tendaguru nahezu vollständige Skelette.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Colorado', coordinates: [39.5, -105.0], specimenName: 'Morrison-Formation' },
+    { country: 'Tansania', region: 'Tendaguru', coordinates: [-10.5, 39.5] },
+  ],
 }

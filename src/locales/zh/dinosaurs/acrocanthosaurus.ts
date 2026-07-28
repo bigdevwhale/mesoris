@@ -14,4 +14,17 @@
     { label: '前肢', value: '粗壮的三指', description: '与霸王龙类不同，高棘龙拥有强壮的前肢，可用于捕获猎物。' },
     { label: '足迹', value: '巨型足迹化石', description: '白垩纪早期的一些巨型足迹可能是高棘龙追踪蜥脚类恐龙时留下的。' },
   ],
+  relatedDinosaurs: [
+    { id: 'carcharodontosaurus', relationship: '近亲' },
+    { id: 'sauroposeidon', relationship: '同时代的巨型猎物' },
+    { id: 'deinonychus', relationship: '同时代的小型捕食者' },
+  ],
+  discoveries: [
+    { year: 1940, location: '美国俄克拉荷马州', discoveredBy: 'J·威利斯·斯托瓦尔及其团队', note: '来自鹿角层的重要化石揭示了一种前所未知的巨型捕食者。' },
+    { year: 1950, location: '美国俄克拉荷马州', discoveredBy: 'J·威利斯·斯托瓦尔与小W·兰斯顿', note: '正式的科学描述将高棘龙介绍给了学界。' },
+  ],
+  fossilLocations: [
+    { country: '美国', region: '俄克拉荷马州', coordinates: [34.4, -96.0], specimenName: '鹿角层' },
+    { country: '美国', region: '得克萨斯州', coordinates: [32.9, -97.4], specimenName: '双山层' },
+  ],
 }

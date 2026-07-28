@@ -14,4 +14,17 @@ export default {
     { label: '먹이', value: '거대 용각류', description: '슈노사우루스나 오메이사우루스 같은 거대 초식 공룡을 매복이나 협력 사냥으로 노렸을 것으로 생각됨.' },
     { label: '과', value: '시나랍토르과', description: '북아메리카의 알로사우루스 진화와 병행하여 진화한, 아시아 고유의 알로사우루스상과 계통에 속함.' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: '북미 알로사우루스상과 근연종' },
+    { id: 'ceratosaurus', relationship: '동시대 케라토사우루스과' },
+    { id: 'torvosaurus', relationship: '대형 쥐라기 포식자 근연종' },
+  ],
+  discoveries: [
+    { discoveredBy: '동즈밍, 창요이치, 리쉰민, 저우스이우', note: '공사 중 거의 완전한 홀로타입(두개골과 부분 골격) 발견; 1978년 동 등 기재.' },
+    { discoveredBy: '동즈밍', note: '다산푸 표본에서 두 번째 종 Y. magnus가 기재됨 — 약간 더 크고 더 완전하게 알려져 있다.' },
+  ],
+  fossilLocations: [
+    { region: '쓰촨 성 융촨 (상사시야오 층)', specimenName: 'CV 00215 — 홀로타입 두개골과 골격' },
+    { region: '쓰촨 성 쯔궁 (다산푸 층)', specimenName: 'Y. magnus 표본 — 쯔궁 공룡 박물관' },
+  ],
 }

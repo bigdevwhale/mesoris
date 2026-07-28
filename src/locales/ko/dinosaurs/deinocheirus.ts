@@ -14,4 +14,18 @@ export default {
     { label: '부리', value: '오리 모양', description: '넓고 이가 없는 오리 모양의 부리로, 물을 거르고 식물을 잘라 먹기에 적합했습니다.' },
     { label: '식성', value: '잡식', description: '위 내용물은 식물, 물고기, 작은 동물을 먹었다는 것을 보여줍니다 — 진정한 백악기 잡식성.' },
   ],
+  relatedDinosaurs: [
+    { id: 'gallimimus', relationship: '오르니토미무스류 사촌' },
+    { id: 'ornithomimus', relationship: '오르니토미무스류 친척' },
+    { id: 'therizinosaurus', relationship: '코엘루로사우루스류 친척' },
+    { id: 'velociraptor', relationship: '먼 兽脚类 친척' },
+  ],
+  discoveries: [
+    { discoveredBy: '폴란드-몽골 원정대 (Zofia Kielan-Jaworowska)', note: '최초 화석 발견 — 거대한 팔과 어깨뼈만. 몸은 50년간 미스터리로 남았다.' },
+    { discoveredBy: '한국-몽골 원정대', note: '거의 완전한 표본이 드디어 전신을 드러냈다 — 예상과 완전히 달랐다.' },
+    { discoveredBy: '벨기에-몽골 원정대', note: '두개골 파편과 위 내용물이 있는 추가 표본이 잡식성을 확인했다.' },
+  ],
+  fossilLocations: [
+    { region: '고비 사막, 네메그트 분지', specimenName: '네메그트층' },
+  ],
 }

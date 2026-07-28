@@ -14,4 +14,14 @@ export default {
     { label: 'Chasse', value: 'Chasseur actif', description: 'Les preuves montrent qu\'il chassait activement et combattait ses proies — pas un charognard.' },
     { label: 'Morsure', value: 'Broyeuse d\'os', description: 'Développait déjà la puissante morsure broyeuse d\'os qui a rendu T. rex célèbre.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Descendant' },
+  ],
+  discoveries: [
+    { year: 1921, location: 'Alberta, Canada', discoveredBy: 'Charles M. Sternberg', note: 'Premier crâne découvert dans la formation d\'Oldman.' },
+  ],
+  fossilLocations: [
+    { country: 'Canada', region: 'Alberta', coordinates: [49.5, -112.0], specimenName: 'Formation d\'Oldman' },
+    { country: 'États-Unis', region: 'Montana', coordinates: [47.5, -110.5], specimenName: 'Formation de Two Medicine' },
+  ],
 }

@@ -14,5 +14,15 @@ const translations = {
     { label: '翼展', value: '1.8 米', description: '一种中等体型的翼龙。' },
     { label: '时代', value: '1.5 亿年前', description: '侏罗纪晚期，索尔恩霍芬。' },
   ],
+  relatedDinosaurs: [
+    { id: 'pterodactylus', relationship: '同时期' },
+    { id: 'dimorphodon', relationship: '较早的近亲' },
+  ],
+  discoveries: [
+    { year: 1830, location: 'Bavaria, Germany', discoveredBy: '格奥尔格·奥古斯特·戈德弗斯', note: '与始祖鸟一同最早被描述的化石之一，采自索尔恩霍芬采石场。' },
+  ],
+  fossilLocations: [
+    { country: 'Germany', region: '索尔恩霍芬石灰岩，巴伐利亚', coordinates: [48.9, 11.0], specimenName: '索尔恩霍芬石灰岩，模式标本' },
+  ],
 }
 export default translations

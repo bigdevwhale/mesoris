@@ -14,4 +14,15 @@
     { label: '共存', value: '与始盗龙同层', description: '与始盗龙在同一地层中生活，展示了恐龙谱系的早期分异。' },
     { label: '演化', value: '兽脚类祖先', description: '最基干的兽脚类之一——有助于理解所有后来食肉恐龙的身体蓝图。' },
   ],
+  relatedDinosaurs: [
+    { id: 'eoraptor', relationship: '同一地层的同代成员' },
+    { id: 'herrerasaurus', relationship: '体型更大的同时代捕食者' },
+    { id: 'coelophysis', relationship: '较晚的近亲' },
+  ],
+  discoveries: [
+    { year: 2011, location: '阿根廷圣胡安省伊斯基瓜拉斯托省立公园', discoveredBy: '里卡多·N·马丁内斯等', note: '近完整骨架描述于《科学》杂志；以博物馆赞助人詹姆斯·墨菲之名命名为"murphi"。' },
+  ],
+  fossilLocations: [
+    { country: '阿根廷', region: '圣胡安省伊斯基瓜拉斯托组', coordinates: [-30.0, -67.9], specimenName: 'PVSJ 562 —— 近乎完整的正模标本骨架' },
+  ],
 }

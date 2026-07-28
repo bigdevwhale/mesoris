@@ -14,4 +14,15 @@ export default {
     { label: 'Tamaño', value: '10 m', description: 'Un lambeosaurino grande' },
     { label: 'Epoca', value: 'Cretacico Tardio', description: '~70 millones de anos' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: 'Pariente hadrosaurio lambeosaurino' },
+    { id: 'corythosaurus', relationship: 'Pariente hadrosaurio con cresta' },
+    { id: 'edmontosaurus', relationship: 'Pariente hadrosaurio' },
+  ],
+  discoveries: [
+    { discoveredBy: 'C.C. Young', note: 'Descrito por Young en 1958; la conservación imperfecta provocó décadas de debate sobre la morfología de la cresta, resuelta con mejor material.' },
+  ],
+  fossilLocations: [
+    { region: 'Zhucheng, provincia de Shandong (Grupo Wangshi)', specimenName: 'IVPP V725 — cráneo holotipo con cresta' },
+  ],
 }

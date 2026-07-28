@@ -14,4 +14,17 @@ export default {
     { label: 'Placche', value: 'Larghe e piatte', description: 'Aveva una lunga fila di placche larghe, piatte e triangolari lungo la schiena e i fianchi.' },
     { label: 'Origine', value: 'Inghilterra e Francia', description: 'Trovato nella Kimmeridge Clay del Dorset, Inghilterra, e nel Giurassico di Francia e Portogallo.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Famoso parente successivo' },
+    { id: 'loricatosaurus', relationship: 'Cugino stegosauro europeo' },
+    { id: 'kentrosaurus', relationship: 'Cugino stegosauro africano' },
+  ],
+  discoveries: [
+    { year: 1875, location: 'Kimmeridge Clay, Dorset, Inghilterra', discoveredBy: 'Richard Owen', note: 'Originariamente chiamato Omosaurus; successivamente rinominato Dacentrurus.' },
+    { year: 1902, location: 'Regno Unito e Francia', discoveredBy: 'Vari', note: 'Rinominato Dacentrurus da F.A. Lucas; ulteriore materiale descritto.' },
+  ],
+  fossilLocations: [
+    { country: 'Regno Unito', region: 'Kimmeridge, Dorset', coordinates: [50.6, -2.1], specimenName: 'Materiale olotipo NHMUK' },
+    { country: 'Francia', region: 'Giurassico della Francia', coordinates: [46.5, 2.0], specimenName: 'Vari esemplari francesi' },
+  ],
 }

@@ -14,4 +14,15 @@ export default {
     { label: '翅膀', value: '狭长', description: '狭长的翅膀适应于在西部内陆海道上动态滑翔——就像白垩纪的信天翁。' },
     { label: '飞行', value: '空中渔夫', description: '在白垩纪海面上滑翔，并用无牙的喙舀起鱼。' },
   ],
+  relatedDinosaurs: [
+    { id: 'pteranodon', relationship: '同时代的翼手龙类近亲' },
+    { id: 'dimorphodon', relationship: '早期的基础翼龙' },
+    { id: 'quetzalcoatlus', relationship: '较远的神龙翼龙科近亲' },
+  ],
+  discoveries: [
+    { year: 1876, location: '美国堪萨斯州尼奥布拉拉白垩层', discoveredBy: 'O.C. 马什', note: '首次根据堪萨斯州的白垩沉积物描述的夜翼龙。' },
+  ],
+  fossilLocations: [
+    { country: '美国', region: '堪萨斯州尼奥布拉拉白垩层', coordinates: [38.7, -98.5], specimenName: '尼奥布拉拉白垩层模式标本' },
+  ],
 }

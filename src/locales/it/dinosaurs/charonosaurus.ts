@@ -14,4 +14,15 @@ export default {
     { label: 'Branco', value: 'Comportamento gregario', description: 'Diversi individui sono stati trovati insieme, suggerendo animali da branco che migravano attraverso gli antichi paesaggi della Cina nord-orientale.' },
     { label: 'Suono', value: 'Richiami di risonanza', description: 'Il tubo cavo della cresta funzionava come un trombone, amplificando i richiami per la comunicazione.' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: 'Parente noto più prossimo — cresta quasi identica' },
+    { id: 'corythosaurus', relationship: 'Parente adrosauro lambeosaurino' },
+    { id: 'lambeosaurus', relationship: 'Parente adrosauro lambeosaurino' },
+  ],
+  discoveries: [
+    { year: 2000, location: 'Jiayin, provincia di Heilongjiang, Cina', discoveredBy: 'Pascal Godefroit et al.', note: 'Descritto nel 2000 da Godefroit e colleghi da materiale raccolto vicino al fiume Amur; chiamato così in onore del Caronte mitologico per la posizione di confine del fiume.' },
+  ],
+  fossilLocations: [
+    { country: 'Cina', region: 'Distretto di Jiayin, provincia di Heilongjiang (Formazione Yuliangze)', coordinates: [48.8, 130.4], specimenName: 'IVPP V12735 — olotipo, cranio parziale e scheletro' },
+  ],
 }

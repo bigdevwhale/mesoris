@@ -8,6 +8,7 @@ import MainNav from './MainNav.vue'
 import MobileNav from './MobileNav.vue'
 import BottomNav from './BottomNav.vue'
 import ModeSwitcher from './ModeSwitcher.vue'
+import ThemeToggle from './ThemeToggle.vue'
 import LanguageSwitcher from './LanguageSwitcher.vue'
 
 const { t } = useI18n()
@@ -61,6 +62,7 @@ onBeforeUnmount(() => {
         </button>
 
         <LanguageSwitcher />
+        <ThemeToggle />
         <ModeSwitcher />
 
         <!-- Support / Donate — subtle heart button that opens a popover with both links -->

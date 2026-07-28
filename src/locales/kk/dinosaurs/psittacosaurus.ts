@@ -14,4 +14,17 @@ export default {
     { label: 'Құйрығы', value: 'Қылшық тәрізді өсінділер', description: 'Кейбір үлгілердің құйрығында қатты қылшықтар сақталған. Бұл динозаврлардағы өте сирек кездесетін дене жамылғысының түрі.' },
     { label: 'Бойы', value: 'Төлінен ересегіне дейін', description: 'Қазба қалдықтарының өте көп табылуының арқасында ғалымдар Пситтакозаврдың төлдерін, ересек дарақтарын және тіпті ұрпағын күту ерекшеліктерін де зерттей алды.' },
   ],
+  relatedDinosaurs: [
+    { id: 'protoceratops', relationship: 'Кейінгі цератопс' },
+    { id: 'triceratops', relationship: 'Мүйізді алыстағы ұрпағы' },
+    { id: 'microraptor', relationship: 'Заманауыс азиялық көрші' },
+  ],
+  discoveries: [
+    { year: 1922, location: 'Mongolia', discoveredBy: 'Henry Fairfield Osborn', note: 'Осборн алғашқы азиялық табылғылар негізінде текті атады және оны қарапайым мүйізді динозавр ретінде таныды.' },
+    { year: 2000, location: 'Liaoning, China', discoveredBy: 'Chinese paleontological teams', note: 'Керемет жаңа қазбалар теріні, қылшықтарды және тіпті балалар топтарын сақтады.' },
+  ],
+  fossilLocations: [
+    { country: 'China', region: 'Ляонин', coordinates: [41.9, 121.7], specimenName: 'Исян түзілімі' },
+    { country: 'Mongolia', region: 'Өмнөговь', coordinates: [44.5, 108.5], specimenName: 'Ерте бор қабаттары' },
+  ],
 }

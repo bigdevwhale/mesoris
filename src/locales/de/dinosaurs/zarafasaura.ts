@@ -14,4 +14,15 @@ export default {
     { label: 'Herkunft', value: 'Marokko', description: 'Entdeckt in den Phosphaten des Oulad-Abdoun-Beckens in Marokko, einer kreidezeitlichen Meeresfundgrube.' },
     { label: 'Hals', value: 'Sehr lang', description: 'Ein langer Hals mit über 50 Halswirbeln, der zur Ambush-Jagd auf Fischschwärme genutzt wurde.' },
   ],
+  relatedDinosaurs: [
+    { id: 'elasmosaurus', relationship: 'Größerer Elasmosaurier-Vetter' },
+    { id: 'plesiosaurus', relationship: 'Langhalsiger Plesiosaurier-Verwandter' },
+    { id: 'mosasaurus', relationship: 'Zeitgenössischer Meeresräuber' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Peggy Vincent und Team', note: 'Partieller Schädel und Halswirbel beschrieben und benannt.' },
+  ],
+  fossilLocations: [
+    { region: 'Oulad-Abdoun-Becken', specimenName: 'OCP DEK/GE 307 — Holotyp-Teilschädel und Wirbel' },
+  ],
 }

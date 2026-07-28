@@ -14,4 +14,17 @@
     { label: '栖息地', value: '北非', description: '漫步于白垩纪今天埃及和摩洛哥所在地的河岸平原和红树林中。' },
     { label: '同时代', value: '与棘龙共存', description: '与棘龙共享栖息地——这两种最大的兽脚类恐龙并肩生活。' },
   ],
+  relatedDinosaurs: [
+    { id: 'giganotosaurus', relationship: '近亲' },
+    { id: 'spinosaurus', relationship: '同期竞争者' },
+    { id: 'acrocanthosaurus', relationship: '北美洲亲属' },
+  ],
+  discoveries: [
+    { discoveredBy: '夏尔·德佩雷和 J. 萨沃尔南', note: '原始材料确立了北非的鲨齿巨兽。' },
+    { discoveredBy: '保罗·塞里诺', note: '新的头骨材料帮助科学家在原始化石丢失后重新描述了该动物。' },
+  ],
+  fossilLocations: [
+    { region: 'Kem Kem 床层', specimenName: 'Kem Kem 群' },
+    { region: '特加马', specimenName: '大陆间层' },
+  ],
 }

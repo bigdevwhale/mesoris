@@ -14,4 +14,15 @@ export default {
     { label: 'Plumes', value: 'Probablement emplumé', description: 'Les espèces apparentées confirment les plumes — à sang chaud et semblable aux oiseaux.' },
     { label: 'Chasse', value: 'Chasseur en meute', description: 'Plusieurs individus trouvés près de fossiles de Tenontosaurus — une preuve solide de chasse en meute.' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'Proche parent' },
+    { id: 'oviraptor', relationship: 'Contemporain' },
+  ],
+  discoveries: [
+    { year: 1931, location: 'Montana, États-Unis', discoveredBy: 'Barnum Brown', note: 'Premiers fossiles trouvés mais pas étudiés avant des décennies.' },
+    { year: 1964, location: 'Montana, États-Unis', discoveredBy: 'John Ostrom', note: 'La découverte et l\'article de 1969 d\'Ostrom ont révolutionné la science des dinosaures.' },
+  ],
+  fossilLocations: [
+    { country: 'États-Unis', region: 'Montana', coordinates: [45.5, -108.5], specimenName: 'Formation de Cloverly' },
+  ],
 }

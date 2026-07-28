@@ -14,4 +14,15 @@ export default {
     { label: 'Ubicacion', value: 'Tanzania', description: 'Africa, Triasico Medio' },
     { label: 'Debate', value: 'Activo', description: 'Se discute si es dinosaurio verdadero' },
   ],
+  relatedDinosaurs: [
+    { id: 'eoraptor', relationship: 'Dinosaurio temprano argentino posterior' },
+    { id: 'herrerasaurus', relationship: 'Dinosaurio temprano posterior' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Rex Parrington', note: 'Huesos recolectados en los anos 1930 pero no descritos formalmente hasta 2013 por Sterling Nesbitt y sus colegas.' },
+    { discoveredBy: 'Sterling Nesbitt et al.', note: 'Descripcion formal publicada en Biology Letters que identifico el material como posiblemente el dinosaurio mas antiguo del mundo.' },
+  ],
+  fossilLocations: [
+    { region: 'Cuenca de Ruhuhu, Formacion Manda, region de Ruvuma', specimenName: 'NHMUK PV R6856 — humero y vertebras holotipo' },
+  ],
 }

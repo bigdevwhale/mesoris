@@ -14,4 +14,15 @@ export default {
     { label: 'Crescita ossea', value: 'Crescita rapida', description: 'L\'istologia ossea mostra tassi di crescita rapidi e sostenuti — caratteristiche dei dinosauri.' },
     { label: 'Tanzania', value: 'Triassico medio', description: 'Trovato nella Formazione Manda del Triassico medio — epoca in cui i primi animali dinosauriani emergevano.' },
   ],
+  relatedDinosaurs: [
+    { id: 'eoraptor', relationship: 'Dinosauro precoce argentino successivo' },
+    { id: 'herrerasaurus', relationship: 'Dinosauro precoce successivo' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Rex Parrington', note: 'Ossa raccolte negli anni \'30 ma descritte formalmente solo nel 2013 da Sterling Nesbitt e colleghi.' },
+    { discoveredBy: 'Sterling Nesbitt et al.', note: 'La descrizione formale pubblicata su Biology Letters identificò il materiale come potenzialmente il dinosauro più antico del mondo.' },
+  ],
+  fossilLocations: [
+    { region: 'Bacino di Ruhuhu, Formazione Manda, regione di Ruvuma', specimenName: 'NHMUK PV R6856 — omero e vertebre olotipo' },
+  ],
 }

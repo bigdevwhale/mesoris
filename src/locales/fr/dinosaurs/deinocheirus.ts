@@ -14,4 +14,18 @@ export default {
     { label: 'Bec', value: 'Bec de canard', description: 'Un bec large et édenté, semblable à celui d\'un canard, pour filtrer l\'eau et couper les plantes.' },
     { label: 'Régime', value: 'Omnivore', description: 'Le contenu stomacal montre qu\'il mangeait plantes, poissons et petits animaux — un véritable omnivore du Crétacé.' },
   ],
+  relatedDinosaurs: [
+    { id: 'gallimimus', relationship: 'Cousin ornithomimosaure' },
+    { id: 'ornithomimus', relationship: 'Parent ornithomimosaure' },
+    { id: 'therizinosaurus', relationship: 'Parent coelurosaure' },
+    { id: 'velociraptor', relationship: 'Parent théropode éloigné' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Expédition polono-mongole (Zofia Kielan-Jaworowska)', note: 'Premiers fossiles trouvés — seulement les bras géants et la ceinture scapulaire. Le corps est resté un mystère pendant près de 50 ans.' },
+    { discoveredBy: 'Expédition coréo-mongole', note: 'Un spécimen presque complet a enfin révélé le corps entier — totalement différent de ce à quoi on s\'attendait.' },
+    { discoveredBy: 'Expédition belgo-mongole', note: 'Spécimen supplémentaire avec fragment de crâne et contenu stomacal confirmant le régime omnivore.' },
+  ],
+  fossilLocations: [
+    { region: 'Désert de Gobi, bassin de Nemegt', specimenName: 'Formation de Nemegt' },
+  ],
 }

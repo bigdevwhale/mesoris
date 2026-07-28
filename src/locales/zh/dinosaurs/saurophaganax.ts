@@ -14,4 +14,16 @@
     { label: '武器', value: '长而带锯齿的牙', description: '强壮颚部和刀刃状牙齿适合切割大型蜥脚类和其他巨型猎物。' },
     { label: '争议', value: '是否独立成属', description: '科学家一直在讨论它究竟是独立属，还是一种特别巨大的异特龙。' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: '非常接近的异特龙科近亲；有时被视作同一属' },
+    { id: 'torvosaurus', relationship: '北美另一种巨型侏罗纪捕食者' },
+    { id: 'stegosaurus', relationship: '潜在的猎物及同时代的植食恐龙' },
+  ],
+  discoveries: [
+    { discoveredBy: '由J.W.斯托瓦尔带领的考察队', note: '从莫里逊组地层中回收了大型兽脚类遗骸。' },
+    { discoveredBy: '丹尼尔·丘尔', note: '该材料被命名为Saurophaganax maximus，并被论证为与异特龙不同的属。' },
+  ],
+  fossilLocations: [
+    { region: '俄克拉荷马州西马伦县（莫里逊组）', specimenName: 'Saurophaganax maximus 模式标本' },
+  ],
 }

@@ -14,4 +14,15 @@ export default {
     { label: 'Ubicacion', value: 'Niger, Africa', description: 'Desierto del Sahara' },
     { label: 'Dieta', value: 'Herbivoro', description: 'Dientes espatulados para hojas' },
   ],
+  relatedDinosaurs: [
+    { id: 'brachiosaurus', relationship: 'Pariente neosauropodo posterior' },
+    { id: 'diplodocus', relationship: 'Pariente sauropodo contemporaneo' },
+    { id: 'nigersaurus', relationship: 'Contemporaneo africano' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Paul Sereno y equipo', note: 'Espectacular recuperacion de un esqueleto casi completo (~95%) durante una gran expedicion en el Sahara; descrito formalmente en Science en 1999.' },
+  ],
+  fossilLocations: [
+    { region: 'Region de Agadez, Formacion Tiouraren', specimenName: 'MNN TIG3 — holotipo casi completo' },
+  ],
 }

@@ -14,4 +14,17 @@ export default {
     { label: '플레이트', value: '넓고 평평', description: '등과 엉덩이를 따라 넓고 평평한 삼각형 플레이트가 줄지어 있었어요.' },
     { label: '원산지', value: '잉글랜드와 프랑스', description: '잉글랜드 도싯의 키메리지 점토층, 프랑스와 포르투갈의 쥐라기 지층에서 발견되었어요.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: '유명한 후대 근연종' },
+    { id: 'loricatosaurus', relationship: '유럽 검룡 사촌' },
+    { id: 'kentrosaurus', relationship: '아프리카 검룡 사촌' },
+  ],
+  discoveries: [
+    { year: 1875, location: '잉글랜드 도싯 키메리지 점토층', discoveredBy: '리처드 오웬', note: '원래 Omosaurus로 명명되었으며, 후에 Dacentrurus로 개명되었다.' },
+    { year: 1902, location: '영국과 프랑스', discoveredBy: '다수', note: 'F.A. 루카스에 의해 Dacentrurus로 개명; 추가 재료가 기재되었다.' },
+  ],
+  fossilLocations: [
+    { country: '영국', region: '도싯 키메리지', coordinates: [50.6, -2.1], specimenName: 'NHMUK 완모식표본 재료' },
+    { country: '프랑스', region: '프랑스 쥐라기 지층', coordinates: [46.5, 2.0], specimenName: '다양한 프랑스 표본' },
+  ],
 }

@@ -14,4 +14,13 @@
     { label: '外观', value: '复原错误', description: '早期的复原将其描绘成一只巨大的蜥蜴——现在我们知道它是两足行走的。' },
     { label: '侏罗纪', value: '中侏罗世', description: '生活于英格兰的中侏罗世——比异特龙和霸王龙更为古老。' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: '远亲' },
+  ],
+  discoveries: [
+    { discoveredBy: '采石场工人', note: '在斯通斯菲尔德采石场发现巨大骨骼；后由威廉·巴克兰于1824年描述。' },
+  ],
+  fossilLocations: [
+    { region: '牛津郡，英国', specimenName: '斯通斯菲尔德板岩' },
+  ],
 }

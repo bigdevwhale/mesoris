@@ -14,4 +14,14 @@ export default {
     { label: 'Découverte', value: 'Le triomphe d\'Anning', description: 'Découvert par Mary Anning en 1823 — l\'un des tout premiers reptiles préhistoriques connus.' },
     { label: 'Taille', value: '3,5 mètres', description: 'Reptile marin de taille moyenne du Jurassique inférieur.' },
   ],
+  relatedDinosaurs: [
+    { id: 'elasmosaurus', relationship: 'Descendant bien plus grand' },
+    { id: 'ichthyosaurus', relationship: 'Contemporain' },
+  ],
+  discoveries: [
+    { year: 1823, location: 'Lyme Regis, Royaume-Uni', discoveredBy: 'Mary Anning', note: 'Premier squelette articulé découvert sur la côte jurassique — une sensation scientifique.' },
+  ],
+  fossilLocations: [
+    { country: 'Royaume-Uni', region: 'Dorset', coordinates: [50.7, -2.9], specimenName: 'Formation de Blue Lias, côte jurassique' },
+  ],
 }

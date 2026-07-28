@@ -14,4 +14,15 @@ export default {
     { label: 'Piume', value: 'Probabilmente piumato', description: 'Le specie affini confermano le piume — a sangue caldo e simile agli uccelli.' },
     { label: 'Caccia', value: 'Cacciatore in branco', description: 'Diversi individui trovati vicino a fossili di Tenontosaurus — una prova solida di caccia in branco.' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'Parente stretto' },
+    { id: 'oviraptor', relationship: 'Contemporaneo' },
+  ],
+  discoveries: [
+    { year: 1931, location: 'Montana, USA', discoveredBy: 'Barnum Brown', note: 'Primi fossili trovati ma non studiati fino a decenni dopo.' },
+    { year: 1964, location: 'Montana, USA', discoveredBy: 'John Ostrom', note: 'La scoperta e l\'articolo del 1969 di Ostrom rivoluzionarono la scienza dei dinosauri.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Montana', coordinates: [45.5, -108.5], specimenName: 'Formazione Cloverly' },
+  ],
 }

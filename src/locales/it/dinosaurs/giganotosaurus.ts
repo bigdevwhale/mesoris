@@ -14,4 +14,14 @@ export default {
     { label: 'Preda', value: 'Sauropodi giganti', description: 'Cacciava Argentinosaurus — i più grandi animali terrestri — probabilmente in branco.' },
     { label: 'Cervello', value: 'Piccolo per la sua taglia', description: 'Aveva un cervello proporzionalmente più piccolo di T. rex, suggerendo strategie di caccia diverse.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Rivale per dimensioni' },
+    { id: 'spinosaurus', relationship: 'Rivale per dimensioni' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Ruben Carolini', note: 'Scheletro quasi completo trovato da un cacciatore di fossili dilettante.' },
+  ],
+  fossilLocations: [
+    { region: 'Neuquén', specimenName: 'Formazione Candeleros' },
+  ],
 }

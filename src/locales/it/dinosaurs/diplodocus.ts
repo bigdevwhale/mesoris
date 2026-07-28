@@ -14,4 +14,17 @@ export default {
     { label: 'Denti', value: 'A forma di matita', description: 'Denti lunghi e snelli per strappare le foglie dai rami.' },
     { label: 'Narici', value: 'Sulla sommità della testa', description: 'Un\'unica apertura nasale sulla sommità del cranio — gli scienziati hanno dibattuto sulla sua utilità per decenni.' },
   ],
+  relatedDinosaurs: [
+    { id: 'apatosaurus', relationship: 'Parente stretto' },
+    { id: 'allosaurus', relationship: 'Predatore' },
+    { id: 'brachiosaurus', relationship: 'Contemporaneo' },
+  ],
+  discoveries: [
+    { year: 1877, location: 'Colorado, USA', discoveredBy: 'Samuel Wendell Williston', note: 'Primi fossili trovati a Canon City.' },
+    { year: 1899, location: 'Wyoming, USA', discoveredBy: 'Spedizione AMNH', note: 'Scheletro più completo a Sheep Creek.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Wyoming', coordinates: [43.0, -107.5], specimenName: 'Formazione Morrison' },
+    { country: 'USA', region: 'Colorado', coordinates: [39.5, -105.0] },
+  ],
 }

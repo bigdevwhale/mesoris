@@ -14,5 +14,17 @@ const translations = {
     { label: '前肢', value: '极小的手臂', description: '与其他暴龙亚科一样，有着被巨大头部所掩盖的小型两指手臂。' },
     { label: '生态位', value: '纳米盖特的顶级捕食者', description: '在古蒙古的河流泛滥平原上猎杀大型鸭嘴龙类和泰坦巨龙类。' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: '近亲' },
+    { id: 'velociraptor', relationship: '同一地区的近邻' },
+    { id: 'oviraptor', relationship: '讷莫格特邻居' },
+  ],
+  discoveries: [
+    { discoveredBy: '苏蒙联合考察队', note: '早期戈壁考察从讷莫格特盆地回收了重要的暴龙类化石。' },
+    { discoveredBy: '叶夫根尼·马列耶夫', note: '马列耶夫根据蒙古化石正式命名了Tarbosaurus。' },
+  ],
+  fossilLocations: [
+    { region: '南戈壁省', specimenName: '讷莫格特组' },
+  ],
 }
 export default translations

@@ -14,4 +14,17 @@ export default {
     { label: 'Vuelo', value: 'Ráfagas cortas', description: 'La mayoría de los estudios sugiere que podía lanzarse y aletear distancias cortas, más que sostener un vuelo largo al estilo de las aves modernas.' },
     { label: 'Tamaño', value: 'Como un cuervo', description: 'Con medio metro de largo y alrededor de 1 kilogramo, era un pequeño depredador emplumado de los bosques insulares del Jurásico Tardío.' },
   ],
+  relatedDinosaurs: [
+    { id: 'microraptor', relationship: 'Pariente paraviano emplumado con adaptaciones aerodinámicas' },
+    { id: 'troodon', relationship: 'Terópodo aviano con anatomía sensorial avanzada' },
+    { id: 'velociraptor', relationship: 'Pariente dromeosáurido posterior dentro de los terópodos maniraptores' },
+  ],
+  discoveries: [
+    { year: 1861, location: 'Caliza de Solnhofen, Baviera, Alemania', discoveredBy: 'Trabajadores de cantera; descrito por Hermann von Meyer', note: 'Primer espécimen esquelético de Archaeopteryx formalmente descrito y vinculado a la evolución aviar.' },
+    { year: 1877, location: 'Blumenberg, cerca de Eichstätt, Alemania', discoveredBy: 'Cantera de Jakob Niemeyer', note: 'El espécimen de Berlín preservó un cráneo excepcional e impresiones de plumas, convirtiéndose en el ejemplo museístico clásico.' },
+  ],
+  fossilLocations: [
+    { country: 'Alemania', region: 'Solnhofen, Baviera', coordinates: [48.9, 10.99], specimenName: 'Espécimen de Londres (BMNH 37001)' },
+    { country: 'Alemania', region: 'Eichstätt, Baviera', coordinates: [48.89, 11.18], specimenName: 'Espécimen de Berlín (HMN 1880)' },
+  ],
 }

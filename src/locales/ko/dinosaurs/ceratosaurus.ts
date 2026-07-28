@@ -14,4 +14,16 @@ export default {
     { label: '피골', value: '등의 갑옷', description: '대부분의 대형 수각류와 달리, 케라토사우루스는 등을 따라 작은 뼈 판을 가졌습니다.' },
     { label: '몸길이', value: '약 7미터', description: '중형 수각류로, 더 크고 흔한 알로사우루스와 공존했습니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: '경쟁자' },
+    { id: 'carnotaurus', relationship: '먼 친척' },
+  ],
+  discoveries: [
+    { year: 1883, location: '미국 콜로라도주', discoveredBy: '마셜 P. 펠치', note: '가든파크에서 최초의 골격이 발견되었다.' },
+    { year: 2000, location: '포르투갈', discoveredBy: '옥타비오 마테우스', note: '유럽 표본이 이 속의 넓은 분포를 확인시켜 주었다.' },
+  ],
+  fossilLocations: [
+    { country: '미국', region: '콜로라도주', coordinates: [38.5, -105.0], specimenName: '모리슨층' },
+    { country: '포르투갈', region: '로우리냥', coordinates: [39.3, -9.3] },
+  ],
 }

@@ -14,4 +14,15 @@ export default {
     { label: 'Тіршілік ортасы', value: 'Көлді аймақтар', description: 'Қытайдың солтүстік-батысындағы Жоңғар ойпатында орналасқан ішкі құрлықтық көлдердің жағалауында тіршілік еткен.' },
     { label: 'Құйрығы', value: 'Төрт тікенекті тагомайзер', description: 'Жыртқыштардан қорғану үшін құйрық ұшындағы тікенектері бар тагомайзер.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Биік тақташалары бар атақты туыс' },
+    { id: 'kentrosaurus', relationship: 'Тікенекті сауытты туыс' },
+    { id: 'tuojiangosaurus', relationship: 'Қытай стегозавр туысы' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Дун Чжимин', note: 'Ішінара посткраниальды қаңқа сипатталып, Wuerhosaurus homheni деп аталды.' },
+  ],
+  fossilLocations: [
+    { region: 'Жоңғар ойпаты, Шыңжаң', specimenName: 'IVPP V.4006 — голотип, ішінара қаңқа' },
+  ],
 }

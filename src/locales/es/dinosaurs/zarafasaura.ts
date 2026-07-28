@@ -14,4 +14,15 @@ export default {
     { label: 'Origen', value: 'Marruecos', description: 'Descubierto en los fosfatos de la Cuenca de Oulad Abdoun en Marruecos, un tesoro marino del Cretácico.' },
     { label: 'Cuello', value: 'Muy largo', description: 'Un cuello largo con más de 50 vértebras cervicales, usado para emboscar bancos de peces.' },
   ],
+  relatedDinosaurs: [
+    { id: 'elasmosaurus', relationship: 'Primo elasmosáurido más grande' },
+    { id: 'plesiosaurus', relationship: 'Pariente plesiosaurio de cuello largo' },
+    { id: 'mosasaurus', relationship: 'Depredador marino contemporáneo' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Peggy Vincent y equipo', note: 'Cráneo parcial y vértebras cervicales descritos y nombrados.' },
+  ],
+  fossilLocations: [
+    { region: 'Cuenca de Oulad Abdoun', specimenName: 'OCP DEK/GE 307 — cráneo parcial y vértebras holotipo' },
+  ],
 }

@@ -14,4 +14,14 @@ export default {
     { label: 'Collo', value: 'Lungo e flessibile', description: 'Un lungo collo simile a quello dello struzzo per scrutare il paesaggio in cerca di pericolo e cibo.' },
     { label: 'Dieta', value: 'Opportunista', description: 'Mangiava piante, piccoli animali e insetti — un netturbino su zampe.' },
   ],
+  relatedDinosaurs: [
+    { id: 'ornithomimus', relationship: 'Parente stretto' },
+    { id: 'struthiomimus', relationship: 'Parente stretto' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Spedizione polacco-mongola', note: 'Primi esemplari scoperti nel bacino di Nemegt.' },
+  ],
+  fossilLocations: [
+    { region: 'Deserto del Gobi', specimenName: 'Formazione di Nemegt' },
+  ],
 }

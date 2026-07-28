@@ -14,4 +14,13 @@ export default {
     { label: 'Fehler', value: 'Kopf am falschen Ende', description: 'Wurde zuerst mit dem Kopf am FALSCHEN Ende montiert — eine berühmte paläontologische Blamage.' },
     { label: 'Jagd', value: 'Hinterhalt', description: 'Schwamm nahe der Oberfläche und nutzte den langen Hals, um Fischschwärme zu überraschen.' },
   ],
+  relatedDinosaurs: [
+    { id: 'plesiosaurus', relationship: 'Vorfahre' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Theophilus Turner', note: 'Entdeckt in den Kreideablagerungen des Western Interior Seaway.' },
+  ],
+  fossilLocations: [
+    { region: 'Kansas', specimenName: 'Pierre Shale' },
+  ],
 }

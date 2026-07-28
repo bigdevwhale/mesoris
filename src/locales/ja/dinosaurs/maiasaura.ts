@@ -14,4 +14,13 @@
     { label: '子供', value: '未熟な子供', description: '孵化したばかりの子供はあまり上手に歩けなかった — 親が巣にエサを運んでいた。' },
     { label: '成長', value: '非常に急速', description: '子供はわずか7〜8年で40cmから成体サイズに — 信じられないほど速い。' },
   ],
+  relatedDinosaurs: [
+    { id: 'edmontosaurus', relationship: '近縁種' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ジャック・ホーナー', note: '「エッグ・マウンテン」営巣コロニー — 恐竜の行動に関する見方を一変させた。' },
+  ],
+  fossilLocations: [
+    { region: 'モンタナ州', specimenName: 'エッグ・マウンテン、ツー・メディシン層' },
+  ],
 }

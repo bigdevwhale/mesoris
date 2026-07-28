@@ -14,4 +14,16 @@
     { label: '牙齿', value: '研磨中心', description: '超过1000颗牙齿排列在复杂的研磨齿阵中，用于咀嚼坚韧的植物。' },
     { label: '鼻子', value: '可充气的囊', description: '可能拥有一个可充气的鼻囊，用于视觉和声音展示。' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: '猎物' },
+    { id: 'maiasaura', relationship: '近亲' },
+  ],
+  discoveries: [
+    { year: 1892, location: '美国南达科他州', discoveredBy: '奥塞内尔·查尔斯·马什', note: '首次描述。' },
+    { year: 1999, location: '美国北达科他州', discoveredBy: '泰勒·莱森', note: '"达科他"——保存最完好的恐龙木乃伊之一。' },
+  ],
+  fossilLocations: [
+    { country: '美国', region: '南达科他州', coordinates: [44.5, -100.0], specimenName: '地狱溪组' },
+    { country: '加拿大', region: '艾伯塔省', coordinates: [53.5, -113.5] },
+  ],
 }

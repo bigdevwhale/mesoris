@@ -14,4 +14,17 @@ export default {
     { label: '生息地', value: '北アフリカ', description: '現在のエジプトとモロッコにあたる白亜紀の河川平野とマングローブを徘徊していました。' },
     { label: '共存', value: 'スピノサウルスと共存', description: 'スピノサウルスと生息地を共有していました。史上最大の二大獣脚類が隣り合って暮らしていたのです。' },
   ],
+  relatedDinosaurs: [
+    { id: 'giganotosaurus', relationship: '近縁の仲間' },
+    { id: 'spinosaurus', relationship: '同時代の競合者' },
+    { id: 'acrocanthosaurus', relationship: '北米の近縁種' },
+  ],
+  discoveries: [
+    { discoveredBy: 'シャルル・ドゥペレとJ.サヴォルナン', note: '元の資料により、北アフリカのサメ歯巨大恐竜が確立された。' },
+    { discoveredBy: 'ポール・セレノ', note: '新規の頭骨資料が、オリジナル化石の喪失後にこの動物の再記載を科学者たちに可能にした。' },
+  ],
+  fossilLocations: [
+    { region: 'ケム・ケム層', specimenName: 'ケム・ケム・グループ' },
+    { region: 'テガマ', specimenName: 'コンティネンタル・インターカルレ' },
+  ],
 }

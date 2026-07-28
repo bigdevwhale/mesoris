@@ -14,5 +14,15 @@ const translations = {
     { label: '大脑', value: '小脑', description: '像所有剑龙类一样，大脑相对身体非常小——近3吨的动物只有核桃大小的大脑。' },
     { label: '中国', value: '最著名的中国剑龙类', description: '中国记载最完整的剑龙类，从四川省的两具部分骨骼中获知。' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: '近亲北美剑龙类' },
+    { id: 'kentrosaurus', relationship: '近亲非洲剑龙类' },
+  ],
+  discoveries: [
+    { discoveredBy: '董枝明、唐子祿、周世武', note: '从上沙溪庙组中发掘了两具部分骨骼，1977年予以描述；一具标本现于自贡恐龙博物馆展出。' },
+  ],
+  fossilLocations: [
+    { region: '四川自贡（上沙溪庙组）', specimenName: 'CV 209 — 主骨架，自贡恐龙博物馆' },
+  ],
 }
 export default translations

@@ -14,4 +14,15 @@ export default {
     { label: 'Zähne', value: 'Selbstschärfend', description: 'Gekielte Backenzähne mit einseitiger Emaille — selbstschärfend, stets rasiermesserscharf.' },
     { label: 'Isle of Wight', value: 'Wessex-Formation', description: 'Knochenlager mit über 20 Individuen — Hinweis auf Herdenverhalten oder Gruppenleben.' },
   ],
+  relatedDinosaurs: [
+    { id: 'iguanodon', relationship: 'Größerer ornithopoder Zeitgenosse und Verwandter' },
+    { id: 'deinonychus', relationship: 'Zeitgenössischer Räuber' },
+  ],
+  discoveries: [
+    { discoveredBy: 'William Fox', note: 'Erste Exemplare entdeckt; Reverend William Fox sammelte das Hauptmaterial und die Art wurde ihm zu Ehren benannt.' },
+    { discoveredBy: 'T. H. Huxley', note: '1869 von Huxley formal beschrieben; 1882 stellte Huxley fälschlicherweise baumbewohnende Lebensweise vor.' },
+  ],
+  fossilLocations: [
+    { region: 'Isle of Wight, Wessex-Formation (Wealden-Gruppe)', specimenName: 'NHMUK PV R192 — Holotyp; Knochenlager mit 20+ Individuen' },
+  ],
 }

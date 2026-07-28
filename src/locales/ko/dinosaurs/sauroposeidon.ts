@@ -14,4 +14,16 @@ export default {
     { label: '과', value: '브라키오사우루스과의 거인', description: '브라키오사우루스와 같은 고공 채식 그룹에 속하지만, 훨씬 후대까지 살아남았다.' },
     { label: '생존', value: '후기 브라키오사우루스과', description: '브라키오사우루스 같은 거대 용각류가 북아메리카 백악기 전기까지 존속했음을 보여준다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'brachiosaurus', relationship: '가까운 근연종' },
+    { id: 'acrocanthosaurus', relationship: '포식자의 위협' },
+    { id: 'argentinosaurus', relationship: '경쟁하는 거대 공룡' },
+  ],
+  discoveries: [
+    { discoveredBy: '리처드 시펠리와 탐사팀', note: '거대한 경추 화석은 정밀 처리 전에 화석화된 나무 줄기로 오인되었다.' },
+    { discoveredBy: '매튜 웨델, 리처드 시펠리, R. 켄트 샌더스', note: '공식 기재에서 지금까지 발견된 공룡 중 가장 키가 큰 종 중 하나로 확인되었다.' },
+  ],
+  fossilLocations: [
+    { region: '오클라호마', specimenName: '앤틀러스층' },
+  ],
 }

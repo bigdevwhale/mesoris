@@ -14,4 +14,16 @@ export default {
     { label: 'Dimensioni', value: '6,5 metri', description: 'Grande quanto un autobus, ma di costituzione estremamente bassa e larga, con un peso di circa 6 tonnellate.' },
     { label: 'Difesa', value: 'Praticamente immune', description: 'Così pesantemente corazzato che perfino un T. rex avrebbe faticato a ribaltarlo per raggiungere il suo ventre vulnerabile.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Predatore' },
+    { id: 'euoplocephalus', relationship: 'Parente stretto' },
+  ],
+  discoveries: [
+    { year: 1906, location: 'Montana, Stati Uniti', discoveredBy: 'Barnum Brown', note: 'I primi fossili di Ankylosaurus furono trovati nella formazione di Hell Creek.' },
+    { year: 1910, location: 'Alberta, Canada', discoveredBy: 'Peter C. Kaisen', note: 'L\'esemplare più completo mai recuperato.' },
+  ],
+  fossilLocations: [
+    { country: 'Stati Uniti', region: 'Montana', coordinates: [47.5, -106.5], specimenName: 'Hell Creek' },
+    { country: 'Canada', region: 'Alberta', coordinates: [54.5, -113.0] },
+  ],
 }

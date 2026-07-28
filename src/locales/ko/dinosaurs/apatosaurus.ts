@@ -14,4 +14,17 @@ export default {
     { label: '몸길이', value: '약 23미터', description: '쥐라기 최대급 용각류 중 하나로, 체중은 20톤을 넘었습니다.' },
     { label: '혼란의 역사', value: '한때 브론토사우루스', description: '수십 년간 브론토사우루스와 혼동되었으나, 현재는 별도의 속으로 확실히 구분됩니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: '근연종' },
+    { id: 'allosaurus', relationship: '포식자' },
+    { id: 'brachiosaurus', relationship: '동시대 생물' },
+  ],
+  discoveries: [
+    { year: 1877, location: '미국 콜로라도주', discoveredBy: '오스니얼 찰스 마쉬', note: '본 워즈(Bone Wars) 동안 처음 기재되었습니다.' },
+    { year: 1895, location: '미국 와이오밍주', discoveredBy: 'AMNH 원정대', note: '가장 완전한 표본입니다.' },
+  ],
+  fossilLocations: [
+    { country: '미국', region: '와이오밍주', coordinates: [43.0, -107.5], specimenName: '모리슨층' },
+    { country: '미국', region: '콜로라도주', coordinates: [39.5, -105.0] },
+  ],
 }

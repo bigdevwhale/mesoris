@@ -14,4 +14,15 @@ export default {
     { label: '颈部', value: '紧凑', description: '对于神龙翼龙科来说相对较短且厚实——适应于对付大型猎物。' },
     { label: '生态', value: '哈采格岛之巅', description: '哈采格岛（罗马尼亚）的顶级捕食者——捕食同时期生活的小型蜥脚类。' },
   ],
+  relatedDinosaurs: [
+    { id: 'quetzalcoatlus', relationship: '巨型神龙翼龙科近亲' },
+    { id: 'thanatosdrakon', relationship: '巨型神龙翼龙科近亲' },
+    { id: 'pteranodon', relationship: '较小的翼龙近亲' },
+  ],
+  discoveries: [
+    { discoveredBy: '丹·格里戈雷斯库及团队', note: '首次描述并命名了头骨碎片、肱骨和其他材料。' },
+  ],
+  fossilLocations: [
+    { region: '登苏什-丘拉组,哈采格盆地,特兰西瓦尼亚', specimenName: 'BMNH R 3517 / 模式标本碎片材料' },
+  ],
 }

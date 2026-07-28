@@ -14,4 +14,15 @@ export default {
     { label: 'Piume', value: 'Piumaggio completo', description: 'Completamente piumato con un ventaglio di piume caudali.' },
     { label: 'Cresta', value: 'Simile al casuario', description: 'Un\'alta cresta ossea sul capo come in un casuario moderno.' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'Parente lontano (maniraptora)' },
+    { id: 'protoceratops', relationship: 'Vissuto accanto (non preda)' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Roy Chapman Andrews', note: 'Trovato vicino a una covata — identificato erroneamente come ladro di uova per 70 anni.' },
+    { discoveredBy: 'Mark Norell', note: 'La scoperta dell\'embrione riabilitò l\'Oviraptor — stava covando, non rubando.' },
+  ],
+  fossilLocations: [
+    { region: 'Deserto del Gobi', specimenName: 'Formazione Djadochta' },
+  ],
 }

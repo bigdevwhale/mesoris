@@ -14,4 +14,15 @@
     { label: '身体', value: '坦克般的体型', description: '宽阔扁平的身体，厚皮中有椭圆形骨结节。' },
     { label: '栖息地', value: '内陆海沿岸', description: '生活在西部内陆海道的沿岸——北美洲的巨大内陆海。' },
   ],
+  relatedDinosaurs: [
+    { id: 'ankylosaurus', relationship: '甲龙类近亲（不同科，有尾锤）' },
+    { id: 'euoplocephalus', relationship: '有尾锤的甲龙类近亲' },
+    { id: 'stegosaurus', relationship: '甲龙亚目近亲' },
+  ],
+  discoveries: [
+    { discoveredBy: 'O.C.马什', note: '1889年马什描述的零散材料；为定义结节龙科这一两大甲龙科之一的名称提供了依据。' },
+  ],
+  fossilLocations: [
+    { region: '奥尔巴尼县，怀俄明州（莫里页岩），美国', specimenName: 'YPM 1815 — 零散的正模标本材料' },
+  ],
 }

@@ -14,4 +14,16 @@ export default {
     { label: '앞다리', value: '극히 작음', description: '다른 티라노사우루스아과와 마찬가지로, 거대한 머리에 비해 왜소화된 작은 두 손가락 팔을 가졌다.' },
     { label: '생태적 지위', value: '네메그트의 정점 포식자', description: '고대 몽골의 강이 공급하는 범람원에서 대형 하드로사우루스류와 티타노사우루스류를 사냥했다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: '가까운 근연종' },
+    { id: 'velociraptor', relationship: '같은 시대의 지역 포식자' },
+    { id: 'oviraptor', relationship: '네메그트 분지의 이웃' },
+  ],
+  discoveries: [
+    { discoveredBy: '소련-몽골 공동 탐사대', note: '초기 고비 탐사에서 네메그트 분지로부터 중요한 티라노사우루스과 화석이 회수되었다.' },
+    { discoveredBy: '예브게니 말레예프', note: '말레예프가 몽골 화석에 근거하여 Tarbosaurus를 공식적으로 명명했다.' },
+  ],
+  fossilLocations: [
+    { region: '옴노고비', specimenName: '네메그트층' },
+  ],
 }

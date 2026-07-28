@@ -14,4 +14,18 @@
     { label: '歯', value: 'スプーン状', description: '他の竜脚類のペグ状の歯よりも、粗い植物質により適した頑丈なスプーン型の歯。' },
     { label: '体長', value: '約15メートル', description: '最長ではありませんが、当時の竜脚類の中でも最もがっしりとした体格を持つ種の一つでした。' },
   ],
+  relatedDinosaurs: [
+    { id: 'brachiosaurus', relationship: 'マクロナリア類の竜脚類の近縁種' },
+    { id: 'diplodocus', relationship: '同時代のディプロドクス類竜脚類' },
+    { id: 'apatosaurus', relationship: 'モリソン層の同時代のディプロドクス類' },
+  ],
+  discoveries: [
+    { year: 1877, location: 'アメリカ・コロラド州ガーデン・パーク', discoveredBy: 'エドワード・ドリンカー・コープ', note: '「骨戦争」の最中の1877年にコープによって最初の標本が記載され、モリソン層の産出物から複数の種が設立された。' },
+    { year: 1925, location: 'アメリカ・ユタ州ダイナソ国道立記念公園', discoveredBy: 'カーネギー博物館チーム', note: '「Camarasaurus lentus」の有名な幼体を含む、見事な関節した部分骨格が回収され、本種の急速な成長を示した。' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'コロラド州ガーデン・パーク（モリソン層）', coordinates: [38.4, -105.1], specimenName: 'AMNH 5761 — ホロタイプ標本' },
+    { country: 'USA', region: 'ユタ州ダイナソ国道立記念公園', coordinates: [40.43, -108.98], specimenName: 'CM 11338 — ほぼ完全な幼体' },
+    { country: 'USA', region: 'ワイオミング州コモブラフ（モリソン層）', coordinates: [41.8, -106.0], specimenName: '複数の参照標本' },
+  ],
 }

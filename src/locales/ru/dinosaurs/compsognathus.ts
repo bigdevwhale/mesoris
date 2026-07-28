@@ -14,4 +14,14 @@ export default {
       { label: 'Питание', value: 'Ящерицы', description: 'Один из найденных образцов сохранил в желудке целую ящерицу.' },
       { label: 'Значение', value: 'Связь с птицами', description: 'Его птичьеподобный скелет стал важным аргументом в ранних спорах о происхождении птиц от динозавров.' },
     ],
-  }
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'Дальний родственник' },
+  ],
+  discoveries: [
+    { year: 1859, location: 'Бавария, Германия', discoveredBy: 'Йозеф Оберндорфер', note: 'Первый образец найден в зольнхофенских известняках — тех же отложениях, что и Archaeopteryx.' },
+  ],
+  fossilLocations: [
+    { country: 'Германия', region: 'Бавария', coordinates: [48.8, 11.0], specimenName: 'Зольнхофенские известняки' },
+    { country: 'Франция', region: 'Прованс', coordinates: [43.5, 6.5] },
+  ],
+}

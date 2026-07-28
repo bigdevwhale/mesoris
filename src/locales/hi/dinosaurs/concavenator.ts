@@ -14,4 +14,15 @@ export default {
     { label: 'परिवार', value: 'कार्करोडॉन्टोसॉरिडी', icon: 'swords', description: 'एक छोटा कार्करोडॉन्टोसॉरिड — विशालकाय गिगानोटोसॉरस और कार्करोडॉन्टोसॉरस का सहोदर समूह।' },
     { label: 'उत्पत्ति', value: 'लास होयास, स्पेन', icon: 'map-pin', description: 'लास होयास जीवाश्म स्थल में पाया गया, एक क्रेटेशस आर्द्रभूमि जिसने उल्लेखनीय लैगरश्टेट-गुणवत्ता वाला संरक्षण दिया।' },
   ],
+  relatedDinosaurs: [
+    { id: 'carcharodontosaurus', relationship: 'बड़ा कार्करोडॉन्टोसॉरिड संबंधी' },
+    { id: 'giganotosaurus', relationship: 'बड़ा कार्करोडॉन्टोसॉरिड संबंधी' },
+    { id: 'allosaurus', relationship: 'पूर्व के एलोसॉरॉइड चचेरा भाई' },
+  ],
+  discoveries: [
+    { year: 2003, location: 'लास होयास, कुएंका, स्पेन', discoveredBy: 'जोस लुइस सैंज़ और फर्नांडो एस्कासो', note: 'कैलिज़ास दे ला हुएरगुइना शैलसमूह की परतदार चूना पत्थरों में संधिवद्ध कंकाल मिला।' },
+  ],
+  fossilLocations: [
+    { country: 'स्पेन', region: 'कुएंका, लास होयास', coordinates: [40.07, -1.85], specimenName: 'MCCM-LH 6666 — होलोटाइप, संधिवद्ध कंकाल' },
+  ],
 }

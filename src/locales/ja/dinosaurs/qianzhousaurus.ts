@@ -14,4 +14,15 @@ export default {
     { label: '分類', value: 'アリオラミニ類', description: 'Alioramini といわれる長鼻のティラノサウルス科の小さな系統に属します。' },
     { label: '発見', value: '2014年発見', description: '中国南部の贛州で2014年に正式に記載された、注目すべき白亜紀後期の恐竜です。' },
   ],
+  relatedDinosaurs: [
+    { id: 'tarbosaurus', relationship: 'アジアのティラノサウルス科の近縁種' },
+    { id: 'albertosaurus', relationship: 'より古いティラノサウルス科' },
+    { id: 'tyrannosaurus-rex', relationship: '遠い従兄弟' },
+  ],
+  discoveries: [
+    { year: 2010, location: 'Ganzhou, Jiangxi Province, China', discoveredBy: '建設作業員。後に呂君昌とチームが採集', note: 'ほぼ完全な頭骨と部分骨格 — これまでで最も完全なアリオラミン類。' },
+  ],
+  fossilLocations: [
+    { country: 'China', region: '南雄層、贛州、江西', coordinates: [25.85, 114.95], specimenName: 'GMFPI-PV-001 — ホロタイプ頭骨と骨格' },
+  ],
 }

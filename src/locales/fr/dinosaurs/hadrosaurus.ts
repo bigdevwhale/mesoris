@@ -14,4 +14,15 @@ export default {
     { label: 'Bec', value: 'Bec de canard', description: 'Un large bec édenté en forme de canard à l\'avant, avec une batterie dentaire complexe dans les joues — une mastication efficace.' },
     { label: 'Famille', value: 'Origine des becs de canard', description: 'A donné son nom aux Hadrosauridae, la famille des dinosaures à bec de canard qui comprend Edmontosaurus et Parasaurolophus.' },
   ],
+  relatedDinosaurs: [
+    { id: 'edmontosaurus', relationship: 'Parent hadrosauridé ultérieur' },
+    { id: 'parasaurolophus', relationship: 'Cousin hadrosauridé à crête' },
+    { id: 'iguanodon', relationship: 'Ancêtre ornithopode plus ancien' },
+  ],
+  discoveries: [
+    { discoveredBy: 'William Parker Foulke', note: 'Un squelette quasi complet découvert lors d\'une excavation dans une carrière de marne. Nommé par Joseph Leidy.' },
+  ],
+  fossilLocations: [
+    { region: 'Haddonfield, New Jersey', specimenName: 'ANSP 10005 — squelette holotype' },
+  ],
 }

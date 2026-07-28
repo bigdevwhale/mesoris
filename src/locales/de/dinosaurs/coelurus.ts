@@ -14,4 +14,16 @@ export default {
     { label: 'Ernährung', value: 'Spezialist für kleine Beute', description: 'Wahrscheinlich erbeutete er Echsen, Säugetiere und Jungdinosaurier mit schnellen Bissen und greiffähigen Händen.' },
     { label: 'Ökosystem', value: 'Mitjäger in Morrison', description: 'Coelurus lebte neben Giganten wie Allosaurus und Stegosaurus, besetzte aber eine viel kleinere Raubtier-Nische.' },
   ],
+  relatedDinosaurs: [
+    { id: 'compsognathus', relationship: 'Vergleichbare kleine Theropoden-Nische' },
+    { id: 'ornithomimus', relationship: 'Späterer schneller Coelurosaurier mit konvergenten Laufeigenschaften' },
+    { id: 'allosaurus', relationship: 'Großer Raubtier aus derselben Formation' },
+  ],
+  discoveries: [
+    { year: 1879, location: 'Como Bluff, Wyoming, USA', discoveredBy: 'Expeditionsteam von O.C. Marsh', note: 'Typmaterial als Coelurus fragilis aus Morrison-Schichten beschrieben.' },
+    { year: 1980, location: 'Morrison-Neubewertungen', discoveredBy: 'Verschiedene Theropodenspezialisten', note: 'Neuanalyse klärte die wahrscheinlichen kleinen Coelurosaurier-Verwandtschaften des Taxons.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Como Bluff, Wyoming (Morrison-Formation)', coordinates: [41.8, -106.0], specimenName: 'Typmaterial von Coelurus fragilis' },
+  ],
 }

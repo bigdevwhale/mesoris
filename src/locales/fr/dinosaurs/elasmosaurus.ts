@@ -14,4 +14,13 @@ export default {
     { label: 'Erreur', value: 'Tête au mauvais bout', description: 'D\'abord monté avec la tête du MAUVAIS CÔTÉ — une célèbre bourde paléontologique.' },
     { label: 'Chasse', value: 'Embuscade', description: 'Nageait près de la surface et utilisait son long cou pour surprendre les bancs de poissons.' },
   ],
+  relatedDinosaurs: [
+    { id: 'plesiosaurus', relationship: 'Ancêtre' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Theophilus Turner', note: 'Découvert dans les dépôts de craie du Western Interior Seaway.' },
+  ],
+  fossilLocations: [
+    { region: 'Kansas', specimenName: 'Schiste de Pierre' },
+  ],
 }

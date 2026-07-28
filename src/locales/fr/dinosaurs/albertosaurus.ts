@@ -14,4 +14,16 @@ export default {
     { label: 'Dents', value: 'Des dizaines de lames', description: 'Ses mâchoires contenaient des dents épaisses et dentelées conçues pour percer la chair et arracher des morceaux de proie.' },
     { label: 'Croissance', value: 'Poussée de croissance adolescente', description: 'Les études de croissance montrent que les jeunes grandissaient rapidement, devenant de puissants prédateurs en quelques années seulement.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Proche parent plus grand' },
+    { id: 'daspletosaurus', relationship: 'Autre tyrannosauridé' },
+    { id: 'pachyrhinosaurus', relationship: 'Proie potentielle' },
+  ],
+  discoveries: [
+    { year: 1884, location: 'rivière Red Deer, Alberta, Canada', discoveredBy: 'Joseph Burr Tyrrell', note: 'Les premiers matériaux crâniens ont été découverts lors d\'une expédition du Service géologique.' },
+    { year: 1910, location: 'Alberta, Canada', discoveredBy: 'Barnum Brown', note: 'Brown a découvert le célèbre gisement d\'ossements de masse qui a transformé la compréhension de l\'espèce.' },
+  ],
+  fossilLocations: [
+    { country: 'Canada', region: 'Alberta', coordinates: [51.9, -112.9], specimenName: 'Formation de Horseshoe Canyon' },
+  ],
 }

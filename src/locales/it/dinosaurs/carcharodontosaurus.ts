@@ -14,4 +14,17 @@ export default {
     { label: 'Habitat', value: 'Nord Africa', description: 'Vagava per le pianure fluviali e le mangrovie del Cretaceo in quelli che oggi sono Egitto e Marocco.' },
     { label: 'Contemporaneo', value: 'Conviveva con Spinosaurus', description: 'Condivideva il suo habitat con Spinosaurus — i due più grandi teropodi vivevano fianco a fianco.' },
   ],
+  relatedDinosaurs: [
+    { id: 'giganotosaurus', relationship: 'Parente stretto' },
+    { id: 'spinosaurus', relationship: 'Concorrente contemporaneo' },
+    { id: 'acrocanthosaurus', relationship: 'Parente nordamericano' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Charles Depéret e J. Savornin', note: 'Il materiale originale ha stabilito il gigante dai denti di squalo del Nord Africa.' },
+    { discoveredBy: 'Paul Sereno', note: 'Nuovo materiale cranico ha aiutato gli scienziati a ridescrivere l\'animale dopo la perdita dei fossili originali.' },
+  ],
+  fossilLocations: [
+    { region: 'Letti di Kem Kem', specimenName: 'Gruppo Kem Kem' },
+    { region: 'Tegama', specimenName: 'Continental Intercalaire' },
+  ],
 }

@@ -14,5 +14,17 @@ const translations = {
     { label: '体型', value: '9 米，6 吨', description: '最大的角龙科之一，含颈盾的颅骨长达2.6米。' },
     { label: '白垩纪末期', value: '最后的时代', description: '牛角龙生活在白垩纪的最末期，6800万-6600万年前——就在小行星撞击之前。' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: '最近的近亲——曾被提出为同一物种' },
+    { id: 'styracosaurus', relationship: '角龙科近亲' },
+    { id: 'pentaceratops', relationship: '更早期的开角龙亚科近亲' },
+  ],
+  discoveries: [
+    { discoveredBy: '约翰·贝尔·哈彻', note: '材料于1891年由O.C.马什描述；之后在美国西部的兰斯组和地狱溪组中发现了多件标本。' },
+  ],
+  fossilLocations: [
+    { region: '美国怀俄明州尼奥布拉拉县（兰斯组）', specimenName: 'YPM 1830 — 正模标本，部分头骨' },
+    { region: '美国南达科他州哈丁县（地狱溪组）', specimenName: '归入的头骨标本' },
+  ],
 }
 export default translations

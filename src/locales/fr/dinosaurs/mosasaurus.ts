@@ -14,4 +14,17 @@ export default {
     { label: 'Queue', value: 'Semblable à un requin', description: 'Une puissante nageoire caudale comme celle d\'un requin pour une vitesse incroyable.' },
     { label: 'Dents', value: 'Coniques', description: 'D\'énormes dents coniques, parfaitement adaptées pour saisir et broyer les proies glissantes.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tylosaurus', relationship: 'Proche parent' },
+    { id: 'plesiosaurus', relationship: 'Concurrent' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Ouvriers de carrière locaux', note: 'Premier reptile préhistorique géant jamais découvert — des décennies avant que quiconque ne connaisse les dinosaures.' },
+    { discoveredBy: 'Projet PaleoAngola', note: 'Découvertes majeures le long de la côte sud-africaine.' },
+  ],
+  fossilLocations: [
+    { region: 'Maastricht, Pays-Bas', specimenName: 'Formation de Maastricht' },
+    { region: 'Bassin de Benguela, Angola' },
+    { region: 'Kansas, États-Unis' },
+  ],
 }

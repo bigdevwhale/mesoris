@@ -9,6 +9,7 @@
     <meta name="apple-mobile-web-app-title" content="Mesoris" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0f180f" />
+    <meta name="theme-color" content="#f5efde" media="(prefers-color-scheme: light)" />
     <link rel="alternate" hreflang="en" href="https://dinosaurs.app/en/" />
     <link rel="alternate" hreflang="ru" href="https://dinosaurs.app/ru/" />
     <link rel="alternate" hreflang="es" href="https://dinosaurs.app/es/" />
@@ -22,6 +23,22 @@
     <link rel="alternate" hreflang="hi" href="https://dinosaurs.app/hi/" />
     <link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/" />
     <title>Mesoris — Interactive Prehistoric World</title>
+    <script>
+      // Apply the saved theme before CSS/Vue mount to avoid a flash of the
+      // wrong theme. Mirrors useThemeStore's resolution: saved choice wins,
+      // otherwise fall back to the OS preference (default dark).
+      (function () {
+        try {
+          var saved = localStorage.getItem('dino-theme');
+          var theme = (saved === 'light' || saved === 'dark')
+            ? saved
+            : (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P9JCN6B5PX"></script>
     <script>

@@ -14,4 +14,19 @@ export default {
     { label: 'मस्तिष्क', value: 'अत्यधिक विकसित', icon: 'brain', description: 'उत्कृष्ट दृष्टि और गंध की समझ थी — कई किलोमीटर दूर से शिकार देख सकता था।' },
     { label: 'भुजाएँ', value: 'छोटी लेकिन मज़बूत', icon: 'hand', description: 'केवल 1 मीटर लंबी लेकिन 200 किग्रा उठा सकती थीं — वैज्ञानिकों के लिए अब भी रहस्य बनी हुई हैं।' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: 'शिकार' },
+    { id: 'edmontosaurus', relationship: 'शिकार' },
+    { id: 'daspletosaurus', relationship: 'पूर्वज' },
+    { id: 'giganotosaurus', relationship: 'अभिसारी विकास' },
+  ],
+  discoveries: [
+    { discoveredBy: 'बार्नम ब्राउन', note: 'हेल क्रीक शैलसमूह में पहला आंशिक कंकाल खोजा गया।' },
+    { discoveredBy: 'सूज़न हेंड्रिकसन', note: '«सू» — अब तक खोजा गया सबसे पूर्ण T. rex कंकाल, 90% से अधिक स intact।' },
+  ],
+  fossilLocations: [
+    { region: 'मोंटाना', specimenName: 'हेल क्रीक शैलसमूह' },
+    { region: 'दक्षिण डकोटा', specimenName: 'सू' },
+    { region: 'व्योमिंग', specimenName: 'लांस शैलसमूह' },
+  ],
 }

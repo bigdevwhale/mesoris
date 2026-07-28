@@ -14,4 +14,16 @@ export default {
     { label: 'Nom', value: '« Imitateur d\'oiseau »', description: 'Ressemble étonnamment à une autruche actuelle — même forme corporelle, même mode de vie.' },
     { label: 'Taille', value: '4 mètres', description: 'Théropode de taille moyenne, environ de la taille d\'une grande autruche.' },
   ],
+  relatedDinosaurs: [
+    { id: 'gallimimus', relationship: 'Proche parent' },
+    { id: 'struthiomimus', relationship: 'Proche parent' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Othniel Charles Marsh', note: 'Décrit pour la première fois pendant la guerre des os.' },
+    { discoveredBy: 'Francois Therrien', note: 'Spécimens à plumes découverts avec plumage préservé.' },
+  ],
+  fossilLocations: [
+    { region: 'Alberta', specimenName: 'Formation de Horseshoe Canyon' },
+    { region: 'Colorado', specimenName: '' },
+  ],
 }

@@ -14,4 +14,17 @@ export default {
     { label: 'प्लेटें', value: 'चौड़ी और सपाट', icon: 'shield', description: 'पीठ और कूल्हों पर लंबी कतार में चौड़ी, सपाट, त्रिकोणीय प्लेटें थीं।' },
     { label: 'उत्पत्ति', value: 'इंग्लैंड और फ्रांस', icon: 'map-pin', description: 'इंग्लैंड के डोर्सेट की किमेरिज क्ले और फ्रांस व पुर्तगाल के जुरासिक में पाया गया।' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'प्रसिद्ध बाद का संबंधी' },
+    { id: 'loricatosaurus', relationship: 'यूरोपीय स्टेगोसॉर चचेरा भाई' },
+    { id: 'kentrosaurus', relationship: 'अफ़्रीकी स्टेगोसॉर चचेरा भाई' },
+  ],
+  discoveries: [
+    { year: 1875, location: 'किमेरिज क्ले, डोर्सेट, इंग्लैंड', discoveredBy: 'रिचर्ड ओवेन', note: 'मूलतः ओमोसॉरस नाम दिया गया; बाद में डैसेंट्रूरस नाम दिया गया।' },
+    { year: 1902, location: 'यूनाइटेड किंगडम और फ्रांस', discoveredBy: 'विभिन्न', note: 'एफ.ए. लुकास द्वारा डैसेंट्रूरस नाम दिया गया; अतिरिक्त सामग्री वर्णित।' },
+  ],
+  fossilLocations: [
+    { country: 'यूनाइटेड किंगडम', region: 'किमेरिज, डोर्सेट', coordinates: [50.6, -2.1], specimenName: 'NHMUK होलोटाइप सामग्री' },
+    { country: 'फ्रांस', region: 'फ्रांस का जुरासिक', coordinates: [46.5, 2.0], specimenName: 'विभिन्न फ्रांसीसी नमूने' },
+  ],
 }

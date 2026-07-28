@@ -14,4 +14,16 @@
     { label: '体格', value: '柱のような肢', description: '頑丈な肢と幅広い体は、柔らかい氾濫原や湿地の地面を移動する際に巨大な胴体を支えました。' },
     { label: '時代', value: '白亜紀前期', description: 'ユヘロプスは、多くの古典的なジュラ紀竜脚類グループが他地域で衰退した後も、アジアの生態系で生き残りました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'mamenchisaurus', relationship: 'しばしば解剖学的に比較される、別のアジアの長頸竜脚類' },
+    { id: 'brachiosaurus', relationship: '異なる前肢の比率を持つ大型の高所採食竜脚類' },
+    { id: 'sauroposeidon', relationship: '首の極端な伸長を持つ後年の巨大なティタノサウルス形類' },
+  ],
+  discoveries: [
+    { discoveredBy: 'オットー・ズダンスキー探検隊', note: '後の正式記載に使用された元の化石資料を収集。' },
+    { discoveredBy: 'カール・ウィマン', note: 'ユヘロプス・ズダンスキーを正式に記載し、その特異な竜脚類の解剖学的構造を強調した。' },
+  ],
+  fossilLocations: [
+    { region: '山東省', specimenName: '元のユヘロプス標本' },
+  ],
 }

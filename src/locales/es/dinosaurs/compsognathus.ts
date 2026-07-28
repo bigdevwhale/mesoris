@@ -14,4 +14,14 @@ export default {
     { label: 'Velocidad', value: '60 km/h', description: 'Increiblemente rapido para su tamaño' },
     { label: 'Descubrimiento', value: '1859', description: 'Uno de los primeros dinosaurios completos descubiertos' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'Pariente lejano' },
+  ],
+  discoveries: [
+    { year: 1859, location: 'Baviera, Alemania', discoveredBy: 'Jose Oberndorfer', note: 'Primer especimen encontrado en la caliza de Solnhofen, los mismos depositos que el Archaeopteryx.' },
+  ],
+  fossilLocations: [
+    { country: 'Alemania', region: 'Baviera', coordinates: [48.8, 11.0], specimenName: 'Caliza de Solnhofen' },
+    { country: 'Francia', region: 'Provenza', coordinates: [43.5, 6.5] },
+  ],
 }

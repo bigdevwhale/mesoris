@@ -14,4 +14,16 @@ export default {
     { label: '이빨', value: '갈이 공장', description: '1,000개 이상의 이빨이 고도화된 갈이 기구를 구성하여 단단한 식물을 씹었습니다.' },
     { label: '코', value: '부풀어 오르는 주머니', description: '아마도 시각적, 음향적 디스플레이를 위한 부풀릴 수 있는 코주머니를 가졌습니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: '먹잇감' },
+    { id: 'maiasaura', relationship: '가까운 친척' },
+  ],
+  discoveries: [
+    { year: 1892, location: '미국 사우스다코타주', discoveredBy: '오스니얼 찰스 마시', note: '처음 기술되었다.' },
+    { year: 1999, location: '미국 노스다코타주', discoveredBy: '타일러 라이슨', note: '"다코타" — 가장 잘 보존된 공룡 미라 중 하나.' },
+  ],
+  fossilLocations: [
+    { country: '미국', region: '사우스다코타주', coordinates: [44.5, -100.0], specimenName: '헬크리크층' },
+    { country: '캐나다', region: '앨버타주', coordinates: [53.5, -113.5] },
+  ],
 }

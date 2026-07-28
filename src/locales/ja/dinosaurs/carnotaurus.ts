@@ -14,4 +14,14 @@
     { label: '速度', value: '約50km/h', description: '長く強力な後肢のおかげで、大型獣脚類の中でも最も足の速い種の一つでした。' },
     { label: '皮膚', value: '皮膚の印象化石', description: '本物の皮膚の印象が保存された数少ない大型獣脚類の化石で、大きな鱗と小さな結節があったことがわかります。' },
   ],
+  relatedDinosaurs: [
+    { id: 'ceratosaurus', relationship: '近縁種' },
+    { id: 'tyrannosaurus-rex', relationship: '収斂的な生態的役割' },
+  ],
+  discoveries: [
+    { year: 1984, location: 'アルゼンチン・チュブ州', discoveredBy: 'ホセ・ボナパルト', note: '皮膚の印象を伴う、ほぼ完全な単一の骨格 — 信じられないほど稀少な発見。' },
+  ],
+  fossilLocations: [
+    { country: 'アルゼンチン', region: 'チュブ州', coordinates: [-43.3, -65.1], specimenName: 'ラ・コロニア層' },
+  ],
 }

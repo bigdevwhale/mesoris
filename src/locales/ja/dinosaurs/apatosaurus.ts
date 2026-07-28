@@ -14,4 +14,17 @@
     { label: '体長', value: '約23メートル', description: 'ジュラ紀で最大級の竜脚類の一つで、体重は20トンを超えていました。' },
     { label: '混乱の歴史', value: 'かつてはブロントサウルス', description: '何十年もブロントサウルスと混同されていましたが、現在では別の属としてしっかりと区別されています。' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: '近縁種' },
+    { id: 'allosaurus', relationship: '捕食者' },
+    { id: 'brachiosaurus', relationship: '同時代の竜脚類' },
+  ],
+  discoveries: [
+    { year: 1877, location: 'アメリカ合衆国コロラド州', discoveredBy: 'オスニエル・チャールズ・マーシュ', note: 'ボーンワーズ（骨戦争）中に初めて記載された。' },
+    { year: 1895, location: 'アメリカ合衆国ワイオミング州', discoveredBy: 'アメリカ自然史博物館遠征', note: '最も完全な標本。' },
+  ],
+  fossilLocations: [
+    { country: 'アメリカ合衆国', region: 'ワイオミング州', coordinates: [43.0, -107.5], specimenName: 'モリソン層' },
+    { country: 'アメリカ合衆国', region: 'コロラド州', coordinates: [39.5, -105.0] },
+  ],
 }

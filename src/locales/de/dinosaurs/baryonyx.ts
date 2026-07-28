@@ -14,4 +14,14 @@ export default {
     { label: 'Ernährung', value: 'Fischfresser', description: 'Einer der wenigen bekannten hauptsächlich fischfressenden Dinosaurier, mit Fischresten im Magen gefunden.' },
     { label: 'Entdeckung', value: 'England, 1983', description: 'Von einem Amateur-Fossiliensammler in einer Tongrube in Surrey entdeckt — eine der aufregendsten Dinosaurierentdeckungen in Europa.' },
   ],
+  relatedDinosaurs: [
+    { id: 'spinosaurus', relationship: 'Naher Verwandter' },
+    { id: 'suchomimus', relationship: 'Naher Verwandter' },
+  ],
+  discoveries: [
+    { year: 1983, location: 'Surrey, Vereinigtes Königreich', discoveredBy: 'William Walker', note: 'Ein Amateur-Fossiliensammler entdeckte die gewaltige Klaue in einer Tongrube.' },
+  ],
+  fossilLocations: [
+    { country: 'Vereinigtes Königreich', region: 'Surrey', coordinates: [51.2, -0.5], specimenName: 'Weald-Clay-Formation' },
+  ],
 }

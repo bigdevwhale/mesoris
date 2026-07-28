@@ -14,4 +14,15 @@ export default {
     { label: 'Habitat', value: 'Bordures de lacs', description: 'Vivait sur les rives de lacs intérieurs dans le bassin de Junggar, au nord-ouest de la Chine.' },
     { label: 'Queue', value: 'Thagomizer à quatre pointes', description: 'Un thagomizer à pointes au bout de la queue, utilisé pour se défendre contre les prédateurs.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Parent célèbre avec des plaques plus hautes' },
+    { id: 'kentrosaurus', relationship: 'Parent à armure de pointes' },
+    { id: 'tuojiangosaurus', relationship: 'Parent stégosaure chinois' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Dong Zhiming', note: 'Squelette postcrânien partiel décrit et nommé Wuerhosaurus homheni.' },
+  ],
+  fossilLocations: [
+    { region: 'Bassin du Junggar, Xinjiang', specimenName: 'IVPP V.4006 — squelette partiel holotype' },
+  ],
 }

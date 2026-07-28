@@ -14,4 +14,15 @@ export default {
     { label: 'Utah', value: 'Formation de Wahweap', description: 'Trouvé dans la formation de Wahweap — faisant partie d\'une riche faune méridionale distincte de celle du nord.' },
     { label: 'Cornes', value: 'Cornes de collerette et corne nasale', description: 'En plus des épines recourbées de la collerette, il avait une corne nasale et de petites cornes sourcilières.' },
   ],
+  relatedDinosaurs: [
+    { id: 'styracosaurus', relationship: 'Parent centrosauriné postérieur' },
+    { id: 'triceratops', relationship: 'Parent cératopsidé postérieur' },
+    { id: 'protoceratops', relationship: 'Parent cératopsien ancestral' },
+  ],
+  discoveries: [
+    { year: 2002, location: 'Formation de Wahweap, comté de Garfield, Utah, États-Unis', discoveredBy: 'James Kirkland et Donald DeBlieux', note: 'Crâne partiel collecté par l\'équipe de l\'Utah Museum of Natural History ; formellement décrit par Kirkland et DeBlieux en 2010.' },
+  ],
+  fossilLocations: [
+    { country: 'États-Unis', region: 'Comté de Garfield, Utah (formation de Wahweap)', coordinates: [37.5, -111.5], specimenName: 'UMNH VP 16699 — holotype, crâne partiel' },
+  ],
 }

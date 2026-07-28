@@ -14,4 +14,15 @@ export default {
     { label: '뼈', value: '중공으로 경량', description: '중공의 뼈는 속도를 위한 적응으로, 후에 조류도 획득하게 되는 특징입니다.' },
     { label: '식성', value: '기회주의적 포식자', description: '작은 도마뱀, 물고기, 아마도 다른 공룡의 새끼까지 사냥했던 육식 공룡입니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'herrerasaurus', relationship: '동시대' },
+    { id: 'eoraptor', relationship: '동시대' },
+  ],
+  discoveries: [
+    { year: 1881, location: '미국 뉴멕시코주', discoveredBy: '데이비드 볼드윈', note: '트라이아스기 퇴적층에서 최초의 표본이 발견되었다.' },
+    { year: 1947, location: '미국 뉴멕시코주 고스트랜치', discoveredBy: '에드윈 콜버트', note: '수백 점의 완전한 골격을 포함하는 대규모 뼈층이 발견되었다.' },
+  ],
+  fossilLocations: [
+    { country: '미국', region: '뉴멕시코주', coordinates: [36.3, -106.0], specimenName: '고스트랜치, 친리층' },
+  ],
 }

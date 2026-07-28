@@ -14,4 +14,16 @@ export default {
     { label: 'Armement', value: 'Dents dentelées', description: 'Ses dents longues en forme de lame et ses mâchoires puissantes étaient parfaitement adaptées pour trancher la chair d\'énormes proies sauropodes.' },
     { label: 'Débat', value: 'Distinct ou Allosaurus ?', description: 'Certaines études le traitent comme un genre à part, tandis que d\'autres le considèrent comme une très grande espèce d\'Allosaurus.' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: 'Parent allosauridé très proche ; parfois considéré comme le même genre' },
+    { id: 'torvosaurus', relationship: 'Autre grand prédateur jurassique en Amérique du Nord' },
+    { id: 'stegosaurus', relationship: 'Proie potentielle et herbivore contemporain' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Équipes dirigées par J.W. Stovall', note: 'Restes de grands théropodes récupérés dans les strates du Morrison.' },
+    { discoveredBy: 'Daniel Chure', note: 'Le matériel fut nommé Saurophaganax maximus et présenté comme distinct d\'Allosaurus.' },
+  ],
+  fossilLocations: [
+    { region: 'Comté de Cimarron, Oklahoma (Formation Morrison)', specimenName: 'Matériel type de Saurophaganax maximus' },
+  ],
 }

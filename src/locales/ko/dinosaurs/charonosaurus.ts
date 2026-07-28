@@ -14,4 +14,15 @@ export default {
     { label: '무리', value: '군거성', description: '여러 개체가 함께 발견되어, 중국 북동부의 고대 풍경을 이동하는 무리 동물이었음을 시사합니다.' },
     { label: '소리', value: '공명하는 울음소리', description: '볏의 중공 관은 트롬본처럼 기능하여, 의사소통을 위한 울음소리를 증폭했습니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: '가장 가까운 알려진 근연종 — 거의 동일한 볏' },
+    { id: 'corythosaurus', relationship: '람베오사우루스아과 하드로사우루스류 근연종' },
+    { id: 'lambeosaurus', relationship: '람베오사우루스아과 하드로사우루스류 근연종' },
+  ],
+  discoveries: [
+    { year: 2000, location: '중국 헤이룽장성 자이인', discoveredBy: '파스칼 고드프루아 외', note: '2000년 고드프루아와 동료들이 아무르강 부근에서 수집한 자료에 기반해 기재. 강의 국경 지대라는 위치 때문에 신화 속 카론의 이름을 따 명명되었다.' },
+  ],
+  fossilLocations: [
+    { country: '중국', region: '헤이룽장성 자이인구 (위량쩌층)', coordinates: [48.8, 130.4], specimenName: 'IVPP V12735 — 완모식 표본 부분 두개골 및 골격' },
+  ],
 }

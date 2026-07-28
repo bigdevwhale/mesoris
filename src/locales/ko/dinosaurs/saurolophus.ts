@@ -14,4 +14,17 @@ export default {
     { label: '무리', value: '사회적 무리', description: '여러 동소적 표본과 발자국이 수십에서 수백 마리의 대규모 무리 생활을 시사.' },
     { label: '치아', value: '덴탈 배터리', description: '수백 개의 자생 교체되는 어금니가 단단한 식물을 효율적으로 갈아내는 연속적 저작면을 형성.' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: '하드로사우루스 친척 — 수렴 진화에 의한 볏' },
+    { id: 'edmontosaurus', relationship: '가까운 사우로피나 친척' },
+    { id: 'corythosaurus', relationship: '볏 있는 람베오사우리나 하드로사우루스' },
+  ],
+  discoveries: [
+    { discoveredBy: '바넘 브라운', note: 'S. osborni는 1912년 브라운이 미국 자연사 박물관 수집 알버타 표본에서 기재했다.' },
+    { discoveredBy: '소련-몽골 원정대', note: '네메그트층에서 기재된 아시아 종 S. angustirostris; 북미 종보다 더 크다.' },
+  ],
+  fossilLocations: [
+    { region: '앨버타 (호스슈 캐년층)', specimenName: 'AMNH 5220 — 홀로타입, 완전한 두개골과 골격' },
+    { region: '옴노고비주 (네메그트층)', specimenName: 'S. angustirostris — 대형 아시아 표본' },
+  ],
 }

@@ -14,4 +14,15 @@ export default {
     { label: '영화', value: '쥬라기 월드', description: '영화 《쥬라기 월드: 폴른 킹덤》(2018)에 등장하여 세계적으로 유명해졌다.' },
     { label: '프릴', value: '혹이 있는 프릴 가장자리', description: '프릴 가장자리는 둥글게 혹 모양인 연후두골로 장식되어, 스티라코사우루스의 뾰족한 프릴이나 트리케라톱스의 매끈한 프릴과 다르다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: '케라톱스과 근연종' },
+    { id: 'protoceratops', relationship: '이른 시기 아시아 케라톱시아류 조상' },
+    { id: 'psittacosaurus', relationship: '아시아 원시 케라톱시아류' },
+  ],
+  discoveries: [
+    { discoveredBy: '쉬싱(Xu Xing)과 공동연구자들', note: '2010년 쉬싱 등이 주청의 화석을 기재; 이 발견으로 대형 케라톱스과의 분포가 아시아로 확장되었다.' },
+  ],
+  fossilLocations: [
+    { region: '중국 산동성 주청(왕시층군)', specimenName: 'ZCDM V0010 — 모식표본, 부분 두개골' },
+  ],
 }

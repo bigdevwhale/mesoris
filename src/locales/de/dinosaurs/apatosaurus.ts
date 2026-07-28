@@ -14,4 +14,17 @@ export default {
     { label: 'Größe', value: '23 Meter lang', description: 'Einer der größten Sauropoden des Jura, etwa 23 Meter lang und über 20 Tonnen schwer.' },
     { label: 'Verwirrung', value: 'Früher Brontosaurus', description: 'Jahrzehntelang wissenschaftlich mit Brontosaurus verwechselt, der heute als eigenständige Gattung gilt.' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: 'Naher Verwandter' },
+    { id: 'allosaurus', relationship: 'Räuber' },
+    { id: 'brachiosaurus', relationship: 'Zeitgenosse' },
+  ],
+  discoveries: [
+    { year: 1877, location: 'Colorado, USA', discoveredBy: 'Othniel Charles Marsh', note: 'Erstmals während der Bone Wars beschrieben.' },
+    { year: 1895, location: 'Wyoming, USA', discoveredBy: 'AMNH-Expedition', note: 'Vollständigstes Exemplar.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Wyoming', coordinates: [43.0, -107.5], specimenName: 'Morrison-Formation' },
+    { country: 'USA', region: 'Colorado', coordinates: [39.5, -105.0] },
+  ],
 }

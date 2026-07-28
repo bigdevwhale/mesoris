@@ -14,4 +14,17 @@ export default {
     { label: '채식', value: '넓은 채식 범위', description: '목은 아마도 넓은 호를 그리며 움직여, 거의 움직이지 않고 여러 높이에서 효율적으로 채식할 수 있었습니다.' },
     { label: '지역', value: '고전적 중국의 거인', description: '마멘치사우루스는 중국의 풍요로운 쥐라기 후기 화석층에서 산출되는 가장 잘 알려진 거대 공룡 중 하나입니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'euhelopus', relationship: '목의 진화 연구에서 자주 비교되는 아시아 장경 용각류' },
+    { id: 'diplodocus', relationship: '체형은 다르지만 극단적으로 긴 목을 가진 또 다른 용각류' },
+    { id: 'brachiosaurus', relationship: '앞다리가 더 높은 대형 동시대형 용각류' },
+  ],
+  discoveries: [
+    { discoveredBy: '도로 건설 조사 당시의 야외 팀', note: '마멘시 나루터 부근에서 최초의 화석이 발견되어 속명이 정해졌다.' },
+    { discoveredBy: '양중건 (C.C. Young)', note: '정식 기재로 마멘치사우루스가 중국을 대표하는 대형 용각류 속으로 자리 잡았다.' },
+  ],
+  fossilLocations: [
+    { region: '쓰촨성, 중국', specimenName: '마멘시/이빈 자료' },
+    { region: '충칭 지역, 중국', specimenName: 'M. hochuanensis 표본' },
+  ],
 }

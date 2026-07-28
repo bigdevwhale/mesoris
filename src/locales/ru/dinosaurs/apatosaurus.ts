@@ -14,4 +14,17 @@ export default {
       { label: 'Рост', value: 'Быстро рос', description: 'За примерно 10 лет вырастал из 5-килограммового детёныша в гиганта массой около 20 тонн.' },
       { label: 'Хвост', value: 'Громовой кнут', description: 'Кончик хвоста мог преодолевать звуковой барьер и, вероятно, создавал оглушительный хлопок для общения.' },
     ],
+    relatedDinosaurs: [
+      { id: 'diplodocus', relationship: 'Близкий родственник' },
+      { id: 'allosaurus', relationship: 'Хищник' },
+      { id: 'brachiosaurus', relationship: 'Современник' },
+    ],
+    discoveries: [
+      { year: 1877, location: 'Колорадо, США', discoveredBy: 'Отниэль Чарлз Марш', note: 'Впервые описан в ходе «Войн костей».' },
+      { year: 1895, location: 'Вайоминг, США', discoveredBy: 'Экспедиция AMNH', note: 'Самый полный экземпляр.' },
+    ],
+    fossilLocations: [
+      { country: 'США', region: 'Вайоминг', coordinates: [43.0, -107.5], specimenName: 'Формация Моррисон' },
+      { country: 'США', region: 'Колорадо', coordinates: [39.5, -105.0] },
+    ],
   }

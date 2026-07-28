@@ -14,4 +14,15 @@ export default {
     { label: '와이트 섬', value: '웨식스 층의 사냥꾼', description: '이구아노돈, 힙실로포돈, 바리오닉스와 같은 화석이 풍부한 지층에서 발견되었다.' },
     { label: '계통', value: '카르카로돈토사우루스과의 조상?', description: '거대한 카르카로돈토사우루스과와 가까운 관계 — 유럽은 이 거대 공룡의 출현에 중요한 역할을 했다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: '알로사우루스상과의 친척' },
+    { id: 'acrocanthosaurus', relationship: '네오베나토르과의 친척' },
+    { id: 'carcharodontosaurus', relationship: '관련된 대형 알로사우루스상과의 공룡' },
+  ],
+  discoveries: [
+    { discoveredBy: '아마추어 수집가 (와이트 섬 화석 수집가)', note: '1978년에 아마추어 수집가들이 초기 자료를 발견; 허트와 동료들의 후속 발굴로 풍부한 자료가 확보; 1996년 정식 기재.' },
+  ],
+  fossilLocations: [
+    { region: '브라이스톤베이, 와이트 섬 (웨식스층), 잉글랜드', specimenName: 'MIWG.6348 — 약 70% 완전한 홀로타입 골격' },
+  ],
 }

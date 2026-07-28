@@ -14,4 +14,16 @@ export default {
     { label: 'Tamaño del Cerebro', value: 'Tamano de nuez', description: 'Uno de los cerebros mas pequeños en relacion al cuerpo' },
     { label: 'Dieta', value: 'Plantas bajas', description: 'Probablemente pastaba musgos, helechos y cicas' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: 'Depredador' },
+    { id: 'diplodocus', relationship: 'Contemporáneo' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Othniel Charles Marsh', note: 'Primeros fósiles de Stegosaurus descritos de la Formación Morrison.' },
+    { discoveredBy: 'Bob Simon', note: '"Sophie": el esqueleto de Stegosaurus más completo jamás encontrado.' },
+  ],
+  fossilLocations: [
+    { region: 'Colorado', specimenName: 'Formación Morrison' },
+    { region: 'Wyoming' },
+  ],
 }

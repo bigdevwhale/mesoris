@@ -14,4 +14,15 @@
     { label: '分類', value: 'ブラジルのスピノサウルス科', description: 'スピノサウルスの近縁種 — このグループのゴンドワナ大陸での広い分布を証明しています。' },
     { label: '獲物', value: 'プテロサウルスも食べた', description: '脊椎にプテロサウルスの歯 — 知られている中で稀な捕食者-翼竜の相互作用の一つです。' },
   ],
+  relatedDinosaurs: [
+    { id: 'spinosaurus', relationship: '近縁のスピノサウルス亜科の近親' },
+    { id: 'baryonyx', relationship: '近縁のスピノサウルス科の近親' },
+    { id: 'suchomimus', relationship: 'アフリカのスピノサウルス科の近親' },
+  ],
+  discoveries: [
+    { discoveredBy: '商業ディーラー（正確な発見者は不明）', note: '頭骨がディーラーにより購入され改変された；シュトゥットガルト州立自然史博物館が取得；1996年に Martill, Cruickshank, Frey らにより記載された。' },
+  ],
+  fossilLocations: [
+    { region: 'セアラ州、サンタナ層（ロムアルド部層）', specimenName: 'SMNS 58022 — ほぼ完全なホロタイプ頭骨' },
+  ],
 }

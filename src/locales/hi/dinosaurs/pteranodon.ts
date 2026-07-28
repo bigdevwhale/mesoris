@@ -14,4 +14,16 @@ export default {
     { label: 'डायनासोर नहीं', value: 'टेरोसॉर', icon: 'help-circle', description: 'वास्तव में एक उड़ने वाला सरीसृप (टेरोसॉर) है, तकनीकी रूप से डायनासोर नहीं — लेकिन इनके साथ रहता था।' },
     { label: 'आहार', value: 'मछली-भक्षी', icon: 'fish', description: 'पश्चिमी आंतरिक समुद्र-मार्ग (Western Interior Seaway) के ऊपर मँडराते हुए अपनी लंबी चोंच से मछलियाँ चुगता था।' },
   ],
+  relatedDinosaurs: [
+    { id: 'quetzalcoatlus', relationship: 'बड़ा रिश्तेदार' },
+    { id: 'pterodactylus', relationship: 'छोटा रिश्तेदार' },
+    { id: 'mosasaurus', relationship: 'साझा पारितंत्र' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ओथनियल चार्ल्स मार्श', note: 'पहले प्टेरानोडॉन जीवाश्म मिले।' },
+    { discoveredBy: 'एस. डब्ल्यू. विलिस्टन', note: 'पूर्ण खोपड़ी ने विशिष्ट सिर की क्रेस्ट का खुलासा किया।' },
+  ],
+  fossilLocations: [
+    { region: 'कैनसस', specimenName: 'नियोब्रारा चाक' },
+  ],
 }

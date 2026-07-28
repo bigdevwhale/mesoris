@@ -14,4 +14,15 @@ export default {
     { label: 'Origine', value: 'Gloucestershire', description: 'Trovato nel 1910 in una cava di mattoni a Minchinhampton, nel Gloucestershire, Inghilterra.' },
     { label: 'Famiglia', value: 'Tirannosauroide primitivo', description: 'Appartiene ai Proceratosauridae, una famiglia basale di tirannosauroidi che comprende anche Guanlong e Kileskus.' },
   ],
+  relatedDinosaurs: [
+    { id: 'guanlong', relationship: 'Cugino proceratosauride dalla cresta' },
+    { id: 'dilophosaurus', relationship: 'Teropode contemporaneo dalla cresta' },
+    { id: 'tyrannosaurus-rex', relationship: 'Lontano discendente' },
+  ],
+  discoveries: [
+    { year: 1910, location: 'Minchinhampton, Gloucestershire, England', discoveredBy: 'F. Lewis Bradley', note: 'Cranio parziale trovato in una cava di mattoni; descritto da Arthur Smith Woodward.' },
+  ],
+  fossilLocations: [
+    { country: 'United Kingdom', region: 'Minchinhampton, Gloucestershire', coordinates: [51.7, -2.2], specimenName: 'NHMUK PV R 4860 — olotipo, cranio parziale' },
+  ],
 }

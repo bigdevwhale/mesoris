@@ -13,4 +13,14 @@ export default {
     { label: 'हाथ', value: 'तीन-उँगली वाले पकड़ने वाले', description: 'शाखाओं को पकड़ने और छोटे शिकार को पकड़ने के लिए लंबे, पतले हाथ।' },
     { label: 'आहार', value: 'वास्तविक सर्वाहारी', description: 'सब कुछ खाता था — पौधे, अंडे, कीड़े, और छोटे कशेरुकी।' },
   ],
+  relatedDinosaurs: [
+    { id: 'gallimimus', relationship: 'नज़दीकी संबंधी' },
+    { id: 'ornithomimus', relationship: 'नज़दीकी संबंधी' },
+  ],
+  discoveries: [
+    { discoveredBy: 'लॉरेंस लैम्बे', note: 'पहला नमूना बेली रिवर ग्रुप में मिला।' },
+  ],
+  fossilLocations: [
+    { region: 'अल्बर्टा', specimenName: 'डायनासोर पार्क फॉर्मेशन' },
+  ],
 }

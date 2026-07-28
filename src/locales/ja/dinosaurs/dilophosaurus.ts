@@ -14,4 +14,16 @@
     { label: '噛みつき', value: '毒なし', description: '毒や開くえりまきの科学的証拠は一切ありません — これらは完全な映画の創作です。' },
     { label: '時代', value: '前期ジュラ紀', description: '恐竜が地上を支配し始めてからわずか数百万年後の時代に狩りをしていました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'coelophysis', relationship: '初期の獣脚類近縁種' },
+    { id: 'ceratosaurus', relationship: '後のトサカ付き獣脚類相当' },
+    { id: 'allosaurus', relationship: '後継の頂点捕食者' },
+  ],
+  discoveries: [
+    { discoveredBy: 'サム・ウェルズ', note: '最初の骨格はカリフォルニア大学遠征でケイエンタ層から発掘された。' },
+    { discoveredBy: 'サム・ウェルズ', note: 'より良好な標本が顕著な二重トサカを明確にし、 Dilophosaurusの名につながった。' },
+  ],
+  fossilLocations: [
+    { region: 'アリゾナ州', specimenName: 'ケイエンタ層' },
+  ],
 }

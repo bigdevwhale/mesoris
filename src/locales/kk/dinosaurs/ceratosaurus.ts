@@ -14,4 +14,16 @@ export default {
     { label: 'Құйрығы', value: 'Терең әрі икемді', description: 'Қолтырауынның құйрығына ұқсас терең әрі күшті құйрығы оған суда жақсы жүзуге көмектескен болуы мүмкін.' },
     { label: 'Тістері', value: 'Өте ұзын', description: 'Оның пышақ тәрізді тістері көптеген ірі жыртқыш динозаврларға қарағанда салыстырмалы түрде ұзынырақ болған.' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: 'Бәсекелес' },
+    { id: 'carnotaurus', relationship: 'Алыс туыс' },
+  ],
+  discoveries: [
+    { year: 1883, location: 'Колорадо, АҚШ', discoveredBy: 'Маршалл П. Фелч', note: 'Гарден-Паркте алғашқы қаңқа табылды.' },
+    { year: 2000, location: 'Португалия', discoveredBy: 'Октавио Матеус', note: 'Еуропалық үлгі тұқымдастың кең таралуын растады.' },
+  ],
+  fossilLocations: [
+    { country: 'АҚШ', region: 'Колорадо', coordinates: [38.5, -105.0], specimenName: 'Моррисон формациясы' },
+    { country: 'Португалия', region: 'Лориньян', coordinates: [39.3, -9.3] },
+  ],
 }

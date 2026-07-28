@@ -13,4 +13,14 @@ export default {
     { label: 'दाँत', value: 'मिश्रित आहार', icon: 'utensils', description: 'इसके कटीले मांसाहारी दाँत और पत्ती के आकार के शाकाहारी दाँत दोनों थे — एक प्राचीन सर्वाहारी।' },
     { label: 'आकार', value: 'कुत्ते-आकार का', icon: 'ruler', description: 'केवल 1 मीटर लंबा — डायनासोर विशालकाय बनने से पहले छोटे थे।' },
   ],
+  relatedDinosaurs: [
+    { id: 'herrerasaurus', relationship: 'समकालीन' },
+    { id: 'plateosaurus', relationship: 'बाद का वंशज' },
+  ],
+  discoveries: [
+    { year: 1991, location: 'सैन जुआन, अर्जेंटीना', discoveredBy: 'रिकार्डो मार्टिनेज', note: 'हेररासॉरस वाली उसी «चंद्रमा घाटी» फॉर्मेशन में खोजा गया।' },
+  ],
+  fossilLocations: [
+    { country: 'अर्जेंटीना', region: 'सैन जुआन', coordinates: [-30.0, -68.0], specimenName: 'वाले दे ला लूना, इशिगुआलास्टो फॉर्मेशन' },
+  ],
 }

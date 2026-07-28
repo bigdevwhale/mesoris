@@ -14,4 +14,15 @@ export default {
     { label: 'Morsure', value: 'Puissance de pliosaure', description: 'Un pliosaure à cou court avec une force de morsure écrasante — attaquait ses proies en embuscade.' },
     { label: 'Chasse', value: 'Attaques en torpille', description: 'Utilisait de brèves et incroyables accélérations de ses quatre nageoires musclées pour tendre des embuscades.' },
   ],
+  relatedDinosaurs: [
+    { id: 'elasmosaurus', relationship: 'Parent éloigné' },
+    { id: 'tylosaurus', relationship: 'Rival écologique (antérieur)' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Andrew Crombie', note: 'Première mâchoire partielle trouvée dans l\'outback du Queensland.' },
+    { discoveredBy: 'Albert Heber Longman', note: 'Spécimen plus complet découvert près de Hughenden.' },
+  ],
+  fossilLocations: [
+    { region: 'Queensland, Australie', specimenName: 'Formation de Toolebuc' },
+  ],
 }

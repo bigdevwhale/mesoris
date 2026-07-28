@@ -14,4 +14,16 @@ export default {
     { label: '体長', value: 'T-レックスより大きい', description: '全長15メートルで、これまでに発見された最大の肉食恐竜。' },
     { label: '尾', value: 'パドル状', description: '強力な水中推進力を生み出す、ユニークな鰭のような尾。' },
   ],
+  relatedDinosaurs: [
+    { id: 'baryonyx', relationship: '近縁種' },
+    { id: 'mosasaurus', relationship: '競争者（水棲）' },
+  ],
+  discoveries: [
+    { discoveredBy: 'エルンスト・シュトローマー', note: '最初の化石発見。第二次世界大戦中のミュンヘン爆撃で破壊された。' },
+    { discoveredBy: 'ニザール・イbrahim', note: '重要な新発見が水生生活様式の理論を裏付けた。' },
+  ],
+  fossilLocations: [
+    { region: 'ケム・ケム層', specimenName: '' },
+    { region: 'バハリヤ層', specimenName: '' },
+  ],
 }

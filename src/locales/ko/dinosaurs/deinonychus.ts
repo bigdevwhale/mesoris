@@ -14,4 +14,15 @@ export default {
     { label: '깃털', value: '깃털 있었을 가능성', description: '근연종에서 깃털이 확인되어 온혈이며 새를 닮은 공룡임을 알 수 있습니다.' },
     { label: '사냥', value: '무리 사냥꾼', description: '테논토사우루스 화석 근처에서 여러 개체가 발견되어 집단 사냥의 강력한 증거가 되고 있습니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: '근연종' },
+    { id: 'oviraptor', relationship: '동시대' },
+  ],
+  discoveries: [
+    { year: 1931, location: '미국 몬태나주', discoveredBy: '바넘 브라운', note: '최초의 화석이 발견되었으나 수십 년 후에야 연구되었다.' },
+    { year: 1964, location: '미국 몬태나주', discoveredBy: '존 오스트롬', note: '오스트롬의 발견과 1969년 논문은 공룡 과학에 혁명을 일으켰다.' },
+  ],
+  fossilLocations: [
+    { country: '미국', region: '몬태나주', coordinates: [45.5, -108.5], specimenName: '클로벌리층' },
+  ],
 }

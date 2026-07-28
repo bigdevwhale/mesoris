@@ -14,4 +14,17 @@ export default {
     { label: 'Reichweite', value: 'Nordamerika und Europa', description: 'Auf beiden Seiten des urzeitlichen Atlantiks gefunden — ein transatlantischer Räuber.' },
     { label: 'Rivale', value: 'Konkurrierte mit Allosaurus', description: 'Die beiden Spitzenprädatoren der Morrison-Formation teilten sich die Jagdgründe.' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: 'Zeitgenössischer Spitzenprädator-Konkurrent' },
+    { id: 'megalosaurus', relationship: 'Enger Megalosaurier-Verwandter' },
+    { id: 'ceratosaurus', relationship: 'Zeitgenössischer Morrison-Formation-Räuber' },
+  ],
+  discoveries: [
+    { discoveredBy: 'James Jensen', note: 'Material 1972 erstmals gesammelt; 1979 von Peter Galton und James Jensen als Torvosaurus tanneri formal beschrieben.' },
+    { discoveredBy: 'Octávio Mateus et al.', note: 'Europäische Art T. gurneyi beschrieben; Embryonen in Eiern gefunden — seltene Daten zur Fortpflanzung jurassischer Theropoden.' },
+  ],
+  fossilLocations: [
+    { region: 'Dry Mesa Quarry, Delta County, Colorado (Morrison-Formation)', specimenName: 'BYU 2002 — Holotyp-Teilskelett' },
+    { region: 'Lourinhã-Formation, Torres Vedras', specimenName: 'ML 632 — T. gurneyi Holotyp; Embryonenmaterial' },
+  ],
 }

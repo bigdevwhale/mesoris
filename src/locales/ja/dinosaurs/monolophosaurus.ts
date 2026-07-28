@@ -14,4 +14,16 @@
     { label: '生息地', value: '湿潤環境', description: 'ジュラ紀の中国北西部の湿潤で川の多い生態系に生息していました。' },
     { label: '役割', value: '中型捕食者', description: 'モノロフォサウルスはおそらく小型から中型の動物を狩り、機会があれば腐肉も食べていました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'megalosaurus', relationship: '比較可能な初期テタヌラ級の肉食恐竜' },
+    { id: 'allosaurus', relationship: '後代のより大きなテタヌラ捕食者' },
+    { id: 'yangchuanosaurus', relationship: '別の中国ジュラ紀獣脚類捕食者' },
+  ],
+  discoveries: [
+    { discoveredBy: '新疆のフィールド調査隊', note: '石樹溝の堆積物から最初の発見があった。' },
+    { discoveredBy: '趙喜進とフィリップ・カリー', note: '正式記載では単一のトサカと詳細な頭骨解剖が強調された。' },
+  ],
+  fossilLocations: [
+    { region: '石樹溝層、新疆ウイグル自治区、中国', specimenName: 'ホロタイプおよび関連骨格標本' },
+  ],
 }

@@ -14,4 +14,17 @@ export default {
     { label: 'Alimentación', value: 'Amplio rango de ramoneo', description: 'Su cuello probablemente barría grandes arcos, permitiendo una alimentación eficiente a múltiples alturas sin moverse mucho.' },
     { label: 'Región', value: 'Gigante clásico chino', description: 'Mamenchisaurus es uno de los dinosaurios gigantes más conocidos de los ricos yacimientos del Jurásico Tardío de China.' },
   ],
+  relatedDinosaurs: [
+    { id: 'euhelopus', relationship: 'Saurópodo asiático de cuello largo, a menudo comparado en estudios de evolución cervical' },
+    { id: 'diplodocus', relationship: 'Otro saurópodo de cuello extremo, con un plan corporal diferente' },
+    { id: 'brachiosaurus', relationship: 'Gran saurópodo contemporáneo con cuartos delanteros más altos' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Equipos de campo durante estudios de construccion de carreteras', note: 'Restos iniciales recuperados cerca del cruce de Mamenxi, dando nombre al genero.' },
+    { discoveredBy: 'Yang Zhongjian (C.C. Young)', note: 'La descripcion formal establecio a Mamenchisaurus como un gran genero de sauropodos chinos.' },
+  ],
+  fossilLocations: [
+    { region: 'Provincia de Sichuan, China', specimenName: 'Material de Mamenxi/Yibin' },
+    { region: 'Area de Chongqing, China', specimenName: 'Especimenes de M. hochuanensis' },
+  ],
 }

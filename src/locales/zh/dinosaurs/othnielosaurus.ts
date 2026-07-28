@@ -14,4 +14,16 @@
     { label: '食性', value: '啃食低矮植物', description: '喙和颊齿适合取食蕨类等靠近地面的柔软植被。' },
     { label: '分类史', value: '经历多次重修', description: '它的标本曾被分到多个近缘名称之下，是研究小型鸟臀类分类的重要案例。' },
   ],
+  relatedDinosaurs: [
+    { id: 'dryosaurus', relationship: '相似栖息地中的较大型鸟脚类' },
+    { id: 'hypsilophodon', relationship: '可比较的小型敏捷植食鸟臀类' },
+    { id: 'camptosaurus', relationship: '同时代较大型取食鸟脚类' },
+  ],
+  discoveries: [
+    { year: 1877, location: '美国怀俄明州科莫布拉夫', discoveredBy: '马什采集队', note: '在莫里森大规模发掘中回收的小型鸟臀类材料。' },
+    { year: 2007, location: '分类学修订', discoveredBy: '彼得·加尔顿', note: '重新评估将奥斯尼尔洛龙与其他历史小型鸟臀类归属分开。' },
+  ],
+  fossilLocations: [
+    { country: '美国', region: '怀俄明州科莫布拉夫（莫里森组）', coordinates: [41.8, -106.0], specimenName: '归入奥斯尼尔洛龙的材料' },
+  ],
 }

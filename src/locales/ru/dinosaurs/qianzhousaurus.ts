@@ -14,4 +14,15 @@ export default {
     { label: 'Семейство', value: 'Алиорамины', description: 'Принадлежит небольшой ветви длинномордых тираннозавридов — Alioramini, отдельной от гигантских костекрушительных тираннозаврин.' },
     { label: 'Открытие', value: 'Находка 2014 года', description: 'Описан в 2014 году из Ганьчжоу на юге Китая — замечательная позднемеловая находка.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tarbosaurus', relationship: 'Азиатский родственник-тираннозаврид' },
+    { id: 'albertosaurus', relationship: 'Более ранний тираннозаврид' },
+    { id: 'tyrannosaurus-rex', relationship: 'Дальний родственник' },
+  ],
+  discoveries: [
+    { year: 2010, location: 'Ganzhou, Jiangxi Province, China', discoveredBy: 'Строительные рабочие; позднее собран командой Лю Цзюньчана', note: 'Почти полный череп и частичный скелет — самый полный алиорамин из найденных.' },
+  ],
+  fossilLocations: [
+    { country: 'China', region: 'Формация Наньсюн, Ганьчжоу, Цзянси', coordinates: [25.85, 114.95], specimenName: 'GMFPI-PV-001 — голотип, череп и скелет' },
+  ],
 }

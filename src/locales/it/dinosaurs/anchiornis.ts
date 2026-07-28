@@ -14,4 +14,16 @@ export default {
     { label: 'Taglia', value: 'Grande come un passero', description: 'Minuscolo, appena più grande di un passero, con un peso di circa 200 grammi.' },
     { label: 'Volo', value: 'Assistito dalle ali', description: 'Non poteva volare con potenza, ma probabilmente usava le ali per planare e controllare il corpo saltando tra i rami.' },
   ],
+  relatedDinosaurs: [
+    { id: 'microraptor', relationship: 'Cugino paraviano a quattro ali' },
+    { id: 'archaeopteryx', relationship: 'Contemporaneo avialano antico' },
+    { id: 'troodon', relationship: 'Parente troodontide più grande' },
+  ],
+  discoveries: [
+    { year: 2009, location: 'Formazione di Tiaojishan, Liaoning, Cina', discoveredBy: 'Xu Xing e team', note: 'Esemplari inizialmente denominati e riconosciuti come piccoli paraviani piumati.' },
+    { year: 2010, location: 'Cina', discoveredBy: 'Zhang Fucheng e team', note: 'Prima ricostruzione della colorazione reale di Anchiornis pubblicata su Nature.' },
+  ],
+  fossilLocations: [
+    { country: 'Cina', region: 'Formazione di Tiaojishan, Liaoning', coordinates: [41.6, 120.7], specimenName: 'IVPP V14378 — materiale tipo, centinaia di esemplari assegnati' },
+  ],
 }

@@ -14,4 +14,13 @@ export default {
     { label: 'Bébés', value: 'Jeunes nidicoles', description: 'Les bébés ne marchaient pas bien au début — les parents apportaient la nourriture au nid.' },
     { label: 'Croissance', value: 'Très rapide', description: 'Les bébés passaient de 40 cm à la taille adulte en seulement 7–8 ans — incroyablement rapide.' },
   ],
+  relatedDinosaurs: [
+    { id: 'edmontosaurus', relationship: 'Proche parent' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Jack Horner', note: 'La colonie de nidification «Egg Mountain» — a révolutionné les vues sur le comportement des dinosaures.' },
+  ],
+  fossilLocations: [
+    { region: 'Montana', specimenName: 'Egg Mountain, Formation de Two Medicine' },
+  ],
 }

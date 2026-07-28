@@ -13,4 +13,14 @@ export default {
       { label: 'Размер', value: 'Размером с голубя', description: 'Гораздо меньше, чем обычно представляют люди, — всего примерно с голубя.' },
       { label: 'Зубы', value: '90+ зубов', description: 'Более 90 острых смыкающихся зубов помогали ловить рыбу и насекомых.' },
     ],
-  }
+  relatedDinosaurs: [
+    { id: 'pteranodon', relationship: 'Более крупный потомок' },
+    { id: 'dimorphodon', relationship: 'Более ранний родственник' },
+  ],
+  discoveries: [
+    { year: 1784, location: 'Bavaria, Germany', discoveredBy: 'Cosimo Alessandro Collini', note: 'Первая в истории находка птерозавра — Коллини принял его за водное животное.' },
+  ],
+  fossilLocations: [
+    { country: 'Germany', region: 'Бавария', coordinates: [48.9, 11.0], specimenName: 'Зольнхофенский известняк' },
+  ],
+}

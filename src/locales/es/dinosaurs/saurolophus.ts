@@ -14,4 +14,17 @@ export default {
     { label: 'Distribucion', value: 'Norteamerica y Asia', description: 'Dos continentes' },
     { label: 'Epoca', value: 'Cretacico Tardio', description: '~70-66 millones de anos' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: 'Pariente hadrosaurio — evolución convergente de la cresta' },
+    { id: 'edmontosaurus', relationship: 'Pariente saurolophino cercano' },
+    { id: 'corythosaurus', relationship: 'Hadrosaurio lambeosaurino con cresta' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Barnum Brown', note: 'S. osborni descrito por Brown en 1912 a partir de material de Alberta recolectado para el Museo Americano de Historia Natural.' },
+    { discoveredBy: 'Expediciones soviético-mongolas', note: 'Especie asiática S. angustirostris descrita de la Formación Nemegt; más grande que la especie norteamericana.' },
+  ],
+  fossilLocations: [
+    { region: 'Alberta (Formación Horseshoe Canyon)', specimenName: 'AMNH 5220 — holotipo, cráneo completo y esqueleto' },
+    { region: 'Provincia de Ömnögovi (Formación Nemegt)', specimenName: 'S. angustirostris — grandes ejemplares asiáticos' },
+  ],
 }

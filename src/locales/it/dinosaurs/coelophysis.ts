@@ -14,4 +14,15 @@ export default {
     { label: 'Ossa', value: 'Cave e leggere', description: 'Le sue ossa cave erano un adattamento per la velocità che anche gli uccelli avrebbero sviluppato in seguito.' },
     { label: 'Alimentazione', value: 'Opportunista', description: 'Un carnivoro che cacciava piccole lucertole, pesci e forse anche giovani dinosauri.' },
   ],
+  relatedDinosaurs: [
+    { id: 'herrerasaurus', relationship: 'Contemporaneo' },
+    { id: 'eoraptor', relationship: 'Contemporaneo' },
+  ],
+  discoveries: [
+    { year: 1881, location: 'Nuovo Messico, USA', discoveredBy: 'David Baldwin', note: 'Primo esemplare trovato in depositi triassici.' },
+    { year: 1947, location: 'Ghost Ranch, Nuovo Messico, USA', discoveredBy: 'Edwin Colbert', note: 'Scoperto un vasto giacimento con centinaia di scheletri completi.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Nuovo Messico', coordinates: [36.3, -106.0], specimenName: 'Ghost Ranch, Formazione Chinle' },
+  ],
 }

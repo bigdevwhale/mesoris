@@ -14,5 +14,20 @@ const translations = {
     { label: '大脑', value: '高度发达', description: '卓越的视觉和嗅觉——可以从数公里外发现猎物。' },
     { label: '前肢', value: '小但有力', description: '仅1米长但可以提起200公斤——对科学家来说仍然是个谜。' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: '猎物' },
+    { id: 'edmontosaurus', relationship: '猎物' },
+    { id: 'daspletosaurus', relationship: '祖先' },
+    { id: 'giganotosaurus', relationship: '趋同进化' },
+  ],
+  discoveries: [
+    { discoveredBy: '巴纳姆·布朗', note: '在地狱溪组发现了第一具部分骨架。' },
+    { discoveredBy: '苏珊·亨德里克森', note: '「苏」 — 迄今发现的最完整的 T. rex 骨骼,超过 90% 完整。' },
+  ],
+  fossilLocations: [
+    { region: '蒙大拿州', specimenName: '地狱溪组' },
+    { region: '南达科他州', specimenName: '苏' },
+    { region: '怀俄明州', specimenName: '兰斯组' },
+  ],
 }
 export default translations

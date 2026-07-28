@@ -14,4 +14,17 @@ export default {
     { label: 'Distribuzione', value: 'Predatore transatlantico', description: 'Trovato in Nord America e in Portogallo — prova notevole che il proto-Atlantico del Giurassico superiore permetteva ancora scambi faunistici.' },
     { label: 'Rivale', value: 'In competizione con Allosauro', description: 'Il Torvosauro e l\'Allosauro erano i due superpredatori della Formazione di Morrison, probabilmente in competizione per le stesse prede.' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: 'Predatore apice contemporaneo rivale' },
+    { id: 'megalosaurus', relationship: 'Parente stretto megalosauride' },
+    { id: 'ceratosaurus', relationship: 'Predatore contemporaneo della Formazione di Morrison' },
+  ],
+  discoveries: [
+    { discoveredBy: 'James Jensen', note: 'Materiale raccolto per la prima volta nel 1972; descritto formalmente come Torvosaurus tanneri da Peter Galton e James Jensen nel 1979.' },
+    { discoveredBy: 'Octávio Mateus et al.', note: 'Descritta la specie europea T. gurneyi; trovati anche embrioni conservati nelle uova, fornendo dati rari sulla riproduzione dei teropodi giurassici.' },
+  ],
+  fossilLocations: [
+    { region: 'Dry Mesa Quarry, Contea di Delta, Colorado (Formazione di Morrison)', specimenName: 'BYU 2002 — scheletro parziale olotipo' },
+    { region: 'Formazione di Lourinhã, Torres Vedras', specimenName: 'ML 632 — olotipo di T. gurneyi; materiale embrionale' },
+  ],
 }

@@ -14,4 +14,17 @@ export default {
     { label: 'Stile di volo', value: 'Brevi scatti', description: 'La maggior parte degli studi suggerisce che potesse lanciarsi e sbattere le ali su brevi distanze, più che sostenere un volo lungo in stile uccello moderno.' },
     { label: 'Dimensioni', value: 'Come un corvo', description: 'Lungo circa mezzo metro e con un peso di circa 1 chilogrammo, era un piccolo predatore piumato nelle foreste insulari del Giurassico superiore.' },
   ],
+  relatedDinosaurs: [
+    { id: 'microraptor', relationship: 'Paraviano piumato affine con adattamenti aerodinamici' },
+    { id: 'troodon', relationship: 'Teropode simile a uccello con anatomia sensoriale avanzata' },
+    { id: 'velociraptor', relationship: 'Parente dromeosauride più tardo tra i teropodi maniraptori' },
+  ],
+  discoveries: [
+    { year: 1861, location: 'Calcare di Solnhofen, Baviera, Germania', discoveredBy: 'Lavoratori delle cave; descritto da Hermann von Meyer', note: 'Primo esemplare scheletrico di Archaeopteryx formalmente descritto e collegato all\'evoluzione aviaria.' },
+    { year: 1877, location: 'Blumenberg vicino a Eichstätt, Germania', discoveredBy: 'Cave di Jakob Niemeyer', note: 'L\'esemplare di Berlino conservava un cranio eccezionale e impronte di piume, diventando il classico esempio museale.' },
+  ],
+  fossilLocations: [
+    { country: 'Germania', region: 'Solnhofen, Baviera', coordinates: [48.9, 10.99], specimenName: 'Esemplare di Londra (BMNH 37001)' },
+    { country: 'Germania', region: 'Eichstätt, Baviera', coordinates: [48.89, 11.18], specimenName: 'Esemplare di Berlino (HMN 1880)' },
+  ],
 }

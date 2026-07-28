@@ -14,4 +14,16 @@
     { label: '皮骨', value: '背中の装甲', description: 'ほとんどの大型獣脚類とは異なり、ケラトサウルスは背中に沿って小さな骨の板を持っていました。' },
     { label: '体長', value: '約7メートル', description: '中型の獣脚類で、より大きく一般的なアロサウルスと共存していました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: '競争者' },
+    { id: 'carnotaurus', relationship: '遠い親戚' },
+  ],
+  discoveries: [
+    { year: 1883, location: 'アメリカ・コロラド州', discoveredBy: 'マーシャル・P・フェルチ', note: 'ガーデン・パークで最初の骨格が発見された。' },
+    { year: 2000, location: 'ポルトガル', discoveredBy: 'オクタビオ・Mateus', note: 'ヨーロッパの標本がこの属の広い分布域を確認した。' },
+  ],
+  fossilLocations: [
+    { country: 'アメリカ', region: 'コロラド州', coordinates: [38.5, -105.0], specimenName: 'モリソン層' },
+    { country: 'ポルトガル', region: 'ロウリニャン', coordinates: [39.3, -9.3] },
+  ],
 }

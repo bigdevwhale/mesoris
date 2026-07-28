@@ -14,4 +14,16 @@ export default {
     { label: 'Қабақтары', value: 'Құрышпен қапталған', description: 'Тіпті қабақтарының өзі сүйекпен қорғалған – бұл динозаврдың осал жері болмаған десе де болады.' },
     { label: 'Қоректенуі', value: 'Аласа өсімдіктер', description: 'Қырықжапырақтармен және басқа да аласа өсімдіктермен қоректеніп, оларды жапырақ тәрізді ұсақ тістерімен үзіп жеген.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Жыртқыш' },
+    { id: 'euoplocephalus', relationship: 'Жақын туысы' },
+  ],
+  discoveries: [
+    { year: 1906, location: 'Монтана, АҚШ', discoveredBy: 'Барнум Браун', note: 'Алғашқы анкилозавр қазбалары Хелл-Крик формациясынан табылды.' },
+    { year: 1910, location: 'Альберта, Канада', discoveredBy: 'Питер К. Кайзен', note: 'Қазіргі кезде табылған ең толық дарақ.' },
+  ],
+  fossilLocations: [
+    { country: 'АҚШ', region: 'Монтана', coordinates: [47.5, -106.5], specimenName: 'Хелл-Крик' },
+    { country: 'Канада', region: 'Альберта', coordinates: [54.5, -113.0] },
+  ],
 }

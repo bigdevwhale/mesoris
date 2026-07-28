@@ -14,4 +14,17 @@ export default {
     { label: 'Koexistenz', value: 'Lebte mit T. rex', description: 'Alamosaurus teilte seinen Lebensraum mit Tyrannosaurus rex — der einzige bekannte Sauropode, der dies in Nordamerika tat.' },
     { label: 'Titanosaurier', value: 'Gepanzerter Sauropode', description: 'Als Titanosaurier hatte Alamosaurus kleine knöcherne Osteoderme in der Haut — ein einzigartiges Merkmal unter Sauropoden.' },
   ],
+  relatedDinosaurs: [
+    { id: 'argentinosaurus', relationship: 'Südamerikanischer Titanosaurier-Verwandter' },
+    { id: 'sauroposeidon', relationship: 'Früherer nordamerikanischer Riesensauropode' },
+    { id: 'diplodocus', relationship: 'Früherer nordamerikanischer Sauropode (andere Familie)' },
+  ],
+  discoveries: [
+    { year: 1921, location: 'San Juan County, New Mexico, USA', discoveredBy: 'Charles W. Gilmore', note: 'Das ursprüngliche Material wurde 1922 von Gilmore in New Mexico gesammelt und beschrieben; später wurden in Texas wesentlich größere Exemplare gefunden.' },
+    { year: 2003, location: 'Big Bend Nationalpark, Texas, USA', discoveredBy: 'Thomas Lehman und Kenneth Carpenter', note: 'Enorme Wirbel und Gliedmaßenknochen aus Texas ließen die Größenschätzungen deutlich nach oben revidieren und legten nahe, dass Alamosaurus mit den größten südamerikanischen Titanosauriern mithalten konnte.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'San Juan County, New Mexico (Ojo-Alamo-Formation)', coordinates: [36.5, -108.2], specimenName: 'USNM 10487 — Holotyp-Wirbel und Vorderbeinknochen' },
+    { country: 'USA', region: 'Brewster County, Texas, Big Bend (Javelina-Formation)', coordinates: [29.3, -103.2], specimenName: 'Enorme Texas-Exemplare, die die Maximalgröße belegen' },
+  ],
 }

@@ -14,4 +14,16 @@ export default {
     { label: 'हथियार', value: 'दंतेदार दाँत', description: 'लंबे, ब्लेड जैसे दाँत और शक्तिशाली जबड़े विशाल सॉरोपोड शिकार से मांस को काटने के लिए उपयुक्त थे।' },
     { label: 'विवाद', value: 'अलग या एलोसॉरस?', description: 'कुछ अध्ययन सॉरोफ़ैगनैक्स को एक अलग वंश मानते हैं, जबकि अन्य इसे एलोसॉरस की एक बहुत बड़ी प्रजाति मानते हैं।' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: 'बहुत करीबी एलोसॉरिड संबंधी; कभी-कभी इसे एक ही वंश माना जाता है' },
+    { id: 'torvosaurus', relationship: 'उत्तरी अमेरिका में एक और विशाल जुरासिक शिकारी' },
+    { id: 'stegosaurus', relationship: 'संभावित शिकार और समकालीन शाकाहारी' },
+  ],
+  discoveries: [
+    { discoveredBy: 'J.W. Stovall के नेतृत्व वाली टीमों', note: 'मॉरिसन परतों से विशाल थेरोपॉड अवशेष प्राप्त किए गए।' },
+    { discoveredBy: 'डैनियल च्योर', note: 'सामग्री को Saurophaganax maximus नाम दिया गया और इसे Allosaurus से भिन्न बताया गया।' },
+  ],
+  fossilLocations: [
+    { region: 'ओक्लाहोमा, सिमैरॉन काउंटी (मॉरिसन फॉर्मेशन)', specimenName: 'Saurophaganax maximus का प्रकार सामग्री' },
+  ],
 }

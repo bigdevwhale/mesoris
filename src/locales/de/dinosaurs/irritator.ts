@@ -14,4 +14,15 @@ export default {
     { label: 'Spinosaurier', value: 'Brasilianischer Spinosaurier', description: 'Ein Spinosaurier — eng mit Spinosaurus verwandt — belegt die weite Gondwana-Verbreitung der Gruppe.' },
     { label: 'Flugsaurier-Mahlzeit', value: 'Aß auch Flugsaurier', description: 'Ein Flugsaurierzahn in einem Wirbel — eine der wenigen bekannten Räuber-Flugsaurier-Interaktionen.' },
   ],
+  relatedDinosaurs: [
+    { id: 'spinosaurus', relationship: 'Enger spinosauriner Verwandter' },
+    { id: 'baryonyx', relationship: 'Enger spinosaurider Verwandter' },
+    { id: 'suchomimus', relationship: 'Afrikanischer spinosaurider Verwandter' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Händler (genauer Entdecker unbekannt)', note: 'Schädel von Händlern gekauft und verändert; vom Staatlichen Museum für Naturkunde Stuttgart erworben; 1996 von Martill, Cruickshank, Frey u. a. beschrieben.' },
+  ],
+  fossilLocations: [
+    { region: 'Ceará, Santana-Formation (Romualdo-Member)', specimenName: 'SMNS 58022 — fast vollständiger Holotyp-Schädel' },
+  ],
 }

@@ -14,5 +14,18 @@ const translations = {
     { label: '群居', value: '社会性群体', description: '多个个体一起被发现，加上足迹证据，表明它们以大型迁徙群体生活。' },
     { label: '牙齿', value: '齿列组', description: '数百颗自我替换的臼齿，形成连续的咀嚼面，有效处理坚韧的植被。' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: '鸭嘴龙近亲 — 趋同进化的冠' },
+    { id: 'edmontosaurus', relationship: '近缘的栉龙亚科' },
+    { id: 'corythosaurus', relationship: '有冠的赖氏龙亚科鸭嘴龙' },
+  ],
+  discoveries: [
+    { discoveredBy: '巴纳姆·布朗', note: '1912 年布朗根据为美国自然历史博物馆采集的阿尔伯塔材料命名 S. osborni。' },
+    { discoveredBy: '苏蒙联合考察', note: '亚洲种 S. angustirostris 命名于奈梅格特组;比北美种更大。' },
+  ],
+  fossilLocations: [
+    { region: '艾伯塔省（马蹄峡谷组）', specimenName: 'AMNH 5220 — 模式标本,完整头骨和骨骼' },
+    { region: '南戈壁省（奈梅格特组）', specimenName: 'S. angustirostris — 大型亚洲标本' },
+  ],
 }
 export default translations

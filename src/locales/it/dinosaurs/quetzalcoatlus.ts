@@ -14,4 +14,13 @@ export default {
     { label: 'Peso', value: '250 kg', description: 'Sorprendentemente leggero per le sue dimensioni.' },
     { label: 'Locomozione', value: 'Quadrupede', description: 'Camminava a quattro zampe con le ali ripiegate.' },
   ],
+  relatedDinosaurs: [
+    { id: 'pteranodon', relationship: 'Parente più piccolo' },
+  ],
+  discoveries: [
+    { year: 1971, location: 'Texas, USA', discoveredBy: 'Douglas Lawson', note: 'Osso alare gigante scoperto nel Parco Nazionale di Big Bend — inizialmente scambiato per un dinosauro.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Texas', coordinates: [29.3, -103.2], specimenName: 'Formazione Javelina, Big Bend NP' },
+  ],
 }

@@ -14,4 +14,20 @@ export default {
     { label: 'Mordida', value: 'Tritura huesos', description: 'A pesar de su pequeño tamaño, poseía la potente mordida perforadora de huesos típica de los tiranosáuridos.' },
     { label: 'Velocidad', value: '40+ km/h', description: 'Sus patas largas y delgadas lo convertían en un depredador ágil y rápido — más veloz que su enorme primo T. rex.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Sinónimo discutido / pariente cercano' },
+    { id: 'albertosaurus', relationship: 'Primo tiranosáurido' },
+    { id: 'daspletosaurus', relationship: 'Primo tiranosáurido' },
+    { id: 'gorgosaurus', relationship: 'Primo tiranosáurido' },
+    { id: 'triceratops', relationship: 'Posible presa' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Expedición del Museo Cleveland', note: 'Primer cráneo descubierto en la Formación Hell Creek, originalmente considerado un taxón similar a Gorgosaurus.' },
+    { discoveredBy: 'Robert Bakker, Philip Currie y Michael Williams', note: 'Renombrado Nanotyrannus tras el reanálisis del cráneo del Museo Cleveland.' },
+    { discoveredBy: 'Cazadores de fósiles comerciales', note: 'El famoso ejemplar «Dueling Dinosaurs», trabado en combate con un Triceratops.' },
+  ],
+  fossilLocations: [
+    { region: 'Montana', specimenName: 'Formación Hell Creek' },
+    { region: 'Wyoming', specimenName: 'Formación Lance' },
+  ],
 }

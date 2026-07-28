@@ -12,4 +12,14 @@ export default {
       { label: 'Звук', value: 'Резонирующие крики', description: 'Внутри гребня проходили сложные воздушные каналы, позволявшие издавать громкие резонирующие звуки.' },
       { label: 'Социальность', value: 'Стада', description: 'Жил большими социальными группами — своего рода утконосая версия стада антилоп гну.' },
     ],
-  }
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: 'Близкий родственник' },
+    { id: 'lambeosaurus', relationship: 'Близкий родственник' },
+  ],
+  discoveries: [
+    { year: 1912, location: 'Альберта, Канада', discoveredBy: 'Барнум Браун', note: 'Первый полный скелет обнаружен во время экспедиции AMNH.' },
+  ],
+  fossilLocations: [
+    { country: 'Канада', region: 'Альберта', coordinates: [50.8, -111.5], specimenName: 'Формация Дайносор-Парк' },
+  ],
+}

@@ -14,4 +14,18 @@ export default {
     { label: 'Pico', value: 'Como de pato', description: 'Un pico ancho, sin dientes, similar al de un pato, para barrer el agua y cortar plantas.' },
     { label: 'Dieta', value: 'Omnívoro', description: 'El contenido estomacal muestra que comía plantas, peces y pequeños animales — un omnívoro del Cretácico.' },
   ],
+  relatedDinosaurs: [
+    { id: 'gallimimus', relationship: 'Primo ornithomimóserido' },
+    { id: 'ornithomimus', relationship: 'Pariente ornithomimóserido' },
+    { id: 'therizinosaurus', relationship: 'Pariente celurosauriano' },
+    { id: 'velociraptor', relationship: 'Pariente terópodo distante' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Expedición polaco-mongola (Zofia Kielan-Jaworowska)', note: 'Primeros fósiles encontrados — solo los brazos gigantes y la cintura escapular. El cuerpo fue un misterio durante casi 50 años.' },
+    { discoveredBy: 'Expedición coreano-mongola', note: 'Un ejemplar casi completo finalmente reveló el cuerpo entero — totalmente diferente a lo esperado.' },
+    { discoveredBy: 'Expedición belgo-mongola', note: 'Ejemplar adicional con fragmento de cráneo y contenido estomacal que confirmó la dieta omnívora.' },
+  ],
+  fossilLocations: [
+    { region: 'Desierto de Gobi, Cuenca de Nemegt', specimenName: 'Formación Nemegt' },
+  ],
 }

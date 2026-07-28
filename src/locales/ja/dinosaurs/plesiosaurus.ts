@@ -14,4 +14,14 @@
     { label: '発見', value: 'アニングの勝利', description: '1823年にメアリー・アニングによって発見 — 最初に知られた先史時代の爬虫類の一つ。' },
     { label: '体長', value: '3.5メートル', description: 'ジュラ紀前期の中型海生爬虫類。' },
   ],
+  relatedDinosaurs: [
+    { id: 'elasmosaurus', relationship: 'はるかに大型の後裔' },
+    { id: 'ichthyosaurus', relationship: '同時代種' },
+  ],
+  discoveries: [
+    { year: 1823, location: 'ライムレジス、イギリス', discoveredBy: 'メアリー・アニング', note: 'ジュラシック海岸で発見された最初の関節骨格 — 科学的センセーション。' },
+  ],
+  fossilLocations: [
+    { country: 'イギリス', region: 'ドーセット', coordinates: [50.7, -2.9], specimenName: 'ブルーライアス累層、ジュラシック海岸' },
+  ],
 }

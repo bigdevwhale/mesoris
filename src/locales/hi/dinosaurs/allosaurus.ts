@@ -14,4 +14,18 @@ export default {
     { label: 'गति', value: '45 किमी/घंटा', icon: 'zap', description: 'सबसे तेज़ बड़े शिकारियों में से एक — अपने अधिकांश शिकार से तेज़ भाग सकता था।' },
     { label: 'प्रचुरता', value: 'सबसे सामान्य', icon: 'layers', description: 'मोरिसन फ़ॉर्मेशन का सबसे सामान्य बड़ा शिकारी — जुरासिक काल का शेर।' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'शिकार' },
+    { id: 'diplodocus', relationship: 'शिकार' },
+    { id: 'ceratosaurus', relationship: 'प्रतिस्पर्धी' },
+  ],
+  discoveries: [
+    { year: 1877, location: 'कोलोराडो, अमेरिका', discoveredBy: 'ऑस्नील चार्ल्स मार्श', note: 'पहली बार हड्डियों की लड़ाई (Bone Wars) के दौरान वर्णित किया गया।' },
+    { year: 1991, location: 'वायोमिंग, अमेरिका', discoveredBy: 'किर्बी साइबर', note: '"बिग ऐल" — सबसे पूर्ण थेरोपॉड कंकालों में से एक।' },
+  ],
+  fossilLocations: [
+    { country: 'अमेरिका', region: 'यूटा', coordinates: [39.0, -111.0], specimenName: 'क्लीवलैंड-लॉयड खदान' },
+    { country: 'अमेरिका', region: 'वायोमिंग', coordinates: [43.0, -107.5] },
+    { country: 'पुर्तगाल', region: 'लौरिन्यां', coordinates: [39.3, -9.3] },
+  ],
 }

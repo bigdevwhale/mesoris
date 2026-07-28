@@ -14,4 +14,16 @@ export default {
     { label: 'Constitution', value: 'Membres en colonnes', description: 'Ses membres robustes et son large corps soutenaient un torse massif tout en se déplaçant sur des sols mous de plaine alluviale ou marécageux.' },
     { label: 'Âge', value: 'Crétacé inférieur', description: 'Euhelopus a survécu dans les écosystèmes asiatiques alors que de nombreux groupes classiques de sauropodes du Jurassique déclinaient déjà ailleurs.' },
   ],
+  relatedDinosaurs: [
+    { id: 'mamenchisaurus', relationship: 'Un autre sauropode asiatique à long cou souvent comparé anatomiquement' },
+    { id: 'brachiosaurus', relationship: 'Grand sauropode brouteur haut avec des proportions de membres antérieurs différentes' },
+    { id: 'sauroposeidon', relationship: 'Titanosaure géant ultérieur à élongation extrême du cou' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Expédition d\'Otto Zdansky', note: 'A collecté le matériel fossile original utilisé plus tard dans la description formelle.' },
+    { discoveredBy: 'Carl Wiman', note: 'A formellement décrit Euhelopus zdanskyi et a mis en lumière son anatomie inhabituelle de sauropode.' },
+  ],
+  fossilLocations: [
+    { region: 'Province du Shandong', specimenName: 'Matériel original d\'Euhelopus' },
+  ],
 }

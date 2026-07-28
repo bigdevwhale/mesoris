@@ -14,4 +14,15 @@ export default {
     { label: 'Isle of Wight', value: 'Wessex-Formation Jäger', description: 'Gefunden in derselben fossilreichen Formation wie Iguanodon, Hypsilophodon und Baryonyx.' },
     { label: 'Allosauroid', value: 'Carcharodontosaurier-Vorfahr?', description: 'Eng verwandt mit den riesigen Carcharodontosauridae — Europa spielte eine wichtige Rolle bei der Entstehung dieser Giganten.' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: 'Allosauroider Verwandter' },
+    { id: 'acrocanthosaurus', relationship: 'Neovenatorider Verwandter' },
+    { id: 'carcharodontosaurus', relationship: 'Verwandter großer Allosauroid' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Amateursammler (Fossiliensammler der Isle of Wight)', note: 'Anfängliches Material 1978 von Amateursammlern gefunden; spätere Ausgrabungen durch Hutt und Kollegen erbrachten umfangreiches Material; 1996 formell beschrieben.' },
+  ],
+  fossilLocations: [
+    { region: 'Brighstone Bay, Isle of Wight (Wessex-Formation), England', specimenName: 'MIWG.6348 — Holotyp, zu ~70% vollständiges Skelett' },
+  ],
 }

@@ -14,4 +14,16 @@ export default {
     { label: 'Denti', value: 'Denti cesoianti', description: 'Denti taglienti anziché molari — suggerisce una dieta di piante coriacee.' },
     { label: 'Isolamento', value: 'Massa continentale australe', description: 'Si è evoluto in relativo isolamento mentre l\'Australia cominciava a separarsi dall\'Antartide.' },
   ],
+  relatedDinosaurs: [
+    { id: 'iguanodon', relationship: 'Parente ornitopode iguanodonte stretto' },
+    { id: 'camptosaurus', relationship: 'Parente ornitopode precedente' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Doug Langdon', note: 'Scheletro quasi completo trovato dal pastore Doug Langdon nel 1963 nella sua proprietà; descritto formalmente da Bartholomai e Molnar nel 1981.' },
+    { discoveredBy: 'Team paleontologico', note: 'Secondo esemplare trovato a Lightning Ridge nel 1987 in sedimenti a opale, fornendo ulteriori dati anatomici.' },
+  ],
+  fossilLocations: [
+    { region: 'Muttaburra, regione di Barcaldine, Queensland, Australia (Formazione Mackunda)', specimenName: 'QM F6140 — olotipo, scheletro quasi completo' },
+    { region: 'Lightning Ridge, Nuovo Galles del Sud, Australia', specimenName: 'Cranio parziale e materiale postcranico' },
+  ],
 }

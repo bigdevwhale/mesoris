@@ -14,4 +14,15 @@ export default {
     { label: 'Famille', value: 'Alioraminés', description: 'Appartient à une petite lignée de tyrannosauridés au museau long, les Alioramini, distincte des géants broye-os.' },
     { label: 'Découverte', value: 'Trouvaille de 2014', description: 'Décrit officiellement en 2014 à partir d\'un fossile de Ganzhou, dans le sud de la Chine — une remarquable découverte du Crétacé supérieur.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tarbosaurus', relationship: 'Parent tyrannosauridé asiatique' },
+    { id: 'albertosaurus', relationship: 'Tyrannosauridé antérieur' },
+    { id: 'tyrannosaurus-rex', relationship: 'Cousin éloigné' },
+  ],
+  discoveries: [
+    { year: 2010, location: 'Ganzhou, Jiangxi Province, China', discoveredBy: 'Ouvriers du bâtiment ; ensuite collecté par Lü Junchang et son équipe', note: 'Crâne presque complet et squelette partiel — l\'alioramin le plus complet jamais trouvé.' },
+  ],
+  fossilLocations: [
+    { country: 'China', region: 'Formation de Nanxiong, Ganzhou, Jiangxi', coordinates: [25.85, 114.95], specimenName: 'GMFPI-PV-001 — holotype, crâne et squelette' },
+  ],
 }

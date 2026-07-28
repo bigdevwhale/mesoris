@@ -14,4 +14,15 @@ export default {
     { label: 'Hemisferio', value: 'Estegosaurio austral', description: 'Uno de los pocos estegosaurios de Gondwana, ya que la mayoría proceden de los continentes septentrionales.' },
     { label: 'Familia', value: 'Ancestro estegosaurio', description: 'Representa una rama temprana de Stegosauria que ayuda a los científicos a entender los antiguos orígenes de la familia.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Famoso pariente posterior' },
+    { id: 'loricatosaurus', relationship: 'Pariente estegosaurio europeo' },
+    { id: 'dacentrurus', relationship: 'Estegosaurio europeo' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Susannah Maidment y equipo', note: 'Vértebras y fémur parcial descritos y nombrados Adratiklit boulahfa.' },
+  ],
+  fossilLocations: [
+    { region: 'Grupo El Mers, Atlas Medio, Boulahfa', specimenName: 'NHMUK PV R 37166 — vértebras holotipo' },
+  ],
 }

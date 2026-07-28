@@ -14,4 +14,17 @@ export default {
     { label: '신화', value: '25미터가 아님', description: 'TV는 리오플레우로돈을 25미터 바다 괴물로 유명하게 만들었지만, 실제 증거는 더 작은 동물을 나타냄.' },
     { label: '유영', value: '네 지느러미 추진', description: '다른 수장룡과 마찬가지로, 네 개의 지느러미를 협조시켜 수중을 "날았음".' },
   ],
+  relatedDinosaurs: [
+    { id: 'kronosaurus', relationship: '후기 플리오사우루스 대응종' },
+    { id: 'plesiosaurus', relationship: '먼 수장룡 친척' },
+    { id: 'ichthyosaurus', relationship: '해양 동시대' },
+  ],
+  discoveries: [
+    { discoveredBy: '앙리-에밀 소바주', note: '치아와 턱 자료가 리오플레우로돈의 명명 기반이 되었다.' },
+    { discoveredBy: '많은 수집가와 박물관', note: '영국의 옥스포드 클레이 자료는 후에 고생물학자들이 이 동물을 더 잘 이해하는 데 도움을 주었다.' },
+  ],
+  fossilLocations: [
+    { region: '파드칼레', specimenName: '칼로브 해성 퇴적층' },
+    { region: '옥스퍼드셔', specimenName: '옥스포드 클레이층' },
+  ],
 }

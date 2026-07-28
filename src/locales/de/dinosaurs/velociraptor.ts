@@ -14,4 +14,17 @@ export default {
     { label: 'Echte Größe', value: 'Truthahn-groß', description: 'Viel kleiner als in Filmen — etwa so groß wie ein großer Truthahn.' },
     { label: 'Jagd', value: 'Rudeljäger', description: 'Hinweise deuten auf Gruppenjagd hin, um Beute zu erlegen, die viel größer als sie selbst war.' },
   ],
+  relatedDinosaurs: [
+    { id: 'deinonychus', relationship: 'Enger Verwandter' },
+    { id: 'protoceratops', relationship: 'Beute' },
+    { id: 'oviraptor', relationship: 'Konkurrent' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Roy Chapman Andrews', note: 'Erstes Exemplar während einer berühmten AMNH-Expedition entdeckt.' },
+    { discoveredBy: 'Polnisch-Mongolische Expedition', note: 'Die «Kämpfenden Dinosaurier» — ein Velociraptor im Kampf mit einem Protoceratops.' },
+  ],
+  fossilLocations: [
+    { region: 'Gobi-Wüste', specimenName: 'Djadochta-Formation' },
+    { region: 'Innere Mongolei', specimenName: '' },
+  ],
 }

@@ -14,4 +14,16 @@
     { label: '豊富さ', value: '非常に一般的', description: 'ドイツで100体以上の骨格が発見。' },
     { label: '手', value: '把握性の親指', description: '枝をつかむための大きな親指の爪 — 竜脚類のような体重支持柱にはまだなっていない。' },
   ],
+  relatedDinosaurs: [
+    { id: 'brachiosaurus', relationship: '子孫' },
+    { id: 'diplodocus', relationship: '子孫' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ヨハン・フリードリヒ・エンゲルハルト', note: '最初の化石発見 — ヨーロッパ大陸での最古の恐竜発見の一つ。' },
+    { discoveredBy: 'エーバーハルト・フラース', note: '数十体の骨格がある集団墓地。' },
+  ],
+  fossilLocations: [
+    { region: 'トロッシンゲン', specimenName: 'クノレンメルゲル部層' },
+    { region: 'バイエルン', specimenName: '' },
+  ],
 }

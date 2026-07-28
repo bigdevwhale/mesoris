@@ -14,4 +14,16 @@ export default {
     { label: 'Epoca', value: 'Cretacico Temprano', description: '~105 millones de anos' },
     { label: 'Ubicacion', value: 'Australia', description: 'Cerca del polo sur' },
   ],
+  relatedDinosaurs: [
+    { id: 'iguanodon', relationship: 'Pariente ornitopodo iguanodontiano cercano' },
+    { id: 'camptosaurus', relationship: 'Pariente ornitopodo anterior' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Doug Langdon', note: 'Esqueleto casi completo encontrado por el granjero Doug Langdon en 1963 en su propiedad; descrito formalmente por Bartholomai y Molnar en 1981.' },
+    { discoveredBy: 'Equipo paleontologico', note: 'Segundo especimen encontrado en Lightning Ridge en 1987 en sedimento con opalo, proporcionando datos anatomicos adicionales.' },
+  ],
+  fossilLocations: [
+    { region: 'Muttaburra, region de Barcaldine, Queensland, Australia (Formacion Mackunda)', specimenName: 'QM F6140 — holotipo, esqueleto casi completo' },
+    { region: 'Lightning Ridge, Nueva Gales del Sur, Australia', specimenName: 'Craneo parcial y material postcraneal' },
+  ],
 }

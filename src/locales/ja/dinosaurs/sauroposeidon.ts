@@ -14,4 +14,16 @@ export default {
     { label: '科', value: 'ブラキオサウルス科の巨人', description: 'ブラキオサウルスと同じ高所採食グループに属しますが、はるかに後の時代まで生き延びていました。' },
     { label: '生き残り', value: '後期のブラキオサウルス科', description: 'ブラキオサウルスのような巨大竜脚類が北アメリカの白亜紀前期まで存続したことを示しています。' },
   ],
+  relatedDinosaurs: [
+    { id: 'brachiosaurus', relationship: '近い近縁種' },
+    { id: 'acrocanthosaurus', relationship: '捕食者による脅威' },
+    { id: 'argentinosaurus', relationship: 'ライバルの巨人' },
+  ],
+  discoveries: [
+    { discoveredBy: 'リチャード・シフェリとそのチーム', note: '巨大な頸椎化石は、剖出作業前は化石化した木の幹と誤認されていた。' },
+    { discoveredBy: 'マシュー・ウェデル、リチャード・シフェリ、R.ケント・サンダース', note: '公式記載により、これまでに発見された中で最も背の高い恐竜の一つと判明した。' },
+  ],
+  fossilLocations: [
+    { region: 'オクラホマ州', specimenName: 'アントラーズ層' },
+  ],
 }

@@ -14,4 +14,14 @@
     { label: '发现', value: '安宁的胜利', description: '1823年由玛丽·安宁发现——最早被认识的史前爬行动物之一。' },
     { label: '体型', value: '3.5米', description: '早侏罗世的中型海洋爬行动物。' },
   ],
+  relatedDinosaurs: [
+    { id: 'elasmosaurus', relationship: '大得多的后裔' },
+    { id: 'ichthyosaurus', relationship: '同时代' },
+  ],
+  discoveries: [
+    { year: 1823, location: '英国莱姆里杰斯', discoveredBy: '玛丽·安宁', note: '在侏罗纪海岸发现的第一具完整连接骨骼 — 科学上的轰动。' },
+  ],
+  fossilLocations: [
+    { country: '英国', region: '多塞特', coordinates: [50.7, -2.9], specimenName: '蓝莱阿斯组，侏罗纪海岸' },
+  ],
 }

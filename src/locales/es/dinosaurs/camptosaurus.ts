@@ -14,4 +14,16 @@ export default {
     { label: 'Epoca', value: 'Jurasico Tardio', description: '~155 millones de anos' },
     { label: 'Parientes', value: 'Iguanodon', description: 'Antecesor de los iguanodontidos' },
   ],
+  relatedDinosaurs: [
+    { id: 'iguanodon', relationship: 'Pariente cercano iguanodóntido' },
+    { id: 'edmontosaurus', relationship: 'Línea posterior de hadrosáuridos descendientes' },
+    { id: 'muttaburrasaurus', relationship: 'Pariente ornitópodo posterior' },
+  ],
+  discoveries: [
+    { discoveredBy: 'O.C. Marsh', note: 'Múltiples especímenes recuperados durante las Guerras de los Huesos; Marsh describió el género en 1879.' },
+  ],
+  fossilLocations: [
+    { region: 'Condado de Albany, Wyoming (Formación Morrison)', specimenName: 'YPM 1877 — material del holotipo' },
+    { region: 'Monumento Nacional de los Dinosaurios, Utah', specimenName: 'Especímenes referidos de series de crecimiento' },
+  ],
 }

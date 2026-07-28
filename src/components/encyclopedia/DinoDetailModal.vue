@@ -4,6 +4,7 @@ import { useI18n } from 'vue-i18n'
 import { useModeStore } from '@/stores/useModeStore'
 import type { Dinosaur } from '@/types/dinosaur'
 import { useSpeechSynthesis } from '@/composables/useSpeechSynthesis'
+import { useDinoTranslator } from '@/composables/useDinoTranslation'
 import BaseModal from '@/components/ui/BaseModal.vue'
 import BaseIcon from '@/components/ui/BaseIcon.vue'
 import BaseButton from '@/components/ui/BaseButton.vue'
@@ -23,9 +24,14 @@ const emit = defineEmits<{
 const { t, locale } = useI18n()
 const modeStore = useModeStore()
 const { isSupported: ttsSupported, isSpeaking, speak, stop } = useSpeechSynthesis()
+const { translateDino } = useDinoTranslator()
+
+// Apply locale-specific overrides (Russian, German, etc.) so every visible
+// string — not just the ones the page passes through `t()` — comes through translated.
+const dino = computed(() => (props.dino ? translateDino(props.dino) : null))
 
 const ttsText = computed(() => {
-  const d = props.dino
+  const d = dino.value
   if (!d) return ''
   const description = modeStore.isKidsMode ? d.kidsDescription : d.description
   const facts = d.facts.map((f, i) => `${t('ui.encyclopedia.ttsFact', { n: i + 1 })}. ${f.label}: ${f.value}. ${f.description}`).join('. ')
@@ -143,7 +149,8 @@ watch(() => props.isOpen, (open) => {
             </div>
           </div>
 
-          <div class="p-4 rounded-[var(--radius-md)] bg-[rgba(212,164,58,0.06)] border border-[rgba(212,164,58,0.1)] mb-4">
+          <div class="p-4 rounded-[var(--radius-md)] mb-4"
+            style="background: var(--funfact-bg); border: 1px solid var(--funfact-border);">
             <div class="text-xs font-semibold text-[var(--color-brand-amber)] mb-1">{{ t('ui.encyclopedia.funFact') }}</div>
             <p class="text-sm text-[var(--color-text-secondary)]">{{ dino.funFact }}</p>
           </div>

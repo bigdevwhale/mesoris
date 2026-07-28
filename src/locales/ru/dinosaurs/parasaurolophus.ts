@@ -14,4 +14,16 @@ export default {
       { label: 'Социальность', value: 'Крупные стада', description: 'Жил большими стадами и, вероятно, был очень социальным животным.' },
       { label: 'Зубы', value: 'Сотни', description: 'Имел сотни плотно упакованных зубов, образующих сложную перетирающую батарею.' },
     ],
+    relatedDinosaurs: [
+      { id: 'corythosaurus', relationship: 'Сородич' },
+      { id: 'lambeosaurus', relationship: 'Близкий родственник' },
+    ],
+    discoveries: [
+      { discoveredBy: 'Уильям Паркс', note: 'Обнаружен первый череп.' },
+      { discoveredBy: 'Томас Уильямсон', note: 'Очень хорошо сохранившийся череп.' },
+    ],
+    fossilLocations: [
+      { region: 'Альберта, Канада', specimenName: 'Формация Дайносaur-Парк' },
+      { region: 'Нью-Мексико, США' },
+    ],
   }

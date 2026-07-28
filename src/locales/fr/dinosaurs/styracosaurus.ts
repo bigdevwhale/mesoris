@@ -14,4 +14,14 @@ export default {
     { label: 'Taille', value: '5,5 m', description: 'Un cératopsien de taille moyenne' },
     { label: 'Époque', value: '76–75 millions d\'années', description: 'Crétacé supérieur de l\'Alberta' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: 'Parent' },
+    { id: 'pachyrhinosaurus', relationship: 'Proche parent' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Charles M. Sternberg', note: 'Premier crâne découvert.' },
+  ],
+  fossilLocations: [
+    { region: 'Alberta', specimenName: 'Formation Dinosaur Park' },
+  ],
 }

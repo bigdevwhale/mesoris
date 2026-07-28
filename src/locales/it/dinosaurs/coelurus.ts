@@ -14,4 +14,16 @@ export default {
     { label: 'Dieta', value: 'Specialista in prede piccole', description: 'Probabilmente si nutriva di lucertole, mammiferi e giovani dinosauri con morsi rapidi e mani prensili.' },
     { label: 'Ecosistema', value: 'Compagno di Morrison', description: 'Coelurus viveva accanto a giganti come Allosaurus e Stegosaurus, ma occupava una nicchia di predatore molto più piccola.' },
   ],
+  relatedDinosaurs: [
+    { id: 'compsognathus', relationship: 'Nicchia di teropode di piccola taglia paragonabile' },
+    { id: 'ornithomimus', relationship: 'Celurosauro cursore successivo con tratti cursoriali convergenti' },
+    { id: 'allosaurus', relationship: 'Grande predatore che condivideva la stessa formazione' },
+  ],
+  discoveries: [
+    { year: 1879, location: 'Como Bluff, Wyoming, USA', discoveredBy: 'Squadre di spedizione di O.C. Marsh', note: 'Materiale tipo descritto come Coelurus fragilis da strati della Morrison.' },
+    { year: 1980, location: 'Rivalutazioni della Morrison', discoveredBy: 'Vari specialisti di teropodi', note: 'La rianalisi ha chiarito le probabili affinità di piccolo celurosauro del taxon.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Como Bluff, Wyoming (Formazione Morrison)', coordinates: [41.8, -106.0], specimenName: 'Materiale tipo di Coelurus fragilis' },
+  ],
 }

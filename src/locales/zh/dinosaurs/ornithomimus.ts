@@ -14,4 +14,16 @@
     { label: '名称', value: '"鸟类模仿者"', description: '惊人地类似于现代鸵鸟——相同的体型，相同的生活方式。' },
     { label: '体型', value: '4米', description: '中型兽脚类，大约一只大鸵鸟的大小。' },
   ],
+  relatedDinosaurs: [
+    { id: 'gallimimus', relationship: '近亲' },
+    { id: 'struthiomimus', relationship: '近亲' },
+  ],
+  discoveries: [
+    { discoveredBy: '奥塞内尔·查尔斯·马什', note: '在化石战争期间首次描述。' },
+    { discoveredBy: '弗朗索瓦·泰里安', note: '发现保存羽毛的带羽标本。' },
+  ],
+  fossilLocations: [
+    { region: '艾伯塔省', specimenName: '马蹄峡谷组' },
+    { region: '科罗拉多州', specimenName: '' },
+  ],
 }

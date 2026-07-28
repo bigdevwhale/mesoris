@@ -14,4 +14,15 @@ export default {
     { label: 'Sensi', value: 'Udito fine', description: 'Ottimo udito — la cresta aiutava ad amplificare e dirigere il suono per la comunicazione.' },
     { label: 'Età', value: 'La cresta rivela l\'età', description: 'Giovani senza cresta, subadulti con piccola protuberanza, adulti con cresta maestosa completamente sviluppata.' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: 'Parente stretto' },
+    { id: 'corythosaurus', relationship: 'Parente stretto' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Lawrence Lambe', note: 'Primo esemplare scoperto.' },
+    { discoveredBy: 'William Parks', note: 'Scheletro completo con cresta nominato.' },
+  ],
+  fossilLocations: [
+    { region: 'Alberta, Canada', specimenName: 'Formazione Dinosaur Park' },
+  ],
 }

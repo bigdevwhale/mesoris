@@ -14,4 +14,14 @@ export default {
     { label: 'Cervello', value: 'Piccolo cervello', description: 'Come tutti gli stegosauri, un cervello molto piccolo rispetto al corpo — grande come una noce per un animale di quasi 3 tonnellate.' },
     { label: 'Cina', value: 'Lo stegosauro cinese meglio conosciuto', description: 'Lo stegosauro più completamente descritto della Cina, conosciuto da due scheletri parziali della provincia del Sichuan.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Parente stegosauride nordamericano stretto' },
+    { id: 'kentrosaurus', relationship: 'Parente stegosauride africano' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Dong Zhiming, Tang Zilu, Zhou Shiwu', note: 'Due scheletri parziali recuperati dalla Formazione di Shangshaximiao, descritti nel 1977; un esemplare è esposto al Museo dei Dinosauri di Zigong.' },
+  ],
+  fossilLocations: [
+    { region: 'Zigong, provincia del Sichuan (Formazione di Shangshaximiao)', specimenName: 'CV 209 — scheletro principale, Museo dei Dinosauri di Zigong' },
+  ],
 }

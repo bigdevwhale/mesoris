@@ -14,4 +14,16 @@ export default {
     { label: '공룡 아님', value: '익룡', description: '실제로는 하늘을 나는 파충류(익룡)로 진짜 공룡이 아님. 그러나 공룡과 나란히 살았다.' },
     { label: '식성', value: '어식성', description: '서부 내륙해 위를 활공하며 긴 부리로 물고기를 잡았다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'quetzalcoatlus', relationship: '더 큰 친척' },
+    { id: 'pterodactylus', relationship: '더 작은 친척' },
+    { id: 'mosasaurus', relationship: '공유 생태계' },
+  ],
+  discoveries: [
+    { discoveredBy: '오스니얼 찰스 마시', note: '최초의 프테라노돈 화석 발견.' },
+    { discoveredBy: 'S. W. 윌리스턴', note: '완전한 두개골이 distinctive한 머리 볏을 드러냈다.' },
+  ],
+  fossilLocations: [
+    { region: '캔자스', specimenName: '니오브라라 백악층' },
+  ],
 }

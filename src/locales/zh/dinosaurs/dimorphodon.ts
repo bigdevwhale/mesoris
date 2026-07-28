@@ -14,4 +14,14 @@
     { label: '年代', value: '侏罗纪早期', description: '最早期的翼龙之一——来自飞行还是一项崭新技术的时代。' },
     { label: '飞行', value: '扑翼式', description: '宽而短的翅膀——飞行方式更像蝙蝠，而不是后来的滑翔者。' },
   ],
+  relatedDinosaurs: [
+    { id: 'pterodactylus', relationship: '更进步的后代' },
+    { id: 'rhamphorhynchus', relationship: '同时代' },
+  ],
+  discoveries: [
+    { year: 1828, location: '英国多塞特', discoveredBy: '玛丽·安宁', note: '由著名化石猎人玛丽·安宁在侏罗纪海岸发现。' },
+  ],
+  fossilLocations: [
+    { country: '英国', region: '多塞特', coordinates: [50.6, -2.9], specimenName: '蓝里阿斯组，侏罗纪海岸' },
+  ],
 }

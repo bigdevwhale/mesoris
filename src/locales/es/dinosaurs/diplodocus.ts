@@ -14,4 +14,17 @@ export default {
     { label: 'Dieta', value: 'Plantas a baja altura', description: 'Su cuello era mas horizontal que vertical' },
     { label: 'Peso', value: '16 toneladas', description: 'Relativamente ligero para su enorme longitud' },
   ],
+  relatedDinosaurs: [
+    { id: 'apatosaurus', relationship: 'Pariente cercano' },
+    { id: 'allosaurus', relationship: 'Depredador' },
+    { id: 'brachiosaurus', relationship: 'Contemporaneo' },
+  ],
+  discoveries: [
+    { year: 1877, location: 'Colorado, EE. UU.', discoveredBy: 'Samuel Wendell Williston', note: 'Primeros fosiles encontrados en Canon City.' },
+    { year: 1899, location: 'Wyoming, EE. UU.', discoveredBy: 'Expedicion de la AMNH', note: 'Esqueleto mas completo en Sheep Creek.' },
+  ],
+  fossilLocations: [
+    { country: 'EE. UU.', region: 'Wyoming', coordinates: [43.0, -107.5], specimenName: 'Formacion Morrison' },
+    { country: 'EE. UU.', region: 'Colorado', coordinates: [39.5, -105.0] },
+  ],
 }

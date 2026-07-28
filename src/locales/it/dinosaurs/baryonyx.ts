@@ -14,4 +14,14 @@ export default {
     { label: 'Dieta', value: 'Piscivoro', description: 'Uno dei rari dinosauri conosciuti principalmente come piscivori, con resti di pesce trovati nello stomaco.' },
     { label: 'Scoperta', value: 'Inghilterra, 1983', description: 'Scoperto da un collezionista di fossili dilettante in una cava di argilla del Surrey — una delle scoperte di dinosauri più entusiasmanti d\'Europa.' },
   ],
+  relatedDinosaurs: [
+    { id: 'spinosaurus', relationship: 'Parente stretto' },
+    { id: 'suchomimus', relationship: 'Parente stretto' },
+  ],
+  discoveries: [
+    { year: 1983, location: 'Surrey, Regno Unito', discoveredBy: 'William Walker', note: 'Un cercatore di fossili dilettante trovò l\'enorme artiglio in una cava di argilla.' },
+  ],
+  fossilLocations: [
+    { country: 'Regno Unito', region: 'Surrey', coordinates: [51.2, -0.5], specimenName: 'Formazione di Weald Clay' },
+  ],
 }

@@ -14,4 +14,16 @@ export default {
     { label: 'Parenté', value: 'Stégosaure africain', description: 'Un proche cousin du Stégosaure — montrant que les stégosaures étaient répandus bien au-delà de l\'Amérique du Nord.' },
     { label: 'Pattes arrière', value: 'Arrière-train puissant', description: 'Corps léger à l\'avant et lourd à l\'arrière — aidait à balancer la queue comme un fléau d\'armes à pointes.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Proche parent' },
+    { id: 'brachiosaurus', relationship: 'Contemporain de Tendaguru' },
+    { id: 'allosaurus', relationship: 'Analogue prédateur' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Expédition allemande de Tendaguru', note: 'De grandes fouilles ont permis de récupérer plusieurs squelettes dans les célèbres gisements du Jurassique.' },
+    { discoveredBy: 'Edwin Hennig', note: 'Hennig a formellement décrit le Kentrosaure et a souligné sa disposition inhabituelle de piquants.' },
+  ],
+  fossilLocations: [
+    { region: 'Tendaguru, Tanzanie', specimenName: 'Formation de Tendaguru' },
+  ],
 }

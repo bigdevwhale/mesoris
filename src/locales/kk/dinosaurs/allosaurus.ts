@@ -14,4 +14,18 @@ export default {
     { label: 'Жылдамдығы', value: '45 км/сағ', description: 'Өз уақытындағы ең жылдам ірі жыртқыштардың бірі, ол өзінің олжасының көп бөлігін қуып жететін.' },
     { label: 'Таралуы', value: 'Ең көп таралған', description: 'Моррисон формациясының ең көп таралған ірі жыртқышы - нағыз юра арыстаны.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Олжа' },
+    { id: 'diplodocus', relationship: 'Олжа' },
+    { id: 'ceratosaurus', relationship: 'Бәсекелес' },
+  ],
+  discoveries: [
+    { year: 1877, location: 'Колорадо, АҚШ', discoveredBy: 'Осниэль Чарльз Марш', note: 'Сүйек соғыстары кезінде алғаш рет сипатталған.' },
+    { year: 1991, location: 'Вайоминг, АҚШ', discoveredBy: 'Кирби Сайбер', note: '"Биг Эл" — ең толық теропод қаңқаларының бірі.' },
+  ],
+  fossilLocations: [
+    { country: 'АҚШ', region: 'Юта', coordinates: [39.0, -111.0], specimenName: 'Кливленд-Ллойд карьері' },
+    { country: 'АҚШ', region: 'Вайоминг', coordinates: [43.0, -107.5] },
+    { country: 'Португалия', region: 'Лориньян', coordinates: [39.3, -9.3] },
+  ],
 }

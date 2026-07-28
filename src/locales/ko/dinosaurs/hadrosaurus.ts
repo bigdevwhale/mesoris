@@ -14,4 +14,15 @@ export default {
     { label: '발견지', value: '미국 뉴저지주', description: '1858년에 발견된, 북아메리카 동부의 몇 안 되는 중요한 공룡 화석 중 하나입니다.' },
     { label: '자세', value: '이족 보행', description: '전시를 통해 공룡이 "거대한 도마뱀"이 아닌, 활발한 이족 보행 동물임을 처음으로 보여주었습니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'edmontosaurus', relationship: '후대의 하드로사우루스과 친척' },
+    { id: 'parasaurolophus', relationship: '볏이 있는 하드로사우루스과 사촌' },
+    { id: 'iguanodon', relationship: '더 이른 시기의 조각류 조상 형태' },
+  ],
+  discoveries: [
+    { discoveredBy: '윌리엄 파커 폴크(William Parker Foulke)', note: '마를(marl) 채굴 과정에서 거의 완전한 골격이 발견되었다. 이후 조셉 레이디(Joseph Leidy)가 명명했다.' },
+  ],
+  fossilLocations: [
+    { region: '해든필드, 뉴저지주', specimenName: 'ANSP 10005 — 홀로타입 골격' },
+  ],
 }

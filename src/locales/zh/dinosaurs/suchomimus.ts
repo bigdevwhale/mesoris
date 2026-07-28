@@ -14,5 +14,17 @@ const translations = {
     { label: '体型', value: '11 米', description: '一种大型棘龙科。' },
     { label: '食性', value: '鱼食性', description: '以淡水鱼类为食。' },
   ],
+  relatedDinosaurs: [
+    { id: 'baryonyx', relationship: '近亲' },
+    { id: 'spinosaurus', relationship: '体型更大的表亲' },
+    { id: 'nigersaurus', relationship: '同时代的邻居' },
+  ],
+  discoveries: [
+    { discoveredBy: '保罗·塞里诺及其团队', note: '在一次大型撒哈拉考察中发现了异常完整的骨骼。' },
+    { discoveredBy: '保罗·塞里诺与同事们', note: '正式描述确立了Suchomimus为巨大的重爪龙亚科棘龙科成员。' },
+  ],
+  fossilLocations: [
+    { region: '加杜法乌阿', specimenName: '埃拉兹组' },
+  ],
 }
 export default translations

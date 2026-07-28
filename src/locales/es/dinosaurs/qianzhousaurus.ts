@@ -14,4 +14,15 @@ export default {
     { label: 'Familia', value: 'Alioraminos', description: 'Pertenece a una pequeña rama de tiranosáuridos de hocico largo llamados Alioramini, distinta de los gigantes trituradores de huesos.' },
     { label: 'Descubrimiento', value: 'Hallazgo de 2014', description: 'Descrito formalmente en 2014 a partir de un fósil de Ganzhou, en el sur de China, un notable descubrimiento del Cretácico Tardío.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tarbosaurus', relationship: 'Pariente tiranosáurido asiático' },
+    { id: 'albertosaurus', relationship: 'Tiranosáurido más antiguo' },
+    { id: 'tyrannosaurus-rex', relationship: 'Primo lejano' },
+  ],
+  discoveries: [
+    { year: 2010, location: 'Ganzhou, Jiangxi Province, China', discoveredBy: 'Obreros de la construcción; posteriormente recuperados por Lü Junchang y su equipo', note: 'Cráneo casi completo y esqueleto parcial — el alioramino más completo encontrado hasta la fecha.' },
+  ],
+  fossilLocations: [
+    { country: 'China', region: 'Formación Nanxiong, Ganzhou, Jiangxi', coordinates: [25.85, 114.95], specimenName: 'GMFPI-PV-001 — holotipo, cráneo y esqueleto' },
+  ],
 }

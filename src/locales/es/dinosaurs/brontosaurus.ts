@@ -14,4 +14,18 @@ export default {
     { label: 'Epoca', value: 'Jurasico Tardio', description: '~155 millones de anos' },
     { label: 'Redescubierto', value: '2015', description: 'Reinstaurado como genero valido' },
   ],
+  relatedDinosaurs: [
+    { id: 'apatosaurus', relationship: 'Pariente diplodócido muy cercano (en tiempos considerado el mismo género)' },
+    { id: 'diplodocus', relationship: 'Pariente diplodócido cercano' },
+    { id: 'brachiosaurus', relationship: 'Sauropodo contemporáneo' },
+  ],
+  discoveries: [
+    { year: 1879, location: 'Formación Morrison, Como Bluff, Wyoming, EE. UU.', discoveredBy: 'O.C. Marsh', note: 'Nombrado Brontosaurus excelsus por Marsh; sinonimizado con Apatosaurus en 1903, pero rehabilitado como género válido en 2015.' },
+    { year: 2015, location: 'Artículo publicado (múltiples colecciones)', discoveredBy: 'Emanuel Tschopp, Octavio Mateus, Roger Benson', note: 'Un estudio anatómico de referencia sobre 81 diplodócidos restableció a Brontosaurus como un género válido y distinto de Apatosaurus.' },
+  ],
+  fossilLocations: [
+    { country: 'EE. UU.', region: 'Como Bluff, Wyoming (Formación Morrison)', coordinates: [41.8, -106.0], specimenName: 'YPM 1980 — holotipo de B. excelsus' },
+    { country: 'EE. UU.', region: 'Garden Park, Colorado (Formación Morrison)', coordinates: [38.4, -105.1], specimenName: 'AMNH 460 — gran espécimen referido' },
+    { country: 'EE. UU.', region: 'Bone Cabin Quarry, Wyoming (Formación Morrison)', coordinates: [41.79, -105.67], specimenName: 'Material de B. parvus' },
+  ],
 }

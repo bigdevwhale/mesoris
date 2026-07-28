@@ -14,4 +14,17 @@
     { label: '神話', value: '25メートルではない', description: 'テレビはリオプレウロドンを25メートルの海の怪物として有名にしたが、実際の証拠はもっと小さな動物を示している。' },
     { label: '遊泳', value: '四ヒレ推進', description: '他の首長竜と同様に、四つのヒレを協調させて水中を「飛んで」いた。' },
   ],
+  relatedDinosaurs: [
+    { id: 'kronosaurus', relationship: '後代のプリオサウルス相当' },
+    { id: 'plesiosaurus', relationship: '遠い首長竜の近縁種' },
+    { id: 'ichthyosaurus', relationship: '同時代の海棲種' },
+  ],
+  discoveries: [
+    { discoveredBy: 'アンリ・エミール・ソヴァージュ', note: '歯と顎の資料がLiopleurodon命名の基礎となった。' },
+    { discoveredBy: '多数の収集家と博物館', note: '英国のオックスフォード・クレー層産出資料が後に古生物学者の理解を助けた。' },
+  ],
+  fossilLocations: [
+    { region: 'パ・ド・カレ', specimenName: 'カロビアン海成層' },
+    { region: 'オックスフォードシャー', specimenName: 'オックスフォード・クレー層' },
+  ],
 }

@@ -14,5 +14,16 @@ const translations = {
     { label: '时代', value: '侏罗纪早期', description: '约 1.95 亿年前。' },
     { label: '发现地', value: '英格兰', description: '侏罗纪海岸，多塞特郡。' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: '后期甲龙类后裔谱系' },
+    { id: 'ankylosaurus', relationship: '后期甲龙类后裔谱系' },
+    { id: 'euoplocephalus', relationship: '后期甲龙类近亲' },
+  ],
+  discoveries: [
+    { discoveredBy: '詹姆斯·哈里森', note: '发现完整骨架；理查德·欧文于1861年在关于早期恐龙解剖学的开创性论文中对其进行了描述。' },
+  ],
+  fossilLocations: [
+    { region: '英国多塞特郡查茅斯（下里阿斯统）', specimenName: 'NHMUK PV R1111 — 正模标本，几乎完整的骨架' },
+  ],
 }
 export default translations

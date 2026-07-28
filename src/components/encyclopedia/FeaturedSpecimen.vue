@@ -96,7 +96,7 @@ onMounted(() => {
 
       <!-- Bottom: name overlay -->
       <div class="absolute bottom-0 inset-x-0 z-20 px-5 pb-4 pt-10"
-        style="background: linear-gradient(to top, rgba(8,14,8,0.88) 0%, rgba(8,14,8,0.55) 60%, transparent 100%)">
+        style="background: linear-gradient(to top, var(--card-fade-1) 0%, var(--card-fade-2) 60%, transparent 100%)">
         <div
           class="inline-block px-2.5 py-0.5 rounded-full text-[10px] font-semibold uppercase tracking-wide mb-2"
           :class="{

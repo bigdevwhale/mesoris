@@ -14,4 +14,16 @@
     { label: '社会性', value: '大群体', description: '生活在大型群体中的高度社会性鸭嘴龙。' },
     { label: '牙齿', value: '数百颗', description: '含有数百颗紧密排列臼齿的复杂齿列。' },
   ],
+  relatedDinosaurs: [
+    { id: 'corythosaurus', relationship: '近亲' },
+    { id: 'lambeosaurus', relationship: '近亲' },
+  ],
+  discoveries: [
+    { year: 1920, location: '加拿大艾伯塔省', discoveredBy: '威廉·帕克斯', note: '发现的第一具头骨。' },
+    { year: 1999, location: '美国新墨西哥州', discoveredBy: '托马斯·威廉姆森', note: '保存非常好的头骨。' },
+  ],
+  fossilLocations: [
+    { country: '加拿大', region: '艾伯塔省', coordinates: [54.5, -113.0], specimenName: '恐龙公园组' },
+    { country: '美国', region: '新墨西哥州', coordinates: [36.0, -107.5] },
+  ],
 }

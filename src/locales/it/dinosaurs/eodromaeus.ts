@@ -14,4 +14,15 @@ export default {
     { label: 'Coesistenza', value: 'Stessa formazione di Eoraptor', description: 'Viveva con Eoraptor nella stessa formazione, mostrando la divergenza precoce delle stirpi di dinosauri.' },
     { label: 'Evoluzione', value: 'Antenato dei teropodi', description: 'Uno dei teropodi più basali — aiuta a comprendere il piano corporeo di tutti i dinosauri carnivori successivi.' },
   ],
+  relatedDinosaurs: [
+    { id: 'eoraptor', relationship: 'Contemporaneo della stessa formazione' },
+    { id: 'herrerasaurus', relationship: 'Predatore contemporaneo di dimensioni maggiori' },
+    { id: 'coelophysis', relationship: 'Parente stretto successivo' },
+  ],
+  discoveries: [
+    { year: 2011, location: 'Parco Provinciale Ischigualasto, San Juan, Argentina', discoveredBy: 'Ricardo N. Martínez et al.', note: 'Scheletro quasi completo descritto sulla rivista Science; denominato "murphi" in onore di James Murphy, sostenitore del museo.' },
+  ],
+  fossilLocations: [
+    { country: 'Argentina', region: 'Provincia di San Juan, Formazione Ischigualasto', coordinates: [-30.0, -67.9], specimenName: 'PVSJ 562 — scheletro olotipo quasi completo' },
+  ],
 }

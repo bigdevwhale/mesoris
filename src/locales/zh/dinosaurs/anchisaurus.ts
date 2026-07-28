@@ -14,4 +14,16 @@
     { label: '食性', value: '植食性', description: '叶形带锯齿的牙齿使近蜥龙能够处理坚韧的植物，如蕨类和苏铁。' },
     { label: '体长', value: '2.1 米', description: '体长仅2米多一点，近蜥龙是一种小型原蜥脚类——远不及从它的谱系中进化出来的巨型蜥脚类。' },
   ],
+  relatedDinosaurs: [
+    { id: 'plateosaurus', relationship: '近缘蜥脚形类' },
+    { id: 'eoraptor', relationship: '早期恐龙的远亲' },
+  ],
+  discoveries: [
+    { year: 1818, location: '美国康涅狄格州哈特福德县', discoveredBy: '小所罗门·埃尔斯沃斯', note: '在挖井时发现骨骼；在恐龙被正式确认之前，曾被错误地归类为人类遗骸。' },
+    { year: 1885, location: '美国马萨诸塞州斯普林菲尔德', discoveredBy: 'O·C·马什', note: '马什根据康涅狄格河谷更多材料正式描述并命名了近蜥龙。' },
+  ],
+  fossilLocations: [
+    { country: '美国', region: '康涅狄格州哈特福德县', coordinates: [41.8, -72.7], specimenName: '波特兰组模式标本' },
+    { country: '美国', region: '马萨诸塞州汉普登县', coordinates: [42.1, -72.6], specimenName: '斯普林菲尔德采石场标本' },
+  ],
 }

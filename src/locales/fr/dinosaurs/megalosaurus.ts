@@ -14,4 +14,13 @@ export default {
     { label: 'Apparence', value: 'Mal reconstitué', description: 'Les premières reconstitutions le montraient comme un lézard géant — on sait maintenant qu\'il marchait sur deux pattes.' },
     { label: 'Jurassique', value: 'Jurassique moyen', description: 'Vivait au Jurassique moyen d\'Angleterre — plus ancien qu\'Allosaurus et T. rex.' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: 'Parent éloigné' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Ouvriers de carrière', note: 'Os géants trouvés dans la carrière de Stonesfield — décrits plus tard par William Buckland en 1824.' },
+  ],
+  fossilLocations: [
+    { region: 'Oxfordshire, Royaume-Uni', specimenName: 'Ardoise de Stonesfield' },
+  ],
 }

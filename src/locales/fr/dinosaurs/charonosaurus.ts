@@ -14,4 +14,15 @@ export default {
     { label: 'Troupeau', value: 'Comportement grégaire', description: 'Plusieurs individus ont été trouvés ensemble, suggérant des animaux de troupeau qui migraient à travers les paysages anciens du nord-est de la Chine.' },
     { label: 'Son', value: 'Appels de résonance', description: 'Le tube creux de la crête fonctionnait comme un trombone, amplifiant les appels pour la communication.' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: 'Plus proche parent connu — crête quasi identique' },
+    { id: 'corythosaurus', relationship: 'Parent hadrosaure lambéosauriné' },
+    { id: 'lambeosaurus', relationship: 'Parent hadrosaure lambéosauriné' },
+  ],
+  discoveries: [
+    { year: 2000, location: 'Jiayin, province du Heilongjiang, Chine', discoveredBy: 'Pascal Godefroit et al.', note: 'Décrit en 2000 par Godefroit et ses collègues à partir de matériel collecté près du fleuve Amour ; nommé d\'après le Charon mythologique en raison de la situation frontalière du fleuve.' },
+  ],
+  fossilLocations: [
+    { country: 'Chine', region: 'District de Jiayin, province du Heilongjiang (formation de Yuliangze)', coordinates: [48.8, 130.4], specimenName: 'IVPP V12735 — holotype, crâne partiel et squelette' },
+  ],
 }

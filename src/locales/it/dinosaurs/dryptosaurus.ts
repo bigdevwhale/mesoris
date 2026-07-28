@@ -14,4 +14,16 @@ export default {
     { label: 'Ambiente', value: 'Cacciatore delle pianure costiere', description: 'Viveva nelle umide pianure costiere orientali, vicino al margine della Western Interior Seaway.' },
     { label: 'Eredità artistica', value: 'Icona pittorica classica', description: 'Il dipinto del 1897 "Leaping Laelaps" fece di Dryptosaurus uno dei primi dinosauri ritratti come attivo e dinamico.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Parente tirannosauride gigante successivo' },
+    { id: 'albertosaurus', relationship: 'Tirannosauride più derivato dell\'ovest del Nord America' },
+    { id: 'gorgosaurus', relationship: 'Un\'altra stirpe tirannosauroide del Campaniano-Maastrichtiano' },
+  ],
+  discoveries: [
+    { year: 1866, location: 'Barnsboro, New Jersey, USA', discoveredBy: 'Lavoratori di cava; descritto da Edward Drinker Cope', note: 'Originariamente nominato Laelaps aquilunguis da depositi costieri del Cretaceo.' },
+    { year: 1877, location: 'Revisione tassonomica', discoveredBy: 'Othniel Charles Marsh', note: 'Rinominato Dryptosaurus dopo che il nome Laelaps risultò già occupato.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Formazione Navesink, New Jersey', coordinates: [39.82, -75.13], specimenName: 'Materiale associato all\'olotipo' },
+  ],
 }

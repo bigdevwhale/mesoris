@@ -14,4 +14,14 @@
     { label: '体型', value: '狗一般大小', description: '仅1米长——恐龙从小开始，然后才演化成巨兽。' },
     { label: '地点', value: '月亮谷', description: '发现于阿根廷的月亮谷——世界上最重要的化石遗址之一。' },
   ],
+  relatedDinosaurs: [
+    { id: 'herrerasaurus', relationship: '同时代成员' },
+    { id: 'plateosaurus', relationship: '较晚的后代' },
+  ],
+  discoveries: [
+    { year: 1991, location: '阿根廷圣胡安省', discoveredBy: '里卡多·马丁内斯', note: '在月亮谷与赫雷拉龙相同的地层中被发现。' },
+  ],
+  fossilLocations: [
+    { country: '阿根廷', region: '圣胡安省', coordinates: [-30.0, -68.0], specimenName: '月亮谷伊斯基瓜拉斯托组' },
+  ],
 }

@@ -14,4 +14,15 @@ export default {
     { label: 'Zeitalter', value: 'Frühe Jurazeit', description: '~195 Millionen Jahre' },
     { label: 'Fundort', value: 'England', description: 'Jurassic Coast, Dorset' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Spätere Nachfahrenlinie der Thyreophoren' },
+    { id: 'ankylosaurus', relationship: 'Spätere Nachfahrenlinie der Thyreophoren' },
+    { id: 'euoplocephalus', relationship: 'Späterer Ankylosaurier-Verwandter' },
+  ],
+  discoveries: [
+    { discoveredBy: 'James Harrison', note: 'Vollständiges Skelett entdeckt; 1861 von Richard Owen in einer wegweisenden Arbeit über frühe Dinosaurieranatomie beschrieben.' },
+  ],
+  fossilLocations: [
+    { region: 'Charmouth, Dorset, England (Unterer Lias)', specimenName: 'NHMUK PV R1111 — Holotyp, nahezu vollständiges Skelett' },
+  ],
 }

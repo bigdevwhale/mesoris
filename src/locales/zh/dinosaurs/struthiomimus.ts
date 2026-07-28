@@ -14,5 +14,15 @@ const translations = {
     { label: '食性', value: '杂食性', description: '以植物、昆虫、蛋类和小型脊椎动物为食。' },
     { label: '体型', value: '4.3 米', description: '大小与马相当。' },
   ],
+  relatedDinosaurs: [
+    { id: 'gallimimus', relationship: '近亲' },
+    { id: 'ornithomimus', relationship: '近亲' },
+  ],
+  discoveries: [
+    { discoveredBy: '劳伦斯·兰布', note: '首批标本发现于贝利河组。' },
+  ],
+  fossilLocations: [
+    { region: '艾伯塔省', specimenName: '恐龙公园组' },
+  ],
 }
 export default translations

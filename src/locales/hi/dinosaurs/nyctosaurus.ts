@@ -14,4 +14,15 @@ export default {
     { label: 'पंख', value: 'संकरे और लंबे', icon: 'wind', description: 'वेस्टर्न इंटीरियर सीवे के ऊपर गतिशील उड़ान के लिए अनुकूलित लंबे, संकरे पंख — एक क्रेटेशस अल्बाट्रॉस की तरह।' },
     { label: 'उड़ान', value: 'हवाई मछुआरा', icon: 'fish', description: 'क्रेटेशस कल्प के समुद्र के ऊपर उड़ता और मछली चुनने के लिए अपनी दंतहीन चोंच डुबोता।' },
   ],
+  relatedDinosaurs: [
+    { id: 'pteranodon', relationship: 'समकालीन प्टेरानोडोंटिड संबंधी' },
+    { id: 'dimorphodon', relationship: 'पूर्ववर्ती आधारभूत टेरोसॉर' },
+    { id: 'quetzalcoatlus', relationship: 'दूरस्थ अज़्दार्किड संबंधी' },
+  ],
+  discoveries: [
+    { year: 1876, location: 'नियोब्रारा चॉक, कैन्सास, अमेरिका', discoveredBy: 'O.C. Marsh', note: 'कैन्सास की चॉक निक्षेपों से वर्णित पहला निक्टोसॉरस।' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'नियोब्रारा चॉक, कैन्सास', coordinates: [38.7, -98.5], specimenName: 'नियोब्रारा चॉक टाइप सामग्री' },
+  ],
 }

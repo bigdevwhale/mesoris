@@ -14,4 +14,14 @@ export default {
     { label: 'Jagd', value: 'Aktiver Jäger', description: 'Belege zeigen, dass er aktiv jagte und Beute bekämpfte — kein Aasfresser.' },
     { label: 'Biss', value: 'Knochenbrechend', description: 'Entwickelte bereits den mächtigen knochenbrechenden Biss, der T. rex berühmt machte.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Nachfahr' },
+  ],
+  discoveries: [
+    { year: 1921, location: 'Alberta, Kanada', discoveredBy: 'Charles M. Sternberg', note: 'Erster Schädel in der Oldman-Formation entdeckt.' },
+  ],
+  fossilLocations: [
+    { country: 'Kanada', region: 'Alberta', coordinates: [49.5, -112.0], specimenName: 'Oldman-Formation' },
+    { country: 'USA', region: 'Montana', coordinates: [47.5, -110.5], specimenName: 'Two Medicine-Formation' },
+  ],
 }

@@ -14,4 +14,16 @@ export default {
     { label: 'Epoca', value: '71-68 Ma', description: 'Poco antes del T. rex' },
     { label: 'Ubicacion', value: 'Alberta, Canada', description: 'Tiranosaurido dominante regional' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Pariente cercano más grande' },
+    { id: 'daspletosaurus', relationship: 'Otro tiranosáurido' },
+    { id: 'pachyrhinosaurus', relationship: 'Posible presa' },
+  ],
+  discoveries: [
+    { year: 1884, location: 'Río Red Deer, Alberta, Canadá', discoveredBy: 'Joseph Burr Tyrrell', note: 'El primer material craneal fue encontrado durante una expedición del Servicio Geológico.' },
+    { year: 1910, location: 'Alberta, Canadá', discoveredBy: 'Barnum Brown', note: 'Brown descubrió el famoso yacimiento masivo de huesos que transformó la comprensión de la especie.' },
+  ],
+  fossilLocations: [
+    { country: 'Canadá', region: 'Alberta', coordinates: [51.9, -112.9], specimenName: 'Formación Horseshoe Canyon' },
+  ],
 }

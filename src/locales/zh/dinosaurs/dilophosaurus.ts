@@ -14,4 +14,16 @@
     { label: '咬合', value: '无毒液', description: '没有毒液或颈褶的科学证据——纯粹是电影的创造。' },
     { label: '时代', value: '侏罗纪早期', description: '在恐龙刚刚统治陆地之后几百万年就开始狩猎了。' },
   ],
+  relatedDinosaurs: [
+    { id: 'coelophysis', relationship: '早期兽脚类近亲' },
+    { id: 'ceratosaurus', relationship: '后期有冠兽脚类对应种' },
+    { id: 'allosaurus', relationship: '后继的顶级捕食者' },
+  ],
+  discoveries: [
+    { discoveredBy: '萨姆·韦尔斯', note: '第一具骨架在加州大学考察期间从凯恩塔组发掘。' },
+    { discoveredBy: '萨姆·韦尔斯', note: '更好的标本清晰显示了独特的双冠,因而得名双冠龙。' },
+  ],
+  fossilLocations: [
+    { region: '亚利桑那州', specimenName: '凯恩塔组' },
+  ],
 }

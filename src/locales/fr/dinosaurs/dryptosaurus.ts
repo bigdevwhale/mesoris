@@ -14,4 +14,16 @@ export default {
     { label: 'Environnement', value: 'Chasseur de plaine côtière', description: 'Il vivait dans les basses terres côtières humides de l\'est, près de la marge de la Voie maritime intérieure occidentale.' },
     { label: 'Héritage artistique', value: 'Icône picturale classique', description: 'La peinture de 1897 « Leaping Laelaps » a fait de Dryptosaurus l\'un des premiers dinosaures représentés de façon active et dynamique.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Parent tyrannosauridé géant plus tardif' },
+    { id: 'albertosaurus', relationship: 'Tyrannosauridé plus dérivé de l\'ouest de l\'Amérique du Nord' },
+    { id: 'gorgosaurus', relationship: 'Une autre lignée de tyrannosauroïdes campano-maastrichtiens' },
+  ],
+  discoveries: [
+    { year: 1866, location: 'Barnsboro, New Jersey, États-Unis', discoveredBy: 'Ouvriers de carrière ; décrit par Edward Drinker Cope', note: 'Initialement nommé Laelaps aquilunguis à partir de dépôts côtiers du Crétacé.' },
+    { year: 1877, location: 'Révision taxonomique', discoveredBy: 'Othniel Charles Marsh', note: 'Renommé Dryptosaurus après que le nom Laelaps se soit révélé déjà occupé.' },
+  ],
+  fossilLocations: [
+    { country: 'États-Unis', region: 'Formation de Navesink, New Jersey', coordinates: [39.82, -75.13], specimenName: 'Matériel associé à l\'holotype' },
+  ],
 }

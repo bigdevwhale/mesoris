@@ -14,4 +14,15 @@ export default {
     { label: 'उत्पत्ति', value: 'मोरक्को', description: 'मोरक्को के ओलाद अब्दौन बेसिन के फ़ॉस्फ़ेट में खोजा गया — क्रेटेशस कल्प का एक समुद्री खज़ाना।' },
     { label: 'गर्दन', value: 'बहुत लंबी', description: '50 से अधिक ग्रीवा कशेरुकाओं वाली लंबी गर्दन, मछली के झुंड पर घात लगाने के लिए उपयोग की जाती थी।' },
   ],
+  relatedDinosaurs: [
+    { id: 'elasmosaurus', relationship: 'बड़ा एलास्मोसॉरिड चचेरा भाई' },
+    { id: 'plesiosaurus', relationship: 'लंबी-गर्दन वाला प्लीसियोसॉर संबंधी' },
+    { id: 'mosasaurus', relationship: 'समकालीन समुद्री परभक्षी' },
+  ],
+  discoveries: [
+    { discoveredBy: 'पेगी विंसेंट और उनकी टीम', note: 'आंशिक खोपड़ी और ग्रीवा कशेरुकाओं का वर्णन कर नाम दिया गया।' },
+  ],
+  fossilLocations: [
+    { region: 'ओलाद अब्दौन बेसिन', specimenName: 'OCP DEK/GE 307 — होलोटाइप आंशिक खोपड़ी और कशेरुकाएँ' },
+  ],
 }

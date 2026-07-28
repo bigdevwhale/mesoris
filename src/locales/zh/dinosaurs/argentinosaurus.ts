@@ -14,4 +14,16 @@
     { label: '椎骨', value: '巨型骨骼', description: '它的背椎骨如此巨大，单块就比一个人还大。' },
     { label: '稀有度', value: '仅知于碎片', description: '尽管化石材料不完整，科学家仍知道它非常巨大——仅保存的骨骼就已极其庞大。' },
   ],
+  relatedDinosaurs: [
+    { id: 'giganotosaurus', relationship: '捕食者威胁' },
+    { id: 'apatosaurus', relationship: '远方蜥脚类表亲' },
+    { id: 'sauroposeidon', relationship: '巨兽对手' },
+  ],
+  discoveries: [
+    { year: 1987, location: '阿根廷内乌肯', discoveredBy: '吉列尔莫·埃雷迪亚', note: '一名农场工人在温库尔组中发现了这些巨大的骨骼。' },
+    { year: 1993, location: '阿根廷巴塔哥尼亚', discoveredBy: '何塞·波拿巴和罗多尔福·科里亚', note: '正式的科学描述确立了阿根廷龙为已知最大的泰坦巨龙类之一。' },
+  ],
+  fossilLocations: [
+    { country: '阿根廷', region: '内乌肯', coordinates: [-38.7, -69.8], specimenName: '温库尔组' },
+  ],
 }

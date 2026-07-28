@@ -14,4 +14,16 @@
     { label: '名前', value: '"鳥もどき"', description: '驚くほど現代のダチョウに似ている — 同じ体型、同じ生活様式。' },
     { label: '体長', value: '4メートル', description: '中型の獣脚類、大きなダチョウほどの大きさ。' },
   ],
+  relatedDinosaurs: [
+    { id: 'gallimimus', relationship: '近縁種' },
+    { id: 'struthiomimus', relationship: '近縁種' },
+  ],
+  discoveries: [
+    { discoveredBy: 'オスニエル・チャールズ・マーシュ', note: '化石戦争中に最初に記載された。' },
+    { discoveredBy: 'フランソワ・テリアン', note: '羽毛が保存された羽毛恐竜標本を発見。' },
+  ],
+  fossilLocations: [
+    { region: 'アルバータ州', specimenName: 'ホースシューキャニオン層' },
+    { region: 'コロラド州', specimenName: '' },
+  ],
 }

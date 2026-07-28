@@ -14,4 +14,13 @@ export default {
     { label: '체중', value: '250kg', description: '그 크기에 비해 놀랍도록 가볍다.' },
     { label: '이동', value: '사족 보행', description: '날개를 접고 네 발로 걸었다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'pteranodon', relationship: '더 작은 친척' },
+  ],
+  discoveries: [
+    { year: 1971, location: 'Texas, USA', discoveredBy: 'Douglas Lawson', note: '빅 벤드 국립공원에서 거대한 날개뼈가 발견되었어요 — 처음에는 공룡으로 오인되었어요.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: '텍사스', coordinates: [29.3, -103.2], specimenName: '자벨리나층, 빅 벤드 국립공원' },
+  ],
 }

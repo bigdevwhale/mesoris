@@ -14,4 +14,16 @@ export default {
     { label: 'Dimensioni', value: '11 m', description: 'Un grande spinosauride.' },
     { label: 'Alimentazione', value: 'Piscivoro', description: 'Pesci d\'acqua dolce.' },
   ],
+  relatedDinosaurs: [
+    { id: 'baryonyx', relationship: 'Parente stretto' },
+    { id: 'spinosaurus', relationship: 'Cugino più grande' },
+    { id: 'nigersaurus', relationship: 'Vicino contemporaneo' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Paul Sereno e squadra', note: 'Uno scheletro notevolmente completo fu scoperto durante una grande spedizione sahariana.' },
+    { discoveredBy: 'Paul Sereno e colleghi', note: 'La descrizione formale stabilì Suchomimus come grande spinosauride barionicino.' },
+  ],
+  fossilLocations: [
+    { region: 'Gadoufaoua', specimenName: 'Formazione Elrhaz' },
+  ],
 }

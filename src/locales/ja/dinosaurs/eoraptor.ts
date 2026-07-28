@@ -14,4 +14,14 @@ export default {
     { label: '大きさ', value: '犬サイズ', description: '体長わずか1メートル。恐竜は巨人に進化する前に、小さく始まったのです。' },
     { label: '産地', value: '月の谷', description: 'アルゼンチンの月の谷で発見されました。世界で最も重要な化石サイトの一つです。' },
   ],
+  relatedDinosaurs: [
+    { id: 'herrerasaurus', relationship: '同時代の恐竜' },
+    { id: 'plateosaurus', relationship: '後代の子孫' },
+  ],
+  discoveries: [
+    { year: 1991, location: 'アルゼンチン・サンフアン州', discoveredBy: 'リカルド・マルティネス', note: 'ヘレラサウルスと同じ月の谷層で発見された。' },
+  ],
+  fossilLocations: [
+    { country: 'アルゼンチン', region: 'サンフアン州', coordinates: [-30.0, -68.0], specimenName: '月の谷、イスチグアラスト層' },
+  ],
 }

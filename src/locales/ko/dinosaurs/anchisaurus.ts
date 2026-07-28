@@ -14,4 +14,16 @@ export default {
     { label: '식성', value: '초식', description: '잎 모양의 톱니가 있는 이빨을 통해, 안키사우루스는 양치류나 소철류 같은 단단한 식물을 처리할 수 있었습니다.' },
     { label: '크기', value: '약 2.1m', description: '몸길이는 불과 2미터 남짓으로, 안키사우루스는 작은 원용각류였습니다. 그 계통에서 진화할 거대한 용각류와는 거리가 먼 존재입니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'plateosaurus', relationship: '근연 용각형류' },
+    { id: 'eoraptor', relationship: '먼 초기 공룡 친척' },
+  ],
+  discoveries: [
+    { year: 1818, location: '미국 코네티컷주 하트퍼드카운티', discoveredBy: '솔로몬 엘스워스 주니어', note: '우물을 파다가 뼈가 발견되었으며, 공룡의 공식적인 인정 이전에는 인간의 뼈로 잘못 분류되었습니다.' },
+    { year: 1885, location: '미국 매사추세츠주 스프링필드', discoveredBy: 'O.C. 마쉬', note: '마쉬가 코네티컷밸리의 추가 자료를 바탕으로 안키사우루스를 정식으로 기술하고 명명했습니다.' },
+  ],
+  fossilLocations: [
+    { country: '미국', region: '코네티컷주 하트퍼드카운티', coordinates: [41.8, -72.7], specimenName: '포트랜드층 모식표본' },
+    { country: '미국', region: '매사추세츠주 햄프던카운티', coordinates: [42.1, -72.6], specimenName: '스프링필드 채석장 자료' },
+  ],
 }

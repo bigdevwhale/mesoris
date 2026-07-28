@@ -14,4 +14,15 @@ export default {
     { label: '映画', value: 'ジュラシック・ワールド', description: '映画『ジュラシック・ワールド／炎の王国』（2018年）に登場し、世界的に有名になりました。' },
     { label: 'フリル', value: 'こぶのあるフリルの縁', description: 'フリルの縁は丸みを帯びたこぶ状の縁後頭骨で飾られており、スティラコサウルスのとがったフリルやトリケラトプスのなめらかなフリルとは異なります。' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: 'ケラトプス科の近縁種' },
+    { id: 'protoceratops', relationship: '初期のアジア産ケラトプシアン祖先' },
+    { id: 'psittacosaurus', relationship: '祖先的なアジア産ケラトプシアン' },
+  ],
+  discoveries: [
+    { discoveredBy: '徐星とその共同研究者ら', note: '2010年に徐星らが諸城の化石から記載；この発見により大型ケラトプス科の分布がアジアへ広がった。' },
+  ],
+  fossilLocations: [
+    { region: '中国山東省諸城（王氏層群）', specimenName: 'ZCDM V0010 — ホロタイプ、部分頭骨' },
+  ],
 }

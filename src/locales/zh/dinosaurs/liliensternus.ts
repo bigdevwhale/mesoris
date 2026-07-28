@@ -14,4 +14,15 @@
     { label: '牙齿', value: '锯齿状刀片', description: '刀片状锯齿牙齿——理想于切割肉食，是活跃的猎手。' },
     { label: '亲缘', value: '腔骨龙类', description: '属于与腔骨龙相同的谱系——在晚三叠世共享的体型方案。' },
   ],
+  relatedDinosaurs: [
+    { id: 'coelophysis', relationship: '近亲腔骨龙类' },
+    { id: 'herrerasaurus', relationship: '早期兽脚类近亲' },
+    { id: 'dilophosaurus', relationship: '后代的腔骨龙类' },
+  ],
+  discoveries: [
+    { discoveredBy: '雨果·吕勒·冯·理理恩斯特恩', note: '从特罗辛根组出土了两具部分骨架；由冯·胡耶描述并以冯·理理恩斯特恩的名字命名。' },
+  ],
+  fossilLocations: [
+    { region: '图林根州（特罗辛根组），德国', specimenName: 'MB.R. 2175 — 主要正模标本' },
+  ],
 }

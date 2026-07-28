@@ -14,5 +14,15 @@ const translations = {
     { label: '牙齿', value: '超过 90 颗', description: '超过90颗尖锐交错的牙齿，用于捕捉鱼类和昆虫。' },
     { label: '产地', value: '索尔恩霍芬，巴伐利亚', description: '著名的石灰岩地层，也曾产出始祖鸟。' },
   ],
+  relatedDinosaurs: [
+    { id: 'pteranodon', relationship: '较晚出现的较大后代' },
+    { id: 'dimorphodon', relationship: '较早的近亲' },
+  ],
+  discoveries: [
+    { year: 1784, location: 'Bavaria, Germany', discoveredBy: 'Cosimo Alessandro Collini', note: '科学史上发现的第一件翼龙化石——科利尼当时以为它是一种水生动物。' },
+  ],
+  fossilLocations: [
+    { country: 'Germany', region: '巴伐利亚', coordinates: [48.9, 11.0], specimenName: '索尔恩霍芬石灰岩' },
+  ],
 }
 export default translations

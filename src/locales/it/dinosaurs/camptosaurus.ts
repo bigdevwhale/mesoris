@@ -14,4 +14,16 @@ export default {
     { label: 'Alimentazione', value: 'Felci ed equiseti', description: 'Il suo becco seghettato era ideale per strappare la vegetazione bassa nelle foreste alluvionali del Giurassico.' },
     { label: 'Pericolo', value: 'Preda dell\'Allosaurus', description: 'La sua taglia modesta lo rendeva una preda privilegiata per il superpredatore Allosaurus.' },
   ],
+  relatedDinosaurs: [
+    { id: 'iguanodon', relationship: 'Parente stretto degli Iguanodontia' },
+    { id: 'edmontosaurus', relationship: 'Linea discendente degli adrosauri successivi' },
+    { id: 'muttaburrasaurus', relationship: 'Parente ornitopode successivo' },
+  ],
+  discoveries: [
+    { discoveredBy: 'O.C. Marsh', note: 'Molti esemplari recuperati durante le Guerre delle Ossa; Marsh descrisse il genere nel 1879.' },
+  ],
+  fossilLocations: [
+    { region: 'Contea di Albany, Wyoming (Formazione Morrison)', specimenName: 'YPM 1877 — materiale olotipo' },
+    { region: 'Dinosaur National Monument, Utah', specimenName: 'Esemplari riferiti a serie di crescita' },
+  ],
 }

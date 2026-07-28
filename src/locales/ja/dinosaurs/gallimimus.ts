@@ -14,4 +14,14 @@
     { label: '首', value: '長くて柔軟', description: 'ダチョウのような長い首で、危険や食べ物を求めて景色を見渡しました。' },
     { label: '食性', value: '日和見的', description: '植物も小さな動物も昆虫も食べました — 脚の生えたお掃除屋さんです。' },
   ],
+  relatedDinosaurs: [
+    { id: 'ornithomimus', relationship: '近縁種' },
+    { id: 'struthiomimus', relationship: '近縁種' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ポーランド・モンゴル共同探検隊', note: 'ネメグト盆地で最初の標本が発見された。' },
+  ],
+  fossilLocations: [
+    { region: 'ゴビ砂漠', specimenName: 'ネメグト層' },
+  ],
 }

@@ -14,4 +14,15 @@ export default {
     { label: 'Intelligenz', value: 'Kluger Oviraptoride', description: 'Relativ groaes Gehirn und komplexes Sozialverhalten.' },
     { label: 'Fundort', value: 'Mongolische Gobi', description: 'Nemegt-Formation — eine der reichsten Dinosaurierfundstatten der Welt.' },
   ],
+  relatedDinosaurs: [
+    { id: 'oviraptor', relationship: 'Enger Oviraptoride-Verwandter' },
+    { id: 'velociraptor', relationship: 'Maniraptorer Theropode-Verwandter' },
+    { id: 'troodon', relationship: 'Kleiner zeitgenossischer Theropode' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Rinchen Barsbold und Kollegen', note: '2000 von Barsbold und Kollegen beschrieben; das Pygostyl wurde sofort zu einem zentralen Belegstuck in der Dinosaurier-Vogel-Evolutionsgeschichte.' },
+  ],
+  fossilLocations: [
+    { region: 'Omnogovi-Provinz, Nemegt-Formation, Mongolei', specimenName: 'GIN 100/119 — Holotyp-Teilskelett mit Pygostyl' },
+  ],
 }

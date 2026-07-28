@@ -14,5 +14,17 @@ const translations = {
     { label: '时代', value: '1.12 亿年前', description: '白垩纪早期。' },
     { label: '科', value: '腕龙科', description: '与腕龙有亲缘关系。' },
   ],
+  relatedDinosaurs: [
+    { id: 'brachiosaurus', relationship: '近亲' },
+    { id: 'acrocanthosaurus', relationship: '捕食者威胁' },
+    { id: 'argentinosaurus', relationship: '竞争的巨兽' },
+  ],
+  discoveries: [
+    { discoveredBy: '理查德·西费利及其团队', note: '巨大的颈椎化石在修理前曾被误认为是已石化的树干。' },
+    { discoveredBy: '马修·韦德尔、理查德·西费利和R·肯特·桑德斯', note: '正式描述确认其为迄今发现的最巨型恐龙之一。' },
+  ],
+  fossilLocations: [
+    { region: '俄克拉荷马州', specimenName: '安特尔斯组' },
+  ],
 }
 export default translations

@@ -14,4 +14,15 @@ export default {
     { label: 'Tamaño', value: '1,7 m', description: 'Un dinosaurio pequeño' },
     { label: 'Epoca', value: 'Cretacico Tardio', description: '~70 millones de anos' },
   ],
+  relatedDinosaurs: [
+    { id: 'oviraptor', relationship: 'Pariente ovirraptoriano cercano' },
+    { id: 'velociraptor', relationship: 'Pariente teropodo maniraptor' },
+    { id: 'troodon', relationship: 'Teropodo pequeno contemporaneo' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Rinchen Barsbold y companeros', note: 'Descrito en 2000 por Barsbold y companeros; el pigostilo se convirtiese inmediatamente en una prueba clave en la historia evolutiva de dinosaurio a ave.' },
+  ],
+  fossilLocations: [
+    { region: 'Provincia de Omnogovi, Formacion Nemegt, Mongolia', specimenName: 'GIN 100/119 — esqueleto parcial holotipo con pigostilo' },
+  ],
 }

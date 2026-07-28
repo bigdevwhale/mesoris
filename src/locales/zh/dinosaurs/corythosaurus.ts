@@ -14,4 +14,14 @@
     { label: '社会性', value: '成群结队', description: '生活在大型社会群体中——相当于角马群的鸭嘴龙版本。' },
     { label: '牙齿', value: '数百颗', description: '一个复杂的齿阵，有数百颗牙齿，用于磨碎坚韧的植物。' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: '近亲' },
+    { id: 'lambeosaurus', relationship: '近亲' },
+  ],
+  discoveries: [
+    { year: 1912, location: '加拿大阿尔伯塔省', discoveredBy: '巴纳姆·布朗', note: '在 AMNH 考察中发现了第一具完整骨架。' },
+  ],
+  fossilLocations: [
+    { country: '加拿大', region: '阿尔伯塔省', coordinates: [50.8, -111.5], specimenName: '恐龙公园组' },
+  ],
 }

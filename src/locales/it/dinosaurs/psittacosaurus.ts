@@ -14,4 +14,17 @@ export default {
     { label: 'Coda', value: 'Setole rigide', description: 'Alcuni esemplari mostrano setole rigide sulla coda — strutture cutanee rare.' },
     { label: 'Dimensioni', value: '2 metri', description: 'Circa delle dimensioni di un grosso cane, postura bipede.' },
   ],
+  relatedDinosaurs: [
+    { id: 'protoceratops', relationship: 'Ceratopsiano successivo imparentato' },
+    { id: 'triceratops', relationship: 'Lontano discendente cornuto' },
+    { id: 'microraptor', relationship: 'Vicino asiatico contemporaneo' },
+  ],
+  discoveries: [
+    { year: 1922, location: 'Mongolia', discoveredBy: 'Henry Fairfield Osborn', note: 'Osborn coniò il genere dalle prime scoperte asiatiche e lo riconobbe come dinosauro cornuto primitivo.' },
+    { year: 2000, location: 'Liaoning, China', discoveredBy: 'Chinese paleontological teams', note: 'Nuovi fossili spettacolari hanno conservato pelle, setole e persino possibili gruppi di giovani.' },
+  ],
+  fossilLocations: [
+    { country: 'China', region: 'Liaoning', coordinates: [41.9, 121.7], specimenName: 'Formazione Yixian' },
+    { country: 'Mongolia', region: 'Ömnögovi', coordinates: [44.5, 108.5], specimenName: 'Strati del Cretaceo inferiore' },
+  ],
 }

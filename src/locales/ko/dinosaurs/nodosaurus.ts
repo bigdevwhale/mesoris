@@ -14,4 +14,15 @@ export default {
     { label: '체형', value: '전차처럼', description: '두꺼운 피부 속에 타원형 뼈 마디가 있는, 넓고 평평한 몸.' },
     { label: '서식지', value: '내해의 해안', description: '서부 내륙 해로의 해안에 서식 — 북아메리카의 거대한 내해.' },
   ],
+  relatedDinosaurs: [
+    { id: 'ankylosaurus', relationship: '안킬로사우루스류 친척 (다른 과, 꼬리 망치 있음)' },
+    { id: 'euoplocephalus', relationship: '꼬리 망치 안킬로사우루스 친척' },
+    { id: 'stegosaurus', relationship: '갑옷공룡아목 친척' },
+  ],
+  discoveries: [
+    { discoveredBy: 'O.C. 마쉬', note: '1889년 마쉬가 기술한 단편적인 화석 자료; 두 주요 안킬로사우루스 과 중 하나인 노도사우루스과의 이름을 정의했다.' },
+  ],
+  fossilLocations: [
+    { region: '올버니 카운티, 와이오밍주 (모위 셰일층), 미국', specimenName: 'YPM 1815 — 단편적인 홀로타입 자료' },
+  ],
 }

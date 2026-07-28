@@ -14,4 +14,15 @@ export default {
     { label: '首', value: 'コンパクト', description: 'アズダルコ科としては比較的短く、がっしりした首で大型の獲物を捕らえるのに適応していました。' },
     { label: '生態', value: 'ハツェグ島の頂点', description: 'ルーマニアのハツェグ島の頂点捕食者で、マジャーロサウルスなど小型の竜脚類を狩っていました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'quetzalcoatlus', relationship: '巨大なアズダルコ科近縁種' },
+    { id: 'thanatosdrakon', relationship: '巨大なアズダルコ科近縁種' },
+    { id: 'pteranodon', relationship: '小型翼竜の近縁種' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ダン・グリゴレスクとチーム', note: '頭骨断片、上腕骨、その他の資料を初めて記載・命名。' },
+  ],
+  fossilLocations: [
+    { region: 'デヌシュ・キュラ層、ハツェグ盆地、トランシルヴァニア', specimenName: 'BMNH R 3517 / ホロタイプ断片資料' },
+  ],
 }

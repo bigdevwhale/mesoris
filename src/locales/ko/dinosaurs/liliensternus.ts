@@ -14,4 +14,15 @@ export default {
     { label: '이빨', value: '톱니 모양 칼날', description: '칼날형에 톱니가 있는 이빨 — 고기를 베는 데 이상적이며, 활발한 사냥꾼이었음.' },
     { label: '계통', value: '코엘로피시스류', description: '코엘로피시스와 같은 계통에 속함 — 트라이아스기 후기를 통해 공유된 체형.' },
   ],
+  relatedDinosaurs: [
+    { id: 'coelophysis', relationship: '코엘로피시스류 근연종' },
+    { id: 'herrerasaurus', relationship: '초기 수각류 친척' },
+    { id: 'dilophosaurus', relationship: '후대 코엘로피시스류 자손' },
+  ],
+  discoveries: [
+    { discoveredBy: '후고 뤼레 폰 릴리엔슈테른', note: '트로싱겐층에서 두 개의 부분 골격이 발견됨; 폰 후엔에 의해 기술되고 폰 릴리엔슈테른의 이름을 따서 명명됨.' },
+  ],
+  fossilLocations: [
+    { region: '튀링겐주 (트로싱겐층), 독일', specimenName: 'MB.R. 2175 — 주요 홀로타입' },
+  ],
 }

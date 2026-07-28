@@ -14,4 +14,15 @@ export default {
     { label: 'Herkunft', value: 'Gloucestershire', description: 'Gefunden 1910 in einer Ziegelei in Minchinhampton, Gloucestershire, England.' },
     { label: 'Familie', value: 'Früher Tyrannosauroid', description: 'Gehört zu den Proceratosauridae, einer basalen Familie von Tyrannosauroiden, zu der auch Guanlong und Kileskus gehören.' },
   ],
+  relatedDinosaurs: [
+    { id: 'guanlong', relationship: 'Kammragender Verwandter aus den Proceratosauridae' },
+    { id: 'dilophosaurus', relationship: 'Zeitgenössischer kammragender Theropode' },
+    { id: 'tyrannosaurus-rex', relationship: 'Entfernter Nachfahre' },
+  ],
+  discoveries: [
+    { year: 1910, location: 'Minchinhampton, Gloucestershire, England', discoveredBy: 'F. Lewis Bradley', note: 'Teilschädel in einer Ziegelei gefunden; beschrieben von Arthur Smith Woodward.' },
+  ],
+  fossilLocations: [
+    { country: 'United Kingdom', region: 'Minchinhampton, Gloucestershire', coordinates: [51.7, -2.2], specimenName: 'NHMUK PV R 4860 — Holotyp, Teilschädel' },
+  ],
 }

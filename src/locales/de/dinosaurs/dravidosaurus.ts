@@ -14,4 +14,14 @@ export default {
     { label: 'Indien', value: 'Gondwana-Überlebender', description: 'Gefunden in der späten Kreide Indiens — als der Subkontinent eine Insel war, die auf Asien zutrieb.' },
     { label: 'Kontroverse', value: 'Stark umstritten', description: 'Das fragmentarische Material macht eine definitive Klassifikation nahezu unmöglich.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Möglicher Stegosaurier-Verwandter' },
+    { id: 'kentrosaurus', relationship: 'Möglicher Stegosaurier-Verwandter' },
+  ],
+  discoveries: [
+    { year: 1979, location: 'Trichinopoly, Tamil Nadu, Indien', discoveredBy: 'P. Yadagiri und K. Ayyasami', note: 'Fragmentarisches Material 1979 von Yadagiri und Ayyasami als Stegosaurier beschrieben; später von Chatterjee und Rudra (1991) als mögliches Plesiosaurier-Material neu interpretiert.' },
+  ],
+  fossilLocations: [
+    { country: 'Indien', region: 'Tiruchirappalli (Trichinopoly), Tamil Nadu (Trichinopoly-Gruppe)', coordinates: [10.79, 78.7], specimenName: 'GSI SR PAL 1 — Holotyp, fragmentarisches Material' },
+  ],
 }

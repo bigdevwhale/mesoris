@@ -14,4 +14,17 @@ export default {
     { label: 'Alimentation', value: 'Large spectre de broutage', description: 'Son cou décrivait probablement de larges arcs, permettant une alimentation efficace à plusieurs hauteurs sans beaucoup se déplacer.' },
     { label: 'Région', value: 'Géant classique chinois', description: 'Mamenchisaurus est l\'un des dinosaures géants les plus connus des riches gisements fossiles du Jurassique tardif de Chine.' },
   ],
+  relatedDinosaurs: [
+    { id: 'euhelopus', relationship: 'Sauropode asiatique à long cou souvent comparé dans les études d\'évolution cervicale' },
+    { id: 'diplodocus', relationship: 'Autre sauropode au cou extrême, mais avec un plan corporel différent' },
+    { id: 'brachiosaurus', relationship: 'Grand sauropode contemporain avec une partie avant plus haute' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Équipes de terrain lors d\'études routières', note: 'Les premiers restes récupérés près du bac de Mamenxi, donnant son nom au genre.' },
+    { discoveredBy: 'Yang Zhongjian (C.C. Young)', note: 'La description formelle a établi Mamenchisaurus comme un grand genre de sauropode chinois.' },
+  ],
+  fossilLocations: [
+    { region: 'Province du Sichuan, Chine', specimenName: 'Matériel de Mamenxi/Yibin' },
+    { region: 'Région de Chongqing, Chine', specimenName: 'Spécimens de M. hochuanensis' },
+  ],
 }

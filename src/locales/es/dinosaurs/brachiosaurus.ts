@@ -14,4 +14,17 @@ export default {
     { label: 'Fosas Nasales', value: 'En la cima de la cabeza', description: 'Antiguamente se pensaba que las usaba como snorkel' },
     { label: 'Tasa de Crecimiento', value: 'Rapida', description: 'Los jovenes crecian mas de 2 kg por dia' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: 'Contemporáneo' },
+    { id: 'allosaurus', relationship: 'Amenaza de depredador' },
+    { id: 'apatosaurus', relationship: 'Contemporáneo' },
+  ],
+  discoveries: [
+    { year: 1900, location: 'Colorado, EE. UU.', discoveredBy: 'Elmer Riggs', note: 'Primeros fósiles de Brachiosaurus encontrados en la Formación Morrison.' },
+    { year: 1909, location: 'Tanzania, África', discoveredBy: 'Werner Janensch', note: 'Importante expedición descubrió esqueletos casi completos en Tendaguru.' },
+  ],
+  fossilLocations: [
+    { country: 'EE. UU.', region: 'Colorado', coordinates: [39.5, -105.0], specimenName: 'Formación Morrison' },
+    { country: 'Tanzania', region: 'Tendaguru', coordinates: [-10.5, 39.5] },
+  ],
 }

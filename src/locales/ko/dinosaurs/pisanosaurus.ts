@@ -14,4 +14,14 @@ export default {
     { label: '몸길이', value: '작은 선구자', description: '몸길이 겨우 1미터, 체중 3kg 미만 — 삼첩기 공룡으로서도 매우 작다.' },
     { label: '산지', value: '이스키구아라스토', description: '아르헨티나 — 세계에서 가장 중요한 초기 공룡 산지 중 하나.' },
   ],
+  relatedDinosaurs: [
+    { id: 'eoraptor', relationship: '같은 층의 동시대' },
+    { id: 'herrerasaurus', relationship: '같은 층의 동시대 포식자' },
+  ],
+  discoveries: [
+    { year: 1962, location: '아르헨티나 산후안 주 이스키구아라스토', discoveredBy: '갈릴레오 J. 스칼리아', note: '단편적인 표본 하나가 수집됨; 1967년에 로돌포 카사미켈라가 정식으로 기재함.' },
+  ],
+  fossilLocations: [
+    { country: '아르헨티나', region: '산후안 주, 이스키구아라스토 층', coordinates: [-30.0, -67.9], specimenName: 'PULR 08 — 홀로타입 부분 골격' },
+  ],
 }

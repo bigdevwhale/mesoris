@@ -14,4 +14,15 @@
     { label: '咬合力', value: 'プリオサウルスの力', description: '短頸のプリオサウルス類で、圧倒的な咬合力で獲物を待ち伏せ攻撃しました。' },
     { label: '狩り', value: '魚雷のような攻撃', description: '4つの筋肉質のヒレによる短時間の驚異的な加速で、待ち伏せ攻撃を仕掛けました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'elasmosaurus', relationship: '遠い親戚' },
+    { id: 'tylosaurus', relationship: '生態学的ライバル（より古い）' },
+  ],
+  discoveries: [
+    { discoveredBy: 'アンドリュー・クロンビー', note: 'クイーンズランドの奥地で最初の部分的な顎が発見されました。' },
+    { discoveredBy: 'アルバート・ヒーバー・ロングマン', note: 'ヒューエンデン近郊でより完全な標本が発見されました。' },
+  ],
+  fossilLocations: [
+    { region: 'クイーンズランド州、オーストラリア', specimenName: 'トゥールバック層' },
+  ],
 }

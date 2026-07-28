@@ -14,4 +14,18 @@
     { label: '牙齿', value: '锯齿刀刃状', description: '带锯齿的刀刃状牙齿，非常适合切割肉体。' },
     { label: '分布', value: '北美洲和欧洲', description: '在美国和葡萄牙都发现了化石，表明其分布广泛。' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: '猎物' },
+    { id: 'diplodocus', relationship: '猎物' },
+    { id: 'ceratosaurus', relationship: '竞争者' },
+  ],
+  discoveries: [
+    { year: 1877, location: '美国科罗拉多州', discoveredBy: '奥塞内尔·查尔斯·马什', note: '在"化石大战"期间首次被描述。' },
+    { year: 1991, location: '美国怀俄明州', discoveredBy: '柯比·赛伯', note: '"大艾"——最完整的兽脚类骨骼之一。' },
+  ],
+  fossilLocations: [
+    { country: '美国', region: '犹他州', coordinates: [39.0, -111.0], specimenName: '克利夫兰-劳埃德采石场' },
+    { country: '美国', region: '怀俄明州', coordinates: [43.0, -107.5] },
+    { country: '葡萄牙', region: '洛里尼扬', coordinates: [39.3, -9.3] },
+  ],
 }

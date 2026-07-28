@@ -14,5 +14,15 @@ const translations = {
     { label: '非洲', value: '最古老的非洲蜥脚类', description: '已知最早的非洲蜥脚类之一，对生物地理学很重要。' },
     { label: '体格', value: '粗壮', description: '粗壮的柱状四肢显示了蜥脚类负重架构的开端。' },
   ],
+  relatedDinosaurs: [
+    { id: 'plateosaurus', relationship: '早期原蜥脚类祖先谱系' },
+    { id: 'brachiosaurus', relationship: '后期衍生蜥脚类近亲' },
+  ],
+  discoveries: [
+    { discoveredBy: '迈克尔·拉斯', note: '在玄武岩层之间发现部分骨骼；1972年由拉斯正式描述，提供了非洲已知最早的蜥脚类之一。' },
+  ],
+  fossilLocations: [
+    { region: '西马绍纳兰, 火山龙层, 卡里巴湖地区', specimenName: 'QG 24 — 正模标本部分骨骼' },
+  ],
 }
 export default translations

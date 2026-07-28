@@ -14,4 +14,13 @@ export default {
     { label: 'Peso', value: '200 kg', description: 'Sorprendentemente ligero para su tamaño' },
     { label: 'Locomocion', value: 'Cuadrupedo', description: 'Caminaba en cuatro patas con alas plegadas' },
   ],
+  relatedDinosaurs: [
+    { id: 'pteranodon', relationship: 'Pariente más pequeño' },
+  ],
+  discoveries: [
+    { year: 1971, location: 'Texas, USA', discoveredBy: 'Douglas Lawson', note: 'Hueso alar gigantesco descubierto en el Parque Nacional Big Bend — al principio se confundió con un dinosaurio.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Texas', coordinates: [29.3, -103.2], specimenName: 'Formación Javelina, Parque Nacional Big Bend' },
+  ],
 }

@@ -14,4 +14,20 @@ export default {
     { label: '咬合', value: '骨砕き', description: '小型ながら、ティラノサウルス類に典型的な強力で骨を砕く咬合力を備えていました。' },
     { label: '速度', value: '40+ km/h', description: '長く細い脚は敏捷で速い捕食者にしてくれました — 巨大なcousin T. rexよりも速かったのです。' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: '議論のある同物異名 / 近縁種' },
+    { id: 'albertosaurus', relationship: 'ティラノサウルス科のいとこ' },
+    { id: 'daspletosaurus', relationship: 'ティラノサウルス科のいとこ' },
+    { id: 'gorgosaurus', relationship: 'ティラノサウルス科のいとこ' },
+    { id: 'triceratops', relationship: '可能性のある獲物' },
+  ],
+  discoveries: [
+    { discoveredBy: 'クリーブランド博物館調査隊', note: 'ヘルクリーク層で最初の頭骨発見。もともとはゴルゴサウルス様分類群と考えられた。' },
+    { discoveredBy: 'ロバート・ベイカー、フィリップ・カリー、マイケル・ウィリアムズ', note: 'クリーブランド博物館頭骨の再分析後、ナノティラヌスと改名。' },
+    { discoveredBy: '商業化石ハンター', note: 'トリケラトプスと格闘状態で固定された著名な「決闘恐竜」標本。' },
+  ],
+  fossilLocations: [
+    { region: 'モンタナ州', specimenName: 'ヘルクリーク層' },
+    { region: 'ワイオミング州', specimenName: 'ランス層' },
+  ],
 }

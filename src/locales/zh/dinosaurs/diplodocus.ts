@@ -14,4 +14,17 @@
     { label: '牙齿', value: '铅笔形', description: '细长的牙齿用于从枝条上剥下叶子。' },
     { label: '鼻孔', value: '位于头顶', description: '头骨顶部只有一个鼻开孔——科学家争论其用途已经几十年了。' },
   ],
+  relatedDinosaurs: [
+    { id: 'apatosaurus', relationship: '近亲' },
+    { id: 'allosaurus', relationship: '捕食者' },
+    { id: 'brachiosaurus', relationship: '同时代' },
+  ],
+  discoveries: [
+    { year: 1877, location: '美国科罗拉多州', discoveredBy: '塞缪尔·温德尔·威利斯顿', note: '在卡农城发现了首批化石。' },
+    { year: 1899, location: '美国怀俄明州', discoveredBy: '美国自然历史博物馆考察队', note: '在羊溪发现了最完整的骨架。' },
+  ],
+  fossilLocations: [
+    { country: '美国', region: '怀俄明州', coordinates: [43.0, -107.5], specimenName: '莫里森组' },
+    { country: '美国', region: '科罗拉多州', coordinates: [39.5, -105.0] },
+  ],
 }

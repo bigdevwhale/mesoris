@@ -14,4 +14,15 @@ export default {
     { label: 'Knochen', value: 'Hohl und leicht', description: 'Seine hohlen Knochen waren eine Anpassung für Geschwindigkeit, die später auch Vögel entwickeln würden.' },
     { label: 'Ernährung', value: 'Opportunistisch', description: 'Fleischfresser, der kleine Echsen, Fische und vielleicht auch junge Dinosaurier jagte.' },
   ],
+  relatedDinosaurs: [
+    { id: 'herrerasaurus', relationship: 'Zeitgenosse' },
+    { id: 'eoraptor', relationship: 'Zeitgenosse' },
+  ],
+  discoveries: [
+    { year: 1881, location: 'New Mexico, USA', discoveredBy: 'David Baldwin', note: 'Erstes Exemplar in triassischen Ablagerungen gefunden.' },
+    { year: 1947, location: 'Ghost Ranch, New Mexico, USA', discoveredBy: 'Edwin Colbert', note: 'Massenknochenbett mit Hunderten vollständiger Skelette entdeckt.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'New Mexico', coordinates: [36.3, -106.0], specimenName: 'Ghost Ranch, Chinle-Formation' },
+  ],
 }

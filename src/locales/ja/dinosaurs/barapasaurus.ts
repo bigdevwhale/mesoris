@@ -14,4 +14,16 @@ export default {
     { label: '骨格', value: 'ほぼ完全', description: '少なくとも6個体から300点以上の骨が回収され、骨格のほぼ全体像が判明しています。' },
     { label: '意義', value: '竜脚類の起源', description: '原竜脚類から後の巨大竜脚類への進化を理解するうえで重要な分類群です。' },
   ],
+  relatedDinosaurs: [
+    { id: 'vulcanodon', relationship: '同時代の基盤的竜脚類' },
+    { id: 'brachiosaurus', relationship: '後の竜脚類の子孫' },
+    { id: 'plateosaurus', relationship: '祖先段階の原竜脚類親戚' },
+  ],
+  discoveries: [
+    { year: 1960, location: 'コーラ層、テランガーナ/アンドhra・プラデーシュ州、インド', discoveredBy: 'インド統計研究所チーム', note: '発掘調査で少なくとも6個体の骨が同一地点から発見された。' },
+    { year: 1975, location: 'コーラ層、インド', discoveredBy: 'ソーハン・ラル・ジェインとその共同研究者', note: '正式に記載・命名され、Barapasaurus tagoreiと名付けられた。' },
+  ],
+  fossilLocations: [
+    { country: 'インド', region: 'コーラ層、テランガーナ', coordinates: [17.97, 79.5], specimenName: 'ISI R キャストシリーズ、パラタイプ' },
+  ],
 }

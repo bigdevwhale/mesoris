@@ -14,4 +14,16 @@ export default {
     { label: 'Biss', value: 'Kein Gift', description: 'Es gibt keine wissenschaftlichen Belege für Gift oder einen Nackenkragen — das sind reine Film-Erfindungen.' },
     { label: 'Zeitalter', value: 'Früher Jura', description: 'Jagte nur wenige Millionen Jahre nachdem Dinosaurier erstmals die Herrschaft an Land übernahmen.' },
   ],
+  relatedDinosaurs: [
+    { id: 'coelophysis', relationship: 'Früherer Theropode-Verwandter' },
+    { id: 'ceratosaurus', relationship: 'Späterer gehörnter Theropode-Gegenstück' },
+    { id: 'allosaurus', relationship: 'Nachfolgender Spitzenprädator' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Sam Welles', note: 'Das erste Skelett wurde während einer Expedition der University of California aus der Kayenta-Formation geborgen.' },
+    { discoveredBy: 'Sam Welles', note: 'Ein besseres Exemplar zeigte deutlich die markanten Doppelkämme und führte zum Namen Dilophosaurus.' },
+  ],
+  fossilLocations: [
+    { region: 'Arizona', specimenName: 'Kayenta-Formation' },
+  ],
 }

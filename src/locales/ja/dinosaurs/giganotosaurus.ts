@@ -14,4 +14,14 @@
     { label: '獲物', value: '巨大竜脚類', description: '史上最大の陸上動物アルゼンチノサウルスを、おそらく群れで狩っていました。' },
     { label: '脳', value: '体に比べて小さい', description: 'Tレックスよりも比例的に小さな脳を持ち、異なる狩猟戦略を示唆します。' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: '大きさのライバル' },
+    { id: 'spinosaurus', relationship: '大きさのライバル' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ルベン・カロリーニ', note: 'アマチュア化石ハンターが発見したほぼ完全な骨格。' },
+  ],
+  fossilLocations: [
+    { region: 'ネウケン', specimenName: 'カンデレロス層' },
+  ],
 }

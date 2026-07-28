@@ -14,4 +14,16 @@ export default {
     { label: '食べ物', value: 'シダとトクサ類', description: '鋸歯のあるくちばしは、ジュラ紀の氾濫原の低い植物をむしり取るのに理想的でした。' },
     { label: '危険', value: 'アロサウルスの獲物', description: 'その控えめな大きさは、超捕食者アロサウルスの格好の獲物にしていました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'iguanodon', relationship: '近縁のイグアノドン類' },
+    { id: 'edmontosaurus', relationship: '後のハドロサウルス類の子孫系統' },
+    { id: 'muttaburrasaurus', relationship: '後の鳥脚類の近縁種' },
+  ],
+  discoveries: [
+    { discoveredBy: 'O.C.マーシュ', note: '骨戦争時代に複数の標本を発掘。マーシュが1879年に属を記載した。' },
+  ],
+  fossilLocations: [
+    { region: 'ワイオミング州オールバニー郡（モリソン層）', specimenName: 'YPM 1877 — ホロタイプ標本' },
+    { region: 'ユタ州ダイナソ国立記念碑', specimenName: '成長シリーズ参照標本' },
+  ],
 }

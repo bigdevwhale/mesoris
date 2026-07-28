@@ -14,4 +14,16 @@ export default {
     { label: '恐竜ではない', value: '翼竜', description: '実際には空飛ぶ爬虫類（翼竜）であり、本当の恐竜ではありません。しかし恐竜と並んで生きていました。' },
     { label: '食性', value: '魚食性', description: '西部内陸海の上を滑空し、長いくちばしで魚を捕まえていました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'quetzalcoatlus', relationship: 'より大型の近縁種' },
+    { id: 'pterodactylus', relationship: 'より小型の近縁種' },
+    { id: 'mosasaurus', relationship: '共有生態系' },
+  ],
+  discoveries: [
+    { discoveredBy: 'オスニエル・チャールズ・マーシュ', note: '最初のプテラノドン化石発見。' },
+    { discoveredBy: 'S. W. ウィリストン', note: '完全な頭骨が独特の頭頂部トサカを明らかにした。' },
+  ],
+  fossilLocations: [
+    { region: 'カンザス州', specimenName: 'ニオブララ白亜層' },
+  ],
 }

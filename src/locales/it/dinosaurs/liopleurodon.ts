@@ -14,4 +14,17 @@ export default {
     { label: 'Mito', value: 'Non 25 metri', description: 'La televisione ha reso famoso Liopleurodon come mostro marino di 20 metri — le prove reali indicano un animale ben più piccolo.' },
     { label: 'Nuoto', value: 'Propulsione a quattro pinne', description: 'Volava sott\'acqua con le sue quattro pinne in movimenti coordinati, come gli altri plesiosauri.' },
   ],
+  relatedDinosaurs: [
+    { id: 'kronosaurus', relationship: 'Analogo pliosauro successivo' },
+    { id: 'plesiosaurus', relationship: 'Parente plesiosauro lontano' },
+    { id: 'ichthyosaurus', relationship: 'Contemporaneo marino' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Henri-Émile Sauvage', note: 'Denti e materiale mandibolare costituirono la base per nominare Liopleurodon.' },
+    { discoveredBy: 'Numerosi collezionisti e musei', note: 'Materiale dell\'Oxford Clay dalla Gran Bretagna aiutò successivamente i paleontologi a comprendere meglio l\'animale.' },
+  ],
+  fossilLocations: [
+    { region: 'Pas-de-Calais', specimenName: 'Depositi marini calloviani' },
+    { region: 'Oxfordshire', specimenName: 'Formazione Oxford Clay' },
+  ],
 }

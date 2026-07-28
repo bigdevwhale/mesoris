@@ -14,4 +14,18 @@ export default {
     { label: 'Dientes', value: '800+', description: 'Dientes en bateria que se reemplazaban continuamente' },
     { label: 'Defensa', value: 'Formidable', description: 'Evolucionado para enfrentarse al T. rex' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Depredador' },
+    { id: 'styracosaurus', relationship: 'Pariente' },
+    { id: 'pachyrhinosaurus', relationship: 'Pariente' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Othniel Charles Marsh', note: 'Inicialmente identificado erróneamente como un bisonte gigante.' },
+    { discoveredBy: 'John Bell Hatcher', note: 'Primer cráneo completo descubierto e identificado correctamente.' },
+  ],
+  fossilLocations: [
+    { region: 'Wyoming', specimenName: '' },
+    { region: 'Montana', specimenName: 'Hell Creek' },
+    { region: 'Colorado', specimenName: '' },
+  ],
 }

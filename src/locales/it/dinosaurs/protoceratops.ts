@@ -14,4 +14,15 @@ export default {
     { label: 'Collare', value: 'Piccolo ma ornato', description: 'Un collare modesto rispetto a Triceratops — ma molto variabile.' },
     { label: 'Dimensioni', value: '2 metri', description: 'Circa le dimensioni di una pecora, un erbivoro compatto.' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'Predatore' },
+    { id: 'triceratops', relationship: 'Lontanamente imparentato' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Roy Chapman Andrews', note: 'Primo Protoceratops e prime uova di dinosauro scoperti simultaneamente.' },
+    { discoveredBy: 'Spedizione polacco-mongola', note: 'I «Dinosauri in combattimento» — Protoceratops contro Velociraptor.' },
+  ],
+  fossilLocations: [
+    { region: 'Desierto del Gobi', specimenName: 'Formazione Djadochta' },
+  ],
 }

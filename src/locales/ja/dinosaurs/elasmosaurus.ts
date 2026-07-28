@@ -14,4 +14,13 @@
     { label: 'ミス', value: '頭を逆に', description: '最初は頭をまちがった方につけて復元されました — 古生物学の有名な失敗です。' },
     { label: '狩り', value: '待ち伏せ', description: '水面近くを泳ぎ、長い首で魚の群れを待ち伏せしました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'plesiosaurus', relationship: '祖先' },
+  ],
+  discoveries: [
+    { discoveredBy: 'セオフィラス・ターナー', note: '西部内海道の白亜層から発見。' },
+  ],
+  fossilLocations: [
+    { region: 'カンザス州', specimenName: 'ピア頁岩' },
+  ],
 }

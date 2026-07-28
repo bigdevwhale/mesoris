@@ -14,4 +14,17 @@ export default {
     { label: '공존', value: 'T-렉스와 공존', description: '알라모사우루스는 티라노사우루스 렉스와 서식지를 공유했습니다. 북아메리카에서 이것이 알려진 유일한 용각류입니다.' },
     { label: '방어', value: '갑옷을 가진 용각류', description: '티타노사우루스류로서, 알라모사우루스는 피부에 작은 뼈질의 피골판을 가졌습니다. 이는 용각류 중에서도 독특한 특징입니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'argentinosaurus', relationship: '남아메리카 티타노사우루스류 친척' },
+    { id: 'sauroposeidon', relationship: '이른 시기의 북아메리카 거대 용각류' },
+    { id: 'diplodocus', relationship: '이른 시기의 북아메리카 용각류 (다른 과)' },
+  ],
+  discoveries: [
+    { year: 1921, location: '미국 뉴멕시코주 산후안카운티', discoveredBy: '찰스 W. 길모어', note: '최초의 화석은 길모어가 1922년에 뉴멕시코에서 채집하고 기재했습니다. 이후 텍사스에서 훨씬 더 큰 표본이 발견되었습니다.' },
+    { year: 2003, location: '미국 텍사스주 빅벤드 국립공원', discoveredBy: '토마스 리먼과 케네스 카펜터', note: '텍사스에서 발견된 거대한 척추뼈와 팔다리 뼈는 크기 추정치를 크게 상향 조정하여, 알라모사우루스가 가장 큰 남아메리카 티타노사우루스류와 어깨를 나란히 했음을 시사합니다.' },
+  ],
+  fossilLocations: [
+    { country: '미국', region: '뉴멕시코주 산후안카운티 (오호알라모층)', coordinates: [36.5, -108.2], specimenName: 'USNM 10487 — 모식표본 척추뼈 및 앞다리' },
+    { country: '미국', region: '텍사스주 브루스터카운티, 빅벤드 (하벨리나층)', coordinates: [29.3, -103.2], specimenName: '최대 크기를 나타내는 텍사스의 거대한 표본' },
+  ],
 }

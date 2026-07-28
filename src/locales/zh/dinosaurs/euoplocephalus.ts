@@ -14,4 +14,13 @@
     { label: '鼻子', value: '复杂气道', description: '一个迷宫般的鼻腔通道——可能用于冷却大脑或发声。' },
     { label: '防御', value: '毫无破绽', description: '骨板几乎覆盖了整个身体表面，形成一个毫无破绽的盾牌。' },
   ],
+  relatedDinosaurs: [
+    { id: 'ankylosaurus', relationship: '近亲' },
+  ],
+  discoveries: [
+    { discoveredBy: '劳伦斯·兰布', note: '第一个被描述的标本，来自贝利河群。' },
+  ],
+  fossilLocations: [
+    { region: '艾伯塔省', specimenName: '恐龙公园组' },
+  ],
 }

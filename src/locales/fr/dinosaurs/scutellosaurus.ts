@@ -14,4 +14,15 @@ export default {
     { label: 'Époque', value: 'Jurassique inférieur', description: '~195 millions d\'années' },
     { label: 'Locomotion', value: 'Bipède', description: 'Marchait probablement sur deux pattes' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Descendant thyréophore bien plus tardif' },
+    { id: 'ankylosaurus', relationship: 'Descendant thyréophore bien plus tardif' },
+    { id: 'scelidosaurus', relationship: 'Thyréophore précoce proche parent' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Edwin H. Colbert', note: 'Décrit par Colbert en 1981 à partir de la Formation Kayenta ; important en tant que plus ancien thyréophore connu.' },
+  ],
+  fossilLocations: [
+    { region: 'Comté de Coconino, Arizona (Formation Kayenta)', specimenName: 'UCMP 129015 — holotype, squelette partiel' },
+  ],
 }

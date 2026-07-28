@@ -14,4 +14,17 @@ export default {
     { label: 'Dimensioni reali', value: 'Grande come un tacchino', description: 'Molto più piccolo che nei film — circa le dimensioni di un grosso tacchino.' },
     { label: 'Caccia', value: 'Cacciatore in gruppo', description: 'Gli indizi suggeriscono una caccia in gruppo per abbattere prede molto più grandi di loro.' },
   ],
+  relatedDinosaurs: [
+    { id: 'deinonychus', relationship: 'Parente stretto' },
+    { id: 'protoceratops', relationship: 'Preda' },
+    { id: 'oviraptor', relationship: 'Concorrente' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Roy Chapman Andrews', note: 'Primo esemplare scoperto durante una famosa spedizione dell\'AMNH.' },
+    { discoveredBy: 'Spedizione polacco-mongola', note: 'I «Dinosauri in combattimento» — un Velociraptor impegnato in un combattimento con un Protoceratops.' },
+  ],
+  fossilLocations: [
+    { region: 'Deserto del Gobi', specimenName: 'Formazione Djadochta' },
+    { region: 'Mongolia Interna', specimenName: '' },
+  ],
 }

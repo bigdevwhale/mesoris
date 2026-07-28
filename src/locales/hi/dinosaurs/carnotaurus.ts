@@ -14,4 +14,14 @@ export default {
     { label: 'भुजाएँ', value: 'बहुत छोटी', icon: 'minus', description: 'टी-रेक्स की भुजाओं से भी छोटी — अनिवार्य रूप से बेकार, बिना पंजों के।' },
     { label: 'त्वचा', value: 'जीवाश्मित छापे', icon: 'layers', description: 'संरक्षित त्वचा छापों वाले कुछ डायनासोरों में से एक — कंकड़ जैसी शल्कों से ढका।' },
   ],
+  relatedDinosaurs: [
+    { id: 'ceratosaurus', relationship: 'संबंधी' },
+    { id: 'tyrannosaurus-rex', relationship: 'अभिसारी भूमिका' },
+  ],
+  discoveries: [
+    { year: 1984, location: 'चुबुत, अर्जेंटीना', discoveredBy: 'जोस बोनापार्ट', note: 'त्वचा के छापों सहित एकमात्र लगभग-पूर्ण कंकाल — अविश्वसनीय रूप से दुर्लभ खोज।' },
+  ],
+  fossilLocations: [
+    { country: 'अर्जेंटीना', region: 'चुबुत', coordinates: [-43.3, -65.1], specimenName: 'ला कोलोनिया शैलसमूह' },
+  ],
 }

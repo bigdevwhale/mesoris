@@ -14,4 +14,15 @@ export default {
     { label: 'Tamaño', value: '4,5 m', description: 'Postura bipeda, tamaño medio' },
     { label: 'Dieta', value: 'Herbivoro/omnivoro', description: 'Hojas, semillas, frutas y posiblemente insectos' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Depredador' },
+    { id: 'triceratops', relationship: 'Contemporaneo' },
+  ],
+  discoveries: [
+    { year: 1931, location: 'Wyoming, USA', discoveredBy: 'Charles Gilmore', note: 'Primera cupula craneal descubierta.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Wyoming', coordinates: [44.5, -105.0], specimenName: 'Formacion Lance' },
+    { country: 'USA', region: 'Montana', coordinates: [47.5, -106.5] },
+  ],
 }

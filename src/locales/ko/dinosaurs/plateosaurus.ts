@@ -14,4 +14,16 @@ export default {
     { label: '풍부함', value: '매우 흔함', description: '독일에서 100체 이상의 골격이 발견.' },
     { label: '손', value: '파지 가능한 엄지', description: '가지를 잡기 위한 큰 엄지발톱 — 아직 용각류 같은 체중 지지 기둥은 아님.' },
   ],
+  relatedDinosaurs: [
+    { id: 'brachiosaurus', relationship: '후손' },
+    { id: 'diplodocus', relationship: '후손' },
+  ],
+  discoveries: [
+    { discoveredBy: '요한 프리드리히 엥겔하르트', note: '최초 화석 발견 — 유럽 대륙에서 가장 초기의 공룡 발견 중 하나.' },
+    { discoveredBy: '에버하르트 프라스', note: '수십 점의 골격이 있는 대규모 매장지.' },
+  ],
+  fossilLocations: [
+    { region: '트로싱겐', specimenName: '크놀렌메르겔 층원' },
+    { region: '바이에른', specimenName: '' },
+  ],
 }

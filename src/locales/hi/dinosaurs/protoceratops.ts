@@ -13,4 +13,15 @@ export default {
     { label: 'अंडे', value: 'पहले डायनासोर अंडे', icon: 'egg', description: 'अब तक खोजे गए पहले डायनासोर अंडे प्रोटोसेराटॉप्स के थे।' },
     { label: 'फ़्रिल', value: 'छोटी लेकिन अलंकृत', icon: 'shield', description: 'ट्राइसिरैटॉप्स की तुलना में इसकी फ़्रिल छोटी थी — लेकिन व्यक्तियों के बीच इसमें भारी विभिन्नता थी।' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'शिकारी' },
+    { id: 'triceratops', relationship: 'दूर से संबंधित' },
+  ],
+  discoveries: [
+    { discoveredBy: 'रॉय चैपमैन एंड्रयूज', note: 'पहला प्रोटोसेराटॉप्स और पहले डायनासोर अंडे एक साथ खोजे गए।' },
+    { discoveredBy: 'पोलिश-मंगोल अभियान', note: '«लड़ते डायनासोर» — प्रोटोसेराटॉप्स बनाम वेलोसिरैप्टर।' },
+  ],
+  fossilLocations: [
+    { region: 'गोबी रेगिस्तान', specimenName: 'जादोचता शैलसमूह' },
+  ],
 }

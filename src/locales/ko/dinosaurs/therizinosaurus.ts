@@ -14,4 +14,14 @@ export default {
     { label: '체격', value: '볼록 배', description: '식물 발효를 위한 거대한 장, 긴 목, 작은 엽상 치아.' },
     { label: '근연종', value: '포식자에서 채식주의자로', description: '육식 수각류에서 진화하면서 완전한 초식이 된 극히 드문 예.' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: '먼 친척(마니랍토라류)' },
+    { id: 'tyrannosaurus-rex', relationship: '먼 친척(수각류)' },
+  ],
+  discoveries: [
+    { discoveredBy: '소련-몽골 공동 탐사대', note: '최초의 화석은 거대한 발톱만이 발견되었다. 과학자들은 처음에 그것을 거북의 갈비뼈로 생각했다!' },
+  ],
+  fossilLocations: [
+    { region: '고비 사막', specimenName: '네메그트층' },
+  ],
 }

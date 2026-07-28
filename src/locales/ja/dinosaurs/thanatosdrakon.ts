@@ -14,4 +14,14 @@ export default {
     { label: '分類', value: 'アズダルコ科', description: 'アズダルコ科に属し、ケツァルコアトルスやハツェゴプテリクスを含む首の長い翼竜のグループです。' },
     { label: '時代', value: '中生代白亜紀中期', description: '有名なケツァルコアトルスより約2000万年早く、アズダルコ科の進化の空白を埋めます。' },
   ],
+  relatedDinosaurs: [
+    { id: 'quetzalcoatlus', relationship: '巨大なアズダルコ科の近縁種' },
+    { id: 'pteranodon', relationship: 'より小さな翼竜の近縁種' },
+  ],
+  discoveries: [
+    { discoveredBy: 'レオナルド・オルティス・デイビットとそのチーム', note: '関節した部分骨格と関連標本が記載・命名された。' },
+  ],
+  fossilLocations: [
+    { region: 'アルゼンチン・メンドーサ州プロトティエル層', specimenName: 'UNCUYO-LD 307 — ホロタイプ、部分骨格' },
+  ],
 }

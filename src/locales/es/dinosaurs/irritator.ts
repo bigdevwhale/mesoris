@@ -14,4 +14,15 @@ export default {
     { label: 'Ubicacion', value: 'Brasil', description: 'Formacion Santana' },
     { label: 'Epoca', value: 'Cretacico Temprano', description: '~110 millones de anos' },
   ],
+  relatedDinosaurs: [
+    { id: 'spinosaurus', relationship: 'Pariente cercano espinosaurino' },
+    { id: 'baryonyx', relationship: 'Pariente cercano espinosaurido' },
+    { id: 'suchomimus', relationship: 'Pariente espinosaurido africano' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Comerciantes (descubridor exacto desconocido)', note: 'Craneo comprado por comerciantes y modificado; adquirido por el Staatliches Museum fur Naturkunde Stuttgart; descrito por Martill, Cruickshank, Frey y otros en 1996.' },
+  ],
+  fossilLocations: [
+    { region: 'Ceara, Formacion Santana (miembro Romualdo)', specimenName: 'SMNS 58022 — holotipo, craneo casi completo' },
+  ],
 }

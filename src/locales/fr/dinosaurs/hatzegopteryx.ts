@@ -14,4 +14,15 @@ export default {
     { label: 'Cou', value: 'Compact', description: 'Un cou relativement court et massivement bâti pour un azhdarchidé — adapté à la prise de grandes proies.' },
     { label: 'Écologie', value: 'Sommet de l\'île de Hațeg', description: 'Le superprédateur de l\'île de Hațeg (Roumanie) — chassant des dinosaures qui vivaient à ses côtés, dont de petits titanosaures.' },
   ],
+  relatedDinosaurs: [
+    { id: 'quetzalcoatlus', relationship: 'Parent azhdarchidé géant' },
+    { id: 'thanatosdrakon', relationship: 'Parent azhdarchidé géant' },
+    { id: 'pteranodon', relationship: 'Parent ptérosaure plus petit' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Dan Grigorescu et équipe', note: 'Fragments de crâne, humérus et autre matériel décrits et nommés pour la première fois.' },
+  ],
+  fossilLocations: [
+    { region: 'Formation de Densuș-Ciula, bassin de Hațeg, Transylvanie', specimenName: 'BMNH R 3517 / matériel fragmentaire holotype' },
+  ],
 }

@@ -14,4 +14,15 @@ export default {
     { label: 'Происхождение', value: 'Глостершир', description: 'Найден в глиняном карьере в Минчингемптоне, Глостершир, Англия, в 1910 году.' },
     { label: 'Семейство', value: 'Ранний тираннозавроид', description: 'Принадлежит к Proceratosauridae — базальному семейству тираннозавроидов, включая гуаньлуна и килескуса.' },
   ],
+  relatedDinosaurs: [
+    { id: 'guanlong', relationship: 'Гребнистый родич из прозератозаврид' },
+    { id: 'dilophosaurus', relationship: 'Современный гребнистый теропод' },
+    { id: 'tyrannosaurus-rex', relationship: 'Дальний потомок' },
+  ],
+  discoveries: [
+    { year: 1910, location: 'Minchinhampton, Gloucestershire, England', discoveredBy: 'F. Lewis Bradley', note: 'Частичный череп найден в кирпичном карьере; описан Артуром Смитом Вудвордом.' },
+  ],
+  fossilLocations: [
+    { country: 'United Kingdom', region: 'Минчингемптон, Глостершир', coordinates: [51.7, -2.2], specimenName: 'NHMUK PV R 4860 — голотип, частичный череп' },
+  ],
 }

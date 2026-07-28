@@ -14,4 +14,14 @@ export default {
     { label: 'Epoca', value: '77-74 Ma', description: '10 millones de anos antes que el T. rex' },
     { label: 'Dieta', value: 'Ceratopsidos', description: 'Cazaba dinosaurios con cuernos' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Descendiente' },
+  ],
+  discoveries: [
+    { year: 1921, location: 'Alberta, Canada', discoveredBy: 'Charles M. Sternberg', note: 'Primer craneo descubierto en la Formacion Oldman.' },
+  ],
+  fossilLocations: [
+    { country: 'Canada', region: 'Alberta', coordinates: [49.5, -112.0], specimenName: 'Formacion Oldman' },
+    { country: 'EE. UU.', region: 'Montana', coordinates: [47.5, -110.5], specimenName: 'Formacion Two Medicine' },
+  ],
 }

@@ -14,4 +14,14 @@ export default {
     { label: '발견지', value: '아프리카 최고 용각류', description: '아프리카에서 알려진 가장 오래된 용각류 중 하나로, 쥐라기 전기 판게아 용각류 확산 매핑에 도움이 된다.' },
     { label: '체격', value: '땅딸막한 몸', description: '튼튼하고 원주형인 사지와 땅딸막한 체격은 보다 호리호리한 원시용각류에서 진정한 용각류의 체중 지지 구조로 이행을 나타낸다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'plateosaurus', relationship: '초기 원용각류 조상 계통' },
+    { id: 'brachiosaurus', relationship: '후대의 파생 용각류 근연종' },
+  ],
+  discoveries: [
+    { discoveredBy: '마이클 라스', note: '현무암층 사이에서 부분 골격이 발견되었으며, 1972년 라스에 의해 공식적으로 기술되어 아프리카에서 알려진 가장 초기 용각류 중 하나가 되었다.' },
+  ],
+  fossilLocations: [
+    { region: '마쇼날랜드 서부, 발카노돈 beds, 카리바호 주변', specimenName: 'QG 24 — 홀로타입 부분 골격' },
+  ],
 }

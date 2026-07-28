@@ -14,4 +14,16 @@ export default {
     { label: 'Posture', value: 'Tête vers le bas', description: 'Gardait la tête inhabituellement basse — parfait pour tondre le gazon.' },
     { label: 'Site', value: 'Niger, Afrique', description: 'Trouvé dans le Sahara — un brouteur spécialisé du Crétacé africain.' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: 'Cousin diplodocoïde éloigné' },
+    { id: 'suchomimus', relationship: 'Voisin contemporain' },
+    { id: 'sauroposeidon', relationship: 'Stratégie alimentaire différente de sauropode' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Philippe Taquet', note: 'Les expéditions françaises ont d\'abord récupéré du matériel du Sahara qui s\'est avéré appartenir à Nigersaurus.' },
+    { discoveredBy: 'Paul Sereno et équipe', note: 'De nouvelles expéditions ont produit le matériel crânien qui a révélé l\'étrange anatomie alimentaire du dinosaure.' },
+  ],
+  fossilLocations: [
+    { region: 'Gadoufaoua, Niger', specimenName: 'Formation d\'Elrhaz' },
+  ],
 }

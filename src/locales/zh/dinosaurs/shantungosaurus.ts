@@ -14,5 +14,16 @@ const translations = {
     { label: '时代', value: '白垩纪晚期', description: '约 7000 万年前。' },
     { label: '发现地', value: '中国山东', description: '中国东部。' },
   ],
+  relatedDinosaurs: [
+    { id: 'edmontosaurus', relationship: '北美的近缘鸭嘴龙亚科亲属' },
+    { id: 'parasaurolophus', relationship: '鸭嘴龙科近亲' },
+    { id: 'tarbosaurus', relationship: '同时代的亚洲捕食者' },
+  ],
+  discoveries: [
+    { discoveredBy: '胡承志及同事们', note: '自1960年代起在山东进行的大规模发掘出土了巨量的鸭嘴龙类化石；胡于1973年正式命名描述了Shantungosaurus giganteus。' },
+  ],
+  fossilLocations: [
+    { region: '中国山东省诸城（王氏群）', specimenName: 'IVPP V2659 — 正模标本与复合装架骨架' },
+  ],
 }
 export default translations

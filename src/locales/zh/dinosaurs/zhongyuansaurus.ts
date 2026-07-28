@@ -14,4 +14,15 @@ export default {
     { label: '装甲', value: '原始防御', description: '缺乏晚期甲龙科那种发达的尾锤——其皮内成骨和皮骨板构成的甲胄代表了更原始的防御状态。' },
     { label: '体长', value: '约 4.5 米', description: '估计体长约 4 至 5 米，体重数百千克——在所产出的地层中属于中型的四足植食恐龙。' },
   ],
+  relatedDinosaurs: [
+    { id: 'ankylosaurus', relationship: '后期甲龙科近亲' },
+    { id: 'euoplocephalus', relationship: '后期甲龙科近亲' },
+    { id: 'nodosaurus', relationship: '甲龙类近亲（结节龙科分支）' },
+  ],
+  discoveries: [
+    { discoveredBy: '吕君昌等人', note: '依据芒川组化石描述命名；与戈壁龙和沙漠龙亲缘关系密切的原始甲龙科。' },
+  ],
+  fossilLocations: [
+    { region: '河南省（芒川组）', specimenName: '芒川组, 早白垩世' },
+  ],
 }

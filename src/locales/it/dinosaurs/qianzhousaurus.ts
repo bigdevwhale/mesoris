@@ -14,4 +14,15 @@ export default {
     { label: 'Famiglia', value: 'Alioramini', description: 'Appartiene a un piccolo ramo di tirannosauridi dal muso lungo, gli Alioramini, distinto dai giganti spezza-ossa.' },
     { label: 'Scoperta', value: 'Ritrovamento del 2014', description: 'Descritto formalmente nel 2014 a partire da un fossile di Ganzhou, nella Cina meridionale — una notevole scoperta del Cretaceo superiore.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tarbosaurus', relationship: 'Parente tirannosauride asiatico' },
+    { id: 'albertosaurus', relationship: 'Tirannosauride più antico' },
+    { id: 'tyrannosaurus-rex', relationship: 'Cugino lontano' },
+  ],
+  discoveries: [
+    { year: 2010, location: 'Ganzhou, Jiangxi Province, China', discoveredBy: 'Operai edili; in seguito recuperato da Lü Junchang e dal suo team', note: 'Cranio quasi completo e scheletro parziale — l\'alioramino più completo mai trovato.' },
+  ],
+  fossilLocations: [
+    { country: 'China', region: 'Formazione Nanxiong, Ganzhou, Jiangxi', coordinates: [25.85, 114.95], specimenName: 'GMFPI-PV-001 — olotipo, cranio e scheletro' },
+  ],
 }

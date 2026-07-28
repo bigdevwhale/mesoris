@@ -14,4 +14,14 @@ export default {
     { label: 'Fundort', value: 'Solnhofen, Deutschland', description: 'Gefunden im berühmten Solnhofener Plattenkalk, derselben Formation, die den Archaeopteryx lieferte.' },
     { label: 'Geschwindigkeit', value: 'Pfeilschnell', description: 'Seine langen, leichten Hinterbeine und der ausbalancierte Schwanz machten ihn zu einem extrem schnellen Läufer.' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'Entfernter Verwandter' },
+  ],
+  discoveries: [
+    { year: 1859, location: 'Bayern, Deutschland', discoveredBy: 'Joseph Oberndorfer', note: 'Erstes Exemplar im Solnhofener Plattenkalk gefunden, denselben Ablagerungen wie der Archaeopteryx.' },
+  ],
+  fossilLocations: [
+    { country: 'Deutschland', region: 'Bayern', coordinates: [48.8, 11.0], specimenName: 'Solnhofener Plattenkalk' },
+    { country: 'Frankreich', region: 'Provence', coordinates: [43.5, 6.5] },
+  ],
 }

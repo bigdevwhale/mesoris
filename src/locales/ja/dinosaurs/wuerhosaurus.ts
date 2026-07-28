@@ -14,4 +14,15 @@ export default {
     { label: '生息地', value: '湖岸低地', description: '中国北西部のジュンガル盆地の湖岸沿いに生息していました。' },
     { label: '尾', value: '四本スパイクのタゴミザー', description: '尾の先に4本のスパイクを持つタゴミザーを備え、捕食者からの防御に使用しました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'より高いプレートを持つ有名な近縁種' },
+    { id: 'kentrosaurus', relationship: 'スパイク鎧を持つ近縁種' },
+    { id: 'tuojiangosaurus', relationship: '中国の剣竜近縁種' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ドンジーミン', note: '部分的な後頭蓋骨格が記載され、Wuerhosaurus homheni と命名された。' },
+  ],
+  fossilLocations: [
+    { region: 'ジュンガル盆地、新疆ウイグル自治区', specimenName: 'IVPP V.4006 — ホロタイプ部分骨格' },
+  ],
 }

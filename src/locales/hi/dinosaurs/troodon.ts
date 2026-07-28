@@ -14,4 +14,15 @@ export default {
     { label: 'दाँत', value: 'दंतुरित किंतु विविध', description: 'दाँत मिश्रित आहार का संकेत देते हैं — छोटा शिकार, अंडे, और संभवतः वनस्पति सामग्री।' },
     { label: 'हाथ', value: 'आंशिक रूप से विरोधी', description: 'अर्ध-विरोधी अँगूठा — आश्चर्यजनक निपुणता से वस्तुओं को पकड़ सकता था।' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'दूर का संबंधी (पैरावियन)' },
+    { id: 'deinonychus', relationship: 'संबंधित समूह' },
+  ],
+  discoveries: [
+    { discoveredBy: 'फर्डिनेंड हेडन', note: 'एक अकेला दाँत खोजा गया — उत्तरी अमेरिका की प्रारंभिक डायनासोर खोजों में से एक।' },
+  ],
+  fossilLocations: [
+    { region: 'मोंटाना', specimenName: 'जूडिथ नदी फॉर्मेशन' },
+    { region: 'अल्बर्टा' },
+  ],
 }

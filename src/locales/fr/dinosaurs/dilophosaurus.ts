@@ -14,4 +14,16 @@ export default {
     { label: 'Morsure', value: 'Pas de venin', description: 'Il n\'y a aucune preuve scientifique de venin ou de collerette de cou — ce sont de pures inventions cinématographiques.' },
     { label: 'Époque', value: 'Jurassique inférieur', description: 'Chassait quelques millions d\'années seulement après que les dinosaures eurent pris le contrôle des terres.' },
   ],
+  relatedDinosaurs: [
+    { id: 'coelophysis', relationship: 'Parent théropode plus ancien' },
+    { id: 'ceratosaurus', relationship: 'Homologue théropode à crête plus tardif' },
+    { id: 'allosaurus', relationship: 'Succeseur prédateur apex' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Sam Welles', note: 'Le premier squelette a été exhumé de la formation de Kayenta lors d\'une expédition de l\'Université de Californie.' },
+    { discoveredBy: 'Sam Welles', note: 'Un meilleur spécimen a montré clairement les doubles crêtes distinctives et a conduit au nom Dilophosaurus.' },
+  ],
+  fossilLocations: [
+    { region: 'Arizona', specimenName: 'Formation de Kayenta' },
+  ],
 }

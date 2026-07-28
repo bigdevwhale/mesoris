@@ -14,4 +14,16 @@
     { label: '颈盾', value: '精致的颈盾', description: '血管丰富，可能色彩鲜艳——用于识别、展示和体温调节。' },
     { label: '新墨西哥', value: '柯特兰组', description: '发现于新墨西哥——与鸭嘴龙、甲龙和霸王龙科共存。' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: '较晚的角龙科近亲' },
+    { id: 'styracosaurus', relationship: '角龙科近亲' },
+    { id: 'protoceratops', relationship: '祖先角龙类' },
+  ],
+  discoveries: [
+    { year: 1921, location: '美国新墨西哥州圣胡安县', discoveredBy: '查尔斯·H·斯特恩伯格', note: '由斯特恩伯格发现，1923年由亨利·费尔菲尔德·奥斯本描述；为纪念斯特恩伯格而命名为 sternbergii。' },
+    { year: 1975, location: '新墨西哥柯特兰组', discoveredBy: '美国自然历史博物馆考察队', note: '后续标本，包括著名的巨型头骨 NMMNH P-27083，揭示了颈盾的全部范围并巩固了头骨尺寸记录。' },
+  ],
+  fossilLocations: [
+    { country: '美国', region: '新墨西哥州圣胡安县（柯特兰组）', coordinates: [36.7, -108.0], specimenName: 'AMNH 6325 — 正模头骨；NMMNH P-27083 — 巨型头骨记录' },
+  ],
 }

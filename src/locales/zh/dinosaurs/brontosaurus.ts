@@ -14,4 +14,18 @@
     { label: '体长', value: '22 米', description: '一种体型粗壮的大型蜥脚类恐龙，比其近亲迷惑龙更重更结实。' },
     { label: '颈部', value: '粗壮而厚实', description: '其颈部比梁龙更粗壮、肌肉更发达，表明有不同的进食习性。' },
   ],
+  relatedDinosaurs: [
+    { id: 'apatosaurus', relationship: '极为近亲的梁龙科亲属（曾被视为同属）' },
+    { id: 'diplodocus', relationship: '近亲梁龙科' },
+    { id: 'brachiosaurus', relationship: '同时代蜥脚类' },
+  ],
+  discoveries: [
+    { year: 1879, location: '美国怀俄明州科莫布拉夫（莫里逊组）', discoveredBy: 'O·C·马什', note: '由马什命名为Brontosaurus excelsus；1903年与迷惑龙被合并为同属，但2015年被恢复为有效属。' },
+    { year: 2015, location: '发表的论文（多个博物馆藏品）', discoveredBy: '埃马努埃尔·乔普、屋太维欧·马特乌斯、罗杰·本森', note: '对81件梁龙科标本进行的具有里程碑意义的解剖学研究恢复了雷龙为独立于迷惑龙的有效属。' },
+  ],
+  fossilLocations: [
+    { country: '美国', region: '怀俄明州科莫布拉夫（莫里逊组）', coordinates: [41.8, -106.0], specimenName: 'YPM 1980——B. excelsus 正模标本' },
+    { country: '美国', region: '科罗拉多州花园公园（莫里逊组）', coordinates: [38.4, -105.1], specimenName: 'AMNH 460——归入的大型标本' },
+    { country: '美国', region: '怀俄明州骨屋采石场（莫里逊组）', coordinates: [41.79, -105.67], specimenName: 'B. parvus 化石' },
+  ],
 }

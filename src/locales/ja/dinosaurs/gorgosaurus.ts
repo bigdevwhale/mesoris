@@ -14,4 +14,16 @@
     { label: '咬合力', value: '鋸歯状の歯', description: '刃のような骨を砕く歯は、ハドロサウルス類や角竜類の肉を引き裂くのに適応していました。' },
     { label: '捕食者ギルド', value: 'アルバータの頂点ハンター', description: 'カナダ西部のカンパニアン氾濫原において、ゴルゴサウルスは支配的な頂点捕食者の一つでした。' },
   ],
+  relatedDinosaurs: [
+    { id: 'albertosaurus', relationship: '非常に近いアルバートサウルス亜科の近縁種' },
+    { id: 'daspletosaurus', relationship: '同時代の頑丈な体格のティラノサウルス科' },
+    { id: 'tyrannosaurus-rex', relationship: '後の巨大なティラノサウルス科系統' },
+  ],
+  discoveries: [
+    { discoveredBy: 'チャールズ・H・スターンバーグ', note: 'ランベの記載の基礎となった標本を収集した。' },
+    { discoveredBy: 'ローレンス・ラム', note: 'ゴルゴサウルス・リブラトゥスを正式に命名し、独立したティラノサウルス科として確立した。' },
+  ],
+  fossilLocations: [
+    { region: 'アルバータ州ダイナソーパーク州立公園', specimenName: 'ダイナソーパーク層の骨格' },
+  ],
 }

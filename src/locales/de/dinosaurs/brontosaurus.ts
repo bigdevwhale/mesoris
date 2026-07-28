@@ -14,4 +14,18 @@ export default {
     { label: 'Größe', value: '22 Meter', description: 'Ein großer Sauropode mit massivem Körperbau, schwerer und bulliger als sein Verwandter Apatosaurus.' },
     { label: 'Hals', value: 'Robust und dick', description: 'Sein Hals war dicker und muskulöser als der des Diplodocus, was auf andere Fressgewohnheiten hindeutet.' },
   ],
+  relatedDinosaurs: [
+    { id: 'apatosaurus', relationship: 'Sehr naher Diplodocid-Verwandter (zeitweise als gleiche Gattung betrachtet)' },
+    { id: 'diplodocus', relationship: 'Naher Diplodocid-Verwandter' },
+    { id: 'brachiosaurus', relationship: 'Zeitgenössischer Sauropode' },
+  ],
+  discoveries: [
+    { year: 1879, location: 'Morrison-Formation, Como Bluff, Wyoming, USA', discoveredBy: 'O.C. Marsh', note: 'Als Brontosaurus excelsus von Marsh benannt; 1903 mit Apatosaurus synonymisiert, aber 2015 als eigenständige Gattung rehabilitiert.' },
+    { year: 2015, location: 'Veröffentlichter Artikel (mehrere Sammlungen)', discoveredBy: 'Emanuel Tschopp, Octavio Mateus, Roger Benson', note: 'Eine wegweisende anatomische Studie an 81 Diplodociden rehabilitierte Brontosaurus als eigenständige Gattung, getrennt von Apatosaurus.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Como Bluff, Wyoming (Morrison-Formation)', coordinates: [41.8, -106.0], specimenName: 'YPM 1980 — Holotyp von B. excelsus' },
+    { country: 'USA', region: 'Garden Park, Colorado (Morrison-Formation)', coordinates: [38.4, -105.1], specimenName: 'AMNH 460 — zugewiesenes großes Exemplar' },
+    { country: 'USA', region: 'Bone Cabin Quarry, Wyoming (Morrison-Formation)', coordinates: [41.79, -105.67], specimenName: 'Material von B. parvus' },
+  ],
 }

@@ -14,4 +14,18 @@ export default {
     { label: 'Becco', value: 'Simile a un pappagallo', description: 'Un becco affilato e ricurvo per tagliare fronde di palma coriacee e cicadee.' },
     { label: 'Fossili', value: 'Centinaia', description: 'Uno dei dinosauri fossili più comuni — sappiamo di più sul Triceratopo che sulla maggior parte delle altre specie.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Predatore' },
+    { id: 'styracosaurus', relationship: 'Parente' },
+    { id: 'pachyrhinosaurus', relationship: 'Parente' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Othniel Charles Marsh', note: 'Inizialmente identificato erroneamente come un bisonte gigante.' },
+    { discoveredBy: 'John Bell Hatcher', note: 'Primo cranio completo scoperto e correttamente identificato.' },
+  ],
+  fossilLocations: [
+    { region: 'Wyoming', specimenName: '' },
+    { region: 'Montana', specimenName: 'Hell Creek' },
+    { region: 'Colorado', specimenName: '' },
+  ],
 }

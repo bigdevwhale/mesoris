@@ -14,4 +14,15 @@
     { label: '骨骼', value: '中空而轻巧', description: '其中空骨骼是为速度而生的适应，后来鸟类也演化出了这一特征。' },
     { label: '食性', value: '机会主义者', description: '一种食肉动物，捕食小型蜥蜴、鱼类，可能还有幼年恐龙。' },
   ],
+  relatedDinosaurs: [
+    { id: 'herrerasaurus', relationship: '同时代' },
+    { id: 'eoraptor', relationship: '同时代' },
+  ],
+  discoveries: [
+    { year: 1881, location: '美国新墨西哥州', discoveredBy: '大卫·鲍德温', note: '在三叠纪地层中发现了第一个标本。' },
+    { year: 1947, location: '美国新墨西哥州幽灵牧场', discoveredBy: '埃德温·科尔伯特', note: '发现了包含数百具完整骨架的大型骨床。' },
+  ],
+  fossilLocations: [
+    { country: '美国', region: '新墨西哥州', coordinates: [36.3, -106.0], specimenName: '幽灵牧场，钦利组' },
+  ],
 }

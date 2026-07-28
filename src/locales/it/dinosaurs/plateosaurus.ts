@@ -14,4 +14,16 @@ export default {
     { label: 'Abbondanza', value: 'Molto comune', description: 'Oltre 100 scheletri trovati in Germania.' },
     { label: 'Mani', value: 'Pollice prensile', description: 'Grande artiglio del pollice per afferrare i rami — non ancora un pilastro portante come nei sauropodi.' },
   ],
+  relatedDinosaurs: [
+    { id: 'brachiosaurus', relationship: 'Discendente' },
+    { id: 'diplodocus', relationship: 'Discendente' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Johann Friedrich Engelhardt', note: 'Primi fossili scoperti — uno dei primi ritrovamenti di dinosauri nell\'Europa continentale.' },
+    { discoveredBy: 'Eberhard Fraas', note: 'Sito di sepoltura di massa con decine di scheletri.' },
+  ],
+  fossilLocations: [
+    { region: 'Trossingen', specimenName: 'Membro del Knollenmergel' },
+    { region: 'Baviera', specimenName: '' },
+  ],
 }

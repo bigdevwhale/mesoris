@@ -14,4 +14,16 @@ export default {
     { label: 'Haltung', value: 'Kopf nach unten', description: 'Hielt den Kopf ungewöhnlich tief — perfekt zum Rasenmähen.' },
     { label: 'Fundort', value: 'Niger, Afrika', description: 'Gefunden in der Sahara — ein spezialisierter Graser der afrikanischen Kreidezeit.' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: 'Entfernter diplodocoider Vetter' },
+    { id: 'suchomimus', relationship: 'Zeitgenössischer Nachbar' },
+    { id: 'sauroposeidon', relationship: 'Andere Sauropoden-Fressstrategie' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Philippe Taquet', note: 'Französische Expeditionen bargen zunächst Material aus der Sahara, das sich später als zu Nigersaurus gehörig erwies.' },
+    { discoveredBy: 'Paul Sereno und Team', note: 'Neue Expeditionen lieferten das Schädelmaterial, das die bizarre Fressanatomie des Dinosauriers enthüllte.' },
+  ],
+  fossilLocations: [
+    { region: 'Gadoufaoua, Niger', specimenName: 'Elrhaz-Formation' },
+  ],
 }

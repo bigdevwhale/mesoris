@@ -14,4 +14,14 @@ export default {
     { label: 'Entdeckung', value: 'Annings Triumph', description: 'Von Mary Anning 1823 entdeckt — eines der ersten prahistorischen Reptilien uberhaupt.' },
     { label: 'Groae', value: '3,5 Meter', description: 'MittelgroaEs Meeresreptil aus dem fruhen Jura.' },
   ],
+  relatedDinosaurs: [
+    { id: 'elasmosaurus', relationship: 'Viel größerer Nachfolger' },
+    { id: 'ichthyosaurus', relationship: 'Zeitgenosse' },
+  ],
+  discoveries: [
+    { year: 1823, location: 'Lyme Regis, UK', discoveredBy: 'Mary Anning', note: 'Erstes artikuliertes Skelett, entdeckt an der Jurassic Coast — eine wissenschaftliche Sensation.' },
+  ],
+  fossilLocations: [
+    { country: 'UK', region: 'Dorset', coordinates: [50.7, -2.9], specimenName: 'Blue-Lias-Formation, Jurassic Coast' },
+  ],
 }

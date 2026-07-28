@@ -14,4 +14,16 @@ export default {
     { label: '몸길이', value: '약 8미터', description: '버스 정도의 크기로, 매우 낮고 넓적한 체격에 체중은 약 6톤에 달했습니다.' },
     { label: '방어력', value: '거의 무적', description: '너무 무거운 갑옷이었기 때문에 티라노사우루스조차도 뒤집어서 부드러운 배를 노리는 데 애먹었을 것입니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: '포식자' },
+    { id: 'euoplocephalus', relationship: '근연종' },
+  ],
+  discoveries: [
+    { year: 1906, location: '미국 몬태나주', discoveredBy: '바넘 브라운', note: '최초의 안킬로사우루스 화석이 헬크릭층에서 발견되었습니다.' },
+    { year: 1910, location: '캐나다 앨버타주', discoveredBy: '피터 C. 카이센', note: '지금까지 발굴된 표본 중 가장 완전한 것입니다.' },
+  ],
+  fossilLocations: [
+    { country: '미국', region: '몬태나주', coordinates: [47.5, -106.5], specimenName: '헬크릭' },
+    { country: '캐나다', region: '앨버타주', coordinates: [54.5, -113.0] },
+  ],
 }

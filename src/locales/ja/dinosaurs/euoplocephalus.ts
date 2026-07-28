@@ -14,4 +14,13 @@
     { label: '鼻', value: '複雑な気道', description: '迷路のような鼻の通路 — おそらく脳の冷却か音の発生に使われました。' },
     { label: '装甲', value: '隙間なし', description: '骨の板が体のほぼ全面を覆い、隙間のない盾を形成していました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'ankylosaurus', relationship: '近縁種' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ローレンス・ラム', note: 'ベリー川層群から初めて記載された標本。' },
+  ],
+  fossilLocations: [
+    { region: 'アルバータ州', specimenName: 'ダイナソーパーク層' },
+  ],
 }

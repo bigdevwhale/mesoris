@@ -14,4 +14,17 @@ export default {
     { label: 'Brazos', value: 'Poderosos', description: 'Brazos grandes y fuertes para sujetar' },
     { label: 'Rango', value: 'Norteamerica y Europa', description: 'En dos continentes' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: 'Competidor depredador ápice contemporáneo' },
+    { id: 'megalosaurus', relationship: 'Pariente megalosáurido cercano' },
+    { id: 'ceratosaurus', relationship: 'Depredador contemporáneo de la Formación Morrison' },
+  ],
+  discoveries: [
+    { discoveredBy: 'James Jensen', note: 'Material recolectado por primera vez en 1972; descrito formalmente por Peter Galton y James Jensen en 1979 como Torvosaurus tanneri.' },
+    { discoveredBy: 'Octávio Mateus et al.', note: 'Se describió la especie europea T. gurneyi; también se encontraron embriones conservados en huevos, proporcionando datos raros sobre la reproducción de terópodos del Jurásico.' },
+  ],
+  fossilLocations: [
+    { region: 'Dry Mesa Quarry, Condado de Delta, Colorado (Formación Morrison)', specimenName: 'BYU 2002 — esqueleto parcial holotipo' },
+    { region: 'Formación Lourinhã, Torres Vedras', specimenName: 'ML 632 — holotipo de T. gurneyi; material embrionario' },
+  ],
 }

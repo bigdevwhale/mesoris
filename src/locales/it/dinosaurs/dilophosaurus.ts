@@ -14,4 +14,16 @@ export default {
     { label: 'Morso', value: 'Nessun veleno', description: 'Non ci sono prove scientifiche di veleno o collare del collo — sono pure invenzioni cinematografiche.' },
     { label: 'Epoca', value: 'Giurassico inferiore', description: 'Cacciava solo pochi milioni di anni dopo che i dinosauri ebbero preso il controllo delle terre.' },
   ],
+  relatedDinosaurs: [
+    { id: 'coelophysis', relationship: 'Parente teropode precedente' },
+    { id: 'ceratosaurus', relationship: 'Corrispondente teropode crestato successivo' },
+    { id: 'allosaurus', relationship: 'Successore predatore apicale' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Sam Welles', note: 'Il primo scheletro fu scavato dalla Formazione Kayenta durante una spedizione dell\'Università della California.' },
+    { discoveredBy: 'Sam Welles', note: 'Un esemplare migliore mostrò chiaramente le doppie creste distintive e portò al nome Dilophosaurus.' },
+  ],
+  fossilLocations: [
+    { region: 'Arizona', specimenName: 'Formazione Kayenta' },
+  ],
 }

@@ -14,4 +14,17 @@ export default {
     { label: 'Dents', value: 'En forme de crayon', description: 'Des dents longues et élancées pour arracher les feuilles des branches.' },
     { label: 'Narines', value: 'Au sommet de la tête', description: 'Une seule ouverture nasale au sommet du crâne — les scientifiques ont débattu de son utilité pendant des décennies.' },
   ],
+  relatedDinosaurs: [
+    { id: 'apatosaurus', relationship: 'Proche parent' },
+    { id: 'allosaurus', relationship: 'Prédateur' },
+    { id: 'brachiosaurus', relationship: 'Contemporain' },
+  ],
+  discoveries: [
+    { year: 1877, location: 'Colorado, États-Unis', discoveredBy: 'Samuel Wendell Williston', note: 'Premiers fossiles trouvés à Canon City.' },
+    { year: 1899, location: 'Wyoming, États-Unis', discoveredBy: 'Expédition de l\'AMNH', note: 'Squelette le plus complet à Sheep Creek.' },
+  ],
+  fossilLocations: [
+    { country: 'États-Unis', region: 'Wyoming', coordinates: [43.0, -107.5], specimenName: 'Formation de Morrison' },
+    { country: 'États-Unis', region: 'Colorado', coordinates: [39.5, -105.0] },
+  ],
 }

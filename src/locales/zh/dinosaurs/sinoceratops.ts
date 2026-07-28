@@ -14,5 +14,16 @@ const translations = {
     { label: '时代', value: '白垩纪晚期', description: '约 7200 万年前。' },
     { label: '发现地', value: '中国山东', description: '中国东部。' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: '角龙科近亲' },
+    { id: 'protoceratops', relationship: '早期亚洲角龙类祖先' },
+    { id: 'psittacosaurus', relationship: '亚洲原始角龙类' },
+  ],
+  discoveries: [
+    { discoveredBy: '徐星及其同事', note: '2010年由徐星等人依据诸城的材料命名描述；这一发现将大型角龙科的已知分布范围扩展到了亚洲。' },
+  ],
+  fossilLocations: [
+    { region: '中国山东省诸城（王氏群）', specimenName: 'ZCDM V0010 — 正模标本，部分头骨' },
+  ],
 }
 export default translations

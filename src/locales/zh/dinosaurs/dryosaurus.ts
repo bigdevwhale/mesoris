@@ -14,4 +14,17 @@
     { label: '食物', value: '低矮植物', description: '喙和颊齿适合剪食蕨类、木贼以及其他柔软植物。' },
     { label: '分布', value: '北美与非洲近亲', description: '干龙科材料在北美和东非均有发现，说明这一类群曾广泛分布。' },
   ],
+  relatedDinosaurs: [
+    { id: 'camptosaurus', relationship: '类似生境中体型更大的鸟脚类亲缘种' },
+    { id: 'iguanodon', relationship: '更晚且更衍化的鸟脚类谱系' },
+    { id: 'allosaurus', relationship: '主要的同时代捕食者' },
+  ],
+  discoveries: [
+    { year: 1878, location: '美国怀俄明州莫里森组', discoveredBy: 'O.C.马什', note: '马什依据轻盈体格的鸟脚类化石命名橡树龙。' },
+    { year: 1910, location: '坦桑尼亚滕达古鲁', discoveredBy: '德国滕达古鲁探险队', note: '东非的干龙科化石扩展了对该类群全球分布的认识。' },
+  ],
+  fossilLocations: [
+    { country: '美国', region: '怀俄明州科莫布拉夫（莫里森组）', coordinates: [41.8, -106.0], specimenName: '橡树龙正模标本材料' },
+    { country: '坦桑尼亚', region: '滕达古鲁组', coordinates: [-10.2, 39.4], specimenName: '归入干龙科的化石' },
+  ],
 }

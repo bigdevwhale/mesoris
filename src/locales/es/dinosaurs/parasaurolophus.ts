@@ -14,4 +14,16 @@ export default {
     { label: 'Tamaño', value: '10 m', description: 'Un hadrosaurio de buen tamaño' },
     { label: 'Dieta', value: 'Plantas', description: 'Tenia cientos de dientes para moler plantas duras' },
   ],
+  relatedDinosaurs: [
+    { id: 'corythosaurus', relationship: 'Pariente' },
+    { id: 'lambeosaurus', relationship: 'Pariente cercano' },
+  ],
+  discoveries: [
+    { year: 1920, location: 'Alberta, Canada', discoveredBy: 'William Parks', note: 'Primer craneo descubierto.' },
+    { year: 1999, location: 'Nuevo Mexico, USA', discoveredBy: 'Thomas Williamson', note: 'Craneo muy bien conservado.' },
+  ],
+  fossilLocations: [
+    { country: 'Canada', region: 'Alberta', coordinates: [54.5, -113.0], specimenName: 'Formacion Dinosaur Park' },
+    { country: 'USA', region: 'Nuevo Mexico', coordinates: [36.0, -107.5] },
+  ],
 }

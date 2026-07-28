@@ -14,4 +14,17 @@ export default {
     { label: 'Тістері', value: 'Қарындаш тәрізді', description: 'Ұзын тар тістер бұтақтардан жапырақтарды үзуге ыңғайлы болды.' },
     { label: 'Танауы', value: 'Басымның үстінде', description: 'Мұрын тесігі бас сүйегінің үстінде орналасқан және ғалымдар бұл не үшін қажет екендігі туралы ондаған жылдар бойы талқылады.' },
   ],
+  relatedDinosaurs: [
+    { id: 'apatosaurus', relationship: 'Жақын туыс' },
+    { id: 'allosaurus', relationship: 'Жыртқыш' },
+    { id: 'brachiosaurus', relationship: 'Заманауи' },
+  ],
+  discoveries: [
+    { year: 1877, location: 'Колорадо, АҚШ', discoveredBy: 'Сэмюэл Уэнделл Уиллистон', note: 'Каньон-Ситиде алғашқы қазбалар табылды.' },
+    { year: 1899, location: 'Вайоминг, АҚШ', discoveredBy: 'AMNH экспедициясы', note: 'Шип-Крикте ең толық қаңқа табылды.' },
+  ],
+  fossilLocations: [
+    { country: 'АҚШ', region: 'Вайоминг', coordinates: [43.0, -107.5], specimenName: 'Моррисон формациясы' },
+    { country: 'АҚШ', region: 'Колорадо', coordinates: [39.5, -105.0] },
+  ],
 }

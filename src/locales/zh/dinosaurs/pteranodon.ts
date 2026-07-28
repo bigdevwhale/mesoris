@@ -14,5 +14,17 @@ const translations = {
     { label: '不是恐龙', value: '翼龙', description: '实际上是一种飞行爬行动物（翼龙），并非真正的恐龙——但与恐龙生活在同一时代。' },
     { label: '食性', value: '鱼食性', description: '在西部内陆海道上滑翔，用长长的喙捕捉鱼类。' },
   ],
+  relatedDinosaurs: [
+    { id: 'quetzalcoatlus', relationship: '更大近亲' },
+    { id: 'pterodactylus', relationship: '更小近亲' },
+    { id: 'mosasaurus', relationship: '共享生态系统' },
+  ],
+  discoveries: [
+    { discoveredBy: '奥塞内尔·查尔斯·马什', note: '首次发现无齿翼龙化石。' },
+    { discoveredBy: 'S. W. 威利斯顿', note: '完整的头骨揭示了独特的头冠。' },
+  ],
+  fossilLocations: [
+    { region: '堪萨斯州', specimenName: '尼奥布拉拉白垩层' },
+  ],
 }
 export default translations

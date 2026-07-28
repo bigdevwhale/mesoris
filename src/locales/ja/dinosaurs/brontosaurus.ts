@@ -14,4 +14,18 @@ export default {
     { label: '大きさ', value: '22 m', description: 'がっしりとした体格の大型竜脚類で、近縁のアパトサウルスよりも重く頑丈でした。' },
     { label: '首', value: '頑丈で太い', description: '首はディプロドクスよりも太く筋肉質で、異なる摂食習慣を示しています。' },
   ],
+  relatedDinosaurs: [
+    { id: 'apatosaurus', relationship: '極めて近縁のディプロドクス科（かつて同属とされた）' },
+    { id: 'diplodocus', relationship: '近縁のディプロドクス科' },
+    { id: 'brachiosaurus', relationship: '同時代の竜脚類' },
+  ],
+  discoveries: [
+    { year: 1879, location: 'アメリカ合衆国ワイオミング州コモブラフ（モリソン累層）', discoveredBy: 'O・C・マーシュ', note: 'マーシュによりBrontosaurus excelsusと命名。1903年にアパトサウルスと synonymize されたが、2015年に有効な属として復活した。' },
+    { year: 2015, location: '学術論文（複数コレクション）', discoveredBy: 'エマニュエル・チョップ、オクタビオ・マテウス、ロジャー・ Benson', note: '81体のディプロドクス科標本に基づく重要な解剖学的研究により、ブロントサウルスはアパトサウルスとは別の有効な属として再確立された。' },
+  ],
+  fossilLocations: [
+    { country: 'アメリカ合衆国', region: 'ワイオミング州コモブラフ（モリソン累層）', coordinates: [41.8, -106.0], specimenName: 'YPM 1980 — B. excelsus のホロタイプ' },
+    { country: 'アメリカ合衆国', region: 'コロラド州ガーデン・パーク（モリソン累層）', coordinates: [38.4, -105.1], specimenName: 'AMNH 460 — 参照された大型標本' },
+    { country: 'アメリカ合衆国', region: 'ワイオミング州ボーン・キャビン採石場（モリソン累層）', coordinates: [41.79, -105.67], specimenName: 'B. parvus の化石' },
+  ],
 }

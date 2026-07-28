@@ -14,4 +14,15 @@ export default {
     { label: '翼', value: '細長く長い', description: '細長い翼は白亜紀の西部内陸海道上での動的滑空に適応していました。' },
     { label: '飛翔', value: '空中魚捕り', description: '海上で滑空し、歯のないくちばしで海面の魚をすくい取っていました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'pteranodon', relationship: '同時代のプテラノドン科近縁種' },
+    { id: 'dimorphodon', relationship: '前期の基盤的翼竜' },
+    { id: 'quetzalcoatlus', relationship: '遠いアズダルコ科近縁種' },
+  ],
+  discoveries: [
+    { year: 1876, location: 'アメリカ・カンザス州ニオブララ・チョーク', discoveredBy: 'O.C. マーシュ', note: 'カンザスのチョーク層から初めて記載されたニクトサウルス。' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'ニオブララ・チョーク、カンザス州', coordinates: [38.7, -98.5], specimenName: 'ニオブララ・チョーク基準標本' },
+  ],
 }

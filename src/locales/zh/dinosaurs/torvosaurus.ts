@@ -14,5 +14,18 @@ const translations = {
     { label: '分布', value: '跨大西洋捕食者', description: '在北美洲和葡萄牙均有发现——证明侏罗纪晚期的原始大西洋仍允许动物交流。' },
     { label: '竞争对手', value: '与异特龙竞争', description: '蛮龙和异特龙是莫里森组的两个顶级捕食者，很可能为同样的猎物而竞争。' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: '同时代的顶级捕食者竞争者' },
+    { id: 'megalosaurus', relationship: '近缘的斑龙科近亲' },
+    { id: 'ceratosaurus', relationship: '同时代莫里森组捕食者' },
+  ],
+  discoveries: [
+    { discoveredBy: '詹姆斯·詹森', note: '1972年首次采集标本；1979年由彼得·加顿和詹姆斯·詹森正式描述命名为 Torvosaurus tanneri。' },
+    { discoveredBy: '奥克塔维奥·马特乌斯等人', note: '描述了欧洲种 T. gurneyi；还在蛋中发现了胚胎化石，为侏罗纪兽脚类的繁殖提供了罕见的数据。' },
+  ],
+  fossilLocations: [
+    { region: '科罗拉多州德尔塔县干梅萨采石场（莫里森组）', specimenName: 'BYU 2002 — 正模标本部分骨骼' },
+    { region: '葡萄牙洛里尼扬组, 托雷斯韦德拉什', specimenName: 'ML 632 — T. gurneyi 正模标本；胚胎材料' },
+  ],
 }
 export default translations

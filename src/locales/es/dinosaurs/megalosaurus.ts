@@ -14,4 +14,13 @@ export default {
     { label: 'Tamaño', value: '9 m', description: 'Un teropodo de tamaño medio-grande' },
     { label: 'Lugar', value: 'Inglaterra', description: 'Descubierto en canteras de Oxfordshire' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: 'Pariente lejano' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Trabajadores de cantera', note: 'Huesos gigantes encontrados en la cantera de Stonesfield; luego descritos por William Buckland en 1824.' },
+  ],
+  fossilLocations: [
+    { region: 'Oxfordshire, Reino Unido', specimenName: 'Ardesia de Stonesfield' },
+  ],
 }

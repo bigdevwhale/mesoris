@@ -14,4 +14,16 @@
     { label: '環境', value: '海岸平野のハンター', description: '西部内陸海路の縁に近い、湿潤な東部海岸低地に生息していました。' },
     { label: '芸術的遺産', value: '古典絵画のアイコン', description: '1897年の絵画「跳躍するラエラプス」により、ドリプトサウルスは活発で動的な姿で描かれた最初の恐竜の一つとなりました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: '後代の巨大なティラノサウルス科の近縁種' },
+    { id: 'albertosaurus', relationship: '北アメリカ西部のより派生的なティラノサウルス科' },
+    { id: 'gorgosaurus', relationship: 'カンパニアン〜マーストリヒチアンの別のティラノサウルス上科系統' },
+  ],
+  discoveries: [
+    { year: 1866, location: 'アメリカ合衆国ニュージャージー州バーンズボロ', discoveredBy: '採石場の労働者。記載はエドワード・ドリンカー・コープ', note: '白亜紀の沿岸堆積物からLaelaps aquilunguisとして最初に命名された。' },
+    { year: 1877, location: '分類学的改訂', discoveredBy: 'オースニエル・チャールズ・マーシュ', note: 'Laelapsという名が先取されていたため、Dryptosaurusに改名された。' },
+  ],
+  fossilLocations: [
+    { country: 'アメリカ合衆国', region: 'ニュージャージー州ナブシンク層', coordinates: [39.82, -75.13], specimenName: 'ホロタイプ関連標本' },
+  ],
 }

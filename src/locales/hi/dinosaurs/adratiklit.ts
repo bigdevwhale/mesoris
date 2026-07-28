@@ -14,4 +14,15 @@ export default {
     { label: 'गोलार्ध', value: 'दक्षिणी स्टेगोसॉर', icon: 'globe', description: 'गोंडवाना से प्राप्त कुछ दुर्लभ स्टेगोसॉर में से एक — अधिकांश उत्तरी महाद्वीपों से हैं।' },
     { label: 'परिवार', value: 'स्टेगोसॉर पूर्वज', icon: 'shield', description: 'स्टेगोसॉरिया की एक प्रारंभिक शाखा का प्रतिनिधि, जो वैज्ञानिकों को परिवार की प्राचीन उत्पत्ति समझने में सहायता करता है।' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'प्रसिद्ध बाद का रिश्तेदार' },
+    { id: 'loricatosaurus', relationship: 'यूरोपीय स्टेगोसॉर रिश्तेदार' },
+    { id: 'dacentrurus', relationship: 'यूरोपीय स्टेगोसॉर' },
+  ],
+  discoveries: [
+    { discoveredBy: 'सुसानाह मेडमेंट और उनकी टीम', note: 'कशेरुकाओं और आंशिक फीमर का वर्णन किया गया और इसे Adratiklit boulahfa नाम दिया गया।' },
+  ],
+  fossilLocations: [
+    { region: 'एल मर्स समूह, मध्य एटलस पर्वत, बौलहफ़ा', specimenName: 'NHMUK PV R 37166 — होलोटाइप कशेरुकाएँ' },
+  ],
 }

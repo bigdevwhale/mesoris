@@ -14,4 +14,16 @@ export default {
     { label: 'मुद्रा', value: 'समय के साथ सही की गई', icon: 'redo', description: 'मूल रूप से चतुष्पाद छिपकली के रूप में दिखाया गया — अब हम जानते हैं कि यह मुख्यतः दो पैरों पर चलता था।' },
     { label: 'आहार', value: 'बहुमुखी पादप-भक्षक', icon: 'leaf', description: 'अपने भोजन को चबा सकता था — कठोर पौधों को संसाधित करने के लिए एक क्रांतिकारी अनुकूलन।' },
   ],
+  relatedDinosaurs: [
+    { id: 'megalosaurus', relationship: 'पहले खोजे गए डायनासोर' },
+    { id: 'maiasaura', relationship: 'संबंधित वंश' },
+  ],
+  discoveries: [
+    { discoveredBy: 'गिदिऑन मैंटेल / मैरी ऐन मैंटेल (Gideon Mantell / Mary Ann Mantell)', note: 'पहले दाँत खोजे गए, शुरू में एक विशाल इगुआना के दाँत समझे गए।' },
+    { discoveredBy: 'कोयला खदान श्रमिक', note: '322 मीटर गहरी कोयला खदान में 38 पूर्ण कंकाल मिले — अभूतपूर्व खोज।' },
+  ],
+  fossilLocations: [
+    { region: 'बर्निसार्ट', specimenName: 'संत-बार्ब कोयला खदान' },
+    { region: 'ससेक्स', specimenName: '—' },
+  ],
 }

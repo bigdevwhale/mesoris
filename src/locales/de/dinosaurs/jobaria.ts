@@ -14,4 +14,15 @@ export default {
     { label: 'Primitiv', value: 'Uralte Merkmale', description: 'Behielt trotz relativ jungen geologischen Alters überraschend primitive anatomische Merkmale bei.' },
     { label: 'Name', value: 'Tuareg-Mythologie', description: 'Benannt nach „Jobar", einem mythischen Wesen aus den mündlichen Überlieferungen der Tuareg.' },
   ],
+  relatedDinosaurs: [
+    { id: 'brachiosaurus', relationship: 'Späterer neosauropoder Verwandter' },
+    { id: 'diplodocus', relationship: 'Zeitgenössischer sauropoder Verwandter' },
+    { id: 'nigersaurus', relationship: 'Afrikanischer Zeitgenosse' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Paul Sereno und Kollegen', note: 'Spektakuläre Bergung eines zu ~95 % vollständigen Skeletts während einer großen Sahara-Expedition; 1999 in Science formell beschrieben.' },
+  ],
+  fossilLocations: [
+    { region: 'Region Agadez, Tiourarén-Formation', specimenName: 'MNN TIG3 — nahezu vollständiger Holotyp' },
+  ],
 }

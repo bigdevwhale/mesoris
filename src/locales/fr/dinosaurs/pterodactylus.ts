@@ -14,4 +14,14 @@ export default {
     { label: 'Dents', value: 'Plus de 90 dents', description: 'Plus de 90 dents acérées et imbriquées pour attraper poissons et insectes.' },
     { label: 'Site', value: 'Solnhofen, Bavière', description: 'Célèbres calcaires qui ont également produit l\'Archéoptéryx.' },
   ],
+  relatedDinosaurs: [
+    { id: 'pteranodon', relationship: 'Descendant plus grand' },
+    { id: 'dimorphodon', relationship: 'Parent plus ancien' },
+  ],
+  discoveries: [
+    { year: 1784, location: 'Bavaria, Germany', discoveredBy: 'Cosimo Alessandro Collini', note: 'Premier fossile de ptérosaure jamais découvert — Collini pensait qu\'il s\'agissait d\'un animal aquatique.' },
+  ],
+  fossilLocations: [
+    { country: 'Germany', region: 'Bavière', coordinates: [48.9, 11.0], specimenName: 'Calcaire de Solnhofen' },
+  ],
 }

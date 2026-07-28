@@ -14,4 +14,15 @@ export default {
     { label: 'Époque', value: 'Crétacé supérieur', description: '~70 millions d\'années' },
     { label: 'Site', value: 'Shandong, Chine', description: 'Est de la Chine' },
   ],
+  relatedDinosaurs: [
+    { id: 'edmontosaurus', relationship: 'Proche parent saurolofine d\'Amérique du Nord' },
+    { id: 'parasaurolophus', relationship: 'Parent hadrosauridé' },
+    { id: 'tarbosaurus', relationship: 'Prédateur asiatique contemporain' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Hu Chengzhi et collègues', note: 'De vastes fouilles dans le Shandong depuis les années 1960 ont livré d\'énormes quantités de matériel d\'hadrosaures ; Hu a formellement décrit Shantungosaurus giganteus en 1973.' },
+  ],
+  fossilLocations: [
+    { region: 'Zhucheng, province du Shandong (Groupe Wangshi)', specimenName: 'IVPP V2659 — holotype et squelette monté composite' },
+  ],
 }

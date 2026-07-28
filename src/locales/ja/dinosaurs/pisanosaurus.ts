@@ -14,4 +14,14 @@
     { label: '体長', value: '小さな先駆者', description: '体長わずか1メートル、体重3kg未満 — 三畳紀の恐竜としてもとても小さい。' },
     { label: '産地', value: 'イスキグアラスト', description: 'アルゼンチン — 世界で最も重要な初期恐竜産地の一つ。' },
   ],
+  relatedDinosaurs: [
+    { id: 'eoraptor', relationship: '同じ累層の同時代種' },
+    { id: 'herrerasaurus', relationship: '同じ累層の同時代の捕食者' },
+  ],
+  discoveries: [
+    { year: 1962, location: 'アルゼンチン・サンフアン州イスキグアラスト', discoveredBy: 'ガリレオ・J・スカルグリア', note: '単一の断片的な標本を収集; 1967年にロドルフォ・カサミケラにより正式に記載された。' },
+  ],
+  fossilLocations: [
+    { country: 'アルゼンチン', region: 'サンフアン州、イスキグアラスト累層', coordinates: [-30.0, -67.9], specimenName: 'PULR 08 — ホロタイプ部分骨格' },
+  ],
 }

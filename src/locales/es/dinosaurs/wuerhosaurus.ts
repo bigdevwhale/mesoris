@@ -14,4 +14,15 @@ export default {
     { label: 'Hábitat', value: 'Orillas de lago', description: 'Vivía a lo largo de las costas de lagos interiores en la Cuenca de Junggar, en el noroeste de China.' },
     { label: 'Cola', value: 'Thagomizer de cuatro puntas', description: 'Un thagomizer con puntas al final de la cola, usado como defensa contra los depredadores.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Famoso pariente con placas más altas' },
+    { id: 'kentrosaurus', relationship: 'Pariente con armadura de púas' },
+    { id: 'tuojiangosaurus', relationship: 'Pariente estegosaurio chino' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Dong Zhiming', note: 'Esqueleto postcraneal parcial descrito y nombrado Wuerhosaurus homheni.' },
+  ],
+  fossilLocations: [
+    { region: 'Cuenca de Junggar, Xinjiang', specimenName: 'IVPP V.4006 — esqueleto parcial holotipo' },
+  ],
 }

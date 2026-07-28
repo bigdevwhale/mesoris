@@ -13,4 +13,14 @@ export default {
     { label: 'ध्वनि', value: 'अनुनादी बुलाहट', icon: 'music', description: 'कलंगी में जटिल वायुमार्ग थे जो ऊँची, अनुनादी बुलाहट निकालने के लिए काम आते थे।' },
     { label: 'सामाजिक', value: 'झुंडों में', icon: 'users', description: 'वे बड़े सामाजिक समूहों में रहते थे — बतख-चोंच वाले डायनासोर का जंगली भैंस के झुंड जैसा।' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: 'निकट का संबंधी' },
+    { id: 'lambeosaurus', relationship: 'निकट का संबंधी' },
+  ],
+  discoveries: [
+    { year: 1912, location: 'अल्बर्टा, कनाडा', discoveredBy: 'बार्नम ब्राउन', note: 'AMNH अभियान के दौरान पहला पूरा कंकाल खोजा गया।' },
+  ],
+  fossilLocations: [
+    { country: 'कनाडा', region: 'अल्बर्टा', coordinates: [50.8, -111.5], specimenName: 'डायनासोर पार्क शैलसमूह' },
+  ],
 }

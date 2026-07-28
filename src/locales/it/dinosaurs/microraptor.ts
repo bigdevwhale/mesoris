@@ -14,4 +14,16 @@ export default {
     { label: 'Colore', value: 'Nero iridescente', description: 'Strutture pigmentarie microscopiche suggeriscono piume lucenti come quelle di un corvo.' },
     { label: 'Dieta', value: 'Tutto ciò che sta nel becco', description: 'I fossili contengono pesci, mammiferi e uccelli nello stomaco — un piccolo predatore versatile.' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'Parente dromeosauride lontano' },
+    { id: 'troodon', relationship: 'Teropode simile a uccello' },
+    { id: 'psittacosaurus', relationship: 'Vicino contemporaneo' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Collezionisti locali di fossili', note: 'Esemplari eccezionalmente conservati del biota di Jehol rivelarono un piccolo dinosauro a quattro ali.' },
+    { discoveredBy: 'Xu Xing e colleghi', note: 'La descrizione formale rese Microraptor famoso come uno dei più chiari dinosauri piumati non aviani.' },
+  ],
+  fossilLocations: [
+    { region: 'Liaoning, Cina', specimenName: 'Formazione Jiufotang' },
+  ],
 }

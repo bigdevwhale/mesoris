@@ -14,4 +14,17 @@ export default {
     { label: 'Proies', value: 'Sauropodes géants', description: 'Chassait probablement des sauropodes comme Shunosaurus et Omeisaurus.' },
     { label: 'Parenté', value: 'Sinraptoridé', description: 'Appartient aux Sinraptoridae — un groupe d\'allosauroïdes asiatiques.' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: 'Parent allosauroïde nord-américain' },
+    { id: 'ceratosaurus', relationship: 'Ceratosauridé contemporain' },
+    { id: 'torvosaurus', relationship: 'Grand parent prédateur jurassique' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Dong Zhiming, Chang Yoichi, Li Xuanmin, Zhou Shiwu', note: 'Holotype quasi complet (crâne et squelette partiel) découvert lors de travaux de construction ; décrit par Dong et al. en 1978.' },
+    { discoveredBy: 'Dong Zhiming', note: 'Une seconde espèce, Y. magnus, décrite à partir du matériel de Dashanpu — légèrement plus grande et mieux connue.' },
+  ],
+  fossilLocations: [
+    { region: 'Yongchuan, province du Sichuan (Formation de Shangshaximiao)', specimenName: 'CV 00215 — crâne et squelette holotypes' },
+    { region: 'Zigong, province du Sichuan (Formation de Dashanpu)', specimenName: 'Matériel de Y. magnus — Musée des Dinosaures de Zigong' },
+  ],
 }

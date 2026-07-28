@@ -14,4 +14,15 @@ export default {
     { label: 'Denti', value: 'Auto-affilanti', description: 'Denti giugali carenati con smalto unilaterale — auto-affilanti, sempre affilati come rasoi.' },
     { label: 'Isola di Wight', value: 'Formazione Wessex', description: 'Giacimento con oltre 20 individui — suggerisce un comportamento gregario o di branco.' },
   ],
+  relatedDinosaurs: [
+    { id: 'iguanodon', relationship: 'Ornitopode contemporaneo più grande e parente' },
+    { id: 'deinonychus', relationship: 'Predatore contemporaneo' },
+  ],
+  discoveries: [
+    { discoveredBy: 'William Fox', note: 'Primi esemplari scoperti; il reverendo William Fox raccolse il materiale chiave e la specie fu nominata in suo onore.' },
+    { discoveredBy: 'T. H. Huxley', note: 'Descritto formalmente da Huxley nel 1869; nel 1882 Huxley propose erroneamente abitudini arboricole.' },
+  ],
+  fossilLocations: [
+    { region: 'Isola di Wight, Formazione Wessex (Gruppo Wealden)', specimenName: 'NHMUK PV R192 — olotipo; banco osseo con oltre 20 individui' },
+  ],
 }

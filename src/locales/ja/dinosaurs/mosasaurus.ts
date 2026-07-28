@@ -14,4 +14,17 @@
     { label: '尾', value: 'サメのような尾', description: 'サメのような強力な尾鰭で驚異的なスピードを実現。' },
     { label: '歯', value: '円錐形', description: '滑りやすい獲物を捕らえて押し潰すのに完全に適応した巨大な円錐形の歯。' },
   ],
+  relatedDinosaurs: [
+    { id: 'tylosaurus', relationship: '近縁種' },
+    { id: 'plesiosaurus', relationship: '競合種' },
+  ],
+  discoveries: [
+    { discoveredBy: '地元の採石場労働者', note: '史上初めて発見された巨大な先史時代の爬虫類 — 誰も恐竜を知る数十年も前のこと。' },
+    { discoveredBy: 'プロジェクト・パレオアンゴラ', note: '南アフリカ沿岸沿いでの重要な発見。' },
+  ],
+  fossilLocations: [
+    { region: 'マーストリヒト、オランダ', specimenName: 'マーストリヒト累層' },
+    { region: 'ベンゲラ盆地、アンゴラ' },
+    { region: 'カンザス州、アメリカ' },
+  ],
 }

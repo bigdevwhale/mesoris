@@ -14,4 +14,15 @@ export default {
     { label: '지능', value: '영리한 오비랍토르류', description: '비교적 큰 뇌와 복잡한 사회 행동.' },
     { label: '산지', value: '몽골 고비', description: '네메그트 층 — 세계에서 가장 풍요로운 공룡 산지 중 하나.' },
   ],
+  relatedDinosaurs: [
+    { id: 'oviraptor', relationship: '가까운 오비랍토르류 친척' },
+    { id: 'velociraptor', relationship: '마니랍토라 수각류 친척' },
+    { id: 'troodon', relationship: '소형 동시대 수각류' },
+  ],
+  discoveries: [
+    { discoveredBy: '린첸 바르스볼드 및 동료들', note: '2000년 바르스볼드와 동료들에 의해 기술됨; 미단골은 공룡에서 조류로의 진화 이야기에서 즉각적인 주요 증거가 되었다.' },
+  ],
+  fossilLocations: [
+    { region: '옴노고비 주, 네메그트층, 몽골', specimenName: 'GIN 100/119 — 미단골이 포함된 홀로타입 부분 골격' },
+  ],
 }

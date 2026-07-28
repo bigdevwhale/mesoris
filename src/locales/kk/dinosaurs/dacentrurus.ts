@@ -14,4 +14,17 @@ export default {
     { label: 'Тақташалар', value: 'Жалпақ және тегіс', description: 'Арқасы мен жамбасы бойымен ұзын қатарлы жалпақ, тегіс, үшбұрышты тақташалар болды.' },
     { label: 'Шығу тегі', value: 'Англия мен Франция', description: 'Англияның Дорсет Киммеридж балшығында және Франция мен Португалияның Юра шөгінділерінде табылған.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Атақты кейінгі туысы' },
+    { id: 'loricatosaurus', relationship: 'Еуропалық стегозавр туыс' },
+    { id: 'kentrosaurus', relationship: 'Африкалық стегозавр туыс' },
+  ],
+  discoveries: [
+    { year: 1875, location: 'Киммеридж балшығы, Дорсет, Англия', discoveredBy: 'Ричард Оуэн', note: 'Алғашында Omosaurus деп аталды; кейін Dacentrurus деп қайта аталды.' },
+    { year: 1902, location: 'Ұлыбритания мен Франция', discoveredBy: 'Түрлі зерттеушілер', note: 'F.A. Лукас тарапынан Dacentrurus деп қайта аталды; қосымша материал сипатталды.' },
+  ],
+  fossilLocations: [
+    { country: 'Ұлыбритания', region: 'Дорсет, Киммеридж', coordinates: [50.6, -2.1], specimenName: 'NHMUK голотип материалы' },
+    { country: 'Франция', region: 'Францияның Юра қабаттары', coordinates: [46.5, 2.0], specimenName: 'Түрлі француз үлгілері' },
+  ],
 }

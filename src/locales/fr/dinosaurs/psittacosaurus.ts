@@ -14,4 +14,17 @@ export default {
     { label: 'Queue', value: 'Soies raides', description: 'Certains spécimens montrent des soies rigides sur la queue — des structures cutanées rares.' },
     { label: 'Taille', value: '2 mètres', description: 'Environ de la taille d\'un grand chien, posture bipède.' },
   ],
+  relatedDinosaurs: [
+    { id: 'protoceratops', relationship: 'Cératopsien ultérieur apparenté' },
+    { id: 'triceratops', relationship: 'Lointain descendant cornu' },
+    { id: 'microraptor', relationship: 'Voisin asiatique contemporain' },
+  ],
+  discoveries: [
+    { year: 1922, location: 'Mongolia', discoveredBy: 'Henry Fairfield Osborn', note: 'Osborn a nommé le genre à partir des premières découvertes asiatiques et l\'a reconnu comme un dinosaure cornu primitif.' },
+    { year: 2000, location: 'Liaoning, China', discoveredBy: 'Chinese paleontological teams', note: 'De nouveaux fossiles spectaculaires ont préservé la peau, les soies et même d\'éventuels groupes de juvéniles.' },
+  ],
+  fossilLocations: [
+    { country: 'China', region: 'Liaoning', coordinates: [41.9, 121.7], specimenName: 'Formation de Yixian' },
+    { country: 'Mongolia', region: 'Ömnögovi', coordinates: [44.5, 108.5], specimenName: 'Couches du Crétacé inférieur' },
+  ],
 }

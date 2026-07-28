@@ -14,4 +14,15 @@ export default {
     { label: 'Croissance osseuse', value: 'Croissance rapide', description: 'L\'histologie osseuse montre des taux de croissance rapides et soutenus — caractéristiques des dinosaures.' },
     { label: 'Tanzanie', value: 'Trias moyen', description: 'Trouvé dans la formation de Manda du Trias moyen — époque où les premiers animaux dinosauriens émergeaient.' },
   ],
+  relatedDinosaurs: [
+    { id: 'eoraptor', relationship: 'Dinosaure précoce argentin ultérieur' },
+    { id: 'herrerasaurus', relationship: 'Dinosaure précoce ultérieur' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Rex Parrington', note: 'Os collectés dans les années 1930 mais non décrits formellement avant 2013 par Sterling Nesbitt et ses collègues.' },
+    { discoveredBy: 'Sterling Nesbitt et al.', note: 'Description formelle publiée dans Biology Letters identifiant le matériel comme potentiellement le plus ancien dinosaure au monde.' },
+  ],
+  fossilLocations: [
+    { region: 'Bassin de Ruhuhu, formation de Manda, région de Ruvuma', specimenName: 'NHMUK PV R6856 — humérus et vertèbres holotype' },
+  ],
 }

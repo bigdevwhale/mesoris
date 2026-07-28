@@ -14,4 +14,19 @@ export default {
     { label: 'Миы', value: 'Өте жақсы дамыған', description: 'Көру қабілеті өте жақсы, иіс сезуі керемет болған. Ол жемтігінің иісін бірнеше шақырым жерден-ақ сезе алған.' },
     { label: 'Алдыңғы табандары', value: 'Кішкентай, бірақ күшті', description: 'Ұзындығы шамамен 1 метр болғанымен, 200 кг-ға дейін көтере алған. Олардың нақты қызметі әлі күнге дейін талқыланып келеді.' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: 'Олжа' },
+    { id: 'edmontosaurus', relationship: 'Олжа' },
+    { id: 'daspletosaurus', relationship: 'Ата-баба' },
+    { id: 'giganotosaurus', relationship: 'Конвергентті эволюция' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Барнум Браун', note: 'Хелл-Крик формациясында алғашқы жартылай қаңқа табылды.' },
+    { discoveredBy: 'Сьюзен Хендриксон', note: '«Сью» — табылған ең толық T. rex қаңқасы, 90%-дан астамы сақталған.' },
+  ],
+  fossilLocations: [
+    { region: 'Монтана', specimenName: 'Хелл-Крик формациясы' },
+    { region: 'Оңтүстік Дакота', specimenName: 'Сью' },
+    { region: 'Вайоминг', specimenName: 'Лэнс формациясы' },
+  ],
 }

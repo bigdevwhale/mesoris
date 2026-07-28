@@ -14,4 +14,15 @@ export default {
     { label: 'पंख', value: 'पूर्ण प्लुमेज', icon: 'feather', description: 'पूँछ पंखों के पंखे सहित पंखों से ढका — एक भड़कीले ज़मीनी पक्षी जैसा दिखता था।' },
     { label: 'कलंगी', value: 'कैसोवरी जैसी', icon: 'triangle', description: 'आधुनिक कैसोवरी की तरह सिर पर एक ऊँची, हड्डीदार कलंगी — एक जीवित डायनासोर।' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'दूरस्थ रिश्तेदार (मैनिरैप्टोरन)' },
+    { id: 'protoceratops', relationship: 'साथ रहा (शिकार नहीं)' },
+  ],
+  discoveries: [
+    { discoveredBy: 'रॉय चैपमैन एंड्रयूज', note: 'एक घोंसले के पास मिला — 70 वर्षों तक अंडा चोर के रूप में गलत पहचाना गया।' },
+    { discoveredBy: 'मार्क नोरेल', note: 'भ्रूण की खोज ने ओविरैप्टर को बरी किया — वह चुरा नहीं रहा था बल्कि से रहा था।' },
+  ],
+  fossilLocations: [
+    { region: 'गोबी रेगिस्तान', specimenName: 'जादोचता शैलसमूह' },
+  ],
 }

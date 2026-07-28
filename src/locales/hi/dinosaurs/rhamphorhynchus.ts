@@ -13,4 +13,14 @@ export default {
     { label: 'दाँत', value: 'सुई जैसे', description: 'आगे की ओर निकले सुई जैसे दाँत मछलियों को भेदने के लिए — जुरासिक कल्प का किंगफ़िशर।' },
     { label: 'संरक्षण', value: 'असाधारण', description: 'अब तक के सबसे बेहतर संरक्षित टेरोसॉर — जिनमें पंख झिल्ली और गले की थैली भी दिखाई देती है।' },
   ],
+  relatedDinosaurs: [
+    { id: 'pterodactylus', relationship: 'समकालीन' },
+    { id: 'dimorphodon', relationship: 'पहले का संबंधी' },
+  ],
+  discoveries: [
+    { year: 1830, location: 'Bavaria, Germany', discoveredBy: 'Georg August Goldfuss', note: 'आर्कियोप्टेरिक्स के साथ सोलनहोफ़ेन खदानों से सबसे पहले वर्णित।' },
+  ],
+  fossilLocations: [
+    { country: 'Germany', region: 'सोलनहोफ़ेन चूना-पत्थर, बवेरिया', coordinates: [48.9, 11.0], specimenName: 'सोलनहोफ़ेन चूना-पत्थर, प्ररूपी नमूना' },
+  ],
 }

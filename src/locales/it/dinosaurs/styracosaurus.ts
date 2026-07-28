@@ -14,4 +14,14 @@ export default {
     { label: 'Dimensioni', value: '5,5 m', description: 'Un ceratopside di medie dimensioni.' },
     { label: 'Epoca', value: '76–75 milioni di anni fa', description: 'Cretaceo superiore dell\'Alberta.' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: 'Parente' },
+    { id: 'pachyrhinosaurus', relationship: 'Parente stretto' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Charles M. Sternberg', note: 'Primo cranio scoperto.' },
+  ],
+  fossilLocations: [
+    { region: 'Alberta', specimenName: 'Formazione Dinosaur Park' },
+  ],
 }

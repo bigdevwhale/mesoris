@@ -14,4 +14,14 @@ export default {
     { label: 'आहार', value: 'छिपकलियाँ', icon: 'bug', description: 'एक जीवाश्म नमूने में पेट में पूरी छिपकली के साथ पाया गया।' },
     { label: 'महत्व', value: 'पक्षी संबंध', icon: 'link', description: 'इसका चिड़िया-जैसा कंकाल पक्षी-डायनासोर विकास की प्रारंभिक बहस में प्रमुख साक्ष्य था।' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'दूर का संबंधी' },
+  ],
+  discoveries: [
+    { year: 1859, location: 'बवेरिया, जर्मनी', discoveredBy: 'जोसेफ ओबेरन्डोर्फर', note: 'सोलनहोफ़ेन चूना पत्थर में पहला नमूना मिला, आर्कियोप्टेरिक्स के समान निक्षेप।' },
+  ],
+  fossilLocations: [
+    { country: 'जर्मनी', region: 'बवेरिया', coordinates: [48.8, 11.0], specimenName: 'सोलनहोफ़ेन चूना पत्थर' },
+    { country: 'फ़्रांस', region: 'प्रोवेंस', coordinates: [43.5, 6.5] },
+  ],
 }

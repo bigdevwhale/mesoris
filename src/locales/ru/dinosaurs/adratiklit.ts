@@ -14,4 +14,15 @@ export default {
     { label: 'Полушарие', value: 'Южный стегозавр', description: 'Один из немногих стегозавров из Гондваны — большинство известны с северных континентов.' },
     { label: 'Семейство', value: 'Предок стегозавров', description: 'Представляет раннюю ветвь Stegosauria, помогающую понять древнее происхождение семейства.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Известный более поздний родственник' },
+    { id: 'loricatosaurus', relationship: 'Европейский стегозавр-родственник' },
+    { id: 'dacentrurus', relationship: 'Европейский стегозавр' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Сюзанна Мэйдмент и команда', note: 'Позвонки и часть бедренной кости описаны и названы Adratiklit boulahfa.' },
+  ],
+  fossilLocations: [
+    { region: 'Группа Эль-Мерс, Средний Атлас, Булахфа', specimenName: 'NHMUK PV R 37166 — голотип, позвонки' },
+  ],
 }

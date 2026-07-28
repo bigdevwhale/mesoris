@@ -14,5 +14,16 @@ const translations = {
     { label: '时代', value: '侏罗纪早期', description: '约 1.95 亿年前。' },
     { label: '运动方式', value: '双足行走', description: '可能主要用两条腿行走。' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: '远后期甲龙类后裔' },
+    { id: 'ankylosaurus', relationship: '远后期甲龙类后裔' },
+    { id: 'scelidosaurus', relationship: '近亲早期甲龙类' },
+  ],
+  discoveries: [
+    { discoveredBy: '埃德温·H·科尔伯特', note: '1981年由科尔伯特依据凯恩塔组标本命名描述，作为已知最古老的甲龙类具有重要意义。' },
+  ],
+  fossilLocations: [
+    { region: '美国亚利桑那州科科尼诺县（凯恩塔组）', specimenName: 'UCMP 129015 — 正模标本，部分骨骼' },
+  ],
 }
 export default translations

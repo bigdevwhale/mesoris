@@ -14,4 +14,16 @@ export default {
     { label: '頭骨', value: '巨大な頭骨', description: '頭骨はケラトプス類最大級で、フリルを含めて最大2.6メートルに達し、支えるために巨大な首の筋肉が必要でした。' },
     { label: '白亜紀末', value: '最後の日々', description: '白亜紀のまさに終わり、6800万〜6600万年前に生き、小惑星絶滅前の最後のケラトプス類の一つでした。' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: '最も近い近縁種 — かつて同種とされたことも' },
+    { id: 'styracosaurus', relationship: 'ケラトプス科の近縁種' },
+    { id: 'pentaceratops', relationship: 'より古いカスモサウルス類の近縁種' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ジョン・ベル・ハッチャー', note: '1891年にO.C.マーシュにより記載された；その後米国西部のランス層やヘルクリーク層から多数の標本が発見された。' },
+  ],
+  fossilLocations: [
+    { region: 'ワイオミング州ニオブララ郡（ランス層）', specimenName: 'YPM 1830 — ホロタイプ、部分頭骨' },
+    { region: 'サウスダコタ州ハーディング郡（ヘルクリーク層）', specimenName: '参照された頭骨標本' },
+  ],
 }

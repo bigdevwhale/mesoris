@@ -14,4 +14,16 @@ export default {
     { label: 'Dimensioni', value: 'Più grande del T-Rex', description: 'Con 15 metri, il più grande dinosauro carnivoro mai scoperto.' },
     { label: 'Coda', value: 'A forma di pagaia', description: 'Una coda unica a forma di pinna per una potente propulsione subacquea.' },
   ],
+  relatedDinosaurs: [
+    { id: 'baryonyx', relationship: 'Parente stretto' },
+    { id: 'mosasaurus', relationship: 'Concorrente (acquatico)' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Ernst Stromer', note: 'Primi fossili trovati; poi distrutti nel bombardamento di Monaco durante la seconda guerra mondiale.' },
+    { discoveredBy: 'Nizar Ibrahim', note: 'Nuove importanti scoperte hanno confermato la teoria dello stile di vita acquatico.' },
+  ],
+  fossilLocations: [
+    { region: 'Letti di Kem Kem', specimenName: '' },
+    { region: 'Formazione di Bahariya', specimenName: '' },
+  ],
 }

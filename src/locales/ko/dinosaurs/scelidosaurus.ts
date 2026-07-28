@@ -14,4 +14,15 @@ export default {
     { label: '조상', value: '초기 장순류', description: '후대 검룡류와 곡룡류 계통의 분기 이전에 위치하는 가장 초기 장순류 중 하나.' },
     { label: '자세', value: '저층 채식자', description: '낮은 자세와 작은 엽상 치아로 쥐라기 전기 숲의 지표 부근 식물을 효율적으로 먹었다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: '후대 티레오포라 계통의 후손' },
+    { id: 'ankylosaurus', relationship: '후대 티레오포라 계통의 후손' },
+    { id: 'euoplocephalus', relationship: '후대 안킬로사우루스류 근연종' },
+  ],
+  discoveries: [
+    { discoveredBy: '제임스 해리슨', note: '완전한 골격이 발견되어 1861년 리처드 오웬에 의해 초기 공룡 해부학에 관한 기념비적인 논문에서 기재되었다.' },
+  ],
+  fossilLocations: [
+    { region: '잉글랜드 도싯주 차머스(하부 리아스층)', specimenName: 'NHMUK PV R1111 — 모식표본, 거의 완전한 골격' },
+  ],
 }

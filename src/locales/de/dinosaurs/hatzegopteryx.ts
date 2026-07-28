@@ -14,4 +14,15 @@ export default {
     { label: 'Hals', value: 'Kompakt', description: 'Ein für einen Azhdarchiden relativ kurzer, massiv gebauter Hals, angepasst daran, große Beute zu bewältigen.' },
     { label: 'Ökologie', value: 'Spitze der Hațeg-Insel', description: 'Spitzenprädator der Hațeg-Insel (Rumänien) — er jagte Dinosaurier, die dort lebten, darunter kleine Titanosaurier.' },
   ],
+  relatedDinosaurs: [
+    { id: 'quetzalcoatlus', relationship: 'Riesiger Azhdarchide-Verwandter' },
+    { id: 'thanatosdrakon', relationship: 'Riesiger Azhdarchide-Verwandter' },
+    { id: 'pteranodon', relationship: 'Kleinerer Pterosaurier-Verwandter' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Dan Grigorescu und Team', note: 'Schädelfragmente, Humerus und anderes Material erstmals beschrieben und benannt.' },
+  ],
+  fossilLocations: [
+    { region: 'Densuș-Ciula-Formation, Hațeg-Becken, Transsylvanien', specimenName: 'BMNH R 3517 / Holotyp-Fragmentmaterial' },
+  ],
 }

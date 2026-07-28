@@ -14,4 +14,19 @@ export default {
     { label: 'Gehirn', value: 'Hochentwickelt', description: 'Hervorragender Seh- und Geruchssinn — Beute kilometerweit erkennen.' },
     { label: 'Arme', value: 'Winzig aber stark', description: 'Nur 1 Meter lang, aber stark genug, um 200 kg zu heben.' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: 'Beute' },
+    { id: 'edmontosaurus', relationship: 'Beute' },
+    { id: 'daspletosaurus', relationship: 'Vorfahre' },
+    { id: 'giganotosaurus', relationship: 'Konvergente Evolution' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Barnum Brown', note: 'Erstes Teilskelett in der Hell-Creek-Formation entdeckt.' },
+    { discoveredBy: 'Susan Hendrickson', note: '«Sue» — das vollständigste jemals gefundene T.-rex-Skelett, über 90 % intakt.' },
+  ],
+  fossilLocations: [
+    { region: 'Montana', specimenName: 'Hell-Creek-Formation' },
+    { region: 'South Dakota', specimenName: 'Sue' },
+    { region: 'Wyoming', specimenName: 'Lance-Formation' },
+  ],
 }

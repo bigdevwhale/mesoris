@@ -14,4 +14,19 @@ export default {
       { label: 'Мозг', value: 'Очень развитый', description: 'Обладал отличным зрением и великолепным обонянием — мог заметить добычу за многие километры.' },
       { label: 'Передние лапы', value: 'Крошечные, но сильные', description: 'При длине около метра могли поднимать до 200 кг — их назначение до сих пор обсуждается.' },
     ],
-  }
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: 'Добыча' },
+    { id: 'edmontosaurus', relationship: 'Добыча' },
+    { id: 'daspletosaurus', relationship: 'Предок' },
+    { id: 'giganotosaurus', relationship: 'Конвергентная эволюция' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Барнум Браун', note: 'Первый частичный скелет, обнаруженный в формации Хелл-Крик.' },
+    { discoveredBy: 'Сьюзан Хендриксон', note: '«Сью» — самый полный из когда-либо найденных скелетов T. rex, более 90% в сохранности.' },
+  ],
+  fossilLocations: [
+    { region: 'Монтана', specimenName: 'Формация Хелл-Крик' },
+    { region: 'Южная Дакота', specimenName: 'Сью' },
+    { region: 'Вайоминг', specimenName: 'Формация Лэнс' },
+  ],
+}

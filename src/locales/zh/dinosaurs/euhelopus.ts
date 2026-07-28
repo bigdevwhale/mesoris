@@ -14,4 +14,16 @@
     { label: '四肢', value: '柱状承重', description: '强壮的四肢能够支撑沉重身体，并适应松软的河漫滩地面。' },
     { label: '年代', value: '早白垩世', description: '在许多经典侏罗纪蜥脚类衰落之后，它仍在亚洲生态系统中占据重要位置。' },
   ],
+  relatedDinosaurs: [
+    { id: 'mamenchisaurus', relationship: '另一种亚洲长颈蜥脚类，常在解剖学上被比较' },
+    { id: 'brachiosaurus', relationship: '大型高处取食的蜥脚类，前肢比例不同' },
+    { id: 'sauroposeidon', relationship: '后来的巨型泰坦巨龙形类，颈部极度延长' },
+  ],
+  discoveries: [
+    { discoveredBy: '奥托·兹dansky 探险队', note: '采集了后来用于正式描述的原始化石材料。' },
+    { discoveredBy: '卡尔·维曼', note: '正式描述了盘足龙（Euhelopus zdanskyi），并强调了其不寻常的蜥脚类解剖结构。' },
+  ],
+  fossilLocations: [
+    { region: '山东省', specimenName: '原始盘足龙标本' },
+  ],
 }

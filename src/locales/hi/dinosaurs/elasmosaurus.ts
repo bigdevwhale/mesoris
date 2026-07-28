@@ -13,4 +13,13 @@ export default {
     { label: 'सिर', value: 'बहुत छोटा', icon: 'minus', description: 'अपनी विशाल गर्दन के सिरे पर आश्चर्यजनक रूप से छोटा सिर था — साँप की तरह।' },
     { label: 'त्रुटि', value: 'सिर गलत सिरे पर', icon: 'help-circle', description: 'पहली बार सिर गलत सिरे पर लगाकर प्रदर्शित किया गया — एक प्रसिद्ध पुराजीवविज्ञानीय भूल।' },
   ],
+  relatedDinosaurs: [
+    { id: 'plesiosaurus', relationship: 'पूर्वज' },
+  ],
+  discoveries: [
+    { discoveredBy: 'थियोफिलस टर्नर', note: 'वेस्टर्न इंटीरियर सीवे के चाक जमाव से खोजा गया।' },
+  ],
+  fossilLocations: [
+    { region: 'कैनसस', specimenName: 'पियरे शेल' },
+  ],
 }

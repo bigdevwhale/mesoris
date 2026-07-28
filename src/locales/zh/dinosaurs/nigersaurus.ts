@@ -14,4 +14,16 @@
     { label: '姿态', value: '头向下', description: '头部保持异常低的位置——完美适合刮食草料。' },
     { label: '产地', value: '尼日尔，非洲', description: '发现于撒哈拉沙漠——白垩纪非洲的特化啃食者。' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: '远亲梁龙超科' },
+    { id: 'suchomimus', relationship: '同时代邻居' },
+    { id: 'sauroposeidon', relationship: '不同的蜥脚类进食策略' },
+  ],
+  discoveries: [
+    { discoveredBy: '菲利普·塔凯', note: '法国考察队首次从撒哈拉获得了后来被证明属于尼日尔龙的化石。' },
+    { discoveredBy: '保罗·塞里诺及团队', note: '新的考察产出了揭示该恐龙奇异进食解剖学的头骨材料。' },
+  ],
+  fossilLocations: [
+    { region: '加杜法乌阿，尼日尔', specimenName: '埃尔哈兹组' },
+  ],
 }

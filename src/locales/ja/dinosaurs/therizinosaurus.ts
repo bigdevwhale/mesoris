@@ -14,4 +14,14 @@ export default {
     { label: '体格', value: '太鼓腹', description: '植物発酵のための巨大な腸、長い首、小さな葉状の歯。' },
     { label: '近縁種', value: '捕食者から菜食主義者へ', description: '肉食獣脚類から進化しながら完全な植物食になった、極めて稀な例。' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: '遠い近縁種（マニラプトル類）' },
+    { id: 'tyrannosaurus-rex', relationship: '遠い近縁種（獣脚類）' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ソ連・モンゴル共同調査隊', note: '最初の化石は巨大な爪だけで、研究者たちは当初それを巨大なカメの肋骨だと考えた！' },
+  ],
+  fossilLocations: [
+    { region: 'ゴビ砂漠', specimenName: 'ネメグト層' },
+  ],
 }

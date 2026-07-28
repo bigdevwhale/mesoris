@@ -14,4 +14,14 @@ export default {
     { label: '지배력', value: '정점 포식자', description: '서부 내륙 해로의 누구도 인정하는 정점 포식자로, 이것을 사냥하는 것은 아무것도 없었다.' },
     { label: '몸길이', value: '약 14m', description: '최대급 모사사우루스류 중 하나로, 체중 10톤에 달함.' },
   ],
+  relatedDinosaurs: [
+    { id: 'mosasaurus', relationship: '근연종' },
+    { id: 'plesiosaurus', relationship: '먹이' },
+  ],
+  discoveries: [
+    { discoveredBy: '오스니얼 찰스 마시', note: '캔자스의 백악층에서 "뼈 전쟁" 시기에 처음 기재되었다.' },
+  ],
+  fossilLocations: [
+    { region: '캔자스', specimenName: '나이오브라라 초크, 스모키 힐' },
+  ],
 }

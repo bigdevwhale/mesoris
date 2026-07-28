@@ -14,4 +14,16 @@ export default {
     { label: 'दाँत', value: 'दंत शक्तिशाली', icon: 'combine', description: 'कठोर पौधे खाने के लिए उन्नत पीसने वाली बैटरी में व्यवस्थित 1,000 से अधिक दाँत।' },
     { label: 'नाक', value: 'फुलाने योग्य थैली', icon: 'wind', description: 'संभवतः दृश्य और ध्वनिक प्रदर्शन के लिए एक फुलाने योग्य नासिका थैली थी।' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'शिकार' },
+    { id: 'maiasaura', relationship: 'नज़दीकी संबंधी' },
+  ],
+  discoveries: [
+    { year: 1892, location: 'साउथ डकोटा, अमेरिका', discoveredBy: 'ओथनियल चार्ल्स मार्श', note: 'पहली बार विवरण।' },
+    { year: 1999, location: 'नॉर्थ डकोटा, अमेरिका', discoveredBy: 'टायलर लायसन', note: '«डकोटा» — सबसे अच्छी तरह संरक्षित डायनासोर ममियों में से एक।' },
+  ],
+  fossilLocations: [
+    { country: 'अमेरिका', region: 'साउथ डकोटा', coordinates: [44.5, -100.0], specimenName: 'हेल क्रीक फॉर्मेशन' },
+    { country: 'कनाडा', region: 'अल्बर्टा', coordinates: [53.5, -113.5] },
+  ],
 }

@@ -14,4 +14,14 @@ export default {
     { label: 'Familia', value: 'Azdárquido', description: 'Miembro de Azhdarchidae, la familia de pterosaurios de cuello y pico largos que incluye a Quetzalcoatlus y Hatzegopteryx.' },
     { label: 'Edad', value: 'Cretácico Medio', description: 'Vivió unos 20 millones de años antes que el famoso Quetzalcoatlus, llenando un vacío en la evolución azdárquida.' },
   ],
+  relatedDinosaurs: [
+    { id: 'quetzalcoatlus', relationship: 'Pariente azhdárquido gigante' },
+    { id: 'pteranodon', relationship: 'Pariente pterosaurio más pequeño' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Leonardo Ortiz David y equipo', note: 'Esqueleto parcial articulado y material referido descrito y nombrado.' },
+  ],
+  fossilLocations: [
+    { region: 'Formación Plottier, provincia de Mendoza', specimenName: 'UNCUYO-LD 307 — holotipo, esqueleto parcial' },
+  ],
 }

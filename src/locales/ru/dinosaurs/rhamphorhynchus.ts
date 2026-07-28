@@ -13,4 +13,14 @@ export default {
       { label: 'Зубы', value: 'Игольчатые', description: 'Направленные вперёд игольчатые зубы отлично подходили для накалывания рыбы.' },
       { label: 'Сохранность', value: 'Исключительная', description: 'Одни из самых прекрасно сохранившихся птерозавров — видны перепонки крыльев и даже горловой мешок.' },
     ],
-  }
+  relatedDinosaurs: [
+    { id: 'pterodactylus', relationship: 'Современник' },
+    { id: 'dimorphodon', relationship: 'Более ранний родственник' },
+  ],
+  discoveries: [
+    { year: 1830, location: 'Bavaria, Germany', discoveredBy: 'Георг Август Гольдфус', note: 'Впервые описан из зольнхофенских каменоломен вместе с археоптериксом.' },
+  ],
+  fossilLocations: [
+    { country: 'Germany', region: 'Зольнхофенский известняк, Бавария', coordinates: [48.9, 11.0], specimenName: 'Зольнхофенский известняк, типовой материал' },
+  ],
+}

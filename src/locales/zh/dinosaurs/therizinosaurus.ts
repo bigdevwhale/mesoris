@@ -14,5 +14,15 @@ const translations = {
     { label: '体格', value: '大肚腩', description: '巨大的腹部用于发酵植物，长颈，小叶状的小牙齿。' },
     { label: '体型', value: '10 米', description: '一种巨大的镰刀龙类，也是已知最大的手盗龙类。' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: '远亲（手盗龙类）' },
+    { id: 'tyrannosaurus-rex', relationship: '远亲（兽脚类）' },
+  ],
+  discoveries: [
+    { discoveredBy: '苏联-蒙古联合考察队', note: '最初发现的化石只是巨爪，科学家最初以为那是巨型乌龟的肋骨！' },
+  ],
+  fossilLocations: [
+    { region: '戈壁沙漠', specimenName: '讷莫格特组' },
+  ],
 }
 export default translations

@@ -14,4 +14,15 @@ export default {
     { label: 'Époque', value: 'Jurassique inférieur', description: '~195 millions d\'années' },
     { label: 'Site', value: 'Angleterre', description: 'Jurassic Coast, Dorset' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Lignée descendante thyréophore plus tardive' },
+    { id: 'ankylosaurus', relationship: 'Lignée descendante thyréophore plus tardive' },
+    { id: 'euoplocephalus', relationship: 'Parent ankylosaure plus tardif' },
+  ],
+  discoveries: [
+    { discoveredBy: 'James Harrison', note: 'Squelette complet découvert ; décrit par Richard Owen en 1861 dans un article fondateur sur l\'anatomie précoce des dinosaures.' },
+  ],
+  fossilLocations: [
+    { region: 'Charmouth, Dorset, Angleterre (Lias inférieur)', specimenName: 'NHMUK PV R1111 — holotype, squelette quasi complet' },
+  ],
 }

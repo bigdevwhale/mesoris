@@ -14,4 +14,14 @@ export default {
     { label: '크기', value: '개 크기', description: '몸길이 불과 1미터. 공룡은 거인으로 진화하기 전에 작게 시작했습니다.' },
     { label: '산지', value: '달의 계곡', description: '아르헨티나의 달의 계곡에서 발견되었습니다. 세계에서 가장 중요한 화석 사이트 중 하나입니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'herrerasaurus', relationship: '동시대 생물' },
+    { id: 'plateosaurus', relationship: '후대의 자손' },
+  ],
+  discoveries: [
+    { year: 1991, location: '아르헨티나 산후안', discoveredBy: '리카르도 마르티네스', note: '헤레라사우루스와 같은 달의 계곡 지층에서 발견되었다.' },
+  ],
+  fossilLocations: [
+    { country: '아르헨티나', region: '산후안', coordinates: [-30.0, -68.0], specimenName: '달의 계곡, 이스키구알라스토층' },
+  ],
 }

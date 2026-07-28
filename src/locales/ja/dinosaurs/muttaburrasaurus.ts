@@ -14,4 +14,16 @@
     { label: '歯', value: '切り裂き型の歯', description: '臼歯ではなく切れ味のある歯 — 硬い植物を食べていたことを示唆。' },
     { label: '孤立', value: '南の大陸', description: 'オーストラリアが南極から分離し始める中、比較的孤立した環境で進化した。' },
   ],
+  relatedDinosaurs: [
+    { id: 'iguanodon', relationship: '近縁なイグアノドン類鳥脚類' },
+    { id: 'camptosaurus', relationship: '初期の鳥脚類近縁種' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ダグ・ラングドン', note: '1963年に牧場主のダグ・ラングドンが自身の敷地でほぼ完全な骨格を発見。1981年にバーソロメイとモルナーにより正式記載。' },
+    { discoveredBy: '古生物学チーム', note: '1987年にライトニングリッジでオパールを含む堆積物から2体目の標本が発見され、追加の解剖学的データが得られた。' },
+  ],
+  fossilLocations: [
+    { region: 'マタブラ、バーカルドゥィン地域、クイーンズランド州、オーストラリア（マクンダ累層）', specimenName: 'QM F6140 — ほぼ完全なホロタイプ骨格' },
+    { region: 'ライトニングリッジ、ニューサウスウェールズ州、オーストラリア', specimenName: '部分的な頭骨と頭骨後骨格' },
+  ],
 }

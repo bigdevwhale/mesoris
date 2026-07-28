@@ -14,4 +14,16 @@ export default {
     { label: '뼈', value: '거대한 뼈', description: '척추뼈는 매우 거대해서, 하나의 뼈만으로도 인간보다 커질 수 있었습니다.' },
     { label: '희소성', value: '단편적 화석만', description: '과학자들은 화석 자료가 불완전함에도 그것이 거대했음을 알고 있습니다. 보존된 뼈가 어쨌든 거대하기 때문입니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'giganotosaurus', relationship: '포식자의 위협' },
+    { id: 'apatosaurus', relationship: '먼 용각류 사촌' },
+    { id: 'sauroposeidon', relationship: '거대 경쟁자' },
+  ],
+  discoveries: [
+    { year: 1987, location: '아르헨티나 네우켄', discoveredBy: '기에르모 에레디아', note: '농장 노동자가 우잉쿨층에서 거대한 뼈를 발견했습니다.' },
+    { year: 1993, location: '아르헨티나 파타고니아', discoveredBy: '호세 보나파르트와 로돌포 코리아', note: '정식 학술 기재를 통해 아르헨티노사우루스는 알려진 최대의 티타노사우루스류로 자리잡았습니다.' },
+  ],
+  fossilLocations: [
+    { country: '아르헨티나', region: '네우켄', coordinates: [-38.7, -69.8], specimenName: '우잉쿨층' },
+  ],
 }

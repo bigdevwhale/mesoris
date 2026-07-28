@@ -14,4 +14,15 @@ export default {
     { label: 'Dents', value: 'Auto-affûtantes', description: 'Dents jugales carénées à émail unilatéral — auto-affûtantes, toujours tranchantes comme des rasoirs.' },
     { label: 'Île de Wight', value: 'Formation de Wessex', description: 'Gisement avec plus de 20 individus — suggérant un comportement grégaire ou de troupeau.' },
   ],
+  relatedDinosaurs: [
+    { id: 'iguanodon', relationship: 'Ornithopode contemporain plus grand et parent' },
+    { id: 'deinonychus', relationship: 'Prédateur contemporain' },
+  ],
+  discoveries: [
+    { discoveredBy: 'William Fox', note: 'Premiers spécimens découverts ; le révérend William Fox a rassemblé le matériel clé et l\'espèce a été nommée en son honneur.' },
+    { discoveredBy: 'T. H. Huxley', note: 'Décrit formellement par Huxley en 1869 ; en 1882, Huxley suggéra à tort des habitudes arboricoles.' },
+  ],
+  fossilLocations: [
+    { region: 'Île de Wight, formation de Wessex (groupe Wealden)', specimenName: 'NHMUK PV R192 — holotype ; gisement osseux avec plus de 20 individus' },
+  ],
 }

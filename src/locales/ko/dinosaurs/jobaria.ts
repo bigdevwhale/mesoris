@@ -14,4 +14,15 @@ export default {
     { label: '원시적', value: '오래된 특징', description: '비교적 새로운 지질 연대에도 불구하고, 놀랍도록 원시적 해부학적 특징을 보유했습니다.' },
     { label: '이름', value: '투아레그 신화', description: '사하라의 투아레그족 구전 전통에 등장하는 신화 속 생물 "조바르"에서 이름 지어졌습니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'brachiosaurus', relationship: '후대의 네오용각류 친척' },
+    { id: 'diplodocus', relationship: '동시대 용각류 친척' },
+    { id: 'nigersaurus', relationship: '아프리카 동시대 종' },
+  ],
+  discoveries: [
+    { discoveredBy: '폴 세레노와 동료들', note: '대규모 사하라 탐사 중 약 95% 완전한 골격의 인상적인 발견; 1999년 Science에 공식적으로 기술됨.' },
+  ],
+  fossilLocations: [
+    { region: '아가데즈 지역, 티우라렌층', specimenName: 'MNN TIG3 — 거의 완전한 홀로타입' },
+  ],
 }

@@ -14,4 +14,14 @@ export default {
     { label: '食性', value: '真の雑食性', description: '植物、果実、卵、昆虫、小型脊椎動物と、あらゆるものを食べました。' },
     { label: '速度', value: '時速約60 km', description: 'カンパニアンの平原を驚異的な速度で走る、恐竜界の短距離走者。' },
   ],
+  relatedDinosaurs: [
+    { id: 'gallimimus', relationship: '近い近縁種' },
+    { id: 'ornithomimus', relationship: '近い近縁種' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ローレンス・ラム', note: '初の標本がベリーリバーグループで発見された。' },
+  ],
+  fossilLocations: [
+    { region: 'アルバータ州', specimenName: 'ダイナソー・パーク層' },
+  ],
 }

@@ -14,4 +14,16 @@ export default {
     { label: 'Tamaño', value: '8 m', description: 'Tan largo como dos coches' },
     { label: 'Defensa', value: 'Pasiva-Activa', description: 'La armadura lo protegia; el garrote era su ataque' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Depredador' },
+    { id: 'euoplocephalus', relationship: 'Pariente cercano' },
+  ],
+  discoveries: [
+    { year: 1906, location: 'Montana, EE. UU.', discoveredBy: 'Barnum Brown', note: 'Los primeros fósiles de Ankylosaurus se encontraron en la Formación Hell Creek.' },
+    { year: 1910, location: 'Alberta, Canadá', discoveredBy: 'Peter C. Kaisen', note: 'El espécimen más completo jamás recuperado.' },
+  ],
+  fossilLocations: [
+    { country: 'EE. UU.', region: 'Montana', coordinates: [47.5, -106.5], specimenName: 'Hell Creek' },
+    { country: 'Canadá', region: 'Alberta', coordinates: [54.5, -113.0] },
+  ],
 }

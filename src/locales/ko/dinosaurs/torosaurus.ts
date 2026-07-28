@@ -14,4 +14,16 @@ export default {
     { label: '두개골', value: '거대한 두개골', description: '두개골은 케라톱스류 최대급으로, 프릴 포함 최대 2.6미터에 달하며 지탱을 위해 거대한 목 근육이 필요했다.' },
     { label: '백악기말', value: '마지막 날들', description: '백악기 바로 끝, 6800만~6600만 년 전에 살았으며, 소행성 멸종 전 마지막 케라톱스류 중 하나였다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: '가장 가까운 근연종 — 한때 같은 종으로 제안된 적 있음' },
+    { id: 'styracosaurus', relationship: '케라톱스과 근연종' },
+    { id: 'pentaceratops', relationship: '더 오래된 카스모사우리나에 근연종' },
+  ],
+  discoveries: [
+    { discoveredBy: '존 벨 해처', note: '1891년 O.C. 마쉬가 화석을 기재; 이후 미국 서부의 랜스층과 헬크리크층에서 다수의 표본이 발견되었다.' },
+  ],
+  fossilLocations: [
+    { region: '와이오밍주 니오브라라 카운티(랜스층)', specimenName: 'YPM 1830 — 모식표본, 부분 두개골' },
+    { region: '사우스다코타주 하딩 카운티(헬크리크층)', specimenName: '참조된 두개골 표본들' },
+  ],
 }

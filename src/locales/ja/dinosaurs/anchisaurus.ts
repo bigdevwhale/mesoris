@@ -14,4 +14,16 @@ export default {
     { label: '食性', value: '植物食', description: '葉の形をした鋸歯のある歯によって、アンキサウルスはシダやソテツ類のような硬い植物を処理することができました。' },
     { label: '大きさ', value: '約2.1 m', description: '体長はわずか2メートル強で、アンキサウルスは小さな原竜脚類でした。その系統から進化する巨大な竜脚類とはほど遠い存在です。' },
   ],
+  relatedDinosaurs: [
+    { id: 'plateosaurus', relationship: '近縁の竜脚形類' },
+    { id: 'eoraptor', relationship: '遠い初期の恐竜の親戚' },
+  ],
+  discoveries: [
+    { year: 1818, location: 'アメリカ合衆国コネチカット州ハートフォード郡', discoveredBy: 'ソロモン・エルズワース・ジュニア', note: '井戸掘り中に骨が発見された。恐竜という概念が確立する前は、ヒトの遺骨と誤って分類されていた。' },
+    { year: 1885, location: 'アメリカ合衆国マサチューセッツ州スプリングフィールド', discoveredBy: 'O・C・マーシュ', note: 'マーシュがコネチカット渓谷の追加資料に基づきアンキサウルスを正式に記載・命名した。' },
+  ],
+  fossilLocations: [
+    { country: 'アメリカ合衆国', region: 'コネチカット州ハートフォード郡', coordinates: [41.8, -72.7], specimenName: 'ポートランド層の模式標本' },
+    { country: 'アメリカ合衆国', region: 'マサチューセッツ州ハンプデン郡', coordinates: [42.1, -72.6], specimenName: 'スプリングフィールド採石場の化石' },
+  ],
 }

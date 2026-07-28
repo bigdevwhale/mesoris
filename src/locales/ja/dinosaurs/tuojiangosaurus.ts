@@ -14,4 +14,14 @@ export default {
     { label: '脳', value: '小さな脳', description: 'すべての剣竜類と同様、体の大きさに対して非常に小さな脳しかなく、3トン近い動物でクルミほどの大きさでした。' },
     { label: '発見地', value: '中国の剣竜類', description: '中国で最もよく知られ完全に記載された剣竜類で、四川省から二つの部分骨格が知られています。' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: '近縁の北米剣竜科' },
+    { id: 'kentrosaurus', relationship: '近縁のアフリカ剣竜科' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ドンジーミン、タンズール、ヂョウシウ', note: '上沙渓廟層から二つの部分骨格が回収され、1977年に記載された。一つの標本は自貢恐竜博物館に展示されている。' },
+  ],
+  fossilLocations: [
+    { region: '四川省自貢（上沙渓廟層）', specimenName: 'CV 209 — 主骨格、自貢恐竜博物館' },
+  ],
 }

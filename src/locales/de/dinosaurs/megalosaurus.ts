@@ -14,4 +14,13 @@ export default {
     { label: 'Aussehen', value: 'Falsch rekonstruiert', description: 'Frühe Rekonstruktionen zeigten ihn als Riesenechse — heute wissen wir, dass er auf zwei Beinen ging.' },
     { label: 'Jura', value: 'Mittlerer Jura', description: 'Lebte im Mittleren Jura Englands — älter als Allosaurus und T. rex.' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: 'Entfernter Verwandter' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Steinbrucharbeiter', note: 'Riesige Knochen im Steinbruch von Stonesfield gefunden — später 1824 von William Buckland beschrieben.' },
+  ],
+  fossilLocations: [
+    { region: 'Oxfordshire, Vereinigtes Königreich', specimenName: 'Stonesfield-Schiefer' },
+  ],
 }

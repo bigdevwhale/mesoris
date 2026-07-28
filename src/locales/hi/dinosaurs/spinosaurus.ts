@@ -14,4 +14,16 @@ export default {
     { label: 'आकार', value: 'टी-रेक्स से बड़ा', description: '15 मीटर लंबा होने के कारण यह अब तक खोजा गया सबसे बड़ा मांसाहारी डायनासोर था।' },
     { label: 'पूँछ', value: 'चप्पू जैसी', description: 'शक्तिशाली जलीय चालन के लिए एक अनोखा पंख-जैसी पूँछ होती थी।' },
   ],
+  relatedDinosaurs: [
+    { id: 'baryonyx', relationship: 'नज़दीकी रिश्तेदार' },
+    { id: 'mosasaurus', relationship: 'प्रतिद्वंद्वी (जलीय)' },
+  ],
+  discoveries: [
+    { discoveredBy: 'अर्न्स्ट स्ट्रोमर', note: 'पहले जीवाश्म खोजे; बाद में द्वितीय विश्व युद्ध में म्यूनिख के बमबारी में नष्ट हो गए।' },
+    { discoveredBy: 'निज़ार इब्राहिम', note: 'महत्वपूर्ण नई खोजों ने जलीय जीवनशैली के सिद्धांत की पुष्टि की।' },
+  ],
+  fossilLocations: [
+    { region: 'केम केम संस्तर', specimenName: '' },
+    { region: 'बहारिया शैलसमूह', specimenName: '' },
+  ],
 }

@@ -14,4 +14,17 @@ export default {
     { label: 'Taille réelle', value: 'Taille d\'une dinde', description: 'Beaucoup plus petit que dans les films — environ de la taille d\'une grosse dinde.' },
     { label: 'Chasse', value: 'Chasseur en groupe', description: 'Des indices suggèrent une chasse en groupe pour abattre des proies bien plus grandes qu\'eux.' },
   ],
+  relatedDinosaurs: [
+    { id: 'deinonychus', relationship: 'Proche parent' },
+    { id: 'protoceratops', relationship: 'Proie' },
+    { id: 'oviraptor', relationship: 'Concurrent' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Roy Chapman Andrews', note: 'Premier spécimen découvert lors d\'une célèbre expédition de l\'AMNH.' },
+    { discoveredBy: 'Expédition polono-mongole', note: 'Les « Dinosaures combattants » — un Velociraptor engagé dans un combat avec un Protoceratops.' },
+  ],
+  fossilLocations: [
+    { region: 'Désert de Gobi', specimenName: 'Formation de Djadochta' },
+    { region: 'Mongolie-Intérieure', specimenName: '' },
+  ],
 }

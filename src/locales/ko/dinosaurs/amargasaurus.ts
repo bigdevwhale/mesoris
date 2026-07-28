@@ -14,4 +14,16 @@ export default {
     { label: '분류', value: '디크라에오사우루스과', description: '짧은 목과 특이한 척추 가시로 알려진, 용각류 중에서도 드문 그룹에 속합니다.' },
     { label: '서식 환경', value: '파타고니아의 범람원', description: '백악기 전기 파타고니아에서 강과 침엽수에 둘러싸여, 다른 독특한 남아메리카 공룡들과 공존했습니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: '먼 디플로도쿠스상과의 사촌' },
+    { id: 'argentinosaurus', relationship: '이후의 남아메리카 거대 공룡' },
+    { id: 'carnotaurus', relationship: '같은 지역의 이후 포식자' },
+  ],
+  discoveries: [
+    { year: 1984, location: '아르헨티나 네우켄', discoveredBy: '기예르모 루지에', note: '모식표본이 파타고니아의 라아마르가층에서 발견되었습니다.' },
+    { year: 1991, location: '아르헨티나', discoveredBy: '레오나르도 살가도와 호세 보나파르트', note: '정식 학술 기재에서 이 공룡의 놀라운 목 가시가 강조되었습니다.' },
+  ],
+  fossilLocations: [
+    { country: '아르헨티나', region: '네우켄', coordinates: [-38.6, -70.2], specimenName: '라아마르가층' },
+  ],
 }

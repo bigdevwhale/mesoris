@@ -14,4 +14,16 @@ export default {
     { label: '体長', value: '約8 m', description: 'クローバリー層の支配的な中規模草食動物で、全長8メートル、体重1トン。' },
     { label: '豊富さ', value: '一般的な化石', description: 'アプチアン〜アルビアン期の北アメリカで最も多く見つかる恐竜の一つで、広範な草食動物としての生態的成功を反映しています。' },
   ],
+  relatedDinosaurs: [
+    { id: 'deinonychus', relationship: '主な捕食者（脱落した歯により確認）' },
+    { id: 'iguanodon', relationship: 'より大きなイグアノドン類の近縁種' },
+    { id: 'camptosaurus', relationship: 'より初期の鳥脚類の近縁種' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ジョン・H・オストロム', note: '1970年にオストロムがクローバリー層の化石から記載；同じ探検で後に有名になるデイノニクスの標本も得られている。' },
+  ],
+  fossilLocations: [
+    { region: 'モンタナ州ホイートランド郡（クローバリー層）', specimenName: 'AMNH 3040 — ホロタイプ骨格' },
+    { region: 'オクラホマ州カーター郡（アントラーズ層）', specimenName: 'オクラホマ産の参照標本' },
+  ],
 }

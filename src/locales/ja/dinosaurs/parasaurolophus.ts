@@ -14,4 +14,16 @@
     { label: '社会性', value: '大きな群れ', description: '大きな群れで生活する高度に社会的なカモノハシ竜。' },
     { label: '歯', value: '何百本も', description: 'ぎっしり詰まった何百本もの臼歯を持つ複雑な歯のバッテリー。' },
   ],
+  relatedDinosaurs: [
+    { id: 'corythosaurus', relationship: '近縁種' },
+    { id: 'lambeosaurus', relationship: '近縁種' },
+  ],
+  discoveries: [
+    { year: 1920, location: 'カナダ・アルバータ州', discoveredBy: 'ウィリアム・パークス', note: '最初の頭骨が発見された。' },
+    { year: 1999, location: 'アメリカ・ニューメキシコ州', discoveredBy: 'トーマス・ウィリアムソン', note: '非常によく保存された頭骨。' },
+  ],
+  fossilLocations: [
+    { country: 'カナダ', region: 'アルバータ州', coordinates: [54.5, -113.0], specimenName: 'ダイナソーパーク累層' },
+    { country: 'USA', region: 'ニューメキシコ州', coordinates: [36.0, -107.5] },
+  ],
 }

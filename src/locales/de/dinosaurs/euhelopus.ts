@@ -14,4 +14,16 @@ export default {
     { label: 'Körperbau', value: 'Säulenartige Beine', description: 'Seine robusten Gliedmaßen und der breite Körper stützten einen massiven Rumpf, während er sich über weichen Überschwemmungs- oder Sumpfboden bewegte.' },
     { label: 'Alter', value: 'Unterkreide', description: 'Euhelopus überlebte in asiatischen Ökosystemen, als viele klassische Jura-Sauropodengruppen anderswo bereits im Niedergang waren.' },
   ],
+  relatedDinosaurs: [
+    { id: 'mamenchisaurus', relationship: 'Ein weiterer asiatischer langhalsiger Sauropode, oft anatomisch verglichen' },
+    { id: 'brachiosaurus', relationship: 'Großer Hochweide-Sauropode mit anderen Vorderbeinproportionen' },
+    { id: 'sauroposeidon', relationship: 'Späterer Riesentitanosauriform mit extremer Halsverlängerung' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Otto Zdansky Expedition', note: 'Sammelte das ursprüngliche Fossilmaterial, das später in der formellen Beschreibung verwendet wurde.' },
+    { discoveredBy: 'Carl Wiman', note: 'Beschrieb Euhelopus zdanskyi formell und hob dessen ungewöhnliche Sauropodenanatomie hervor.' },
+  ],
+  fossilLocations: [
+    { region: 'Provinz Shandong', specimenName: 'Originales Euhelopus-Material' },
+  ],
 }

@@ -14,4 +14,14 @@
     { label: '発見地', value: 'ドイツ・ゾルンホーフェン', description: '始祖鳥も産出したことで有名なゾルンホーフェン石灰岩から発見されました。' },
     { label: '速度', value: '非常に俊敏', description: '長く軽量な後肢とバランスをとる尾が、非常に速い走行を可能にしていました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: '遠い親戚' },
+  ],
+  discoveries: [
+    { year: 1859, location: 'ドイツ・バイエルン州', discoveredBy: 'ヨーゼフ・オーベルンドルファー', note: 'ゾルンホーフェン石灰岩から最初の標本が発見された。始祖鳥と同じ地層。' },
+  ],
+  fossilLocations: [
+    { country: 'ドイツ', region: 'バイエルン州', coordinates: [48.8, 11.0], specimenName: 'ゾルンホーフェン石灰岩' },
+    { country: 'フランス', region: 'プロヴァンス', coordinates: [43.5, 6.5] },
+  ],
 }

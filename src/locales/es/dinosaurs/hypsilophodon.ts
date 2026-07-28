@@ -14,4 +14,15 @@ export default {
     { label: 'Epoca', value: 'Cretacico Temprano', description: '~125 millones de anos' },
     { label: 'Cola', value: 'Rigida', description: 'Para equilibrio al correr' },
   ],
+  relatedDinosaurs: [
+    { id: 'iguanodon', relationship: 'Ornitópodo contemporáneo más grande y pariente' },
+    { id: 'deinonychus', relationship: 'Depredador contemporáneo' },
+  ],
+  discoveries: [
+    { discoveredBy: 'William Fox', note: 'Se descubrieron los primeros especímenes; el reverendo William Fox recolectó el material clave y la especie fue nombrada en su honor.' },
+    { discoveredBy: 'T. H. Huxley', note: 'Descrito formalmente por Huxley en 1869; en 1882 Huxley sugirió erróneamente hábitos arborícolas.' },
+  ],
+  fossilLocations: [
+    { region: 'Isla de Wight, Formación Wessex (Grupo Wealden)', specimenName: 'NHMUK PV R192 — holotipo; yacimiento óseo con más de 20 individuos' },
+  ],
 }

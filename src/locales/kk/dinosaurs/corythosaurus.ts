@@ -12,4 +12,14 @@ export default {
     { label: 'Дыбысы', value: 'Резонантты айқайлар', description: 'Күрделі ауа арналары жотаның ішіне өтіп, қатты, резонансты дыбыстарды шығаруға мүмкіндік берді.' },
     { label: 'Әлеуметтілік', value: 'Табындар', description: 'Үлкен әлеуметтік топтарда өмір сүрді - жабайы аңдар табынының үйрек тұмсық нұсқасы сияқты.' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: 'Жақын туыс' },
+    { id: 'lambeosaurus', relationship: 'Жақын туыс' },
+  ],
+  discoveries: [
+    { year: 1912, location: 'Канада, Альберта', discoveredBy: 'Барнум Браун', note: 'AMNH экспедициясы кезінде алғашқы толық қаңқа табылды.' },
+  ],
+  fossilLocations: [
+    { country: 'Канада', region: 'Альберта', coordinates: [50.8, -111.5], specimenName: 'Динозавр саябағы формациясы' },
+  ],
 }

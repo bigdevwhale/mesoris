@@ -14,4 +14,17 @@ export default {
     { label: 'Cola', value: 'Como látigo', description: 'Una cola larga, delgada y flexible que pudo usarse para la defensa e incluso, posiblemente, para producir sonido supersónico.' },
     { label: 'Distribución', value: 'Dos continentes', description: 'Hallado en la Formación Morrison de Norteamérica y en la Formación Tendaguru de Tanzania.' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: 'Pariente diplodócido cercano' },
+    { id: 'apatosaurus', relationship: 'Pariente diplodócido cercano' },
+    { id: 'brontosaurus', relationship: 'Pariente diplodócido' },
+  ],
+  discoveries: [
+    { year: 1889, location: 'Como Bluff, Wyoming, EE. UU.', discoveredBy: 'O.C. Marsh', note: 'Esqueleto parcial encontrado por los equipos de Marsh durante las Guerras de los Huesos.' },
+    { year: 1907, location: 'Tendaguru, Tanzania', discoveredBy: 'Expedición alemana de Tendaguru', note: 'Material de diplodócido del África oriental fue luego referido a Barosaurus.' },
+  ],
+  fossilLocations: [
+    { country: 'EE. UU.', region: 'Como Bluff, Wyoming (Formación Morrison)', coordinates: [41.8, -106.0], specimenName: 'YPM 429 — esqueleto parcial holotipo' },
+    { country: 'Tanzania', region: 'Formación Tendaguru', coordinates: [-10.2, 39.4], specimenName: 'Material de diplodócido de Tendaguru' },
+  ],
 }

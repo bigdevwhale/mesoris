@@ -14,4 +14,17 @@ export default {
     { label: 'Regione', value: 'Sauropo della Cina', description: 'I fossili provengono da giacimenti del Giurassico medio–superiore della Cina, con parenti stretti in altri continenti.' },
     { label: 'Strategia', value: 'Brucazone ad ampio raggio', description: 'Il collo lungo permetteva di coprire vaste aree di foraggiamento stando fermi, risparmiando energia su terreni fangosi.' },
   ],
+  relatedDinosaurs: [
+    { id: 'euhelopus', relationship: 'Sauropode asiatico dal collo lungo spesso confrontato negli studi sull\'evoluzione cervicale' },
+    { id: 'diplodocus', relationship: 'Altro sauropode dal collo estremo, ma con un piano corporeo diverso' },
+    { id: 'brachiosaurus', relationship: 'Grande sauropode contemporaneo con arti anteriori più alti' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Squadre sul campo durante i rilevamenti stradali', note: 'Resti iniziali recuperati vicino al traghetto di Mamenxi, dando il nome al genere.' },
+    { discoveredBy: 'Yang Zhongjian (C.C. Young)', note: 'La descrizione formale stabilì Mamenchisaurus come importante genere di sauropodi cinesi.' },
+  ],
+  fossilLocations: [
+    { region: 'Provincia del Sichuan, Cina', specimenName: 'Materiale di Mamenxi/Yibin' },
+    { region: 'Area di Chongqing, Cina', specimenName: 'Esemplari di M. hochuanensis' },
+  ],
 }

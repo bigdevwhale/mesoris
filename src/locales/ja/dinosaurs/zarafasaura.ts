@@ -14,4 +14,15 @@ export default {
     { label: '産地', value: 'モロッコ', description: 'モロッコのウラド・アブドゥーン盆地の燐酸塩岩から発見され、白亜紀の海生化石の宝庫です。' },
     { label: '首', value: '非常に長い', description: '50個以上の頸椎を持つ長い首で、魚群を待ち伏せして捕食していました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'elasmosaurus', relationship: 'より大型のエラスモサウルス科のいとこ' },
+    { id: 'plesiosaurus', relationship: '長頸のプレシオサウルス類近縁種' },
+    { id: 'mosasaurus', relationship: '同時代の海生捕食者' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ペギー・ヴィンセントとチーム', note: '部分的な頭骨と頸椎が記載され命名された。' },
+  ],
+  fossilLocations: [
+    { region: 'ウラド・アブドゥーン盆地', specimenName: 'OCP DEK/GE 307 — ホロタイプ部分頭骨と脊椎' },
+  ],
 }

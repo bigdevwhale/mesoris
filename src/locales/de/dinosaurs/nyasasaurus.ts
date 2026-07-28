@@ -14,4 +14,15 @@ export default {
     { label: 'Knochenwachstum', value: 'Schnelles Wachstum', description: 'Die Knochenhistologie zeigt schnelle, anhaltende Wachstumsraten — charakteristisch für Dinosaurier.' },
     { label: 'Tansania', value: 'Mittlere Trias', description: 'Gefunden in der Manda-Formation der mittleren Trias — eine Zeit, als die ersten dinosaurierähnlichen Tiere auftauchten.' },
   ],
+  relatedDinosaurs: [
+    { id: 'eoraptor', relationship: 'Späterer argentinischer früher Dinosaurier' },
+    { id: 'herrerasaurus', relationship: 'Späterer früher Dinosaurier' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Rex Parrington', note: 'Knochen in den 1930er Jahren gesammelt, aber erst 2013 von Sterling Nesbitt und Kollegen formell beschrieben.' },
+    { discoveredBy: 'Sterling Nesbitt u. a.', note: 'Die formelle Beschreibung in Biology Letters identifizierte das Material als möglicherweise ältesten Dinosaurier der Welt.' },
+  ],
+  fossilLocations: [
+    { region: 'Ruhuhu-Becken, Manda-Formation, Ruvuma-Region', specimenName: 'NHMUK PV R6856 — Holotyp-Humerus und Wirbel' },
+  ],
 }

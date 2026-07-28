@@ -14,4 +14,16 @@ export default {
     { label: 'पूँछ', value: 'गहरी और लचीली', icon: 'fish-tail', description: 'मगरमच्छ जैसी गहरी पूँछ जो शायद तैरने में सहायक होती थी।' },
     { label: 'दाँत', value: 'अत्यधिक लंबे', icon: 'swords', description: 'असाधारण रूप से लंबे, ब्लेड जैसे दाँत — अधिकांश शिकारियों की तुलना में आनुपातिक रूप से बड़े।' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: 'प्रतिस्पर्धी' },
+    { id: 'carnotaurus', relationship: 'दूर का संबंधी' },
+  ],
+  discoveries: [
+    { year: 1883, location: 'कोलोराडो, अमेरिका', discoveredBy: 'मार्शल पी. फ़ेल्च', note: 'गार्डन पार्क में पहला कंकाल खोजा गया।' },
+    { year: 2000, location: 'पुर्तगाल', discoveredBy: 'ऑक्टावियो माटेउस', note: 'यूरोपीय नमूने ने इस वंश के व्यापक विस्तार की पुष्टि की।' },
+  ],
+  fossilLocations: [
+    { country: 'अमेरिका', region: 'कोलोराडो', coordinates: [38.5, -105.0], specimenName: 'मॉरिसन शैलसमूह' },
+    { country: 'पुर्तगाल', region: 'लोरिन्या', coordinates: [39.3, -9.3] },
+  ],
 }

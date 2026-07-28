@@ -14,4 +14,15 @@ export default {
     { label: 'Corps', value: 'Comme un char', description: 'Corps large et plat avec nodules osseux ovales dans la peau épaisse.' },
     { label: 'Habitat', value: 'Rive de la mer intérieure', description: 'Vivait sur les rives de la Voie maritime intérieure de l\'Ouest — la grande mer intérieure d\'Amérique du Nord.' },
   ],
+  relatedDinosaurs: [
+    { id: 'ankylosaurus', relationship: 'Parent ankylosaure (famille différente, avec massue caudale)' },
+    { id: 'euoplocephalus', relationship: 'Parent ankylosaure à massue caudale' },
+    { id: 'stegosaurus', relationship: 'Parent thyréophore' },
+  ],
+  discoveries: [
+    { discoveredBy: 'O.C. Marsh', note: 'Matériel fragmentaire décrit par Marsh en 1889 ; a fourni le nom qui définit les Nodosauridae, l\'une des deux grandes familles d\'ankylosaures.' },
+  ],
+  fossilLocations: [
+    { region: 'Comté d\'Albany, Wyoming (Mowry Shale), États-Unis', specimenName: 'YPM 1815 — matériel holotype fragmentaire' },
+  ],
 }

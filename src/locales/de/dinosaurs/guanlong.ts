@@ -14,4 +14,15 @@ export default {
     { label: 'Familie', value: 'Früher Tyrannosauroid', description: 'Einer der frühesten und ursprünglichsten bekannten Tyrannosauroiden — ein winziger Vorfahre des T. rex.' },
     { label: 'Alter', value: 'Älter als T. rex', description: 'Lebte etwa 90 Millionen Jahre vor T. rex — der bescheidene Vorläufer des Tyrannenkönigs.' },
   ],
+  relatedDinosaurs: [
+    { id: 'proceratosaurus', relationship: 'Geschmückter Proceratosaurid-Verwandter' },
+    { id: 'tyrannosaurus-rex', relationship: 'Entfernter Nachkomme' },
+    { id: 'dilophosaurus', relationship: 'Zeitgenössischer kammtragender Theropode' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Xu Xing und Team', note: 'Zwei gut erhaltene Skelette, gesammelt von einer gemeinsamen chinesisch-amerikanischen Expedition.' },
+  ],
+  fossilLocations: [
+    { region: 'Shishugou-Formation, Xinjiang', specimenName: 'IVPP V14531 — artikuliertes Holotyp-Skelett' },
+  ],
 }

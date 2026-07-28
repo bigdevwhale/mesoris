@@ -14,4 +14,16 @@ export default {
     { label: 'Dientes', value: 'Cientos', description: 'Baterias dentales para moler vegetacion' },
     { label: 'Tamaño', value: '12 m', description: 'Uno de los hadrosaurios mas grandes' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Presa' },
+    { id: 'maiasaura', relationship: 'Pariente cercano' },
+  ],
+  discoveries: [
+    { year: 1892, location: 'Dakota del Sur, EE. UU.', discoveredBy: 'Othniel Charles Marsh', note: 'Descrito por primera vez.' },
+    { year: 1999, location: 'Dakota del Norte, EE. UU.', discoveredBy: 'Tyler Lyson', note: '«Dakota» — una de las momias de dinosaurio mejor conservadas.' },
+  ],
+  fossilLocations: [
+    { country: 'EE. UU.', region: 'Dakota del Sur', coordinates: [44.5, -100.0], specimenName: 'Formación Hell Creek' },
+    { country: 'Canadá', region: 'Alberta', coordinates: [53.5, -113.5] },
+  ],
 }

@@ -14,4 +14,16 @@ export default {
     { label: 'Қайта атау', value: 'Бұрынғы Лексовизавр', description: 'Бастапқыда Lexovisaurus түрі ретінде сипатталған; кейіннен жеке еуропалық туыс ретінде танылған.' },
     { label: 'Мекені', value: 'Жағалаудағы ойпаттар', description: 'Орта Юра дәуірінің Еуропасы мен Солтүстік Африкасындағы жағалау мен жайылма орталарда тіршілік еткен.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Атақты туысы' },
+    { id: 'kentrosaurus', relationship: 'Африкалық стегозавр бауыры' },
+    { id: 'dacentrurus', relationship: 'Еуропалық стегозавр туысы' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Франц Нопча', note: 'Бастапқы материал Lexovisaurus priscus ретінде сипатталды.' },
+    { discoveredBy: 'Сюзанна Мейдмент және команда', note: 'Дербес Loricatosaurus туысы ретінде қайта жіктеліп, африкалық материал қосылды.' },
+  ],
+  fossilLocations: [
+    { region: 'Англия, Ұлыбритания', specimenName: 'NHMUK голотип материалы' },
+  ],
 }

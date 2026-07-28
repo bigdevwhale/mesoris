@@ -14,4 +14,14 @@ export default {
     { label: 'Kiefer', value: 'Flexibles Gelenk', description: 'Ein einzigartiges Gleit-Kiefergelenk — eine frühe Innovation zum Verschlingen großer Beute.' },
     { label: 'Fundort', value: 'Tal des Mondes', description: 'Gefunden im argentinischen Valle de la Luna, einer der wichtigsten Fossilfundstellen der Erde.' },
   ],
+  relatedDinosaurs: [
+    { id: 'eoraptor', relationship: 'Zeitgenosse' },
+    { id: 'coelophysis', relationship: 'Etwas späterer Zeitgenosse' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Victorino Herrera', note: 'Erstes Exemplar von einem ortsansässigen Ziegenhirten im Tal des Mondes gefunden.' },
+  ],
+  fossilLocations: [
+    { region: 'Valle de la Luna, Ischigualasto-Formation', specimenName: 'Valle de la Luna, Ischigualasto-Formation' },
+  ],
 }

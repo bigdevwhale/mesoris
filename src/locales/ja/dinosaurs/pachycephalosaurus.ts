@@ -14,4 +14,15 @@
     { label: '歯', value: '小さく葉の形', description: '小さな歯 — 柔らかい植物、果実、おそらく昆虫を食べていた。' },
     { label: '体長', value: '4.5メートル', description: '二足歩行の草食動物、体重はウマほど。' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: '捕食者' },
+    { id: 'triceratops', relationship: '同時代種' },
+  ],
+  discoveries: [
+    { year: 1931, location: 'アメリカ・ワイオミング州', discoveredBy: 'チャールズ・ギルモア', note: '最初の頭骨ドームが発見された。' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'ワイオミング州', coordinates: [44.5, -105.0], specimenName: 'ランス累層' },
+    { country: 'USA', region: 'モンタナ州', coordinates: [47.5, -106.5] },
+  ],
 }

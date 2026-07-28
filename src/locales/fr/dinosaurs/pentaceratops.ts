@@ -14,4 +14,16 @@ export default {
     { label: 'Collerette', value: 'Collerette élaborée', description: 'Richement vascularisée et probablement vivement colorée — pour la reconnaissance, la parade et la thermorégulation.' },
     { label: 'Nouveau-Mexique', value: 'Formation de Kirtland', description: 'Trouvé au Nouveau-Mexique — aux côtés d\'hadrosaures, d\'ankylosaures et de tyrannosauridés.' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: 'Parent cératopsidé ultérieur' },
+    { id: 'styracosaurus', relationship: 'Parent cératopsidé' },
+    { id: 'protoceratops', relationship: 'Cératopsien ancestral' },
+  ],
+  discoveries: [
+    { year: 1921, location: 'Comté de San Juan, Nouveau-Mexique, USA', discoveredBy: 'Charles H. Sternberg', note: 'Découvert par Sternberg et décrit par Henry Fairfield Osborn en 1923 ; nommé sternbergii en l\'honneur de Sternberg.' },
+    { year: 1975, location: 'Formation de Kirtland, Nouveau-Mexique', discoveredBy: 'Expéditions du Musée américain', note: 'Spécimens ultérieurs, dont le remarquable crâne géant NMMNH P-27083, ont révélé l\'étendue complète de la collerette et confirmé le record de taille crânienne.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Comté de San Juan, Nouveau-Mexique (formation de Kirtland)', coordinates: [36.7, -108.0], specimenName: 'AMNH 6325 — crâne holotype ; NMMNH P-27083 — record de crâne géant' },
+  ],
 }

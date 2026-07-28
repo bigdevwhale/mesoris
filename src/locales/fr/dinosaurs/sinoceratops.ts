@@ -14,4 +14,15 @@ export default {
     { label: 'Époque', value: 'Crétacé supérieur', description: '~72 millions d\'années' },
     { label: 'Site', value: 'Shandong, Chine', description: 'Est de la Chine' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: 'Parent cératopsidé' },
+    { id: 'protoceratops', relationship: 'Ancêtre cératopsien asiatique ancien' },
+    { id: 'psittacosaurus', relationship: 'Cératopsien asiatique ancestral' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Xu Xing et collègues', note: 'Décrit par Xu Xing et ses collègues en 2010 à partir de matériel de Zhucheng ; la découverte a étendu en Asie la répartition connue des grands cératopsidés.' },
+  ],
+  fossilLocations: [
+    { region: 'Zhucheng, province du Shandong (Groupe Wangshi)', specimenName: 'ZCDM V0010 — holotype, crâne partiel' },
+  ],
 }

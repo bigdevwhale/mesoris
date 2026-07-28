@@ -14,4 +14,13 @@ export default {
     { label: 'Gewicht', value: '250 kg', description: 'Erstaunlich leicht für seine Größe' },
     { label: 'Fortbewegung', value: 'Vierbeinig', description: 'Lief auf allen vieren mit gefalteten Flügeln' },
   ],
+  relatedDinosaurs: [
+    { id: 'pteranodon', relationship: 'Kleinerer Verwandter' },
+  ],
+  discoveries: [
+    { year: 1971, location: 'Texas, USA', discoveredBy: 'Douglas Lawson', note: 'Riesiger Flügelknochen im Big-Bend-Nationalpark entdeckt — zunächst für einen Dinosaurier gehalten.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Texas', coordinates: [29.3, -103.2], specimenName: 'Javelina-Formation, Big Bend NP' },
+  ],
 }

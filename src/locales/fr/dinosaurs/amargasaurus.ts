@@ -14,4 +14,16 @@ export default {
     { label: 'Famille', value: 'Dicraéosauridé', description: 'Il appartenait à une branche rare des sauropodes, célèbre pour ses cous plus courts et ses épines vertébrales inhabituelles.' },
     { label: 'Habitat', value: 'Plaines inondables de Patagonie', description: 'Il vivait dans la Patagonie du Crétacé inférieur parmi les rivières, les conifères et d\'autres dinosaures sud-américains insolites.' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: 'Cousin diplodocoïde éloigné' },
+    { id: 'argentinosaurus', relationship: 'Géant sud-américain ultérieur' },
+    { id: 'carnotaurus', relationship: 'Prédateur régional ultérieur' },
+  ],
+  discoveries: [
+    { year: 1984, location: 'Neuquén, Argentine', discoveredBy: 'Guillermo Rougier', note: 'Le spécimen type fut découvert dans la formation La Amarga en Patagonie.' },
+    { year: 1991, location: 'Argentine', discoveredBy: 'Leonardo Salgado et José Bonaparte', note: 'La description formelle a mis en lumière les extraordinaires épines cervicales du dinosaure.' },
+  ],
+  fossilLocations: [
+    { country: 'Argentine', region: 'Neuquén', coordinates: [-38.6, -70.2], specimenName: 'Formation de La Amarga' },
+  ],
 }

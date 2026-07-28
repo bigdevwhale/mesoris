@@ -14,4 +14,15 @@ export default {
     { label: 'Tamaño', value: '5,5 m', description: 'Un centrosaurino temprano' },
     { label: 'Epoca', value: '~79 Ma', description: 'Cretacico Tardio, Utah' },
   ],
+  relatedDinosaurs: [
+    { id: 'styracosaurus', relationship: 'Pariente centrosaurino posterior' },
+    { id: 'triceratops', relationship: 'Pariente ceratopsido posterior' },
+    { id: 'protoceratops', relationship: 'Pariente ceratopsiano ancestral' },
+  ],
+  discoveries: [
+    { year: 2002, location: 'Formacion Wahweap, condado de Garfield, Utah, EE. UU.', discoveredBy: 'James Kirkland y Donald DeBlieux', note: 'Craneo parcial recolectado por el equipo del Museo de Historia Natural de Utah; descrito formalmente por Kirkland y DeBlieux en 2010.' },
+  ],
+  fossilLocations: [
+    { country: 'EE. UU.', region: 'Condado de Garfield, Utah (Formacion Wahweap)', coordinates: [37.5, -111.5], specimenName: 'UMNH VP 16699 — holotipo, craneo parcial' },
+  ],
 }

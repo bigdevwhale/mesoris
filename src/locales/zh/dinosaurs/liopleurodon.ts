@@ -14,4 +14,17 @@
     { label: '神话', value: '不是25米', description: '电视将滑齿龙塑造成25米的海洋怪物而闻名——实际证据表明是一种小得多的动物。' },
     { label: '游泳', value: '四鳍推进', description: '与其他蛇颈龙一样，用四个鳍协调运动，在水中"飞行"。' },
   ],
+  relatedDinosaurs: [
+    { id: 'kronosaurus', relationship: '后期上龙类对应种' },
+    { id: 'plesiosaurus', relationship: '远缘蛇颈龙近亲' },
+    { id: 'ichthyosaurus', relationship: '海洋同期种' },
+  ],
+  discoveries: [
+    { discoveredBy: '亨利-埃米尔·索瓦热', note: '牙齿和颌骨材料构成了Liopleurodon命名的基础。' },
+    { discoveredBy: '众多收藏家和博物馆', note: '英国牛津黏土产出的材料后来帮助古生物学家更好地理解这种动物。' },
+  ],
+  fossilLocations: [
+    { region: '加来海峡', specimenName: '卡洛夫海相沉积' },
+    { region: '牛津郡', specimenName: '牛津黏土组' },
+  ],
 }

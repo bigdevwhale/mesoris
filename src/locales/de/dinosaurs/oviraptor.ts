@@ -14,4 +14,15 @@ export default {
     { label: 'Federn', value: 'Volles Federkleid', description: 'Vollstandig befiedert mit Schwanzfederfacher.' },
     { label: 'Kamm', value: 'Kasuar-ahnlich', description: 'Ein hoher Knochenkamm auf dem Kopf wie bei einem modernen Kasuar.' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'Entfernter Verwandter (Maniraptora)' },
+    { id: 'protoceratops', relationship: 'Lebte Seite an Seite (nicht Beute)' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Roy Chapman Andrews', note: 'In der Nähe eines Geleges gefunden — 70 Jahre lang fälschlich als Eierdieb angesehen.' },
+    { discoveredBy: 'Mark Norell', note: 'Embryo-Entdeckung rehabilitierte Oviraptor — er brütete, statt zu stehlen.' },
+  ],
+  fossilLocations: [
+    { region: 'Gobi-Wüste', specimenName: 'Djadochta-Formation' },
+  ],
 }

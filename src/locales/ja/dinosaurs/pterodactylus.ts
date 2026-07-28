@@ -14,4 +14,14 @@ export default {
     { label: '歯', value: '90本以上', description: '魚や昆虫を捕まえるための、90本以上の鋭く噛み合った歯。' },
     { label: '産地', value: 'ゾルンホーフェン', description: '始祖鳥も産出した有名なバイエルンの石灰岩層。' },
   ],
+  relatedDinosaurs: [
+    { id: 'pteranodon', relationship: 'より大型の子孫' },
+    { id: 'dimorphodon', relationship: '古い近縁種' },
+  ],
+  discoveries: [
+    { year: 1784, location: 'Bavaria, Germany', discoveredBy: 'Cosimo Alessandro Collini', note: '科学史上初めて発見された翼竜の化石。コッリーニはこれを水生動物だと考えた。' },
+  ],
+  fossilLocations: [
+    { country: 'Germany', region: 'バイエルン', coordinates: [48.9, 11.0], specimenName: 'ゾルンホーフェン石灰岩' },
+  ],
 }

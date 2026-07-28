@@ -14,4 +14,15 @@ export default {
     { label: 'Koexistenz', value: 'Gleiche Formation wie Eoraptor', description: 'Lebte mit Eoraptor in derselben Formation und zeigt die frühe Aufspaltung der Dinosaurier-Linien.' },
     { label: 'Evolution', value: 'Theropoden-Vorfahr', description: 'Einer der basalsten Theropoden — hilft, den ursprünglichen Bauplan aller späteren Raubdinosaurier zu verstehen.' },
   ],
+  relatedDinosaurs: [
+    { id: 'eoraptor', relationship: 'Zeitgenosse aus derselben Formation' },
+    { id: 'herrerasaurus', relationship: 'Größerer zeitgenössischer Räuber' },
+    { id: 'coelophysis', relationship: 'Engerer späterer Verwandter' },
+  ],
+  discoveries: [
+    { year: 2011, location: 'Ischigualasto-Provinzialpark, San Juan, Argentinien', discoveredBy: 'Ricardo N. Martínez et al.', note: 'Nahezu vollständiges Skelett, beschrieben im Wissenschaftsmagazin Science; benannt „murphi" zu Ehren von James Murphy, einem Museumsförderer.' },
+  ],
+  fossilLocations: [
+    { country: 'Argentinien', region: 'Provinz San Juan, Ischigualasto-Formation', coordinates: [-30.0, -67.9], specimenName: 'PVSJ 562 — nahezu vollständiges Holotyp-Skelett' },
+  ],
 }

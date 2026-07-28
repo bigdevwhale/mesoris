@@ -14,4 +14,16 @@
     { label: '姿勢', value: '頭を下げて', description: '異常に低い位置に頭を保っていた — 草を刈るのに完璧。' },
     { label: '産地', value: 'ニジェール、アフリカ', description: 'サハラ砂漠で発見 — 白亜紀アフリカの特殊化した採食者。' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: '遠いディプロドクス上科の親戚' },
+    { id: 'suchomimus', relationship: '同時代の隣人' },
+    { id: 'sauroposeidon', relationship: '異なる竜脚類の摂食戦略' },
+  ],
+  discoveries: [
+    { discoveredBy: 'フィリップ・タケ', note: 'フランスの探検隊がサハラで初めて Nigersaurus だと判明した資料を発掘した。' },
+    { discoveredBy: 'ポール・セレノとチーム', note: '新しい探検で、この恐竜の奇妙な摂食解剖を明らかにした頭骨資料を入手。' },
+  ],
+  fossilLocations: [
+    { region: 'ガドゥファオア、ニジェール', specimenName: 'エルハズ累層' },
+  ],
 }

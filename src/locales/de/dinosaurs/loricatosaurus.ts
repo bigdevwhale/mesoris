@@ -14,4 +14,16 @@ export default {
     { label: 'Umbenannt', value: 'Einst Lexovisaurus', description: 'Ursprünglich als Art von Lexovisaurus beschrieben; später als eigenständige europäische Gattung anerkannt.' },
     { label: 'Lebensraum', value: 'Küstennahes Tiefland', description: 'Lebte in küstennahen und Überschwemmungsebenen-Umgebungen des mitteljurassischen Europas und Nordafrikas.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Berühmter Verwandter' },
+    { id: 'kentrosaurus', relationship: 'Afrikanischer Stegosaurier-Cousin' },
+    { id: 'dacentrurus', relationship: 'Europäischer Stegosaurier-Verwandter' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Franz Nopcsa', note: 'Originalmaterial als Lexovisaurus priscus beschrieben.' },
+    { discoveredBy: 'Susannah Maidment und Team', note: 'Als eigenständige Gattung Loricatosaurus wiedererrichtet, mit Zuordnung von afrikanischem Material.' },
+  ],
+  fossilLocations: [
+    { region: 'England, Vereinigtes Königreich', specimenName: 'NHMUK-Holotyp-Material' },
+  ],
 }

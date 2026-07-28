@@ -14,4 +14,15 @@ export default {
     { label: '날개', value: '길고 좁음', description: '길고 좁은 날개는, 백악기 내륙 서해상에서 역동적인 활공에 적응했어요.' },
     { label: '비행', value: '공중 어부', description: '바다 위를 활공하며, 이가 없는 부리로 표면의 물고기를 찍어 잡았어요.' },
   ],
+  relatedDinosaurs: [
+    { id: 'pteranodon', relationship: '동시대 프테라노돈과 친척' },
+    { id: 'dimorphodon', relationship: '이전의 기저 익룡' },
+    { id: 'quetzalcoatlus', relationship: '먼 아즈다르코과 친척' },
+  ],
+  discoveries: [
+    { year: 1876, location: '니오브라라 초크, 캔자스, 미국', discoveredBy: 'O.C. 마시', note: '캔자스의 초크 퇴적물에서 처음 기재된 닉토사우루스.' },
+  ],
+  fossilLocations: [
+    { country: '미국', region: '니오브라라 초크, 캔자스', coordinates: [38.7, -98.5], specimenName: '니오브라라 초크 기준 표본' },
+  ],
 }

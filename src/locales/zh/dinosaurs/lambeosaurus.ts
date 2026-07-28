@@ -14,4 +14,15 @@
     { label: '感官', value: '敏锐听觉', description: '出色的听觉——头冠有助于放大和定向声音以进行通讯。' },
     { label: '年龄', value: '头冠揭示年龄', description: '幼体无头冠，亚成体有小突起，成体拥有完全发育的壮观头冠。' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: '近亲' },
+    { id: 'corythosaurus', relationship: '近亲' },
+  ],
+  discoveries: [
+    { discoveredBy: '劳伦斯·兰布', note: '首次发现标本。' },
+    { discoveredBy: '威廉·帕克斯', note: '完整的带头冠骨架被命名。' },
+  ],
+  fossilLocations: [
+    { region: '艾伯塔省，加拿大', specimenName: '恐龙公园组' },
+  ],
 }

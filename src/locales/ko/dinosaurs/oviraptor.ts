@@ -14,4 +14,15 @@ export default {
     { label: '깃털', value: '전신 깃털', description: '꼬리에 깃털 부채를 가진, 완전히 깃털로 덮여 있었다.' },
     { label: '볏', value: '화식조와 유사', description: '현대 화식조 같은 머리의 높은 뼈 볏.' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: '먼 친척 (마니랍토라류)' },
+    { id: 'protoceratops', relationship: '함께 살았음 (먹이가 아님)' },
+  ],
+  discoveries: [
+    { discoveredBy: '로이 채프먼 앤드류스', note: '알 무더기 근처에서 발견 — 70년간 알 도둑으로 오인됨.' },
+    { discoveredBy: '마크 노렐', note: '배아 발견이 오비랍토르를 정당화 — 훔친 것이 아니라 알을 품고 있었다.' },
+  ],
+  fossilLocations: [
+    { region: '고비 사막', specimenName: '자도흐타층' },
+  ],
 }

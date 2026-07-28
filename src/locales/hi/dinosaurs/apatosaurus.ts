@@ -14,4 +14,17 @@ export default {
     { label: 'वृद्धि', value: 'तेज़ विकास', icon: 'trending-up', description: 'लगभग 10 वर्षों में 5 किग्रा के बच्चे से 20 टन तक बढ़ा — ज्ञात सबसे तेज़ विकास दरों में से एक।' },
     { label: 'पूँछ', value: 'गरज का चाबुक', icon: 'zap', description: 'इसकी पूँछ का सिरा ध्वनि अवरोध को तोड़ सकता था — संभवतः संवाद के लिए गरजने वाली आवाज़ बनाता था।' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: 'निकट संबंधी' },
+    { id: 'allosaurus', relationship: 'शिकारी' },
+    { id: 'brachiosaurus', relationship: 'समकालीन' },
+  ],
+  discoveries: [
+    { year: 1877, location: 'कोलोराडो, अमेरिका', discoveredBy: 'ऑस्नील चार्ल्स मार्श', note: 'पहली बार हड्डियों की लड़ाई (Bone Wars) के दौरान वर्णित किया गया।' },
+    { year: 1895, location: 'वायोमिंग, अमेरिका', discoveredBy: 'AMNH अभियान', note: 'सबसे पूर्ण नमूना।' },
+  ],
+  fossilLocations: [
+    { country: 'अमेरिका', region: 'वायोमिंग', coordinates: [43.0, -107.5], specimenName: 'मोरिसन शैलसमूह' },
+    { country: 'अमेरिका', region: 'कोलोराडो', coordinates: [39.5, -105.0] },
+  ],
 }

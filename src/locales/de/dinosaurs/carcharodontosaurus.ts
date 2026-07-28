@@ -14,4 +14,17 @@ export default {
     { label: 'Lebensraum', value: 'Nordafrika', description: 'Durchstreifte die kreidezeitlichen Flussebenen und Mangrovenwälder des heutigen Ägypten und Marokko.' },
     { label: 'Zeitgenosse', value: 'Lebte mit Spinosaurus', description: 'Teilte seinen Lebensraum mit Spinosaurus — die beiden größten Theropoden lebten Seite an Seite.' },
   ],
+  relatedDinosaurs: [
+    { id: 'giganotosaurus', relationship: 'Enger Verwandter' },
+    { id: 'spinosaurus', relationship: 'Zeitgenössischer Konkurrent' },
+    { id: 'acrocanthosaurus', relationship: 'Nordamerikanischer Verwandter' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Charles Depéret und J. Savornin', note: 'Das Originalmaterial begründete den Hai-zähnigen Riesen aus Nordafrika.' },
+    { discoveredBy: 'Paul Sereno', note: 'Neues Schädelmaterial half Wissenschaftlern, das Tier neu zu beschreiben, nachdem die Originalfossilien verloren waren.' },
+  ],
+  fossilLocations: [
+    { region: 'Kem Kem Beds', specimenName: 'Kem Kem-Gruppe' },
+    { region: 'Tegama', specimenName: 'Continental Intercalaire' },
+  ],
 }

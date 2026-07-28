@@ -14,4 +14,13 @@ export default {
     { label: '외견', value: '복원 실패', description: '초기 복원에서는 거대한 도마뱀처럼 그려짐 — 지금은 두 다리로 걸었음이 밝혀짐.' },
     { label: '쥐라기', value: '중기 쥐라기', description: '영국의 중기 쥐라기에 서식 — 알로사우루스나 티라노사우루스보다 오래됨.' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: '먼 친척' },
+  ],
+  discoveries: [
+    { discoveredBy: '채석장 노동자', note: '스톤즈필드 채석장에서 거대한 뼈가 발견됨; 1824년 윌리엄 버클랜드가 기술함.' },
+  ],
+  fossilLocations: [
+    { region: '옥스퍼드셔, 영국', specimenName: '스톤즈필드 점판암' },
+  ],
 }

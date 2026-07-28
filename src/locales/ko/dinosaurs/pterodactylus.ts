@@ -14,4 +14,14 @@ export default {
     { label: '치아', value: '90개 이상', description: '물고기와 곤충을 잡기 위한 90개 이상의 날카롭게 맞물린 치아.' },
     { label: '산지', value: '졸른호펜', description: '시조새도 산출한 유명한 바이에른 석회암층.' },
   ],
+  relatedDinosaurs: [
+    { id: 'pteranodon', relationship: '더 큰 후손' },
+    { id: 'dimorphodon', relationship: '이른 시기의 친척' },
+  ],
+  discoveries: [
+    { year: 1784, location: 'Bavaria, Germany', discoveredBy: 'Cosimo Alessandro Collini', note: '과학사에서 발견된 최초의 익룡 화석. 콜리니는 이것을 수생 동물이라고 생각했어요.' },
+  ],
+  fossilLocations: [
+    { country: 'Germany', region: '바이에른', coordinates: [48.9, 11.0], specimenName: '졸른호펜 석회암' },
+  ],
 }

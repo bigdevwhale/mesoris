@@ -14,4 +14,16 @@ export default {
     { label: '改称', value: '旧名は Lexovisaurus', description: '最初は Lexovisaurus の一種として記載されましたが、後に独立したヨーロッパの属と認識されました。' },
     { label: '生息地', value: '沿岸低地', description: '中期ジュラ紀のヨーロッパと北アフリカの沿岸や氾濫原の環境に住んでいました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: '有名な近縁種' },
+    { id: 'kentrosaurus', relationship: 'アフリカの剣竜のいとこ' },
+    { id: 'dacentrurus', relationship: 'ヨーロッパの剣竜の近縁種' },
+  ],
+  discoveries: [
+    { discoveredBy: 'フランツ・ノプチャ', note: '元々の資料は Lexovisaurus priscus として記載された。' },
+    { discoveredBy: 'スザンナ・メイドメントとチーム', note: '独立した属 Loricatosaurus として再記載され、アフリカの資料が含められた。' },
+  ],
+  fossilLocations: [
+    { region: 'イングランド、イギリス', specimenName: 'NHMUK ホロタイプ標本' },
+  ],
 }

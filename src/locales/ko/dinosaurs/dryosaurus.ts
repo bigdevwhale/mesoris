@@ -14,4 +14,17 @@ export default {
     { label: '속도', value: '고속 러너', description: '긴 뒷다리로 포식자로부터 빠르게 도망칠 수 있었습니다.' },
     { label: '시대', value: '후기 쥐라기', description: '약 1억 5천만 년 전, 알로사우루스 등과 같은 시대에 살았습니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'camptosaurus', relationship: '비슷한 서식지의 더 큰 조각류 친척' },
+    { id: 'iguanodon', relationship: '후대이자 더 진화한 조각류 계통' },
+    { id: 'allosaurus', relationship: '주요 동시대 포식자' },
+  ],
+  discoveries: [
+    { year: 1878, location: '모리슨층, 와이오밍주, 미국', discoveredBy: 'O. C. 마시', note: '마시가 가벼운 체격의 조각류 화석에 기초하여 드리오사우루스라는 이름을 붙였다.' },
+    { year: 1910, location: '텐다구루, 탄자니아', discoveredBy: '독일 텐다구루 탐사대', note: '동아프리카의 드리오사우루스과 화석은 이 그룹의 전 세계적 분포에 대한 이해를 넓혔다.' },
+  ],
+  fossilLocations: [
+    { country: '미국', region: '코모 블러프, 와이오밍주 (모리슨층)', coordinates: [41.8, -106.0], specimenName: '드리오사우루스 알투스 표본' },
+    { country: '탄자니아', region: '텐다구루층', coordinates: [-10.2, 39.4], specimenName: '드리오사우루스과로 분류된 유해' },
+  ],
 }

@@ -14,4 +14,15 @@ export default {
     { label: 'Biss', value: 'Pliosaurier-Kraft', description: 'Ein kurzhalsiger Pliosaurier mit zermalmender Beißkraft — überfiel Beute mit vernichtenden Angriffen.' },
     { label: 'Jagd', value: 'Torpedo-Angriffe', description: 'Nutze kurze, unglaubliche Beschleunigungsschübe seiner vier muskulösen Flossen für Hinterhalte.' },
   ],
+  relatedDinosaurs: [
+    { id: 'elasmosaurus', relationship: 'Entfernter Verwandter' },
+    { id: 'tylosaurus', relationship: 'Ökologischer Rivale (früher)' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Andrew Crombie', note: 'Erster Teilkiefer im Outback von Queensland gefunden.' },
+    { discoveredBy: 'Albert Heber Longman', note: 'Vollständigeres Exemplar nahe Hughenden entdeckt.' },
+  ],
+  fossilLocations: [
+    { region: 'Queensland, Australien', specimenName: 'Toolebuc-Formation' },
+  ],
 }

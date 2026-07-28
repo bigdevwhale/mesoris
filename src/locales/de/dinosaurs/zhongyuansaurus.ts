@@ -14,4 +14,15 @@ export default {
     { label: 'Panzerung', value: 'Primitive Abschirmung', description: 'Es fehlt die gut entwickelte Schwanzkeule späterer Ankylosaurier — seine Osteoderm- und Hautplattenrüstung stellt einen ursprünglicheren Verteidigungszustand dar.' },
     { label: 'Größe', value: 'Etwa 4,5 m', description: 'Geschätzt etwa 4 bis 5 Meter Länge bei einer Masse von mehreren hundert Kilogramm — ein mittelgroßer vierfüßiger Pflanzenfresser für seine Formation.' },
   ],
+  relatedDinosaurs: [
+    { id: 'ankylosaurus', relationship: 'Späterer Ankylosaurier-Verwandter' },
+    { id: 'euoplocephalus', relationship: 'Späterer Ankylosaurier-Verwandter' },
+    { id: 'nodosaurus', relationship: 'Ankylosaurier-Verwandter (Nodosaurier-Zweig)' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Lü Junchang et al.', note: 'Aus der Mangchuan-Formation beschrieben; ein primitiver Ankylosaurier, eng verwandt mit Gobisaurus und Shamosaurus.' },
+  ],
+  fossilLocations: [
+    { region: 'Provinz Henan (Mangchuan-Formation)', specimenName: 'Mangchuan-Formation, Unterkreide' },
+  ],
 }

@@ -14,4 +14,15 @@
     { label: '咬合力', value: '上龙的力量', description: '一种短颈上龙，拥有压倒性的咬合力——伏击猎杀猎物。' },
     { label: '猎杀', value: '鱼雷式攻击', description: '利用四只肌肉发达的鳍进行短时间的惊人加速来伏击猎物。' },
   ],
+  relatedDinosaurs: [
+    { id: 'elasmosaurus', relationship: '远亲' },
+    { id: 'tylosaurus', relationship: '生态竞争对手（更早）' },
+  ],
+  discoveries: [
+    { discoveredBy: '安德鲁·克朗普比', note: '在昆士兰内陆首次发现部分颌骨。' },
+    { discoveredBy: '阿尔伯特·希伯·朗曼', note: '在休恩登附近发现了更完整的标本。' },
+  ],
+  fossilLocations: [
+    { region: '昆士兰州，澳大利亚', specimenName: '图尔布克组' },
+  ],
 }

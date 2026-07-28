@@ -14,4 +14,15 @@ export default {
     { label: 'Emisfero', value: 'Stegosauro australe', description: 'Uno dei pochi stegosauri gondwaniani — la maggior parte proviene dai continenti settentrionali.' },
     { label: 'Famiglia', value: 'Antenato stegosauro', description: 'Rappresenta un ramo antico degli Stegosauria che aiuta a comprendere le origini remote della famiglia.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Famoso parente successivo' },
+    { id: 'loricatosaurus', relationship: 'Parente stegosauro europeo' },
+    { id: 'dacentrurus', relationship: 'Stegosauro europeo' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Susannah Maidment e il suo team', note: 'Vertebre e femore parziale descritti e nominati Adratiklit boulahfa.' },
+  ],
+  fossilLocations: [
+    { region: 'Gruppo El Mers, Medio Atlante, Boulahfa', specimenName: 'NHMUK PV R 37166 — vertebre olotipo' },
+  ],
 }

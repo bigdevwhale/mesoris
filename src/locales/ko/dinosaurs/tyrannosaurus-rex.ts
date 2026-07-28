@@ -14,4 +14,19 @@ export default {
     { label: '뇌', value: '고도로 발달', description: '뛰어난 시각과 후각을 가져 수 마일 밖에서 먹이를 찾을 수 있었다.' },
     { label: '앞다리', value: '작지만 강력', description: '겨우 1미터지만 200kg을 들어 올릴 수 있었다. 과학자들에게 아직도 수수께끼.' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: '사냥감' },
+    { id: 'edmontosaurus', relationship: '사냥감' },
+    { id: 'daspletosaurus', relationship: '조상' },
+    { id: 'giganotosaurus', relationship: '수렴 진화' },
+  ],
+  discoveries: [
+    { discoveredBy: '바넘 브라운', note: '헬크릭층에서 최초의 부분 골격 발견.' },
+    { discoveredBy: '수잔 헨드릭슨', note: '「수」 — 지금까지 발견된 가장 완전한 T. rex 골격, 90% 이상 intact.' },
+  ],
+  fossilLocations: [
+    { region: '몬태나', specimenName: '헬크릭층' },
+    { region: '사우스다코타', specimenName: '수' },
+    { region: '와이오밍', specimenName: '랜스층' },
+  ],
 }

@@ -14,4 +14,17 @@ export default {
     { label: 'Schwanz', value: 'Haiartig', description: 'Eine kräftige haiartige Schwanzflosse für unglaubliche Geschwindigkeit.' },
     { label: 'Zähne', value: 'Kegelförmig', description: 'Riesige konische Zähne, perfekt entwickelt, um glitschige Beute zu greifen und zu zermalmen.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tylosaurus', relationship: 'Enger Verwandter' },
+    { id: 'plesiosaurus', relationship: 'Konkurrent' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Lokale Steinbrucharbeiter', note: 'Erstes je entdecktes riesiges prähistorisches Reptil — Jahrzehnte bevor irgendjemand von Dinosauriern wusste.' },
+    { discoveredBy: 'Projekt PaleoAngola', note: 'Bedeutende Entdeckungen entlang der südafrikanischen Küste.' },
+  ],
+  fossilLocations: [
+    { region: 'Maastricht, Niederlande', specimenName: 'Maastricht-Formation' },
+    { region: 'Benguela-Becken, Angola' },
+    { region: 'Kansas, USA' },
+  ],
 }

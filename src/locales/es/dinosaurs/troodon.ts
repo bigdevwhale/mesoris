@@ -14,4 +14,15 @@ export default {
     { label: 'Manos', value: 'Prensiles', description: 'Podia agarrar objetos con precision' },
     { label: 'Tamaño', value: '2,5 m', description: 'Un depredador pequeño y agil' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'Pariente lejano (paraviano)' },
+    { id: 'deinonychus', relationship: 'Grupo relacionado' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Ferdinand Hayden', note: 'Descubrimiento de un solo diente — uno de los primeros hallazgos de dinosaurios en Norteamérica.' },
+  ],
+  fossilLocations: [
+    { region: 'Montana', specimenName: 'Formación del río Judith' },
+    { region: 'Alberta' },
+  ],
 }

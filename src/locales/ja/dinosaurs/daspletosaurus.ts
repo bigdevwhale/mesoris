@@ -14,4 +14,14 @@ export default {
     { label: '狩猟', value: '積極的なハンター', description: '証拠は、積極的に狩りをして獲物と戦っていたことを示しています。単なる腐肉食者ではありませんでした。' },
     { label: '咬合力', value: '骨を砕く', description: 'T-レックスを有名にした強力な骨を砕く咬合力をすでに発達させつつありました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: '後代の子孫' },
+  ],
+  discoveries: [
+    { year: 1921, location: 'カナダ・アルバータ州', discoveredBy: 'チャールズ・M・スターンバーグ', note: 'オルドマン層で最初の頭骨が発見された。' },
+  ],
+  fossilLocations: [
+    { country: 'カナダ', region: 'アルバータ州', coordinates: [49.5, -112.0], specimenName: 'オルドマン層' },
+    { country: 'アメリカ合衆国', region: 'モンタナ州', coordinates: [47.5, -110.5], specimenName: 'ツーメディスン層' },
+  ],
 }

@@ -14,4 +14,16 @@ export default {
     { label: 'Kein Dinosaurier', value: 'Flugsaurier', description: 'Eigentlich ein Flugsaurier, kein echter Dinosaurier — lebte aber Seite an Seite mit ihnen.' },
     { label: 'Ernährung', value: 'Fischfresser', description: 'Segelte über dem Western Interior Seaway und schöpfte mit seinem langen Schnabel Fische.' },
   ],
+  relatedDinosaurs: [
+    { id: 'quetzalcoatlus', relationship: 'Größerer Verwandter' },
+    { id: 'pterodactylus', relationship: 'Kleinerer Verwandter' },
+    { id: 'mosasaurus', relationship: 'Geteiltes Ökosystem' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Othniel Charles Marsh', note: 'Erste Pteranodon-Fossilien gefunden.' },
+    { discoveredBy: 'S. W. Williston', note: 'Vollständiger Schädel enthüllte den markanten Kopfkammm.' },
+  ],
+  fossilLocations: [
+    { region: 'Kansas', specimenName: 'Niobrara-Chalk' },
+  ],
 }

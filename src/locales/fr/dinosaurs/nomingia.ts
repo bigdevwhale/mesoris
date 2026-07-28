@@ -14,4 +14,15 @@ export default {
     { label: 'Intelligence', value: 'Oviraptoridé intelligent', description: 'Cerveau relativement gros et comportement social complexe.' },
     { label: 'Site', value: 'Gobi mongol', description: 'Formation de Nemegt — l\'un des plus riches sites de dinosaures au monde.' },
   ],
+  relatedDinosaurs: [
+    { id: 'oviraptor', relationship: 'Parent oviraptoridé proche' },
+    { id: 'velociraptor', relationship: 'Parent théropode maniraptorien' },
+    { id: 'troodon', relationship: 'Petit théropode contemporain' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Rinchen Barsbold et collègues', note: 'Décrit en 2000 par Barsbold et collègues ; le pygostyle est immédiatement devenu une preuve majeure dans l\'histoire de l\'évolution des dinosaures vers les oiseaux.' },
+  ],
+  fossilLocations: [
+    { region: 'Province d\'Ömnögovi, formation de Nemegt, Mongolie', specimenName: 'GIN 100/119 — squelette partiel holotype avec pygostyle' },
+  ],
 }

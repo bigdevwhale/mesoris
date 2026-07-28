@@ -14,4 +14,14 @@ export default {
     { label: '爪', value: '大きく湾曲した爪', description: 'テリジノサウルスほど極端ではない、短めで頑丈な爪を持ち、枝を引き寄せたり防御に使われたと考えられます。' },
     { label: '骨盤', value: '後ろ向きの恥骨', description: '竜盤類獣脚類の中で唯一、テリジノサウルス類は鳥類のような後ろ向きの恥骨を進化させ、植物消化のための大きな腸の空間を確保しました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'therizinosaurus', relationship: '近いテリジノサウルス類の近縁種' },
+    { id: 'oviraptor', relationship: '同時代のモンゴル産獣脚類' },
+  ],
+  discoveries: [
+    { discoveredBy: 'アルタンゲレル・ペルレ', note: '1979年にペルレにより記載された；当初の分類は不確かだったが、その後の研究でTherizinosauriaに確実に位置付けられた。' },
+  ],
+  fossilLocations: [
+    { region: 'モンゴル・ドゥルノド県、バヤンシレ層', specimenName: 'IGM 100/80 — ホロタイプ、部分骨格' },
+  ],
 }

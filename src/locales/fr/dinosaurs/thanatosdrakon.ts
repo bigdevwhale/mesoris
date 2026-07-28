@@ -14,4 +14,14 @@ export default {
     { label: 'Famille', value: 'Azhdarchidé', description: 'Membre des Azhdarchidae, la famille de ptérosaures à long cou et long bec qui inclut Quetzalcoatlus et Hatzegopteryx.' },
     { label: 'Âge', value: 'Crétacé moyen', description: 'A vécu environ 20 millions d\'années avant le célèbre Quetzalcoatlus, comblant un vide dans l\'évolution des azhdarchidés.' },
   ],
+  relatedDinosaurs: [
+    { id: 'quetzalcoatlus', relationship: 'Parent azhdarchidé géant' },
+    { id: 'pteranodon', relationship: 'Parent ptérosaure plus petit' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Leonardo Ortiz David et équipe', note: 'Squelette partiel articulé et matériel référé décrits et nommés.' },
+  ],
+  fossilLocations: [
+    { region: 'Formation Plottier, province de Mendoza', specimenName: 'UNCUYO-LD 307 — holotype, squelette partiel' },
+  ],
 }

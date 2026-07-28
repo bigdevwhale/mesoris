@@ -14,5 +14,15 @@ const translations = {
     { label: '时代', value: '白垩纪晚期', description: '约 8000 万年前。' },
     { label: '发现地', value: '蒙古', description: '戈壁沙漠。' },
   ],
+  relatedDinosaurs: [
+    { id: 'therizinosaurus', relationship: '近缘镰刀龙类' },
+    { id: 'oviraptor', relationship: '同时代的蒙古兽脚类' },
+  ],
+  discoveries: [
+    { discoveredBy: '阿勒坦格勒尔·佩尔勒', note: '1979年由佩尔勒命名描述；最初的分类存有争议，但后续研究将其明确归入镰刀龙超科。' },
+  ],
+  fossilLocations: [
+    { region: '蒙古东戈壁省巴彦希雷组', specimenName: 'IGM 100/80 — 正模标本，部分骨骼' },
+  ],
 }
 export default translations

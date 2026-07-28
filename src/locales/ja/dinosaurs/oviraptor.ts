@@ -14,4 +14,15 @@
     { label: '羽毛', value: '全身羽毛', description: '尾に羽毛の扇形部を持つ、完全に羽毛に覆われていた。' },
     { label: 'トサカ', value: 'ヒクイドリに似た', description: '現代のヒクイドリのような頭の高い骨のトサカ。' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: '遠縁の近縁種（マニラプトル類）' },
+    { id: 'protoceratops', relationship: '同じ時代に生息（獲物ではない）' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ロイ・チャップマン・ Andrews', note: '卵の近くで発見 — 70年にわたり誤って卵泥棒とされた。' },
+    { discoveredBy: 'マーク・ノレル', note: '胚の発見がオヴィラプトルを救済 — 彼は盗んでいたのではなく、抱卵していた。' },
+  ],
+  fossilLocations: [
+    { region: 'ゴビ砂漠', specimenName: 'ジャドフタ層' },
+  ],
 }

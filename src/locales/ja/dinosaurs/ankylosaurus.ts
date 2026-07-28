@@ -14,4 +14,16 @@
     { label: '体長', value: '約8メートル', description: 'バスくらいの大きさで、非常に低く幅広い体格を持ち、体重は約6トンに達しました。' },
     { label: '防御力', value: 'ほぼ無敵', description: 'あまりに重装甲だったため、ティラノサウルスでさえ、ひっくり返して柔らかい腹を狙うのに苦労したでしょう。' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: '捕食者' },
+    { id: 'euoplocephalus', relationship: '近縁種' },
+  ],
+  discoveries: [
+    { year: 1906, location: 'アメリカ合衆国モンタナ州', discoveredBy: 'バーナム・ブラウン', note: 'アンキロサウルスの最初の化石がヘルクリーク層から発見された。' },
+    { year: 1910, location: 'カナダ・アルバータ州', discoveredBy: 'ピーター・C・カイゼン', note: 'これまでに発見された中で最も完全な標本。' },
+  ],
+  fossilLocations: [
+    { country: 'アメリカ合衆国', region: 'モンタナ州', coordinates: [47.5, -106.5], specimenName: 'ヘルクリーク' },
+    { country: 'カナダ', region: 'アルバータ州', coordinates: [54.5, -113.0] },
+  ],
 }

@@ -14,4 +14,16 @@ export default {
     { label: '먹이', value: '양치류와 속새류', description: '톱니 모양 부리는 쥐라기 범람원의 낮은 식물을 뜯어내는 데 이상적이었습니다.' },
     { label: '위험', value: '알로사우루스의 사냥감', description: '그 소박한 크기는 초포식자 알로사우루스의 좋은 사냥감으로 만들었습니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'iguanodon', relationship: '이구아노돈류의 가까운 친척' },
+    { id: 'edmontosaurus', relationship: '후기 하드로사우루스 후손 계통' },
+    { id: 'muttaburrasaurus', relationship: '후기 조각류 친척' },
+  ],
+  discoveries: [
+    { discoveredBy: 'O.C. 마시', note: '뼈의 전쟁 시대에 여러 표본이 발굴되었고, 마시는 1879년에 이 속을 기재했다.' },
+  ],
+  fossilLocations: [
+    { region: '와이오밍주 올버니 카운티(모리슨층)', specimenName: 'YPM 1877 — 홀로타입 표본' },
+    { region: '유타주 다이노소어 국립기념물', specimenName: '성장 시리즈 참조 표본' },
+  ],
 }

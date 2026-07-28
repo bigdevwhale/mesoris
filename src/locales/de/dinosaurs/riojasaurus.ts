@@ -14,4 +14,14 @@ export default {
     { label: 'Fundort', value: 'Argentinien', description: 'Nordwestargentinien' },
     { label: 'Gewicht', value: '~2 Tonnen', description: 'Schwer für seine Zeit' },
   ],
+  relatedDinosaurs: [
+    { id: 'plateosaurus', relationship: 'Enger Verwandter der Sauropodomorphen' },
+    { id: 'eoraptor', relationship: 'Zeitgenössischer früher Dinosaurier' },
+  ],
+  discoveries: [
+    { year: 1967, location: 'La Rioja Province, Argentina', discoveredBy: 'José Bonaparte', note: 'Zahlreiche Exemplare aus der Los-Colorados-Formation; 1969 von Bonaparte formell beschrieben — einer der am besten bekannten triassischen Sauropodomorphen.' },
+  ],
+  fossilLocations: [
+    { country: 'Argentina', region: 'Provinz La Rioja, Los-Colorados-Formation', coordinates: [-29.5, -67.5], specimenName: 'PVL 3808 — Referenzmaterial, mehrere Individuen' },
+  ],
 }

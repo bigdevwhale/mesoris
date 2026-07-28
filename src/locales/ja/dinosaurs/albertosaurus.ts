@@ -14,4 +14,16 @@
     { label: '歯', value: '多数の刃', description: '顎には肉を突き刺し、獲物から肉片を引きちぎるために設計された、厚く鋸歯のある歯が並んでいました。' },
     { label: '成長', value: '青年期の急速成長', description: '成長研究により、幼体が急速に成熟し、わずか数年で強力な捕食者になったことが示されています。' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'より大型の近縁種' },
+    { id: 'daspletosaurus', relationship: '同科のティラノサウルス類' },
+    { id: 'pachyrhinosaurus', relationship: '可能性のある獲物' },
+  ],
+  discoveries: [
+    { year: 1884, location: 'カナダ・アルバータ州レッドディア川', discoveredBy: 'ジョセフ・バー・ティレル', note: '地質調査遠征中に最初の頭骨化石が発見された。' },
+    { year: 1910, location: 'カナダ・アルバータ州', discoveredBy: 'バーナム・ブラウン', note: 'ブラウンはこの種に対する理解を一変させた有名な大量ボーンベッド（骨層）を発見した。' },
+  ],
+  fossilLocations: [
+    { country: 'カナダ', region: 'アルバータ州', coordinates: [51.9, -112.9], specimenName: 'ホースシューキャニオン層' },
+  ],
 }

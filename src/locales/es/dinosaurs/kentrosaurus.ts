@@ -14,4 +14,16 @@ export default {
     { label: 'Tamaño', value: '5 m', description: 'Estegosaurio relativamente pequeño' },
     { label: 'Ubicacion', value: 'Tanzania', description: 'Formacion Tendaguru' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Pariente cercano' },
+    { id: 'brachiosaurus', relationship: 'Contemporaneo de Tendaguru' },
+    { id: 'allosaurus', relationship: 'Analogo depredador' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Expedicion alemana de Tendaguru', note: 'Las grandes excavaciones recuperaron multiples esqueletos de los famosos yacimientos del Jurasico.' },
+    { discoveredBy: 'Edwin Hennig', note: 'Hennig describio formalmente al Kentrosaurus y destaco su inusual disposicion de puas.' },
+  ],
+  fossilLocations: [
+    { region: 'Tendaguru, Tanzania', specimenName: 'Formacion Tendaguru' },
+  ],
 }

@@ -14,4 +14,14 @@ export default {
     { label: '턱', value: '유연한 관절', description: '독특한 활주식 턱 관절 — 큰 먹이를 삼키기 위한 초기 혁신입니다.' },
     { label: '사이트', value: '달의 계곡', description: '아르헨티나의 바예 데 라 루나에서 발견된, 세계 유수의 중요한 화석 사이트입니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'eoraptor', relationship: '동시대' },
+    { id: 'coelophysis', relationship: '약간 후대의 동시대' },
+  ],
+  discoveries: [
+    { discoveredBy: '빅토리노 에레라(Victorino Herrera)', note: '달의 계곡에서 지역 목동이 최초의 표본을 발견했다.' },
+  ],
+  fossilLocations: [
+    { region: '바예 데 라 루나, 이스키구알라스토층', specimenName: '바예 데 라 루나, 이스키구알라스토층' },
+  ],
 }

@@ -14,4 +14,13 @@
     { label: '体重', value: '250kg', description: 'その大きさの割に驚くほど軽い。' },
     { label: '移動', value: '四足歩行', description: '翼を折りたたんで四本足で歩いていた。' },
   ],
+  relatedDinosaurs: [
+    { id: 'pteranodon', relationship: 'より小さい近縁種' },
+  ],
+  discoveries: [
+    { year: 1971, location: 'Texas, USA', discoveredBy: 'Douglas Lawson', note: 'ビッグ bend 国立公園で巨大な翼の骨が発見された — 最初は恐竜と間違われた。' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'テキサス州', coordinates: [29.3, -103.2], specimenName: 'ハベリナ層、ビッグ bend 国立公園' },
+  ],
 }

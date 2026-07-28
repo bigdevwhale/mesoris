@@ -14,4 +14,14 @@ export default {
     { label: '뇌', value: '작은 뇌', description: '모든 검룡류와 마찬가지로, 몸 크기에 비해 매우 작은 뇌로 3톤 가까운 동물에서 호두만한 크기.' },
     { label: '발견지', value: '중국의 검룡류', description: '중국에서 가장 잘 알려지고 완전히 기재된 검룡류로, 쓰촨 성에서 두 개의 부분 골격이 알려짐.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: '근연 북미 검룡과 종' },
+    { id: 'kentrosaurus', relationship: '근연 아프리카 검룡과 종' },
+  ],
+  discoveries: [
+    { discoveredBy: '동즈밍, 탕즈루, 저우스이우', note: '상사시야오 층에서 두 부분 골격이 발굴되어 1977년에 기재되었으며, 한 표본은 쯔궁 공룡 박물관에 전시되어 있다.' },
+  ],
+  fossilLocations: [
+    { region: '쓰촨 성 쯔궁 (상사시야오 층)', specimenName: 'CV 209 — 주요 골격, 쯔궁 공룡 박물관' },
+  ],
 }

@@ -14,4 +14,16 @@ export default {
     { label: 'Epoca', value: '135 Ma', description: 'Cretacico Temprano' },
     { label: 'Manada', value: 'Confirmada', description: '6 individuos de todas las edades' },
   ],
+  relatedDinosaurs: [
+    { id: 'deinonychus', relationship: 'Pariente cercano' },
+    { id: 'velociraptor', relationship: 'Primo más pequeño' },
+    { id: 'acrocanthosaurus', relationship: 'Depredador ápice contemporáneo' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Jim Jensen', note: 'Los primeros restos se recolectaron pero no se reconocieron inmediatamente como un dromeosáurido gigante.' },
+    { discoveredBy: 'James Kirkland, Robert Gaston y Donald Burge', note: 'La descripción formal reveló al raptor más grande conocido.' },
+  ],
+  fossilLocations: [
+    { region: 'Utah', specimenName: 'Miembro Yellow Cat, Formación Cedar Mountain' },
+  ],
 }

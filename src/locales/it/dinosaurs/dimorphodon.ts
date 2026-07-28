@@ -14,4 +14,14 @@ export default {
     { label: 'Età', value: 'Giurassico inferiore', description: 'Uno dei primi pterosauri — di un\'epoca in cui il volo era una tecnologia nuovissima.' },
     { label: 'Volo', value: 'Svolazzante', description: 'Ali corte e larghe — volava più come un pipistrello che come i planatori successivi.' },
   ],
+  relatedDinosaurs: [
+    { id: 'pterodactylus', relationship: 'Discendente più avanzato' },
+    { id: 'rhamphorhynchus', relationship: 'Contemporaneo' },
+  ],
+  discoveries: [
+    { year: 1828, location: 'Dorset, Regno Unito', discoveredBy: 'Mary Anning', note: 'Scoperto dalla leggendaria cacciatrice di fossili Mary Anning sulla Jurassic Coast.' },
+  ],
+  fossilLocations: [
+    { country: 'Regno Unito', region: 'Dorset', coordinates: [50.6, -2.9], specimenName: 'Formazione Blue Lias, Jurassic Coast' },
+  ],
 }

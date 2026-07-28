@@ -14,4 +14,14 @@
     { label: '下颌', value: '灵活关节', description: '独特的滑动式下颌关节——吞食大型猎物的早期创新。' },
     { label: '遗址', value: '月亮谷', description: '发现于阿根廷的月亮谷，世界上最重要的化石遗址之一。' },
   ],
+  relatedDinosaurs: [
+    { id: 'eoraptor', relationship: '同时代' },
+    { id: 'coelophysis', relationship: '稍后同时代' },
+  ],
+  discoveries: [
+    { discoveredBy: '维克托里诺·埃雷拉(Victorino Herrera)', note: '一位当地牧羊人在月亮谷发现了第一件标本。' },
+  ],
+  fossilLocations: [
+    { region: '月亮谷，伊斯基瓜拉斯托组', specimenName: '月亮谷，伊斯基瓜拉斯托组' },
+  ],
 }

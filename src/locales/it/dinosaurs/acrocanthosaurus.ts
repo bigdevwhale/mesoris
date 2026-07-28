@@ -14,4 +14,17 @@ export default {
     { label: 'Braccia', value: 'Solidi artigli', description: 'A differenza dei tirannosauri, l\'Acrocanthosaurus aveva potenti braccia a tre dita, utili per afferrare le prede.' },
     { label: 'Tracce', value: 'Possibili impronte giganti', description: 'Alcune enormi piste del Cretaceo inferiore potrebbero essere state lasciate dall\'Acrocanthosaurus mentre inseguiva i sauropodi.' },
   ],
+  relatedDinosaurs: [
+    { id: 'carcharodontosaurus', relationship: 'Parente stretto' },
+    { id: 'sauroposeidon', relationship: 'Preda gigante contemporanea' },
+    { id: 'deinonychus', relationship: 'Predatore contemporaneo più piccolo' },
+  ],
+  discoveries: [
+    { year: 1940, location: 'Oklahoma, Stati Uniti', discoveredBy: 'J. Willis Stovall e colleghi', note: 'Importanti resti dalla Formazione Antlers rivelarono un predatore gigante precedentemente sconosciuto.' },
+    { year: 1950, location: 'Oklahoma, Stati Uniti', discoveredBy: 'J. Willis Stovall e Wann Langston Jr.', note: 'La descrizione formale presentò Acrocanthosaurus alla scienza.' },
+  ],
+  fossilLocations: [
+    { country: 'Stati Uniti', region: 'Oklahoma', coordinates: [34.4, -96.0], specimenName: 'Formazione Antlers' },
+    { country: 'Stati Uniti', region: 'Texas', coordinates: [32.9, -97.4], specimenName: 'Formazione Twin Mountains' },
+  ],
 }

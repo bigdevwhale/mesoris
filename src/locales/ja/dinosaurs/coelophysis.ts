@@ -14,4 +14,15 @@
     { label: '骨', value: '中空で軽量', description: '中空の骨は速度のための適応であり、後に鳥類も獲得することになる特徴です。' },
     { label: '食性', value: '日和見的な捕食者', description: '小さなトカゲや魚、おそらく他の恐竜の子どもまで狩っていた肉食恐竜です。' },
   ],
+  relatedDinosaurs: [
+    { id: 'herrerasaurus', relationship: '同時代' },
+    { id: 'eoraptor', relationship: '同時代' },
+  ],
+  discoveries: [
+    { year: 1881, location: 'アメリカ・ニューメキシコ州', discoveredBy: 'デイヴィド・ボールドウィン', note: '三畳紀の堆積物から最初の標本が発見された。' },
+    { year: 1947, location: 'アメリカ・ニューメキシコ州ゴーストランチ', discoveredBy: 'エドウィン・コルバート', note: '数百体の完全骨格を含む大規模なボーンベッドが発見された。' },
+  ],
+  fossilLocations: [
+    { country: 'アメリカ', region: 'ニューメキシコ州', coordinates: [36.3, -106.0], specimenName: 'ゴーストランチ、チンル層' },
+  ],
 }

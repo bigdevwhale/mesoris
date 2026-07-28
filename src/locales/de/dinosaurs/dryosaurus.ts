@@ -14,4 +14,17 @@ export default {
     { label: 'Zähne', value: 'Blattschneidender Schnabel', description: 'Sein Schnabel und seine Backenzähne waren darauf ausgelegt, niedrige Vegetation in bewaldeten Überschwemmungsebenen abzuschneiden und zu verarbeiten.' },
     { label: 'Verbreitung', value: 'Zwei Kontinente', description: 'Fossilien aus Nordamerika und Ostafrika zeigen, dass nahe Verwandte der Dryosauriden in den Ökosystemen des späten Jura weit verbreitet waren.' },
   ],
+  relatedDinosaurs: [
+    { id: 'camptosaurus', relationship: 'Größerer Ornithopode aus ähnlichen Lebensräumen' },
+    { id: 'iguanodon', relationship: 'Spätere und stärker abgeleitete Ornithopoden-Linie' },
+    { id: 'allosaurus', relationship: 'Großer zeitgenössischer Räuber' },
+  ],
+  discoveries: [
+    { year: 1878, location: 'Morrison-Formation, Wyoming, USA', discoveredBy: 'O.C. Marsh', note: 'Marsh benannte Dryosaurus anhand leicht gebauter Ornithopoden-Reste.' },
+    { year: 1910, location: 'Tendaguru, Tansania', discoveredBy: 'Deutsche Tendaguru-Expedition', note: 'Dryosaurier-Fossilien aus Ostafrika erweiterten das Verständnis der globalen Verbreitung der Gruppe.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Como Bluff, Wyoming (Morrison-Formation)', coordinates: [41.8, -106.0], specimenName: 'Dryosaurus altus Material' },
+    { country: 'Tansania', region: 'Tendaguru-Formation', coordinates: [-10.2, 39.4], specimenName: 'Zugewiesene Dryosaurier-Reste' },
+  ],
 }

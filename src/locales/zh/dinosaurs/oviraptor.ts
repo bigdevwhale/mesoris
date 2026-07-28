@@ -14,4 +14,15 @@
     { label: '羽毛', value: '全身羽毛', description: '完全有羽毛覆盖，尾端有扇形羽毛。' },
     { label: '冠饰', value: '类似鹤鸵', description: '像现代鹤鸵一样的高骨质头冠。' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: '远缘近亲（手盗龙类）' },
+    { id: 'protoceratops', relationship: '共同生活（不是猎物）' },
+  ],
+  discoveries: [
+    { discoveredBy: '罗伊·查普曼·安德鲁斯', note: '在一窝蛋附近发现 — 70年来被错误地认定为偷蛋贼。' },
+    { discoveredBy: '马克·诺雷尔', note: '胚胎的发现为窃蛋龙平反 — 它在孵蛋而非偷蛋。' },
+  ],
+  fossilLocations: [
+    { region: '戈壁沙漠', specimenName: '德加多克塔组' },
+  ],
 }

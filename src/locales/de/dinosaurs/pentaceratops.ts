@@ -14,4 +14,16 @@ export default {
     { label: 'Nackenschild', value: 'Aufwändiger Halsschild', description: 'Reich durchblutet und wahrscheinlich leuchtend gefärbt — für Arterkennung, Zurschaustellung und Thermoregulation.' },
     { label: 'New Mexico', value: 'Kirtland-Formation', description: 'Gefunden in New Mexico — zusammen mit Hadrosauriern, Ankylosauriern und Tyrannosauriden.' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: 'Späterer Ceratopsidae-Verwandter' },
+    { id: 'styracosaurus', relationship: 'Ceratopsidae-Verwandter' },
+    { id: 'protoceratops', relationship: 'Vorfahren-Ceratopsier' },
+  ],
+  discoveries: [
+    { year: 1921, location: 'San Juan County, New Mexico, USA', discoveredBy: 'Charles H. Sternberg', note: 'Von Sternberg entdeckt und 1923 von Henry Fairfield Osborn beschrieben; zu Ehren Sternbergs als sternbergii benannt.' },
+    { year: 1975, location: 'Kirtland-Formation, New Mexico', discoveredBy: 'American-Museum-Expeditionen', note: 'Weitere Funde, darunter der bemerkenswerte Riesenschädel NMMNH P-27083, enthüllten das volle Ausmaß des Nackenschilds und zementierten den Schädel-Größenrekord.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'San Juan County, New Mexico (Kirtland-Formation)', coordinates: [36.7, -108.0], specimenName: 'AMNH 6325 — Holotyp-Schädel; NMMNH P-27083 — Riesenschädel-Rekord' },
+  ],
 }

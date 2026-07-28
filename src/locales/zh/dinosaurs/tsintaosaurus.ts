@@ -14,5 +14,16 @@ const translations = {
     { label: '声学', value: '声音共鸣器', description: '中空的冠饰结构可能放大了叫声，用于远距离识别同伴。' },
     { label: '中国', value: '山东省', description: '发现于化石丰富的山东省，该地区产出了亚洲最大的一些恐龙。' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: '赖氏龙亚科鸭嘴龙类近亲' },
+    { id: 'corythosaurus', relationship: '有冠鸭嘴龙类近亲' },
+    { id: 'edmontosaurus', relationship: '鸭嘴龙类近亲' },
+  ],
+  discoveries: [
+    { discoveredBy: '杨钟健', note: '由杨钟健于1958年描述；保存不完整导致冠饰形态争议了数十年，直到更好的化石材料被发现才得以解决。' },
+  ],
+  fossilLocations: [
+    { region: '山东诸城（王氏群）', specimenName: 'IVPP V725 — 含冠饰的正模标本头骨' },
+  ],
 }
 export default translations

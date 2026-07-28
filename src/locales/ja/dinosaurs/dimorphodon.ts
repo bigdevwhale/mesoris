@@ -14,4 +14,14 @@ export default {
     { label: '年代', value: 'ジュラ紀前期', description: '最初期の翼竜の一つ。飛行がまだ真新しい技術だった時代の生き物です。' },
     { label: '飛行', value: 'バタバタ飛行', description: '翼は短く幅広く、後の滑空型翼竜よりもコウモリのように飛んでいました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'pterodactylus', relationship: 'より進化した子孫' },
+    { id: 'rhamphorhynchus', relationship: '同時代' },
+  ],
+  discoveries: [
+    { year: 1828, location: 'イギリス・ドーセット', discoveredBy: 'メアリー・アニング', note: '伝説的な化石ハンター、メアリー・アニングによってジュラシック・コーストで発見された。' },
+  ],
+  fossilLocations: [
+    { country: 'イギリス', region: 'ドーセット', coordinates: [50.6, -2.9], specimenName: 'ブルーライアス層、ジュラシック・コースト' },
+  ],
 }

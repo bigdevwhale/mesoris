@@ -14,4 +14,15 @@ export default {
     { label: 'Epoca', value: 'Jurasico Temprano', description: '~195 millones de anos' },
     { label: 'Ubicacion', value: 'Inglaterra', description: 'Costa Jurasica, Dorset' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Línea descendiente tireófora posterior' },
+    { id: 'ankylosaurus', relationship: 'Línea descendiente tireófora posterior' },
+    { id: 'euoplocephalus', relationship: 'Pariente anquilosaurio posterior' },
+  ],
+  discoveries: [
+    { discoveredBy: 'James Harrison', note: 'Esqueleto completo descubierto; descrito por Richard Owen en 1861 en un artículo clave sobre la anatomía temprana de los dinosaurios.' },
+  ],
+  fossilLocations: [
+    { region: 'Charmouth, Dorset, Inglaterra (Lias Inferior)', specimenName: 'NHMUK PV R1111 — holotipo, esqueleto casi completo' },
+  ],
 }

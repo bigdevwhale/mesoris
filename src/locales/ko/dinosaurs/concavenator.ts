@@ -14,4 +14,15 @@ export default {
     { label: '몸길이', value: '약 6미터', description: '백악기 전기 유럽에서 중요한 중형 포식자였습니다.' },
     { label: '발견지', value: '스페인', description: '라스 오야스층에서 발견된, 유럽에서 가장 독특한 수각류 중 하나입니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'carcharodontosaurus', relationship: '더 큰 카르카로돈토사우루스과 근연종' },
+    { id: 'giganotosaurus', relationship: '더 큰 카르카로돈토사우루스과 근연종' },
+    { id: 'allosaurus', relationship: '이전 시대의 알로사우루스상과 사촌' },
+  ],
+  discoveries: [
+    { year: 2003, location: '스페인 쿠엥카주 라스 오야스', discoveredBy: '호세 루이스 산스 및 페르난도 에스카소', note: '칼리사스 데 라 우에르기나층의 엽상 석회암에서 연결된 골격이 발견되었다.' },
+  ],
+  fossilLocations: [
+    { country: '스페인', region: '쿠엥카주 라스 오야스', coordinates: [40.07, -1.85], specimenName: 'MCCM-LH 6666 — 완모식표본, 연결된 골격' },
+  ],
 }

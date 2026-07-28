@@ -14,4 +14,15 @@
     { label: '群体', value: '群居行为', description: '多个个体被一起发现，表明它们是在中国东北古老地貌中迁徙的群居动物。' },
     { label: '声音', value: '共鸣的叫声', description: '头冠的中空管道像长号一样工作，放大叫声用于交流。' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: '已知最近的近亲——几乎相同的头冠' },
+    { id: 'corythosaurus', relationship: '赖氏龙亚科鸭嘴龙近亲' },
+    { id: 'lambeosaurus', relationship: '赖氏龙亚科鸭嘴龙近亲' },
+  ],
+  discoveries: [
+    { year: 2000, location: '中国黑龙江省嘉荫', discoveredBy: '帕斯卡尔·戈德弗鲁瓦等', note: '2000年由戈德弗鲁瓦及其同事根据在黑龙江附近采集的化石材料描述命名；因发现于界河之地，以神话中摆渡人卡戎命名。' },
+  ],
+  fossilLocations: [
+    { country: '中国', region: '黑龙江省嘉荫区（渔亮子组）', coordinates: [48.8, 130.4], specimenName: 'IVPP V12735 — 正模标本部分头骨和骨架' },
+  ],
 }

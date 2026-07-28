@@ -14,4 +14,14 @@ export default {
     { label: 'フリルの開口部', value: '窓（フェネストラ）', description: 'フリルにある大きな穴（窓）が、威圧的なシルエットを保ちながら軽量化していました。' },
     { label: '体長', value: '約5.5 m', description: '体重約2.7トンに達する大型の角竜。' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: '近縁種' },
+    { id: 'pachyrhinosaurus', relationship: '近い近縁種' },
+  ],
+  discoveries: [
+    { discoveredBy: 'チャールズ・M・スターンバーグ', note: '最初の頭骨が発見された。' },
+  ],
+  fossilLocations: [
+    { region: 'アルバータ州', specimenName: 'ダイナソー・パーク層' },
+  ],
 }

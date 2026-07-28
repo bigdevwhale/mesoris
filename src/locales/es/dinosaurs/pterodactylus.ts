@@ -14,4 +14,14 @@ export default {
     { label: 'Edad', value: '150 Ma', description: 'Jurasico Tardio, Solnhofen' },
     { label: 'Dieta', value: 'Peces pequenos', description: 'Se alimentaba en lagos y mares someros' },
   ],
+  relatedDinosaurs: [
+    { id: 'pteranodon', relationship: 'Descendiente más grande' },
+    { id: 'dimorphodon', relationship: 'Pariente más antiguo' },
+  ],
+  discoveries: [
+    { year: 1784, location: 'Bavaria, Germany', discoveredBy: 'Cosimo Alessandro Collini', note: 'Primer fósil de pterosaurio jamás descubierto: Collini pensó que era un animal acuático.' },
+  ],
+  fossilLocations: [
+    { country: 'Germany', region: 'Baviera', coordinates: [48.9, 11.0], specimenName: 'Calizas de Solnhofen' },
+  ],
 }

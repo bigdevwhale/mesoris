@@ -14,4 +14,15 @@ export default {
     { label: 'Dents', value: 'Petites et en forme de feuille', description: 'De minuscules dents — se nourrissait de plantes tendres, de fruits et peut-être d\'insectes.' },
     { label: 'Taille', value: '4,5 mètres', description: 'Herbivore bipède, environ aussi lourd qu\'un cheval.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Prédateur' },
+    { id: 'triceratops', relationship: 'Contemporain' },
+  ],
+  discoveries: [
+    { year: 1931, location: 'Wyoming, USA', discoveredBy: 'Charles Gilmore', note: 'Premier dôme crânien découvert.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Wyoming', coordinates: [44.5, -105.0], specimenName: 'Formation de Lance' },
+    { country: 'USA', region: 'Montana', coordinates: [47.5, -106.5] },
+  ],
 }

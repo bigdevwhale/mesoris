@@ -14,4 +14,16 @@
     { label: '歯', value: 'すりつぶし工場', description: '1,000本以上の歯が高度なすりつぶし機構を構成し、固い植物を咀嚼しました。' },
     { label: '鼻', value: 'ふくらむ袋', description: 'おそらく視覚的・音響的なディスプレイのための、膨らませられる鼻のうを持っていました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: '獲物' },
+    { id: 'maiasaura', relationship: '近縁種' },
+  ],
+  discoveries: [
+    { year: 1892, location: 'アメリカ合衆国サウスダコタ州', discoveredBy: 'オースニエル・チャールズ・マーシュ', note: '初めて記載された。' },
+    { year: 1999, location: 'アメリカ合衆国ノースダコタ州', discoveredBy: 'タイラー・ライソン', note: '「ダコタ」— 最も保存状態の良い恐竜ミイラの一つ。' },
+  ],
+  fossilLocations: [
+    { country: 'アメリカ合衆国', region: 'サウスダコタ州', coordinates: [44.5, -100.0], specimenName: 'ヘルクリーク層' },
+    { country: 'カナダ', region: 'アルバータ州', coordinates: [53.5, -113.5] },
+  ],
 }

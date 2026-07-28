@@ -14,4 +14,15 @@ export default {
     { label: '牙齿', value: '刀状', description: '独特的反弯、刀片状锯齿牙齿——完美用于从巨型蜥脚类猎物身上割肉。' },
     { label: '分布', value: '巴塔哥尼亚', description: '发现于阿根廷丘布特省 Cerro Barcino 组。' },
   ],
+  relatedDinosaurs: [
+    { id: 'giganotosaurus', relationship: '鲨齿龙科近亲' },
+    { id: 'carcharodontosaurus', relationship: '非洲鲨齿龙科近亲' },
+    { id: 'concavenator', relationship: '基础鲨齿龙科近亲' },
+  ],
+  discoveries: [
+    { discoveredBy: '费尔南多·诺瓦斯及其团队', note: '描述并命名了部分颅后骨骼为 Tyrannotitan chubutensis。' },
+  ],
+  fossilLocations: [
+    { region: '丘布特省 Cerro Barcino 组', specimenName: 'MPEF-PV 1156 — 正模标本部分骨骼' },
+  ],
 }

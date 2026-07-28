@@ -14,4 +14,14 @@ export default {
     { label: 'Velocidad', value: '~50 km/h', description: 'Uno de los grandes teropodos mas rapidos' },
     { label: 'Piel', value: 'Fosilizada', description: 'Impresiones de piel muestran escamas sin superposicion' },
   ],
+  relatedDinosaurs: [
+    { id: 'ceratosaurus', relationship: 'Pariente' },
+    { id: 'tyrannosaurus-rex', relationship: 'Rol convergente' },
+  ],
+  discoveries: [
+    { year: 1984, location: 'Chubut, Argentina', discoveredBy: 'José Bonaparte', note: 'Unico esqueleto casi completo con impresiones de piel — un hallazgo increiblemente raro.' },
+  ],
+  fossilLocations: [
+    { country: 'Argentina', region: 'Chubut', coordinates: [-43.3, -65.1], specimenName: 'Formacion La Colonia' },
+  ],
 }

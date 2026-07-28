@@ -14,4 +14,15 @@ export default {
     { label: '분류', value: '알리오라미니', description: '알리오라미니라는 긴 코를 가진 티라노사우루스과의 작은 분파에 속해요.' },
     { label: '발견', value: '2014년 발견', description: '중국 남부 간저우에서 2014년에 정식으로 명명된, 놀라운 백악기 후기 발견입니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tarbosaurus', relationship: '아시아 티라노사우루스과 친척' },
+    { id: 'albertosaurus', relationship: '이른 시기 티라노사우루스과' },
+    { id: 'tyrannosaurus-rex', relationship: '먼 사촌' },
+  ],
+  discoveries: [
+    { year: 2010, location: 'Ganzhou, Jiangxi Province, China', discoveredBy: '건설 노동자; 이후 뤼 준창 팀이 수집', note: '거의 완전한 두개골과 부분 골격 — 지금까지 발견된 가장 완전한 알리오라민이에요.' },
+  ],
+  fossilLocations: [
+    { country: 'China', region: '난시옹층, 간저우, 장시', coordinates: [25.85, 114.95], specimenName: 'GMFPI-PV-001 — 완모식표본, 두개골과 골격' },
+  ],
 }

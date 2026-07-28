@@ -14,4 +14,15 @@ export default {
     { label: '치아', value: '톱니 모양으로 다양', description: '치아는 혼합 식성을 나타내며 작은 먹이, 알, 그리고 식물질도 먹었을 가능성.' },
     { label: '손', value: '부분적 대립 가능', description: '반대립성 엄지로 놀라운 기민함으로 물건을 잡을 수 있었음.' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: '먼 친척 (파라베스)' },
+    { id: 'deinonychus', relationship: '관련 분류군' },
+  ],
+  discoveries: [
+    { discoveredBy: '퍼디낸드 헤이든', note: '단 하나의 이빨이 발견됨 — 북아메리카 최초의 공룡 발견 중 하나.' },
+  ],
+  fossilLocations: [
+    { region: '몬태나', specimenName: '주디스 리버 층' },
+    { region: '앨버타' },
+  ],
 }

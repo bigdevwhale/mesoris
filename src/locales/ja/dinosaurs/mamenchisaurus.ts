@@ -14,4 +14,17 @@
     { label: '採食', value: '広い採食範囲', description: '首はおそらく広い弧を描いて動き、あまり動かずに複数の高さで効率的に採食できました。' },
     { label: '地域', value: '古典的中国の巨人', description: 'マメンチサウルスは中国の豊かなジュラ紀後期の化石層から産出する最もよく知られた巨大恐竜の一つです。' },
   ],
+  relatedDinosaurs: [
+    { id: 'euhelopus', relationship: '首の進化研究でよく比較されるアジアの長頸竜脚類' },
+    { id: 'diplodocus', relationship: '別の極端な首を持つ竜脚類だが体型が異なる' },
+    { id: 'brachiosaurus', relationship: '前肢の高い大型の同時代型竜脚類' },
+  ],
+  discoveries: [
+    { discoveredBy: '道路建設調査中の野外チーム', note: '馬鳴渓の渡し場近くで最初の発見があり、属名が付けられた。' },
+    { discoveredBy: '楊鍾健 (C.C. Young)', note: '正式な記載によりマメンチサウルスは中国の重要な竜脚類属として確立された。' },
+  ],
+  fossilLocations: [
+    { region: '四川省、中国', specimenName: '馬鳴渓/宜賓の標本' },
+    { region: '重慶地域、中国', specimenName: 'M. hochuanensis の標本' },
+  ],
 }

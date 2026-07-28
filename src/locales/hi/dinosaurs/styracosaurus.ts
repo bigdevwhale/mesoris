@@ -13,4 +13,14 @@ export default {
     { label: 'नाक का सींग', value: '60 सेमी तक', description: 'नाक पर एक विशाल सींग — ट्राइसिरैटॉप्स के सींग से भी लंबा और मोटा।' },
     { label: 'फ्रिल छिद्र', value: 'फेनेस्ट्रा', description: 'फ्रिल में बड़े छिद्र (फेनेस्ट्रा) इसे हल्का बनाते थे जबकि भयावह रूपरेखा बरकरार रहती थी।' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: 'संबंधी' },
+    { id: 'pachyrhinosaurus', relationship: 'नज़दीकी संबंधी' },
+  ],
+  discoveries: [
+    { discoveredBy: 'चार्ल्स एम. स्टर्नबर्ग', note: 'पहली खोपड़ी खोजी गई।' },
+  ],
+  fossilLocations: [
+    { region: 'अल्बर्टा', specimenName: 'डायनासोर पार्क फॉर्मेशन' },
+  ],
 }

@@ -14,4 +14,15 @@ export default {
     { label: 'Corpo', value: 'Come un carro armato', description: 'Corpo largo e piatto con noduli ossei ovali nella pelle spessa.' },
     { label: 'Habitat', value: 'Riva del mare interno', description: 'Viveva sulle rive del Mare Interno Occidentale — il grande mare interno del Nord America.' },
   ],
+  relatedDinosaurs: [
+    { id: 'ankylosaurus', relationship: 'Parente anchilosauro (famiglia diversa, con mazza caudale)' },
+    { id: 'euoplocephalus', relationship: 'Parente anchilosauro con mazza caudale' },
+    { id: 'stegosaurus', relationship: 'Parente tireoforo' },
+  ],
+  discoveries: [
+    { discoveredBy: 'O.C. Marsh', note: 'Materiale frammentario descritto da Marsh nel 1889; fornì il nome che definisce i Nodosauridae, una delle due grandi famiglie di anchilosauri.' },
+  ],
+  fossilLocations: [
+    { region: 'Contea di Albany, Wyoming (Mowry Shale), Stati Uniti', specimenName: 'YPM 1815 — materiale olotipo frammentario' },
+  ],
 }

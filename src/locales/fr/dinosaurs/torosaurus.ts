@@ -14,4 +14,16 @@ export default {
     { label: 'Taille', value: '9 mètres, 6 tonnes', description: 'L\'un des plus grands cératopsiens, crâne jusqu\'à 2,6 m de long avec la collerette.' },
     { label: 'Crétacé supérieur', value: 'Derniers jours', description: 'Torosaure vivait tout à la fin du Crétacé, il y a 68–66 millions d\'années — juste avant l\'impact de l\'astéroïde.' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: 'Plus proche parent — autrefois proposé comme même espèce' },
+    { id: 'styracosaurus', relationship: 'Parent cératopsidé' },
+    { id: 'pentaceratops', relationship: 'Parent chasmosaurine plus ancien' },
+  ],
+  discoveries: [
+    { discoveredBy: 'John Bell Hatcher', note: 'Matériel décrit par O.C. Marsh en 1891 ; de nombreux spécimens furent ensuite trouvés dans l\'ouest des États-Unis dans les formations Lance et Hell Creek.' },
+  ],
+  fossilLocations: [
+    { region: 'Comté de Niobrara, Wyoming (Formation Lance)', specimenName: 'YPM 1830 — holotype, crâne partiel' },
+    { region: 'Comté de Harding, Dakota du Sud (Formation Hell Creek)', specimenName: 'Crânes référés' },
+  ],
 }

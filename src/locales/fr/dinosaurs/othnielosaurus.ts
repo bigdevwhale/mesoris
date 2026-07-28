@@ -14,4 +14,16 @@ export default {
     { label: 'Régime', value: 'Végétation basse', description: 'Son bec et ses dents jugales étaient adaptés pour grignoter des fougères et autres plantes basses et tendres du Jurassique.' },
     { label: 'Histoire', value: 'Remaniement taxonomique', description: 'Du matériel autrefois attribué à Nanosaurus ou Othnielia a été révisé ; Othnielosaurus est utilisé pour des restes distincts.' },
   ],
+  relatedDinosaurs: [
+    { id: 'dryosaurus', relationship: 'Ornithopode plus grand d\'habitats similaires' },
+    { id: 'hypsilophodon', relationship: 'Petit ornithischien herbivore agile comparable' },
+    { id: 'camptosaurus', relationship: 'Ornithopode brouteur plus grand contemporain' },
+  ],
+  discoveries: [
+    { year: 1877, location: 'Como Bluff, Wyoming, USA', discoveredBy: 'Équipes de collecte de Marsh', note: 'Petit matériel ornithischien récupéré lors des grandes fouilles de Morrison.' },
+    { year: 2007, location: 'Révision taxonomique', discoveredBy: 'Peter Galton', note: 'La réévaluation a séparé Othnielosaurus des autres attributions historiques de petits ornithischiens.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Como Bluff, Wyoming (formation de Morrison)', coordinates: [41.8, -106.0], specimenName: 'Matériel référé d\'Othnielosaurus' },
+  ],
 }

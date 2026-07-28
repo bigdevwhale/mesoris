@@ -14,4 +14,20 @@ export default {
     { label: '물기', value: '뼈 분쇄', description: '작은 체구에도 불구하고 티라노사우루스류 특유의 강력하고 뼈를 부수는 물림을 가졌습니다.' },
     { label: '속도', value: '40+ km/h', description: '길고 가느다란 다리는 민첩하고 빠른 포식자로 만들었으며, 거대한 사촌 T. rex보다 더 빠를 수 있습니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: '논쟁의 여지가 있는 동의어 / 가까운 친척' },
+    { id: 'albertosaurus', relationship: '티라노사우루스과 사촌' },
+    { id: 'daspletosaurus', relationship: '티라노사우루스과 사촌' },
+    { id: 'gorgosaurus', relationship: '티라노사우루스과 사촌' },
+    { id: 'triceratops', relationship: '가능한 사냥감' },
+  ],
+  discoveries: [
+    { discoveredBy: '클리블랜드 박물관 원정대', note: '헬크릭층에서 최초의 두개골 발견. 처음에는 고르고사우루스 유사 분류군으로 여겨졌다.' },
+    { discoveredBy: '로버트 베이커, 필립 커리, 마이클 윌리엄스', note: '클리블랜드 박물관 두개골 재분석 후 나노티라누스로 개명.' },
+    { discoveredBy: '상업 화석 사냥꾼들', note: '트리케라톱스와 싸우다 멈춘 유명한 「듀얼링 디노소어즈」 표본.' },
+  ],
+  fossilLocations: [
+    { region: '몬태나', specimenName: '헬크릭층' },
+    { region: '와이오밍', specimenName: '랜스층' },
+  ],
 }

@@ -14,4 +14,16 @@ export default {
     { label: 'Zeitalter', value: '112 Mio. Jahre', description: 'Frühe Kreidezeit' },
     { label: 'Verwandte', value: 'Brachiosaurier', description: 'Mit Brachiosaurus verwandt' },
   ],
+  relatedDinosaurs: [
+    { id: 'brachiosaurus', relationship: 'Enger Verwandter' },
+    { id: 'acrocanthosaurus', relationship: 'Bedrohung durch Räuber' },
+    { id: 'argentinosaurus', relationship: 'Rivale unter den Riesen' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Richard Cifelli und Team', note: 'Die riesigen Halswirbel wurden vor der Präparation zunächst für versteinerte Baumstämme gehalten.' },
+    { discoveredBy: 'Mathew Wedel, Richard Cifelli und R. Kent Sanders', note: 'Die formelle Beschreibung identifizierte einen der höchsten je gefundenen Dinosaurier.' },
+  ],
+  fossilLocations: [
+    { region: 'Oklahoma', specimenName: 'Antlers-Formation' },
+  ],
 }

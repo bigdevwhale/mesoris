@@ -13,4 +13,14 @@ export default {
       { label: 'Кисти', value: 'Трёхпалые хвататели', description: 'Длинные тонкие руки помогали цеплять ветви и хватать мелкую добычу.' },
       { label: 'Питание', value: 'Настоящий всеядный', description: 'Ел всё подряд — растения, яйца, насекомых и мелких позвоночных.' },
     ],
+    relatedDinosaurs: [
+      { id: 'gallimimus', relationship: 'Близкий родственник' },
+      { id: 'ornithomimus', relationship: 'Близкий родственник' },
+    ],
+    discoveries: [
+      { discoveredBy: 'Лоуренс Лэмб', note: 'Первый экземпляр найден в Belly River Group.' },
+    ],
+    fossilLocations: [
+      { region: 'Альберта', specimenName: 'Формация Дайносaur-Парк' },
+    ],
   }

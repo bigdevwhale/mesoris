@@ -14,4 +14,15 @@
     { label: '歯', value: '鋸歯のある刃', description: '刃状で鋸歯のある歯 — 肉を切り裂くのに理想的で、活発なハンターだった。' },
     { label: '系統', value: 'コエロフィシス類', description: 'コエロフィシスと同じ系統に属する — 三畳紀後期を通じて共有された体型。' },
   ],
+  relatedDinosaurs: [
+    { id: 'coelophysis', relationship: 'コエロフィシス類の近縁種' },
+    { id: 'herrerasaurus', relationship: '初期の獣脚類親戚' },
+    { id: 'dilophosaurus', relationship: '後代のコエロフィシス類の子孫' },
+  ],
+  discoveries: [
+    { discoveredBy: 'フーゴ・リューレ・フォン・リリエンシュテルン', note: 'トロッシンゲン累層から2体の部分骨格が発見された；フォン・ヒューネによって記載され、フォン・リリエンシュテルンにちなんで命名された。' },
+  ],
+  fossilLocations: [
+    { region: 'テューリンゲン州（トロッシンゲン累層）、ドイツ', specimenName: 'MB.R. 2175 — 主要ホロタイプ' },
+  ],
 }

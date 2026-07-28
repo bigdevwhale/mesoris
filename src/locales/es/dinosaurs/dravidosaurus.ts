@@ -14,4 +14,14 @@ export default {
     { label: 'Ubicacion', value: 'Sur de India', description: 'Tamil Nadu' },
     { label: 'Contexto', value: 'Isla India', description: 'Evoluciono en aislamiento' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Posible pariente estegosaurido' },
+    { id: 'kentrosaurus', relationship: 'Posible pariente estegosaurido' },
+  ],
+  discoveries: [
+    { year: 1979, location: 'Trichinopoly, Tamil Nadu, India', discoveredBy: 'P. Yadagiri y K. Ayyasami', note: 'Material fragmentario descrito como estegosaurio por Yadagiri y Ayyasami en 1979; reinterpretado despues como posible material de plesiosaurio por Chatterjee y Rudra (1991).' },
+  ],
+  fossilLocations: [
+    { country: 'India', region: 'Tiruchirappalli (Trichinopoly), Tamil Nadu (Grupo Trichinopoly)', coordinates: [10.79, 78.7], specimenName: 'GSI SR PAL 1 — holotipo, material fragmentario' },
+  ],
 }

@@ -14,4 +14,15 @@ export default {
     { label: 'Туыстығы', value: 'Алиораминдер', description: 'Ұзын тұмсықты тираннозавридтердің Алиорамини деп аталатын шағын тармағына жатады.' },
     { label: 'Ашылған жылы', value: '2014 жылғы табылу', description: 'Қытайдың оңтүстігіндегі Ганьчжоу қаласынан 2014 жылы ресми түрде сипатталған.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tarbosaurus', relationship: 'Азиялық тираннозаврид туысы' },
+    { id: 'albertosaurus', relationship: 'Ертедегі тираннозаврид' },
+    { id: 'tyrannosaurus-rex', relationship: 'Алыстағы немере аға' },
+  ],
+  discoveries: [
+    { year: 2010, location: 'Ganzhou, Jiangxi Province, China', discoveredBy: 'Құрылыс жұмысшылары; кейін Лю Цзюньчан мен оның командасы жинады', note: 'Толыққа жуық бас сүйек пен ішінара қаңқа — осы уақытқа дейін табылған ең толық алиорамин.' },
+  ],
+  fossilLocations: [
+    { country: 'China', region: 'Наньсюн түзілімі, Ганьчжоу, Цзянси', coordinates: [25.85, 114.95], specimenName: 'GMFPI-PV-001 — голотип, бас сүйек пен қаңқа' },
+  ],
 }

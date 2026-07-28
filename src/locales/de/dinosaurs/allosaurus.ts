@@ -14,4 +14,18 @@ export default {
     { label: 'Zähne', value: 'Sägezahnartig', description: 'Gezackte, klingenartige Zähne, perfekt zum Durchtrennen von Fleisch.' },
     { label: 'Verbreitung', value: 'Nordamerika und Europa', description: 'Fossilien in den USA und Portugal gefunden, was eine weite Verbreitung zeigt.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Beute' },
+    { id: 'diplodocus', relationship: 'Beute' },
+    { id: 'ceratosaurus', relationship: 'Konkurrent' },
+  ],
+  discoveries: [
+    { year: 1877, location: 'Colorado, USA', discoveredBy: 'Othniel Charles Marsh', note: 'Erstmals während der Bone Wars beschrieben.' },
+    { year: 1991, location: 'Wyoming, USA', discoveredBy: 'Kirby Siber', note: '"Big Al" — eines der vollständigsten Theropodenskelette.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Utah', coordinates: [39.0, -111.0], specimenName: 'Cleveland-Lloyd-Steinbruch' },
+    { country: 'USA', region: 'Wyoming', coordinates: [43.0, -107.5] },
+    { country: 'Portugal', region: 'Lourinhã', coordinates: [39.3, -9.3] },
+  ],
 }

@@ -14,4 +14,14 @@ export default {
     { label: 'Ernährung', value: 'Hyperkarnivore', description: 'Fand alles: Haie, Vögel, Plesiosaurier und andere Mosasaurier.' },
     { label: 'Klassifikation', value: 'Mosasaurier', description: 'Ein riesiges Meeresreptil aus der Kreidezeit, kein Dinosaurier.' },
   ],
+  relatedDinosaurs: [
+    { id: 'mosasaurus', relationship: 'Enger Verwandter' },
+    { id: 'plesiosaurus', relationship: 'Beute' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Othniel Charles Marsh', note: 'Erstmals während der Bone Wars aus den Kreideschichten von Kansas beschrieben.' },
+  ],
+  fossilLocations: [
+    { region: 'Kansas', specimenName: 'Niobrara-Kreide, Smoky Hill' },
+  ],
 }

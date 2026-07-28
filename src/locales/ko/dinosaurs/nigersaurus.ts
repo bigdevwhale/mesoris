@@ -14,4 +14,16 @@ export default {
     { label: '자세', value: '머리를 낮춰서', description: '비정상적으로 낮은 위치에 머리를 유지 — 풀을 뜯기에 완벽.' },
     { label: '산지', value: '니제르, 아프리카', description: '사하라 사막에서 발견 — 백악기 아프리카의 특수화된 채식자.' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: '먼 디플로도쿠스상과의 친척' },
+    { id: 'suchomimus', relationship: '동시대 이웃' },
+    { id: 'sauroposeidon', relationship: '다른 용각류의 섭식 전략' },
+  ],
+  discoveries: [
+    { discoveredBy: '필리프 타케', note: '프랑스 탐사대가 처음에 사하라에서 나중에 니제르사우루스임이 판명된 화석을 발견했다.' },
+    { discoveredBy: '폴 세레노와 팀', note: '새로운 탐사에서 이 공룡의 기이한 섭식 해부학을 드러내는 두개골 자료가 산출되었다.' },
+  ],
+  fossilLocations: [
+    { region: '가두파우아, 니제르', specimenName: '엘하즈층' },
+  ],
 }

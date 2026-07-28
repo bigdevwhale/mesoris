@@ -14,4 +14,16 @@ export default {
     { label: 'Taille', value: 'Plus grand que le T-Rex', description: 'Avec 15 mètres de long, le plus grand dinosaure carnivore jamais découvert.' },
     { label: 'Queue', value: 'En forme de pagaie', description: 'Une queue unique en forme de nageoire pour une propulsion puissante sous l\'eau.' },
   ],
+  relatedDinosaurs: [
+    { id: 'baryonyx', relationship: 'Proche parent' },
+    { id: 'mosasaurus', relationship: 'Concurrent (aquatique)' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Ernst Stromer', note: 'Premiers fossiles trouvés; puis détruits lors du bombardement de Munich pendant la Seconde Guerre mondiale.' },
+    { discoveredBy: 'Nizar Ibrahim', note: 'De nouvelles découvertes majeures ont confirmé la théorie du mode de vie aquatique.' },
+  ],
+  fossilLocations: [
+    { region: 'Couches de Kem Kem', specimenName: '' },
+    { region: 'Formation de Bahariya', specimenName: '' },
+  ],
 }

@@ -14,4 +14,15 @@ export default {
     { label: '産地', value: 'グロスターシャー', description: '1910年にイングランドのグロスターシャー州ミンチナンプトンのレンガ工場で発見されました。' },
     { label: '分類', value: '初期ティラノサウルス上科', description: 'グアンロングやキレスクスを含む、ティラノサウルス上科の基盤的な科に属します。' },
   ],
+  relatedDinosaurs: [
+    { id: 'guanlong', relationship: '頭冠を持つプロケラトサウルス科の親戚' },
+    { id: 'dilophosaurus', relationship: '同時代のトサカを持つ獣脚類' },
+    { id: 'tyrannosaurus-rex', relationship: '遠い子孫' },
+  ],
+  discoveries: [
+    { year: 1910, location: 'Minchinhampton, Gloucestershire, England', discoveredBy: 'F. Lewis Bradley', note: '煉瓦工場で見つかった部分的な頭骨。アーサー・スミス・ウッドワードによって記載された。' },
+  ],
+  fossilLocations: [
+    { country: 'United Kingdom', region: 'ミンチナンプトン、グロスターシャー', coordinates: [51.7, -2.2], specimenName: 'NHMUK PV R 4860 — ホロタイプ部分頭骨' },
+  ],
 }

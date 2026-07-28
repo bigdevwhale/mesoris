@@ -14,4 +14,16 @@
     { label: '色', value: '虹色の黒', description: '微細な色素構造からカラスのような光沢のある羽毛だったことが示唆される。' },
     { label: '食性', value: '口に入るものは何でも', description: '化石の胃内容物から魚、哺乳類、鳥が見つかっている — 多彩な小さな捕食者。' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: '遠いドロマエオサウルス類の親類' },
+    { id: 'troodon', relationship: '鳥に似た獣脚類' },
+    { id: 'psittacosaurus', relationship: '同時代の隣人' },
+  ],
+  discoveries: [
+    { discoveredBy: '地元の化石収集家', note: '熱河生物群からの非常に保存状態の良い標本により、四翼の小型恐竜が明らかになった。' },
+    { discoveredBy: '徐星と同僚', note: '正式な記載によりミクロラプトルは最も明瞭な非鳥類型羽毛恐竜の一つとして有名になった。' },
+  ],
+  fossilLocations: [
+    { region: '遼寧省、中国', specimenName: '九佛堂層' },
+  ],
 }

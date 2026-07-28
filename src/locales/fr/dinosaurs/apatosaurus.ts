@@ -14,4 +14,17 @@ export default {
     { label: 'Taille', value: '23 mètres de long', description: 'L\'un des plus grands sauropodes du Jurassique, environ 23 mètres de long et plus de 20 tonnes.' },
     { label: 'Confusion', value: 'Anciennement Brontosaurus', description: 'Pendant des décennies, confondu scientifiquement avec Brontosaurus, aujourd\'hui reconnu comme un genre distinct.' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: 'Proche parent' },
+    { id: 'allosaurus', relationship: 'Prédateur' },
+    { id: 'brachiosaurus', relationship: 'Contemporain' },
+  ],
+  discoveries: [
+    { year: 1877, location: 'Colorado, États-Unis', discoveredBy: 'Othniel Charles Marsh', note: 'Décrit pour la première fois pendant les Guerres des Os.' },
+    { year: 1895, location: 'Wyoming, États-Unis', discoveredBy: 'Expédition AMNH', note: 'Spécimen le plus complet.' },
+  ],
+  fossilLocations: [
+    { country: 'États-Unis', region: 'Wyoming', coordinates: [43.0, -107.5], specimenName: 'Formation de Morrison' },
+    { country: 'États-Unis', region: 'Colorado', coordinates: [39.5, -105.0] },
+  ],
 }

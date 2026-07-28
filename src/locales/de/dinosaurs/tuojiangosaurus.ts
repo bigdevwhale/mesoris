@@ -14,4 +14,14 @@ export default {
     { label: 'Gehirn', value: 'Walnussgroß', description: 'Wie alle Stegosaurier ein sehr kleines Gehirn für seine fast 3 Tonnen Körpermasse.' },
     { label: 'China', value: 'Bester chinesischer Stegosaurier', description: 'Der bekannteste und vollständigste Stegosaurier aus China, gefunden in Sichuan.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Enger nordamerikanischer Stegosaurier-Verwandter' },
+    { id: 'kentrosaurus', relationship: 'Afrikanischer Stegosaurier-Verwandter' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Dong Zhiming, Tang Zilu, Zhou Shiwu', note: 'Zwei Teilskelette aus der Shangshaximiao-Formation, 1977 beschrieben; ein Exemplar wird im Zigong-Dinosaurier-Museum ausgestellt.' },
+  ],
+  fossilLocations: [
+    { region: 'Zigong, Provinz Sichuan (Shangshaximiao-Formation)', specimenName: 'CV 209 — Hauptskelett, Zigong-Dinosaurier-Museum' },
+  ],
 }

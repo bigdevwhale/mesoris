@@ -14,4 +14,14 @@ export default {
     { label: 'Mascella', value: 'Articolazione flessibile', description: 'Un\'articolazione scorrevole unica della mascella — un\'innovazione precoce per ingoiare grandi prede.' },
     { label: 'Sito', value: 'Valle della Luna', description: 'Scoperto nella Valle de la Luna in Argentina, uno dei più importanti siti fossiliferi del mondo.' },
   ],
+  relatedDinosaurs: [
+    { id: 'eoraptor', relationship: 'Contemporaneo' },
+    { id: 'coelophysis', relationship: 'Contemporaneo leggermente posteriore' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Victorino Herrera', note: 'Primo esemplare trovato da un pastore locale nella Valle della Luna.' },
+  ],
+  fossilLocations: [
+    { region: 'Valle de la Luna, Formazione Ischigualasto', specimenName: 'Valle de la Luna, Formazione Ischigualasto' },
+  ],
 }

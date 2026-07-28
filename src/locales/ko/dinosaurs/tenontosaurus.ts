@@ -14,4 +14,16 @@ export default {
     { label: '몸길이', value: '약 8m', description: '클로벌리 층의 지배적 중규모 초식동물로, 전장 8미터, 체중 1톤.' },
     { label: '풍부함', value: '일반적인 화석', description: '압티안~알비안기 북아메리카에서 가장 많이 발견되는 공룡 중 하나로, 광범위한 초식동물로서의 생태적 성공을 반영.' },
   ],
+  relatedDinosaurs: [
+    { id: 'deinonychus', relationship: '주된 포식자(빠진 이빨로 확인됨)' },
+    { id: 'iguanodon', relationship: '더 큰 이구아노돈류 근연종' },
+    { id: 'camptosaurus', relationship: '더 오래된 조각류 근연종' },
+  ],
+  discoveries: [
+    { discoveredBy: '존 H. 오스트롬', note: '오스트롬이 1970년 클로버리층의 화석에서 Tenontosaurus를 기재했다; 같은 탐사에서 이제 유명한 데이노니쿠스 표본도 함께 발견되었다.' },
+  ],
+  fossilLocations: [
+    { region: '몬태나주 위트랜드 카운티(클로버리층)', specimenName: 'AMNH 3040 — 모식표본 골격' },
+    { region: '오클라호마주 카터 카운티(앤틀러스층)', specimenName: '오클라호마산 참조 표본들' },
+  ],
 }

@@ -14,4 +14,15 @@
     { label: '襟飾り', value: '小さいが装飾的', description: 'トリケラトプスに比べて控えめな襟飾り — しかし非常に変異に富む。' },
     { label: '体長', value: '2メートル', description: '羊ほどの大きさ、コンパクトな草食動物。' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: '捕食者' },
+    { id: 'triceratops', relationship: '遠い親戚' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ロイ・チャップマン・アンドリュース', note: '最初のプロトケラトプスと最初の恐竜の卵が同時に発見された。' },
+    { discoveredBy: 'ポーランド・モンゴル共同調査隊', note: '「闘争する恐竜」 — プロトケラトプス対ヴェロキラプトル。' },
+  ],
+  fossilLocations: [
+    { region: 'ゴビ砂漠', specimenName: 'ジャドフタ層' },
+  ],
 }

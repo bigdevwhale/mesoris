@@ -14,4 +14,18 @@ export default {
     { label: 'चोंच', value: 'तोते जैसी', icon: 'nut', description: 'कठोर ताड़ के पत्तों और साइकस को काटने के लिए तेज़, मुड़ी हुई चोंच।' },
     { label: 'जीवाश्म', value: 'सैकड़ों', icon: 'archive', description: 'सबसे आम जीवाश्म डायनासोरों में से एक — हम अधिकांश अन्य प्रजातियों की तुलना में ट्राइसिरैटॉप्स के बारे में अधिक जानते हैं।' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'शिकारी' },
+    { id: 'styracosaurus', relationship: 'रिश्तेदार' },
+    { id: 'pachyrhinosaurus', relationship: 'रिश्तेदार' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ओथनियल चार्ल्स मार्श', note: 'शुरू में विशालकाय बाइसन के रूप में गलत पहचाना गया।' },
+    { discoveredBy: 'जॉन बेल हैचर', note: 'पहली पूर्ण खोपड़ी खोजी और सही पहचानी गई।' },
+  ],
+  fossilLocations: [
+    { region: 'व्योमिंग', specimenName: '' },
+    { region: 'मोंटाना', specimenName: 'हेल क्रीक' },
+    { region: 'कोलोराडो', specimenName: '' },
+  ],
 }

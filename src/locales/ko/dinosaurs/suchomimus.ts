@@ -14,4 +14,16 @@ export default {
     { label: '식성', value: '주로 어식', description: '현대 가비알이나 악어처럼 강의 먹이를 전문으로 하면서도 다양한 고기를 먹을 수 있었다.' },
     { label: '등', value: '낮은 가시 융기', description: '높은 신경극이 등을 따라 얕은 융기 또는 혹을 형성했으나, 스피노사우루스의 거대한 돛과 다르다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'baryonyx', relationship: '가까운 근연종' },
+    { id: 'spinosaurus', relationship: '더 큰 사촌' },
+    { id: 'nigersaurus', relationship: '동시대 이웃' },
+  ],
+  discoveries: [
+    { discoveredBy: '폴 세레노와 탐사팀', note: '대규모 사하라 탐사 중 놀라울 정도로 완전한 골격이 발견되었다.' },
+    { discoveredBy: '폴 세레노와 공동연구자들', note: '공식 기재를 통해 Suchomimus는 거대한 바리오니키나에 아과의 스피노사우루스과로 자리잡았다.' },
+  ],
+  fossilLocations: [
+    { region: '가두파우아', specimenName: '엘라즈층' },
+  ],
 }

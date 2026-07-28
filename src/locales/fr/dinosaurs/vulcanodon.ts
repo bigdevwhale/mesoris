@@ -14,4 +14,14 @@ export default {
     { label: 'Afrique', value: 'Le plus ancien sauropode africain', description: 'L\'un des premiers sauropodes connus d\'Afrique, important pour la biogéographie.' },
     { label: 'Corpulence', value: 'Trapu', description: 'Des membres robustes en forme de colonnes montrent le début de l\'architecture porteuse des sauropodes.' },
   ],
+  relatedDinosaurs: [
+    { id: 'plateosaurus', relationship: 'Lignée ancêtre prosauropode antérieure' },
+    { id: 'brachiosaurus', relationship: 'Parent sauropode dérivé ultérieur' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Michael Raath', note: 'Squelette partiel découvert entre des couches de basalte ; formellement décrit par Raath en 1972, fournissant l\'un des plus anciens sauropodes connus d\'Afrique.' },
+  ],
+  fossilLocations: [
+    { region: 'Mashonaland Ouest, Vulcanodon Beds, région du lac Kariba', specimenName: 'QG 24 — squelette partiel holotype' },
+  ],
 }

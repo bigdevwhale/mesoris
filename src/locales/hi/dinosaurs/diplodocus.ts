@@ -14,4 +14,17 @@ export default {
     { label: 'दाँत', value: 'पेंसिल जैसे', icon: 'pencil', description: 'शाखाओं से पत्तियाँ छीलने के लिए लंबे, पतले दाँत थे।' },
     { label: 'नथुने', value: 'सिर के शीर्ष पर', icon: 'nose', description: 'खोपड़ी के शीर्ष पर एक नासिका छिद्र — वैज्ञानिकों ने दशकों तक इसके उद्देश्य पर बहस की।' },
   ],
+  relatedDinosaurs: [
+    { id: 'apatosaurus', relationship: 'निकट का संबंधी' },
+    { id: 'allosaurus', relationship: 'शिकारी' },
+    { id: 'brachiosaurus', relationship: 'समकालीन' },
+  ],
+  discoveries: [
+    { year: 1877, location: 'कोलोराडो, अमेरिका', discoveredBy: 'सैमुअल वेंडेल विलिस्टन', note: 'कैनन सिटी में पहले जीवाश्म मिले।' },
+    { year: 1899, location: 'व्योमिंग, अमेरिका', discoveredBy: 'AMNH अभियान', note: 'शीप क्रीक में सबसे पूर्ण कंकाल मिला।' },
+  ],
+  fossilLocations: [
+    { country: 'अमेरिका', region: 'व्योमिंग', coordinates: [43.0, -107.5], specimenName: 'मॉरिसन शैलसमूह' },
+    { country: 'अमेरिका', region: 'कोलोराडो', coordinates: [39.5, -105.0] },
+  ],
 }

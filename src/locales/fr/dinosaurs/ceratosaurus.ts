@@ -14,4 +14,16 @@ export default {
     { label: 'Ostéodermes', value: 'Armure dorsale', description: 'Contrairement à la plupart des grands théropodes, Ceratosaurus avait de petites plaques osseuses le long du dos.' },
     { label: 'Taille', value: '6 mètres de long', description: 'Un théropode de taille moyenne qui vivait aux côtés du plus grand et plus commun Allosaurus.' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: 'Concurrent' },
+    { id: 'carnotaurus', relationship: 'Parent éloigné' },
+  ],
+  discoveries: [
+    { year: 1883, location: 'Colorado, États-Unis', discoveredBy: 'Marshall P. Felch', note: 'Premier squelette découvert à Garden Park.' },
+    { year: 2000, location: 'Portugal', discoveredBy: 'Octavio Mateus', note: 'Le spécimen européen a confirmé la vaste répartition du genre.' },
+  ],
+  fossilLocations: [
+    { country: 'États-Unis', region: 'Colorado', coordinates: [38.5, -105.0], specimenName: 'Formation de Morrison' },
+    { country: 'Portugal', region: 'Lourinhã', coordinates: [39.3, -9.3] },
+  ],
 }

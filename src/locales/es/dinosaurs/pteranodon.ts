@@ -14,4 +14,16 @@ export default {
     { label: 'Huesos', value: 'Huecos', description: 'Extremadamente ligeros para volar' },
     { label: 'Clasificacion', value: 'Pterosaurio', description: 'Un reptil volador, no un dinosaurio' },
   ],
+  relatedDinosaurs: [
+    { id: 'quetzalcoatlus', relationship: 'Pariente mayor' },
+    { id: 'pterodactylus', relationship: 'Pariente menor' },
+    { id: 'mosasaurus', relationship: 'Ecosistema compartido' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Othniel Charles Marsh', note: 'Primeros fósiles de Pteranodon encontrados.' },
+    { discoveredBy: 'S. W. Williston', note: 'Cráneo completo que reveló la cresta cefálica distintiva.' },
+  ],
+  fossilLocations: [
+    { region: 'Kansas', specimenName: 'Creta Niobrara' },
+  ],
 }

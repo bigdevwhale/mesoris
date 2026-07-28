@@ -14,4 +14,14 @@
     { label: '食性', value: '食鱼性', description: '少数已知主要以鱼为食的恐龙之一，胃中发现了鱼的残骸。' },
     { label: '发现', value: '英格兰，1983年', description: '由一位业余化石收藏家在萨里郡的黏土坑中发现——欧洲最令人兴奋的恐龙发现之一。' },
   ],
+  relatedDinosaurs: [
+    { id: 'spinosaurus', relationship: '近亲' },
+    { id: 'suchomimus', relationship: '近亲' },
+  ],
+  discoveries: [
+    { year: 1983, location: '英国萨里郡', discoveredBy: '威廉·沃克', note: '一位业余化石猎手在黏土坑中发现了这只巨大的爪子。' },
+  ],
+  fossilLocations: [
+    { country: '英国', region: '萨里郡', coordinates: [51.2, -0.5], specimenName: '威尔德黏土组' },
+  ],
 }

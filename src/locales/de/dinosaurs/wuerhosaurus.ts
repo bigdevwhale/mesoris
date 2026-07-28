@@ -14,4 +14,15 @@ export default {
     { label: 'Lebensraum', value: 'Seeufer-Tiefland', description: 'Lebte an den Ufern von Binnenseen im Junggar-Becken im Nordwesten Chinas.' },
     { label: 'Schwanz', value: 'Vierdorn-Thagomizer', description: 'Ein mit Stacheln bewehrter Thagomizer am Schwanzende, der zur Verteidigung gegen Fressfeinde diente.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Berühmter Verwandter mit höheren Platten' },
+    { id: 'kentrosaurus', relationship: 'Stachelgepanzerter Verwandter' },
+    { id: 'tuojiangosaurus', relationship: 'Chinesischer Stegosaurier-Verwandter' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Dong Zhiming', note: 'Partielles Postcranialskelett beschrieben und Wuerhosaurus homheni benannt.' },
+  ],
+  fossilLocations: [
+    { region: 'Junggar-Becken, Xinjiang', specimenName: 'IVPP V.4006 — Holotyp-Teilskelett' },
+  ],
 }

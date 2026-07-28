@@ -14,4 +14,15 @@ export default {
     { label: '家族', value: '阿尔特洛龙族', description: '属于长吻暴龙科的小型分支"阿尔特洛龙族"——不同于巨型粉碎型暴龙亚科。' },
     { label: '发现', value: '2014年', description: '2014年在中国南部赣州正式描述——晚白垩世惊人的发现。' },
   ],
+  relatedDinosaurs: [
+    { id: 'tarbosaurus', relationship: '亚洲暴龙科近亲' },
+    { id: 'albertosaurus', relationship: '较早期的暴龙科' },
+    { id: 'tyrannosaurus-rex', relationship: '远房亲戚' },
+  ],
+  discoveries: [
+    { year: 2010, location: 'Ganzhou, Jiangxi Province, China', discoveredBy: '建筑工人发现；随后由吕君昌及其团队采集', note: '近乎完整的头骨与部分骨骼——迄今为止最完整的阿尔特洛龙类。' },
+  ],
+  fossilLocations: [
+    { country: 'China', region: '南雄组，赣州，江西', coordinates: [25.85, 114.95], specimenName: 'GMFPI-PV-001 — 正模标本，头骨与骨骼' },
+  ],
 }

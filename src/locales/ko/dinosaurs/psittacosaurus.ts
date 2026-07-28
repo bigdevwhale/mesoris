@@ -14,4 +14,17 @@ export default {
     { label: '꼬리', value: '딱딱한 강모', description: '일부 표본은 꼬리에 딱딱한 강모를 보여줌 — 희귀한 피부 구조.' },
     { label: '몸길이', value: '2미터', description: '대형견 정도 크기, 이족 보행 자세.' },
   ],
+  relatedDinosaurs: [
+    { id: 'protoceratops', relationship: '이후의 각룡류' },
+    { id: 'triceratops', relationship: '먼 뿔 달린 후손' },
+    { id: 'microraptor', relationship: '동아시아 동시대 이웃' },
+  ],
+  discoveries: [
+    { year: 1922, location: 'Mongolia', discoveredBy: 'Henry Fairfield Osborn', note: '오스본이 초기 아시아 발견을 바탕으로 속명을 짓고 원시적 각룡류로 인식했어요.' },
+    { year: 2000, location: 'Liaoning, China', discoveredBy: 'Chinese paleontological teams', note: '놀라운 새 화석들이 피부, 강모, 심지어 새끼 무리까지 보존했어요.' },
+  ],
+  fossilLocations: [
+    { country: 'China', region: '랴오닝성', coordinates: [41.9, 121.7], specimenName: '이셴층' },
+    { country: 'Mongolia', region: '옴노고비', coordinates: [44.5, 108.5], specimenName: '백악기 전기 지층' },
+  ],
 }

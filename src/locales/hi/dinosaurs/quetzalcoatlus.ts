@@ -14,4 +14,13 @@ export default {
     { label: 'नाम', value: 'एज़्टेक देवता', icon: 'feather', description: 'एज़्टेक पौराणिक कथाओं के पंखदार सर्प देवता क्वेट्ज़ालकोअटल (Quetzalcoatl) के नाम पर रखा गया।' },
     { label: 'प्रक्षेपण', value: 'चतुर्पाद प्रक्षेपण', icon: 'move-up', description: 'चारों अंगों का उपयोग करके हवा में उड़ान भरता था — टेरोसॉर का एक अनोखा उड़ान-प्रारंभ तरीका।' },
   ],
+  relatedDinosaurs: [
+    { id: 'pteranodon', relationship: 'छोटा संबंधी' },
+  ],
+  discoveries: [
+    { year: 1971, location: 'Texas, USA', discoveredBy: 'Douglas Lawson', note: 'बिग बेंड राष्ट्रीय उद्यान में विशाल पंख-अस्थि मिली — शुरू में डायनासोर समझी गई।' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'टेक्सास', coordinates: [29.3, -103.2], specimenName: 'जैवेलिना निर्माण-स्थल, बिग बेंड NP' },
+  ],
 }

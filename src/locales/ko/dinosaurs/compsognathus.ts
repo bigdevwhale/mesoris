@@ -14,4 +14,14 @@ export default {
     { label: '발견지', value: '독일 졸른호펜', description: '시조새도 산출된 것으로 유명한 졸른호펜 석회암에서 발견되었습니다.' },
     { label: '속도', value: '매우 민첩', description: '길고 경량인 뒷다리와 균형을 잡는 꼬리가 매우 빠른 주행을 가능하게 했습니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: '먼 친척' },
+  ],
+  discoveries: [
+    { year: 1859, location: '독일 바이에른주', discoveredBy: '요제프 오베른도르퍼', note: '졸른호펜 석회암에서 최초의 표본이 발견되었으며, 같은 지층에서 시조새도 산출된다.' },
+  ],
+  fossilLocations: [
+    { country: '독일', region: '바이에른주', coordinates: [48.8, 11.0], specimenName: '졸른호펜 석회암' },
+    { country: '프랑스', region: '프로방스', coordinates: [43.5, 6.5] },
+  ],
 }

@@ -14,4 +14,14 @@ export default {
     { label: 'Zeitalter', value: 'Späte Kreidezeit', description: '~80 Millionen Jahre' },
     { label: 'Fundort', value: 'Mongolei', description: 'Wüste Gobi' },
   ],
+  relatedDinosaurs: [
+    { id: 'therizinosaurus', relationship: 'Enger Therizinosaurier-Verwandter' },
+    { id: 'oviraptor', relationship: 'Zeitgenössischer mongolischer Theropode' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Altangerel Perle', note: '1979 von Perle beschrieben; die ursprüngliche Klassifikation war unsicher, aber spätere Arbeiten stellten ihn eindeutig zu den Therizinosauria.' },
+  ],
+  fossilLocations: [
+    { region: 'Dornogovi-Provinz, Bayan-Shireh-Formation', specimenName: 'IGM 100/80 — Holotyp, Teilskelett' },
+  ],
 }

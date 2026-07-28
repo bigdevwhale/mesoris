@@ -14,4 +14,13 @@ export default {
     { label: 'Aspetto', value: 'Ricostruito male', description: 'Le prime ricostruzioni lo mostravano come una lucertola gigante — ora sappiamo che camminava su due zampe.' },
     { label: 'Giurassico', value: 'Giurassico medio', description: 'Visse nel Giurassico medio dell\'Inghilterra — più antico di Allosaurus e T. rex.' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: 'Parente lontano' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Lavoratori di cava', note: 'Ossa giganti trovate nella cava di Stonesfield; descritte poi da William Buckland nel 1824.' },
+  ],
+  fossilLocations: [
+    { region: 'Oxfordshire, Regno Unito', specimenName: 'Ardesia di Stonesfield' },
+  ],
 }

@@ -14,4 +14,15 @@ export default {
     { label: 'Alas', value: 'Estrechas y largas', description: 'Alas largas y estrechas adaptadas para el vuelo dinámico sobre la Vía Marítima Interior Occidental, como un albatros cretácico.' },
     { label: 'Vuelo', value: 'Pescador aéreo', description: 'Planeaba sobre el mar cretácico y sumergía su pico desdentado para atrapar peces.' },
   ],
+  relatedDinosaurs: [
+    { id: 'pteranodon', relationship: 'Pariente pteranodóntido contemporáneo' },
+    { id: 'dimorphodon', relationship: 'Pterosaurio basal anterior' },
+    { id: 'quetzalcoatlus', relationship: 'Pariente azdárquido lejano' },
+  ],
+  discoveries: [
+    { year: 1876, location: 'Niobrara Chalk, Kansas, USA', discoveredBy: 'O.C. Marsh', note: 'Primer Nyctosaurus descrito de los depósitos de creta de Kansas.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Caliza Niobrara, Kansas', coordinates: [38.7, -98.5], specimenName: 'Material tipo de la Caliza Niobrara' },
+  ],
 }

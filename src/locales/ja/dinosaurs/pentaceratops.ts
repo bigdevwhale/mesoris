@@ -14,4 +14,16 @@
     { label: '襟飾り', value: '精巧な襟飾り', description: '血管が豊富でおそらく鮮やかな色彩 — 認識、ディスプレイ、体温調節用。' },
     { label: 'ニューメキシコ', value: 'カートランド累層', description: 'ニューメキシコで発見 — ハドロサウルス類、アンキロサウルス類、ティラノサウルス科と共存。' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: '後の角竜科の近縁種' },
+    { id: 'styracosaurus', relationship: '角竜科の近縁種' },
+    { id: 'protoceratops', relationship: '祖先にあたる角竜類' },
+  ],
+  discoveries: [
+    { year: 1921, location: 'ニューメキシコ州サンフアン郡、アメリカ', discoveredBy: 'チャールズ・H・スタンバーグ', note: 'スタンバーグが発見し、1923年にヘンリー・フェアフィールド・オズボーンが記載; スタンバーグにちなんで sternbergii と命名された。' },
+    { year: 1975, location: 'カートランド累層、ニューメキシコ', discoveredBy: 'アメリカ自然史博物館の調査隊', note: 'その後の標本、特に注目すべき巨大頭骨 NMMNH P-27083 によって、フリルの全容が明らかになり、頭骨サイズの記録が確立された。' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'サンフアン郡、ニューメキシコ（カートランド累層）', coordinates: [36.7, -108.0], specimenName: 'AMNH 6325 — ホロタイプ頭骨; NMMNH P-27083 — 巨大頭骨記録' },
+  ],
 }

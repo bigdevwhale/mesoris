@@ -14,4 +14,14 @@ export default {
     { label: 'Epoca', value: 'Jurasico Tardio', description: '~160 millones de anos' },
     { label: 'Ubicacion', value: 'China', description: 'Formacion Shaximiao, Sichuan' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Pariente estegosáurido norteamericano cercano' },
+    { id: 'kentrosaurus', relationship: 'Pariente estegosáurido africano' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Dong Zhiming, Tang Zilu, Zhou Shiwu', note: 'Dos esqueletos parciales recuperados de la Formación Shangshaximiao, descritos en 1977; un espécimen se exhibe en el Museo de Dinosaurios de Zigong.' },
+  ],
+  fossilLocations: [
+    { region: 'Zigong, provincia de Sichuan (Formación Shangshaximiao)', specimenName: 'CV 209 — esqueleto principal, Museo de Dinosaurios de Zigong' },
+  ],
 }

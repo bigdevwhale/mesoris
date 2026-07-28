@@ -14,4 +14,16 @@ export default {
     { label: 'Tamaño', value: 'Como un cuervo', description: 'Un dinosaurio diminuto' },
     { label: 'Vuelo', value: 'Planeador', description: 'Entre arboles de bosques antiguos' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'Pariente dromeosaurido lejano' },
+    { id: 'troodon', relationship: 'Teropodo similar a un ave' },
+    { id: 'psittacosaurus', relationship: 'Vecino contemporaneo' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Coleccionistas locales de fosiles', note: 'Especimenes excepcionalmente conservados de la biota de Jehol revelaron un pequeno dinosaurio de cuatro alas.' },
+    { discoveredBy: 'Xu Xing y colegas', note: 'La descripcion formal hizo famoso a Microraptor como uno de los dinosaurios emplumados no aviares mas claros.' },
+  ],
+  fossilLocations: [
+    { region: 'Liaoning, China', specimenName: 'Formacion Jiufotang' },
+  ],
 }

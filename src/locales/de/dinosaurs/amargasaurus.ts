@@ -14,4 +14,16 @@ export default {
     { label: 'Familie', value: 'Dicraeosaurier', description: 'Er gehörte zu einem seltenen Zweig der Sauropoden, der für kürzere Hälse und ungewöhnliche Wirbelstacheln bekannt ist.' },
     { label: 'Heimat', value: 'Patagonische Überschwemmungsebenen', description: 'Er lebte in der frühen Kreidezeit Patagoniens zwischen Flüssen, Nadelbäumen und anderen bizarren südamerikanischen Dinosauriern.' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: 'Entfernter Diplodocoide-Verwandter' },
+    { id: 'argentinosaurus', relationship: 'Späterer südamerikanischer Riese' },
+    { id: 'carnotaurus', relationship: 'Späterer regionaler Räuber' },
+  ],
+  discoveries: [
+    { year: 1984, location: 'Neuquén, Argentinien', discoveredBy: 'Guillermo Rougier', note: 'Das Typusexemplar wurde in der La-Amarga-Formation in Patagonien entdeckt.' },
+    { year: 1991, location: 'Argentinien', discoveredBy: 'Leonardo Salgado und José Bonaparte', note: 'Die formelle Beschreibung hob die außergewöhnlichen Halsstacheln des Dinosauriers hervor.' },
+  ],
+  fossilLocations: [
+    { country: 'Argentinien', region: 'Neuquén', coordinates: [-38.6, -70.2], specimenName: 'La-Amarga-Formation' },
+  ],
 }

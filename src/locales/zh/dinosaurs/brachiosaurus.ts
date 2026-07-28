@@ -14,4 +14,17 @@
     { label: '鼻子', value: '位于头顶', description: '鼻孔位于头骨顶部的一个圆顶状隆起上，可能用于产生共鸣声。' },
     { label: '腿部', value: '前腿比后腿长', description: '恐龙中罕见的形态，前肢比后肢更长，造就了类似长颈鹿的姿态。' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: '同时代' },
+    { id: 'allosaurus', relationship: '捕食者威胁' },
+    { id: 'apatosaurus', relationship: '同时代' },
+  ],
+  discoveries: [
+    { year: 1900, location: '美国科罗拉多州', discoveredBy: '埃尔默·里格斯', note: '在莫里逊组发现了最早的腕龙化石。' },
+    { year: 1909, location: '坦桑尼亚', discoveredBy: '沃纳·詹内施', note: '大型考察队在滕达古鲁发掘出几近完整的骨骼。' },
+  ],
+  fossilLocations: [
+    { country: '美国', region: '科罗拉多州', coordinates: [39.5, -105.0], specimenName: '莫里逊组' },
+    { country: '坦桑尼亚', region: '滕达古鲁', coordinates: [-10.5, 39.5] },
+  ],
 }

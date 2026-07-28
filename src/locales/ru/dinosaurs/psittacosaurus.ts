@@ -14,4 +14,17 @@ export default {
     { label: 'Хвост', value: 'Щетинистые перья-иглы', description: 'Некоторые экземпляры сохранили жёсткие щетинки на хвосте — редкий тип покрова для динозавров.' },
     { label: 'Рост', value: 'Полная летопись от малыша до взрослого', description: 'Благодаря огромному количеству находок учёные знают и детёнышей, и взрослых, и даже поведение при выращивании потомства.' },
   ],
+  relatedDinosaurs: [
+    { id: 'protoceratops', relationship: 'Более поздний родич-цератопс' },
+    { id: 'triceratops', relationship: 'Дальний рогатый потомок' },
+    { id: 'microraptor', relationship: 'Сосед по раннему мелу Азии' },
+  ],
+  discoveries: [
+    { year: 1922, location: 'Mongolia', discoveredBy: 'Henry Fairfield Osborn', note: 'Осборн назвал род по ранним азиатским находкам и признал его примитивным рогатым динозавром.' },
+    { year: 2000, location: 'Liaoning, China', discoveredBy: 'Chinese paleontological teams', note: 'Потрясающие новые окаменелости сохранили кожу, щетинки и даже возможные группы детёнышей.' },
+  ],
+  fossilLocations: [
+    { country: 'China', region: 'Ляонин', coordinates: [41.9, 121.7], specimenName: 'Формация Исянь' },
+    { country: 'Mongolia', region: 'Өмнөговь', coordinates: [44.5, 108.5], specimenName: 'Раннемеловые отложения' },
+  ],
 }

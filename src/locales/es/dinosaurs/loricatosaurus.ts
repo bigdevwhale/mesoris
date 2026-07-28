@@ -14,4 +14,16 @@ export default {
     { label: 'Renombrado', value: 'Antes Lexovisaurus', description: 'Descrito originalmente como una especie de Lexovisaurus; más tarde reconocido como un género europeo independiente.' },
     { label: 'Hábitat', value: 'Tierras bajas costeras', description: 'Vivió en ambientes costeros y de llanura aluvial de la Europa y el norte de África del Jurásico Medio.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Famoso pariente' },
+    { id: 'kentrosaurus', relationship: 'Primo estegosaurio africano' },
+    { id: 'dacentrurus', relationship: 'Pariente estegosaurio europeo' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Franz Nopcsa', note: 'Material original descrito como Lexovisaurus priscus.' },
+    { discoveredBy: 'Susannah Maidment y equipo', note: 'Reerigido como genero distinto Loricatosaurus, con inclusion de material africano.' },
+  ],
+  fossilLocations: [
+    { region: 'Inglaterra, Reino Unido', specimenName: 'Material holotipo NHMUK' },
+  ],
 }

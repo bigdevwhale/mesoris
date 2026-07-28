@@ -14,4 +14,15 @@ export default {
     { label: '프릴', value: '작지만 장식적', description: '트리케라톱스에 비해 소박한 프릴 — 그러나 매우 변이가 풍부.' },
     { label: '몸길이', value: '2미터', description: '양 정도 크기, 컴팩트한 초식동물.' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: '포식자' },
+    { id: 'triceratops', relationship: '먼 친척' },
+  ],
+  discoveries: [
+    { discoveredBy: '로이 채프먼 앤드류스', note: '최초의 프로토케라톱스와 최초의 공룡 알이 동시에 발견됨.' },
+    { discoveredBy: '폴란드-몽골 원정대', note: '「싸우는 공룡들」 — 프로토케라톱스 대 벨로키랍토르.' },
+  ],
+  fossilLocations: [
+    { region: '고비 사막', specimenName: '자도흐타층' },
+  ],
 }

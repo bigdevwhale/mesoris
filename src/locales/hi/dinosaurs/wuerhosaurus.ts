@@ -14,4 +14,15 @@ export default {
     { label: 'आवास', value: 'झील-तटीय निचला प्रदेश', description: 'उत्तर-पश्चिमी चीन के जुंग्गर बेसिन में अंतर्देशीय झीलों के तट पर रहता था।' },
     { label: 'पूँछ', value: 'चार-काँटे थैगोमाइज़र', description: 'पूँछ के अंत में काँटेदार थैगोमाइज़र, शिकारियों के विरुद्ध रक्षा के लिए उपयोग किया जाता था।' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'ऊँची प्लेटों वाला प्रसिद्ध संबंधी' },
+    { id: 'kentrosaurus', relationship: 'काँटेदार बख़्तरबंद संबंधी' },
+    { id: 'tuojiangosaurus', relationship: 'चीनी स्टेगोसॉर संबंधी' },
+  ],
+  discoveries: [
+    { discoveredBy: 'डोंग झीमिंग', note: 'आंशिक पश्चकाय कंकाल का वर्णन कर इसे Wuerhosaurus homheni नाम दिया।' },
+  ],
+  fossilLocations: [
+    { region: 'जुंग्गर बेसिन, शिनजियांग', specimenName: 'IVPP V.4006 — होलोटाइप आंशिक कंकाल' },
+  ],
 }

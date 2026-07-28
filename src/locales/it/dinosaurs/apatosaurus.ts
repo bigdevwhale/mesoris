@@ -14,4 +14,17 @@ export default {
     { label: 'Dimensioni', value: '23 metri di lunghezza', description: 'Uno dei più grandi sauropodi del Giurassico, circa 23 metri di lunghezza e oltre 20 tonnellate.' },
     { label: 'Confusione', value: 'Un tempo Brontosaurus', description: 'Per decenni confuso scientificamente con Brontosaurus, oggi riconosciuto come genere distinto.' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: 'Parente stretto' },
+    { id: 'allosaurus', relationship: 'Predatore' },
+    { id: 'brachiosaurus', relationship: 'Contemporaneo' },
+  ],
+  discoveries: [
+    { year: 1877, location: 'Colorado, Stati Uniti', discoveredBy: 'Othniel Charles Marsh', note: 'Descritto per la prima volta durante le Guerre delle Ossa.' },
+    { year: 1895, location: 'Wyoming, Stati Uniti', discoveredBy: 'Spedizione AMNH', note: 'Esemplare più completo.' },
+  ],
+  fossilLocations: [
+    { country: 'Stati Uniti', region: 'Wyoming', coordinates: [43.0, -107.5], specimenName: 'Formazione di Morrison' },
+    { country: 'Stati Uniti', region: 'Colorado', coordinates: [39.5, -105.0] },
+  ],
 }

@@ -14,4 +14,14 @@ export default {
     { label: 'Dedos', value: '5', description: 'Cinco dedos, condicion primitiva' },
     { label: 'Tamaño', value: '6 m', description: 'Un depredador grande para su epoca' },
   ],
+  relatedDinosaurs: [
+    { id: 'eoraptor', relationship: 'Contemporáneo' },
+    { id: 'coelophysis', relationship: 'Contemporáneo ligeramente posterior' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Victorino Herrera', note: 'Primer espécimen encontrado por un cabrero local en el Valle de la Luna.' },
+  ],
+  fossilLocations: [
+    { region: 'Valle de la Luna, Formación Ischigualasto', specimenName: 'Valle de la Luna, Formación Ischigualasto' },
+  ],
 }

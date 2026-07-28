@@ -14,5 +14,16 @@ const translations = {
     { label: '牙齿', value: '锯齿状多样化', description: '表明混合食性：小型猎物、蛋类和植物性食物。' },
     { label: '手', value: '部分对生拇指', description: '半对生拇指赋予了惊人的抓握能力。' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: '远亲（副鸟类）' },
+    { id: 'deinonychus', relationship: '相关类群' },
+  ],
+  discoveries: [
+    { discoveredBy: '费迪南德·海登', note: '发现了一颗单独的牙齿——是北美最早的恐龙发现之一。' },
+  ],
+  fossilLocations: [
+    { region: '蒙大拿州', specimenName: '朱迪斯河组' },
+    { region: '艾伯塔省' },
+  ],
 }
 export default translations

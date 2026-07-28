@@ -14,4 +14,15 @@ export default {
     { label: '감각', value: '뛰어난 청각', description: '발군의 청각 — 볏이 소리를 증폭하고 방향 지어 커뮤니케이션을 도움.' },
     { label: '나이', value: '볏으로 나이를 알 수 있음', description: '유체에는 볏이 없고, 아성체에서는 작은 돌기, 성체에서는 위엄 있는 완전한 볏으로.' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: '가까운 친척' },
+    { id: 'corythosaurus', relationship: '가까운 친척' },
+  ],
+  discoveries: [
+    { discoveredBy: '로렌스 램', note: '최초의 표본이 발견됨.' },
+    { discoveredBy: '윌리엄 파크스', note: '볏이 있는 완전한 골격에 이름이 붙여짐.' },
+  ],
+  fossilLocations: [
+    { region: '앨버타주, 캐나다', specimenName: '다이노소어 파크층' },
+  ],
 }

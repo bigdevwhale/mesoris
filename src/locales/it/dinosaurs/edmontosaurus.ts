@@ -14,4 +14,16 @@ export default {
     { label: 'Denti', value: 'Centrale di triturazione', description: 'Oltre 1.000 denti disposti in una batteria di triturazione sofisticata per masticare piante coriacee.' },
     { label: 'Naso', value: 'Sacca gonfiabile', description: 'Probabilmente possedeva una sacca nasale gonfiabile per la parata visiva e sonora.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Preda' },
+    { id: 'maiasaura', relationship: 'Parente stretto' },
+  ],
+  discoveries: [
+    { year: 1892, location: 'Dakota del Sud, USA', discoveredBy: 'Othniel Charles Marsh', note: 'Descritto per la prima volta.' },
+    { year: 1999, location: 'Dakota del Nord, USA', discoveredBy: 'Tyler Lyson', note: '«Dakota» — una delle mummie di dinosauro meglio conservate.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Dakota del Sud', coordinates: [44.5, -100.0], specimenName: 'Formazione Hell Creek' },
+    { country: 'Canada', region: 'Alberta', coordinates: [53.5, -113.5] },
+  ],
 }

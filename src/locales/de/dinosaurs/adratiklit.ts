@@ -14,4 +14,15 @@ export default {
     { label: 'Hemisphäre', value: 'Südlicher Stegosaurier', description: 'Einer der wenigen Stegosaurier aus Gondwana — die meisten stammen aus den nördlichen Kontinenten.' },
     { label: 'Familie', value: 'Stegosaurier-Vorfahre', description: 'Vertritt einen frühen Zweig der Stegosauria und hilft, die alten Ursprünge der Familie zu verstehen.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Bekannter späterer Verwandter' },
+    { id: 'loricatosaurus', relationship: 'Europäischer Stegosaurier-Verwandter' },
+    { id: 'dacentrurus', relationship: 'Europäischer Stegosaurier' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Susannah Maidment und Team', note: 'Wirbel und ein Teilstück des Oberschenkelknochens wurden beschrieben und als Adratiklit boulahfa benannt.' },
+  ],
+  fossilLocations: [
+    { region: 'El-Mers-Gruppe, Mittlerer Atlas, Boulahfa', specimenName: 'NHMUK PV R 37166 — Holotyp-Wirbel' },
+  ],
 }

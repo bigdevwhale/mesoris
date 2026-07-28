@@ -14,4 +14,14 @@ export default {
     { label: '인도', value: '곤드와나의 생존자', description: '인도 아대륙이 아시아를 향해 표류하는 섬이었던 시대의 백악기 후기 인도에서 발견되었습니다.' },
     { label: '논쟁', value: '격렬한 논의', description: '단편적인 자료 때문에 확정적 분류는 거의 불가능합니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: '가능성 있는 검룡류 근연종' },
+    { id: 'kentrosaurus', relationship: '가능성 있는 검룡류 근연종' },
+  ],
+  discoveries: [
+    { year: 1979, location: '인도 타밀나두주 트리치노폴리', discoveredBy: 'P. 야다기리 및 K. 아야사미', note: '1979년 야다기리와 아야사미가 검룡으로 기술한 단편적 자료; 이후 채터지와 루드라(1991)가 수장룡의 가능한 자료로 재해석했다.' },
+  ],
+  fossilLocations: [
+    { country: '인도', region: '타밀나두주 티루치라팔리 (트리치노폴리층군)', coordinates: [10.79, 78.7], specimenName: 'GSI SR PAL 1 — 완모식표본, 단편적 자료' },
+  ],
 }

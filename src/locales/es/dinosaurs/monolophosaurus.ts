@@ -14,4 +14,16 @@ export default {
     { label: 'Hábitat', value: 'Ambientes húmedos', description: 'Vivía en ecosistemas húmedos y ricos en ríos del Jurásico del noroeste de China.' },
     { label: 'Papel', value: 'Depredador mediano', description: 'Probablemente cazaba animales pequeños y medianos, y carroñeaba cuando se le presentaba la oportunidad.' },
   ],
+  relatedDinosaurs: [
+    { id: 'megalosaurus', relationship: 'Carnivoro comparable de grado tetanuro temprano' },
+    { id: 'allosaurus', relationship: 'Depredador tetanuro posterior y mas grande' },
+    { id: 'yangchuanosaurus', relationship: 'Otro teropodo depredador del Jurasico chino' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Equipos de campo de Xinjiang', note: 'Restos iniciales recuperados de los depositos de Shishugou.' },
+    { discoveredBy: 'Zhao Xijin y Philip Currie', note: 'La descripcion formal resalto la unica cresta y la anatomia detallada del craneo.' },
+  ],
+  fossilLocations: [
+    { region: 'Formacion Shishugou, Xinjiang, China', specimenName: 'Holotipo y material esqueletico asociado' },
+  ],
 }

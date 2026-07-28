@@ -14,4 +14,20 @@ export default {
     { label: '咬合力', value: '碎骨之咬', description: '尽管体型小巧，但它拥有典型暴龙类那种强大而能碎骨的咬合力。' },
     { label: '速度', value: '40+ km/h', description: '细长的腿使它成为敏捷、迅速的捕食者 — 比它巨大的近亲霸王龙还要快。' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: '争议同物异名 / 近亲' },
+    { id: 'albertosaurus', relationship: '暴龙科表亲' },
+    { id: 'daspletosaurus', relationship: '暴龙科表亲' },
+    { id: 'gorgosaurus', relationship: '暴龙科表亲' },
+    { id: 'triceratops', relationship: '可能的猎物' },
+  ],
+  discoveries: [
+    { discoveredBy: '克利夫兰博物馆考察队', note: '在地狱溪组发现的第一具头骨,最初被认为是类似蛇发女怪龙的分类群。' },
+    { discoveredBy: '罗伯特·巴克、菲利普·柯里和迈克尔·威廉姆斯', note: '在重新分析克利夫兰博物馆头骨后改名为 Nanotyrannus。' },
+    { discoveredBy: '商业化石猎人', note: '与三角龙搏斗中定格在一起的著名「决斗恐龙」标本。' },
+  ],
+  fossilLocations: [
+    { region: '蒙大拿州', specimenName: '地狱溪组' },
+    { region: '怀俄明州', specimenName: '兰斯组' },
+  ],
 }

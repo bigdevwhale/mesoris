@@ -14,4 +14,15 @@ export default {
     { label: 'Zahne', value: 'Klein und blattformig', description: 'Winzige Zahne — ernahrte sich von weichen Pflanzen, Fruchten und eventuell Insekten.' },
     { label: 'Groae', value: '4,5 Meter', description: 'Zweibeiniger Pflanzenfresser, etwa so schwer wie ein Pferd.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Rauber' },
+    { id: 'triceratops', relationship: 'Zeitgenosse' },
+  ],
+  discoveries: [
+    { year: 1931, location: 'Wyoming, USA', discoveredBy: 'Charles Gilmore', note: 'Erste Schadelkuppel entdeckt.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Wyoming', coordinates: [44.5, -105.0], specimenName: 'Lance-Formation' },
+    { country: 'USA', region: 'Montana', coordinates: [47.5, -106.5] },
+  ],
 }

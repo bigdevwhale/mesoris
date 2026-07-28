@@ -14,4 +14,16 @@ export default {
     { label: 'Waffen', value: 'Gezackte Zähne', description: 'Lange, klingenartige Zähne und kräftige Kiefer waren bestens geeignet, um Fleisch von riesigen Sauropoden abzuschneiden.' },
     { label: 'Debatte', value: 'Eigene Gattung oder Allosaurus?', description: 'Manche Studien behandeln Saurophaganax als eigene Gattung, andere sehen ihn als sehr große Art von Allosaurus.' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: 'Sehr enger Allosaurier-Verwandter; manchmal als dieselbe Gattung betrachtet' },
+    { id: 'torvosaurus', relationship: 'Ein weiterer riesiger Jura-Räuber in Nordamerika' },
+    { id: 'stegosaurus', relationship: 'Mögliche Beute und zeitgenössischer Pflanzenfresser' },
+  ],
+  discoveries: [
+    { discoveredBy: 'J.W. Stovall und Teams', note: 'Große Theropoden-Überreste aus Morrison-Sedimenten geborgen.' },
+    { discoveredBy: 'Daniel Chure', note: 'Material als Saurophaganax maximus benannt und als vom Allosaurus verschieden dargestellt.' },
+  ],
+  fossilLocations: [
+    { region: 'Cimarron County, Oklahoma (Morrison-Formation)', specimenName: 'Typusmaterial von Saurophaganax maximus' },
+  ],
 }

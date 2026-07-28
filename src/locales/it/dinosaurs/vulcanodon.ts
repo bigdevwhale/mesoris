@@ -14,4 +14,14 @@ export default {
     { label: 'Africa', value: 'Il più antico sauropode africano', description: 'Uno dei primi sauropodi conosciuti dell\'Africa, importante per la biogeografia.' },
     { label: 'Corporatura', value: 'Tozzo', description: 'Arti robusti a forma di colonne mostrano l\'inizio dell\'architettura portante dei sauropodi.' },
   ],
+  relatedDinosaurs: [
+    { id: 'plateosaurus', relationship: 'Linea antenata prosauropode precedente' },
+    { id: 'brachiosaurus', relationship: 'Parente sauropode derivato successivo' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Michael Raath', note: 'Scheletro parziale scoperto tra strati di basalto; descritto formalmente da Raath nel 1972, fornendo uno dei più antichi sauropodi conosciuti in Africa.' },
+  ],
+  fossilLocations: [
+    { region: 'Mashonaland Ovest, Vulcanodon Beds, zona del lago Kariba', specimenName: 'QG 24 — scheletro parziale olotipo' },
+  ],
 }

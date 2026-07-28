@@ -14,4 +14,17 @@ export default {
     { label: '骨板', value: '宽而平', description: '长长一排宽而平的三角形骨板，沿着背部和臀部排列。' },
     { label: '产地', value: '英格兰和法国', description: '发现于英格兰多塞特的基默里奇黏土，以及法国和葡萄牙的侏罗纪地层。' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: '著名的较晚出现的近亲' },
+    { id: 'loricatosaurus', relationship: '欧洲剑龙近亲' },
+    { id: 'kentrosaurus', relationship: '非洲剑龙近亲' },
+  ],
+  discoveries: [
+    { year: 1875, location: '英格兰多塞特郡基默里奇黏土', discoveredBy: '理查德·欧文', note: '最初命名为 Omosaurus；后来改名为 Dacentrurus。' },
+    { year: 1902, location: '英国和法国', discoveredBy: '多位研究者', note: '由 F.A. 卢卡斯重新命名为 Dacentrurus；更多材料被描述。' },
+  ],
+  fossilLocations: [
+    { country: '英国', region: '多塞特郡基默里奇', coordinates: [50.6, -2.1], specimenName: 'NHMUK 正模标本材料' },
+    { country: '法国', region: '法国侏罗纪地层', coordinates: [46.5, 2.0], specimenName: '多个法国标本' },
+  ],
 }

@@ -14,4 +14,17 @@ export default {
     { label: 'Plaques', value: 'Larges et plates', description: 'Possédait une longue rangée de plaques larges, plates et triangulaires le long du dos et des hanches.' },
     { label: 'Origine', value: 'Angleterre et France', description: 'Trouvé dans l\'Argile de Kimmeridge du Dorset, en Angleterre, et dans le Jurassique de France et du Portugal.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Célèbre parent postérieur' },
+    { id: 'loricatosaurus', relationship: 'Cousin stégosaure européen' },
+    { id: 'kentrosaurus', relationship: 'Cousin stégosaure africain' },
+  ],
+  discoveries: [
+    { year: 1875, location: 'Argile de Kimmeridge, Dorset, Angleterre', discoveredBy: 'Richard Owen', note: 'Initialement nommé Omosaurus ; renommé plus tard Dacentrurus.' },
+    { year: 1902, location: 'Royaume-Uni et France', discoveredBy: 'Divers', note: 'Renommé Dacentrurus par F.A. Lucas ; matériel additionnel décrit.' },
+  ],
+  fossilLocations: [
+    { country: 'Royaume-Uni', region: 'Kimmeridge, Dorset', coordinates: [50.6, -2.1], specimenName: 'Matériel holotype NHMUK' },
+    { country: 'France', region: 'Jurassique de France', coordinates: [46.5, 2.0], specimenName: 'Divers spécimens français' },
+  ],
 }

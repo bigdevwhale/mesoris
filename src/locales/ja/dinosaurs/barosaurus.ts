@@ -14,4 +14,17 @@ export default {
     { label: '尾', value: '鞭のような尾', description: '細く長い鞭のような尾は、防御や音を出すのに使われた可能性があります。' },
     { label: '分布', value: '二つの大陸', description: '北米モリソン累層とタンザニア・テンタグル累層の両方から見つかっています。' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: '近縁のディプロドクス科' },
+    { id: 'apatosaurus', relationship: '近縁のディプロドクス科' },
+    { id: 'brontosaurus', relationship: 'ディプロドクス科の親戚' },
+  ],
+  discoveries: [
+    { year: 1889, location: 'アメリカ合衆国ワイオミング州コモブラフ', discoveredBy: 'O・C・マーシュ', note: 'ボーンワーズ（骨戦争）中にマーシュのチームにより部分骨格が発見された。' },
+    { year: 1907, location: 'タンザニア・テンダグル', discoveredBy: 'ドイツ・テンダグル探検隊', note: '東アフリカのディプロドクス科化石が後にバロサウルスに分類された。' },
+  ],
+  fossilLocations: [
+    { country: 'アメリカ合衆国', region: 'ワイオミング州コモブラフ（モリソン累層）', coordinates: [41.8, -106.0], specimenName: 'YPM 429 — ホロタイプ部分骨格' },
+    { country: 'タンザニア', region: 'テンダグル累層', coordinates: [-10.2, 39.4], specimenName: 'テンダグルのディプロドクス科化石' },
+  ],
 }

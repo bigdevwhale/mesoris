@@ -14,4 +14,15 @@ export default {
     { label: 'Registro Fosil', value: 'Completo', description: 'Desde huevos hasta adultos' },
     { label: 'Combate', value: 'Fosil famoso', description: 'Preservado luchando contra Velociraptor' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'Depredador' },
+    { id: 'triceratops', relationship: 'Lejanamente emparentado' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Roy Chapman Andrews', note: 'Primer Protoceratops y primeros huevos de dinosaurio descubiertos simultáneamente.' },
+    { discoveredBy: 'Expedición polaco-mongola', note: 'Los «Dinosaurios en combate» — Protoceratops contra Velociraptor.' },
+  ],
+  fossilLocations: [
+    { region: 'Desierto de Gobi', specimenName: 'Formación Djadochta' },
+  ],
 }

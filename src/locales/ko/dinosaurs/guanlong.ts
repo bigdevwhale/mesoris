@@ -14,4 +14,15 @@ export default {
     { label: '몸길이', value: '약 3미터', description: '후의 티라노사우루스과와 대조적으로, 소형의 호리호리한 포식자였습니다.' },
     { label: '발견지', value: '중국 신장', description: '2006년에 기재되어, 티라노사우루스류의 진화사를 다시 쓴 중요한 발견입니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'proceratosaurus', relationship: '볏이 있는 프로케라토사우루스과 사촌' },
+    { id: 'tyrannosaurus-rex', relationship: '먼 후손' },
+    { id: 'dilophosaurus', relationship: '동시대 볏 있는 수각류' },
+  ],
+  discoveries: [
+    { discoveredBy: '쉬싱(Xu Xing)과 그의 팀', note: '중국-미국 합동 탐사대가 두 점의 잘 보존된 골격을 수집했다.' },
+  ],
+  fossilLocations: [
+    { region: '스수거우층, 신장', specimenName: 'IVPP V14531 — 홀로타입 관절 골격' },
+  ],
 }

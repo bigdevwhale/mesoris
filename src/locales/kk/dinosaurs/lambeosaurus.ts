@@ -13,4 +13,15 @@ export default {
     { label: 'Өлшемі', value: '15 м дейін', description: 'Кейбір олжалар оның 15 метрге жетуі мүмкін екенін көрсетеді - бұл ең үлкен хадрозаврлардың бірі.' },
     { label: 'Есту', value: 'Өте ащы', description: 'Оның есту қабілеті өте жақсы болды және тарақ дыбыстарды күшейтуге және байланыс үшін бағыттауға көмектесті.' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: 'Жақын туысы' },
+    { id: 'corythosaurus', relationship: 'Жақын туысы' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Лоренс Лэмб', note: 'Алғашқы үлгі табылды.' },
+    { discoveredBy: 'Уильям Паркс', note: 'Төбесі бар толық қаңқа атау берілді.' },
+  ],
+  fossilLocations: [
+    { region: 'Альберта, Канада', specimenName: 'Динозавр паркі формациясы' },
+  ],
 }

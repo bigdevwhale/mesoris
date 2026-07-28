@@ -14,4 +14,14 @@ export default {
     { label: 'Alimentation', value: 'Hypercarnivore', description: 'Mangeait de tout : requins, oiseaux, plésiosaures et autres mosasaures.' },
     { label: 'Classification', value: 'Mosasaure', description: 'Un reptile marin géant du Crétacé, pas un dinosaure.' },
   ],
+  relatedDinosaurs: [
+    { id: 'mosasaurus', relationship: 'Proche parent' },
+    { id: 'plesiosaurus', relationship: 'Proie' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Othniel Charles Marsh', note: 'Décrit pour la première fois pendant les Bone Wars à partir des craies du Kansas.' },
+  ],
+  fossilLocations: [
+    { region: 'Kansas', specimenName: 'Craie de Niobrara, Smoky Hill' },
+  ],
 }

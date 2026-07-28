@@ -14,4 +14,15 @@ export default {
     { label: 'Famille', value: 'Tyrannosaure primitif', description: 'L\'un des plus anciens et plus primitifs tyrannosauroidés connus — un minuscule ancêtre de T. rex.' },
     { label: 'Âge', value: 'Antérieur à T. rex', description: 'A vécu environ 90 millions d\'années avant T. rex — le modeste précurseur du roi tyran.' },
   ],
+  relatedDinosaurs: [
+    { id: 'proceratosaurus', relationship: 'Cousin proceratosauridé à crête' },
+    { id: 'tyrannosaurus-rex', relationship: 'Descendant lointain' },
+    { id: 'dilophosaurus', relationship: 'Théropode contemporain à crête' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Xu Xing et son équipe', note: 'Deux squelettes bien préservés collectés lors d\'une expédition conjointe sino-américaine.' },
+  ],
+  fossilLocations: [
+    { region: 'Formation de Shishugou, Xinjiang', specimenName: 'IVPP V14531 — squelette articulé holotype' },
+  ],
 }

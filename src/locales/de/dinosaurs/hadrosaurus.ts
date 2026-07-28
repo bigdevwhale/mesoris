@@ -14,4 +14,15 @@ export default {
     { label: 'Schnabel', value: 'Entenschnabel', description: 'Ein breiter, zahnloser, entenartiger Schnabel vorne, mit einer komplexen Zahnbatterie in den Backen — effizientes Kauen.' },
     { label: 'Familie', value: 'Ursprung der Entenschnäbel', description: 'Gab der Familie Hadrosauridae ihren Namen — den Entenschnabel-Dinosauriern, zu denen Edmontosaurus und Parasaurolophus gehören.' },
   ],
+  relatedDinosaurs: [
+    { id: 'edmontosaurus', relationship: 'Späterer Hadrosaurier-Verwandter' },
+    { id: 'parasaurolophus', relationship: 'Kammtragender Hadrosaurier-Cousin' },
+    { id: 'iguanodon', relationship: 'Früherer Ornithopoden-Vorfahre' },
+  ],
+  discoveries: [
+    { discoveredBy: 'William Parker Foulke', note: 'Ein nahezu vollständiges Skelett, das bei einer Mergelgruben-Ausgrabung freigelegt wurde. Benannt von Joseph Leidy.' },
+  ],
+  fossilLocations: [
+    { region: 'Haddonfield, New Jersey', specimenName: 'ANSP 10005 — Holotyp-Skelett' },
+  ],
 }

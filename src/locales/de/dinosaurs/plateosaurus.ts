@@ -14,4 +14,16 @@ export default {
     { label: 'Haufigkeit', value: 'Sehr haufig', description: 'Uber 100 Skelette in Deutschland gefunden.' },
     { label: 'Hande', value: 'Greifdaumen', description: 'Graae Daumenkralle zum Greifen von Asten — noch kein Tragpfeiler wie bei Sauropoden.' },
   ],
+  relatedDinosaurs: [
+    { id: 'brachiosaurus', relationship: 'Nachkomme' },
+    { id: 'diplodocus', relationship: 'Nachkomme' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Johann Friedrich Engelhardt', note: 'Erste Fossilien entdeckt — eine der frühesten Dinosaurierentdeckungen auf dem europäischen Kontinent.' },
+    { discoveredBy: 'Eberhard Fraas', note: 'Massengrabstätte mit Dutzenden Skeletten.' },
+  ],
+  fossilLocations: [
+    { region: 'Trossingen', specimenName: 'Knollenmergel-Member' },
+    { region: 'Bayern', specimenName: '' },
+  ],
 }

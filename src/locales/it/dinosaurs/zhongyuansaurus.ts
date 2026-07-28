@@ -14,4 +14,15 @@ export default {
     { label: 'Armatura', value: 'Protezione primitiva', description: 'Privo della mazza caudale ben sviluppata degli anchilosauridi successivi — il suo sistema di osteodermi e placche dermiche rappresenta una condizione difensiva più ancestrale.' },
     { label: 'Dimensioni', value: 'Circa 4,5 m', description: 'Lunghezza stimata di circa 4–5 metri e massa di diverse centinaia di chilogrammi — un erbivoro quadrupede di taglia media per la sua formazione.' },
   ],
+  relatedDinosaurs: [
+    { id: 'ankylosaurus', relationship: 'Parente anchilosauride successivo' },
+    { id: 'euoplocephalus', relationship: 'Parente anchilosauride successivo' },
+    { id: 'nodosaurus', relationship: 'Parente anchilosauro (ramo nodosauride)' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Lü Junchang et al.', note: 'Descritto dalla Formazione Mangchuan; un anchilosauride primitivo strettamente imparentato con Gobisaurus e Shamosaurus.' },
+  ],
+  fossilLocations: [
+    { region: 'Provincia di Henan (Formazione Mangchuan)', specimenName: 'Formazione Mangchuan, Cretaceo inferiore' },
+  ],
 }

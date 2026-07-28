@@ -14,4 +14,15 @@
     { label: '羽毛', value: 'おそらく羽毛あり', description: '近縁種が羽毛を確認されており、温血で鳥に似た恐竜だったことがわかります。' },
     { label: '狩猟', value: '群れのハンター', description: 'テノントサウルスの化石の近くから複数個体が発見されており、集団狩猟の強力な証拠となっています。' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: '近縁種' },
+    { id: 'oviraptor', relationship: '同時代' },
+  ],
+  discoveries: [
+    { year: 1931, location: 'アメリカ・モンタナ州', discoveredBy: 'バーナム・ブラウン', note: '最初の化石が発見されたが、数十年後にようやく研究された。' },
+    { year: 1964, location: 'アメリカ・モンタナ州', discoveredBy: 'ジョン・オストロム', note: 'オストロムによる発見と1969年の論文が恐竜科学に革命を起こした。' },
+  ],
+  fossilLocations: [
+    { country: 'アメリカ合衆国', region: 'モンタナ州', coordinates: [45.5, -108.5], specimenName: 'クローバリー層' },
+  ],
 }

@@ -14,4 +14,15 @@ export default {
     { label: '목', value: '간결', description: '아즈다르코과치고는 비교적 짧고 두꺼운 목으로, 큰 사냥감을 제압하는 데 적응했어요.' },
     { label: '생태', value: '핫체그 섬의 정점', description: '루마니아 하체그 섬의 정점 포식자로, 마자로사우루스 같은 작은 용각류를 사냥했어요.' },
   ],
+  relatedDinosaurs: [
+    { id: 'quetzalcoatlus', relationship: '거대한 아즈다르키드 친척' },
+    { id: 'thanatosdrakon', relationship: '거대한 아즈다르키드 친척' },
+    { id: 'pteranodon', relationship: '더 작은 익룡 친척' },
+  ],
+  discoveries: [
+    { discoveredBy: '단 그리고레스쿠와 팀', note: '두개골 단편, 상완골 및 기타 자료를 처음 기술·명명.' },
+  ],
+  fossilLocations: [
+    { region: '덴수시-큘라층, 하체그 분지, 트란실바니아', specimenName: 'BMNH R 3517 / 홀로타입 단편 자료' },
+  ],
 }

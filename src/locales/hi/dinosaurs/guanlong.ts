@@ -14,4 +14,15 @@ export default {
     { label: 'परिवार', value: 'प्रारंभिक टायरानोसॉरॉइड', icon: 'star', description: 'सबसे पुराने और सबसे आदिम टायरानोसॉरॉइड्स में से एक — T. rex का छोटा पूर्वज।' },
     { label: 'काल', value: 'T. rex से पहले', icon: 'clock', description: 'T. rex से लगभग 90 मिलियन वर्ष पहले रहता था — तानाशाह राजा का छोटा अग्रदूत।' },
   ],
+  relatedDinosaurs: [
+    { id: 'proceratosaurus', relationship: 'कलंकदार प्रोसेराटोसॉरिड चचेरा भाई' },
+    { id: 'tyrannosaurus-rex', relationship: 'दूरस्थ वंशज' },
+    { id: 'dilophosaurus', relationship: 'समकालीन कलंकदार थेरोपॉड' },
+  ],
+  discoveries: [
+    { discoveredBy: 'शू सिंग और उनकी टीम', note: 'एक संयुक्त चीनी-अमेरिकी अभियान द्वारा दो सुसंरक्षित कंकाल एकत्र किए गए।' },
+  ],
+  fossilLocations: [
+    { region: 'शिशुगौ शैलसमूह, शिनजियांग', specimenName: 'IVPP V14531 — होलोटाइप संधिवद्ध कंकाल' },
+  ],
 }

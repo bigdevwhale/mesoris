@@ -14,4 +14,16 @@ export default {
     { label: '羽毛', value: 'おそらく羽毛あり', description: '羽毛ドロマエオサウルス類の近縁種として、その大きさにもかかわらずほぼ確実に羽毛がありました。' },
     { label: '採石場', value: '集団埋葬', description: '複数の個体が砂岩の中で一緒に発見され、社会的行動か共通の災害のいずれかを示唆しています。' },
   ],
+  relatedDinosaurs: [
+    { id: 'deinonychus', relationship: '近縁種' },
+    { id: 'velociraptor', relationship: '小型の近縁種' },
+    { id: 'acrocanthosaurus', relationship: '同時代の頂点捕食者' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ジム・ジェンセン', note: '初期の化石は収集されたが、巨大なドロマエオサウルス科としてはすぐに認識されなかった。' },
+    { discoveredBy: 'ジェームズ・カークランド、ロバート・ガストン、ドナルド・バージ', note: '公式な記載により、既知最大のラプトルの恐竜が明らかになった。' },
+  ],
+  fossilLocations: [
+    { region: 'ユタ州', specimenName: 'イエローキャット部層、シーダーマウンテン層' },
+  ],
 }

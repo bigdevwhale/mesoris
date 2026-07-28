@@ -14,4 +14,15 @@ export default {
     { label: 'Zähne', value: 'Gezackte Klingen', description: 'Klingenartige, gesägte Zähne ideal zum Schneiden von Fleisch — ein aktiver Jäger.' },
     { label: 'Verwandtschaft', value: 'Coelophysoide', description: 'Gehört zur selben Linie wie Coelophysis — gemeinsamer Bauplan in der gesamten späten Trias.' },
   ],
+  relatedDinosaurs: [
+    { id: 'coelophysis', relationship: 'Naher coelophysoider Verwandter' },
+    { id: 'herrerasaurus', relationship: 'Früher theropoder Verwandter' },
+    { id: 'dilophosaurus', relationship: 'Späterer coelophysoider Nachkomme' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Hugo Rühle von Lilienstern', note: 'Zwei Teilskelette aus der Trossingen-Formation geborgen; von von Huene beschrieben und zu Liliensterns Ehren benannt.' },
+  ],
+  fossilLocations: [
+    { region: 'Thüringen (Trossingen-Formation), Deutschland', specimenName: 'MB.R. 2175 — primärer Holotyp' },
+  ],
 }

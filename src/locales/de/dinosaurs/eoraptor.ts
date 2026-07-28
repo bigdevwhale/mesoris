@@ -14,4 +14,14 @@ export default {
     { label: 'Größe', value: 'Hundegroß', description: 'Nur 1 Meter lang — Dinosaurier fingen klein an, bevor sie zu Giganten wurden.' },
     { label: 'Fundort', value: 'Valle de la Luna', description: 'Gefunden im Tal des Mondes in Argentinien — eine der wichtigsten Fossilfundstellen der Erde.' },
   ],
+  relatedDinosaurs: [
+    { id: 'herrerasaurus', relationship: 'Zeitgenosse' },
+    { id: 'plateosaurus', relationship: 'Späterer Nachkomme' },
+  ],
+  discoveries: [
+    { year: 1991, location: 'San Juan, Argentinien', discoveredBy: 'Ricardo Martinez', note: 'In derselben Mondtal-Formation entdeckt wie Herrerasaurus.' },
+  ],
+  fossilLocations: [
+    { country: 'Argentinien', region: 'San Juan', coordinates: [-30.0, -68.0], specimenName: 'Valle de la Luna, Ischigualasto-Formation' },
+  ],
 }

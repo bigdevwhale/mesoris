@@ -14,4 +14,17 @@ export default {
     { label: 'Brazos', value: 'Fuertes', description: 'Tres dedos para agarrar presas' },
     { label: 'Epoca', value: '116-110 Ma', description: 'Antes de los tiranosaurios' },
   ],
+  relatedDinosaurs: [
+    { id: 'carcharodontosaurus', relationship: 'Pariente cercano' },
+    { id: 'sauroposeidon', relationship: 'Presa gigante contemporánea' },
+    { id: 'deinonychus', relationship: 'Depredador contemporáneo más pequeño' },
+  ],
+  discoveries: [
+    { year: 1940, location: 'Oklahoma, EE. UU.', discoveredBy: 'J. Willis Stovall y colegas', note: 'Restos importantes de la Formación Antlers revelaron un depredador gigante previamente desconocido.' },
+    { year: 1950, location: 'Oklahoma, EE. UU.', discoveredBy: 'J. Willis Stovall y Wann Langston Jr.', note: 'La descripción formal dio a conocer al Acrocanthosaurus en la ciencia.' },
+  ],
+  fossilLocations: [
+    { country: 'EE. UU.', region: 'Oklahoma', coordinates: [34.4, -96.0], specimenName: 'Formación Antlers' },
+    { country: 'EE. UU.', region: 'Texas', coordinates: [32.9, -97.4], specimenName: 'Formación Twin Mountains' },
+  ],
 }

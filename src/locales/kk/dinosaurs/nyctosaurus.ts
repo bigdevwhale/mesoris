@@ -14,4 +14,15 @@ export default {
     { label: 'Қанаттары', value: 'Ұзын әрі жіңішке', description: 'Мұхит үстінде ұзақ қалықтап ұшуға бейімделген.' },
     { label: 'Ұшуы', value: 'Әуедегі балықшы', description: 'Су бетіне жақындап ұшып, тіссіз тұмсығымен балық ұстаған.' },
   ],
+  relatedDinosaurs: [
+    { id: 'pteranodon', relationship: 'Заманауи птеранодонтид туысы' },
+    { id: 'dimorphodon', relationship: 'Алдыңғы негізгі птерозавр' },
+    { id: 'quetzalcoatlus', relationship: 'Алыс аждархид туысы' },
+  ],
+  discoveries: [
+    { year: 1876, location: 'Ниобрара бор, Канзас, АҚШ', discoveredBy: 'О.С. Марш', note: 'Канзас бор шөгінділерінен сипатталған алғашқы Никтозавр.' },
+  ],
+  fossilLocations: [
+    { country: 'АҚШ', region: 'Ниобрара бор, Канзас', coordinates: [38.7, -98.5], specimenName: 'Ниобрара бор типтік материалы' },
+  ],
 }

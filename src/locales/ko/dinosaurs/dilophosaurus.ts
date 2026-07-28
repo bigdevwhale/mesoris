@@ -14,4 +14,16 @@ export default {
     { label: '물기', value: '독 없음', description: '독이나 펼쳐지는 목주름에 대한 과학적 증거는 전혀 없습니다 — 이들은 완전한 영화적 창작입니다.' },
     { label: '시대', value: '전기 쥐라기', description: '공룡이 지상을 지배하기 시작한 지 불과 수백만 년 후의 시대에 사냥했습니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'coelophysis', relationship: '초기 수각류 친척' },
+    { id: 'ceratosaurus', relationship: '후기 볏 있는 수각류 대응종' },
+    { id: 'allosaurus', relationship: '후계 정점 포식자' },
+  ],
+  discoveries: [
+    { discoveredBy: '샘 웰즈', note: '첫 번째 골격은 캘리포니아 대학 원정대의 탐사 중 카옌타층에서 발굴되었다.' },
+    { discoveredBy: '샘 웰즈', note: '더 좋은 표본이 뚜렷한 쌍 볏을 명확히 보여 Dilophosaurus라는 이름이 생겼다.' },
+  ],
+  fossilLocations: [
+    { region: '애리조나', specimenName: '카옌타층' },
+  ],
 }

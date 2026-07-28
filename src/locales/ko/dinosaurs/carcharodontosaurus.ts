@@ -14,4 +14,17 @@ export default {
     { label: '서식지', value: '북아프리카', description: '현재의 이집트와 모로코에 해당하는 백악기 하천 평야와 맹그로브를 배회했습니다.' },
     { label: '공존', value: '스피노사우루스와 공존', description: '스피노사우루스와 서식지를 공유했습니다. 역사상 최대의 두 수각류가 이웃하여 살았던 것입니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'giganotosaurus', relationship: '가까운 친척' },
+    { id: 'spinosaurus', relationship: '동시대 경쟁자' },
+    { id: 'acrocanthosaurus', relationship: '북아메리카 친척' },
+  ],
+  discoveries: [
+    { discoveredBy: '샤를 드페레와 J. 사보르냉', note: '원래 표본이 북아프리카의 상어 이빨 거대 공룡을 정립했다.' },
+    { discoveredBy: '폴 세레노', note: '새로운 두개골 자료는 원래 화석이 분실된 후 과학자들이 이 동물을 재기재하는 데 도움을 주었다.' },
+  ],
+  fossilLocations: [
+    { region: '켐켐층', specimenName: '켐켐군' },
+    { region: '테가마', specimenName: '콘티넨탈 인터칼레르' },
+  ],
 }

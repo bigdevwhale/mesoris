@@ -14,4 +14,16 @@ export default {
     { label: 'Social', value: 'Grands troupeaux', description: 'Hadrosaure très social vivant en grands troupeaux.' },
     { label: 'Dents', value: 'Des centaines', description: 'Batterie dentaire complexe avec des centaines de molaires étroitement serrées.' },
   ],
+  relatedDinosaurs: [
+    { id: 'corythosaurus', relationship: 'Parent' },
+    { id: 'lambeosaurus', relationship: 'Proche parent' },
+  ],
+  discoveries: [
+    { year: 1920, location: 'Alberta, Canada', discoveredBy: 'William Parks', note: 'Premier crâne découvert.' },
+    { year: 1999, location: 'Nouveau-Mexique, USA', discoveredBy: 'Thomas Williamson', note: 'Crâne très bien préservé.' },
+  ],
+  fossilLocations: [
+    { country: 'Canada', region: 'Alberta', coordinates: [54.5, -113.0], specimenName: 'Formation de Dinosaur Park' },
+    { country: 'USA', region: 'Nouveau-Mexique', coordinates: [36.0, -107.5] },
+  ],
 }

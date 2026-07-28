@@ -14,4 +14,16 @@ export default {
     { label: 'Armamento', value: 'Dientes aserrados', description: 'Sus dientes largos en forma de cuchilla y sus poderosas mandíbulas eran ideales para cortar la carne de enormes saurópodos.' },
     { label: 'Debate', value: '¿Distinto de Allosaurus?', description: 'Algunos estudios lo tratan como un género aparte, mientras que otros lo consideran una especie muy grande de Allosaurus.' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: 'Pariente alosáurido muy cercano; a veces considerado el mismo género' },
+    { id: 'torvosaurus', relationship: 'Otro depredador jurásico gigante en Norteamérica' },
+    { id: 'stegosaurus', relationship: 'Posible presa y herbívoro contemporáneo' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Equipos dirigidos por J.W. Stovall', note: 'Restos de un gran terópodo recuperados de estratos del Morrison.' },
+    { discoveredBy: 'Daniel Chure', note: 'El material fue nombrado Saurophaganax maximus y presentado como distinto de Allosaurus.' },
+  ],
+  fossilLocations: [
+    { region: 'Condado de Cimarron, Oklahoma (Formación Morrison)', specimenName: 'Material tipo de Saurophaganax maximus' },
+  ],
 }

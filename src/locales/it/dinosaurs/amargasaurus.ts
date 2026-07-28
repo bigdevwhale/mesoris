@@ -14,4 +14,16 @@ export default {
     { label: 'Famiglia', value: 'Dicraeosauride', description: 'Apparteneva a un ramo raro dei sauropodi, celebre per i colli più corti e le spine vertebrali insolite.' },
     { label: 'Habitat', value: 'Pianure alluvionali della Patagonia', description: 'Viveva nella Patagonia del Cretaceo inferiore tra fiumi, conifere e altri dinosauri sudamericani insoliti.' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: 'Lontano cugino diplodocoide' },
+    { id: 'argentinosaurus', relationship: 'Gigante sudamericano successivo' },
+    { id: 'carnotaurus', relationship: 'Predatore regionale successivo' },
+  ],
+  discoveries: [
+    { year: 1984, location: 'Neuquén, Argentina', discoveredBy: 'Guillermo Rougier', note: 'L\'esemplare tipo fu scoperto nella formazione La Amarga della Patagonia.' },
+    { year: 1991, location: 'Argentina', discoveredBy: 'Leonardo Salgado e José Bonaparte', note: 'La descrizione formale mise in evidenza le straordinarie spine cervicali del dinosauro.' },
+  ],
+  fossilLocations: [
+    { country: 'Argentina', region: 'Neuquén', coordinates: [-38.6, -70.2], specimenName: 'Formazione La Amarga' },
+  ],
 }

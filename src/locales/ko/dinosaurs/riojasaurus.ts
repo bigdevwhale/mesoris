@@ -14,4 +14,14 @@ export default {
     { label: '뼈', value: '해면상 척추', description: '경량화를 위해 중공이고 해면상인 척추뼈를 가지고 있었습니다.' },
     { label: '계통', value: '용각류에 가까움', description: '용각형류 계통수의 기저 부근에 위치하며, 거대 용각류의 진화를 이해하는 데 중요한 존재.' },
   ],
+  relatedDinosaurs: [
+    { id: 'plateosaurus', relationship: '가까운 용각형류 친척' },
+    { id: 'eoraptor', relationship: '동시대 초기 공룡' },
+  ],
+  discoveries: [
+    { year: 1967, location: 'La Rioja Province, Argentina', discoveredBy: '호세 보나파르트', note: '로스 콜로라도스 층에서 다수의 표본이 발견되었어요. 1969년에 보나파르트가 정식으로 명명하면서 가장 잘 알려진 삼첩기 용각형류 중 하나가 되었어요.' },
+  ],
+  fossilLocations: [
+    { country: 'Argentina', region: '라리오하 주, 로스 콜로라도스 층', coordinates: [-29.5, -67.5], specimenName: 'PVL 3808 — 참조표본, 여러 개체' },
+  ],
 }

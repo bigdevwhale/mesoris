@@ -14,4 +14,15 @@ export default {
     { label: '원산지', value: '글로스터셔', description: '1910년에 잉글랜드 글로스터셔주 민친엄프턴의 벽돌 공장에서 발견되었어요.' },
     { label: '분류', value: '초기 티라노사우루스상과', description: '구안롱과 키레스쿠스를 포함하는, 티라노사우루스상과의 기저적인 과에 속해요.' },
   ],
+  relatedDinosaurs: [
+    { id: 'guanlong', relationship: '볏이 있는 프로케라토사우루스과 친척' },
+    { id: 'dilophosaurus', relationship: '동시대 볏이 있는 수각류' },
+    { id: 'tyrannosaurus-rex', relationship: '먼 후손' },
+  ],
+  discoveries: [
+    { year: 1910, location: 'Minchinhampton, Gloucestershire, England', discoveredBy: 'F. Lewis Bradley', note: '벽돌 공장에서 발견된 부분 두개골. 아서 스미스 우드워드가 기재했어요.' },
+  ],
+  fossilLocations: [
+    { country: 'United Kingdom', region: '민친엄프턴, 글로스터셔', coordinates: [51.7, -2.2], specimenName: 'NHMUK PV R 4860 — 완모식표본, 부분 두개골' },
+  ],
 }

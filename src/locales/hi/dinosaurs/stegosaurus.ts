@@ -14,4 +14,16 @@ export default {
     { label: 'मस्तिष्क', value: 'अखरोट के आकार का', icon: 'brain', description: 'किसी भी डायनासोर के सबसे छोटे मस्तिष्क-से-शरीर अनुपात में से एक था।' },
     { label: 'दूसरा मस्तिष्क', value: 'केवल मिथक!', icon: 'help-circle', description: 'वैज्ञानिक एक समय सोचते थे कि इसके कूल्हों में दूसरा मस्तिष्क था — पता चला कि वह केवल ग्लाइकोजन बॉडी था।' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: 'शिकारी' },
+    { id: 'diplodocus', relationship: 'समकालीन' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ओथनियल चार्ल्स मार्श', note: 'मॉरिसन फॉर्मेशन से पहले स्टेगोसॉरस जीवाश्मों का वर्णन किया गया।' },
+    { discoveredBy: 'बॉब साइमन', note: '"सोफी" — अब तक मिला सबसे पूर्ण स्टेगोसॉरस कंकाल।' },
+  ],
+  fossilLocations: [
+    { region: 'कोलोराडो', specimenName: 'मॉरिसन फॉर्मेशन' },
+    { region: 'वायोमिंग' },
+  ],
 }

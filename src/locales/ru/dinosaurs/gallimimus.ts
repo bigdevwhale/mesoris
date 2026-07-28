@@ -14,4 +14,14 @@ export default {
       { label: 'Шея', value: 'Длинная и гибкая', description: 'Длинная страусоподобная шея позволяла высматривать опасность и искать пищу.' },
       { label: 'Питание', value: 'Непривередливый', description: 'Ел растения, мелких животных и насекомых — настоящий доисторический всеядный оппортунист.' },
     ],
+    relatedDinosaurs: [
+      { id: 'ornithomimus', relationship: 'Близкий родственник' },
+      { id: 'struthiomimus', relationship: 'Близкий родственник' },
+    ],
+    discoveries: [
+      { discoveredBy: 'Польско-монгольская экспедиция', note: 'Первые экземпляры обнаружены в бассейне Нэмэгт.' },
+    ],
+    fossilLocations: [
+      { region: 'пустыня Гоби', specimenName: 'Формация Нэмэгт' },
+    ],
   }

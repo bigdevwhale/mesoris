@@ -14,4 +14,16 @@ export default {
     { label: 'Dieta', value: 'Cacciatore di ceratopsi e adrosauri', description: 'Era un predatore dominante degli ecosistemi di coal swamps del Cretaceo superiore, attaccando dinosauri a becco d\'anatra e cornuti.' },
     { label: 'Cranio', value: 'Cranio massiccio ma leggero', description: 'Aveva un cranio profondo, occhi rivolti in avanti con visione binoculare e denti seghettati specializzati nella macellazione.' },
   ],
+  relatedDinosaurs: [
+    { id: 'albertosaurus', relationship: 'Parente albertosaurino molto stretto' },
+    { id: 'daspletosaurus', relationship: 'Tirannosauride contemporaneo dalla corporatura più robusta' },
+    { id: 'tyrannosaurus-rex', relationship: 'Linea successiva di tirannosauridi giganti' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Charles H. Sternberg', note: 'Raccolse gli esemplari che costituirono la base per la descrizione di Lambe.' },
+    { discoveredBy: 'Lawrence Lambe', note: 'Denominò formalmente Gorgosaurus libratus e lo stabilì come tirannosauride distinto.' },
+  ],
+  fossilLocations: [
+    { region: 'Dinosaur Provincial Park, Alberta', specimenName: 'Scheletri della Formazione Dinosaur Park' },
+  ],
 }

@@ -14,4 +14,16 @@
     { label: '食性', value: '低い植物', description: 'くちばしと頬歯は柔らかいシダや他のジュラ紀の地表植物をかじるのに適していました。' },
     { label: '歴史', value: '分類の再編成', description: 'かつてナノサウルス／オスニエリアに割り当てられていた標本は後に改訂され、オスニエロサウルスが異なる遺骸に使用されました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'dryosaurus', relationship: '同様の生息地からの大型鳥脚類' },
+    { id: 'hypsilophodon', relationship: '同程度の小型で敏捷な草食鳥盤類' },
+    { id: 'camptosaurus', relationship: '同時代の大型採食鳥脚類' },
+  ],
+  discoveries: [
+    { year: 1877, location: 'アメリカ・ワイオミング州コモブラフ', discoveredBy: 'マーシュ採集隊', note: 'モリソンでの大規模発掘中に回収された小型鳥盤類標本。' },
+    { year: 2007, location: '分類学的再評価', discoveredBy: 'ピーター・ギャルトン', note: '再評価によってオスニエロサウルスは他の歴史的な小型鳥盤類から分離された。' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'ワイオミング州コモブラフ（モリソン累層）', coordinates: [41.8, -106.0], specimenName: '参照されたオスニエロサウルス標本' },
+  ],
 }

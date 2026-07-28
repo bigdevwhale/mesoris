@@ -14,4 +14,15 @@ export default {
     { label: '祖先', value: '初期の装盾類', description: '後の剣竜類と曲竜類の系統の分岐以前に位置する、最も初期の装盾類の一つです。' },
     { label: '姿勢', value: '低層採食者', description: '低い体勢と小さな葉状の歯で、ジュラ紀前期の森林の地表付近の植物を効率的に食べていました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: '後のティレオフィラ系譜の子孫' },
+    { id: 'ankylosaurus', relationship: '後のティレオフィラ系譜の子孫' },
+    { id: 'euoplocephalus', relationship: '後のアンキロサウルス類の近縁種' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ジェームズ・ハリソン', note: '完全な骨格が発見され、1861年にリチャード・オーウェンにより恐竜初期の解剖学に関する記念碑的論文で記載された。' },
+  ],
+  fossilLocations: [
+    { region: 'イングランド・ドーセット州チャーマス（下部ライアス層）', specimenName: 'NHMUK PV R1111 — ホロタイプ、ほぼ完全な骨格' },
+  ],
 }

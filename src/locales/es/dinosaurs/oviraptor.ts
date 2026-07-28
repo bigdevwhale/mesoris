@@ -14,4 +14,15 @@ export default {
     { label: 'Cresta', value: 'Osea', description: 'Cresta distintiva como la de un casuario' },
     { label: 'Dieta', value: 'Omnivoro', description: 'Moluscos, frutas y pequeños animales' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'Pariente distante (maniraptorano)' },
+    { id: 'protoceratops', relationship: 'Vivió junto a (no presa)' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Roy Chapman Andrews', note: 'Hallado cerca de una nidada — identificado erróneamente como ladrón de huevos durante 70 años.' },
+    { discoveredBy: 'Mark Norell', note: 'El descubrimiento de embriones reivindicó al Oviraptor — estaba incubando, no robando.' },
+  ],
+  fossilLocations: [
+    { region: 'Desierto de Gobi', specimenName: 'Formación Djadochta' },
+  ],
 }

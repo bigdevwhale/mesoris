@@ -14,4 +14,16 @@ export default {
     { label: 'Costruzione', value: 'Arti a colonna', description: 'I suoi arti robusti e il corpo ampio sostenevano un torso massiccio mentre si muoveva su terreni morbidi di pianura alluvionale o paludosi.' },
     { label: 'Epoca', value: 'Cretaceo inferiore', description: 'Euhelopus sopravvisse negli ecosistemi asiatici quando molti gruppi classici di sauropodi del Giurassico erano già in declino altrove.' },
   ],
+  relatedDinosaurs: [
+    { id: 'mamenchisaurus', relationship: 'Un altro sauropode asiatico dal collo lungo spesso confrontato anatomicamente' },
+    { id: 'brachiosaurus', relationship: 'Grande sauropode che brucava in alto con diverse proporzioni degli arti anteriori' },
+    { id: 'sauroposeidon', relationship: 'Gigante titanosauriforme successivo con estrema elongazione del collo' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Spedizione di Otto Zdansky', note: 'Raccolse il materiale fossile originale poi usato nella descrizione formale.' },
+    { discoveredBy: 'Carl Wiman', note: 'Descrisse formalmente Euhelopus zdanskyi e ne evidenziò l\'insolita anatomia di sauropode.' },
+  ],
+  fossilLocations: [
+    { region: 'Provincia di Shandong', specimenName: 'Materiale originale di Euhelopus' },
+  ],
 }

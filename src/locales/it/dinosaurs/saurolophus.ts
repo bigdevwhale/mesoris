@@ -14,4 +14,17 @@ export default {
     { label: 'Branco', value: 'Branchi sociali', description: 'Diversi esemplari trovati insieme e tracce suggeriscono grandi branchi migratori.' },
     { label: 'Denti', value: 'Batteria dentaria', description: 'Centinaia di denti trituratori auto-rinnovanti per elaborare efficacemente la vegetazione coriacea.' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: 'Parente adrosauro — evoluzione convergente della cresta' },
+    { id: 'edmontosaurus', relationship: 'Parente saurolophino stretto' },
+    { id: 'corythosaurus', relationship: 'Adrosauro lambeosaurino crestato' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Barnum Brown', note: 'S. osborni descritto da Brown nel 1912 da materiale dell\'Alberta raccolto per l\'American Museum of Natural History.' },
+    { discoveredBy: 'Spedizioni sovietico-mongole', note: 'Specie asiatica S. angustirostris descritta dalla Formazione Nemegt; più grande della specie nordamericana.' },
+  ],
+  fossilLocations: [
+    { region: 'Alberta (Formazione Horseshoe Canyon)', specimenName: 'AMNH 5220 — olotipo, cranio completo e scheletro' },
+    { region: 'Provincia di Ömnögovi (Formazione Nemegt)', specimenName: 'S. angustirostris — grandi esemplari asiatici' },
+  ],
 }

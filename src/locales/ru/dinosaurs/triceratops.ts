@@ -14,4 +14,18 @@ export default {
       { label: 'Клюв', value: 'Как у попугая', description: 'Острый изогнутый клюв помогал срезать жёсткие пальмовые листья и саговники.' },
       { label: 'Окаменелости', value: 'Сотни', description: 'Это один из самых часто встречающихся в ископаемой летописи динозавров, поэтому о нём известно особенно много.' },
     ],
-  }
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Хищник' },
+    { id: 'styracosaurus', relationship: 'Родственник' },
+    { id: 'pachyrhinosaurus', relationship: 'Родственник' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Оthniel Чарльз Марш', note: 'Сначала ошибочно идентифицирован как гигантский бизон.' },
+    { discoveredBy: 'Джон Белл Хэтчер', note: 'Первый полный череп обнаружен и правильно идентифицирован.' },
+  ],
+  fossilLocations: [
+    { region: 'Вайоминг', specimenName: '' },
+    { region: 'Монтана', specimenName: 'Хелл-Крик' },
+    { region: 'Колорадо', specimenName: '' },
+  ],
+}

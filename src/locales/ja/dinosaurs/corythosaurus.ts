@@ -14,4 +14,14 @@
     { label: '社会性', value: '群れ', description: '大規模な社会的集団で生活しており、カモノハシ恐竜版のヌーの大群のようでした。' },
     { label: '歯', value: '数百本', description: '硬い植物をすりつぶすための、数百本の歯からなる複雑なデンタルバッテリーを持っていました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: '近縁種' },
+    { id: 'lambeosaurus', relationship: '近縁種' },
+  ],
+  discoveries: [
+    { year: 1912, location: 'カナダ・アルバータ州', discoveredBy: 'バーナム・ブラウン', note: 'AMNHの遠征中に最初の完全骨格が発見された。' },
+  ],
+  fossilLocations: [
+    { country: 'カナダ', region: 'アルバータ州', coordinates: [50.8, -111.5], specimenName: 'ダイナソーパーク層' },
+  ],
 }

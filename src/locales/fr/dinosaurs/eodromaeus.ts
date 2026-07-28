@@ -14,4 +14,15 @@ export default {
     { label: 'Coexistence', value: 'Même formation qu\'Éoraptor', description: 'Vivait avec Éoraptor dans la même formation, montrant la divergence précoce des lignées de dinosaures.' },
     { label: 'Évolution', value: 'Ancêtre des théropodes', description: 'L\'un des théropodes les plus basaux — aide à comprendre le plan corporel de tous les dinosaures carnivores ultérieurs.' },
   ],
+  relatedDinosaurs: [
+    { id: 'eoraptor', relationship: 'Contemporain de la même formation' },
+    { id: 'herrerasaurus', relationship: 'Prédateur contemporain de plus grande taille' },
+    { id: 'coelophysis', relationship: 'Proche parent plus tardif' },
+  ],
+  discoveries: [
+    { year: 2011, location: 'Parc provincial d\'Ischigualasto, San Juan, Argentine', discoveredBy: 'Ricardo N. Martínez et al.', note: 'Squelette quasi complet décrit dans la revue Science ; nommé « murphi » en l\'honneur de James Murphy, un bienfaiteur du musée.' },
+  ],
+  fossilLocations: [
+    { country: 'Argentine', region: 'Province de San Juan, formation d\'Ischigualasto', coordinates: [-30.0, -67.9], specimenName: 'PVSJ 562 — squelette holotype quasi complet' },
+  ],
 }

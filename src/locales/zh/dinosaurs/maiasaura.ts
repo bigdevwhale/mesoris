@@ -14,4 +14,13 @@
     { label: '幼崽', value: '无助的幼崽', description: '刚孵化的幼崽起初不太会走路——父母将食物带到巢中。' },
     { label: '生长', value: '极其快速', description: '幼崽从40厘米长到成年体型仅需7-8年——速度快得惊人。' },
   ],
+  relatedDinosaurs: [
+    { id: 'edmontosaurus', relationship: '近亲' },
+  ],
+  discoveries: [
+    { discoveredBy: '杰克·霍纳', note: '「蛋山」筑巢群落 — 彻底改变了人们对恐龙行为的看法。' },
+  ],
+  fossilLocations: [
+    { region: '蒙大拿州', specimenName: '蛋山,双药组' },
+  ],
 }

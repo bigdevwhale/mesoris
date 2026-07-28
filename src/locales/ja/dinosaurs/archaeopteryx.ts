@@ -14,4 +14,17 @@
     { label: '飛翔スタイル', value: '短距離の羽ばたき', description: '現代の鳥のような長距離飛行ではなく、短い距離を羽ばたいて飛び立つことができたと考えられています。' },
     { label: '大きさ', value: 'カラスくらい', description: '全長約50cm、体重約1kgと小型で、ジュラ紀後期の島の森で小さな獲物を狩っていました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'microraptor', relationship: '空気力学的な適応を持つ羽毛のパラヴィアン仲間' },
+    { id: 'troodon', relationship: '高度な感覚器官を持つ鳥に似た獣脚類' },
+    { id: 'velociraptor', relationship: 'マニラプタン獣脚類の中の後のドロメオサウルス科の近縁種' },
+  ],
+  discoveries: [
+    { year: 1861, location: 'ドイツ・バイエルン州ゾルンホーフェン石灰岩', discoveredBy: '石切り場の労働者；ヘルマン・フォン・マイヤーにより記載', note: '最初のArchaeopteryx骨格標本が正式に記載され、鳥類の進化と結びつけられた。' },
+    { year: 1877, location: 'ドイツ・アイヒシュテット近郊ブルーメンベルク', discoveredBy: 'ヤーコプ・ニーマイヤーの石切り場', note: 'ベルリン標本は頭骨と羽毛の印象を非常によく保存しており、古典的な博物館標本となった。' },
+  ],
+  fossilLocations: [
+    { country: 'ドイツ', region: 'バイエルン州ゾルンホーフェン', coordinates: [48.9, 10.99], specimenName: 'ロンドン標本（BMNH 37001）' },
+    { country: 'ドイツ', region: 'バイエルン州アイヒシュテット', coordinates: [48.89, 11.18], specimenName: 'ベルリン標本（HMN 1880）' },
+  ],
 }

@@ -14,4 +14,16 @@ export default {
     { label: '尺寸', value: '麻雀大', description: '极其微小——仅比麻雀大一点，体重约200克。' },
     { label: '滑翔', value: '翼助滑翔', description: '无法强力飞行，但可能用翅膀在树枝间跳跃时控制身体。' },
   ],
+  relatedDinosaurs: [
+    { id: 'microraptor', relationship: '四翼近鸟表亲' },
+    { id: 'archaeopteryx', relationship: '早期鸟翼类的同时代成员' },
+    { id: 'troodon', relationship: '更大的伤齿龙科近亲' },
+  ],
+  discoveries: [
+    { year: 2009, location: '中国辽宁省髫髻山组', discoveredBy: '徐星及其团队', note: '最初被命名并确认为小型有羽毛的近鸟类。' },
+    { year: 2010, location: '中国', discoveredBy: '张福成及其团队', note: '首次在《自然》杂志上发表了有关近鸟龙真实体色的重建研究。' },
+  ],
+  fossilLocations: [
+    { country: '中国', region: '辽宁省髫髻山组', coordinates: [41.6, 120.7], specimenName: 'IVPP V14378 — 模式标本，数百件归入标本' },
+  ],
 }

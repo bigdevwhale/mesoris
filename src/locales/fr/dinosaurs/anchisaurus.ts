@@ -14,4 +14,16 @@ export default {
     { label: 'Régime', value: 'Herbivore', description: 'Des dents en forme de feuille et dentelées permettaient à Anchisaurus de traiter des végétaux coriaces comme les fougères et les cycas.' },
     { label: 'Taille', value: '2,1 mètres', description: 'Avec un peu plus de 2 mètres, Anchisaurus était un petit prosauropode — bien loin des énormes sauropodes qui évolueront à partir de sa lignée.' },
   ],
+  relatedDinosaurs: [
+    { id: 'plateosaurus', relationship: 'Proche parent sauropodomorphe' },
+    { id: 'eoraptor', relationship: 'Parent lointain, dinosaure ancien' },
+  ],
+  discoveries: [
+    { year: 1818, location: 'Comté de Hartford, Connecticut, États-Unis', discoveredBy: 'Solomon Ellsworth Jr.', note: 'Os découverts lors du creusement d\'un puits ; classés à tort comme des restes humains avant la reconnaissance formelle des dinosaures.' },
+    { year: 1885, location: 'Springfield, Massachusetts, États-Unis', discoveredBy: 'O.C. Marsh', note: 'Marsh a formellement décrit et nommé Anchisaurus à partir de matériel supplémentaire de la vallée du Connecticut.' },
+  ],
+  fossilLocations: [
+    { country: 'États-Unis', region: 'Comté de Hartford, Connecticut', coordinates: [41.8, -72.7], specimenName: 'Spécimen type de la formation de Portland' },
+    { country: 'États-Unis', region: 'Comté de Hampden, Massachusetts', coordinates: [42.1, -72.6], specimenName: 'Matériel de carrière de Springfield' },
+  ],
 }

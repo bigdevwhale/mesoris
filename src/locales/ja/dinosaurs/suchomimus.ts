@@ -14,4 +14,16 @@ export default {
     { label: '食性', value: '主に魚食', description: '現代のガビアルやワニのように、川の獲物を専門としながらも様々な肉を食べられました。' },
     { label: '背中', value: '低い棘の隆起', description: '高い神経棘が背中に沿って浅い隆起またはこぶを形成していましたが、スピノサウルスの巨大な帆とは異なります。' },
   ],
+  relatedDinosaurs: [
+    { id: 'baryonyx', relationship: '近い近縁種' },
+    { id: 'spinosaurus', relationship: 'より大きな従兄弟' },
+    { id: 'nigersaurus', relationship: '同時代の隣人' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ポール・セレスノとそのチーム', note: '大規模なサハラ探検中、驚くほど完全な骨格が発見された。' },
+    { discoveredBy: 'ポール・セレスノと共同研究者ら', note: '公式記載によりSuchomimusは巨大なバリオニキナエ亜科のスピノサウルス科と位置付けられた。' },
+  ],
+  fossilLocations: [
+    { region: 'ガドゥファウア', specimenName: 'エルラーズ層' },
+  ],
 }

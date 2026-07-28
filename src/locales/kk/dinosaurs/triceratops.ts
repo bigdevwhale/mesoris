@@ -14,4 +14,18 @@ export default {
     { label: 'Тұмсығы', value: 'Тотықұс сияқты', description: 'Өткір, иілген тұмсығының арқасында қатты пальма жапырақтары мен саговниктерді оңай үзіп қоректенген.' },
     { label: 'Таснұсқа', value: 'Жүздеген', description: 'Бұл қазба қалдықтары ең көп табылған динозаврлардың бірі. Сондықтан бұл динозавр туралы мәлімет көп.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Жыртқыш' },
+    { id: 'styracosaurus', relationship: 'Туысы' },
+    { id: 'pachyrhinosaurus', relationship: 'Туысы' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Оthniel Чарльз Марш', note: 'Алғашында алып бизон деп қате анықталды.' },
+    { discoveredBy: 'Джон Белл Хэтчер', note: 'Алғашқы толық бассүйек табылып, дұрыс анықталды.' },
+  ],
+  fossilLocations: [
+    { region: 'Вайоминг', specimenName: '' },
+    { region: 'Монтана', specimenName: 'Хелл-Крик' },
+    { region: 'Колорадо', specimenName: '' },
+  ],
 }

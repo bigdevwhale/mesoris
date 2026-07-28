@@ -14,4 +14,17 @@ export default {
     { label: '体長', value: '約2 m', description: '映画よりはるかに小さく、大きな七面鳥か小型犬ほどの大きさでした。' },
     { label: '狩り', value: '群れの捕食者', description: '群れで狩りをし、自分よりはるかに大きな獲物を仕留めた証拠があります。' },
   ],
+  relatedDinosaurs: [
+    { id: 'deinonychus', relationship: '近縁種' },
+    { id: 'protoceratops', relationship: '獲物' },
+    { id: 'oviraptor', relationship: '競争者' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ロイ・チャップマン・アンドリュース', note: '有名なAMNH遠征中に最初の標本発見。' },
+    { discoveredBy: 'ポーランド・モンゴル共同調査隊', note: '「闘争する恐竜」 — プロトケラトプスと格闘するヴェロキラプトル。' },
+  ],
+  fossilLocations: [
+    { region: 'ゴビ砂漠', specimenName: 'ジャドフタ層' },
+    { region: '内モンゴル', specimenName: '' },
+  ],
 }

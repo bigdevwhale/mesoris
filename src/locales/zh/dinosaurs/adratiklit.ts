@@ -14,4 +14,15 @@ export default {
     { label: '半球', value: '南半球剑龙', description: '少数来自冈瓦纳的剑龙之一——大多数剑龙都来自北方大陆。' },
     { label: '家族', value: '剑龙祖先', description: '代表剑龙类的早期分支，有助于科学家了解这一家族的古老起源。' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: '著名的后裔近亲' },
+    { id: 'loricatosaurus', relationship: '欧洲剑龙近亲' },
+    { id: 'dacentrurus', relationship: '欧洲剑龙' },
+  ],
+  discoveries: [
+    { discoveredBy: '苏珊娜·梅德门特及其团队', note: '脊椎骨和部分股骨被描述并命名为 Adratiklit boulahfa。' },
+  ],
+  fossilLocations: [
+    { region: 'El Mers 群，中阿特拉斯山脉，布拉法', specimenName: 'NHMUK PV R 37166 — 正模标本脊椎' },
+  ],
 }

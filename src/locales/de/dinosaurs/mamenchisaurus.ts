@@ -14,4 +14,17 @@ export default {
     { label: 'Ernährung', value: 'Breites Abweidfeld', description: 'Sein Hals fegte wahrscheinlich durch weite Bögen, sodass er in mehreren Höhen effizient fressen konnte, ohne sich viel zu bewegen.' },
     { label: 'Region', value: 'Klassischer chinesischer Riese', description: 'Mamenchisaurus gehört zu den bekanntesten Riesendinosauriern aus den reichen Fossilfundstellen des chinesischen Spätjura.' },
   ],
+  relatedDinosaurs: [
+    { id: 'euhelopus', relationship: 'Asiatischer langhalsiger Sauropode, oft in Studien zur Halsentwicklung verglichen' },
+    { id: 'diplodocus', relationship: 'Ein anderer extrem-halsiger Sauropode mit anderem Körperbau' },
+    { id: 'brachiosaurus', relationship: 'Großer zeitgenössischer Sauropode mit höheren Vorderbeinen' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Feldteams bei Straßenbauuntersuchungen', note: 'Erste Überreste nahe der Fähre von Mamenxi geborgen, die dem Gattungsnamen gaben.' },
+    { discoveredBy: 'Yang Zhongjian (C.C. Young)', note: 'Die formelle Beschreibung etablierte Mamenchisaurus als große chinesische Sauropoden-Gattung.' },
+  ],
+  fossilLocations: [
+    { region: 'Provinz Sichuan, China', specimenName: 'Mamenxi/Yibin-Material' },
+    { region: 'Region Chongqing, China', specimenName: 'M. hochuanensis-Exemplare' },
+  ],
 }

@@ -14,4 +14,13 @@
     { label: '错误', value: '头装反了', description: '最初被重建时头被装在错误的一端——一个著名的古生物学乌龙。' },
     { label: '捕猎', value: '伏击', description: '在接近水面的地方游动，用长脖子突袭鱼群。' },
   ],
+  relatedDinosaurs: [
+    { id: 'plesiosaurus', relationship: '祖先' },
+  ],
+  discoveries: [
+    { discoveredBy: '西奥菲勒斯·特纳', note: '发现于西部内陆海道的白垩沉积层。' },
+  ],
+  fossilLocations: [
+    { region: '堪萨斯州', specimenName: '皮尔页岩' },
+  ],
 }

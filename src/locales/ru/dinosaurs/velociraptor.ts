@@ -14,4 +14,17 @@ export default {
       { label: 'Размер', value: 'Размером с индейку', description: 'Гораздо меньше, чем в кино, — примерно с крупную индейку или небольшую собаку.' },
       { label: 'Охота', value: 'Стайный хищник', description: 'Есть данные, что велоцирапторы охотились группами и справлялись с добычей намного крупнее себя.' },
     ],
-  }
+  relatedDinosaurs: [
+    { id: 'deinonychus', relationship: 'Близкий родственник' },
+    { id: 'protoceratops', relationship: 'Добыча' },
+    { id: 'oviraptor', relationship: 'Конкурент' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Рой Чепмен Эндрюс', note: 'Первый экземпляр обнаружен во время знаменитой экспедиции AMNH.' },
+    { discoveredBy: 'Польско-монгольская экспедиция', note: '«Сражающиеся динозавры» — Velociraptor в схватке с Protoceratops.' },
+  ],
+  fossilLocations: [
+    { region: 'Пустыня Гоби', specimenName: 'Формация Джадохта' },
+    { region: 'Внутренняя Монголия', specimenName: '' },
+  ],
+}

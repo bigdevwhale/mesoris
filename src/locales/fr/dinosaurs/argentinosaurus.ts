@@ -14,4 +14,16 @@ export default {
     { label: 'Vertèbres', value: 'Os géants', description: 'Ses vertèbres dorsales étaient si énormes qu\'une seule pouvait être plus grande qu\'une personne.' },
     { label: 'Rareté', value: 'Connu par fragments', description: 'Les scientifiques savent qu\'il était gigantesque bien que le matériel fossile soit incomplet — les os conservés sont tout simplement énormes.' },
   ],
+  relatedDinosaurs: [
+    { id: 'giganotosaurus', relationship: 'Menace de prédateur' },
+    { id: 'apatosaurus', relationship: 'Cousin sauropode éloigné' },
+    { id: 'sauroposeidon', relationship: 'Géant rival' },
+  ],
+  discoveries: [
+    { year: 1987, location: 'Neuquén, Argentine', discoveredBy: 'Guillermo Heredia', note: 'Un ouvrier agricole remarqua les immenses ossements dans la formation de Huincul.' },
+    { year: 1993, location: 'Patagonie, Argentine', discoveredBy: 'José Bonaparte et Rodolfo Coria', note: 'La description formelle a établi Argentinosaurus comme l\'un des plus grands titanosaures connus.' },
+  ],
+  fossilLocations: [
+    { country: 'Argentine', region: 'Neuquén', coordinates: [-38.7, -69.8], specimenName: 'Formation de Huincul' },
+  ],
 }

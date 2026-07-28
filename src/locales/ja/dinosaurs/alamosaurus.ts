@@ -14,4 +14,17 @@ export default {
     { label: '共存', value: 'T-レックスと共存', description: 'アラモサウルスはティラノサウルス・レックスと生息地を共有していました。北アメリカでこれが知られている唯一の竜脚類です。' },
     { label: '防御', value: '装甲を持つ竜脚類', description: 'ティタノサウルス類として、アラモサウルスは皮膚に小さな骨質の皮骨板を持っていました。これは竜脚類の中でもユニークな特徴です。' },
   ],
+  relatedDinosaurs: [
+    { id: 'argentinosaurus', relationship: '南米ティタノサウルス類の近縁種' },
+    { id: 'sauroposeidon', relationship: '以前の北米産巨大竜脚類' },
+    { id: 'diplodocus', relationship: '以前の北米産竜脚類（別の科）' },
+  ],
+  discoveries: [
+    { year: 1921, location: 'アメリカ合衆国ニューメキシコ州サンフアン郡', discoveredBy: 'チャールズ・W・ギルモア', note: '最初の化石資料は1922年にギルモアによりニューメキシコ州で採集・記載された。その後テキサス州からさらに巨大な標本が発見されている。' },
+    { year: 2003, location: 'アメリカ合衆国テキサス州ビッグ Bend国立公園', discoveredBy: 'トーマス・レーマンとケネス・カーペンター', note: 'テキサス州から発見された巨大な椎骨と四肢の骨により、推定体格は大幅に上方修正され、アラモサウルスが最大級の南米産ティタノサウルス類に匹敵することが示された。' },
+  ],
+  fossilLocations: [
+    { country: 'アメリカ合衆国', region: 'ニューメキシコ州サンフアン郡（オホ・アラモ層）', coordinates: [36.5, -108.2], specimenName: 'USNM 10487 — ホロタイプの椎骨と前肢' },
+    { country: 'アメリカ合衆国', region: 'テキサス州ブルースター郡、ビッグ Bend（ハベリナ層）', coordinates: [29.3, -103.2], specimenName: 'テキサスの巨大標本 — 最大サイズを示す' },
+  ],
 }

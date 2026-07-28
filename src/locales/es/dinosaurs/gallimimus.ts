@@ -14,4 +14,14 @@ export default {
     { label: 'Apariencia', value: 'Como avestruz', description: 'Cuello largo y pico sin dientes' },
     { label: 'Tamaño', value: '6 m', description: 'Del tamaño de un caballo grande' },
   ],
+  relatedDinosaurs: [
+    { id: 'ornithomimus', relationship: 'Pariente cercano' },
+    { id: 'struthiomimus', relationship: 'Pariente cercano' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Expedición polaco-mongola', note: 'Primeros especímenes descubiertos en la cuenca de Nemegt.' },
+  ],
+  fossilLocations: [
+    { region: 'Desierto de Gobi', specimenName: 'Formación Nemegt' },
+  ],
 }

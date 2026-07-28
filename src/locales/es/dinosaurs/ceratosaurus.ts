@@ -14,4 +14,16 @@ export default {
     { label: 'Placas', value: 'Osteodermos', description: 'Pequeñas placas oseas a lo largo de la espalda' },
     { label: 'Tamaño', value: '7 m', description: 'Un depredador de tamaño medio en su ecosistema' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: 'Competidor' },
+    { id: 'carnotaurus', relationship: 'Pariente lejano' },
+  ],
+  discoveries: [
+    { year: 1883, location: 'Colorado, EE. UU.', discoveredBy: 'Marshall P. Felch', note: 'Primer esqueleto descubierto en Garden Park.' },
+    { year: 2000, location: 'Portugal', discoveredBy: 'Octavio Mateus', note: 'El especimen europeo confirmo el amplio rango del genero.' },
+  ],
+  fossilLocations: [
+    { country: 'EE. UU.', region: 'Colorado', coordinates: [38.5, -105.0], specimenName: 'Formacion Morrison' },
+    { country: 'Portugal', region: 'Lourinha', coordinates: [39.3, -9.3] },
+  ],
 }

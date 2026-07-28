@@ -14,4 +14,17 @@ export default {
     { label: '분포', value: '대서양을 넘은 포식자', description: '북아메리카와 포르투갈 양쪽에서 발견되어, 쥐라기 후기 대서양이 아직 좁았다는 증거.' },
     { label: '경쟁자', value: '알로사우루스와 경합', description: '토르보사우루스와 알로사우루스는 모리슨 층의 양대 정점 포식자로, 같은 대형 용각류 먹이를 두고 경쟁.' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: '동시대 최상위 포식자 경쟁자' },
+    { id: 'megalosaurus', relationship: '근연 메갈로사우루스과 종' },
+    { id: 'ceratosaurus', relationship: '동시대 모리슨 층 포식자' },
+  ],
+  discoveries: [
+    { discoveredBy: '제임스 젠슨', note: '1972년에 처음 채집된 표본; 1979년 피터 갤턴과 제임스 젠슨이 Torvosaurus tanneri로 공식 기재.' },
+    { discoveredBy: '옥타비우 마테우스 외', note: '유럽 종 T. gurneyi가 기재되었으며, 알 속 배아도 발견되어 쥐라기 수각류 번식에 대한 희귀한 자료를 제공.' },
+  ],
+  fossilLocations: [
+    { region: '드라이 메사 채석장, 델타 카운티, 콜로라도 (모리슨 층)', specimenName: 'BYU 2002 — 홀로타입 부분 골격' },
+    { region: '포르투갈 로우리냔 층, 토레스 베드라스', specimenName: 'ML 632 — T. gurneyi 홀로타입; 배아 표본' },
+  ],
 }

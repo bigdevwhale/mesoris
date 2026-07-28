@@ -14,4 +14,17 @@
     { label: '尾巴', value: '鲨鱼般的尾巴', description: '像鲨鱼一样的强大尾鳍，实现惊人的速度。' },
     { label: '牙齿', value: '圆锥形', description: '巨大的圆锥形牙齿，完美适应捕捉和碾碎滑溜的猎物。' },
   ],
+  relatedDinosaurs: [
+    { id: 'tylosaurus', relationship: '近亲' },
+    { id: 'plesiosaurus', relationship: '竞争者' },
+  ],
+  discoveries: [
+    { discoveredBy: '当地采石场工人', note: '有史以来发现的第一只巨型史前爬行动物——比任何人知道恐龙存在早几十年。' },
+    { discoveredBy: '古生物安哥拉项目', note: '沿南非海岸的重大发现。' },
+  ],
+  fossilLocations: [
+    { region: '马斯特里赫特，荷兰', specimenName: '马斯特里赫特组' },
+    { region: '本格拉盆地，安哥拉' },
+    { region: '堪萨斯州，美国' },
+  ],
 }

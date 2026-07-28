@@ -14,4 +14,17 @@ export default {
     { label: '꼬리', value: '채찍형', description: '길고 가늘며 채찍 같은 꼬리는, 방어용으로 사용되었을 가능성이 있어요.' },
     { label: '분포', value: '두 대륙', description: '북미의 모리슨층과 탄자니아의 텐다구루층에서 발견되었어요.' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: '근연 디플로도쿠스과 친척' },
+    { id: 'apatosaurus', relationship: '근연 디플로도쿠스과 친척' },
+    { id: 'brontosaurus', relationship: '디플로도쿠스과 친척' },
+  ],
+  discoveries: [
+    { year: 1889, location: '미국 와이오밍주 코모 블러프', discoveredBy: 'O.C. 마쉬', note: '본 워즈(Bone Wars) 동안 마쉬 팀이 부분 골격을 발견했습니다.' },
+    { year: 1907, location: '탄자니아 텐다구루', discoveredBy: '독일 텐다구루 탐사대', note: '동아프리카의 디플로도쿠스과 화석이 이후 바로사우루스로 분류되었습니다.' },
+  ],
+  fossilLocations: [
+    { country: '미국', region: '와이오밍주 코모 블러프(모리슨층)', coordinates: [41.8, -106.0], specimenName: 'YPM 429 — 모식표본 부분 골격' },
+    { country: '탄자니아', region: '텐다구루층', coordinates: [-10.2, 39.4], specimenName: '텐다구루 디플로도쿠스과 화석' },
+  ],
 }

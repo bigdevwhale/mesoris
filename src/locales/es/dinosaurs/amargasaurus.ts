@@ -14,4 +14,16 @@ export default {
     { label: 'Epoca', value: '130 Ma', description: 'Cretacico Temprano, Patagonia' },
     { label: 'Familia', value: 'Dicreosaurido', description: 'Grupo raro de sauropodos' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: 'Primo diplodocoide lejano' },
+    { id: 'argentinosaurus', relationship: 'Gigante sudamericano posterior' },
+    { id: 'carnotaurus', relationship: 'Depredador regional posterior' },
+  ],
+  discoveries: [
+    { year: 1984, location: 'Neuquén, Argentina', discoveredBy: 'Guillermo Rougier', note: 'El espécimen tipo fue descubierto en la Formación La Amarga de la Patagonia.' },
+    { year: 1991, location: 'Argentina', discoveredBy: 'Leonardo Salgado y José Bonaparte', note: 'La descripción formal destacó las extraordinarias espinas cervicales del dinosaurio.' },
+  ],
+  fossilLocations: [
+    { country: 'Argentina', region: 'Neuquén', coordinates: [-38.6, -70.2], specimenName: 'Formación La Amarga' },
+  ],
 }

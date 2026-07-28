@@ -14,4 +14,15 @@ export default {
     { label: '치아', value: '덴탈 배터리', description: '수백 개의 밀집된 치아가 효율적인 갈아내기 면으로 기능.' },
     { label: '볏 없음', value: '평평한 머리', description: '거대한 몸에도 불구하고 골질 볏은 없고 사우롤로푸스아과의 평평한 두개골을 가졌다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'edmontosaurus', relationship: '북미의 가까운 사우로로피나에 근연종' },
+    { id: 'parasaurolophus', relationship: '하드로사우루스과 근연종' },
+    { id: 'tarbosaurus', relationship: '동시대 아시아 포식자' },
+  ],
+  discoveries: [
+    { discoveredBy: '후청즈(胡承志)와 동료들', note: '1960년대부터 산동성에서 진행된 대규모 발굴에서 막대한 양의 하드로사우루스과 화석이 산출되었다; 후는 1973년 Shantungosaurus giganteus를 공식 기재했다.' },
+  ],
+  fossilLocations: [
+    { region: '중국 산동성 주청(왕시층군)', specimenName: 'IVPP V2659 — 모식표본 및 복합 조립 골격' },
+  ],
 }

@@ -14,4 +14,16 @@ export default {
     { label: '骨', value: '巨大な骨', description: '胴椎は非常に巨大で、一個の骨だけで人間よりも大きくなることがありました。' },
     { label: '希少性', value: '断片的な化石のみ', description: '科学者たちは化石資料が不完全であるにもかかわらず、それが巨大だったことを知っています。保存されている骨がとにかく巨大だからです。' },
   ],
+  relatedDinosaurs: [
+    { id: 'giganotosaurus', relationship: '捕食者による脅威' },
+    { id: 'apatosaurus', relationship: '遠い竜脚類の親戚' },
+    { id: 'sauroposeidon', relationship: '巨人としてのライバル' },
+  ],
+  discoveries: [
+    { year: 1987, location: 'アルゼンチン・ネウケン', discoveredBy: 'ギジェルモ・エレディア', note: '牧場労働者がウインクル層で巨大な骨に気づいた。' },
+    { year: 1993, location: 'アルゼンチン・パタゴニア', discoveredBy: 'ホセ・ボナパルトとロドルフォ・コリア', note: '正式な学術記載により、アルゼンチノサウルスは既知最大級のティタノサウルス類として確立された。' },
+  ],
+  fossilLocations: [
+    { country: 'アルゼンチン', region: 'ネウケン', coordinates: [-38.7, -69.8], specimenName: 'ウインクル層' },
+  ],
 }

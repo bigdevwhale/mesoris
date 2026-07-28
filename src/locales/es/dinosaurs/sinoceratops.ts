@@ -14,4 +14,15 @@ export default {
     { label: 'Epoca', value: 'Cretacico Tardio', description: '~72 millones de anos' },
     { label: 'Ubicacion', value: 'Shandong, China', description: 'Este de China' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: 'Pariente ceratópsido' },
+    { id: 'protoceratops', relationship: 'Ancestro ceratopsiano asiático temprano' },
+    { id: 'psittacosaurus', relationship: 'Ceratopsiano asiático ancestral' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Xu Xing y colegas', note: 'Descrito por Xu Xing y colegas en 2010 a partir de material de Zhucheng; el hallazgo extendió a Asia el rango conocido de grandes ceratópsidos.' },
+  ],
+  fossilLocations: [
+    { region: 'Zhucheng, provincia de Shandong (Grupo Wangshi)', specimenName: 'ZCDM V0010 — holotipo, cráneo parcial' },
+  ],
 }

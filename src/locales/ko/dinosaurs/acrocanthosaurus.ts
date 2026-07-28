@@ -14,4 +14,17 @@ export default {
     { label: '앞다리', value: '튼튼한 세 발가락', description: '티라노사우루스류와 달리, 사냥감을 붙잡는 데 도움이 되는 강력한 앞다리를 가졌습니다.' },
     { label: '발자국', value: '거대한 발자국 화석', description: '백악기 전기의 거대한 발자국 중에는 아크로칸토사우루스가 용각류를 추적한 흔적이 있을 수 있습니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'carcharodontosaurus', relationship: '근연종' },
+    { id: 'sauroposeidon', relationship: '동시대 거대 먹이' },
+    { id: 'deinonychus', relationship: '더 작은 동시대 포식자' },
+  ],
+  discoveries: [
+    { year: 1940, location: '미국 오클라호마주', discoveredBy: 'J. 윌리스 스토볼과 동료들', note: '앤틀러스층에서 발견된 주요 화석이 기존에 알려지지 않은 거대 포식자를 밝혀냈습니다.' },
+    { year: 1950, location: '미국 오클라호마주', discoveredBy: 'J. 윌리스 스토볼과 완 랭스턴 주니어', note: '정식 학술 보고를 통해 아크로칸토사우루스가 학계에 공식적으로 소개되었습니다.' },
+  ],
+  fossilLocations: [
+    { country: '미국', region: '오클라호마주', coordinates: [34.4, -96.0], specimenName: '앤틀러스층' },
+    { country: '미국', region: '텍사스주', coordinates: [32.9, -97.4], specimenName: '트윈마운틴즈층' },
+  ],
 }

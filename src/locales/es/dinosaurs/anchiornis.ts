@@ -14,4 +14,16 @@ export default {
     { label: 'Tamaño', value: 'Del tamaño de un gorrión', description: 'Diminuto, apenas más grande que un gorrión, con un peso de solo unos 200 gramos.' },
     { label: 'Planeo', value: 'Asistido por alas', description: 'No podía volar con fuerza, pero probablemente usaba sus alas para planar y controlar el cuerpo al saltar entre ramas.' },
   ],
+  relatedDinosaurs: [
+    { id: 'microraptor', relationship: 'Primo paraviano de cuatro alas' },
+    { id: 'archaeopteryx', relationship: 'Contemporáneo avialano temprano' },
+    { id: 'troodon', relationship: 'Pariente troodóntido más grande' },
+  ],
+  discoveries: [
+    { year: 2009, location: 'Formación Tiaojishan, Liaoning, China', discoveredBy: 'Xu Xing y equipo', note: 'Los especímenes fueron inicialmente nombrados y reconocidos como pequeños paravianos emplumados.' },
+    { year: 2010, location: 'China', discoveredBy: 'Zhang Fucheng y equipo', note: 'La primera reconstrucción de la verdadera coloración de Anchiornis fue publicada en Nature.' },
+  ],
+  fossilLocations: [
+    { country: 'China', region: 'Formación Tiaojishan, Liaoning', coordinates: [41.6, 120.7], specimenName: 'IVPP V14378 — material tipo, cientos de especímenes referidos' },
+  ],
 }

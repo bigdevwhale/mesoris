@@ -14,4 +14,17 @@ export default {
     { label: 'Beute', value: 'Riesige Sauropoden', description: 'Jagte wahrscheinlich Sauropoden wie Shunosaurus und Omeisaurus.' },
     { label: 'Verwandtschaft', value: 'Sinraptoride', description: 'Gehört zu den Sinraptoridae — einer asiatischen Allosauroid-Gruppe.' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: 'Allosauroid-Verwandter aus Nordamerika' },
+    { id: 'ceratosaurus', relationship: 'Zeitgenössischer Ceratosaurier' },
+    { id: 'torvosaurus', relationship: 'Großer Jura-Räuber-Verwandter' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Dong Zhiming, Chang Yoichi, Li Xuanmin, Zhou Shiwu', note: 'Fast vollständiger Holotyp (Schädel und Teilskelett) bei Bauarbeiten entdeckt; von Dong et al. 1978 beschrieben.' },
+    { discoveredBy: 'Dong Zhiming', note: 'Eine zweite Art, Y. magnus, aus Dashanpu-Material beschrieben — etwas größer und vollständiger bekannt.' },
+  ],
+  fossilLocations: [
+    { region: 'Yongchuan, Provinz Sichuan (Shangshaximiao-Formation)', specimenName: 'CV 00215 — Holotyp-Schädel und -Skelett' },
+    { region: 'Zigong, Provinz Sichuan (Dashanpu-Formation)', specimenName: 'Y. magnus-Material — Zigong-Dinosaurier-Museum' },
+  ],
 }

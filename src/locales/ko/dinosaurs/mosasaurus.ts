@@ -14,4 +14,17 @@ export default {
     { label: '꼬리', value: '상어 같은 꼬리', description: '상어 같은 강력한 꼬리지느러미로 놀라운 스피드를 실현.' },
     { label: '이빨', value: '원뿔형', description: '미끄러운 먹이를 잡아 으스러뜨리는 데 완전히 적응한 거대한 원뿔형 이빨.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tylosaurus', relationship: '가까운 친척' },
+    { id: 'plesiosaurus', relationship: '경쟁자' },
+  ],
+  discoveries: [
+    { discoveredBy: '현지 채석장 노동자', note: '역사상 처음으로 발견된 거대한 선사 시대 파충류 — 누가 공룡의 존재를 알기 훨씬 전.' },
+    { discoveredBy: '프로젝트 팔레오앙골라', note: '남아프리카 해안을 따라 이루어진 중요한 발견.' },
+  ],
+  fossilLocations: [
+    { region: '마스트리흐트, 네덜란드', specimenName: '마스트리흐트층' },
+    { region: '벵겔라 분지, 앙골라' },
+    { region: '캔자스, 미국' },
+  ],
 }

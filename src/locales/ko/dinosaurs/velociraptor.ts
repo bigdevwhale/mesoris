@@ -14,4 +14,17 @@ export default {
     { label: '몸길이', value: '약 2m', description: '영화보다 훨씬 작고, 큰 칠면조나 소형견 정도 크기.' },
     { label: '사냥', value: '무리 포식자', description: '무리로 사냥하고, 자기보다 훨씬 큰 먹이를 잡았다는 증거가 있다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'deinonychus', relationship: '가까운 친척' },
+    { id: 'protoceratops', relationship: '사냥감' },
+    { id: 'oviraptor', relationship: '경쟁자' },
+  ],
+  discoveries: [
+    { discoveredBy: '로이 채프먼 앤드류스', note: '유명한 AMNH 원정 중 최초 표본 발견.' },
+    { discoveredBy: '폴란드-몽골 원정대', note: '「싸우는 공룡들」 — 프로토케라톱스와 싸우던 벨로키랍토르.' },
+  ],
+  fossilLocations: [
+    { region: '고비 사막', specimenName: '자도흐타층' },
+    { region: '내몽골', specimenName: '' },
+  ],
 }

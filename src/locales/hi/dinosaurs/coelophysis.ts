@@ -14,4 +14,15 @@ export default {
     { label: 'सामूहिक कब्र', value: 'घोस्ट रैंच में सैकड़ों', icon: 'archive', description: 'घोस्ट रैंच, न्यू मैक्सिको में हज़ारों कंकाल मिले — एक डायनासोर कब्रिस्तान।' },
     { label: 'स्वजातिभक्षण', value: 'विवादित', icon: 'skull', description: 'पेट के क्षेत्रों में छोटी हड्डियों ने स्वजातिभक्षण का सुझाव दिया — लेकिन यह मछली से हो सकता है, बच्चों से नहीं।' },
   ],
+  relatedDinosaurs: [
+    { id: 'herrerasaurus', relationship: 'समकालीन' },
+    { id: 'eoraptor', relationship: 'समकालीन' },
+  ],
+  discoveries: [
+    { year: 1881, location: 'न्यू मैक्सिको, अमेरिका', discoveredBy: 'डेविड बाल्डविन', note: 'ट्रायसिक निक्षेपों में पहला नमूना मिला।' },
+    { year: 1947, location: 'घोस्ट रैंच, न्यू मैक्सिको, अमेरिका', discoveredBy: 'एडविन कोलबर्ट', note: 'सैकड़ों पूर्ण कंकालों वाली विशाल हड्डी-खदान की खोज।' },
+  ],
+  fossilLocations: [
+    { country: 'अमेरिका', region: 'न्यू मैक्सिको', coordinates: [36.3, -106.0], specimenName: 'घोस्ट रैंच, चिनले शैलसमूह' },
+  ],
 }

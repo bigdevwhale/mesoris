@@ -14,4 +14,15 @@ export default {
     { label: 'Velocidad', value: 'Alta', description: 'Construido para correr' },
     { label: 'Ubicacion', value: 'Argentina', description: 'Valle de la Luna' },
   ],
+  relatedDinosaurs: [
+    { id: 'eoraptor', relationship: 'Contemporáneo de la misma formación' },
+    { id: 'herrerasaurus', relationship: 'Depredador contemporáneo de mayor tamaño' },
+    { id: 'coelophysis', relationship: 'Pariente cercano posterior' },
+  ],
+  discoveries: [
+    { year: 2011, location: 'Parque Provincial Ischigualasto, San Juan, Argentina', discoveredBy: 'Ricardo N. Martínez et al.', note: 'Esqueleto casi completo descrito en la revista Science; nombrado «murphi» en honor a James Murphy, un benefactor del museo.' },
+  ],
+  fossilLocations: [
+    { country: 'Argentina', region: 'Provincia de San Juan, Formación Ischigualasto', coordinates: [-30.0, -67.9], specimenName: 'PVSJ 562 — esqueleto holotipo casi completo' },
+  ],
 }

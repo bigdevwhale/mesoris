@@ -14,4 +14,16 @@ export default {
     { label: 'Epoca', value: '112 Ma', description: 'Cretacico Temprano' },
     { label: 'Parientes', value: 'Braquiosauridos', description: 'Emparentado con Brachiosaurus' },
   ],
+  relatedDinosaurs: [
+    { id: 'brachiosaurus', relationship: 'Pariente cercano' },
+    { id: 'acrocanthosaurus', relationship: 'Amenaza de depredador' },
+    { id: 'argentinosaurus', relationship: 'Gigante rival' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Richard Cifelli y equipo', note: 'Las vértebras cervicales gigantes fueron confundidas inicialmente con troncos de árboles fosilizados antes de su preparación.' },
+    { discoveredBy: 'Mathew Wedel, Richard Cifelli y R. Kent Sanders', note: 'La descripción formal identificó a uno de los dinosaurios más altos jamás encontrados.' },
+  ],
+  fossilLocations: [
+    { region: 'Oklahoma', specimenName: 'Formación Antlers' },
+  ],
 }

@@ -14,4 +14,15 @@ export default {
     { label: '家族', value: '鲨齿龙科', description: '小型鲨齿龙科——与巨大的南方巨兽龙和鲨齿龙是姊妹群。' },
     { label: '产地', value: '西班牙 Las Hoyas', description: '发现于 Las Hoyas 化石点——一个产生过保存极精美化石的白垩纪湿地。' },
   ],
+  relatedDinosaurs: [
+    { id: 'carcharodontosaurus', relationship: '更大的鲨齿龙科近亲' },
+    { id: 'giganotosaurus', relationship: '更大的鲨齿龙科近亲' },
+    { id: 'allosaurus', relationship: '更早期的异特龙超科近亲' },
+  ],
+  discoveries: [
+    { year: 2003, location: '西班牙昆卡 Las Hoyas', discoveredBy: '何塞·路易斯·桑斯和费尔南多·埃斯卡索', note: '在 La Huérguina 灰岩的层状灰岩中发现的一具关节连接骨骼。' },
+  ],
+  fossilLocations: [
+    { country: '西班牙', region: '昆卡 Las Hoyas', coordinates: [40.07, -1.85], specimenName: 'MCCM-LH 6666 — 正模标本，关节连接的骨骼' },
+  ],
 }

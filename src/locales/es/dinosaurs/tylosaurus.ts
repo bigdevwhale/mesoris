@@ -14,4 +14,14 @@ export default {
     { label: 'Contenido', value: 'Estomacal', description: 'Se trago plesiosaurios enteros' },
     { label: 'Clasificacion', value: 'Mosasaurio', description: 'Lagarto marino, no dinosaurio' },
   ],
+  relatedDinosaurs: [
+    { id: 'mosasaurus', relationship: 'Pariente cercano' },
+    { id: 'plesiosaurus', relationship: 'Presa' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Othniel Charles Marsh', note: 'Descrito por primera vez durante las Guerras de los Huesos a partir de las cretas de Kansas.' },
+  ],
+  fossilLocations: [
+    { region: 'Kansas', specimenName: 'Creta de Niobrara, Smoky Hill' },
+  ],
 }

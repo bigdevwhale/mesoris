@@ -14,4 +14,14 @@
     { label: '体型', value: '微小的先驱', description: '仅1米长，不到3公斤——即使在三叠纪恐龙中也算很小。' },
     { label: '产地', value: '伊斯基瓜拉斯托', description: '阿根廷——世界上最重要的早期恐龙产地之一。' },
   ],
+  relatedDinosaurs: [
+    { id: 'eoraptor', relationship: '同一地层的同时代' },
+    { id: 'herrerasaurus', relationship: '同一地层的同时代捕食者' },
+  ],
+  discoveries: [
+    { year: 1962, location: '阿根廷圣胡安省伊斯基瓜拉斯托', discoveredBy: '伽利略·J·斯卡利亚', note: '采集了一件零碎标本；1967年由罗多尔夫·卡萨米克拉正式描述。' },
+  ],
+  fossilLocations: [
+    { country: '阿根廷', region: '圣胡安省，伊斯基瓜拉斯托组', coordinates: [-30.0, -67.9], specimenName: 'PULR 08 — 正模部分骨骼' },
+  ],
 }

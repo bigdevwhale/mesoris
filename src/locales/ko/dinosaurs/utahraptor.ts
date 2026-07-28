@@ -14,4 +14,16 @@ export default {
     { label: '깃털', value: '아마도 깃털 있음', description: '깃털 드로마에오사우루스류의 근연종으로서, 그 크기에도 불구하고 거의 확실히 깃털이 있었다.' },
     { label: '채석장', value: '집단 매장', description: '여러 개체가 사암 속에서 함께 발견되어 사회적 행동 또는 공통 재해를 시사.' },
   ],
+  relatedDinosaurs: [
+    { id: 'deinonychus', relationship: '근연종' },
+    { id: 'velociraptor', relationship: '더 작은 사촌' },
+    { id: 'acrocanthosaurus', relationship: '동시대 최상위 포식자' },
+  ],
+  discoveries: [
+    { discoveredBy: '짐 젠슨', note: '초기 화석은 수집되었지만 거대한 드로마에오사우루스류로 즉시 인식되지 않았다.' },
+    { discoveredBy: '제임스 커클랜드, 로버트 개스턴, 도널드 버지', note: '공식적인 기재로 알려진 가장 큰 랍토르 공룡이 밝혀졌다.' },
+  ],
+  fossilLocations: [
+    { region: '유타주', specimenName: '옐로캣 부층, 시더마운틴 층' },
+  ],
 }

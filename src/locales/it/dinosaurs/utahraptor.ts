@@ -14,4 +14,16 @@ export default {
     { label: 'Piume', value: 'Piumato', description: 'Come stretto parente dei dromaeosauridi piumati, era quasi certamente piumato.' },
     { label: 'Ritrovamento di gruppo', value: 'Diversi individui', description: 'Diversi animali trovati insieme nell\'arenaria — indizio di comportamento sociale.' },
   ],
+  relatedDinosaurs: [
+    { id: 'deinonychus', relationship: 'Parente stretto' },
+    { id: 'velociraptor', relationship: 'Cugino più piccolo' },
+    { id: 'acrocanthosaurus', relationship: 'Predatore apice contemporaneo' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Jim Jensen', note: 'I primi resti furono raccolti ma non immediatamente riconosciuti come quelli di un dromeosauride gigante.' },
+    { discoveredBy: 'James Kirkland, Robert Gaston e Donald Burge', note: 'La descrizione formale rivelò il più grande dromeosauro conosciuto.' },
+  ],
+  fossilLocations: [
+    { region: 'Utah', specimenName: 'Membro Yellow Cat, Formazione di Cedar Mountain' },
+  ],
 }

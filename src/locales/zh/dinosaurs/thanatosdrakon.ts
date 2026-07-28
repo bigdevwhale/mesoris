@@ -14,4 +14,14 @@ export default {
     { label: '家族', value: '神龙翼龙科', description: '神龙翼龙科成员——包括 Quetzalcoatlus 和 Hatzegopteryx 的长颈长颌翼龙家族。' },
     { label: '时代', value: '中白垩世', description: '比著名 Quetzalcoatlus 早约2000万年——填补了神龙翼龙科进化空白。' },
   ],
+  relatedDinosaurs: [
+    { id: 'quetzalcoatlus', relationship: '巨型神龙翼龙科近亲' },
+    { id: 'pteranodon', relationship: '较小的翼龙近亲' },
+  ],
+  discoveries: [
+    { discoveredBy: '莱昂纳多·奥尔蒂斯·大卫及其团队', note: '对其相关联的骨骼与参照标本进行了描述与命名。' },
+  ],
+  fossilLocations: [
+    { region: '阿根廷门多萨省普洛蒂尔组', specimenName: 'UNCUYO-LD 307 — 正模标本，部分骨骼' },
+  ],
 }

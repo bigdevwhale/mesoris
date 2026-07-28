@@ -14,4 +14,15 @@ export default {
     { label: 'Federn', value: 'Wahrscheinlich gefiedert', description: 'Verwandte Arten bestätigen Federn — warmblütig und vogelähnlich.' },
     { label: 'Jagd', value: 'Rudeljäger', description: 'Mehrere Individuen bei Tenontosaurus-Fossilien gefunden — starker Beleg für Rudeljagd.' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'Enger Verwandter' },
+    { id: 'oviraptor', relationship: 'Zeitgenosse' },
+  ],
+  discoveries: [
+    { year: 1931, location: 'Montana, USA', discoveredBy: 'Barnum Brown', note: 'Erste Fossilien gefunden, aber erst Jahrzehnte später untersucht.' },
+    { year: 1964, location: 'Montana, USA', discoveredBy: 'John Ostrom', note: 'Ostroms Entdeckung und sein Aufsatz von 1969 revolutionierten die Dinosaurierforschung.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Montana', coordinates: [45.5, -108.5], specimenName: 'Cloverly-Formation' },
+  ],
 }

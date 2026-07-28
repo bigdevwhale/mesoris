@@ -14,4 +14,14 @@ export default {
     { label: 'Geschwindigkeit', value: '~40 km/h', description: 'Einer der schnellsten großen Theropoden dank seiner langen, kraftvollen Hinterbeine.' },
     { label: 'Haut', value: 'Hautabdrücke erhalten', description: 'Eines der wenigen großen Theropoden-Fossilien, das tatsächliche Hautabdrücke bewahrt — mit großen Schuppen und kleinen Noppen.' },
   ],
+  relatedDinosaurs: [
+    { id: 'ceratosaurus', relationship: 'Verwandter' },
+    { id: 'tyrannosaurus-rex', relationship: 'Konvergente ökologische Rolle' },
+  ],
+  discoveries: [
+    { year: 1984, location: 'Chubut, Argentinien', discoveredBy: 'Jose Bonaparte', note: 'Einzelnes, nahezu vollständiges Skelett mit Hautabdrücken — ein unglaublich seltener Fund.' },
+  ],
+  fossilLocations: [
+    { country: 'Argentinien', region: 'Chubut', coordinates: [-43.3, -65.1], specimenName: 'La-Colonia-Formation' },
+  ],
 }

@@ -14,4 +14,18 @@ export default {
     { label: '부리', value: '앵무새 모양', description: '단단한 야자잎과 소철류를 잘라내기 위한 날카롭게 휜 부리.' },
     { label: '화석', value: '수백 점', description: '가장 흔한 화석 공룡 중 하나로, 다른 대부분 종보다 자세히 알려져 있다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: '포식자' },
+    { id: 'styracosaurus', relationship: '친척' },
+    { id: 'pachyrhinosaurus', relationship: '친척' },
+  ],
+  discoveries: [
+    { discoveredBy: '오스니얼 찰스 마시', note: '처음에는 거대한 들소로 오인되었다.' },
+    { discoveredBy: '존 벨 해처', note: '처음으로 완전한 두개골이 발견되고 정확히 동정되었다.' },
+  ],
+  fossilLocations: [
+    { region: '와이오밍', specimenName: '' },
+    { region: '몬태나', specimenName: '헬크릭' },
+    { region: '콜로라도', specimenName: '' },
+  ],
 }

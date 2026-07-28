@@ -14,4 +14,15 @@ export default {
     { label: 'Habitat', value: 'Rive di laghi', description: 'Viveva lungo le rive di laghi interni nel Bacino di Junggar, nel nord-ovest della Cina.' },
     { label: 'Coda', value: 'Thagomizer a quattro punte', description: 'Un thagomizer con spuntoni all\'estremità della coda, usato per difendersi dai predatori.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Famoso parente con placche più alte' },
+    { id: 'kentrosaurus', relationship: 'Parente con armatura a spuntoni' },
+    { id: 'tuojiangosaurus', relationship: 'Parente stegosauro cinese' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Dong Zhiming', note: 'Scheletro postcraniale parziale descritto e nominato Wuerhosaurus homheni.' },
+  ],
+  fossilLocations: [
+    { region: 'Bacino di Junggar, Xinjiang', specimenName: 'IVPP V.4006 — scheletro parziale olotipo' },
+  ],
 }

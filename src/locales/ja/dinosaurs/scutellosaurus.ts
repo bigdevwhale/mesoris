@@ -14,4 +14,15 @@ export default {
     { label: '尾', value: '非常に長い尾', description: '全長の半分近くを占める不釣り合いに長い尾が、装甲胴体の重さのバランスを取っていました。' },
     { label: '発見地', value: 'カイエンタ層', description: 'アリゾナ州のカイエンタ層（ジュラ紀前期の砂漠環境）で、ディロフォサウルスと同じ生態系から発見されました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'はるかに後のティレオフィラの子孫' },
+    { id: 'ankylosaurus', relationship: 'はるかに後のティレオフィラの子孫' },
+    { id: 'scelidosaurus', relationship: '近縁な初期ティレオフィラ類' },
+  ],
+  discoveries: [
+    { discoveredBy: 'エドウィン・H・コールバート', note: '1981年にコールバートによりカエンタ層から記載された；最も古い既知のティレオフィラ類として重要。' },
+  ],
+  fossilLocations: [
+    { region: 'アリゾナ州ココニノ郡（カエンタ層）', specimenName: 'UCMP 129015 — ホロタイプ、部分骨格' },
+  ],
 }

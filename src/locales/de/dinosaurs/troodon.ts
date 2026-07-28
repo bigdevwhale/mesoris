@@ -14,4 +14,15 @@ export default {
     { label: 'Zähne', value: 'Gezackt und vielseitig', description: 'Deuten auf gemischte Ernährung hin: kleine Beute, Eier und Pflanzenmaterial.' },
     { label: 'Hände', value: 'Teilweise opponierbar', description: 'Ein halb-opponierbarer Daumen ermöglichte erstaunlich geschicktes Greifen.' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'Entfernter Verwandter (Paraves)' },
+    { id: 'deinonychus', relationship: 'Verwandte Gruppe' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Ferdinand Hayden', note: 'Einzelner Zahn entdeckt — einer der frühesten nordamerikanischen Dinosaurierfunde.' },
+  ],
+  fossilLocations: [
+    { region: 'Montana', specimenName: 'Judith River Formation' },
+    { region: 'Alberta' },
+  ],
 }

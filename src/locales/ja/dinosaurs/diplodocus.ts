@@ -14,4 +14,17 @@
     { label: '歯', value: '鉛筆型', description: '細長くて細い歯で、枝から葉っぱをこそぎ落としていました。' },
     { label: '鼻孔', value: '頭のてっぺんに', description: '頭骨の頂上にある一つの鼻孔 — 科学者たちは何十年もその役割について議論してきました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'apatosaurus', relationship: '近縁種' },
+    { id: 'allosaurus', relationship: '捕食者' },
+    { id: 'brachiosaurus', relationship: '同時代' },
+  ],
+  discoveries: [
+    { year: 1877, location: 'アメリカ・コロラド州', discoveredBy: 'サミュエル・ウェンデル・ウィリストン', note: 'キャノンシティで最初の化石が発見された。' },
+    { year: 1899, location: 'アメリカ・ワイオミング州', discoveredBy: 'AMNH遠征隊', note: 'シープクリークで最も完全な骨格が発見された。' },
+  ],
+  fossilLocations: [
+    { country: 'アメリカ合衆国', region: 'ワイオミング州', coordinates: [43.0, -107.5], specimenName: 'モリソン層' },
+    { country: 'アメリカ合衆国', region: 'コロラド州', coordinates: [39.5, -105.0] },
+  ],
 }

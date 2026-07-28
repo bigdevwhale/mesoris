@@ -14,4 +14,16 @@
     { label: '科属', value: '叉龙科', description: '它属于蜥脚类恐龙中一个稀有分支，以较短的颈部和独特的脊椎棘刺而闻名。' },
     { label: '栖息地', value: '巴塔哥尼亚冲积平原', description: '生活在白垩纪早期的巴塔哥尼亚，穿梭于河流、针叶林和其他独特的南美恐龙之间。' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: '远方的梁龙超科表亲' },
+    { id: 'argentinosaurus', relationship: '之后出现的南美巨兽' },
+    { id: 'carnotaurus', relationship: '同地区后来出现的捕食者' },
+  ],
+  discoveries: [
+    { year: 1984, location: '阿根廷内乌肯', discoveredBy: '吉列尔莫·鲁吉耶', note: '模式标本发现于巴塔哥尼亚的拉阿马尔加组。' },
+    { year: 1991, location: '阿根廷', discoveredBy: '莱昂纳多·萨尔加多和何塞·波拿巴', note: '正式的科学描述突出了这种恐龙非凡的颈棘。' },
+  ],
+  fossilLocations: [
+    { country: '阿根廷', region: '内乌肯', coordinates: [-38.6, -70.2], specimenName: '拉阿马尔加组' },
+  ],
 }

@@ -14,4 +14,14 @@ export default {
     { label: 'Nahrung', value: 'Allesfresser', description: 'Pflanzen, Insekten, Eier und kleine Wirbeltiere' },
     { label: 'Größe', value: '4,3 m', description: 'Ähnlich groß wie ein Pferd' },
   ],
+  relatedDinosaurs: [
+    { id: 'gallimimus', relationship: 'Enger Verwandter' },
+    { id: 'ornithomimus', relationship: 'Enger Verwandter' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Lawrence Lambe', note: 'Erstes Exemplar in der Belly River Group gefunden.' },
+  ],
+  fossilLocations: [
+    { region: 'Alberta', specimenName: 'Dinosaur Park Formation' },
+  ],
 }

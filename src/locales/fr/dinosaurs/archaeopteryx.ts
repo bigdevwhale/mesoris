@@ -14,4 +14,17 @@ export default {
     { label: 'Style de vol', value: 'Courts élans', description: 'La plupart des études suggèrent qu\'il pouvait décoller et battre des ailes sur de courtes distances plutôt que soutenir un vol long à la manière des oiseaux modernes.' },
     { label: 'Taille', value: 'Comme un corbeau', description: 'D\'environ un demi-mètre de long et pesant près d\'un kilogramme, c\'était un petit prédateur à plumes dans les forêts insulaires du Jurassique tardif.' },
   ],
+  relatedDinosaurs: [
+    { id: 'microraptor', relationship: 'Parent paravien à plumes, doté d\'adaptations aérodynamiques' },
+    { id: 'troodon', relationship: 'Théropode aviaire à l\'anatomie sensorielle avancée' },
+    { id: 'velociraptor', relationship: 'Parent dromaeosauridé postérieur au sein des théropodes maniraptoriens' },
+  ],
+  discoveries: [
+    { year: 1861, location: 'Calcaire de Solnhofen, Bavière, Allemagne', discoveredBy: 'Ouvriers de carrière ; décrit par Hermann von Meyer', note: 'Premier spécimen squelettique d\'Archaeopteryx formellement décrit et lié à l\'évolution aviaire.' },
+    { year: 1877, location: 'Blumenberg près d\'Eichstätt, Allemagne', discoveredBy: 'Carrière de Jakob Niemeyer', note: 'Le spécimen de Berlin a conservé un crâne exceptionnel et des empreintes de plumes, devenant l\'exemple muséal classique.' },
+  ],
+  fossilLocations: [
+    { country: 'Allemagne', region: 'Solnhofen, Bavière', coordinates: [48.9, 10.99], specimenName: 'Spécimen de Londres (BMNH 37001)' },
+    { country: 'Allemagne', region: 'Eichstätt, Bavière', coordinates: [48.89, 11.18], specimenName: 'Spécimen de Berlin (HMN 1880)' },
+  ],
 }

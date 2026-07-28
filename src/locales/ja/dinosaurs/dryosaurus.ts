@@ -14,4 +14,17 @@
     { label: '速度', value: '高速ランナー', description: '長い後ろ足で、捕食者から素早く逃げることができました。' },
     { label: '時代', value: '後期ジュラ紀', description: '約1億5千万年前、アロサウルスなどと同じ時代に生きていました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'camptosaurus', relationship: '類似した生息地から来た大型の鳥脚類' },
+    { id: 'iguanodon', relationship: 'より後期でより派生した鳥脚類の系統' },
+    { id: 'allosaurus', relationship: '主要な同時代の捕食者' },
+  ],
+  discoveries: [
+    { year: 1878, location: 'モリソン層、ワイオミング州、アメリカ合衆国', discoveredBy: 'O・C・マーシュ', note: 'マーシュは軽量な鳥脚類の化石に基づきドリオサウルスと命名した。' },
+    { year: 1910, location: 'テンダグル、タンザニア', discoveredBy: 'ドイツ・テンダグル探検隊', note: '東アフリカのドリオサウルス科の化石が、このグループの世界的分布の理解を広げた。' },
+  ],
+  fossilLocations: [
+    { country: 'アメリカ合衆国', region: 'ワイオミング州コモブラフ（モリソン層）', coordinates: [41.8, -106.0], specimenName: 'ドリオサウルス・アルトゥスの標本' },
+    { country: 'タンザニア', region: 'テンダグル層', coordinates: [-10.2, 39.4], specimenName: 'ドリオサウルス科参照標本' },
+  ],
 }

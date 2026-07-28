@@ -14,4 +14,14 @@ export default {
     { label: 'Sozial', value: 'Herden', description: 'Lebte in großen sozialen Gruppen — die Entenschnabel-Version einer Gnuherde.' },
     { label: 'Zähne', value: 'Hunderte', description: 'Eine komplexe Zahnbatterie mit hunderten von Zähnen zum Zermahlen zäher Pflanzen.' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: 'Enger Verwandter' },
+    { id: 'lambeosaurus', relationship: 'Enger Verwandter' },
+  ],
+  discoveries: [
+    { year: 1912, location: 'Alberta, Kanada', discoveredBy: 'Barnum Brown', note: 'Erstes vollständiges Skelett während einer AMNH-Expedition entdeckt.' },
+  ],
+  fossilLocations: [
+    { country: 'Kanada', region: 'Alberta', coordinates: [50.8, -111.5], specimenName: 'Dinosaur-Park-Formation' },
+  ],
 }

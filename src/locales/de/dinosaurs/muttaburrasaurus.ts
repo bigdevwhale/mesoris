@@ -14,4 +14,16 @@ export default {
     { label: 'Zähne', value: 'Scherenzähne', description: 'Scherzähne statt Mahlzähne — deutet auf eine spezialisierte Ernährung mit zähen Pflanzen hin.' },
     { label: 'Isolation', value: 'Südliche Landmasse', description: 'Entwickelte sich in relativer Isolation, als Australien begann, sich von der Antarktis zu trennen.' },
   ],
+  relatedDinosaurs: [
+    { id: 'iguanodon', relationship: 'Enger iguanodontier Ornithopode-Verwandter' },
+    { id: 'camptosaurus', relationship: 'Früher Ornithopode-Verwandter' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Doug Langdon', note: '1963 fand der Landwirt Doug Langdon auf seinem Grundstück ein nahezu vollständiges Skelett; 1981 von Bartholomai und Molnar formell beschrieben.' },
+    { discoveredBy: 'Paläontologenteam', note: '1987 wurde in Lightning Ridge in opalführenden Sedimenten ein zweites Exemplar entdeckt, das zusätzliche anatomische Daten lieferte.' },
+  ],
+  fossilLocations: [
+    { region: 'Muttaburra, Barcaldine-Region, Queensland, Australien (Mackunda-Formation)', specimenName: 'QM F6140 — Holotyp, nahezu vollständiges Skelett' },
+    { region: 'Lightning Ridge, New South Wales, Australien', specimenName: 'Teilschädel und postkraniales Material' },
+  ],
 }

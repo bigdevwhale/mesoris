@@ -14,4 +14,15 @@ export default {
     { label: 'Origine', value: 'Maroc', description: 'Découvert dans les phosphates du bassin d\'Oulad Abdoun, au Maroc — un trésor marin du Crétacé.' },
     { label: 'Cou', value: 'Très long', description: 'Un long cou avec plus de 50 vertèbres cervicales, utilisé pour tendre des embuscades aux bancs de poissons.' },
   ],
+  relatedDinosaurs: [
+    { id: 'elasmosaurus', relationship: 'Cousin élasmosauridé plus grand' },
+    { id: 'plesiosaurus', relationship: 'Parent plésiosaure au long cou' },
+    { id: 'mosasaurus', relationship: 'Prédateur marin contemporain' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Peggy Vincent et équipe', note: 'Crâne partiel et vertèbres cervicales décrits et nommés.' },
+  ],
+  fossilLocations: [
+    { region: 'Bassin d\'Oulad Abdoun', specimenName: 'OCP DEK/GE 307 — crâne partiel et vertèbres holotypes' },
+  ],
 }

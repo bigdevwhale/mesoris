@@ -14,4 +14,16 @@ export default {
     { label: 'Dimensioni', value: '9 metri, 6 tonnellate', description: 'Uno dei più grandi ceratopsidi, cranio fino a 2,6 m di lunghezza con il collare.' },
     { label: 'Cretaceo superiore', value: 'Ultimi giorni', description: 'Il Torosauro visse proprio alla fine del Cretaceo, 68–66 milioni di anni fa — subito prima dell\'impatto dell\'asteroide.' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: 'Parente più stretto — un tempo proposto come stessa specie' },
+    { id: 'styracosaurus', relationship: 'Parente ceratopside' },
+    { id: 'pentaceratops', relationship: 'Parente chasmosaurino più antico' },
+  ],
+  discoveries: [
+    { discoveredBy: 'John Bell Hatcher', note: 'Materiale descritto da O.C. Marsh nel 1891; successivamente molti esemplari furono trovati nell\'ovest degli USA nelle formazioni Lance e Hell Creek.' },
+  ],
+  fossilLocations: [
+    { region: 'Contea di Niobrara, Wyoming (Formazione Lance)', specimenName: 'YPM 1830 — olotipo, cranio parziale' },
+    { region: 'Contea di Harding, South Dakota (Formazione Hell Creek)', specimenName: 'Crani riferiti' },
+  ],
 }

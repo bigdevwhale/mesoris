@@ -14,4 +14,17 @@ export default {
     { label: 'Coda', value: 'A frusta', description: 'Una coda lunga, sottile e a frusta, che poteva essere usata per la difesa e forse persino per produrre suoni supersonici.' },
     { label: 'Areale', value: 'Due continenti', description: 'Trovato nella Formazione Morrison del Nordamerica e nella Formazione Tendaguru della Tanzania.' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: 'Parente diplodocide stretto' },
+    { id: 'apatosaurus', relationship: 'Parente diplodocide stretto' },
+    { id: 'brontosaurus', relationship: 'Parente diplodocide' },
+  ],
+  discoveries: [
+    { year: 1889, location: 'Como Bluff, Wyoming, Stati Uniti', discoveredBy: 'O.C. Marsh', note: 'Scheletro parziale rinvenuto dalle squadre di Marsh durante le Guerre delle Ossa.' },
+    { year: 1907, location: 'Tendaguru, Tanzania', discoveredBy: 'Spedizione tedesca di Tendaguru', note: 'Materiale di diplodocide dell\'Africa orientale fu poi riferito a Barosaurus.' },
+  ],
+  fossilLocations: [
+    { country: 'Stati Uniti', region: 'Como Bluff, Wyoming (Formazione Morrison)', coordinates: [41.8, -106.0], specimenName: 'YPM 429 — scheletro parziale olotipo' },
+    { country: 'Tanzania', region: 'Formazione Tendaguru', coordinates: [-10.2, 39.4], specimenName: 'Materiale di diplodocide di Tendaguru' },
+  ],
 }

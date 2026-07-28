@@ -14,4 +14,16 @@ export default {
     { label: 'Ernährung', value: 'Niedrige Vegetation', description: 'Sein Schnabel und seine Backenzähne eigneten sich zum Knabbern von Farnen und anderen weichen Jura-Bodenpflanzen.' },
     { label: 'Geschichte', value: 'Taxonomische Neuordnung', description: 'Material, das einst Nanosaurus oder Othnielia zugeordnet wurde, wurde später neu bewertet; Othnielosaurus wird für klar abgrenzbare Reste verwendet.' },
   ],
+  relatedDinosaurs: [
+    { id: 'dryosaurus', relationship: 'Größerer Ornithopode aus ähnlichen Lebensräumen' },
+    { id: 'hypsilophodon', relationship: 'Vergleichbarer kleiner, wendiger pflanzenfressender Ornithischier' },
+    { id: 'camptosaurus', relationship: 'Zeitgenössischer größerer browser-Ornithopode' },
+  ],
+  discoveries: [
+    { year: 1877, location: 'Como Bluff, Wyoming, USA', discoveredBy: 'Marsh-Sammlerteams', note: 'Während der großen Morrison-Ausgrabungen geborgenes kleines Ornithischier-Material.' },
+    { year: 2007, location: 'Taxonomische Neubewertung', discoveredBy: 'Peter Galton', note: 'Neubewertung trennte Othnielosaurus von anderen historischen kleinen Ornithischier-Zuordnungen.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Como Bluff, Wyoming (Morrison-Formation)', coordinates: [41.8, -106.0], specimenName: 'Zugeordnetes Othnielosaurus-Material' },
+  ],
 }

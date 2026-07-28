@@ -14,4 +14,17 @@ export default {
     { label: '비행 스타일', value: '단거리 날갯짓', description: '현대의 새와 같은 장거리 비행이 아닌, 짧은 거리를 날갯짓하며 날아오를 수 있었을 것으로 추정됩니다.' },
     { label: '크기', value: '까마귀 정도', description: '몸길이 약 50cm, 체중 약 1kg의 소형으로, 쥐라기 후기 섬의 숲에서 작은 사냥감을 사냥했습니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'microraptor', relationship: '공기역학적 적응을 가진 깃털 근조류 사촌' },
+    { id: 'troodon', relationship: '발달된 감각 해부학을 가진 새 같은 수각류' },
+    { id: 'velociraptor', relationship: '마니랍토라 수각류 안의 후기 드로마에오사우루스과 친척' },
+  ],
+  discoveries: [
+    { year: 1861, location: '독일 바이에른주 졸른호펜 석회암', discoveredBy: '채석장 노동자; 헤르만 폰 마이어가 기술', note: '아르카에옵테릭스의 첫 골격 표본이 공식적으로 기술되어 조류 진화와 연결되었습니다.' },
+    { year: 1877, location: '독일 아이히슈테트 인근 블루멘베르크', discoveredBy: '야콥 니마이어 채석장', note: '베를린 표본은 뛰어난 두개골과 깃털 흔적을 보존하여 고전적인 박물관 표본이 되었습니다.' },
+  ],
+  fossilLocations: [
+    { country: '독일', region: '바이에른주 졸른호펜', coordinates: [48.9, 10.99], specimenName: '런던 표본 (BMNH 37001)' },
+    { country: '독일', region: '바이에른주 아이히슈테트', coordinates: [48.89, 11.18], specimenName: '베를린 표본 (HMN 1880)' },
+  ],
 }

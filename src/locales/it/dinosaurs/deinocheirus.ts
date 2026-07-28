@@ -14,4 +14,18 @@ export default {
     { label: 'Becco', value: 'Becco d\'anatra', description: 'Un becco ampio, senza denti, simile a quello di un\'anatra, per filtrare l\'acqua e tagliare le piante.' },
     { label: 'Dieta', value: 'Onnivoro', description: 'Il contenuto stomacale mostra piante, pesci e piccoli animali — un vero onnivoro del Cretaceo.' },
   ],
+  relatedDinosaurs: [
+    { id: 'gallimimus', relationship: 'Cugino ornithomimide' },
+    { id: 'ornithomimus', relationship: 'Parente ornithomimide' },
+    { id: 'therizinosaurus', relationship: 'Parente celurosauro' },
+    { id: 'velociraptor', relationship: 'Parente teropode lontano' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Spedizione polacco-mongola (Zofia Kielan-Jaworowska)', note: 'Primi fossili trovati — solo le braccia giganti e il cinto scapolare. Il corpo rimase un mistero per quasi 50 anni.' },
+    { discoveredBy: 'Spedizione coreano-mongola', note: 'Un esemplare quasi completo rivelò finalmente il corpo intero — totalmente diverso da quanto ci si aspettava.' },
+    { discoveredBy: 'Spedizione belgo-mongola', note: 'Esemplare aggiuntivo con frammento di cranio e contenuto stomacale che confermò la dieta onnivora.' },
+  ],
+  fossilLocations: [
+    { region: 'Deserto del Gobi, Bacino di Nemegt', specimenName: 'Formazione Nemegt' },
+  ],
 }

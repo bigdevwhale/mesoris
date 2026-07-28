@@ -14,4 +14,15 @@
     { label: '牙齿', value: '小而叶形', description: '微小的牙齿——以柔软植物、果实和可能的昆虫为食。' },
     { label: '体型', value: '4.5米', description: '两足行走的植食动物，体重约与一匹马相当。' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: '捕食者' },
+    { id: 'triceratops', relationship: '同时代' },
+  ],
+  discoveries: [
+    { year: 1931, location: '美国怀俄明州', discoveredBy: '查尔斯·吉尔摩', note: '发现的第一件头骨圆顶。' },
+  ],
+  fossilLocations: [
+    { country: '美国', region: '怀俄明州', coordinates: [44.5, -105.0], specimenName: '兰斯组' },
+    { country: '美国', region: '蒙大拿州', coordinates: [47.5, -106.5] },
+  ],
 }

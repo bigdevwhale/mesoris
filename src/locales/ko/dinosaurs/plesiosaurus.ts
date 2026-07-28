@@ -14,4 +14,14 @@ export default {
     { label: '발견', value: '애닝의 승리', description: '1823년 메리 애닝에 의해 발견 — 최초로 알려진 선사 시대 파충류 중 하나.' },
     { label: '몸길이', value: '3.5미터', description: '쥐라기 전기의 중형 해양 파충류.' },
   ],
+  relatedDinosaurs: [
+    { id: 'elasmosaurus', relationship: '훨씬 더 큰 후손' },
+    { id: 'ichthyosaurus', relationship: '동시대' },
+  ],
+  discoveries: [
+    { year: 1823, location: '라이머지스, 영국', discoveredBy: '메리 애닝', note: '쥐라기 해안에서 발견된 최초의 연결 골격 — 과학적 센세이션.' },
+  ],
+  fossilLocations: [
+    { country: '영국', region: '도싯', coordinates: [50.7, -2.9], specimenName: '블루 라이아스 층, 쥐라기 해안' },
+  ],
 }

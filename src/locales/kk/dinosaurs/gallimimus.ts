@@ -14,4 +14,14 @@ export default {
     { label: 'Мойны', value: 'Ұзын және икемді', description: 'Түйеқұс тәрізді ұзын мойны оған қауіп-қатерді байқауға және тамақ іздеуге мүмкіндік берді.' },
     { label: 'Қоректенуі', value: 'Таңдаулы емес', description: 'Ол өсімдіктерді, ұсақ жануарларды және жәндіктерді жеді - нағыз тарихқа дейінгі барлық қоректік оппортунист.' },
   ],
+  relatedDinosaurs: [
+    { id: 'ornithomimus', relationship: 'Жақын туысы' },
+    { id: 'struthiomimus', relationship: 'Жақын туысы' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Поляк-моңғол экспедициясы', note: 'Немегт алабында алғашқы үлгілер табылды.' },
+  ],
+  fossilLocations: [
+    { region: 'Гоби шөлі', specimenName: 'Немегт формациясы' },
+  ],
 }

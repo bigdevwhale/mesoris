@@ -14,4 +14,16 @@ export default {
     { label: 'Zähne', value: 'Dutzende von Klingen', description: 'Seine Kiefer enthielten dicke, gezackte Zähne, die darauf ausgelegt waren, Fleisch zu durchbohren und Stücke aus der Beute zu reißen.' },
     { label: 'Wachstum', value: 'Wachstumsschub in der Jugend', description: 'Wachstumsstudien zeigen, dass Jungtiere schnell heranreiften und sich in nur wenigen Jahren in starke Raubtiere verwandelten.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Größerer naher Verwandter' },
+    { id: 'daspletosaurus', relationship: 'Ebenfalls ein Tyrannosaurier' },
+    { id: 'pachyrhinosaurus', relationship: 'Mögliche Beute' },
+  ],
+  discoveries: [
+    { year: 1884, location: 'Red Deer River, Alberta, Kanada', discoveredBy: 'Joseph Burr Tyrrell', note: 'Das erste Schädelmaterial wurde während einer Expedition des Geological Survey gefunden.' },
+    { year: 1910, location: 'Alberta, Kanada', discoveredBy: 'Barnum Brown', note: 'Brown entdeckte das berühmte Massenknochenbett, das das Verständnis der Art grundlegend veränderte.' },
+  ],
+  fossilLocations: [
+    { country: 'Kanada', region: 'Alberta', coordinates: [51.9, -112.9], specimenName: 'Horseshoe-Canyon-Formation' },
+  ],
 }

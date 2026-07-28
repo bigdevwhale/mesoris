@@ -14,4 +14,17 @@ export default {
     { label: '獲物', value: '巨大な竜脚類', description: 'シュノサウルスやオメイサウルスのような巨大な植物食恐竜を待ち伏せや協力狩りで狙っていたと考えられます。' },
     { label: '科', value: 'シナラプトル科', description: '北アメリカのアロサウルスの進化と並行して進化した、アジア固有のアロサウルス上科の系統に属します。' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: '北米アロサウルス上科の近縁種' },
+    { id: 'ceratosaurus', relationship: '同時代のケラトサウルス科' },
+    { id: 'torvosaurus', relationship: '大型ジュラ紀捕食者の近縁種' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ドンジーミン、チャン・ヨイチ、リー・シュアンミン、ヂョウ・シウ', note: '建築工事中にほぼ完全なホロタイプ（頭骨と部分骨格）が発見され、1978年にドンらにより記載された。' },
+    { discoveredBy: 'ドンジーミン', note: '第二種 Y. magnus が大山鋪の標本から記載された — やや大型でより完全に知られている。' },
+  ],
+  fossilLocations: [
+    { region: '四川省永川（上沙渓廟層）', specimenName: 'CV 00215 — ホロタイプ頭骨と骨格' },
+    { region: '四川省自貢（大山鋪層）', specimenName: 'Y. magnus 標本 — 自貢恐竜博物館' },
+  ],
 }

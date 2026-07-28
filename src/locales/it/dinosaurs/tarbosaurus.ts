@@ -14,4 +14,16 @@ export default {
     { label: 'Braccia', value: 'Piccolissime', description: 'Come gli altri tirannosaurini, aveva piccole braccia a due dita eclissate dalla sua testa gigante.' },
     { label: 'Nicchia', value: 'Superpredatore del Nemegt', description: 'Cacciava grandi adrosauri e titanosauri nelle pianure fluviali dell\'antica Mongolia.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Parente stretto' },
+    { id: 'velociraptor', relationship: 'Contemporaneo regionale' },
+    { id: 'oviraptor', relationship: 'Vicino del Nemegt' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Spedizioni sovietico-mongole', note: 'Le prime spedizioni nel Gobi recuperarono importante materiale di tirannosauride dal bacino del Nemegt.' },
+    { discoveredBy: 'Evgeny Maleev', note: 'Maleev nominò formalmente Tarbosaurus sulla base di fossili mongoli.' },
+  ],
+  fossilLocations: [
+    { region: 'Ömnögovi', specimenName: 'Formazione Nemegt' },
+  ],
 }

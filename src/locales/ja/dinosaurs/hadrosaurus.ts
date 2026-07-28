@@ -14,4 +14,15 @@
     { label: '発見地', value: 'アメリカ・ニュージャージー州', description: '1858年に発見された、北アメリカ東部の数少ない重要な恐竜化石の一つです。' },
     { label: '姿勢', value: '二足歩行', description: '展示によって、恐竜が「巨大なトカゲ」ではなく、活発な二足歩行動物であることを初めて示しました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'edmontosaurus', relationship: '後代のハドロサウルス科の親類' },
+    { id: 'parasaurolophus', relationship: 'トサカのあるハドロサウルス科の従兄弟' },
+    { id: 'iguanodon', relationship: 'より古い時代の鳥脚類の祖先形' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ウィリアム・パーカー・フォウルク(William Parker Foulke)', note: 'マール採掘の作業でほぼ完全な骨格が発掘された。ジョゼフ・ライディによって命名された。' },
+  ],
+  fossilLocations: [
+    { region: 'ハドンフィールド、ニュージャージー州', specimenName: 'ANSP 10005 — ホロタイプ骨格' },
+  ],
 }

@@ -14,4 +14,15 @@
     { label: '原始', value: '古老特征', description: '尽管地质年代相对较晚，却保留了令人惊讶的原始解剖特征。' },
     { label: '名称', value: '图阿雷格神话', description: '以撒哈拉图阿雷格人口头传统中的神话生物"约巴尔"命名。' },
   ],
+  relatedDinosaurs: [
+    { id: 'brachiosaurus', relationship: '较晚的新蜥脚类近亲' },
+    { id: 'diplodocus', relationship: '同时代的蜥脚类近亲' },
+    { id: 'nigersaurus', relationship: '非洲同时代物种' },
+  ],
+  discoveries: [
+    { discoveredBy: '保罗·塞里诺及团队', note: '在大型撒哈拉考察中惊人地发现了约95%完整的骨架；1999年在《Science》正式描述。' },
+  ],
+  fossilLocations: [
+    { region: '阿加德兹地区，蒂乌拉伦组', specimenName: 'MNN TIG3 — 近乎完整的正模标本' },
+  ],
 }

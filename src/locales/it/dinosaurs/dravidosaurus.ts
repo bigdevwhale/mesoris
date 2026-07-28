@@ -14,4 +14,14 @@ export default {
     { label: 'India', value: 'Sopravvissuto del Gondwana', description: 'Trovato nel Cretaceo superiore dell\'India — quando il subcontinente era un\'isola alla deriva verso l\'Asia.' },
     { label: 'Controversia', value: 'Molto dibattuto', description: 'Il materiale frammentario rende una classificazione definitiva quasi impossibile.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Possibile parente stegosauride' },
+    { id: 'kentrosaurus', relationship: 'Possibile parente stegosauride' },
+  ],
+  discoveries: [
+    { year: 1979, location: 'Trichinopoly, Tamil Nadu, India', discoveredBy: 'P. Yadagiri e K. Ayyasami', note: 'Materiale frammentario descritto come stegosauro da Yadagiri e Ayyasami nel 1979; successivamente reinterpretato come possibile materiale di plesiosauro da Chatterjee e Rudra (1991).' },
+  ],
+  fossilLocations: [
+    { country: 'India', region: 'Tiruchirappalli (Trichinopoly), Tamil Nadu (Gruppo Trichinopoly)', coordinates: [10.79, 78.7], specimenName: 'GSI SR PAL 1 — olotipo, materiale frammentario' },
+  ],
 }

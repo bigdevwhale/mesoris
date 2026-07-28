@@ -14,4 +14,15 @@ export default {
     { label: 'Morso', value: 'Potenza da pliosauro', description: 'Un pliosauro a collo corto con una forza di morso schiacciante — attaccava le prede in agguato.' },
     { label: 'Caccia', value: 'Attacchi a siluro', description: 'Usava brevi e incredibili accelerazioni delle sue quattro pinne muscolose per tendere agguati.' },
   ],
+  relatedDinosaurs: [
+    { id: 'elasmosaurus', relationship: 'Parente lontano' },
+    { id: 'tylosaurus', relationship: 'Rivale ecologico (precedente)' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Andrew Crombie', note: 'Prima mascella parziale trovata nell\'outback del Queensland.' },
+    { discoveredBy: 'Albert Heber Longman', note: 'Esemplare più completo scoperto vicino a Hughenden.' },
+  ],
+  fossilLocations: [
+    { region: 'Queensland, Australia', specimenName: 'Formazione Toolebuc' },
+  ],
 }

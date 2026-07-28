@@ -14,4 +14,16 @@ export default {
     { label: 'Habitat', value: 'Environnements humides', description: 'Il vivait dans des écosystèmes humides et riches en rivières du Jurassique du nord-ouest de la Chine.' },
     { label: 'Rôle', value: 'Prédateur de taille moyenne', description: 'Monolophosaurus chassait probablement de petits et moyens animaux, et n\'hésitait pas à charogner quand l\'occasion se présentait.' },
   ],
+  relatedDinosaurs: [
+    { id: 'megalosaurus', relationship: 'Carnivore comparable de grade tétanurien ancien' },
+    { id: 'allosaurus', relationship: 'Prédateur tétanurien plus grand et ultérieur' },
+    { id: 'yangchuanosaurus', relationship: 'Autre théropode prédateur du Jurassique chinois' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Équipes de terrain du Xinjiang', note: 'Restes initiaux récupérés des dépôts de Shishugou.' },
+    { discoveredBy: 'Zhao Xijin et Philip Currie', note: 'La description formelle a souligné la crête unique et l\'anatomie détaillée du crâne.' },
+  ],
+  fossilLocations: [
+    { region: 'Formation de Shishugou, Xinjiang, Chine', specimenName: 'Holotype et matériel squelettique associé' },
+  ],
 }

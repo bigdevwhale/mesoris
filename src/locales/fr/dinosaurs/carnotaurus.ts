@@ -14,4 +14,14 @@ export default {
     { label: 'Vitesse', value: '~40 km/h', description: 'L\'un des grands théropodes les plus rapides grâce à ses longues pattes arrière puissantes.' },
     { label: 'Peau', value: 'Empreintes de peau préservées', description: 'L\'un des rares fossiles de grands théropodes à avoir conservé de véritables empreintes de peau — avec de grandes écailles et de petits tubercules.' },
   ],
+  relatedDinosaurs: [
+    { id: 'ceratosaurus', relationship: 'Parent' },
+    { id: 'tyrannosaurus-rex', relationship: 'Rôle écologique convergent' },
+  ],
+  discoveries: [
+    { year: 1984, location: 'Chubut, Argentine', discoveredBy: 'Jose Bonaparte', note: 'Squelette unique quasi complet avec empreintes de peau — une découverte incroyablement rare.' },
+  ],
+  fossilLocations: [
+    { country: 'Argentine', region: 'Chubut', coordinates: [-43.3, -65.1], specimenName: 'Formation La Colonia' },
+  ],
 }

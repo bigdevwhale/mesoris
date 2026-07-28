@@ -14,4 +14,15 @@ export default {
     { label: '共存', value: 'エオラプトルと同じ層', description: '同じ地層でエオラプトルと共に生息し、恐竜の系統の初期の分岐を示しています。' },
     { label: '進化', value: '獣脚類の祖先', description: '最も基盤的な獣脚類の一つであり、後のすべての肉食恐竜のボディプランを理解するのに役立ちます。' },
   ],
+  relatedDinosaurs: [
+    { id: 'eoraptor', relationship: '同じ層の同時代種' },
+    { id: 'herrerasaurus', relationship: 'より大型の同時代捕食者' },
+    { id: 'coelophysis', relationship: '近縁の後代の恐竜' },
+  ],
+  discoveries: [
+    { year: 2011, location: 'アルゼンチン・サンフアン州イスチグアラスト州立公園', discoveredBy: 'リカルド・N・マルティネスら', note: 'サイエンス誌に記載されたほぼ完全な骨格。博物館支援者ジェームズ・マーフィーにちなみ「murphi」と命名された。' },
+  ],
+  fossilLocations: [
+    { country: 'アルゼンチン', region: 'サンフアン州、イスチグアラスト層', coordinates: [-30.0, -67.9], specimenName: 'PVSJ 562 — ほぼ完全なホロタイプ骨格' },
+  ],
 }

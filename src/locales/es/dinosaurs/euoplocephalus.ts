@@ -14,4 +14,13 @@ export default {
     { label: 'Garrote', value: 'Grande', description: 'Garrote caudal para defensa activa' },
     { label: 'Tamaño', value: '6 m', description: 'Un anquilosaurido de tamaño medio' },
   ],
+  relatedDinosaurs: [
+    { id: 'ankylosaurus', relationship: 'Pariente cercano' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Lawrence Lambe', note: 'Primer espécimen descrito del Belly River Group.' },
+  ],
+  fossilLocations: [
+    { region: 'Alberta', specimenName: 'Formación Dinosaur Park' },
+  ],
 }

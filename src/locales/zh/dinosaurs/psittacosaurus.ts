@@ -14,4 +14,17 @@
     { label: '尾巴', value: '硬鬃毛', description: '一些标本在尾巴上显示了硬鬃毛——罕见的皮肤结构。' },
     { label: '体型', value: '2米', description: '大约大型犬的大小，两足姿态。' },
   ],
+  relatedDinosaurs: [
+    { id: 'protoceratops', relationship: '较晚的角龙类近亲' },
+    { id: 'triceratops', relationship: '远缘带角的后裔' },
+    { id: 'microraptor', relationship: '同时期的亚洲邻居' },
+  ],
+  discoveries: [
+    { year: 1922, location: 'Mongolia', discoveredBy: 'Henry Fairfield Osborn', note: '奥斯本根据早期亚洲发现命名了此属，并将其识别为原始的角龙类。' },
+    { year: 2000, location: 'Liaoning, China', discoveredBy: 'Chinese paleontological teams', note: '壮观的新化石保存了皮肤、鬃毛，甚至可能的幼体群。' },
+  ],
+  fossilLocations: [
+    { country: 'China', region: '辽宁', coordinates: [41.9, 121.7], specimenName: '义县组' },
+    { country: 'Mongolia', region: '南戈壁', coordinates: [44.5, 108.5], specimenName: '早白垩世地层' },
+  ],
 }

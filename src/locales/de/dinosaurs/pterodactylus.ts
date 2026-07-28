@@ -14,4 +14,14 @@ export default {
     { label: 'Zähne', value: '90+ Zähne', description: 'Über 90 scharfe, ineinandergreifende Zähne zum Fisch- und Insektenfang.' },
     { label: 'Fundort', value: 'Solnhofen, Bayern', description: 'Berühmte Plattenkalke, die auch Archaeopteryx hervorbrachten.' },
   ],
+  relatedDinosaurs: [
+    { id: 'pteranodon', relationship: 'Größerer Nachfahre' },
+    { id: 'dimorphodon', relationship: 'Früherer Verwandter' },
+  ],
+  discoveries: [
+    { year: 1784, location: 'Bavaria, Germany', discoveredBy: 'Cosimo Alessandro Collini', note: 'Erster je entdeckter Pterosaurier — Collini hielt ihn für ein Wassertier.' },
+  ],
+  fossilLocations: [
+    { country: 'Germany', region: 'Bayern', coordinates: [48.9, 11.0], specimenName: 'Solnhofener Plattenkalk' },
+  ],
 }

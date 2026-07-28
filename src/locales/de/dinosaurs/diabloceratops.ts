@@ -14,4 +14,15 @@ export default {
     { label: 'Utah', value: 'Wahweap-Formation', description: 'Gefunden in der Wahweap-Formation — Teil einer reichen südlichen Fauna, die sich vom Norden unterschied.' },
     { label: 'Hörner', value: 'Schildhörner plus Nasenhorn', description: 'Neben den gebogenen Schildstacheln hatte er ein Nasenhorn und kleine Brauenhörner.' },
   ],
+  relatedDinosaurs: [
+    { id: 'styracosaurus', relationship: 'Späterer centrosauriner Verwandter' },
+    { id: 'triceratops', relationship: 'Späterer Ceratopsier-Verwandter' },
+    { id: 'protoceratops', relationship: 'Ursprünglicher Ceratopsier-Verwandter' },
+  ],
+  discoveries: [
+    { year: 2002, location: 'Wahweap-Formation, Garfield County, Utah, USA', discoveredBy: 'James Kirkland und Donald DeBlieux', note: 'Teilschädel vom Team des Utah Museum of Natural History geborgen; 2010 von Kirkland und DeBlieux formal beschrieben.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Garfield County, Utah (Wahweap-Formation)', coordinates: [37.5, -111.5], specimenName: 'UMNH VP 16699 — Holotyp, Teilschädel' },
+  ],
 }

@@ -14,5 +14,17 @@ const translations = {
     { label: '大脑', value: '核桃大小', description: '拥有所有恐龙中最小的大脑与身体比例之一。' },
     { label: '第二大脑', value: '纯属传说！', description: '科学家曾认为它臀部有第二大脑——实际上那只是一个糖原体。' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: '捕食者' },
+    { id: 'diplodocus', relationship: '同时代的恐龙' },
+  ],
+  discoveries: [
+    { discoveredBy: '奥塞内尔·查尔斯·马什', note: '首批剑龙化石根据莫里逊组标本描述。' },
+    { discoveredBy: '鲍勃·西蒙', note: '"苏菲"——迄今发现的最完整的剑龙骨骼。' },
+  ],
+  fossilLocations: [
+    { region: '科罗拉多州', specimenName: '莫里逊组' },
+    { region: '怀俄明州' },
+  ],
 }
 export default translations

@@ -14,4 +14,13 @@ export default {
     { label: 'Nez', value: 'Voies respiratoires complexes', description: 'Un labyrinthe de passages nasaux — peut-être pour refroidir le cerveau ou produire des sons.' },
     { label: 'Blindage', value: 'Sans faille', description: 'Des plaques osseuses couvraient presque toute la surface du corps dans un bouclier sans faille.' },
   ],
+  relatedDinosaurs: [
+    { id: 'ankylosaurus', relationship: 'Proche parent' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Lawrence Lambe', note: 'Premier spécimen décrit du Belly River Group.' },
+  ],
+  fossilLocations: [
+    { region: 'Alberta', specimenName: 'Formation de Dinosaur Park' },
+  ],
 }

@@ -14,4 +14,15 @@ export default {
     { label: 'Cambio', value: 'Ontogenico', description: 'La cresta cambiaba de forma al crecer' },
     { label: 'Tamaño', value: '9 m', description: 'Un lambeosaurino de buen tamaño' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: 'Pariente cercano' },
+    { id: 'corythosaurus', relationship: 'Pariente cercano' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Lawrence Lambe', note: 'Primer especimen descubierto.' },
+    { discoveredBy: 'William Parks', note: 'Esqueleto completo con cresta fue nombrado.' },
+  ],
+  fossilLocations: [
+    { region: 'Alberta, Canada', specimenName: 'Formacion Dinosaur Park' },
+  ],
 }

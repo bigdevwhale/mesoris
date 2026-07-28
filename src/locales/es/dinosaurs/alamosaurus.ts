@@ -14,4 +14,17 @@ export default {
     { label: 'Estatus', value: 'Ultimo', description: 'De los ultimos sauropodos' },
     { label: 'Importancia', value: 'Unico', description: 'Unico titanosaurio norteamericano' },
   ],
+  relatedDinosaurs: [
+    { id: 'argentinosaurus', relationship: 'Titanosaurio pariente sudamericano' },
+    { id: 'sauroposeidon', relationship: 'Sauropodo gigante norteamericano anterior' },
+    { id: 'diplodocus', relationship: 'Sauropodo norteamericano anterior (familia diferente)' },
+  ],
+  discoveries: [
+    { year: 1921, location: 'Condado de San Juan, Nuevo México, EE. UU.', discoveredBy: 'Charles W. Gilmore', note: 'El material inicial fue recolectado y descrito por Gilmore en 1922 en Nuevo México; posteriormente se hallaron especímenes mucho mayores en Texas.' },
+    { year: 2003, location: 'Parque Nacional Big Bend, Texas, EE. UU.', discoveredBy: 'Thomas Lehman y Kenneth Carpenter', note: 'Enormes vértebras y huesos de extremidades de Texas revisaron al alza las estimaciones de tamaño, sugiriendo que Alamosaurus rivalizaba con los mayores titanosaurios sudamericanos.' },
+  ],
+  fossilLocations: [
+    { country: 'EE. UU.', region: 'Condado de San Juan, Nuevo México (Formación Ojo Alamo)', coordinates: [36.5, -108.2], specimenName: 'USNM 10487 — vértebras y miembro anterior holotipo' },
+    { country: 'EE. UU.', region: 'Condado de Brewster, Texas, Big Bend (Formación Javelina)', coordinates: [29.3, -103.2], specimenName: 'Enormes especímenes de Texas que indican tamaño máximo' },
+  ],
 }

@@ -14,4 +14,13 @@ export default {
     { label: 'Tamaño', value: '9 m', description: 'Un hadrosaurio de tamaño medio' },
     { label: 'Dieta', value: 'Herbivoro', description: 'Helechos, coniferas y plantas con flores' },
   ],
+  relatedDinosaurs: [
+    { id: 'edmontosaurus', relationship: 'Pariente cercano' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Jack Horner', note: 'La colonia de anidación «Egg Mountain» — revolucionó las perspectivas sobre el comportamiento de los dinosaurios.' },
+  ],
+  fossilLocations: [
+    { region: 'Montana', specimenName: 'Egg Mountain, Formación Two Medicine' },
+  ],
 }

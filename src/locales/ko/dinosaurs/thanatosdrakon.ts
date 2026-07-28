@@ -14,4 +14,14 @@ export default {
     { label: '분류', value: '아즈다르코과', description: '아즈다르코과에 속하며, 케찰코아틀루스와 하체고프테릭스를 포함하는 긴 목의 긴 부리 익룡 무리예요.' },
     { label: '시대', value: '중기 백악기', description: '유명한 케찰코아틀루스보다 약 2천만 년 빨리 살았으며, 아즈다르코과 진화의 빈틈을 메워줘요.' },
   ],
+  relatedDinosaurs: [
+    { id: 'quetzalcoatlus', relationship: '거대한 아즈다르키과 근연종' },
+    { id: 'pteranodon', relationship: '더 작은 익룡 근연종' },
+  ],
+  discoveries: [
+    { discoveredBy: '레오나르도 오르티스 데이비드와 탐사팀', note: '연결된 부분 골격과 참조 표본이 기재·명명되었다.' },
+  ],
+  fossilLocations: [
+    { region: '아르헨티나 멘도사주 플로티에층', specimenName: 'UNCUYO-LD 307 — 모식표본, 부분 골격' },
+  ],
 }

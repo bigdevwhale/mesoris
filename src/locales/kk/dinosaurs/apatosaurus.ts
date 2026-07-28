@@ -14,4 +14,17 @@ export default {
     { label: 'Бойы', value: 'Тез өскен', description: 'Шамамен 10 жыл ішінде ол 5 келілік шақалақтан салмағы 20 тоннаға жуық алып балаға айналды.' },
     { label: 'Құйрығы', value: 'Thunder Whip', description: 'Құйрықтың ұшы дыбыс тосқауылын бұзып, байланыс үшін саңырау бум тудыруы мүмкін.' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: 'Жақын туыс' },
+    { id: 'allosaurus', relationship: 'Жыртқыш' },
+    { id: 'brachiosaurus', relationship: 'Заманауи түр' },
+  ],
+  discoveries: [
+    { year: 1877, location: 'Колорадо, АҚШ', discoveredBy: 'Осниэль Чарльз Марш', note: 'Сүйек соғыстары кезінде алғаш рет сипатталған.' },
+    { year: 1895, location: 'Вайоминг, АҚШ', discoveredBy: 'AMNH экспедициясы', note: 'Ең толық дарақ.' },
+  ],
+  fossilLocations: [
+    { country: 'АҚШ', region: 'Вайоминг', coordinates: [43.0, -107.5], specimenName: 'Моррисон формациясы' },
+    { country: 'АҚШ', region: 'Колорадо', coordinates: [39.5, -105.0] },
+  ],
 }

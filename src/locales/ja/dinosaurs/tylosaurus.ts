@@ -14,4 +14,14 @@ export default {
     { label: '支配力', value: '頂点捕食者', description: '西部内陸海路の誰もが認める頂点捕食者で、これを狩るものは何もいませんでした。' },
     { label: '体長', value: '約14 m', description: '最大級のモササウルス類の一つで、体重は10トンに達しました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'mosasaurus', relationship: '近縁種' },
+    { id: 'plesiosaurus', relationship: '獲物' },
+  ],
+  discoveries: [
+    { discoveredBy: 'オスニエル・チャールズ・マーシュ', note: 'カンザスの白亜層から「骨戦争」の時代に初めて記載された。' },
+  ],
+  fossilLocations: [
+    { region: 'カンザス州', specimenName: 'ナイオブララ・チョーク、スモーキーヒル' },
+  ],
 }

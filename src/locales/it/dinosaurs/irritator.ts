@@ -14,4 +14,15 @@ export default {
     { label: 'Spinosauride', value: 'Spinosauride brasiliano', description: 'Uno spinosauride — strettamente imparentato con Spinosaurus — prova dell\'ampia distribuzione gondwaniana del gruppo.' },
     { label: 'Pasto di pterosauro', value: 'Mangiava anche pterosauri', description: 'Un dente di pterosauro in una vertebra — una delle rare interazioni predatore-pterosauro conosciute.' },
   ],
+  relatedDinosaurs: [
+    { id: 'spinosaurus', relationship: 'Stretto parente spinosaurino' },
+    { id: 'baryonyx', relationship: 'Stretto parente spinosauride' },
+    { id: 'suchomimus', relationship: 'Parente spinosauride africano' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Commercianti (esatto scopritore sconosciuto)', note: 'Cranio acquistato dai commercianti e modificato; acquisito dallo Staatliches Museum für Naturkunde Stuttgart; descritto da Martill, Cruickshank, Frey e altri nel 1996.' },
+  ],
+  fossilLocations: [
+    { region: 'Ceará, Formazione Santana (membro Romualdo)', specimenName: 'SMNS 58022 — olotipo, cranio quasi completo' },
+  ],
 }

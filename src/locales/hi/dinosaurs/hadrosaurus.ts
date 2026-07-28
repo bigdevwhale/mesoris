@@ -14,4 +14,15 @@ export default {
     { label: 'चोंच', value: 'बत्तख-जैसी चोंच', icon: 'bird', description: 'सामने चौड़ी, दाँत रहित बत्तख-जैसी चोंच, गालों में जटिल दंत बैटरी — कुशल चबाना।' },
     { label: 'परिवार', value: 'बत्तख-चोंच उत्पत्ति', icon: 'leaf', description: 'इसने हैड्रोसॉरिडी — बत्तख-चोंच वाले डायनासोरों के परिवार — जिसमें एडमॉन्टोसॉरस और पैरासॉरोलोफस शामिल हैं, को इसका नाम दिया।' },
   ],
+  relatedDinosaurs: [
+    { id: 'edmontosaurus', relationship: 'बाद के हैड्रोसॉरिड संबंधी' },
+    { id: 'parasaurolophus', relationship: 'कलंकदार हैड्रोसॉरिड चचेरा भाई' },
+    { id: 'iguanodon', relationship: 'पूर्ववर्ती ऑर्निथोपॉड पूर्वज' },
+  ],
+  discoveries: [
+    { discoveredBy: 'विलियम पार्कर फ़ुल्के (William Parker Foulke)', note: 'मार्ल गड्ढे की खुदाई के दौरान लगभग पूर्ण कंकाल प्राप्त हुआ। जोसेफ़ लीडी (Joseph Leidy) द्वारा नामित।' },
+  ],
+  fossilLocations: [
+    { region: 'हैडनफ़ील्ड, न्यू जर्सी', specimenName: 'ANSP 10005 — होलोटाइप कंकाल' },
+  ],
 }

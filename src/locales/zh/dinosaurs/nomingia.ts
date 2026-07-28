@@ -14,4 +14,15 @@
     { label: '智力', value: '聪明的偷蛋龙类', description: '相对较大的大脑和复杂的社会行为。' },
     { label: '产地', value: '蒙古戈壁', description: '耐梅盖特组——世界上最丰富的恐龙遗址之一。' },
   ],
+  relatedDinosaurs: [
+    { id: 'oviraptor', relationship: '近亲偷蛋龙类' },
+    { id: 'velociraptor', relationship: '手盗龙类兽脚亚目近亲' },
+    { id: 'troodon', relationship: '小型同时代兽脚类' },
+  ],
+  discoveries: [
+    { discoveredBy: '里钦·巴尔斯博尔德及同事', note: '2000年由巴尔斯博尔德等人描述；尾综骨立即成为恐龙到鸟类进化故事中的重要证据。' },
+  ],
+  fossilLocations: [
+    { region: '南戈壁省，耐梅盖特组，蒙古', specimenName: 'GIN 100/119 — 含尾综骨的正模标本部分骨架' },
+  ],
 }

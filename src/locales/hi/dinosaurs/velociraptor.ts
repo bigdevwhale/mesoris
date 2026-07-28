@@ -14,4 +14,17 @@ export default {
     { label: 'आकार', value: 'मुर्गी के आकार का', icon: 'ruler', description: 'फ़िल्मों से बहुत छोटा — एक बड़ी मुर्गी या छोटे कुत्ते के आकार का।' },
     { label: 'शिकार', value: 'झुंड परभक्षी', icon: 'users', description: 'प्रमाण बताते हैं कि वे समूहों में शिकार करते थे, अपने से बहुत बड़े शिकार को गिराते हुए।' },
   ],
+  relatedDinosaurs: [
+    { id: 'deinonychus', relationship: 'नज़दीकी रिश्तेदार' },
+    { id: 'protoceratops', relationship: 'शिकार' },
+    { id: 'oviraptor', relationship: 'प्रतिद्वंद्वी' },
+  ],
+  discoveries: [
+    { discoveredBy: 'रॉय चैपमैन एंड्रयूज', note: 'प्रसिद्ध AMNH अभियान के दौरान पहला नमूना खोजा गया।' },
+    { discoveredBy: 'पोलिश-मंगोल अभियान', note: '«लड़ते डायनासोर» — प्रोटोसेराटॉप्स से लड़ते हुए एक वेलोसिरैप्टर।' },
+  ],
+  fossilLocations: [
+    { region: 'गोबी रेगिस्तान', specimenName: 'जादोचता शैलसमूह' },
+    { region: 'आंतरिक मंगोलिया', specimenName: '' },
+  ],
 }

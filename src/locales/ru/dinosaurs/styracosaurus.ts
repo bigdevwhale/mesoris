@@ -12,4 +12,14 @@ export default {
       { label: 'Шипы', value: '6 гигантских шипов', description: 'Шесть огромных шипов расходились по краю воротника, создавая один из самых впечатляющих силуэтов среди цератопсов.' },
       { label: 'Отверстия воротника', value: 'Фенестры', description: 'Большие отверстия в воротнике облегчали его, сохраняя при этом внушительный и грозный вид.' },
     ],
+    relatedDinosaurs: [
+      { id: 'triceratops', relationship: 'Родственник' },
+      { id: 'pachyrhinosaurus', relationship: 'Близкий родственник' },
+    ],
+    discoveries: [
+      { discoveredBy: 'Чарльз М. Стернберг', note: 'Найден первый череп.' },
+    ],
+    fossilLocations: [
+      { region: 'Альберта', specimenName: 'Формация Дайносaur-Парк' },
+    ],
   }

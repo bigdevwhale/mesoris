@@ -13,4 +13,15 @@ export default {
       { label: 'Яйца', value: 'Первые яйца динозавров', description: 'Первые обнаруженные яйца динозавров принадлежали именно протоцератопсу.' },
       { label: 'Воротник', value: 'Небольшой, но нарядный', description: 'По сравнению с трицератопсом его воротник был скромнее, но сильно различался у разных особей.' },
     ],
-  }
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'Хищник' },
+    { id: 'triceratops', relationship: 'Дальний родственник' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Рой Чепмен Эндрюс', note: 'Первый Protoceratops и первые яйца динозавров обнаружены одновременно.' },
+    { discoveredBy: 'Польско-монгольская экспедиция', note: '«Сражающиеся динозавры» — Protoceratops против Velociraptor.' },
+  ],
+  fossilLocations: [
+    { region: 'Пустыня Гоби', specimenName: 'Формация Джадохта' },
+  ],
+}

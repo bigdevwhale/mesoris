@@ -14,4 +14,17 @@ export default {
     { label: 'Жүрегі', value: 'Алып сорғы', description: 'Тоғыз метрлік мойын бойымен қанды миға дейін көтеру үшін оған ерекше қуатты жүрек қажет болды.' },
     { label: 'Қоректенуі', value: 'күніне 1 тонна', description: 'Күн сайын 1000 килограмм шамасында өсімдік — жапырақтарды, қырықжапырақтарды және қылқан жапырақты ағаш бұтақтарын жейтін.' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: 'Заманауи түр' },
+    { id: 'allosaurus', relationship: 'Жыртқыш қаупі' },
+    { id: 'apatosaurus', relationship: 'Заманауи түр' },
+  ],
+  discoveries: [
+    { year: 1900, location: 'Колорадо, АҚШ', discoveredBy: 'Элмер Риггс', note: 'Моррисон формациясынан алғашқы брахиозавр қазбалары табылды.' },
+    { year: 1909, location: 'Танзания, Африка', discoveredBy: 'Вернер Янеш', note: 'Тендагурудағы ауқымды экспедиция іс жүзінде толық қаңқаларды тапты.' },
+  ],
+  fossilLocations: [
+    { country: 'АҚШ', region: 'Колорадо', coordinates: [39.5, -105.0], specimenName: 'Моррисон формациясы' },
+    { country: 'Танзания', region: 'Тендагуру', coordinates: [-10.5, 39.5] },
+  ],
 }

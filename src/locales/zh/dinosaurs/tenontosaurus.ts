@@ -14,5 +14,17 @@ const translations = {
     { label: '体型', value: '中等植食动物', description: '8米长，1吨重——对大多数小型捕食者来说太大，但对于群体狩猎的恐爪龙而言是猎物。' },
     { label: '丰富性', value: '常见化石', description: '阿普第期-阿尔布期北美洲最常发现的恐龙之一。' },
   ],
+  relatedDinosaurs: [
+    { id: 'deinonychus', relationship: '主要捕食者（由脱落的牙齿证明）' },
+    { id: 'iguanodon', relationship: '更大的禽龙类近亲' },
+    { id: 'camptosaurus', relationship: '更早期的鸟脚类近亲' },
+  ],
+  discoveries: [
+    { discoveredBy: '约翰·H·奥斯特罗姆', note: '1970年奥斯特罗姆依据克罗弗利组的材料描述了Tenontosaurus；同一次考察还出土了如今著名的恐爪龙标本。' },
+  ],
+  fossilLocations: [
+    { region: '美国蒙大拿州惠特兰县（克罗弗利组）', specimenName: 'AMNH 3040 — 正模标本骨骼' },
+    { region: '美国俄克拉荷马州卡特县（安特尔斯组）', specimenName: '俄克拉荷马归入标本' },
+  ],
 }
 export default translations

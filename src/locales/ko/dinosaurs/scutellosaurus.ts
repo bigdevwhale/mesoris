@@ -14,4 +14,15 @@ export default {
     { label: '꼬리', value: '매우 긴 꼬리', description: '전체 길이의 절반 가까이를 차지하는 불균형하게 긴 꼬리가 장갑 몸통 무게의 균형을 잡았다.' },
     { label: '발견지', value: '카이엔타 층', description: '애리조나 주의 카이엔타 층(쥐라기 전기 사막 환경)에서 딜로포사우루스와 같은 생태계에서 발견.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: '훨씬 후대의 티레오포라 후손' },
+    { id: 'ankylosaurus', relationship: '훨씬 후대의 티레오포라 후손' },
+    { id: 'scelidosaurus', relationship: '가까운 근연 초기 티레오포라류' },
+  ],
+  discoveries: [
+    { discoveredBy: '에드윈 H. 콜버트', note: '1981년 콜버트가 카엔타층에서 기재; 가장 오래된 알려진 티레오포라류로서 가치가 있다.' },
+  ],
+  fossilLocations: [
+    { region: '애리조나주 코코니노 카운티(카엔타층)', specimenName: 'UCMP 129015 — 모식표본, 부분 골격' },
+  ],
 }

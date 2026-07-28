@@ -14,4 +14,17 @@ export default {
     { label: 'Dientes', value: 'Pico cortahojas', description: 'Su pico y dientes laterales estaban adaptados para cortar y procesar vegetación baja en llanuras aluviales boscosas.' },
     { label: 'Distribución', value: 'Dos continentes', description: 'Fósiles de América del Norte y África oriental muestran que los dryosáuridos estaban muy extendidos en los ecosistemas del Jurásico Tardío.' },
   ],
+  relatedDinosaurs: [
+    { id: 'camptosaurus', relationship: 'Ornitópodo de mayor tamaño de hábitats similares' },
+    { id: 'iguanodon', relationship: 'Linaje de ornitópodos posterior y más derivado' },
+    { id: 'allosaurus', relationship: 'Gran depredador contemporáneo' },
+  ],
+  discoveries: [
+    { year: 1878, location: 'Formación Morrison, Wyoming, EE. UU.', discoveredBy: 'O.C. Marsh', note: 'Marsh nombró a Dryosaurus a partir de restos de ornitópodos de complexión ligera.' },
+    { year: 1910, location: 'Tendaguru, Tanzania', discoveredBy: 'Expedición alemana de Tendaguru', note: 'Los fósiles de dryosáuridos de África oriental ampliaron la comprensión de la distribución global del grupo.' },
+  ],
+  fossilLocations: [
+    { country: 'EE. UU.', region: 'Como Bluff, Wyoming (Formación Morrison)', coordinates: [41.8, -106.0], specimenName: 'Material de Dryosaurus altus' },
+    { country: 'Tanzania', region: 'Formación Tendaguru', coordinates: [-10.2, 39.4], specimenName: 'Restos referidos de dryosáuridos' },
+  ],
 }

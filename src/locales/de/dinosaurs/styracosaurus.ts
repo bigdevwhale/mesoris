@@ -14,4 +14,14 @@ export default {
     { label: 'Größe', value: '5,5 m', description: 'Ein mittelgroßer Ceratopsier' },
     { label: 'Zeitalter', value: '76–75 Mio. Jahre', description: 'Späte Kreidezeit von Alberta' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: 'Verwandter' },
+    { id: 'pachyrhinosaurus', relationship: 'Enger Verwandter' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Charles M. Sternberg', note: 'Erster Schädel entdeckt.' },
+  ],
+  fossilLocations: [
+    { region: 'Alberta', specimenName: 'Dinosaur Park Formation' },
+  ],
 }

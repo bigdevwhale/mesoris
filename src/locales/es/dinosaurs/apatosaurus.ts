@@ -14,4 +14,17 @@ export default {
     { label: 'Esperanza de Vida', value: '100+ anos', description: 'Posiblemente uno de los dinosaurios mas longevos' },
     { label: 'Confusion Historica', value: 'Brontosaurio', description: 'Popularmente llamado Brontosaurio durante un siglo' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: 'Pariente cercano' },
+    { id: 'allosaurus', relationship: 'Depredador' },
+    { id: 'brachiosaurus', relationship: 'Contemporáneo' },
+  ],
+  discoveries: [
+    { year: 1877, location: 'Colorado, EE. UU.', discoveredBy: 'Othniel Charles Marsh', note: 'Descrito por primera vez durante las Guerras de los Huesos.' },
+    { year: 1895, location: 'Wyoming, EE. UU.', discoveredBy: 'Expedición del AMNH', note: 'Espécimen más completo.' },
+  ],
+  fossilLocations: [
+    { country: 'EE. UU.', region: 'Wyoming', coordinates: [43.0, -107.5], specimenName: 'Formación Morrison' },
+    { country: 'EE. UU.', region: 'Colorado', coordinates: [39.5, -105.0] },
+  ],
 }

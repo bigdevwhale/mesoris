@@ -14,4 +14,17 @@ export default {
     { label: 'Herde', value: 'Soziale Herden', description: 'Mehrere zusammen gefundene Exemplare und Spuren deuten auf große Wanderherden hin.' },
     { label: 'Zähne', value: 'Zahnbatterie', description: 'Hunderte selbst-erneuernder Mahlzähne zur effizienten Verarbeitung zäher Pflanzenkost.' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: 'Hadrosaurier-Verwandter — konvergente Kammentwicklung' },
+    { id: 'edmontosaurus', relationship: 'Enger Saurolophine-Verwandter' },
+    { id: 'corythosaurus', relationship: 'Gekämmter Lambeosaurine-Hadrosaurier' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Barnum Brown', note: 'S. osborni 1912 von Brown aus Albertamaterial beschrieben, das für das American Museum of Natural History gesammelt wurde.' },
+    { discoveredBy: 'Sowjetisch-Mongolische Expeditionen', note: 'Die asiatische Art S. angustirostris aus der Nemegt-Formation beschrieben; größer als die nordamerikanische Art.' },
+  ],
+  fossilLocations: [
+    { region: 'Alberta (Horseshoe-Canyon-Formation)', specimenName: 'AMNH 5220 — Holotypus, vollständiger Schädel und Skelett' },
+    { region: 'Ömnögovi-Provinz (Nemegt-Formation)', specimenName: 'S. angustirostris — große asiatische Exemplare' },
+  ],
 }

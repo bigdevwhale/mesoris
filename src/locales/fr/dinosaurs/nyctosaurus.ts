@@ -14,4 +14,15 @@ export default {
     { label: 'Ailes', value: 'Étroites et longues', description: 'Des ailes longues et étroites, adaptées au vol dynamique au-dessus de la Voie maritime intérieure occidentale — comme un albatros crétacé.' },
     { label: 'Vol', value: 'Pêcheur aérien', description: 'Planait au-dessus de la mer crétacée et plongeait son bec édenté pour gober les poissons.' },
   ],
+  relatedDinosaurs: [
+    { id: 'pteranodon', relationship: 'Parent pteranodontidé contemporain' },
+    { id: 'dimorphodon', relationship: 'Ptérosaure basal antérieur' },
+    { id: 'quetzalcoatlus', relationship: 'Parent azhdarchidé éloigné' },
+  ],
+  discoveries: [
+    { year: 1876, location: 'Craie de Niobrara, Kansas, USA', discoveredBy: 'O.C. Marsh', note: 'Premier Nyctosaurus décrit à partir des dépôts de craie du Kansas.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Craie de Niobrara, Kansas', coordinates: [38.7, -98.5], specimenName: 'Matériel type de la Craie de Niobrara' },
+  ],
 }

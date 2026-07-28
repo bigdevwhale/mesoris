@@ -14,4 +14,15 @@ export default {
     { label: '歯', value: '刃状', description: '独特の反り返った刃状の鋸歯を持ち、巨大な首長竜から肉をそぎ落とすのに適していました。' },
     { label: '分布', value: 'パタゴニア', description: 'アルゼンチン・チュブト州のセロ・バルチノ累層で発見されました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'giganotosaurus', relationship: 'カルカロドントサウルス科の近縁種' },
+    { id: 'carcharodontosaurus', relationship: 'アフリカのカルカロドントサウルス科の近縁種' },
+    { id: 'concavenator', relationship: '基盤的カルカロドントサウルス科の近縁種' },
+  ],
+  discoveries: [
+    { discoveredBy: 'フェルナンド・ノバスとチーム', note: '部分的な後頭蓋骨格が記載され、Tyrannotitan chubutensis と命名された。' },
+  ],
+  fossilLocations: [
+    { region: 'セロ・バルチノ累層、チュブト', specimenName: 'MPEF-PV 1156 — ホロタイプ部分骨格' },
+  ],
 }

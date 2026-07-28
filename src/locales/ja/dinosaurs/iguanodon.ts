@@ -14,4 +14,16 @@
     { label: '姿勢', value: '修正された認識', description: '当初は四足歩行のトカゲとして描かれました — 現在では主に二足歩行だったことがわかっています。' },
     { label: '食性', value: '多才な植物食', description: '食べ物を咀嚼できました — 固い植物を処理するための革命的な適応です。' },
   ],
+  relatedDinosaurs: [
+    { id: 'megalosaurus', relationship: '最初に発見された恐竜たち' },
+    { id: 'maiasaura', relationship: '関連する系統' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ギデオン・マンテル / メアリー・アン・マンテル (Gideon Mantell / Mary Ann Mantell)', note: '最初の歯が発見され、当時は巨大なイグアナのものと考えられた。' },
+    { discoveredBy: '炭鉱労働者たち', note: '322mの深さの炭鉱から38体の完全な骨格が発見された — 前例のない発見。' },
+  ],
+  fossilLocations: [
+    { region: 'ベルニサール', specimenName: 'サント＝バルブ炭鉱' },
+    { region: 'サセックス', specimenName: '—' },
+  ],
 }

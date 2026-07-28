@@ -14,4 +14,15 @@ export default {
     { label: 'Epoca', value: 'Cretaceo superiore', description: '~70 milioni di anni fa.' },
     { label: 'Sito', value: 'Shandong, Cina', description: 'Est della Cina.' },
   ],
+  relatedDinosaurs: [
+    { id: 'edmontosaurus', relationship: 'Parente saurolofino stretto dal Nord America' },
+    { id: 'parasaurolophus', relationship: 'Parente adrosauride' },
+    { id: 'tarbosaurus', relationship: 'Predatore asiatico contemporaneo' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Hu Chengzhi e colleghi', note: 'Estesi scavi nello Shandong dagli anni \'60 fruttarono enormi quantità di materiale di adrosauri; Hu descrisse formalmente Shantungosaurus giganteus nel 1973.' },
+  ],
+  fossilLocations: [
+    { region: 'Zhucheng, provincia dello Shandong (Gruppo Wangshi)', specimenName: 'IVPP V2659 — olotipo e scheletro montato composito' },
+  ],
 }

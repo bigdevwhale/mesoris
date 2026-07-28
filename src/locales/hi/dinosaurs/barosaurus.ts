@@ -14,4 +14,17 @@ export default {
     { label: 'पूँछ', value: 'चाबुक जैसी', icon: 'zap', description: 'लंबी, पतली, चाबुक जैसी पूँछ जो शायद रक्षा और संभवतः सुपरसोनिक ध्वनि उत्पादन के लिए उपयोग की जाती थी।' },
     { label: 'विस्तार', value: 'दो महाद्वीप', icon: 'map-pin', description: 'उत्तरी अमेरिका के मॉरिसन शैलसमूह और तंज़ानिया के टेंडागुरु शैलसमूह में पाया गया।' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: 'निकटतम डिप्लोडोकिड़ संबंधी' },
+    { id: 'apatosaurus', relationship: 'निकटतम डिप्लोडोकिड़ संबंधी' },
+    { id: 'brontosaurus', relationship: 'डिप्लोडोकिड़ संबंधी' },
+  ],
+  discoveries: [
+    { year: 1889, location: 'कोमो ब्लफ़, वायोमिंग, अमेरिका', discoveredBy: 'O.C. मार्श', note: 'हड्डियों की लड़ाई (Bone Wars) के दौरान मार्श की टीमों द्वारा आंशिक कंकाल खोजा गया।' },
+    { year: 1907, location: 'टेंडागुरु, तंज़ानिया', discoveredBy: 'जर्मन टेंडागुरु अभियान', note: 'पूर्वी अफ्रीका के डिप्लोडोकिड़ सामग्री को बाद में बारोसॉरस से जोड़ा गया।' },
+  ],
+  fossilLocations: [
+    { country: 'अमेरिका', region: 'कोमो ब्लफ़, वायोमिंग (मॉरिसन शैलसमूह)', coordinates: [41.8, -106.0], specimenName: 'YPM 429 — होलोटाइप आंशिक कंकाल' },
+    { country: 'तंज़ानिया', region: 'टेंडागुरु शैलसमूह', coordinates: [-10.2, 39.4], specimenName: 'टेंडागुरु डिप्लोडोकिड़ सामग्री' },
+  ],
 }

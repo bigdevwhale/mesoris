@@ -14,5 +14,15 @@ const translations = {
     { label: '食性', value: '超级肉食性', description: '什么都吃：鲨鱼、鸟类、蛇颈龙和其他沧龙。' },
     { label: '分类', value: '沧龙', description: '白垩纪的一种巨型海生爬行动物，不是恐龙。' },
   ],
+  relatedDinosaurs: [
+    { id: 'mosasaurus', relationship: '近亲' },
+    { id: 'plesiosaurus', relationship: '猎物' },
+  ],
+  discoveries: [
+    { discoveredBy: '奥塞内尔·查尔斯·马什', note: '在"化石大战"期间首次根据堪萨斯州的白垩层描述。' },
+  ],
+  fossilLocations: [
+    { region: '堪萨斯州', specimenName: '尼奥布拉拉白垩, 烟山组' },
+  ],
 }
 export default translations

@@ -14,4 +14,20 @@ export default {
     { label: 'Morsure', value: 'Brise-os', description: 'Malgré sa petite taille, il possédait la morsure puissante et brise-os typique des tyrannosauridés.' },
     { label: 'Vitesse', value: '40+ km/h', description: 'Ses longues pattes fines en faisaient un prédateur agile et rapide — plus véloce que son énorme cousin T. rex.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Synonyme contesté / proche parent' },
+    { id: 'albertosaurus', relationship: 'Cousin tyrannosauridé' },
+    { id: 'daspletosaurus', relationship: 'Cousin tyrannosauridé' },
+    { id: 'gorgosaurus', relationship: 'Cousin tyrannosauridé' },
+    { id: 'triceratops', relationship: 'Proie possible' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Expédition du Musée de Cleveland', note: 'Premier crâne découvert dans la formation de Hell Creek, d\'abord considéré comme un taxon de type Gorgosaurus.' },
+    { discoveredBy: 'Robert Bakker, Philip Currie et Michael Williams', note: 'Renommé Nanotyrannus après une réanalyse du crâne du Musée de Cleveland.' },
+    { discoveredBy: 'Chasseurs de fossiles commerciaux', note: 'Le célèbre spécimen « Dueling Dinosaurs », enlisé dans un combat avec un Triceratops.' },
+  ],
+  fossilLocations: [
+    { region: 'Montana', specimenName: 'Formation de Hell Creek' },
+    { region: 'Wyoming', specimenName: 'Formation de Lance' },
+  ],
 }

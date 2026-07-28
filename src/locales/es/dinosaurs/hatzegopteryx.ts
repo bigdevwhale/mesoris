@@ -14,4 +14,15 @@ export default {
     { label: 'Cuello', value: 'Compacto', description: 'Un cuello relativamente corto y masivamente construido para un azdárquido, adaptado para abordar presas grandes.' },
     { label: 'Ecología', value: 'Cima de la Isla de Hațeg', description: 'El superpredador de la Isla de Hațeg (Rumanía), que cazaba dinosaurios que vivían junto a él, incluidos pequeños titanosaurios.' },
   ],
+  relatedDinosaurs: [
+    { id: 'quetzalcoatlus', relationship: 'Pariente azdárquido gigante' },
+    { id: 'thanatosdrakon', relationship: 'Pariente azdárquido gigante' },
+    { id: 'pteranodon', relationship: 'Pariente pterosaurio menor' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Dan Grigorescu y equipo', note: 'Fragmentos de cráneo, húmero y otro material descritos y nombrados por primera vez.' },
+  ],
+  fossilLocations: [
+    { region: 'Formación Densuș-Ciula, Cuenca de Hațeg, Transilvania', specimenName: 'BMNH R 3517 / material fragmentario del holotipo' },
+  ],
 }

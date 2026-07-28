@@ -14,4 +14,15 @@
     { label: '牙齿', value: '自磨式', description: '具有单侧珐琅质的脊状颊齿——自我研磨，始终保持剃刀般锋利。' },
     { label: '怀特岛', value: '韦塞克斯组', description: '超过20个个体的产地——暗示群体或社会行为。' },
   ],
+  relatedDinosaurs: [
+    { id: 'iguanodon', relationship: '更大型的同时代鸟脚类近亲' },
+    { id: 'deinonychus', relationship: '同时代的捕食者' },
+  ],
+  discoveries: [
+    { discoveredBy: '威廉·福克斯 (William Fox)', note: '发现最初标本；威廉·福克斯牧师收集了关键材料，该物种以他的名字命名。' },
+    { discoveredBy: 'T. H. 赫胥黎 (T. H. Huxley)', note: '1869年由赫胥黎正式描述；1882年赫胥黎错误地提出其具有树栖习性。' },
+  ],
+  fossilLocations: [
+    { region: '怀特岛，韦塞克斯组（韦尔德群）', specimenName: 'NHMUK PV R192 — 正模标本；含20多个个体的骨层' },
+  ],
 }

@@ -14,4 +14,16 @@ export default {
     { label: 'Giacimento', value: 'Branchi enormi', description: 'Viveva in immensi branchi di migliaia di individui.' },
     { label: 'Dimensioni', value: '8 metri', description: 'Un grande ceratopside di circa 4 tonnellate.' },
   ],
+  relatedDinosaurs: [
+    { id: 'styracosaurus', relationship: 'Parente stretto' },
+    { id: 'triceratops', relationship: 'Parente' },
+  ],
+  discoveries: [
+    { year: 1946, location: 'Alberta, Canada', discoveredBy: 'Charles M. Sternberg', note: 'Primo cranio scoperto.' },
+    { year: 1970, location: 'Alberta, Canada', discoveredBy: 'Al Lakusta', note: 'Giacimento massiccio con centinaia di individui.' },
+  ],
+  fossilLocations: [
+    { country: 'Canada', region: 'Alberta', coordinates: [55.0, -118.0], specimenName: 'Formazione Wapiti' },
+    { country: 'USA', region: 'Alaska', coordinates: [69.0, -151.0], specimenName: 'Formazione Prince Creek' },
+  ],
 }

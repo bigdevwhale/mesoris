@@ -14,4 +14,14 @@ export default {
     { label: 'Mâchoire', value: 'Articulation flexible', description: 'Une articulation coulissante unique de la mâchoire — une innovation précoce pour avaler de grandes proies.' },
     { label: 'Site', value: 'Vallée de la Lune', description: 'Découvert dans la Valle de la Luna en Argentine, l\'un des plus importants sites fossilifères du monde.' },
   ],
+  relatedDinosaurs: [
+    { id: 'eoraptor', relationship: 'Contemporain' },
+    { id: 'coelophysis', relationship: 'Contemporain légèrement postérieur' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Victorino Herrera', note: 'Premier spécimen trouvé par un chevrier local dans la Vallée de la Lune.' },
+  ],
+  fossilLocations: [
+    { region: 'Valle de la Luna, formation d\'Ischigualasto', specimenName: 'Valle de la Luna, formation d\'Ischigualasto' },
+  ],
 }

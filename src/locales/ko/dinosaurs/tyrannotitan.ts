@@ -14,4 +14,15 @@ export default {
     { label: '이빨', value: '칼날 모양', description: '독특하게 뒤로 휘어진 칼날 같은 톱니 이빨은, 거대한 사우로포드 사냥감의 살을 베어내기에 적합했어요.' },
     { label: '분포', value: '파타고니아', description: '아르헨티나 추부트주의 세로 바르시노층에서 발견되었어요.' },
   ],
+  relatedDinosaurs: [
+    { id: 'giganotosaurus', relationship: '카르카로돈토사우루스과 친척' },
+    { id: 'carcharodontosaurus', relationship: '아프리카 카르카로돈토사우루스과 친척' },
+    { id: 'concavenator', relationship: '기초 카르카로돈토사우루스과 친척' },
+  ],
+  discoveries: [
+    { discoveredBy: '페르난도 노바스 및 연구진', note: '부분적 두개후 골격이 기재되어 Tyrannotitan chubutensis로 명명되었다.' },
+  ],
+  fossilLocations: [
+    { region: '세로 바르시노층, 추부트', specimenName: 'MPEF-PV 1156 — 홀로타입 부분 골격' },
+  ],
 }

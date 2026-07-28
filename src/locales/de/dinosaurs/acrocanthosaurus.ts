@@ -14,4 +14,17 @@ export default {
     { label: 'Arme', value: 'Starke Greifer', description: 'Anders als Tyrannosaurier hatte Acrocanthosaurus kräftige dreifingrige Arme, die sich gut zum Ergreifen von Beute eigneten.' },
     { label: 'Spuren', value: 'Riesige Fußabdrücke', description: 'Einige riesige Fährten aus der frühen Kreidezeit könnten von Acrocanthosaurus bei der Jagd auf Sauropoden stammen.' },
   ],
+  relatedDinosaurs: [
+    { id: 'carcharodontosaurus', relationship: 'Naher Verwandter' },
+    { id: 'sauroposeidon', relationship: 'Zeitgenössische Riesenbeute' },
+    { id: 'deinonychus', relationship: 'Kleinerer zeitgenössischer Räuber' },
+  ],
+  discoveries: [
+    { year: 1940, location: 'Oklahoma, USA', discoveredBy: 'J. Willis Stovall und Kollegen', note: 'Wichtige Überreste aus der Antlers-Formation enthüllten einen zuvor unbekannten Riesenräuber.' },
+    { year: 1950, location: 'Oklahoma, USA', discoveredBy: 'J. Willis Stovall und Wann Langston Jr.', note: 'Die formelle Beschreibung stellte Acrocanthosaurus der Wissenschaft vor.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Oklahoma', coordinates: [34.4, -96.0], specimenName: 'Antlers-Formation' },
+    { country: 'USA', region: 'Texas', coordinates: [32.9, -97.4], specimenName: 'Twin-Mountains-Formation' },
+  ],
 }

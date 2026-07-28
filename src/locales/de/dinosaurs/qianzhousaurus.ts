@@ -14,4 +14,15 @@ export default {
     { label: 'Familie', value: 'Alioramini', description: 'Gehört zu einem kleinen Zweit langschnauziger Tyrannosaurier namens Alioramini, getrennt von den riesigen knochenbrechenden Tyrannosaurinae.' },
     { label: 'Entdeckung', value: 'Fund von 2014', description: '2014 aus Ganzhou im Süden Chinas formell beschrieben — eine bemerkenswerte Entdeckung aus der Oberkreide.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tarbosaurus', relationship: 'Asiatischer Tyrannosaurier-Verwandter' },
+    { id: 'albertosaurus', relationship: 'Früherer Tyrannosaurier' },
+    { id: 'tyrannosaurus-rex', relationship: 'Entfernter Vetter' },
+  ],
+  discoveries: [
+    { year: 2010, location: 'Ganzhou, Jiangxi Province, China', discoveredBy: 'Bauarbeiter; später geborgen von Lü Junchang und Team', note: 'Nahezu vollständiger Schädel und Teilskelett — das bisher vollständigste Alioramin-Exemplar.' },
+  ],
+  fossilLocations: [
+    { country: 'China', region: 'Nanxiong-Formation, Ganzhou, Jiangxi', coordinates: [25.85, 114.95], specimenName: 'GMFPI-PV-001 — Holotyp-Schädel und Skelett' },
+  ],
 }

@@ -14,4 +14,16 @@ export default {
     { label: '식성', value: '소동물 전문', description: '도마뱀, 포유류, 공룡의 어린 개체를 재빠른 물기와 붙잡는 손으로 포식했을 것으로 추정됩니다.' },
     { label: '생태계', value: '모리슨의 공동 사냥꾼', description: '코엘루루스는 알로사우루스나 스테고사우루스 같은 거인들과 공존했지만, 훨씬 작은 포식자 니치를 차지했습니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'compsognathus', relationship: '비슷한 소형 수각류의 생태적 지위' },
+    { id: 'ornithomimus', relationship: '수렴적 주행성 형질을 가진 후대의 빠른 코엘루로사우루스' },
+    { id: 'allosaurus', relationship: '같은 지층을 공유한 대형 포식자' },
+  ],
+  discoveries: [
+    { year: 1879, location: '미국 와이오밍주 코모 블러프', discoveredBy: 'O.C. 마시 원정대', note: '모리슨층에서 Coelurus fragilis로 기재된 완모식 표본.' },
+    { year: 1980, location: '모리슨 재평가', discoveredBy: '다수의 수각류 전문가', note: '재분석을 통해 이 분류군이 소형 코엘루로사우루스일 가능성이 분명해졌다.' },
+  ],
+  fossilLocations: [
+    { country: '미국', region: '와이오밍주 코모 블러프 (모리슨층)', coordinates: [41.8, -106.0], specimenName: 'Coelurus fragilis 완모식 표본' },
+  ],
 }

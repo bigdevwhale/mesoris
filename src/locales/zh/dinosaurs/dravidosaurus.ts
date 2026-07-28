@@ -14,4 +14,14 @@
     { label: '印度', value: '冈瓦纳幸存者', description: '发现于白垩纪晚期的印度——当时次大陆是一个漂向亚洲的岛屿。' },
     { label: '争议', value: '激烈辩论', description: '碎片化的材料使得确定性的分类几乎不可能。' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: '可能的剑龙科近亲' },
+    { id: 'kentrosaurus', relationship: '可能的剑龙科近亲' },
+  ],
+  discoveries: [
+    { year: 1979, location: '印度泰米尔纳德邦特里奇诺波利', discoveredBy: 'P. 亚达吉里和 K. 阿耶萨米', note: '1979年由亚达吉里和阿耶萨米描述为剑龙的碎片材料；后来被 Chatterjee 和 Rudra（1991）重新解释为可能的蛇颈龙材料。' },
+  ],
+  fossilLocations: [
+    { country: '印度', region: '泰米尔纳德邦蒂鲁吉拉帕利（特里奇诺波利群）', coordinates: [10.79, 78.7], specimenName: 'GSI SR PAL 1 — 正模标本，碎片化材料' },
+  ],
 }

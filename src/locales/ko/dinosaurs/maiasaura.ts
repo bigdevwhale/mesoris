@@ -14,4 +14,13 @@ export default {
     { label: '새끼', value: '미숙한 새끼', description: '부화한 지 얼마 안 된 새끼는 별로 잘 걷지 못했음 — 부모가 둥지에 먹이를 가져다 줌.' },
     { label: '성장', value: '매우 급속', description: '새끼는 불과 7~8년 만에 40cm에서 성체 크기로 — 믿을 수 없을 만큼 빠름.' },
   ],
+  relatedDinosaurs: [
+    { id: 'edmontosaurus', relationship: '가까운 친척' },
+  ],
+  discoveries: [
+    { discoveredBy: '잭 호너', note: '「에그 마운틴」둥지 군락 — 공룡 행동에 대한 시각을 혁명적으로 바꿨다.' },
+  ],
+  fossilLocations: [
+    { region: '몬태나', specimenName: '에그 마운틴, 투 메디슨층' },
+  ],
 }

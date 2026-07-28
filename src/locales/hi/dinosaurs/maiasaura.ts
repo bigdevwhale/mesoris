@@ -14,4 +14,13 @@ export default {
     { label: 'शिशु', value: 'असहाय बच्चे', icon: 'egg', description: 'शिशु शुरू में ठीक से चल नहीं पाते थे — माता-पिता घोंसले तक भोजन लाते थे।' },
     { label: 'वृद्धि', value: 'तीव्र', icon: 'trending-up', description: 'शिशु केवल 7-8 वर्षों में 40 सेमी से वयस्क आकार तक बढ़ जाते थे — अविश्वसनीय रूप से तेज़।' },
   ],
+  relatedDinosaurs: [
+    { id: 'edmontosaurus', relationship: 'नज़दीकी रिश्तेदार' },
+  ],
+  discoveries: [
+    { discoveredBy: 'जैक होर्नर', note: '«एग माउंटेन» घोंसला कॉलोनी — डायनासोर व्यवहार पर दृष्टिकोण में क्रांति।' },
+  ],
+  fossilLocations: [
+    { region: 'मोंटाना', specimenName: 'एग माउंटेन, टू मेडिसिन शैलसमूह' },
+  ],
 }

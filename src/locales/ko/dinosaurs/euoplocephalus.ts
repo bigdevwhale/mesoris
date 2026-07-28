@@ -14,4 +14,13 @@ export default {
     { label: '코', value: '복잡한 기도', description: '미로 같은 코의 통로 — 아마도 뇌 냉각이나 소리 발생에 사용되었습니다.' },
     { label: '장갑', value: '틈새 없음', description: '뼈 판이 몸의 거의 전면을 덮어, 틈새 없는 방패를 형성했습니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'ankylosaurus', relationship: '근연종' },
+  ],
+  discoveries: [
+    { discoveredBy: '로렌스 램브', note: '벨리 리버 그룹에서 처음 기재된 표본.' },
+  ],
+  fossilLocations: [
+    { region: '앨버타', specimenName: '다이노소어 파크층' },
+  ],
 }

@@ -14,4 +14,14 @@ export default {
     { label: 'Epoca', value: '200 Ma', description: 'Jurasico Temprano' },
     { label: 'Longitud', value: '3,5 m', description: 'Tamaño modesto' },
   ],
+  relatedDinosaurs: [
+    { id: 'elasmosaurus', relationship: 'Descendiente mucho mayor' },
+    { id: 'ichthyosaurus', relationship: 'Contemporaneo' },
+  ],
+  discoveries: [
+    { year: 1823, location: 'Lyme Regis, Reino Unido', discoveredBy: 'Mary Anning', note: 'Primer esqueleto articulado descubierto en la Costa Jurásica — una sensación científica.' },
+  ],
+  fossilLocations: [
+    { country: 'Reino Unido', region: 'Dorset', coordinates: [50.7, -2.9], specimenName: 'Formacion Blue Lias, Costa Jurásica' },
+  ],
 }

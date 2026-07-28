@@ -14,4 +14,17 @@ export default {
     { label: 'Nez', value: 'Au sommet du crâne', description: 'Ses narines se trouvaient sur une crête bombée au sommet du crâne, peut-être pour produire des sons de résonance.' },
     { label: 'Pattes', value: 'Plus longues devant', description: 'Une morphologie rare chez les dinosaures, où les pattes avant étaient plus longues que les pattes arrière.' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: 'Contemporain' },
+    { id: 'allosaurus', relationship: 'Menace de prédateur' },
+    { id: 'apatosaurus', relationship: 'Contemporain' },
+  ],
+  discoveries: [
+    { year: 1900, location: 'Colorado, États-Unis', discoveredBy: 'Elmer Riggs', note: 'Premiers fossiles de Brachiosaurus découverts dans la formation de Morrison.' },
+    { year: 1909, location: 'Tanzanie, Afrique', discoveredBy: 'Werner Janensch', note: 'Une grande expédition a mis au jour des squelettes quasi complets à Tendaguru.' },
+  ],
+  fossilLocations: [
+    { country: 'États-Unis', region: 'Colorado', coordinates: [39.5, -105.0], specimenName: 'Formation de Morrison' },
+    { country: 'Tanzanie', region: 'Tendaguru', coordinates: [-10.5, 39.5] },
+  ],
 }

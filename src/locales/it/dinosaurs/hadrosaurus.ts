@@ -14,4 +14,15 @@ export default {
     { label: 'Becco', value: 'Becco d\'anatra', description: 'Un becco largo, senza denti, simile a quello di un\'anatra, nella parte anteriore, con una complessa batteria dentale nelle guance per masticare in modo efficiente.' },
     { label: 'Famiglia', value: 'Origine dei becchi d\'anatra', description: 'Diede il nome agli Hadrosauridae, la famiglia dei dinosauri a becco d\'anatra che comprende Edmontosaurus e Parasaurolophus.' },
   ],
+  relatedDinosaurs: [
+    { id: 'edmontosaurus', relationship: 'Parente adrosauride successivo' },
+    { id: 'parasaurolophus', relationship: 'Cugino adrosauride dalla cresta' },
+    { id: 'iguanodon', relationship: 'Ornitopode antenato più antico' },
+  ],
+  discoveries: [
+    { discoveredBy: 'William Parker Foulke', note: 'Uno scheletro quasi completo rinvenuto durante lo scavo di una cava di marna. Nominato da Joseph Leidy.' },
+  ],
+  fossilLocations: [
+    { region: 'Haddonfield, New Jersey', specimenName: 'ANSP 10005 — scheletro olotipo' },
+  ],
 }

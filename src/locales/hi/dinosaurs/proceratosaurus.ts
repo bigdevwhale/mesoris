@@ -14,4 +14,15 @@ export default {
     { label: 'उत्पत्ति', value: 'ग्लूस्टरशायर', icon: 'map-pin', description: '1910 में इंग्लैंड के ग्लूस्टरशायर के मिनचिनहैम्प्टन (Minchinhampton) की एक ईंट-भट्टी में पाया गया।' },
     { label: 'परिवार', value: 'प्रारंभिक टायरानोसॉरॉइड', icon: 'star', description: 'प्रोसेरैटोसॉरिडे (Proceratosauridae) से संबंधित — गुआनलोंग और काइलेस्कस (Kileskus) सहित टायरानोसॉरॉइडों का एक आधारभूत परिवार।' },
   ],
+  relatedDinosaurs: [
+    { id: 'guanlong', relationship: 'कटक वाला प्रोसेरैटोसॉरिड चचेरा भाई' },
+    { id: 'dilophosaurus', relationship: 'समकालीन कटक वाला थेरोपॉड' },
+    { id: 'tyrannosaurus-rex', relationship: 'दूरस्थ वंशज' },
+  ],
+  discoveries: [
+    { year: 1910, location: 'Minchinhampton, Gloucestershire, England', discoveredBy: 'F. Lewis Bradley', note: 'ईंट-भट्टी में आंशिक खोपड़ी मिली; आर्थर स्मिथ वुडवर्ड द्वारा वर्णित।' },
+  ],
+  fossilLocations: [
+    { country: 'United Kingdom', region: 'मिनचिनहैम्प्टन, ग्लूस्टरशायर', coordinates: [51.7, -2.2], specimenName: 'NHMUK PV R 4860 — होलोटाइप, आंशिक खोपड़ी' },
+  ],
 }

@@ -14,4 +14,18 @@ export default {
     { label: 'Bec', value: 'Semblable à un perroquet', description: 'Un bec acéré et courbé pour couper les frondes de palmiers coriaces et les cycadophytes.' },
     { label: 'Fossiles', value: 'Des centaines', description: 'L\'un des dinosaures fossiles les plus communs — nous en savons plus sur Tricératops que sur la plupart des autres espèces.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Prédateur' },
+    { id: 'styracosaurus', relationship: 'Parent' },
+    { id: 'pachyrhinosaurus', relationship: 'Parent' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Othniel Charles Marsh', note: 'Initialement identifié à tort comme un bison géant.' },
+    { discoveredBy: 'John Bell Hatcher', note: 'Premier crâne complet découvert et correctement identifié.' },
+  ],
+  fossilLocations: [
+    { region: 'Wyoming', specimenName: '' },
+    { region: 'Montana', specimenName: 'Hell Creek' },
+    { region: 'Colorado', specimenName: '' },
+  ],
 }

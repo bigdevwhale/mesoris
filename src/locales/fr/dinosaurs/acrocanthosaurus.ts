@@ -14,4 +14,17 @@ export default {
     { label: 'Bras', value: 'Solides préhenseurs', description: 'Contrairement aux tyrannosaures, Acrocanthosaurus avait de puissants bras à trois doigts, utiles pour saisir ses proies.' },
     { label: 'Traces', value: 'Empreintes géantes possibles', description: 'Certaines énormes pistes du Crétacé inférieur pourraient avoir été laissées par Acrocanthosaurus traquant des sauropodes.' },
   ],
+  relatedDinosaurs: [
+    { id: 'carcharodontosaurus', relationship: 'Proche parent' },
+    { id: 'sauroposeidon', relationship: 'Proie géante contemporaine' },
+    { id: 'deinonychus', relationship: 'Prédateur contemporain plus petit' },
+  ],
+  discoveries: [
+    { year: 1940, location: 'Oklahoma, États-Unis', discoveredBy: 'J. Willis Stovall et collègues', note: 'Des restes majeurs de la formation d\'Antlers ont révélé un prédateur géant jusqu\'alors inconnu.' },
+    { year: 1950, location: 'Oklahoma, États-Unis', discoveredBy: 'J. Willis Stovall et Wann Langston Jr.', note: 'La description formelle a présenté Acrocanthosaurus à la science.' },
+  ],
+  fossilLocations: [
+    { country: 'États-Unis', region: 'Oklahoma', coordinates: [34.4, -96.0], specimenName: 'Formation d\'Antlers' },
+    { country: 'États-Unis', region: 'Texas', coordinates: [32.9, -97.4], specimenName: 'Formation de Twin Mountains' },
+  ],
 }

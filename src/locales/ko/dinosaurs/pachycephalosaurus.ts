@@ -14,4 +14,15 @@ export default {
     { label: '치아', value: '작고 잎 모양', description: '작은 치아 — 부드러운 식물, 과일, 아마도 곤충을 먹었음.' },
     { label: '몸길이', value: '4.5미터', description: '이족 보행 초식동물, 체중은 말 정도.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: '포식자' },
+    { id: 'triceratops', relationship: '동시대' },
+  ],
+  discoveries: [
+    { year: 1931, location: '와이오밍, 미국', discoveredBy: '찰스 길모어', note: '최초의 머리 돔이 발견되었다.' },
+  ],
+  fossilLocations: [
+    { country: '미국', region: '와이오밍', coordinates: [44.5, -105.0], specimenName: '랜스 층' },
+    { country: '미국', region: '몬태나', coordinates: [47.5, -106.5] },
+  ],
 }

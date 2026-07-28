@@ -14,4 +14,16 @@ export default {
     { label: '골격', value: '거의 완전', description: '적어도 6개체에서 300개 이상의 뼈가 회수되어, 거의 완전한 골격상을 알 수 있어요.' },
     { label: '의의', value: '용각류의 기원', description: '원시 용각류로부터 거대 용각류로의 진화를 이해하는 데 핵심적인 분류군이에요.' },
   ],
+  relatedDinosaurs: [
+    { id: 'vulcanodon', relationship: '동시대 기초 용각류' },
+    { id: 'brachiosaurus', relationship: '이후의 용각류 후손' },
+    { id: 'plateosaurus', relationship: '조상 단계 원용각류 친척' },
+  ],
+  discoveries: [
+    { year: 1960, location: '코타층, 인도 텔랑가나/안드라프라데시', discoveredBy: '인도통계연구소 팀', note: '발굴 조사에서 최소 6개체의 뼈가 같은 장소에서 발견되었습니다.' },
+    { year: 1975, location: '코타층, 인도', discoveredBy: '소한 랄 제인과 동료들', note: '정식으로 기재되어 바라파사우루스 타고레이로 명명되었습니다.' },
+  ],
+  fossilLocations: [
+    { country: '인도', region: '텔랑가나 코타층', coordinates: [17.97, 79.5], specimenName: 'ISI R 주조 시리즈, 패러타입' },
+  ],
 }

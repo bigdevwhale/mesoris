@@ -14,4 +14,14 @@ export default {
     { label: 'Corporatura', value: 'Ventre prominente', description: 'Un ventre enorme per fermentare le piante, un lungo collo e minuscoli denti a forma di foglia.' },
     { label: 'Dimensioni', value: '10 metri', description: 'Un terizinosauro gigantesco e il più grande maniraptoriano conosciuto.' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'Parente lontano (maniraptor)' },
+    { id: 'tyrannosaurus-rex', relationship: 'Parente lontano (teropode)' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Spedizione sovietico-mongola', note: 'Primi fossili: furono trovati solo gli artigli giganti. Gli scienziati pensarono inizialmente che fossero costole di tartaruga!' },
+  ],
+  fossilLocations: [
+    { region: 'Deserto del Gobi', specimenName: 'Formazione Nemegt' },
+  ],
 }

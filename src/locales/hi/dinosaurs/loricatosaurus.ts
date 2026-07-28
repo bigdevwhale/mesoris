@@ -14,4 +14,16 @@ export default {
     { label: 'पुनर्जन्म', value: 'एक बार Lexovisaurus', icon: 'rotate-cw', description: 'मूल रूप से Lexovisaurus की एक प्रजाति के रूप में वर्णित; बाद में एक विशिष्ट यूरोपीय वंश के रूप में पहचाना गया।' },
     { label: 'आवास', value: 'तटीय निचले भूमि', icon: 'wave', description: 'मध्य जुरासिक यूरोप और उत्तरी अफ्रीका के तटीय और बाढ़-मैदान वातावरण में रहता था।' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'प्रसिद्ध रिश्तेदार' },
+    { id: 'kentrosaurus', relationship: 'अफ्रीकी स्टेगोसॉर चचेरा भाई' },
+    { id: 'dacentrurus', relationship: 'यूरोपीय स्टेगोसॉर रिश्तेदार' },
+  ],
+  discoveries: [
+    { discoveredBy: 'फ़्रांज़ नोपचा', note: 'मूल सामग्री को Lexovisaurus priscus के रूप में वर्णित किया गया।' },
+    { discoveredBy: 'सुसाना मेडमेंट और टीम', note: 'विशिष्ट Loricatosaurus वंश के रूप में पुनर्स्थापित, अफ्रीकी सामग्री के संदर्भ के साथ।' },
+  ],
+  fossilLocations: [
+    { region: 'इंग्लैंड, यूनाइटेड किंगडम', specimenName: 'NHMUK होलोटाइप सामग्री' },
+  ],
 }

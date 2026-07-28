@@ -14,4 +14,14 @@ export default {
     { label: '식성', value: '어식성', description: '위 내용물로부터 물고기 유해가 발견된, 어식이 확인된 몇 안 되는 공룡 중 하나입니다.' },
     { label: '발견', value: '1983년, 잉글랜드', description: '서리주의 점토 채굴장에서 아마추어 화석 수집가에 의해 발견된, 유럽에서 가장 중요한 공룡 발견 중 하나입니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'spinosaurus', relationship: '근연종' },
+    { id: 'suchomimus', relationship: '근연종' },
+  ],
+  discoveries: [
+    { year: 1983, location: '영국 서리주', discoveredBy: '윌리엄 워커', note: '아마추어 화석 수집가가 점토 채굴장에서 거대한 발톱을 발견했습니다.' },
+  ],
+  fossilLocations: [
+    { country: '영국', region: '서리주', coordinates: [51.2, -0.5], specimenName: '위일드 클레이층' },
+  ],
 }

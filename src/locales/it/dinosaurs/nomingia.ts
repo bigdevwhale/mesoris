@@ -14,4 +14,15 @@ export default {
     { label: 'Intelligenza', value: 'Oviraptoride intelligente', description: 'Cervello relativamente grande e comportamento sociale complesso.' },
     { label: 'Sito', value: 'Gobi mongolo', description: 'Formazione Nemegt — uno dei più ricchi siti di dinosauri al mondo.' },
   ],
+  relatedDinosaurs: [
+    { id: 'oviraptor', relationship: 'Parente oviraptoride stretto' },
+    { id: 'velociraptor', relationship: 'Parente teropode maniraptoro' },
+    { id: 'troodon', relationship: 'Piccolo teropode contemporaneo' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Rinchen Barsbold e colleghi', note: 'Descritto nel 2000 da Barsbold e colleghi; il pigostilo divenne immediatamente una prova fondamentale nella storia evolutiva dai dinosauri agli uccelli.' },
+  ],
+  fossilLocations: [
+    { region: 'Provincia di Ömnögovi, Formazione Nemegt, Mongolia', specimenName: 'GIN 100/119 — scheletro parziale olotipo con pigostilo' },
+  ],
 }

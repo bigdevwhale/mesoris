@@ -3,7 +3,16 @@ import { useI18n } from 'vue-i18n'
 import type { DinoFact, Dinosaur } from '@/types/dinosaur'
 
 type LocalizedDinoFact = Omit<DinoFact, 'icon'> & { icon?: string }
-type DinosaurTranslation = Partial<Omit<Dinosaur, 'facts'>> & { facts?: LocalizedDinoFact[] }
+type LocalizedDiscovery = Partial<Omit<DinoFact extends never ? never : Dinosaur['discoveries'][number], never>>
+type LocalizedFossilLocation = Partial<Dinosaur['fossilLocations'][number]>
+type LocalizedRelated = Partial<Dinosaur['relatedDinosaurs'][number]>
+
+type DinosaurTranslation = Partial<Omit<Dinosaur, 'facts' | 'discoveries' | 'fossilLocations' | 'relatedDinosaurs'>> & {
+  facts?: LocalizedDinoFact[]
+  discoveries?: LocalizedDiscovery[]
+  fossilLocations?: LocalizedFossilLocation[]
+  relatedDinosaurs?: LocalizedRelated[]
+}
 
 function mergeDinoTranslation(dino: Dinosaur, translation: DinosaurTranslation | undefined): Dinosaur {
   if (!translation) return dino
@@ -12,7 +21,26 @@ function mergeDinoTranslation(dino: Dinosaur, translation: DinosaurTranslation |
     ? dino.facts.map((fact, index) => ({ ...fact, ...(translation.facts?.[index] ?? {}) }))
     : dino.facts
 
-  return { ...dino, ...translation, facts: translatedFacts }
+  const translatedDiscoveries = translation.discoveries
+    ? dino.discoveries.map((disc, index) => ({ ...disc, ...(translation.discoveries?.[index] ?? {}) }))
+    : dino.discoveries
+
+  const translatedFossilLocations = translation.fossilLocations
+    ? dino.fossilLocations.map((loc, index) => ({ ...loc, ...(translation.fossilLocations?.[index] ?? {}) }))
+    : dino.fossilLocations
+
+  const translatedRelated = translation.relatedDinosaurs
+    ? dino.relatedDinosaurs.map((rel, index) => ({ ...rel, ...(translation.relatedDinosaurs?.[index] ?? {}) }))
+    : dino.relatedDinosaurs
+
+  return {
+    ...dino,
+    ...translation,
+    facts: translatedFacts,
+    discoveries: translatedDiscoveries,
+    fossilLocations: translatedFossilLocations,
+    relatedDinosaurs: translatedRelated,
+  }
 }
 
 // Lazy-loaded locale content cache: locale -> dinosaur-id -> translation

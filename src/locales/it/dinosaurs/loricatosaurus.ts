@@ -14,4 +14,16 @@ export default {
     { label: 'Rinominato', value: 'Un tempo Lexovisaurus', description: 'Descritto in origine come una specie di Lexovisaurus; poi riconosciuto come genere europeo distinto.' },
     { label: 'Habitat', value: 'Pianure costiere', description: 'Visse in ambienti costieri e di pianura alluvionale dell\'Europa e del Nordafrica del Giurassico medio.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Parente famoso' },
+    { id: 'kentrosaurus', relationship: 'Cugino stegosauro africano' },
+    { id: 'dacentrurus', relationship: 'Parente stegosauro europeo' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Franz Nopcsa', note: 'Materiale originale descritto come Lexovisaurus priscus.' },
+    { discoveredBy: 'Susannah Maidment e team', note: 'Riconosciuto come genere distinto Loricatosaurus, con riferimento a materiale africano.' },
+  ],
+  fossilLocations: [
+    { region: 'Inghilterra, Regno Unito', specimenName: 'Materiale olotipo NHMUK' },
+  ],
 }

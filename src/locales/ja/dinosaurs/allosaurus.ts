@@ -14,4 +14,18 @@
     { label: '歯', value: '鋸刃状', description: '肉を切り裂くのに最適な、鋸歯のある刃のような形の歯。' },
     { label: '分布', value: '北アメリカとヨーロッパ', description: 'アメリカとポルトガルで化石が発見されており、広い分布を示しています。' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: '獲物' },
+    { id: 'diplodocus', relationship: '獲物' },
+    { id: 'ceratosaurus', relationship: '競合者' },
+  ],
+  discoveries: [
+    { year: 1877, location: 'アメリカ合衆国コロラド州', discoveredBy: 'オスニエル・チャールズ・マーシュ', note: 'ボーンワーズ（骨戦争）中に初めて記載された。' },
+    { year: 1991, location: 'アメリカ合衆国ワイオミング州', discoveredBy: 'カービー・サイバー', note: '「ビッグ・アル」— 最も完全な獣脚類骨格の一つ。' },
+  ],
+  fossilLocations: [
+    { country: 'アメリカ合衆国', region: 'ユタ州', coordinates: [39.0, -111.0], specimenName: 'クリーブランド・ロイド採石場' },
+    { country: 'アメリカ合衆国', region: 'ワイオミング州', coordinates: [43.0, -107.5] },
+    { country: 'ポルトガル', region: 'ロウリニャン', coordinates: [39.3, -9.3] },
+  ],
 }

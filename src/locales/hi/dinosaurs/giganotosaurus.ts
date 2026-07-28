@@ -14,4 +14,14 @@ export default {
     { label: 'शिकार', value: 'विशालकाय सॉरोपॉड', icon: 'swords', description: 'अर्जेंटीनोसॉरस — अब तक के सबसे बड़े स्थलीय जानवरों — का शिकार करता था, संभवतः झुंडों में।' },
     { label: 'मस्तिष्क', value: 'आकार के लिए छोटा', icon: 'brain', description: 'शरीर के आकार के सापेक्ष टी. रेक्स से छोटा मस्तिष्क था, जो विभिन्न शिकार रणनीतियों का संकेत देता है।' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'आकार में प्रतिद्वंद्वी' },
+    { id: 'spinosaurus', relationship: 'आकार में प्रतिद्वंद्वी' },
+  ],
+  discoveries: [
+    { discoveredBy: 'रूबेन कारोलिनी', note: 'एक शौकिया जीवाश्म शिकारी द्वारा खोजा गया लगभग पूर्ण कंकाल।' },
+  ],
+  fossilLocations: [
+    { region: 'न्यूक्वेन', specimenName: 'कैंडेलेरोस शैलसमूह' },
+  ],
 }

@@ -14,4 +14,14 @@ export default {
     { label: 'Flügelspannweite', value: '1,8 m', description: 'Ein mittelgroßer Flugsaurier' },
     { label: 'Alter', value: '150 Mio. Jahre', description: 'Späte Jurazeit, Solnhofen' },
   ],
+  relatedDinosaurs: [
+    { id: 'pterodactylus', relationship: 'Zeitgenosse' },
+    { id: 'dimorphodon', relationship: 'Früherer Verwandter' },
+  ],
+  discoveries: [
+    { year: 1830, location: 'Bavaria, Germany', discoveredBy: 'Georg August Goldfuss', note: 'Zuerst aus den Solnhofener Steinbrüchen beschrieben, zusammen mit Archaeopteryx.' },
+  ],
+  fossilLocations: [
+    { country: 'Germany', region: 'Solnhofener Plattenkalk, Bayern', coordinates: [48.9, 11.0], specimenName: 'Solnhofener Plattenkalk, Typusmaterial' },
+  ],
 }

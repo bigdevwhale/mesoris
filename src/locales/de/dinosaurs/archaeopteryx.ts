@@ -14,4 +14,17 @@ export default {
     { label: 'Flugstil', value: 'Kurze Stöße', description: 'Die meisten Studien deuten darauf hin, dass er starten und kurze Strecken flattern konnte, statt langen modernen Vogelflug durchzuhalten.' },
     { label: 'Größe', value: 'Rabengroß', description: 'Mit etwa einem halben Meter Länge und rund einem Kilogramm war er ein kleiner gefiederter Räuber in den Inselwäldern des späten Jura.' },
   ],
+  relatedDinosaurs: [
+    { id: 'microraptor', relationship: 'Mit Federn bedeckter Paravier-Verwandter mit aerodynamischen Anpassungen' },
+    { id: 'troodon', relationship: 'Vogelähnlicher Theropode mit fortgeschrittener Sinnesanatomie' },
+    { id: 'velociraptor', relationship: 'Späterer Dromaeosaurier-Verwandter innerhalb der Maniraptoren' },
+  ],
+  discoveries: [
+    { year: 1861, location: 'Solnhofen-Kalkstein, Bayern, Deutschland', discoveredBy: 'Steinbrucharbeiter; beschrieben von Hermann von Meyer', note: 'Erstes Skelett-Exemplar von Archaeopteryx wurde formal beschrieben und mit der Evolution der Vögel verknüpft.' },
+    { year: 1877, location: 'Blumenberg bei Eichstätt, Deutschland', discoveredBy: 'Steinbruch von Jakob Niemeyer', note: 'Das Berliner Exemplar bewahrte einen außergewöhnlichen Schädel und Federabdrücke und wurde zum klassischen Museumsexemplar.' },
+  ],
+  fossilLocations: [
+    { country: 'Deutschland', region: 'Solnhofen, Bayern', coordinates: [48.9, 10.99], specimenName: 'Londoner Exemplar (BMNH 37001)' },
+    { country: 'Deutschland', region: 'Eichstätt, Bayern', coordinates: [48.89, 11.18], specimenName: 'Berliner Exemplar (HMN 1880)' },
+  ],
 }

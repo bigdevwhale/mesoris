@@ -14,4 +14,14 @@ export default {
     { label: 'Proie', value: 'Sauropodes géants', description: 'Chassait l\'Argentinosaurus — les plus grands animaux terrestres — probablement en meute.' },
     { label: 'Cerveau', value: 'Petit pour sa taille', description: 'Avait un cerveau proportionnellement plus petit que T. rex, suggérant des stratégies de chasse différentes.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Rival de taille' },
+    { id: 'spinosaurus', relationship: 'Rival de taille' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Ruben Carolini', note: 'Squelette quasi complet découvert par un chasseur de fossiles amateur.' },
+  ],
+  fossilLocations: [
+    { region: 'Neuquén', specimenName: 'Formation de Candeleros' },
+  ],
 }

@@ -13,4 +13,14 @@ export default {
     { label: 'Тістері', value: 'Ине тәрізді', description: 'Алға қарай бағытталған ине тәрізді өткір тістері балықты оңай шаншып ұстауға бейімделген.' },
     { label: 'Сақталуы', value: 'Ерекше', description: 'Рамфоринх – қазбалары ең жақсы сақталған птерозаврлардың бірі. Кейбір үлгілерінде қанат жарғақтары мен тіпті тамақ қапшығының іздері де анық көрінеді.' },
   ],
+  relatedDinosaurs: [
+    { id: 'pterodactylus', relationship: 'Заманауыс' },
+    { id: 'dimorphodon', relationship: 'Ертеректегі туысы' },
+  ],
+  discoveries: [
+    { year: 1830, location: 'Bavaria, Germany', discoveredBy: 'Георг Август Гольдфус', note: 'Зольнхофен карьерлерінен алғаш рет сипатталған, Archaeopteryx-пен бірге.' },
+  ],
+  fossilLocations: [
+    { country: 'Germany', region: 'Зольнхофен әктастары, Бавария', coordinates: [48.9, 11.0], specimenName: 'Зольнхофен әктастарының типтік материалы' },
+  ],
 }

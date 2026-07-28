@@ -14,4 +14,18 @@ export default {
     { label: 'Schnabel', value: 'Papageienartig', description: 'Ein scharfer, gebogener Schnabel zum Schneiden zäher Palmwedel und Palmfarne.' },
     { label: 'Fossilien', value: 'Hunderte', description: 'Einer der häufigsten fossilen Dinosaurier — wir wissen mehr über Triceratops als über die meisten anderen Arten.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Prädator' },
+    { id: 'styracosaurus', relationship: 'Verwandter' },
+    { id: 'pachyrhinosaurus', relationship: 'Verwandter' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Othniel Charles Marsh', note: 'Zunächst fälschlich als riesiger Bison identifiziert.' },
+    { discoveredBy: 'John Bell Hatcher', note: 'Erster vollständiger Schädel entdeckt und korrekt identifiziert.' },
+  ],
+  fossilLocations: [
+    { region: 'Wyoming', specimenName: '' },
+    { region: 'Montana', specimenName: 'Hell Creek' },
+    { region: 'Colorado', specimenName: '' },
+  ],
 }

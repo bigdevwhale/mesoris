@@ -14,4 +14,16 @@ export default {
     { label: 'Zähne', value: 'Kau-Kraftwerk', description: 'Über 1.000 Zähne in einer ausgeklügelten Mahlbatterie zum Zermahlen zäher Pflanzen.' },
     { label: 'Nase', value: 'Aufblasbarer Sack', description: 'Hatte möglicherweise einen aufblasbaren Nasensack für visuelle und akustische Zurschaustellung.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Beute' },
+    { id: 'maiasaura', relationship: 'Enger Verwandter' },
+  ],
+  discoveries: [
+    { year: 1892, location: 'South Dakota, USA', discoveredBy: 'Othniel Charles Marsh', note: 'Erstmals beschrieben.' },
+    { year: 1999, location: 'North Dakota, USA', discoveredBy: 'Tyler Lyson', note: '„Dakota" — eines der am besten erhaltenen Dinosaurier-Mumien-Exemplare.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'South Dakota', coordinates: [44.5, -100.0], specimenName: 'Hell-Creek-Formation' },
+    { country: 'Kanada', region: 'Alberta', coordinates: [53.5, -113.5] },
+  ],
 }

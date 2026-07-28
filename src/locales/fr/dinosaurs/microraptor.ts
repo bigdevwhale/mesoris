@@ -14,4 +14,16 @@ export default {
     { label: 'Couleur', value: 'Noir iridescent', description: 'Des structures pigmentaires microscopiques suggèrent des plumes brillantes comme celles d\'un corbeau.' },
     { label: 'Régime', value: 'Tout ce qui tient dans le bec', description: 'Des fossiles contiennent poissons, mammifères et oiseaux dans l\'estomac — un petit prédateur polyvalent.' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'Parent dromaeosauridé éloigné' },
+    { id: 'troodon', relationship: 'Théropode aviaire apparenté' },
+    { id: 'psittacosaurus', relationship: 'Voisin contemporain' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Collectionneurs locaux de fossiles', note: 'Des spécimens exceptionnellement préservés du biote de Jehol ont révélé un petit dinosaure à quatre ailes.' },
+    { discoveredBy: 'Xu Xing et collègues', note: 'La description formelle a rendu Microraptor célèbre comme l\'un des plus clairs dinosaures à plumes non aviens.' },
+  ],
+  fossilLocations: [
+    { region: 'Liaoning, Chine', specimenName: 'Formation de Jiufotang' },
+  ],
 }

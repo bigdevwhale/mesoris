@@ -14,4 +14,16 @@ export default {
     { label: 'Переименование', value: 'Бывший лексовизавр', description: 'Первоначально описан как вид лексовизавра; позже выделен в самостоятельный европейский род.' },
     { label: 'Среда', value: 'Прибрежные низменности', description: 'Жил в прибрежных и пойменных ландшафтах среднеюрской Европы и Северной Африки.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Знаменитый родственник' },
+    { id: 'kentrosaurus', relationship: 'Африканский стегозавровый кузен' },
+    { id: 'dacentrurus', relationship: 'Европейский стегозавровый родственник' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Франц Нопча', note: 'Исходный материал описан как Lexovisaurus priscus.' },
+    { discoveredBy: 'Сюзанна Мэйдмент и команда', note: 'Восстановлен как отдельный род Loricatosaurus, с отнесением африканского материала.' },
+  ],
+  fossilLocations: [
+    { region: 'Англия, Великобритания', specimenName: 'Голотипный материал NHMUK' },
+  ],
 }

@@ -14,4 +14,17 @@ export default {
     { label: 'Пластины', value: 'Широкие и плоские', description: 'Вдоль спины и бёдер шёл длинный ряд широких, плоских, треугольных пластин.' },
     { label: 'Происхождение', value: 'Англия и Франция', description: 'Найден в киммериджской глине Дорсета, Англия, а также в юрских отложениях Франции и Португалии.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Знаменитый более поздний родственник' },
+    { id: 'loricatosaurus', relationship: 'Европейский родственник-стегозавр' },
+    { id: 'kentrosaurus', relationship: 'Африканский родственник-стегозавр' },
+  ],
+  discoveries: [
+    { year: 1875, location: 'Киммериджская глина, Дорсет, Англия', discoveredBy: 'Ричард Оуэн', note: 'Первоначально назван Omosaurus; позднее переименован в Dacentrurus.' },
+    { year: 1902, location: 'Великобритания и Франция', discoveredBy: 'Различные исследователи', note: 'Переименован в Dacentrurus Ф.А. Лукасом; описан дополнительный материал.' },
+  ],
+  fossilLocations: [
+    { country: 'Великобритания', region: 'Киммеридж, Дорсет', coordinates: [50.6, -2.1], specimenName: 'Голотип NHMUK' },
+    { country: 'Франция', region: 'Юрские отложения Франции', coordinates: [46.5, 2.0], specimenName: 'Различные французские образцы' },
+  ],
 }

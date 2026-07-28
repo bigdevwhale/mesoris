@@ -14,4 +14,16 @@ export default {
     { label: 'Denti', value: 'Decine di lame', description: 'Le sue fauci contenevano denti spessi e seghettati progettati per perforare la carne e strappare pezzi di preda.' },
     { label: 'Crescita', value: 'Scatto di crescita adolescenziale', description: 'Gli studi sulla crescita mostrano che i giovani crescevano rapidamente, diventando potenti predatori in pochi anni.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Parente stretto più grande' },
+    { id: 'daspletosaurus', relationship: 'Altro tirannosauride' },
+    { id: 'pachyrhinosaurus', relationship: 'Potenziale preda' },
+  ],
+  discoveries: [
+    { year: 1884, location: 'Fiume Red Deer, Alberta, Canada', discoveredBy: 'Joseph Burr Tyrrell', note: 'Il primo materiale cranico fu trovato durante una spedizione del Servizio Geologico.' },
+    { year: 1910, location: 'Alberta, Canada', discoveredBy: 'Barnum Brown', note: 'Brown scoprì il famoso giacimento di ossa di massa che trasformò la comprensione della specie.' },
+  ],
+  fossilLocations: [
+    { country: 'Canada', region: 'Alberta', coordinates: [51.9, -112.9], specimenName: 'Formazione di Horseshoe Canyon' },
+  ],
 }

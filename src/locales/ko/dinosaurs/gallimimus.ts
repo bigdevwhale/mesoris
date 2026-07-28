@@ -14,4 +14,14 @@ export default {
     { label: '목', value: '길고 유연함', description: '타조 같은 긴 목으로, 위험이나 먹이를 찾아 경치를 둘러보았습니다.' },
     { label: '식성', value: '기회주의적', description: '식물도 작은 동물도 곤충도 먹었습니다 — 다리가 달린 청소부입니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'ornithomimus', relationship: '근연종' },
+    { id: 'struthiomimus', relationship: '근연종' },
+  ],
+  discoveries: [
+    { discoveredBy: '폴란드-몽골 공동 탐사대', note: '네메그트 분지에서 최초의 표본이 발견되었다.' },
+  ],
+  fossilLocations: [
+    { region: '고비 사막', specimenName: '네메그트층' },
+  ],
 }

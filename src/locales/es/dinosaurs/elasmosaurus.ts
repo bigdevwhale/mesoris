@@ -14,4 +14,13 @@ export default {
     { label: 'Dieta', value: 'Peces y calamares', description: 'Engullia presas con su largo cuello' },
     { label: 'Clasificacion', value: 'Plesiosaurio', description: 'Reptil marino, no dinosaurio' },
   ],
+  relatedDinosaurs: [
+    { id: 'plesiosaurus', relationship: 'Ancestro' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Theophilus Turner', note: 'Descubierto en los depósitos de creta del Western Interior Seaway.' },
+  ],
+  fossilLocations: [
+    { region: 'Kansas', specimenName: 'Esquisto Pierre' },
+  ],
 }

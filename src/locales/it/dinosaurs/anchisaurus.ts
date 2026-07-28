@@ -14,4 +14,16 @@ export default {
     { label: 'Dieta', value: 'Erbivoro', description: 'Denti a forma di foglia e seghettati permettevano all\'Anchisaurus di elaborare vegetali coriacei come felci e cicadi.' },
     { label: 'Dimensioni', value: '2,1 metri', description: 'Con poco più di 2 metri, l\'Anchisaurus era un piccolo prosauropode — ben lontano dagli enormi sauropodi che si sarebbero evoluti dalla sua linea.' },
   ],
+  relatedDinosaurs: [
+    { id: 'plateosaurus', relationship: 'Parente sauropodomorfo stretto' },
+    { id: 'eoraptor', relationship: 'Parente dinosauro primordiale lontano' },
+  ],
+  discoveries: [
+    { year: 1818, location: 'Contea di Hartford, Connecticut, Stati Uniti', discoveredBy: 'Solomon Ellsworth Jr.', note: 'Ossa trovate durante lo scavo di un pozzo; classificate inizialmente come resti umani prima del riconoscimento formale dei dinosauri.' },
+    { year: 1885, location: 'Springfield, Massachusetts, Stati Uniti', discoveredBy: 'O.C. Marsh', note: 'Marsh descrisse formalmente e denominò Anchisaurus sulla base di ulteriore materiale dalla Connecticut Valley.' },
+  ],
+  fossilLocations: [
+    { country: 'Stati Uniti', region: 'Contea di Hartford, Connecticut', coordinates: [41.8, -72.7], specimenName: 'Esemplare tipo della formazione di Portland' },
+    { country: 'Stati Uniti', region: 'Contea di Hampden, Massachusetts', coordinates: [42.1, -72.6], specimenName: 'Materiale della cava di Springfield' },
+  ],
 }

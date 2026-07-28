@@ -14,4 +14,16 @@ export default {
     { label: 'Динозавр емес', value: 'Птерозавр', description: 'Бұл ұшатын бауырымен жорғалаушы, нағыз динозавр емес, бірақ олармен бір уақытта өмір сүрген.' },
     { label: 'Қоректенуі', value: 'Балыққоректі', description: 'Батыс Ішкі теңізінің үстінде қалықтап ұшып, ұзын тұмсығымен балықтарды қағып ұстаған.' },
   ],
+  relatedDinosaurs: [
+    { id: 'quetzalcoatlus', relationship: 'Үлкен туысы' },
+    { id: 'pterodactylus', relationship: 'Кіші туысы' },
+    { id: 'mosasaurus', relationship: 'Ортақ экожүйе' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Осниэл Чарльз Марш', note: 'Алғашқы Pteranodon қазбалары табылды.' },
+    { discoveredBy: 'С. У. Уиллистон', note: 'Толық бассүйек ерекше бас қырын ашты.' },
+  ],
+  fossilLocations: [
+    { region: 'Канзас', specimenName: 'Ниобрара бор қабаты' },
+  ],
 }

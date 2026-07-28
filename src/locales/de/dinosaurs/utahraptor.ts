@@ -14,4 +14,16 @@ export default {
     { label: 'Federn', value: 'Befiedert', description: 'Als naher Verwandter gefiederter Dromaeosaurier war er mit großer Sicherheit befiedert.' },
     { label: 'Gruppenfund', value: 'Mehrere Individuen', description: 'Mehrere Tiere zusammen in Sandstein gefunden — Hinweis auf Sozialverhalten.' },
   ],
+  relatedDinosaurs: [
+    { id: 'deinonychus', relationship: 'Enger Verwandter' },
+    { id: 'velociraptor', relationship: 'Kleinerer Cousin' },
+    { id: 'acrocanthosaurus', relationship: 'Zeitgenössischer Spitzenprädator' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Jim Jensen', note: 'Frühe Funde wurden gesammelt, aber zunächst nicht als riesiger Dromaeosaurier erkannt.' },
+    { discoveredBy: 'James Kirkland, Robert Gaston und Donald Burge', note: 'Die formelle Beschreibung enthüllte den größten bekannten Raptor-Dinosaurier.' },
+  ],
+  fossilLocations: [
+    { region: 'Utah', specimenName: 'Yellow Cat Member, Cedar Mountain Formation' },
+  ],
 }

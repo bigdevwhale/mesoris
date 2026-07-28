@@ -13,4 +13,14 @@ export default {
     { label: 'आकार', value: 'कबूतर-आकार', icon: 'ruler', description: 'अधिकांश लोगों की कल्पना से कहीं छोटा — केवल कबूतर जितना।' },
     { label: 'दाँत', value: '90+ दाँत', icon: 'triangle', description: 'मछली और कीड़े पकड़ने के लिए 90 से अधिक तेज़, अंतःग्रंथित (interlocking) दाँत।' },
   ],
+  relatedDinosaurs: [
+    { id: 'pteranodon', relationship: 'बड़ा वंशज' },
+    { id: 'dimorphodon', relationship: 'पहले का संबंधी' },
+  ],
+  discoveries: [
+    { year: 1784, location: 'Bavaria, Germany', discoveredBy: 'Cosimo Alessandro Collini', note: 'अब तक खोजा गया पहला टेरोसॉर जीवाश्म — कोलिनी ने इसे जलीय जीव समझा।' },
+  ],
+  fossilLocations: [
+    { country: 'Germany', region: 'बवेरिया', coordinates: [48.9, 11.0], specimenName: 'सोलनहोफ़ेन चूना-पत्थर' },
+  ],
 }

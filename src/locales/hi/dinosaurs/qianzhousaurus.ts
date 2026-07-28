@@ -14,4 +14,15 @@ export default {
     { label: 'परिवार', value: 'एलियोरैमिनी', icon: 'swords', description: 'लंबी-थूथन वाले टायरानोसॉरिडों की एलियोरैमिनी शाखा से संबंधित — विशाल हड्डी-चूरने वाले टायरानोसॉरिनों से भिन्न।' },
     { label: 'खोज', value: '2014 की खोज', icon: 'clock', description: '2014 में दक्षिणी चीन के गान्झोउ (Ganzhou) से औपचारिक रूप से वर्णित — देर क्रेटेशस कल्प की एक उल्लेखनीय खोज।' },
   ],
+  relatedDinosaurs: [
+    { id: 'tarbosaurus', relationship: 'एशियाई टायरानोसॉरिड संबंधी' },
+    { id: 'albertosaurus', relationship: 'पहले का टायरानोसॉरिड' },
+    { id: 'tyrannosaurus-rex', relationship: 'दूरस्थ चचेरा भाई' },
+  ],
+  discoveries: [
+    { year: 2010, location: 'Ganzhou, Jiangxi Province, China', discoveredBy: 'निर्माण कर्मी; बाद में ल्यू जुनचांग और उनकी टीम द्वारा संग्रहित', note: 'लगभग पूर्ण खोपड़ी और आंशिक कंकाल — अब तक का सबसे पूर्ण एलियोरैमिन।' },
+  ],
+  fossilLocations: [
+    { country: 'China', region: 'नैन्ज़ियोंग निर्माण-स्थल, गान्झोउ, जियांग्शी', coordinates: [25.85, 114.95], specimenName: 'GMFPI-PV-001 — होलोटाइप, खोपड़ी और कंकाल' },
+  ],
 }

@@ -14,4 +14,14 @@ export default {
     { label: 'Famiglia', value: 'Azhdarchide', description: 'Membro degli Azhdarchidae, la famiglia di pterosauri dal collo e becco lunghi che comprende Quetzalcoatlus e Hatzegopteryx.' },
     { label: 'Epoca', value: 'Cretaceo medio', description: 'Vissuto circa 20 milioni di anni prima del celebre Quetzalcoatlus, riempiendo un vuoto nell\'evoluzione degli azhdarchidi.' },
   ],
+  relatedDinosaurs: [
+    { id: 'quetzalcoatlus', relationship: 'Parente azhdarchide gigante' },
+    { id: 'pteranodon', relationship: 'Parente pterosauro più piccolo' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Leonardo Ortiz David e squadra', note: 'Scheletro parziale articolato e materiale riferito descritti e nominati.' },
+  ],
+  fossilLocations: [
+    { region: 'Formazione Plottier, provincia di Mendoza', specimenName: 'UNCUYO-LD 307 — olotipo, scheletro parziale' },
+  ],
 }

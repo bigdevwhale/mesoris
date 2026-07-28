@@ -14,4 +14,17 @@ export default {
     { label: 'Clase', value: 'Reptil marino', description: 'Un lagarto marino, no un dinosaurio' },
     { label: 'Rango', value: 'Global', description: 'Encontrado en oceanos de todo el mundo' },
   ],
+  relatedDinosaurs: [
+    { id: 'tylosaurus', relationship: 'Pariente cercano' },
+    { id: 'plesiosaurus', relationship: 'Competidor' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Trabajadores locales de cantera', note: 'Primer reptil prehistorico gigante jamas descubierto — decadas antes de que alguien supiera de los dinosaurios.' },
+    { discoveredBy: 'Proyecto PaleoAngola', note: 'Descubrimientos importantes a lo largo de la costa sudafricana.' },
+  ],
+  fossilLocations: [
+    { region: 'Maastricht, Paises Bajos', specimenName: 'Formacion de Maastricht' },
+    { region: 'Cuenca de Benguela, Angola' },
+    { region: 'Kansas, EE. UU.' },
+  ],
 }

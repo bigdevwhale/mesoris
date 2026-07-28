@@ -14,4 +14,16 @@
     { label: '环境', value: '潮湿海岸平原', description: '它生活在靠近西部内陆海道边缘的东部低地生态系统中。' },
     { label: '文化影响', value: '早期复原明星', description: '它在古生物艺术史上非常重要，帮助大众认识到大型恐龙也可能是积极活跃的捕食者。' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: '后来出现的巨型暴龙科近亲' },
+    { id: 'albertosaurus', relationship: '北美西部较衍化的暴龙科' },
+    { id: 'gorgosaurus', relationship: '晚坎帕尼—马斯特里赫特期的另一支暴龙超科谱系' },
+  ],
+  discoveries: [
+    { year: 1866, location: '美国新泽西州巴恩斯伯勒', discoveredBy: '采石场工人；由爱德华·德林克·科普描述', note: '依据白垩纪海岸沉积物最初命名为 Laelaps aquilunguis。' },
+    { year: 1877, location: '分类学修订', discoveredBy: '奥塞内尔·查尔斯·马什', note: '由于 Laelaps 这一名称已被占用，遂更名为 Dryptosaurus。' },
+  ],
+  fossilLocations: [
+    { country: '美国', region: '新泽西州纳维辛克组', coordinates: [39.82, -75.13], specimenName: '正模标本相关材料' },
+  ],
 }

@@ -14,4 +14,16 @@ export default {
     { label: '重生', value: '原名 Lexovisaurus', description: '最初被描述为 Lexovisaurus 的一个种；后来被识别为独立的欧洲属。' },
     { label: '栖息地', value: '沿海低地', description: '生活在中侏罗世欧洲和北非的沿海和洪泛平原环境。' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: '著名近亲' },
+    { id: 'kentrosaurus', relationship: '非洲剑龙表亲' },
+    { id: 'dacentrurus', relationship: '欧洲剑龙近亲' },
+  ],
+  discoveries: [
+    { discoveredBy: '弗朗茨·诺普乔', note: '原始材料被描述为 Lexovisaurus priscus。' },
+    { discoveredBy: '苏珊娜·梅德门特及团队', note: '被确认为独立的 Loricatosaurus 属，并归入非洲材料。' },
+  ],
+  fossilLocations: [
+    { region: '英格兰，英国', specimenName: 'NHMUK 正模标本材料' },
+  ],
 }

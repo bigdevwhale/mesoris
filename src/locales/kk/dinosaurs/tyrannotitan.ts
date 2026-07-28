@@ -14,4 +14,15 @@ export default {
     { label: 'Тістері', value: 'Пышақ тәрізді', description: 'Оның иілген, пышаққа ұқсас, ара тісті өткір тістері алып сауроподтардың етін оңай кесуге өте қолайлы болған.' },
     { label: 'Таралу аймағы', value: 'Патагония', description: 'Аргентинаның Чубут провинциясындағы Серро-Барсино формациясында табылған.' },
   ],
+  relatedDinosaurs: [
+    { id: 'giganotosaurus', relationship: 'Кархародонтозаврид туысы' },
+    { id: 'carcharodontosaurus', relationship: 'Африкалық кархародонтозаврид туысы' },
+    { id: 'concavenator', relationship: 'Базальды кархародонтозаврид туысы' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Фернандо Новас және командасы', note: 'Ішінара посткраниальды қаңқа сипатталып, Tyrannotitan chubutensis деп аталды.' },
+  ],
+  fossilLocations: [
+    { region: 'Серро-Барсино формациясы, Чубут', specimenName: 'MPEF-PV 1156 — голотип, ішінара қаңқа' },
+  ],
 }

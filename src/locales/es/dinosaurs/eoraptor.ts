@@ -14,4 +14,14 @@ export default {
     { label: 'Dieta', value: 'Omnivoro', description: 'Plantas, insectos y pequeños vertebrados' },
     { label: 'Importancia', value: 'Evolutiva', description: 'Cercano al ancestro de todos los dinosaurios' },
   ],
+  relatedDinosaurs: [
+    { id: 'herrerasaurus', relationship: 'Contemporáneo' },
+    { id: 'plateosaurus', relationship: 'Descendiente posterior' },
+  ],
+  discoveries: [
+    { year: 1991, location: 'San Juan, Argentina', discoveredBy: 'Ricardo Martínez', note: 'Descubierto en la misma formación del Valle de la Luna que Herrerasaurus.' },
+  ],
+  fossilLocations: [
+    { country: 'Argentina', region: 'San Juan', coordinates: [-30.0, -68.0], specimenName: 'Valle de la Luna, Formación Ischigualasto' },
+  ],
 }

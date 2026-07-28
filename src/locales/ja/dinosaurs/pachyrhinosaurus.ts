@@ -14,4 +14,16 @@
     { label: 'ボーンベッド', value: '巨大な群れ', description: '何千頭もの個体の巨大な群れで生活していた。' },
     { label: '体長', value: '8メートル', description: '約4トンの大型角竜類。' },
   ],
+  relatedDinosaurs: [
+    { id: 'styracosaurus', relationship: '近縁種' },
+    { id: 'triceratops', relationship: '近縁種' },
+  ],
+  discoveries: [
+    { year: 1946, location: 'カナダ・アルバータ州', discoveredBy: 'チャールズ・M・スタンバーグ', note: '最初の頭骨が発見された。' },
+    { year: 1970, location: 'カナダ・アルバータ州', discoveredBy: 'アル・ラクスタ', note: '何百頭もの個体を含む巨大なボーンベッド。' },
+  ],
+  fossilLocations: [
+    { country: 'カナダ', region: 'アルバータ州', coordinates: [55.0, -118.0], specimenName: 'ワピティ累層' },
+    { country: 'USA', region: 'アラスカ州', coordinates: [69.0, -151.0], specimenName: 'プリンスクリーク累層' },
+  ],
 }

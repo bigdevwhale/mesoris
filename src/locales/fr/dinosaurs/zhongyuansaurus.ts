@@ -14,4 +14,15 @@ export default {
     { label: 'Armure', value: 'Protection primitive', description: 'Dépourvu de la massue caudale bien développée des ankylosauridés plus récents — sa cuirasse d\'ostéodermes et de plaques dermiques représente une condition défensive plus ancestrale.' },
     { label: 'Taille', value: 'Environ 4,5 m', description: 'Estimation d\'environ 4 à 5 mètres de longueur et de plusieurs centaines de kilogrammes de masse — un herbivore quadrupède de taille moyenne pour sa formation.' },
   ],
+  relatedDinosaurs: [
+    { id: 'ankylosaurus', relationship: 'Parent ankylosauridé plus récent' },
+    { id: 'euoplocephalus', relationship: 'Parent ankylosauridé plus récent' },
+    { id: 'nodosaurus', relationship: 'Parent ankylosaure (branche nodosauridé)' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Lü Junchang et al.', note: 'Décrit de la formation de Mangchuan ; ankylosauridé primitif étroitement lié à Gobisaurus et Shamosaurus.' },
+  ],
+  fossilLocations: [
+    { region: 'Province du Henan (Formation de Mangchuan)', specimenName: 'Formation de Mangchuan, Crétacé inférieur' },
+  ],
 }

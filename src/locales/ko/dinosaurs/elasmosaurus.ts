@@ -14,4 +14,13 @@ export default {
     { label: '실수', value: '머리를 거꾸로', description: '처음에는 머리를 잘못된 쪽에 붙여 복원되었습니다 — 고생물학의 유명한 실패입니다.' },
     { label: '사냥', value: '매복', description: '수면 근처를 헤엄치며, 긴 목으로 물고기 떼를 매복 사냥했습니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'plesiosaurus', relationship: '조상' },
+  ],
+  discoveries: [
+    { discoveredBy: '테오필러스 터너', note: '서부 내해의 백악 퇴적층에서 발견됨.' },
+  ],
+  fossilLocations: [
+    { region: '캔자스', specimenName: '피어 셰일' },
+  ],
 }

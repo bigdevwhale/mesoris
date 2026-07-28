@@ -14,4 +14,15 @@ export default {
     { label: 'Akustik', value: 'Klangresonator', description: 'Die hohle Kammstruktur verstärkte wahrscheinlich Rufe zur Erkennung von Herdenmitgliedern über große Entfernungen.' },
     { label: 'China', value: 'Provinz Shandong', description: 'Gefunden in der fossilreichen Shandong-Provinz, die einige der größten Dinosaurier Asiens hervorgebracht hat.' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: 'Lambeosauriner Hadrosaurier-Verwandter' },
+    { id: 'corythosaurus', relationship: 'Verwandter mit Hadrosaurier-Kamm' },
+    { id: 'edmontosaurus', relationship: 'Hadrosaurier-Verwandter' },
+  ],
+  discoveries: [
+    { discoveredBy: 'C.C. Young', note: 'Von Young 1958 beschrieben; mangelhafte Erhaltung führte zu jahrzehntelanger Debatte über die Morphologie des Kamms, die erst durch besseres Material geklärt wurde.' },
+  ],
+  fossilLocations: [
+    { region: 'Zhucheng, Provinz Shandong (Wangshi-Gruppe)', specimenName: 'IVPP V725 — Holotyp-Schädel mit Kamm' },
+  ],
 }

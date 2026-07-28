@@ -14,4 +14,16 @@ export default {
     { label: 'Cerveau', value: 'Taille d\'une noix', description: 'Avait l\'un des plus petits rapports cerveau-corps de tous les dinosaures.' },
     { label: 'Deuxième cerveau', value: 'Un mythe !', description: 'Les scientifiques pensaient autrefois qu\'il avait un deuxième cerveau dans les hanches — en réalité, c\'était juste un corps glycogénique.' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: 'Prédateur' },
+    { id: 'diplodocus', relationship: 'Contemporain' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Othniel Charles Marsh', note: 'Premiers fossiles de Stegosaurus décrits dans la Formation Morrison.' },
+    { discoveredBy: 'Bob Simon', note: '"Sophie" — le squelette de Stegosaurus le plus complet jamais trouvé.' },
+  ],
+  fossilLocations: [
+    { region: 'Colorado', specimenName: 'Formation Morrison' },
+    { region: 'Wyoming' },
+  ],
 }

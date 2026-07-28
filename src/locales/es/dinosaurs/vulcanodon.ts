@@ -14,4 +14,14 @@ export default {
     { label: 'Ubicacion', value: 'Zimbabwe', description: 'Entre rocas volcanicas' },
     { label: 'Postura', value: 'Cuadrupedo', description: 'Completamente cuadrupedo' },
   ],
+  relatedDinosaurs: [
+    { id: 'plateosaurus', relationship: 'Línea ancestral de prosaurópodos anteriores' },
+    { id: 'brachiosaurus', relationship: 'Pariente saurópodo derivado posterior' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Michael Raath', note: 'Esqueleto parcial descubierto entre capas de basalto; descrito formalmente por Raath en 1972, proporcionando uno de los saurópodos más antiguos conocidos de África.' },
+  ],
+  fossilLocations: [
+    { region: 'Mashonaland Occidental, Vulcanodon Beds, zona del lago Kariba', specimenName: 'QG 24 — esqueleto parcial holotipo' },
+  ],
 }

@@ -14,4 +14,14 @@ export default {
     { label: 'Alimentazione', value: 'Ipercarnivoro', description: 'Mangiava tutto: squali, uccelli, plesiosauri e altri mosasauri.' },
     { label: 'Classificazione', value: 'Mosasauro', description: 'Un rettile marino gigante del Cretaceo, non un dinosauro.' },
   ],
+  relatedDinosaurs: [
+    { id: 'mosasaurus', relationship: 'Parente stretto' },
+    { id: 'plesiosaurus', relationship: 'Preda' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Othniel Charles Marsh', note: 'Descritto per la prima volta durante le Bone Wars dalle crete del Kansas.' },
+  ],
+  fossilLocations: [
+    { region: 'Kansas', specimenName: 'Gesso di Niobrara, Smoky Hill' },
+  ],
 }

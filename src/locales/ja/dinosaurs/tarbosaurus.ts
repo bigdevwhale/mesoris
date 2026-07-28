@@ -14,4 +14,16 @@ export default {
     { label: '前肢', value: '極めて小さい', description: '他のティラノサウルス亜科と同様、巨大な頭に矮小化された小さな二本指の腕を持っていました。' },
     { label: '生態的地位', value: 'ネメグトの頂点捕食者', description: '古代モンゴルの川が供給する氾濫原で大型ハドロサウルス類やティタノサウルス類を狩っていました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: '近い近縁種' },
+    { id: 'velociraptor', relationship: '同時代の地域捕食者' },
+    { id: 'oviraptor', relationship: 'ネメグトの隣人' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ソ連・モンゴル共同探検隊', note: '初期のゴビ探検でネメグト盆地から重要なティラノサウルス類の化石が回収された。' },
+    { discoveredBy: 'エフゲニー・マレーエフ', note: 'マレーエフがモンゴルの化石に基づきTarbosaurusを正式に命名した。' },
+  ],
+  fossilLocations: [
+    { region: 'オムヌゴヴィ', specimenName: 'ネメグト層' },
+  ],
 }

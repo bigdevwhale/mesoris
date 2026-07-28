@@ -14,4 +14,15 @@ export default {
     { label: 'Familia', value: 'Carcarodontosáurido', description: 'Un pequeño carcarodontosáurido, grupo hermano del gigante Giganotosaurus y Carcharodontosaurus.' },
     { label: 'Hallazgo', value: 'Las Hoyas, España', description: 'Encontrado en el yacimiento de Las Hoyas, un humedal del Cretácico con una conservación excepcional tipo lagerstätte.' },
   ],
+  relatedDinosaurs: [
+    { id: 'carcharodontosaurus', relationship: 'Pariente carcarodontosaurido mas grande' },
+    { id: 'giganotosaurus', relationship: 'Pariente carcarodontosaurido mas grande' },
+    { id: 'allosaurus', relationship: 'Primo alosauroide anterior' },
+  ],
+  discoveries: [
+    { year: 2003, location: 'Las Hoyas, Cuenca, España', discoveredBy: 'José Luis Sanz y Fernando Escaso', note: 'Esqueleto articulado encontrado en calizas laminadas de la Formacion Calizas de La Huerguina.' },
+  ],
+  fossilLocations: [
+    { country: 'España', region: 'Las Hoyas, Cuenca', coordinates: [40.07, -1.85], specimenName: 'MCCM-LH 6666 — holotipo, esqueleto articulado' },
+  ],
 }

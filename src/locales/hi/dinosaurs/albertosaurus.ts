@@ -14,4 +14,16 @@ export default {
     { label: 'दाँत', value: 'दर्जनों ब्लेड', icon: 'skull', description: 'इसके जबड़ों में मोटे, आरादार दाँत थे जो मांस को छेदने और शिकार से टुकड़े नोचने के लिए डिज़ाइन किए गए थे।' },
     { label: 'विकास', value: 'किशोरों की तेज़ वृद्धि', icon: 'arrow-up', description: 'वृद्धि अध्ययन दिखाते हैं कि किशोर तेज़ी से परिपक्व होते थे, कुछ ही वर्षों में शक्तिशाली शिकारी बन जाते थे।' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'बड़ा निकट संबंधी' },
+    { id: 'daspletosaurus', relationship: 'सहकर्मी टायरानोसॉरिड' },
+    { id: 'pachyrhinosaurus', relationship: 'संभावित शिकार' },
+  ],
+  discoveries: [
+    { year: 1884, location: 'रेड डियर नदी, अल्बर्टा, कनाडा', discoveredBy: 'जोसेफ बर टायरेल', note: 'भूवैज्ञानिक सर्वेक्षण अभियान के दौरान पहली खोपड़ी का सामग्री मिली।' },
+    { year: 1910, location: 'अल्बर्टा, कनाडा', discoveredBy: 'बार्नम ब्राउन', note: 'ब्राउन ने उस प्रसिद्ध सामूहिक हड्डी-बिस्तर की खोज की जिसने इस प्रजाति की समझ को पूरी तरह बदल दिया।' },
+  ],
+  fossilLocations: [
+    { country: 'कनाडा', region: 'अल्बर्टा', coordinates: [51.9, -112.9], specimenName: 'हॉर्सशू कैन्यन शैलसमूह' },
+  ],
 }

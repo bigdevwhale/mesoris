@@ -14,4 +14,15 @@
     { label: '颈盾', value: '小但装饰性', description: '与三角龙相比适中的颈盾——但变化很大。' },
     { label: '体型', value: '2米', description: '大约绵羊大小，一种紧凑的植食动物。' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: '捕食者' },
+    { id: 'triceratops', relationship: '远亲' },
+  ],
+  discoveries: [
+    { discoveredBy: '罗伊·查普曼·安德鲁斯', note: '首次同时发现原角龙和首批恐龙蛋。' },
+    { discoveredBy: '波兰-蒙古考察队', note: '「搏斗的恐龙」 — 原角龙大战迅猛龙。' },
+  ],
+  fossilLocations: [
+    { region: '戈壁沙漠', specimenName: '德加多克塔组' },
+  ],
 }

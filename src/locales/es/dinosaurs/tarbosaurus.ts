@@ -14,4 +14,16 @@ export default {
     { label: 'Mandibula', value: 'Profunda', description: 'Craneo mas estrecho pero igual de poderoso' },
     { label: 'Especimenes', value: 'Numerosos', description: 'Tiranosaurio asiatico mejor conocido' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Pariente cercano' },
+    { id: 'velociraptor', relationship: 'Contemporáneo regional' },
+    { id: 'oviraptor', relationship: 'Vecino de Nemegt' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Expediciones soviético-mongolas', note: 'Las primeras expediciones al Gobi recuperaron importante material de tiranosaurio de la Cuenca de Nemegt.' },
+    { discoveredBy: 'Evgeny Maleev', note: 'Maleev nombró formalmente a Tarbosaurus basándose en fósiles mongoles.' },
+  ],
+  fossilLocations: [
+    { region: 'Ömnögovi', specimenName: 'Formación Nemegt' },
+  ],
 }

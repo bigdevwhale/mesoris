@@ -14,4 +14,16 @@
     { label: '丰富度', value: '非常普遍', description: '在德国发现超过100具骨架。' },
     { label: '手部', value: '把握性拇指', description: '用于抓握树枝的大拇指爪——尚未变成蜥脚类的承重柱。' },
   ],
+  relatedDinosaurs: [
+    { id: 'brachiosaurus', relationship: '后代' },
+    { id: 'diplodocus', relationship: '后代' },
+  ],
+  discoveries: [
+    { discoveredBy: '约翰·弗里德里希·恩格尔哈特', note: '首次发现化石 — 欧洲大陆最早期的恐龙发现之一。' },
+    { discoveredBy: '埃伯哈德·弗拉斯', note: '拥有数十具骨骼的集体墓地。' },
+  ],
+  fossilLocations: [
+    { region: '特罗辛根', specimenName: '克诺伦梅格尔段' },
+    { region: '巴伐利亚', specimenName: '' },
+  ],
 }

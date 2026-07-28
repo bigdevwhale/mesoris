@@ -14,4 +14,16 @@ export default {
     { label: 'Osteoderme', value: 'Rückenpanzer', description: 'Anders als die meisten großen Theropoden hatte Ceratosaurus kleine Knochenplatten entlang des Rückens.' },
     { label: 'Größe', value: '6 Meter lang', description: 'Ein mittelgroßer Theropode, der neben dem größeren und häufigeren Allosaurus lebte.' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: 'Konkurrent' },
+    { id: 'carnotaurus', relationship: 'Entfernter Verwandter' },
+  ],
+  discoveries: [
+    { year: 1883, location: 'Colorado, USA', discoveredBy: 'Marshall P. Felch', note: 'Erstes Skelett in Garden Park entdeckt.' },
+    { year: 2000, location: 'Portugal', discoveredBy: 'Octavio Mateus', note: 'Das europäische Exemplar bestätigte die weite Verbreitung der Gattung.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Colorado', coordinates: [38.5, -105.0], specimenName: 'Morrison-Formation' },
+    { country: 'Portugal', region: 'Lourinhã', coordinates: [39.3, -9.3] },
+  ],
 }

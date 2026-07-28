@@ -14,4 +14,15 @@ export default {
     { label: '유타주', value: '와위프층', description: '와위프층에서 발견되었습니다. 남부 동물상은 북부와는 다른 풍요로운 생태계의 일부입니다.' },
     { label: '뿔', value: '프릴 뿔과 코뿔', description: '프릴의 휘어진 가시 외에도 코뿔과 작은 눈썹뿔도 가지고 있었습니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'styracosaurus', relationship: '후대의 켄트로사우루스아과 근연종' },
+    { id: 'triceratops', relationship: '후대의 각룡류 근연종' },
+    { id: 'protoceratops', relationship: '조상적 각룡류 근연종' },
+  ],
+  discoveries: [
+    { year: 2002, location: '미국 유타주 가필드 카운티 와위프층', discoveredBy: '제임스 커클랜드와 도널드 드블리외', note: '유타 자연사 박물관 팀이 부분 두개골을 채집했고, 2010년 커클랜드와 드블리외에 의해 정식으로 기재되었다.' },
+  ],
+  fossilLocations: [
+    { country: '미국', region: '유타주 가필드 카운티 (와위프층)', coordinates: [37.5, -111.5], specimenName: 'UMNH VP 16699 — 완모식표본, 부분 두개골' },
+  ],
 }

@@ -14,4 +14,16 @@ export default {
     { label: 'Constitución', value: 'Extremidades columnares', description: 'Sus extremidades robustas y su cuerpo ancho sostenían un torso enorme mientras se desplazaba por terrenos blandos de llanura aluvial o pantanosos.' },
     { label: 'Edad', value: 'Cretácico Temprano', description: 'Euhelopus sobrevivió en ecosistemas asiáticos después de que muchos grupos clásicos de saurópodos jurásicos ya hubieran declinado en otros lugares.' },
   ],
+  relatedDinosaurs: [
+    { id: 'mamenchisaurus', relationship: 'Otro saurópodo asiático de cuello largo a menudo comparado anatómicamente' },
+    { id: 'brachiosaurus', relationship: 'Saurópodo grande de ramoneo alto con proporciones de extremidades diferentes' },
+    { id: 'sauroposeidon', relationship: 'Titanosauriforme gigante posterior con elongación extrema del cuello' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Expedición de Otto Zdansky', note: 'Recolectó el material fósil original utilizado luego en la descripción formal.' },
+    { discoveredBy: 'Carl Wiman', note: 'Describió formalmente Euhelopus zdanskyi y destacó su inusual anatomía de saurópodo.' },
+  ],
+  fossilLocations: [
+    { region: 'Provincia de Shandong', specimenName: 'Material original de Euhelopus' },
+  ],
 }

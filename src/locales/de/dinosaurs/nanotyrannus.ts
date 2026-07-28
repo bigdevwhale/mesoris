@@ -14,4 +14,20 @@ export default {
     { label: 'Biss', value: 'Knochenbrecher', description: 'Trotz seiner geringen Größe besaß er den kräftigen, knochenbrechenden Biss eines Tyrannosauriden.' },
     { label: 'Geschwindigkeit', value: '40+ km/h', description: 'Lange, schlanke Beine machten ihn zu einem flinken, agilen Räuber — schneller als sein riesiger Vetter T. rex.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Umstrittenes Synonym / enger Verwandter' },
+    { id: 'albertosaurus', relationship: 'Tyrannosauride-Vetter' },
+    { id: 'daspletosaurus', relationship: 'Tyrannosauride-Vetter' },
+    { id: 'gorgosaurus', relationship: 'Tyrannosauride-Vetter' },
+    { id: 'triceratops', relationship: 'Mögliche Beute' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Cleveland-Museum-Expedition', note: 'Erster Schädel in der Hell-Creek-Formation entdeckt, ursprünglich als Gorgosaurus-ähnliches Taxon angesehen.' },
+    { discoveredBy: 'Robert Bakker, Philip Currie & Michael Williams', note: 'Nach Reanalyse des Cleveland-Museum-Schädels in Nanotyrannus umbenannt.' },
+    { discoveredBy: 'Kommerzielle Fossiliensucher', note: 'Das berühmte «Dueling Dinosaurs»-Exemplar, im Kampf mit einem Triceratops verschlungen.' },
+  ],
+  fossilLocations: [
+    { region: 'Montana', specimenName: 'Hell-Creek-Formation' },
+    { region: 'Wyoming', specimenName: 'Lance-Formation' },
+  ],
 }

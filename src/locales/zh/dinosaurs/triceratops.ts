@@ -14,5 +14,19 @@ const translations = {
     { label: '喙', value: '类似鹦鹉', description: '锋利弯曲的喙，用于切割坚韧的棕榈叶和苏铁类植物。' },
     { label: '化石', value: '数百件', description: '最常见的恐龙化石之一——我们对三角龙的了解超过大多数其他物种。' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: '捕食者' },
+    { id: 'styracosaurus', relationship: '近亲' },
+    { id: 'pachyrhinosaurus', relationship: '近亲' },
+  ],
+  discoveries: [
+    { discoveredBy: '奥塞内尔·查尔斯·马什', note: '最初被错误地鉴定为巨型野牛。' },
+    { discoveredBy: '约翰·贝尔·哈彻', note: '发现并正确鉴定了第一具完整头骨。' },
+  ],
+  fossilLocations: [
+    { region: '怀俄明州', specimenName: '' },
+    { region: '蒙大拿州', specimenName: '地狱溪' },
+    { region: '科罗拉多州', specimenName: '' },
+  ],
 }
 export default translations

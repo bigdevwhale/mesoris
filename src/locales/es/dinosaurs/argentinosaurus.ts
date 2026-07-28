@@ -14,4 +14,16 @@ export default {
     { label: 'Dieta', value: 'Herbivoro', description: 'Cientos de kg de vegetacion al dia' },
     { label: 'Epoca', value: '97-94 Ma', description: 'Cretacico Tardio, Patagonia' },
   ],
+  relatedDinosaurs: [
+    { id: 'giganotosaurus', relationship: 'Amenaza de depredador' },
+    { id: 'apatosaurus', relationship: 'Primo sauropodo lejano' },
+    { id: 'sauroposeidon', relationship: 'Gigante rival' },
+  ],
+  discoveries: [
+    { year: 1987, location: 'Neuquén, Argentina', discoveredBy: 'Guillermo Heredia', note: 'Un trabajador rural notó los enormes huesos en la Formación Huincul.' },
+    { year: 1993, location: 'Patagonia, Argentina', discoveredBy: 'José Bonaparte y Rodolfo Coria', note: 'La descripción formal estableció al Argentinosaurus como uno de los titanosaurios más grandes conocidos.' },
+  ],
+  fossilLocations: [
+    { country: 'Argentina', region: 'Neuquén', coordinates: [-38.7, -69.8], specimenName: 'Formación Huincul' },
+  ],
 }

@@ -14,4 +14,16 @@ export default {
     { label: 'बहुलता', value: 'अत्यंत सामान्य', icon: 'archive', description: 'जर्मनी में 100 से अधिक कंकाल मिले हैं — ट्रायसिक कल्प के सबसे सुविज्ञात डायनासोरों में से एक।' },
     { label: 'हाथ', value: 'ग्रैस्पिंग अँगूठा', icon: 'hand', description: 'शाखाओं को पकड़ने के लिए एक बड़ा अँगूठा पंजा — जो अभी सॉरोपोडों के भार-वहन स्तंभ में नहीं बदला था।' },
   ],
+  relatedDinosaurs: [
+    { id: 'brachiosaurus', relationship: 'वंशज' },
+    { id: 'diplodocus', relationship: 'वंशज' },
+  ],
+  discoveries: [
+    { discoveredBy: 'जोहान फ्रीडरिच एंगेलहार्ट', note: 'पहले जीवाश्म खोजे — महाद्वीपीय यूरप में सबसे पहली डायनासोर खोजों में से एक।' },
+    { discoveredBy: 'एबरहार्ड फ्रास', note: 'दर्जनों कंकालों वाला सामूहिक दफन स्थल।' },
+  ],
+  fossilLocations: [
+    { region: 'ट्रोसिंगेन', specimenName: 'नोलेनमेरगेल सदस्य' },
+    { region: 'बवेरिया', specimenName: '' },
+  ],
 }

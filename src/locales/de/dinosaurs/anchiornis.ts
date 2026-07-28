@@ -14,4 +14,16 @@ export default {
     { label: 'Größe', value: 'Spatzengroß', description: 'Winzig, kaum größer als ein Spatz, mit nur etwa 200 Gramm Gewicht.' },
     { label: 'Gleitflug', value: 'Flügelunterstützt', description: 'Konnte nicht kräftig fliegen, nutzte seine Flügel aber wahrscheinlich zum Gleiten und zur Körperkontrolle beim Springen zwischen Ästen.' },
   ],
+  relatedDinosaurs: [
+    { id: 'microraptor', relationship: 'Paravier Cousin mit vier Flügeln' },
+    { id: 'archaeopteryx', relationship: 'Früher avialer Zeitgenosse' },
+    { id: 'troodon', relationship: 'Größerer Troodontid-Verwandter' },
+  ],
+  discoveries: [
+    { year: 2009, location: 'Tiaojishan-Formation, Liaoning, China', discoveredBy: 'Xu Xing und Team', note: 'Exemplare wurden zunächst als kleine befiederte Paravier benannt und erkannt.' },
+    { year: 2010, location: 'China', discoveredBy: 'Zhang Fucheng und Team', note: 'Die erste Rekonstruktion der tatsächlichen Färbung von Anchiornis wurde in Nature veröffentlicht.' },
+  ],
+  fossilLocations: [
+    { country: 'China', region: 'Tiaojishan-Formation, Liaoning', coordinates: [41.6, 120.7], specimenName: 'IVPP V14378 — Typusmaterial, Hunderte zugewiesene Exemplare' },
+  ],
 }

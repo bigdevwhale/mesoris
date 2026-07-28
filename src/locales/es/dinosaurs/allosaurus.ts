@@ -14,4 +14,18 @@ export default {
     { label: 'Comportamiento', value: 'Gregario', description: 'Evidencia de caza en grupo' },
     { label: 'Epoca', value: 'Jurasico Tardio', description: 'El principal depredador 90 millones de anos antes del T. rex' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Presa' },
+    { id: 'diplodocus', relationship: 'Presa' },
+    { id: 'ceratosaurus', relationship: 'Competidor' },
+  ],
+  discoveries: [
+    { year: 1877, location: 'Colorado, EE. UU.', discoveredBy: 'Othniel Charles Marsh', note: 'Descrito por primera vez durante las Guerras de los Huesos.' },
+    { year: 1991, location: 'Wyoming, EE. UU.', discoveredBy: 'Kirby Siber', note: '"Big Al" — uno de los esqueletos de terópodo más completos jamás encontrados.' },
+  ],
+  fossilLocations: [
+    { country: 'EE. UU.', region: 'Utah', coordinates: [39.0, -111.0], specimenName: 'Cantera de Cleveland-Lloyd' },
+    { country: 'EE. UU.', region: 'Wyoming', coordinates: [43.0, -107.5] },
+    { country: 'Portugal', region: 'Lourinhã', coordinates: [39.3, -9.3] },
+  ],
 }

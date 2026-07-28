@@ -14,4 +14,15 @@ export default {
     { label: 'Dientes', value: 'Cuchilla dentada', description: 'Dientes distintivos recurvados, en forma de hoja, con sierras, perfectos para cortar la carne de las presas de saurópodos gigantes.' },
     { label: 'Área', value: 'Patagonia', description: 'Descubierto en la Formación Cerro Barcino, provincia de Chubut, Patagonia, Argentina.' },
   ],
+  relatedDinosaurs: [
+    { id: 'giganotosaurus', relationship: 'Pariente carcarodontosáurido' },
+    { id: 'carcharodontosaurus', relationship: 'Pariente carcarodontosáurido africano' },
+    { id: 'concavenator', relationship: 'Pariente carcarodontosáurido basal' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Fernando Novas y equipo', note: 'Esqueleto postcraneal parcial descrito y nombrado Tyrannotitan chubutensis.' },
+  ],
+  fossilLocations: [
+    { region: 'Formación Cerro Barcino, Chubut', specimenName: 'MPEF-PV 1156 — esqueleto parcial holotipo' },
+  ],
 }

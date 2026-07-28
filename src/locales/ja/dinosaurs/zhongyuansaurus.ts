@@ -14,4 +14,15 @@ export default {
     { label: '装甲', value: '原始的な防御', description: '後期のアンキロサウルス科が持つ発達した尾のハンマーを欠き、オステオダームと皮骨板による装甲は祖先的な防御状態を示す。' },
     { label: '体長', value: '約4.5メートル', description: '体長約4〜5メートル、体重数百キログラムと推定される、当該層としては中型の四足草食恐竜。' },
   ],
+  relatedDinosaurs: [
+    { id: 'ankylosaurus', relationship: '後期のアンキロサウルス科の近縁種' },
+    { id: 'euoplocephalus', relationship: '後期のアンキロサウルス科の近縁種' },
+    { id: 'nodosaurus', relationship: 'アンキロサウルス類近縁種（ノドサウルス科の枝）' },
+  ],
+  discoveries: [
+    { discoveredBy: 'リュウ・ジュンチャン（吕君昌）ら', note: 'マンチュアン層から記載された、ゴビサウルスやシャモサウルスに近縁な原始的アンキロサウルス科。' },
+  ],
+  fossilLocations: [
+    { region: '河南省（マンチュアン層）', specimenName: 'マンチュアン層, 前期白亜紀' },
+  ],
 }

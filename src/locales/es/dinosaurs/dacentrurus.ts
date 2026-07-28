@@ -14,4 +14,17 @@ export default {
     { label: 'Placas', value: 'Anchas y planas', description: 'Tenía una larga hilera de placas anchas, planas y triangulares que recorrían la espalda y las caderas.' },
     { label: 'Origen', value: 'Inglaterra y Francia', description: 'Hallado en la Arcilla de Kimmeridge de Dorset, Inglaterra, y en el Jurásico de Francia y Portugal.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Famoso pariente posterior' },
+    { id: 'loricatosaurus', relationship: 'Primo estegosaurio europeo' },
+    { id: 'kentrosaurus', relationship: 'Primo estegosaurio africano' },
+  ],
+  discoveries: [
+    { year: 1875, location: 'Arcilla de Kimmeridge, Dorset, Inglaterra', discoveredBy: 'Richard Owen', note: 'Originalmente nombrado Omosaurus; luego renombrado Dacentrurus.' },
+    { year: 1902, location: 'Reino Unido y Francia', discoveredBy: 'Varios', note: 'Renombrado Dacentrurus por F.A. Lucas; material adicional descrito.' },
+  ],
+  fossilLocations: [
+    { country: 'Reino Unido', region: 'Kimmeridge, Dorset', coordinates: [50.6, -2.1], specimenName: 'Material holotipo NHMUK' },
+    { country: 'Francia', region: 'Jurasico de Francia', coordinates: [46.5, 2.0], specimenName: 'Varios especimenes franceses' },
+  ],
 }

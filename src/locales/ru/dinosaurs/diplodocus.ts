@@ -14,4 +14,17 @@ export default {
       { label: 'Зубы', value: 'Карандашевидные', description: 'Длинные узкие зубы были удобны для срывания листвы с ветвей.' },
       { label: 'Ноздри', value: 'На макушке', description: 'Носовое отверстие располагалось сверху на черепе, и учёные десятилетиями спорили, зачем это было нужно.' },
     ],
-  }
+  relatedDinosaurs: [
+    { id: 'apatosaurus', relationship: 'Близкий родственник' },
+    { id: 'allosaurus', relationship: 'Хищник' },
+    { id: 'brachiosaurus', relationship: 'Современник' },
+  ],
+  discoveries: [
+    { year: 1877, location: 'Колорадо, США', discoveredBy: 'Сэмюэл Уэнделл Уиллистон', note: 'Первые окаменелости найдены в Каньон-Сити.' },
+    { year: 1899, location: 'Вайоминг, США', discoveredBy: 'Экспедиция AMNH', note: 'Самый полный скелет найден на Шип-Крик.' },
+  ],
+  fossilLocations: [
+    { country: 'США', region: 'Вайоминг', coordinates: [43.0, -107.5], specimenName: 'Формация Моррисон' },
+    { country: 'США', region: 'Колорадо', coordinates: [39.5, -105.0] },
+  ],
+}

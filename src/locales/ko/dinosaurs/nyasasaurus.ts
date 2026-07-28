@@ -14,4 +14,15 @@ export default {
     { label: '뼈 성장', value: '빠른 성장', description: '뼈 조직학이 빠르고 지속적인 성장률을 보여줌 — 공룡의 특징.' },
     { label: '탄자니아', value: '삼첩기 중기', description: '삼첩기 중기 만다 층에서 발견 — 최초의 공룡적 동물이 출현하던 시대.' },
   ],
+  relatedDinosaurs: [
+    { id: 'eoraptor', relationship: '후대의 아르헨티나 초기 공룡' },
+    { id: 'herrerasaurus', relationship: '후대의 초기 공룡' },
+  ],
+  discoveries: [
+    { discoveredBy: '렉스 패링턴', note: '1930년대에 뼈를 수집했지만 2013년에 스털링 네스비트와 동료들이 공식적으로 기재했다.' },
+    { discoveredBy: '스털링 네스비트 외', note: 'Biology Letters에 발표된 공식 기재는 이 표본을 세계에서 가장 오래된 공룡일 가능성이 있다고 지목했다.' },
+  ],
+  fossilLocations: [
+    { region: '루후후 분지, 만다 층, 루부마 주', specimenName: 'NHMUK PV R6856 — 완모식 표본 상완골과 척추뼈' },
+  ],
 }

@@ -14,4 +14,17 @@ export default {
     { label: '코', value: '머리 꼭대기에 위치', description: '콧구멍은 두개골 꼭대기의 돔 모양 융기 위에 있어, 공명음을 내는 데 사용되었을 가능성이 있습니다.' },
     { label: '다리', value: '앞다리가 뒷다리보다 김', description: '공룡으로서는 드문 체형으로, 앞다리가 뒷다리보다 길어 기린과 유사한 자세를 취했습니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: '동시대 생물' },
+    { id: 'allosaurus', relationship: '포식자 위협' },
+    { id: 'apatosaurus', relationship: '동시대 생물' },
+  ],
+  discoveries: [
+    { year: 1900, location: '미국 콜로라도주', discoveredBy: '엘머 리그스', note: '모리슨층에서 브라키오사우루스의 최초 화석이 발견되었습니다.' },
+    { year: 1909, location: '탄자니아', discoveredBy: '베르너 야넨슈', note: '텐다구루에서의 대규모 탐사에서 거의 완전한 골격이 발굴되었습니다.' },
+  ],
+  fossilLocations: [
+    { country: '미국', region: '콜로라도주', coordinates: [39.5, -105.0], specimenName: '모리슨층' },
+    { country: '탄자니아', region: '텐다구루', coordinates: [-10.5, 39.5] },
+  ],
 }

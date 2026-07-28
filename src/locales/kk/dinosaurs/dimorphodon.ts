@@ -13,4 +13,14 @@ export default {
     { label: 'Бас сүйегі', value: 'Тупикке ұқсас', description: 'Ерекше терең әрі көлемді бас сүйегі оны азу тістері мен қанаттары бар тупикке ұқсатып көрсетеді.' },
     { label: 'Жасы', value: 'Ерте юра', description: 'Ұшу әлі де жаңа эволюциялық технология болған дәуірдегі ең ерте птерозаврлардың бірі.' },
   ],
+  relatedDinosaurs: [
+    { id: 'pterodactylus', relationship: 'Неғұрлым дамыған ұрпағы' },
+    { id: 'rhamphorhynchus', relationship: 'Заманауи' },
+  ],
+  discoveries: [
+    { year: 1828, location: 'Дорсет, Ұлыбритания', discoveredBy: 'Мэри Эннинг', note: 'Юра жағалауында атақты қазба іздеуші Мэри Эннинг тапқан.' },
+  ],
+  fossilLocations: [
+    { country: 'Ұлыбритания', region: 'Дорсет', coordinates: [50.6, -2.9], specimenName: 'Блу-Лиас формациясы, Юра жағалауы' },
+  ],
 }

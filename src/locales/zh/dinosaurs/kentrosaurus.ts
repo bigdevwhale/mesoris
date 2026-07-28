@@ -14,4 +14,16 @@
     { label: '亲缘', value: '非洲剑龙', description: '剑龙的近亲——证明剑龙类的分布远远超出了北美洲。' },
     { label: '后肢', value: '强壮的后腿', description: '前轻后重的体型有助于像挥舞钉头锤一样甩动尾巴。' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: '近亲' },
+    { id: 'brachiosaurus', relationship: '坦达古鲁同时代物种' },
+    { id: 'allosaurus', relationship: '捕食者对照' },
+  ],
+  discoveries: [
+    { discoveredBy: '德国坦达古鲁考察队', note: '大规模发掘从著名的侏罗纪地层中出土了多具骨架。' },
+    { discoveredBy: '埃德温·亨尼希', note: '亨尼希正式描述了钉状龙，并强调了其不寻常的尖刺排列。' },
+  ],
+  fossilLocations: [
+    { region: '坦达古鲁，坦桑尼亚', specimenName: '坦达古鲁组' },
+  ],
 }

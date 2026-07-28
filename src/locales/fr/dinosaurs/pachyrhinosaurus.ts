@@ -14,4 +14,16 @@ export default {
     { label: 'Gisement', value: 'Troupeaux massifs', description: 'Vivait en immenses troupeaux de milliers d\'individus.' },
     { label: 'Taille', value: '8 mètres', description: 'Un grand cératopsidé d\'environ 4 tonnes.' },
   ],
+  relatedDinosaurs: [
+    { id: 'styracosaurus', relationship: 'Proche parent' },
+    { id: 'triceratops', relationship: 'Parent' },
+  ],
+  discoveries: [
+    { year: 1946, location: 'Alberta, Canada', discoveredBy: 'Charles M. Sternberg', note: 'Premier crâne découvert.' },
+    { year: 1970, location: 'Alberta, Canada', discoveredBy: 'Al Lakusta', note: 'Gisement massif contenant des centaines d\'individus.' },
+  ],
+  fossilLocations: [
+    { country: 'Canada', region: 'Alberta', coordinates: [55.0, -118.0], specimenName: 'Formation de Wapiti' },
+    { country: 'USA', region: 'Alaska', coordinates: [69.0, -151.0], specimenName: 'Formation de Prince Creek' },
+  ],
 }

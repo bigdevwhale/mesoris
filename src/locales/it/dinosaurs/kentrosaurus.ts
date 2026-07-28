@@ -14,4 +14,16 @@ export default {
     { label: 'Parentela', value: 'Stegosauro africano', description: 'Un cugino stretto dello Stegosauro — dimostrando che gli stegosauri erano diffusi ben oltre il Nord America.' },
     { label: 'Zampe posteriori', value: 'Quarti posteriori potenti', description: 'Corpo leggero anteriormente e pesante posteriormente — aiutava a brandire la coda come una mazza chiodata.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Parente stretto' },
+    { id: 'brachiosaurus', relationship: 'Contemporaneo di Tendaguru' },
+    { id: 'allosaurus', relationship: 'Analogo predatorio' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Spedizione tedesca di Tendaguru', note: 'Grandi scavi recuperarono numerosi scheletri dai famosi giacimenti giurassici.' },
+    { discoveredBy: 'Edwin Hennig', note: 'Hennig descrisse formalmente il Kentrosauro e sottolineò l\'insolita disposizione degli aculei.' },
+  ],
+  fossilLocations: [
+    { region: 'Tendaguru, Tanzania', specimenName: 'Formazione Tendaguru' },
+  ],
 }

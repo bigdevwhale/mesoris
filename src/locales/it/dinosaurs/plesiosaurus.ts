@@ -14,4 +14,14 @@ export default {
     { label: 'Scoperta', value: 'Il trionfo di Anning', description: 'Scoperto da Mary Anning nel 1823 — uno dei primissimi rettili preistorici conosciuti.' },
     { label: 'Dimensioni', value: '3,5 metri', description: 'Rettile marino di taglia media del Giurassico inferiore.' },
   ],
+  relatedDinosaurs: [
+    { id: 'elasmosaurus', relationship: 'Discendente molto più grande' },
+    { id: 'ichthyosaurus', relationship: 'Contemporaneo' },
+  ],
+  discoveries: [
+    { year: 1823, location: 'Lyme Regis, Regno Unito', discoveredBy: 'Mary Anning', note: 'Primo scheletro articolato scoperto sulla costa giurassica — una sensazione scientifica.' },
+  ],
+  fossilLocations: [
+    { country: 'Regno Unito', region: 'Dorset', coordinates: [50.7, -2.9], specimenName: 'Formazione Blue Lias, costa giurassica' },
+  ],
 }

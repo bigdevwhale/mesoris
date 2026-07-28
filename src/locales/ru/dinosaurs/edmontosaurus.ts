@@ -14,4 +14,16 @@ export default {
       { label: 'Зубы', value: 'Зубная батарея', description: 'Более тысячи зубов были собраны в сложную перетирающую систему для пережёвывания жёстких растений.' },
       { label: 'Нос', value: 'Надувной мешок', description: 'Возможно, имел надувной носовой мешок для зрительных сигналов и звуковой коммуникации.' },
     ],
-  }
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Добыча' },
+    { id: 'maiasaura', relationship: 'Близкий родственник' },
+  ],
+  discoveries: [
+    { year: 1892, location: 'Южная Дакота, США', discoveredBy: 'Othniel Charles Marsh', note: 'Впервые описан.' },
+    { year: 1999, location: 'Северная Дакота, США', discoveredBy: 'Тайлер Лайсон', note: '«Дакота» — одна из лучше всего сохранившихся мумий динозавров.' },
+  ],
+  fossilLocations: [
+    { country: 'США', region: 'Южная Дакота', coordinates: [44.5, -100.0], specimenName: 'Формация Хелл-Крик' },
+    { country: 'Канада', region: 'Альберта', coordinates: [53.5, -113.5] },
+  ],
+}

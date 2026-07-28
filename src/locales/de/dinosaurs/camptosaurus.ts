@@ -14,4 +14,16 @@ export default {
     { label: 'Nahrung', value: 'Farne und Schachtelhalme', description: 'Sein gezackter Schnabel war ideal zum Abrupfen von niedrig wachsender Vegetation in den Auenwäldern des Jura.' },
     { label: 'Gefährdung', value: 'Beute von Allosaurus', description: 'Seine geringe Größe machte ihn zur Hauptbeute für den Spitzenprädator Allosaurus.' },
   ],
+  relatedDinosaurs: [
+    { id: 'iguanodon', relationship: 'Enger Verwandter aus den Iguanodontia' },
+    { id: 'edmontosaurus', relationship: 'Späterer Hadrosaurier-Nachfahre' },
+    { id: 'muttaburrasaurus', relationship: 'Späterer Ornithopode-Verwandter' },
+  ],
+  discoveries: [
+    { discoveredBy: 'O.C. Marsh', note: 'Mehrere Exemplare aus der Ära der Bone Wars geborgen; Marsh beschrieb die Gattung 1879.' },
+  ],
+  fossilLocations: [
+    { region: 'Albany County, Wyoming (Morrison-Formation)', specimenName: 'YPM 1877 — Holotyp-Material' },
+    { region: 'Dinosaur National Monument, Utah', specimenName: 'Zugewiesene Wachstumsserien-Exemplare' },
+  ],
 }

@@ -14,4 +14,15 @@ export default {
     { label: 'Pico', value: 'Pico de pato', description: 'Un pico ancho, desdentado y similar al de un pato en la parte delantera, con una compleja batería dental en las mejillas, para masticar con eficiencia.' },
     { label: 'Familia', value: 'Origen de los hadrosaurios', description: 'Dio nombre a Hadrosauridae, la familia de dinosaurios con pico de pato que incluye a Edmontosaurus y Parasaurolophus.' },
   ],
+  relatedDinosaurs: [
+    { id: 'edmontosaurus', relationship: 'Pariente hadrosáurido posterior' },
+    { id: 'parasaurolophus', relationship: 'Primo hadrosáurido con cresta' },
+    { id: 'iguanodon', relationship: 'Ancestro ornitópodo más temprano' },
+  ],
+  discoveries: [
+    { discoveredBy: 'William Parker Foulke', note: 'Un esqueleto casi completo descubierto durante una excavación en una cantera de marga. Nombrado por Joseph Leidy.' },
+  ],
+  fossilLocations: [
+    { region: 'Haddonfield, Nueva Jersey', specimenName: 'ANSP 10005 — esqueleto holotipo' },
+  ],
 }

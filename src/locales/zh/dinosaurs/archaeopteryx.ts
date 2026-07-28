@@ -14,4 +14,17 @@
     { label: '飞行能力', value: '短距离扑飞', description: '多数研究认为它能够短程拍翼或滑翔，但还不像现代鸟类那样擅长持续飞行。' },
     { label: '体型', value: '约乌鸦大小', description: '它体长约半米、体重约1千克，是一种小型有羽毛捕食者。' },
   ],
+  relatedDinosaurs: [
+    { id: 'microraptor', relationship: '拥有气动适应能力的有羽近鸟亲戚' },
+    { id: 'troodon', relationship: '感觉解剖结构先进的鸟形兽脚类' },
+    { id: 'velociraptor', relationship: '手盗龙类中较晚出现的驰龙科近亲' },
+  ],
+  discoveries: [
+    { year: 1861, location: '德国巴伐利亚索伦霍芬石灰岩', discoveredBy: '采石场工人；由赫尔曼·冯·迈尔描述', note: '始祖鸟的首件骨骼标本被正式描述并与鸟类进化相联系。' },
+    { year: 1877, location: '德国艾希施泰特附近布卢门贝格', discoveredBy: '雅各布·尼迈尔采石场', note: '柏林标本保存了异常精美的头骨和羽毛印痕，成为经典的博物馆标本。' },
+  ],
+  fossilLocations: [
+    { country: '德国', region: '巴伐利亚索伦霍芬', coordinates: [48.9, 10.99], specimenName: '伦敦标本 (BMNH 37001)' },
+    { country: '德国', region: '巴伐利亚艾希施泰特', coordinates: [48.89, 11.18], specimenName: '柏林标本 (HMN 1880)' },
+  ],
 }

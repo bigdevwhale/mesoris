@@ -14,4 +14,15 @@ export default {
     { label: 'ユタ州', value: 'ワーウィープ層', description: 'ワーウィープ層で発見されました。南方の動物相は北方のものとは異なる豊かな生態系の一部です。' },
     { label: '角', value: 'フリルの角と鼻角', description: 'フリルの曲がったトゲに加えて、鼻角と小さな眉角も持っていました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'styracosaurus', relationship: '後年のセントロサウルス亜科の近縁種' },
+    { id: 'triceratops', relationship: '後年の角竜類の近縁種' },
+    { id: 'protoceratops', relationship: '祖先的な角竜類の近縁種' },
+  ],
+  discoveries: [
+    { year: 2002, location: 'アメリカ・ユタ州ガーフィールド郡ワウィープ層', discoveredBy: 'ジェームズ・カークランドとドナルド・ドゥブルー', note: 'ユタ自然史博物館チームによって部分頭骨が採集され、2010年にカークランドとドゥブルーによって正式に記載された。' },
+  ],
+  fossilLocations: [
+    { country: 'アメリカ合衆国', region: 'ユタ州ガーフィールド郡（ワウィープ層）', coordinates: [37.5, -111.5], specimenName: 'UMNH VP 16699 — ホロタイプ部分頭骨' },
+  ],
 }

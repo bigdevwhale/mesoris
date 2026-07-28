@@ -14,4 +14,15 @@ export default {
     { label: '서식지', value: '호반 저지대', description: '중국 북서부 정가르 분지의 내륙 호숫가에 살았어요.' },
     { label: '꼬리', value: '네 개의 가시', description: '꼬리 끝에 네 개의 가시가 있는 타고미저를 가지고 있었고, 포식자로부터 방어용으로 사용했어요.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: '더 높은 플레이트를 가진 유명한 친척' },
+    { id: 'kentrosaurus', relationship: '가시로 무장한 친척' },
+    { id: 'tuojiangosaurus', relationship: '중국 검룡 친척' },
+  ],
+  discoveries: [
+    { discoveredBy: '동즈밍', note: '부분적 두개후 골격이 기재되어 Wuerhosaurus homheni로 명명되었다.' },
+  ],
+  fossilLocations: [
+    { region: '정가르 분지, 신장', specimenName: 'IVPP V.4006 — 홀로타입 부분 골격' },
+  ],
 }

@@ -14,4 +14,14 @@ export default {
     { label: 'शिकार', value: 'सक्रिय परभक्षी', icon: 'target', description: 'साक्ष्य बताते हैं कि यह सक्रिय रूप से शिकार करता था और लड़ता था — माँस का अपमानजनक माँस खाने वाला नहीं।' },
     { label: 'काटना', value: 'हड्डी-चकनाचूर', icon: 'hammer', description: 'पहले से ही टी. रेक्स को प्रसिद्ध बनाने वाला शक्तिशाली हड्डी-चकनाचूर काटने का विकास कर रहा था।' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'वंशज' },
+  ],
+  discoveries: [
+    { year: 1921, location: 'अल्बर्टा, कनाडा', discoveredBy: 'चार्ल्स एम. स्टर्नबर्ग', note: 'ओल्डमैन फॉर्मेशन में पहला खोपड़ी खोजा गया।' },
+  ],
+  fossilLocations: [
+    { country: 'कनाडा', region: 'अल्बर्टा', coordinates: [49.5, -112.0], specimenName: 'ओल्डमैन शैलसमूह' },
+    { country: 'अमेरिका', region: 'मोंटाना', coordinates: [47.5, -110.5], specimenName: 'टू मेडिसिन शैलसमूह' },
+  ],
 }

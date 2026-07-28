@@ -13,4 +13,15 @@ export default {
     { label: 'Баспен соқтығысу', value: 'Даулы мәселе', description: 'Олар қойлар сияқты бастарын соқтығыстырған болуы мүмкін, бірақ бұл толық дәлелденбеген.' },
     { label: 'Тістері', value: 'Ұсақ әрі жапырақ тәрізді', description: 'Жұмсақ өсімдіктерді, жемістерді және мүмкін жәндіктерді жеген болуы ықтимал.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Жыртқыш' },
+    { id: 'triceratops', relationship: 'Заманауи' },
+  ],
+  discoveries: [
+    { year: 1931, location: 'Вайоминг, АҚШ', discoveredBy: 'Чарльз Гилмор', note: 'Алғашқы бас күмбезі табылды.' },
+  ],
+  fossilLocations: [
+    { country: 'АҚШ', region: 'Вайоминг', coordinates: [44.5, -105.0], specimenName: 'Ланс формациясы' },
+    { country: 'АҚШ', region: 'Монтана', coordinates: [47.5, -106.5] },
+  ],
 }

@@ -14,4 +14,16 @@ export default {
     { label: 'Abondance', value: 'Très commun', description: 'Plus de 100 squelettes trouvés en Allemagne.' },
     { label: 'Mains', value: 'Pouce préhensile', description: 'Grande griffe de pouce pour saisir les branches — pas encore un pilier porteur comme chez les sauropodes.' },
   ],
+  relatedDinosaurs: [
+    { id: 'brachiosaurus', relationship: 'Descendant' },
+    { id: 'diplodocus', relationship: 'Descendant' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Johann Friedrich Engelhardt', note: 'Premiers fossiles découverts — l\'une des plus anciennes découvertes de dinosaures en Europe continentale.' },
+    { discoveredBy: 'Eberhard Fraas', note: 'Site d\'enfouissement de masse avec des dizaines de squelettes.' },
+  ],
+  fossilLocations: [
+    { region: 'Trossingen', specimenName: 'Membre du Knollenmergel' },
+    { region: 'Bavière', specimenName: '' },
+  ],
 }

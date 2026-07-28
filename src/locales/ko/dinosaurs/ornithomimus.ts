@@ -14,4 +14,16 @@ export default {
     { label: '이름', value: '"새를 닮은"', description: '놀랍도록 현대 타조를 닮음 — 같은 체형, 같은 생활 방식.' },
     { label: '몸길이', value: '4미터', description: '중형 수각류, 큰 타조 정도 크기.' },
   ],
+  relatedDinosaurs: [
+    { id: 'gallimimus', relationship: '가까운 친척' },
+    { id: 'struthiomimus', relationship: '가까운 친척' },
+  ],
+  discoveries: [
+    { discoveredBy: '오스니얼 찰스 마시', note: '뼈의 전쟁 중 최초로 기재됨.' },
+    { discoveredBy: '프랑수아 테리앙', note: '깃털이 보존된 깃털 달린 표본 발견.' },
+  ],
+  fossilLocations: [
+    { region: '앨버타', specimenName: '호스슈 캐년층' },
+    { region: '콜로라도', specimenName: '' },
+  ],
 }

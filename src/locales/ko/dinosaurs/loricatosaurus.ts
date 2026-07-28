@@ -14,4 +14,16 @@ export default {
     { label: '재명명', value: '예전 이름은 Lexovisaurus', description: '원래는 Lexovisaurus의 한 종으로 명명되었지만, 후에 독립된 유럽 속으로 인정되었어요.' },
     { label: '서식지', value: '해안 저지대', description: '중기 쥐라기의 유럽과 북아프리카의 해안 및 범람원 환경에서 살았어요.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: '유명한 친척' },
+    { id: 'kentrosaurus', relationship: '아프리카 검룡 사촌' },
+    { id: 'dacentrurus', relationship: '유럽 검룡 친척' },
+  ],
+  discoveries: [
+    { discoveredBy: '프란츠 노프처', note: '원래 Lexovisaurus priscus로 명명됨.' },
+    { discoveredBy: '수잔나 메이드먼트와 팀', note: '별도의 속인 Loricatosaurus로 재분류되고 아프리카 자료가 포함됨.' },
+  ],
+  fossilLocations: [
+    { region: '잉글랜드, 영국', specimenName: 'NHMUK 홀로타입 자료' },
+  ],
 }

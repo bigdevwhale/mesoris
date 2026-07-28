@@ -14,4 +14,15 @@
     { label: '感覚', value: '優れた聴覚', description: '抜群の聴覚 — トサカが音を増幅し方向づけてコミュニケーションを助けた。' },
     { label: '年齢', value: 'トサカで年齢がわかる', description: '幼体にはトサカがなく、亜成体では小さな突起、成体では堂々たる完全なトサカに。' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: '近縁種' },
+    { id: 'corythosaurus', relationship: '近縁種' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ローレンス・ラム', note: '最初の標本が発見されました。' },
+    { discoveredBy: 'ウィリアム・パークス', note: 'トサカ付きの完全な骨格に命名されました。' },
+  ],
+  fossilLocations: [
+    { region: 'アルバータ州、カナダ', specimenName: 'ダイナソーパーク累層' },
+  ],
 }

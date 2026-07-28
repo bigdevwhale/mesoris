@@ -14,4 +14,19 @@ export default {
     { label: 'Cerveau', value: 'Très développé', description: 'Excellente vision et odorat — pouvait repérer ses proies à des kilomètres.' },
     { label: 'Bras', value: 'Minuscules mais puissants', description: 'Seulement 1 mètre de long mais pouvaient soulever 200 kg — restent un mystère pour les scientifiques.' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: 'Proie' },
+    { id: 'edmontosaurus', relationship: 'Proie' },
+    { id: 'daspletosaurus', relationship: 'Ancêtre' },
+    { id: 'giganotosaurus', relationship: 'Évolution convergente' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Barnum Brown', note: 'Premier squelette partiel découvert dans la formation de Hell Creek.' },
+    { discoveredBy: 'Susan Hendrickson', note: '«Sue» — le squelette de T. rex le plus complet jamais trouvé, plus de 90 % intact.' },
+  ],
+  fossilLocations: [
+    { region: 'Montana', specimenName: 'Formation de Hell Creek' },
+    { region: 'Dakota du Sud', specimenName: 'Sue' },
+    { region: 'Wyoming', specimenName: 'Formation de Lance' },
+  ],
 }

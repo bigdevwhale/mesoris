@@ -14,4 +14,14 @@ export default {
     { label: '발톱', value: '크게 휜 발톱', description: '테리지노사우루스만큼 극단적이지 않은, 짧고 튼튼한 발톱을 가지며 가지를 끌어당기거나 방어에 사용된 것으로 보인다.' },
     { label: '골반', value: '뒤쪽을 향한 치골', description: '용반류 수각류 중 유일하게 테리지노사우루스류는 조류 같은 뒤쪽 치골을 진화시켜 식물 소화를 위한 큰 장 공간을 확보.' },
   ],
+  relatedDinosaurs: [
+    { id: 'therizinosaurus', relationship: '가까운 테리지노사우루스류 근연종' },
+    { id: 'oviraptor', relationship: '동시대 몽골 수각류' },
+  ],
+  discoveries: [
+    { discoveredBy: '알탄게렐 페를레', note: '1979년 페를레가 기재했다; 최초의 분류는 불확실했지만 이후 연구에서 Therizinosauria에 확고히 자리잡았다.' },
+  ],
+  fossilLocations: [
+    { region: '몽골 도르노고비주, 바얀 시레층', specimenName: 'IGM 100/80 — 모식표본, 부분 골격' },
+  ],
 }

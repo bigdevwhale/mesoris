@@ -14,4 +14,14 @@ export default {
     { label: 'Cola', value: 'Larga', description: 'Cola rigida con diamante terminal' },
     { label: 'Envergadura', value: '1,5 m', description: 'Un pterosaurio relativamente pequeño' },
   ],
+  relatedDinosaurs: [
+    { id: 'pterodactylus', relationship: 'Descendiente mas avanzado' },
+    { id: 'rhamphorhynchus', relationship: 'Contemporaneo' },
+  ],
+  discoveries: [
+    { year: 1828, location: 'Dorset, Reino Unido', discoveredBy: 'Mary Anning', note: 'Descubierto por la famosa cazadora de fosiles Mary Anning en la Costa Jurásica.' },
+  ],
+  fossilLocations: [
+    { country: 'Reino Unido', region: 'Dorset', coordinates: [50.6, -2.9], specimenName: 'Formacion Blue Lias, Costa Jurásica' },
+  ],
 }

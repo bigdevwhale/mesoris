@@ -14,4 +14,17 @@ export default {
     { label: 'Mythos', value: 'Keine 25 Meter', description: 'TV machte Liopleurodon berühmt als 20-Meter-Seeungeheuer — echte Belege deuten auf ein viel kleineres Tier hin.' },
     { label: 'Schwimmen', value: 'Vier-Flossen-Antrieb', description: 'Flog unter Wasser mit allen vier Flossen in koordinierten Schlägen, wie andere Plesiosaurier.' },
   ],
+  relatedDinosaurs: [
+    { id: 'kronosaurus', relationship: 'Späteres Pliosaur-Analogon' },
+    { id: 'plesiosaurus', relationship: 'Entfernter Plesiosaurier-Verwandter' },
+    { id: 'ichthyosaurus', relationship: 'Mariner Zeitgenosse' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Henri-Émile Sauvage', note: 'Zähne und Kiefermaterial bildeten die Grundlage für die Benennung von Liopleurodon.' },
+    { discoveredBy: 'Zahlreiche Sammler und Museen', note: 'Oxford-Clay-Material aus Großbritannien half Paläontologen später, das Tier besser zu verstehen.' },
+  ],
+  fossilLocations: [
+    { region: 'Pas-de-Calais', specimenName: 'Callovische Meeresablagerungen' },
+    { region: 'Oxfordshire', specimenName: 'Oxford-Clay-Formation' },
+  ],
 }

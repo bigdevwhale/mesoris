@@ -14,4 +14,15 @@ export default {
     { label: 'Epoca', value: 'Cretacico Temprano', description: '~125 millones de anos' },
     { label: 'Significado', value: 'Nuevo Cazador', description: 'Un hallazgo relativamente reciente' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: 'Pariente alosauroideo' },
+    { id: 'acrocanthosaurus', relationship: 'Pariente neovenatorido' },
+    { id: 'carcharodontosaurus', relationship: 'Alosauroideo grande relacionado' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Coleccionistas aficionados (coleccionistas de fosiles de la Isla de Wight)', note: 'Material inicial encontrado en 1978 por coleccionistas aficionados; excavaciones posteriores de Hutt y companeros produjeron material sustancial; descrito formalmente en 1996.' },
+  ],
+  fossilLocations: [
+    { region: 'Bahia de Brighstone, Isla de Wight (Formacion Wessex), Inglaterra', specimenName: 'MIWG.6348 — holotipo, esqueleto ~70% completo' },
+  ],
 }

@@ -14,4 +14,15 @@ export default {
     { label: 'Dents', value: 'Lames dentelées', description: 'Des dents en forme de lame et dentelées, idéales pour trancher la chair — un chasseur actif.' },
     { label: 'Parenté', value: 'Coélophysoïdé', description: 'Appartient à la même lignée que Coelophysis — un plan corporel partagé à travers le Trias supérieur.' },
   ],
+  relatedDinosaurs: [
+    { id: 'coelophysis', relationship: 'Proche parent coélophysoïde' },
+    { id: 'herrerasaurus', relationship: 'Parent théropode ancien' },
+    { id: 'dilophosaurus', relationship: 'Descendant coélophysoïde ultérieur' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Hugo Rühle von Lilienstern', note: 'Deux squelettes partiels récupérés dans la formation de Trossingen ; décrits par von Huene et nommés en l\'honneur de von Lilienstern.' },
+  ],
+  fossilLocations: [
+    { region: 'Thuringe (formation de Trossingen), Allemagne', specimenName: 'MB.R. 2175 — holotype principal' },
+  ],
 }

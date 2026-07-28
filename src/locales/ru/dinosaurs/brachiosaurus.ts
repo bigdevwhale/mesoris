@@ -14,4 +14,17 @@ export default {
       { label: 'Сердце', value: 'Огромный насос', description: 'Чтобы поднимать кровь к мозгу по девятиметровой шее, требовалось исключительно мощное сердце.' },
       { label: 'Питание', value: '1 тонна в день', description: 'Ежедневно съедал около 1000 килограммов растительности — листья, папоротники и ветви хвойных деревьев.' },
     ],
+    relatedDinosaurs: [
+      { id: 'diplodocus', relationship: 'Современник' },
+      { id: 'allosaurus', relationship: 'Угроза со стороны хищника' },
+      { id: 'apatosaurus', relationship: 'Современник' },
+    ],
+    discoveries: [
+      { year: 1900, location: 'Колорадо, США', discoveredBy: 'Элмер Риггс', note: 'Первые окаменелости брахиозавра найдены в формации Моррисон.' },
+      { year: 1909, location: 'Танзания, Африка', discoveredBy: 'Вернер Янеш', note: 'Крупная экспедиция обнаружила почти полные скелеты в Тендагуру.' },
+    ],
+    fossilLocations: [
+      { country: 'США', region: 'Колорадо', coordinates: [39.5, -105.0], specimenName: 'Формация Моррисон' },
+      { country: 'Танзания', region: 'Тендагуру', coordinates: [-10.5, 39.5] },
+    ],
   }

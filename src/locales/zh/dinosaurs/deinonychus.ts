@@ -14,4 +14,15 @@
     { label: '羽毛', value: '可能有羽毛', description: '近亲物种证实了羽毛的存在——温血且类似鸟类。' },
     { label: '狩猎', value: '群体猎手', description: '多只个体在腱龙化石旁被发现——群体狩猎的有力证据。' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: '近亲' },
+    { id: 'oviraptor', relationship: '同时代' },
+  ],
+  discoveries: [
+    { year: 1931, location: '美国蒙大拿州', discoveredBy: '巴纳姆·布朗', note: '首批化石被发现，但数十年后才被研究。' },
+    { year: 1964, location: '美国蒙大拿州', discoveredBy: '约翰·奥斯特罗姆', note: '奥斯特罗姆的发现及其1969年的论文彻底改变了恐龙科学。' },
+  ],
+  fossilLocations: [
+    { country: '美国', region: '蒙大拿州', coordinates: [45.5, -108.5], specimenName: '克洛夫利组' },
+  ],
 }

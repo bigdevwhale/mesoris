@@ -14,4 +14,15 @@ export default {
     { label: 'Denti', value: 'Piccoli e a forma di foglia', description: 'Denti minuscoli — si nutriva di piante tenere, frutti e forse insetti.' },
     { label: 'Dimensioni', value: '4,5 metri', description: 'Erbivoro bipede, pesante circa quanto un cavallo.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Predatore' },
+    { id: 'triceratops', relationship: 'Contemporaneo' },
+  ],
+  discoveries: [
+    { year: 1931, location: 'Wyoming, USA', discoveredBy: 'Charles Gilmore', note: 'Prima cupola cranica scoperta.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Wyoming', coordinates: [44.5, -105.0], specimenName: 'Formazione Lance' },
+    { country: 'USA', region: 'Montana', coordinates: [47.5, -106.5] },
+  ],
 }

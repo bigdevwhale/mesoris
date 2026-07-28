@@ -14,4 +14,16 @@
     { label: '食性', value: '小動物専門', description: 'トカゲ、哺乳類、恐竜の幼体を素早い噛みつきと掴む手で捕食していたと考えられます。' },
     { label: '生態系', value: 'モリソンの共同ハンター', description: 'コエルルスはアロサウルスやステゴサウルスなどの巨人と共存していましたが、はるかに小型の捕食者ニッチを占めていました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'compsognathus', relationship: '同等の小型獣脚類のニッチ' },
+    { id: 'ornithomimus', relationship: '収斂的な走行性形質を持つ後年の俊足コエルロサウルス類' },
+    { id: 'allosaurus', relationship: '同じ層を共有する大型捕食者' },
+  ],
+  discoveries: [
+    { year: 1879, location: 'アメリカ・ワイオミング州コモブラフ', discoveredBy: 'O.C.マーシュ遠征隊', note: 'モリソン層から Coelurus fragilis として記載された模式標本。' },
+    { year: 1980, location: 'モリソンの再評価', discoveredBy: '複数の獣脚類専門家', note: '再分析により、本分類群が小型コエルロサウルス類である可能性が明確になった。' },
+  ],
+  fossilLocations: [
+    { country: 'アメリカ', region: 'ワイオミング州コモブラフ（モリソン層）', coordinates: [41.8, -106.0], specimenName: 'Coelurus fragilis 模式標本' },
+  ],
 }

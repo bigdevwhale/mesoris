@@ -14,4 +14,14 @@
     { label: '发现地点', value: '德国索伦霍芬', description: '发现于著名的索伦霍芬石灰岩中，与始祖鸟产自同一地层。' },
     { label: '速度', value: '闪电般快速', description: '其轻巧的长后腿和平衡尾巴使其成为极快速的奔跑者。' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: '远亲' },
+  ],
+  discoveries: [
+    { year: 1859, location: '德国巴伐利亚', discoveredBy: '约瑟夫·奥本多夫', note: '在索伦霍芬石灰岩中发现的首件标本，与始祖鸟产自同一地层。' },
+  ],
+  fossilLocations: [
+    { country: '德国', region: '巴伐利亚', coordinates: [48.8, 11.0], specimenName: '索伦霍芬石灰岩' },
+    { country: '法国', region: '普罗旺斯', coordinates: [43.5, 6.5] },
+  ],
 }

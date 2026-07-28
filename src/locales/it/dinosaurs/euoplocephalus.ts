@@ -14,4 +14,13 @@ export default {
     { label: 'Naso', value: 'Vie respiratorie complesse', description: 'Un labirinto di passaggi nasali — forse per raffreddare il cervello o produrre suoni.' },
     { label: 'Corazza', value: 'Senza falle', description: 'Placche ossee coprivano quasi tutta la superficie del corpo in uno scudo senza falle.' },
   ],
+  relatedDinosaurs: [
+    { id: 'ankylosaurus', relationship: 'Parente stretto' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Lawrence Lambe', note: 'Primo esemplare descritto dal Belly River Group.' },
+  ],
+  fossilLocations: [
+    { region: 'Alberta', specimenName: 'Formazione Dinosaur Park' },
+  ],
 }

@@ -14,4 +14,14 @@ export default {
     { label: 'Tamaño', value: '5,5 m', description: 'Un ceratopsio de tamaño medio' },
     { label: 'Epoca', value: '76-75 Ma', description: 'Cretacico Tardio de Alberta' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: 'Pariente' },
+    { id: 'pachyrhinosaurus', relationship: 'Pariente cercano' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Charles M. Sternberg', note: 'Primer cráneo descubierto.' },
+  ],
+  fossilLocations: [
+    { region: 'Alberta', specimenName: 'Formación Dinosaur Park' },
+  ],
 }

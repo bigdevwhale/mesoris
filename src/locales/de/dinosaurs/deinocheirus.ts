@@ -14,4 +14,18 @@ export default {
     { label: 'Schnabel', value: 'Entenschnabel', description: 'Ein breiter, zahnloser Entenschnabel zum Durchseihen von Wasser und Abbeißen von Pflanzen.' },
     { label: 'Ernährung', value: 'Allesfresser', description: 'Mageninhalt zeigt Pflanzen, Fische und kleine Tiere — ein echter Allesfresser der Kreidezeit.' },
   ],
+  relatedDinosaurs: [
+    { id: 'gallimimus', relationship: 'Ornithomimosaurier-Vetter' },
+    { id: 'ornithomimus', relationship: 'Ornithomimosaurier-Verwandter' },
+    { id: 'therizinosaurus', relationship: 'Coelurosaurier-Verwandter' },
+    { id: 'velociraptor', relationship: 'Entfernter Theropode-Verwandter' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Polnisch-Mongolische Expedition (Zofia Kielan-Jaworowska)', note: 'Erste Fossilien gefunden — nur die riesigen Arme und der Schultergürtel. Der Körper blieb fast 50 Jahre ein Rätsel.' },
+    { discoveredBy: 'Koreanisch-Mongolische Expedition', note: 'Ein fast vollständiges Exemplar offenbarte endlich den ganzen Körper — ganz anders als erwartet.' },
+    { discoveredBy: 'Belgisch-Mongolische Expedition', note: 'Zusätzliches Exemplar mit Schädelfragment und Mageninhalt, der die omnivore Ernährung bestätigte.' },
+  ],
+  fossilLocations: [
+    { region: 'Gobi-Wüste, Nemegt-Becken', specimenName: 'Nemegt-Formation' },
+  ],
 }

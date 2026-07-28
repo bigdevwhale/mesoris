@@ -14,4 +14,15 @@ export default {
     { label: '产地', value: '格洛斯特郡', description: '1910年在英格兰格洛斯特郡 Minchinhampton 的一个砖瓦厂发现。' },
     { label: '家族', value: '早期暴龙超科', description: '属于原颌龙科——包括 Guanlong 和 Kileskus 的基干暴龙超科家族。' },
   ],
+  relatedDinosaurs: [
+    { id: 'guanlong', relationship: '具头冠的原颌龙科近亲' },
+    { id: 'dilophosaurus', relationship: '同时期具头冠的兽脚类' },
+    { id: 'tyrannosaurus-rex', relationship: '远房后裔' },
+  ],
+  discoveries: [
+    { year: 1910, location: 'Minchinhampton, Gloucestershire, England', discoveredBy: 'F. Lewis Bradley', note: '在一处砖瓦厂发现的部分头骨；由阿瑟·史密斯·伍德沃德记述。' },
+  ],
+  fossilLocations: [
+    { country: 'United Kingdom', region: '米宁汉普顿, 格洛斯特郡', coordinates: [51.7, -2.2], specimenName: 'NHMUK PV R 4860 — 正模标本, 部分头骨' },
+  ],
 }

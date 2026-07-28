@@ -14,4 +14,17 @@ export default {
     { label: 'プレート', value: '幅広く平ら', description: '背中と腰に沿って、幅広く平らな三角形のプレートが並んでいました。' },
     { label: '産地', value: 'イングランドとフランス', description: 'イングランドのドーセットのキンメリッジ粘土層、フランス、ポルトガルのジュラ紀層から発見されています。' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: '有名な後年の近縁種' },
+    { id: 'loricatosaurus', relationship: 'ヨーロッパの剣竜のいとこ' },
+    { id: 'kentrosaurus', relationship: 'アフリカの剣竜のいとこ' },
+  ],
+  discoveries: [
+    { year: 1875, location: 'イングランド・ドーセット州キンメリッジ粘土層', discoveredBy: 'リチャード・オーウェン', note: '元々 Omosaurus と命名されたが、後に Dacentrurus に改名された。' },
+    { year: 1902, location: 'イギリスとフランス', discoveredBy: '複数の研究者', note: 'F.A.ルーカスによって Dacentrurus に改名。追加の標本が記載された。' },
+  ],
+  fossilLocations: [
+    { country: 'イギリス', region: 'ドーセット州キンメリッジ', coordinates: [50.6, -2.1], specimenName: 'NHMUK ホロタイプ標本' },
+    { country: 'フランス', region: 'フランスのジュラ紀層', coordinates: [46.5, 2.0], specimenName: 'フランスの様々な標本' },
+  ],
 }

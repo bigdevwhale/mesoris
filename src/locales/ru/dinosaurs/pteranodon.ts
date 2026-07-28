@@ -14,4 +14,16 @@ export default {
       { label: 'Не динозавр', value: 'Птерозавр', description: 'Это летающая рептилия, а не настоящий динозавр, хотя жила в одно время с ними.' },
       { label: 'Питание', value: 'Рыбоядный', description: 'Парил над Западным внутренним морем и выхватывал рыбу своим длинным клювом.' },
     ],
-  }
+  relatedDinosaurs: [
+    { id: 'quetzalcoatlus', relationship: 'Более крупный родственник' },
+    { id: 'pterodactylus', relationship: 'Меньший родственник' },
+    { id: 'mosasaurus', relationship: 'Общая экосистема' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Оthniel Чарльз Марш', note: 'Первые найденные окаменелости Pteranodon.' },
+    { discoveredBy: 'С. У. Уиллистон', note: 'Полный череп раскрыл характерный головной гребень.' },
+  ],
+  fossilLocations: [
+    { region: 'Канзас', specimenName: 'Ниобарский мел' },
+  ],
+}

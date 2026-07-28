@@ -14,4 +14,15 @@ export default {
     { label: 'Familie', value: 'Carcharodontosauridae', description: 'Ein kleiner Carcharodontosauridae, Schwestergruppe des riesigen Giganotosaurus und Carcharodontosaurus.' },
     { label: 'Fundort', value: 'Las Hoyas, Spanien', description: 'Gefunden in der Fossillagerstätte Las Hoyas, einem kreidezeitlichen Feuchtgebiet mit hervorragender Erhaltung.' },
   ],
+  relatedDinosaurs: [
+    { id: 'carcharodontosaurus', relationship: 'Größerer Verwandter unter den Carcharodontosauridae' },
+    { id: 'giganotosaurus', relationship: 'Größerer Verwandter unter den Carcharodontosauridae' },
+    { id: 'allosaurus', relationship: 'Früherer Allosauroid-Vetter' },
+  ],
+  discoveries: [
+    { year: 2003, location: 'Las Hoyas, Cuenca, Spanien', discoveredBy: 'José Luis Sanz und Fernando Escaso', note: 'Artikuliertes Skelett in laminierten Kalksteinen der Calizas de La Huérguina-Formation gefunden.' },
+  ],
+  fossilLocations: [
+    { country: 'Spanien', region: 'Las Hoyas, Cuenca', coordinates: [40.07, -1.85], specimenName: 'MCCM-LH 6666 — Holotyp, artikuliertes Skelett' },
+  ],
 }

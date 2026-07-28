@@ -14,4 +14,19 @@ export default {
     { label: 'Esperanza de Vida', value: '~30 anos', description: 'Crecian rapidamente y alcanzaban la madurez alrededor de los 18 anos' },
     { label: 'Cerebro', value: 'Grande', description: 'Uno de los cerebros mas grandes entre los dinosaurios, comparable al de las aves modernas' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: 'Presa' },
+    { id: 'edmontosaurus', relationship: 'Presa' },
+    { id: 'daspletosaurus', relationship: 'Ancestro' },
+    { id: 'giganotosaurus', relationship: 'Evolución convergente' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Barnum Brown', note: 'Primer esqueleto parcial descubierto en la Formación Hell Creek.' },
+    { discoveredBy: 'Susan Hendrickson', note: '«Sue» — el esqueleto de T. rex más completo jamás encontrado, más del 90 % intacto.' },
+  ],
+  fossilLocations: [
+    { region: 'Montana', specimenName: 'Formación Hell Creek' },
+    { region: 'Dakota del Sur', specimenName: 'Sue' },
+    { region: 'Wyoming', specimenName: 'Formación Lance' },
+  ],
 }

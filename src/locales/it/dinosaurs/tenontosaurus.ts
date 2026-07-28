@@ -14,4 +14,16 @@ export default {
     { label: 'Dimensioni', value: 'Erbivoro di medie dimensioni', description: '8 metri e 1 tonnellata — troppo grande per la maggior parte dei piccoli predatori, ma preda per i Deinonychus che cacciavano in gruppo.' },
     { label: 'Abbondanza', value: 'Fossile comune', description: 'Uno dei dinosauri più frequentemente trovati dell\'Aptiano–Albiano del Nord America.' },
   ],
+  relatedDinosaurs: [
+    { id: 'deinonychus', relationship: 'Predatore principale (documentato da denti caduti)' },
+    { id: 'iguanodon', relationship: 'Parente iguanodontiano più grande' },
+    { id: 'camptosaurus', relationship: 'Parente ornitopode più antico' },
+  ],
+  discoveries: [
+    { discoveredBy: 'John H. Ostrom', note: 'Ostrom descrisse Tenontosaurus nel 1970 da materiale del Cloverly; la stessa spedizione fornì gli ormai celebri esemplari di Deinonychus.' },
+  ],
+  fossilLocations: [
+    { region: 'Contea di Wheatland, Montana (Formazione Cloverly)', specimenName: 'AMNH 3040 — olotipo, scheletro' },
+    { region: 'Contea di Carter, Oklahoma (Formazione Antlers)', specimenName: 'Esemplari riferiti dell\'Oklahoma' },
+  ],
 }

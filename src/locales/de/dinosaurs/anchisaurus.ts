@@ -14,4 +14,16 @@ export default {
     { label: 'Ernährung', value: 'Pflanzenfresser', description: 'Blattförmige, gezackte Zähne erlaubten Anchisaurus, zähes Pflanzenmaterial wie Farne und Palmfarne zu verarbeiten.' },
     { label: 'Größe', value: '2,1 Meter', description: 'Mit etwas über 2 Metern war Anchisaurus ein kleiner Prosauropode — weit entfernt von den enormen Sauropoden, die aus seiner Linie hervorgehen sollten.' },
   ],
+  relatedDinosaurs: [
+    { id: 'plateosaurus', relationship: 'Naher Sauropodomorph-Verwandter' },
+    { id: 'eoraptor', relationship: 'Entfernter früher Dinosaurier-Verwandter' },
+  ],
+  discoveries: [
+    { year: 1818, location: 'Hartford County, Connecticut, USA', discoveredBy: 'Solomon Ellsworth Jr.', note: 'Knochen wurden beim Brunnenbau gefunden; zunächst fälschlich als Menschenreste klassifiziert, bevor die Dinosaurier als Gruppe erkannt wurden.' },
+    { year: 1885, location: 'Springfield, Massachusetts, USA', discoveredBy: 'O.C. Marsh', note: 'Marsh beschrieb Anchisaurus formal und benannte die Gattung anhand weiteren Materials aus dem Connecticut Valley.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Hartford County, Connecticut', coordinates: [41.8, -72.7], specimenName: 'Typusexemplar der Portland-Formation' },
+    { country: 'USA', region: 'Hampden County, Massachusetts', coordinates: [42.1, -72.6], specimenName: 'Material aus dem Steinbruch in Springfield' },
+  ],
 }

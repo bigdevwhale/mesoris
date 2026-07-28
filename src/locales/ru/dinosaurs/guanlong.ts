@@ -14,4 +14,15 @@ export default {
     { label: 'Семейство', value: 'Ранний тираннозавроид', description: 'Один из самых ранних и примитивных известных тираннозавроидов — крошечный предок T. rex.' },
     { label: 'Возраст', value: 'Старше T. rex', description: 'Жил примерно за 90 миллионов лет до T. rex — скромный прародитель царя-тирана.' },
   ],
+  relatedDinosaurs: [
+    { id: 'proceratosaurus', relationship: 'Гребенчатый процератозавридный родич' },
+    { id: 'tyrannosaurus-rex', relationship: 'Дальний потомок' },
+    { id: 'dilophosaurus', relationship: 'Современный гребенчатый теропод' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Сюй Син и его команда', note: 'Два хорошо сохранившихся скелета, собранные совместной китайско-американской экспедицией.' },
+  ],
+  fossilLocations: [
+    { region: 'Формация Шишугоу, Синьцзян', specimenName: 'IVPP V14531 — голотип, сочленённый скелет' },
+  ],
 }

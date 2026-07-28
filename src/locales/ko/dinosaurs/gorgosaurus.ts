@@ -14,4 +14,16 @@ export default {
     { label: '교합력', value: '톱니 모양 이빨', description: '칼날 같은 뼈를 부수는 이빨은 하드로사우루스류와 각룡류의 살을 찢는 데 적응했습니다.' },
     { label: '포식자 길드', value: '앨버타의 정점 사냥꾼', description: '캐나다 서부의 캄파니아 범람원에서 고르고사우루스는 지배적 최상위 포식자 중 하나였습니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'albertosaurus', relationship: '매우 가까운 알베르토사우루스아과 근연종' },
+    { id: 'daspletosaurus', relationship: '동시대의 더 견고한 체격의 티라노사우루스과' },
+    { id: 'tyrannosaurus-rex', relationship: '후대의 거대한 티라노사우루스과 계통' },
+  ],
+  discoveries: [
+    { discoveredBy: '찰스 H. 스턴버그', note: '램브의 기재에 기반이 된 표본들을 수집했다.' },
+    { discoveredBy: '로렌스 램브', note: '고르고사우루스 리브라투스를 정식으로 명명하고 독립된 티라노사우루스과로 정립했다.' },
+  ],
+  fossilLocations: [
+    { region: '앨버타주 다이노소어 프로빈셜 파크', specimenName: '다이노소어 파크층 골격' },
+  ],
 }

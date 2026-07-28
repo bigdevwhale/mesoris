@@ -14,4 +14,15 @@ export default {
     { label: 'Herde', value: 'Gruppenverhalten', description: 'Mehrere Individuen wurden zusammen gefunden, was auf Herdentiere hindeutet, die über die urzeitlichen Landschaften Nordostchinas wanderten.' },
     { label: 'Klange', value: 'Resonanzrufe', description: 'Das hohle Rohr des Kamms funktionierte wie eine Posaune und verstärkte die Rufe für die Kommunikation.' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: 'Nächster bekannter Verwandter — nahezu identischer Kamm' },
+    { id: 'corythosaurus', relationship: 'Lambeosauriner Hadrosaurier-Verwandter' },
+    { id: 'lambeosaurus', relationship: 'Lambeosauriner Hadrosaurier-Verwandter' },
+  ],
+  discoveries: [
+    { year: 2000, location: 'Jiayin, Provinz Heilongjiang, China', discoveredBy: 'Pascal Godefroit et al.', note: 'Beschrieben im Jahr 2000 von Godefroit und Kollegen anhand von Material aus der Nähe des Amur-Flusses; benannt nach dem mythischen Charon wegen der Lage am Fluss als Grenze.' },
+  ],
+  fossilLocations: [
+    { country: 'China', region: 'Bezirk Jiayin, Provinz Heilongjiang (Yuliangze-Formation)', coordinates: [48.8, 130.4], specimenName: 'IVPP V12735 — Holotyp-Teilschädel und Skelett' },
+  ],
 }

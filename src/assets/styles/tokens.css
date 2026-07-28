@@ -51,6 +51,93 @@
   --duration-fast: 150ms;
   --duration-normal: 300ms;
   --duration-slow: 500ms;
+
+  /* Semantic — literal-dark spots routed through vars so the light theme
+     can override them. Kept here (dark defaults) for single-source truth. */
+  --card-fade-1: rgba(8, 14, 8, 0.88);
+  --card-fade-2: rgba(8, 14, 8, 0.55);
+  --img-fallback-1: #0a1f0d;
+  --img-fallback-2: #173d1c;
+  --header-bg: rgba(8, 14, 8, 0.8);
+
+  /* Page-scene semantic vars (shared by Games Hub / Timeline / Dino profile) */
+  --input-bg: rgba(8, 14, 8, 0.5);
+  --fossil-stroke: #d4a43a;
+  --pip-off: rgba(232, 228, 217, 0.15);
+  --hero-scene-1: #0a120a;
+  --hero-scene-2: #131a10;
+  --hero-scene-3: #1c1610;
+  --silhouette: #060b06;
+  --ridge-fill: #0b120a;
+
+  /* Fun fact card (used by DinoDetailModal). Dark default. */
+  --funfact-bg: rgba(212, 164, 58, 0.06);
+  --funfact-border: rgba(212, 164, 58, 0.18);
+
+  /* Fun fact profile block (DinoProfileView .funfact). Dark default. */
+  --funfact-profile-bg-from: rgba(232, 93, 44, 0.12);
+  --funfact-profile-bg-to: rgba(139, 58, 42, 0.08);
+  --funfact-profile-border: rgba(232, 93, 44, 0.3);
+  --funfact-profile-glow: rgba(232, 93, 44, 0.25);
+  --funfact-profile-text: #fbe6d8;
+  --funfact-profile-kicker: var(--color-brand-ember);
+
+  /* Home hero semantic vars */
+  --hero-sky-1: var(--color-bg-deep);
+  --hero-sky-2: var(--color-bg-base);
+  --hero-sky-3: #131c11;
+  --hero-fog: rgba(15, 24, 15, 0.85);
+  --title-from: #f4eedd;
+  --title-amber: var(--color-brand-amber);
+  --title-ember: var(--color-brand-ember);
+  --secondary-btn-bg: rgba(23, 34, 22, 0.6);
+  --eyebrow-bg: rgba(23, 34, 22, 0.6);
+  --media-fade: rgba(15, 24, 15, 0.5);
+
+  /* Timeline scene tokens (dark defaults; light overrides below).
+     Defined globally — matching the OD prototype, which puts these on
+     :root/html — so they flip with theme WITHOUT scoped-CSS overrides. */
+  --tl-deep-1: #101a0f;
+  --tl-deep-2: #140f0c;
+  --tl-tex: rgba(255, 255, 255, 0.012);
+  --impact-scene-1: #14100c;
+  --impact-scene-2: #1b1310;
+  --impact-scene-3: #221410;
+  --impact-rad-1: rgba(232, 93, 44, 0.3);
+  --impact-rad-2: rgba(139, 58, 42, 0.16);
+  --impact-tag-bg: rgba(139, 58, 42, 0.32);
+  --impact-tag-border: rgba(232, 93, 44, 0.55);
+  --impact-tag-fg: #f5a081;
+  --impact-title-from: #f6ead6;
+  --scene-fade: rgba(8, 14, 8, 0.45);
+  --era-fg-triassic: #6fd0bd;
+  --era-fg-jurassic: #97cc85;
+  --era-fg-cretaceous: #f5a081;
+  --band-bg-triassic: rgba(45, 138, 123, 0.16);
+  --band-border-triassic: rgba(45, 138, 123, 0.5);
+  --band-bg-jurassic: rgba(74, 124, 63, 0.18);
+  --band-border-jurassic: rgba(74, 124, 63, 0.55);
+  --band-bg-cretaceous: rgba(232, 93, 44, 0.15);
+  --band-border-cretaceous: rgba(232, 93, 44, 0.5);
+
+  /* Science scene tokens (dark defaults; light overrides below).
+     Defined globally — matches the OD prototype — so they flip with theme
+     WITHOUT scoped-CSS overrides. */
+  --sc-deep-1: #0d140d;
+  --sc-deep-2: #11160e;
+  --sc-grid: rgba(212, 164, 58, 0.045);
+  --sc-card-fg: #e8e4d9;
+  --sc-band: rgba(45, 138, 123, 0.18);
+  --sc-band-border: rgba(45, 138, 123, 0.5);
+  --sc-band-fg: #6fd0bd;
+  --sc-method-bg: rgba(23, 34, 22, 0.55);
+  --sc-method-border: rgba(212, 164, 58, 0.18);
+  --sc-stat-fg: #f6ead6;
+  --sc-divider: rgba(212, 164, 58, 0.12);
+  --sc-myth-myth: #e85d2c;
+  --sc-myth-fact: #4a7c3f;
+  --sc-pill-cat: #2d8a7b;
+  --sc-cta: #d4a43a;
 }
 
 /* Kids mode — brighter, more playful */
@@ -67,4 +154,155 @@
   --glass-bg: rgba(26, 46, 24, 0.7);
   --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.25), 0 1px 4px rgba(240, 192, 64, 0.08);
   --shadow-card-hover: 0 8px 40px rgba(0, 0, 0, 0.4), 0 1px 8px rgba(240, 192, 64, 0.15);
+  --header-bg: rgba(10, 22, 10, 0.8);
 }
+
+/* ===== Light theme — parchment / fossil-on-sand =====
+   Specificity: html[data-theme="light"] (0,1,1) beats [data-mode="kids"] (0,1,0),
+   and html[data-theme="light"][data-mode="kids"] (0,2,1) beats the base light block,
+   so order is: dark :root → dark kids → light base → light kids. */
+html[data-theme="light"] {
+  --color-bg-deep: #f5efde;
+  --color-bg-base: #efe7d3;
+  --color-bg-elevated: #fbf6e9;
+  --color-bg-overlay: #e7ddc6;
+
+  --color-brand-amber: #a8761f;
+  --color-brand-ember: #bf4517;
+  --color-brand-moss: #3f6a35;
+  --color-brand-sand: #8a6f47;
+  --color-brand-teal: #1f6b5e;
+  --color-brand-lava: #7a2f20;
+
+  --color-text-primary: #1c2218;
+  --color-text-secondary: #4d5340;
+  --color-text-tertiary: #7c816c;
+
+  --color-success: #2f7a33;
+  --color-warning: #a8761f;
+  --color-error: #b3341f;
+  --color-info: #1f6b5e;
+
+  --glass-bg: rgba(255, 251, 240, 0.82);
+  --glass-border: rgba(168, 118, 31, 0.22);
+  --glass-border-hover: rgba(168, 118, 31, 0.4);
+  --glass-blur: 16px;
+
+  --shadow-card: 0 4px 18px rgba(60, 50, 20, 0.09), 0 1px 3px rgba(60, 50, 20, 0.05);
+  --shadow-card-hover: 0 12px 38px rgba(60, 50, 20, 0.16), 0 1px 4px rgba(168, 118, 31, 0.1);
+  --shadow-modal: 0 16px 50px rgba(60, 50, 20, 0.22);
+  --shadow-button: 0 2px 10px rgba(191, 69, 23, 0.32), inset 0 1px 0 rgba(255, 255, 255, 0.45);
+
+  --card-fade-1: rgba(245, 239, 222, 0.92);
+  --card-fade-2: rgba(245, 239, 222, 0.6);
+  --img-fallback-1: #efe7d3;
+  --img-fallback-2: #e2d6b8;
+  --header-bg: rgba(245, 239, 222, 0.86);
+
+  /* Page-scene semantic vars (light overrides) */
+  --input-bg: rgba(255, 251, 240, 0.6);
+  --fossil-stroke: #a8761f;
+  --pip-off: rgba(60, 50, 20, 0.12);
+  --hero-scene-1: #f3ead2;
+  --hero-scene-2: #ead9b8;
+  --hero-scene-3: #ddc89e;
+  --silhouette: #6b4a2a;
+  --ridge-fill: #c9b890;
+
+  /* Home hero semantic vars (light overrides) */
+  --hero-sky-1: #f3ead2;
+  --hero-sky-2: #f0e2c4;
+  --hero-sky-3: #e3d4b0;
+  --hero-fog: rgba(244, 238, 224, 0.9);
+  --title-from: #2a3320;
+  --title-amber: #a8761f;
+  --title-ember: #bf4517;
+  --secondary-btn-bg: rgba(255, 251, 240, 0.7);
+  --eyebrow-bg: rgba(255, 251, 240, 0.7);
+  --media-fade: rgba(244, 238, 224, 0.4);
+
+  /* Timeline scene tokens (light overrides) */
+  --tl-deep-1: #ece0c2;
+  --tl-deep-2: #e2d6b8;
+  --tl-tex: rgba(60, 50, 20, 0.025);
+  --impact-scene-1: #f3e6cf;
+  --impact-scene-2: #ecd9b6;
+  --impact-scene-3: #e2c896;
+  --impact-rad-1: rgba(232, 93, 44, 0.22);
+  --impact-rad-2: rgba(191, 69, 23, 0.1);
+  --impact-tag-bg: rgba(122, 47, 32, 0.18);
+  --impact-tag-border: rgba(191, 69, 23, 0.5);
+  --impact-tag-fg: #bf4517;
+  --impact-title-from: #5a3a1a;
+  --scene-fade: rgba(245, 239, 222, 0.4);
+  --era-fg-triassic: #1f6b5e;
+  --era-fg-jurassic: #3f6a35;
+  --era-fg-cretaceous: #bf4517;
+  --band-bg-triassic: rgba(31, 107, 94, 0.14);
+  --band-border-triassic: rgba(31, 107, 94, 0.5);
+  --band-bg-jurassic: rgba(63, 106, 53, 0.14);
+  --band-border-jurassic: rgba(63, 106, 53, 0.5);
+  --band-bg-cretaceous: rgba(191, 69, 23, 0.12);
+  --band-border-cretaceous: rgba(191, 69, 23, 0.5);
+
+  /* Science scene tokens (light overrides) */
+  --sc-deep-1: #ece2c6;
+  --sc-deep-2: #e3d5b0;
+  --sc-grid: rgba(168, 118, 31, 0.05);
+  --sc-card-fg: #1c2218;
+  --sc-band: rgba(31, 107, 94, 0.16);
+  --sc-band-border: rgba(31, 107, 94, 0.5);
+  --sc-band-fg: #1f6b5e;
+  --sc-method-bg: rgba(255, 251, 240, 0.72);
+  --sc-method-border: rgba(168, 118, 31, 0.28);
+  --sc-stat-fg: #2a3320;
+  --sc-divider: rgba(168, 118, 31, 0.18);
+  --sc-myth-myth: #b04820;
+  --sc-myth-fact: #3d6b32;
+  --sc-pill-cat: #1f6b5e;
+  --sc-cta: #a87515;
+
+  /* Fun fact card — light theme: warmer, more visible bg */
+  --funfact-bg: rgba(232, 93, 44, 0.1);
+  --funfact-border: rgba(232, 93, 44, 0.32);
+
+  /* Fun fact profile block — light theme: stronger contrast */
+  --funfact-profile-bg-from: rgba(191, 69, 23, 0.22);
+  --funfact-profile-bg-to: rgba(122, 47, 32, 0.16);
+  --funfact-profile-border: rgba(191, 69, 23, 0.55);
+  --funfact-profile-glow: rgba(191, 69, 23, 0.28);
+  --funfact-profile-text: #2a1c10;
+  --funfact-profile-kicker: #bf4517;
+}
+
+/* Kids mode in light — slightly warmer/lifted but still a light surface. */
+html[data-theme="light"][data-mode="kids"] {
+  --color-bg-deep: #f7f1e2;
+  --color-bg-base: #f1e9d6;
+  --color-bg-elevated: #fdf8ec;
+  --color-bg-overlay: #ece2cc;
+  --color-brand-amber: #b9862a;
+  --color-brand-ember: #c85a2a;
+  --color-brand-moss: #4a7c3f;
+  --color-text-primary: #1f2618;
+  --color-text-secondary: #525840;
+  --glass-bg: rgba(255, 251, 240, 0.84);
+  --header-bg: rgba(247, 241, 226, 0.88);
+}
+
+/* ===== Game-card color families — shared utilities (Games Hub etc.) =====
+   Each family sets the per-card accent vars. Light theme darkens --game-fg
+   so labels stay readable on parchment. */
+.g-amber { --game-glow: rgba(212,164,58,0.2);  --game-border: rgba(212,164,58,0.5);  --game-chip: rgba(212,164,58,0.18); --game-fg: #e2ba58; }
+.g-ember { --game-glow: rgba(232,93,44,0.2);   --game-border: rgba(232,93,44,0.5);   --game-chip: rgba(232,93,44,0.18);  --game-fg: #f39469; }
+.g-moss  { --game-glow: rgba(74,124,63,0.24);  --game-border: rgba(74,124,63,0.55);  --game-chip: rgba(74,124,63,0.22);  --game-fg: #8cc47a; }
+.g-sand  { --game-glow: rgba(196,168,124,0.18);--game-border: rgba(196,168,124,0.45);--game-chip: rgba(196,168,124,0.16);--game-fg: #d6bd94; }
+.g-teal  { --game-glow: rgba(45,138,123,0.22); --game-border: rgba(45,138,123,0.5);  --game-chip: rgba(45,138,123,0.2);  --game-fg: #5cc4b1; }
+.g-lava  { --game-glow: rgba(139,58,42,0.3);   --game-border: rgba(139,58,42,0.65);  --game-chip: rgba(139,58,42,0.28);  --game-fg: #d97e64; }
+
+html[data-theme="light"] .g-amber { --game-fg: #a8761f; }
+html[data-theme="light"] .g-ember { --game-fg: #bf4517; }
+html[data-theme="light"] .g-moss  { --game-fg: #3f6a35; }
+html[data-theme="light"] .g-sand  { --game-fg: #8a6f47; }
+html[data-theme="light"] .g-teal  { --game-fg: #1f6b5e; }
+html[data-theme="light"] .g-lava  { --game-fg: #7a2f20; }

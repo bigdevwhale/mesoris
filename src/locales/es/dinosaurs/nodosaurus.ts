@@ -14,4 +14,15 @@ export default {
     { label: 'Fosil', value: '3D', description: 'Especimen tridimensional en Canada' },
     { label: 'Defensa', value: 'Pasiva', description: 'Confiaba en su armadura' },
   ],
+  relatedDinosaurs: [
+    { id: 'ankylosaurus', relationship: 'Pariente anquilosaurio (familia diferente, con garrote caudal)' },
+    { id: 'euoplocephalus', relationship: 'Pariente anquilosaurio de garrote caudal' },
+    { id: 'stegosaurus', relationship: 'Pariente tireoforo' },
+  ],
+  discoveries: [
+    { discoveredBy: 'O.C. Marsh', note: 'Material fragmentario descrito por Marsh en 1889; proporciono el nombre que define a los Nodosauridae, una de las dos grandes familias de anquilosaurios.' },
+  ],
+  fossilLocations: [
+    { region: 'Condado de Albany, Wyoming (Mowry Shale), EE. UU.', specimenName: 'YPM 1815 — material holotipo fragmentario' },
+  ],
 }

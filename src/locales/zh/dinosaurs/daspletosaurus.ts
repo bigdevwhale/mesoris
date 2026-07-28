@@ -14,4 +14,14 @@
     { label: '狩猎', value: '主动猎手', description: '证据表明它积极狩猎并与猎物搏斗——不是食腐动物。' },
     { label: '咬合力', value: '碎骨级', description: '它已经发展出了使霸王龙闻名的强力碎骨咬合。' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: '后代' },
+  ],
+  discoveries: [
+    { year: 1921, location: '加拿大阿尔伯塔省', discoveredBy: '查尔斯·M·斯特恩伯格', note: '在奥德曼组发现了第一个头骨。' },
+  ],
+  fossilLocations: [
+    { country: '加拿大', region: '阿尔伯塔省', coordinates: [49.5, -112.0], specimenName: '奥德曼组' },
+    { country: '美国', region: '蒙大拿州', coordinates: [47.5, -110.5], specimenName: '双药组' },
+  ],
 }

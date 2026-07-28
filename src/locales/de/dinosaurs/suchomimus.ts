@@ -14,4 +14,16 @@ export default {
     { label: 'Größe', value: '11 m', description: 'Ein großer Spinosauride' },
     { label: 'Nahrung', value: 'Fischfresser', description: 'Süßwasserfische' },
   ],
+  relatedDinosaurs: [
+    { id: 'baryonyx', relationship: 'Enger Verwandter' },
+    { id: 'spinosaurus', relationship: 'Größerer Cousin' },
+    { id: 'nigersaurus', relationship: 'Zeitgenössischer Nachbar' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Paul Sereno und Team', note: 'Ein bemerkenswert vollständiges Skelett wurde während einer großen Sahara-Expedition entdeckt.' },
+    { discoveredBy: 'Paul Sereno und Kollegen', note: 'Die formelle Beschreibung etablierte Suchomimus als riesigen baryonychinen Spinosauriden.' },
+  ],
+  fossilLocations: [
+    { region: 'Gadoufaoua', specimenName: 'Elrhaz-Formation' },
+  ],
 }

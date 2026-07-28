@@ -14,4 +14,16 @@
     { label: '牙齿', value: '数十把利刃', description: '它的颚部容纳了厚实、带锯齿的牙齿，用于刺穿肉体并撕下猎物的肉块。' },
     { label: '生长', value: '青春期的猛长', description: '生长研究表明年轻个体生长迅速，在短短几年内就变成了强大的捕食者。' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: '更大型的近亲' },
+    { id: 'daspletosaurus', relationship: '同科暴龙类' },
+    { id: 'pachyrhinosaurus', relationship: '潜在猎物' },
+  ],
+  discoveries: [
+    { year: 1884, location: '加拿大艾伯塔省红鹿河', discoveredBy: '约瑟夫·伯尔·泰勒尔', note: '首次头骨化石是在地质调查远征中发现的。' },
+    { year: 1910, location: '加拿大艾伯塔省', discoveredBy: '巴纳姆·布朗', note: '布朗发现了著名的集体骨床，彻底改变了人们对这一物种的认识。' },
+  ],
+  fossilLocations: [
+    { country: '加拿大', region: '艾伯塔省', coordinates: [51.9, -112.9], specimenName: '马蹄峡谷组' },
+  ],
 }

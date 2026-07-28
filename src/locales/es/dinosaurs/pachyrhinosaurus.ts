@@ -14,4 +14,16 @@ export default {
     { label: 'Habitat', value: 'Artico', description: 'Soportaba climas frios del extremo norte' },
     { label: 'Tamaño', value: '8 m', description: 'Un ceratopsido de tamaño medio-grande' },
   ],
+  relatedDinosaurs: [
+    { id: 'styracosaurus', relationship: 'Pariente cercano' },
+    { id: 'triceratops', relationship: 'Pariente' },
+  ],
+  discoveries: [
+    { year: 1946, location: 'Alberta, Canada', discoveredBy: 'Charles M. Sternberg', note: 'Primer craneo descubierto.' },
+    { year: 1970, location: 'Alberta, Canada', discoveredBy: 'Al Lakusta', note: 'Yacimiento masivo con cientos de individuos.' },
+  ],
+  fossilLocations: [
+    { country: 'Canada', region: 'Alberta', coordinates: [55.0, -118.0], specimenName: 'Formacion Wapiti' },
+    { country: 'USA', region: 'Alaska', coordinates: [69.0, -151.0], specimenName: 'Formacion Prince Creek' },
+  ],
 }

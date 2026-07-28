@@ -14,4 +14,15 @@ export default {
     { label: 'Os', value: 'Creux et légers', description: 'Ses os creux étaient une adaptation pour la vitesse que les oiseaux développeraient plus tard également.' },
     { label: 'Alimentation', value: 'Opportuniste', description: 'Un carnivore qui chassait de petits lézards, des poissons et peut-être aussi de jeunes dinosaures.' },
   ],
+  relatedDinosaurs: [
+    { id: 'herrerasaurus', relationship: 'Contemporain' },
+    { id: 'eoraptor', relationship: 'Contemporain' },
+  ],
+  discoveries: [
+    { year: 1881, location: 'Nouveau-Mexique, États-Unis', discoveredBy: 'David Baldwin', note: 'Premier spécimen trouvé dans des dépôts du Trias.' },
+    { year: 1947, location: 'Ghost Ranch, Nouveau-Mexique, États-Unis', discoveredBy: 'Edwin Colbert', note: 'Vaste gisement osseux avec des centaines de squelettes complets découvert.' },
+  ],
+  fossilLocations: [
+    { country: 'États-Unis', region: 'Nouveau-Mexique', coordinates: [36.3, -106.0], specimenName: 'Ghost Ranch, formation de Chinle' },
+  ],
 }

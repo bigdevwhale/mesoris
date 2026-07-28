@@ -14,4 +14,16 @@ export default {
     { label: '骨架', value: '几乎完整', description: '从至少6个个体回收了300多块骨头，提供了近乎完整的骨骼图。' },
     { label: '意义', value: '蜥脚类起源', description: '了解巨蜥脚类从原蜥脚类祖先早期演化的关键分类单元。' },
   ],
+  relatedDinosaurs: [
+    { id: 'vulcanodon', relationship: '同时代的基础蜥脚类' },
+    { id: 'brachiosaurus', relationship: '后来出现的蜥脚类后裔' },
+    { id: 'plateosaurus', relationship: '祖先级别的原蜥脚类亲戚' },
+  ],
+  discoveries: [
+    { year: 1960, location: '印度特伦甘纳/安得拉邦科塔组', discoveredBy: '印度统计研究所团队', note: '在遗址进行发掘，发现了至少六个个体的骨骼。' },
+    { year: 1975, location: '印度科塔组', discoveredBy: '索汉·拉尔·贾因及其同事', note: '正式描述并命名为巴洛帕龙（B. tagorei）。' },
+  ],
+  fossilLocations: [
+    { country: '印度', region: '特伦甘纳科塔组', coordinates: [17.97, 79.5], specimenName: 'ISI R 铸模系列、副模标本' },
+  ],
 }

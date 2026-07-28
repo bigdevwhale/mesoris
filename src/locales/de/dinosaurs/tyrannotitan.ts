@@ -14,4 +14,15 @@ export default {
     { label: 'Zähne', value: 'Klingenartig', description: 'Markante rückgebogene, klingenartige, gezackte Zähne — perfekt zum Zerschneiden des Fleisches riesiger Sauropodenbeute.' },
     { label: 'Verbreitung', value: 'Patagonien', description: 'Entdeckt in der Cerro-Barcino-Formation, Provinz Chubut, Patagonien, Argentinien.' },
   ],
+  relatedDinosaurs: [
+    { id: 'giganotosaurus', relationship: 'Carcharodontosaurier-Verwandter' },
+    { id: 'carcharodontosaurus', relationship: 'Afrikanischer Carcharodontosaurier-Verwandter' },
+    { id: 'concavenator', relationship: 'Basaler Carcharodontosaurier-Verwandter' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Fernando Novas und Team', note: 'Teilskelett postcranial beschrieben und Tyrannotitan chubutensis benannt.' },
+  ],
+  fossilLocations: [
+    { region: 'Cerro-Barcino-Formation, Chubut', specimenName: 'MPEF-PV 1156 — Holotyp-Teilskelett' },
+  ],
 }

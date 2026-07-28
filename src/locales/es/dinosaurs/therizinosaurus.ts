@@ -14,4 +14,14 @@ export default {
     { label: 'Cuello', value: 'Largo', description: 'Para alcanzar hojas y ramas altas' },
     { label: 'Tamaño', value: '10 m', description: 'Un tericinosaurio gigante' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'Pariente lejano (maniraptor)' },
+    { id: 'tyrannosaurus-rex', relationship: 'Pariente lejano (terópodo)' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Expedición soviético-mongola', note: 'Primeros fósiles: solo se encontraron las garras gigantes. ¡Los científicos pensaron inicialmente que eran costillas de una tortuga gigante!' },
+  ],
+  fossilLocations: [
+    { region: 'Desierto de Gobi', specimenName: 'Formación Nemegt' },
+  ],
 }

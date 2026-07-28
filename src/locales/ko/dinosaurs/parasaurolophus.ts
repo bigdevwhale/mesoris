@@ -14,4 +14,16 @@ export default {
     { label: '사회성', value: '큰 무리', description: '큰 무리로 생활하는 고도로 사회적인 오리주둥이 공룡.' },
     { label: '치아', value: '수백 개', description: '빽빽하게 들어찬 수백 개의 어금니를 가진 복잡한 치아 배터리.' },
   ],
+  relatedDinosaurs: [
+    { id: 'corythosaurus', relationship: '친척' },
+    { id: 'lambeosaurus', relationship: '가까운 친척' },
+  ],
+  discoveries: [
+    { year: 1920, location: '앨버타, 캐나다', discoveredBy: '윌리엄 파크스', note: '최초의 두개골이 발견되었다.' },
+    { year: 1999, location: '뉴멕시코, 미국', discoveredBy: '토마스 윌리엄슨', note: '매우 잘 보존된 두개골.' },
+  ],
+  fossilLocations: [
+    { country: '캐나다', region: '앨버타', coordinates: [54.5, -113.0], specimenName: '공룡 공원 층' },
+    { country: '미국', region: '뉴멕시코', coordinates: [36.0, -107.5] },
+  ],
 }

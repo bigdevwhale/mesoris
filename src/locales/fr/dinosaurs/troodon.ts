@@ -14,4 +14,15 @@ export default {
     { label: 'Dents', value: 'Dentelées et polyvalentes', description: 'Indiquent un régime mixte : petites proies, œufs et matières végétales.' },
     { label: 'Mains', value: 'Partiellement opposables', description: 'Un pouce semi-opposable permettait une préhension étonnamment habile.' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'Parent éloigné (paravien)' },
+    { id: 'deinonychus', relationship: 'Groupe apparenté' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Ferdinand Hayden', note: 'Une seule dent découverte — l\'une des premières trouvailles de dinosaures nord-américains.' },
+  ],
+  fossilLocations: [
+    { region: 'Montana', specimenName: 'Formation de la rivière Judith' },
+    { region: 'Alberta' },
+  ],
 }

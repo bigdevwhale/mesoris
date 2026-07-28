@@ -14,4 +14,14 @@ export default {
     { label: 'Dimensioni', value: 'Delle dimensioni di un cane', description: 'Solo 1 metro di lunghezza — i dinosauri hanno iniziato piccoli prima di evolversi in giganti.' },
     { label: 'Sito', value: 'Valle della Luna', description: 'Scoperto nella Valle della Luna in Argentina — uno dei siti fossiliferi più importanti del mondo.' },
   ],
+  relatedDinosaurs: [
+    { id: 'herrerasaurus', relationship: 'Contemporaneo' },
+    { id: 'plateosaurus', relationship: 'Discendente successivo' },
+  ],
+  discoveries: [
+    { year: 1991, location: 'San Juan, Argentina', discoveredBy: 'Ricardo Martinez', note: 'Scoperto nella stessa formazione della Valle della Luna di Herrerasaurus.' },
+  ],
+  fossilLocations: [
+    { country: 'Argentina', region: 'San Juan', coordinates: [-30.0, -68.0], specimenName: 'Valle della Luna, Formazione Ischigualasto' },
+  ],
 }

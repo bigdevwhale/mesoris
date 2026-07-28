@@ -14,4 +14,16 @@ export default {
     { label: '색', value: '무지개색 검정', description: '미세한 색소 구조로부터 까마귀 같은 광택 있는 깃털이었음을 시사.' },
     { label: '식성', value: '입에 들어가는 것은 뭐든지', description: '화석 위 내용물에서 물고기, 포유류, 새가 발견됨 — 다양한 작은 포식자.' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: '먼 드로마에오사우루스과 친척' },
+    { id: 'troodon', relationship: '새와 닮은 동료 수각류' },
+    { id: 'psittacosaurus', relationship: '동시대 이웃' },
+  ],
+  discoveries: [
+    { discoveredBy: '지역 화석 수집가', note: '제홀 생물군에서 매우 잘 보존된 표본이 작은 사익익 공룡을 드러냈다.' },
+    { discoveredBy: '쉬싱 및 동료들', note: '정식 기재로 미크로랍토르가 가장 명확한 비조류 깃털 공룡 중 하나로 유명해졌다.' },
+  ],
+  fossilLocations: [
+    { region: '랴오닝성, 중국', specimenName: '주포탕층' },
+  ],
 }

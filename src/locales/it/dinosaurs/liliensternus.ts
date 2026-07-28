@@ -14,4 +14,15 @@ export default {
     { label: 'Denti', value: 'Lame dentellate', description: 'Denti a forma di lama e dentellati, ideali per tagliare la carne — un cacciatore attivo.' },
     { label: 'Parentela', value: 'Celofisoide', description: 'Appartiene alla stessa linea di Coelophysis — un piano corporeo condiviso attraverso il Triassico superiore.' },
   ],
+  relatedDinosaurs: [
+    { id: 'coelophysis', relationship: 'Parente celofisoide stretto' },
+    { id: 'herrerasaurus', relationship: 'Parente teropode antico' },
+    { id: 'dilophosaurus', relationship: 'Discendente celofisoide successivo' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Hugo Rühle von Lilienstern', note: 'Due scheletri parziali recuperati dalla Formazione Trossingen; descritti da von Huene e intitolati in onore di von Lilienstern.' },
+  ],
+  fossilLocations: [
+    { region: 'Turingia (Formazione Trossingen), Germania', specimenName: 'MB.R. 2175 — olotipo primario' },
+  ],
 }

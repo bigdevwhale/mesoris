@@ -14,4 +14,15 @@
     { label: '体長', value: '約6メートル', description: '白亜紀前期のヨーロッパにおいて、重要な中型捕食者でした。' },
     { label: '発見地', value: 'スペイン', description: 'ラス・オヤス層から発見された、ヨーロッパで最もユニークな獣脚類の一つです。' },
   ],
+  relatedDinosaurs: [
+    { id: 'carcharodontosaurus', relationship: 'より大型のカルカロドントサウルス科の近縁種' },
+    { id: 'giganotosaurus', relationship: 'より大型のカルカロドントサウルス科の近縁種' },
+    { id: 'allosaurus', relationship: '以前の時代のallosauroidのいとこ' },
+  ],
+  discoveries: [
+    { year: 2003, location: 'スペイン・クエンカ州ラス・オヤス', discoveredBy: 'ホセ・ルイス・サンスとフェルナンド・エスカソ', note: 'ラ・ウエルギーナ石灰岩層の成層した石灰岩中で関節した骨格が発見された。' },
+  ],
+  fossilLocations: [
+    { country: 'スペイン', region: 'クエンカ州ラス・オヤス', coordinates: [40.07, -1.85], specimenName: 'MCCM-LH 6666 — ホロタイプ関節骨格' },
+  ],
 }

@@ -14,4 +14,16 @@ export default {
       { label: 'Хвост', value: 'Глубокий и гибкий', description: 'Глубокий хвост, напоминавший крокодилий, возможно, помогал ему хорошо плавать.' },
       { label: 'Зубы', value: 'Очень длинные', description: 'Его лезвиевидные зубы были пропорционально длиннее, чем у большинства крупных хищников.' },
     ],
-  }
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: 'Конкурент' },
+    { id: 'carnotaurus', relationship: 'Дальний родственник' },
+  ],
+  discoveries: [
+    { year: 1883, location: 'Колорадо, США', discoveredBy: 'Маршалл П. Фелч', note: 'Первый скелет обнаружен в Гарден-Парке.' },
+    { year: 2000, location: 'Португалия', discoveredBy: 'Октавио Матеуш', note: 'Европейский экземпляр подтвердил широкий ареал рода.' },
+  ],
+  fossilLocations: [
+    { country: 'США', region: 'Колорадо', coordinates: [38.5, -105.0], specimenName: 'Формация Моррисон' },
+    { country: 'Португалия', region: 'Лориньян', coordinates: [39.3, -9.3] },
+  ],
+}

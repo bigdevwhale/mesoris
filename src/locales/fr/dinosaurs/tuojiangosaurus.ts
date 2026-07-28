@@ -14,4 +14,14 @@ export default {
     { label: 'Cerveau', value: 'Petit cerveau', description: 'Comme tous les stégosaures, un très petit cerveau par rapport au corps — de la taille d\'une noix pour un animal de près de 3 tonnes.' },
     { label: 'Chine', value: 'Le stégosaure chinois le mieux connu', description: 'Le stégosaure le plus complètement décrit de Chine, connu par deux squelettes partiels de la province du Sichuan.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Proche parent stégosauridé nord-américain' },
+    { id: 'kentrosaurus', relationship: 'Parent stégosauridé africain' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Dong Zhiming, Tang Zilu, Zhou Shiwu', note: 'Deux squelettes partiels récupérés de la Formation de Shangshaximiao, décrits en 1977 ; un spécimen est exposé au Musée des Dinosaures de Zigong.' },
+  ],
+  fossilLocations: [
+    { region: 'Zigong, province du Sichuan (Formation de Shangshaximiao)', specimenName: 'CV 209 — squelette principal, Musée des Dinosaures de Zigong' },
+  ],
 }

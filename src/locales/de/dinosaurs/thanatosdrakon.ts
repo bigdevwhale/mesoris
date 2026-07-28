@@ -14,4 +14,14 @@ export default {
     { label: 'Familie', value: 'Azhdarchidae', description: 'Ein Mitglied der Azhdarchidae, der Familie langhalsiger, langschnauziger Pterosaurier, zu der Quetzalcoatlus und Hatzegopteryx gehören.' },
     { label: 'Alter', value: 'Mittelkreide', description: 'Lebte etwa 20 Millionen Jahre vor dem berühmten Quetzalcoatlus und füllt eine Lücke in der Azhdarchiden-Evolution.' },
   ],
+  relatedDinosaurs: [
+    { id: 'quetzalcoatlus', relationship: 'Riesiger Azhdarchiden-Verwandter' },
+    { id: 'pteranodon', relationship: 'Kleinerer Pterosaurier-Verwandter' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Leonardo Ortiz David und Team', note: 'Artikuliertes Teilskelett und zugewiesenes Material beschrieben und benannt.' },
+  ],
+  fossilLocations: [
+    { region: 'Plottier-Formation, Provinz Mendoza', specimenName: 'UNCUYO-LD 307 — Holotyp, Teilskelett' },
+  ],
 }

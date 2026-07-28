@@ -14,4 +14,20 @@ export default {
     { label: 'Morso', value: 'Spezza-ossa', description: 'Nonostante la piccola taglia, possedeva il morso potente e frantumatore d\'ossa tipico dei tyrannosauridi.' },
     { label: 'Velocità', value: '40+ km/h', description: 'Le zampe lunghe e sottili lo rendevano un predatore agile e rapido — più svelto del suo enorme cugino T. rex.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Sinonimo contestato / parente stretto' },
+    { id: 'albertosaurus', relationship: 'Cugino tirannosauride' },
+    { id: 'daspletosaurus', relationship: 'Cugino tirannosauride' },
+    { id: 'gorgosaurus', relationship: 'Cugino tirannosauride' },
+    { id: 'triceratops', relationship: 'Preda possibile' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Spedizione del Museo Cleveland', note: 'Primo cranio scoperto nella Formazione Hell Creek, inizialmente considerato un taxon simile a Gorgosaurus.' },
+    { discoveredBy: 'Robert Bakker, Philip Currie e Michael Williams', note: 'Rinominato Nanotyrannus dopo la rianalisi del cranio del Museo Cleveland.' },
+    { discoveredBy: 'Cacciatori di fossili commerciali', note: 'Il famoso esemplare «Dueling Dinosaurs», bloccato in combattimento con un Triceratops.' },
+  ],
+  fossilLocations: [
+    { region: 'Montana', specimenName: 'Formazione Hell Creek' },
+    { region: 'Wyoming', specimenName: 'Formazione Lance' },
+  ],
 }

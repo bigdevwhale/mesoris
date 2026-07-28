@@ -14,4 +14,17 @@ export default {
     { label: 'Coexistence', value: 'A vécu avec T. rex', description: 'Alamosaurus partageait son habitat avec Tyrannosaurus rex — le seul sauropode connu à l\'avoir fait en Amérique du Nord.' },
     { label: 'Titanosaure', value: 'Sauropode cuirassé', description: 'En tant que titanosaure, Alamosaurus possédait de petits ostéodermes osseux dans la peau — une caractéristique unique parmi les sauropodes.' },
   ],
+  relatedDinosaurs: [
+    { id: 'argentinosaurus', relationship: 'Titanosaure parent d\'Amérique du Sud' },
+    { id: 'sauroposeidon', relationship: 'Sauropode géant nord-américain plus ancien' },
+    { id: 'diplodocus', relationship: 'Sauropode nord-américain antérieur (famille différente)' },
+  ],
+  discoveries: [
+    { year: 1921, location: 'Comté de San Juan, Nouveau-Mexique, États-Unis', discoveredBy: 'Charles W. Gilmore', note: 'Le matériel initial a été collecté et décrit par Gilmore en 1922 au Nouveau-Mexique ; des spécimens bien plus grands ont ensuite été trouvés au Texas.' },
+    { year: 2003, location: 'Parc national de Big Bend, Texas, États-Unis', discoveredBy: 'Thomas Lehman et Kenneth Carpenter', note: 'D\'énormes vertèbres et os des membres provenant du Texas ont permis de réviser considérablement les estimations de taille à la hausse, suggérant qu\'Alamosaurus rivalisait avec les plus grands titanosaures sud-américains.' },
+  ],
+  fossilLocations: [
+    { country: 'États-Unis', region: 'Comté de San Juan, Nouveau-Mexique (formation d\'Ojo Alamo)', coordinates: [36.5, -108.2], specimenName: 'USNM 10487 — vertèbres et membre antérieur holotypes' },
+    { country: 'États-Unis', region: 'Comté de Brewster, Texas, Big Bend (formation de Javelina)', coordinates: [29.3, -103.2], specimenName: 'Énormes spécimens du Texas indiquant la taille maximale' },
+  ],
 }

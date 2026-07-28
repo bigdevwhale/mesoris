@@ -14,4 +14,15 @@ export default {
     { label: '공존', value: '에오랍토르와 같은 층', description: '같은 지층에서 에오랍토르와 함께 서식하여, 공룡 계통의 초기 분기를 보여줍니다.' },
     { label: '진화', value: '수각류의 조상', description: '가장 기반적인 수각류 중 하나로, 이후 모든 육식 공룡의 보디플랜을 이해하는 데 도움이 됩니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'eoraptor', relationship: '같은 지층의 동시대 생물' },
+    { id: 'herrerasaurus', relationship: '더 큰 동시대 포식자' },
+    { id: 'coelophysis', relationship: '가까운 후대 친척' },
+  ],
+  discoveries: [
+    { year: 2011, location: '아르헨티나 산후안주 이스키구알라스토 주립공원', discoveredBy: '리카르도 N. 마르티네스 외', note: '사이언스지에 기재된 거의 완전한 골격; 박물관 후원자 제임스 머피를 기려 "murphi"로 명명됨.' },
+  ],
+  fossilLocations: [
+    { country: '아르헨티나', region: '산후안주, 이스키구알라스토층', coordinates: [-30.0, -67.9], specimenName: 'PVSJ 562 — 거의 완전한 홀로타입 골격' },
+  ],
 }

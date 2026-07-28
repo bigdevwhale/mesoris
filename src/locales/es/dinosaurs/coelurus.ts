@@ -14,4 +14,16 @@ export default {
     { label: 'Dieta', value: 'Especialista en pequeñas presas', description: 'Probablemente se alimentaba de lagartos, mamíferos y dinosaurios juveniles con mordiscos rápidos y manos prensiles.' },
     { label: 'Ecosistema', value: 'Compañero en Morrison', description: 'Vivía junto a gigantes como Allosaurus y Stegosaurus, pero ocupaba un nicho de depredador mucho más pequeño.' },
   ],
+  relatedDinosaurs: [
+    { id: 'compsognathus', relationship: 'Nicho de teropodo pequeno comparable' },
+    { id: 'ornithomimus', relationship: 'Celurosaurio corredor posterior con rasgos cursoriales convergentes' },
+    { id: 'allosaurus', relationship: 'Gran depredador que compartia la misma formacion' },
+  ],
+  discoveries: [
+    { year: 1879, location: 'Como Bluff, Wyoming, EE. UU.', discoveredBy: 'Equipos de expedicion de O.C. Marsh', note: 'Material tipo descrito como Coelurus fragilis de estratos de Morrison.' },
+    { year: 1980, location: 'Reevaluaciones de Morrison', discoveredBy: 'Varios especialistas en teropodos', note: 'Reanalisis aclararon las probables afinidades de celurosaurio pequeno del taxon.' },
+  ],
+  fossilLocations: [
+    { country: 'EE. UU.', region: 'Como Bluff, Wyoming (Formacion Morrison)', coordinates: [41.8, -106.0], specimenName: 'Material tipo de Coelurus fragilis' },
+  ],
 }

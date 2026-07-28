@@ -14,4 +14,17 @@ export default {
     { label: 'Schwanz', value: 'Borstige Quasten', description: 'Einige Exemplare zeigen steife Borsten am Schwanz — seltene Hautstrukturen.' },
     { label: 'Größe', value: '2 Meter', description: 'Etwa so groß wie ein großer Hund, zweibeinige Haltung.' },
   ],
+  relatedDinosaurs: [
+    { id: 'protoceratops', relationship: 'Späterer Ceratopsier-Verwandter' },
+    { id: 'triceratops', relationship: 'Entfernter gehörnter Nachfahre' },
+    { id: 'microraptor', relationship: 'Zeitgenössischer asiatischer Nachbar' },
+  ],
+  discoveries: [
+    { year: 1922, location: 'Mongolia', discoveredBy: 'Henry Fairfield Osborn', note: 'Osborn benannte die Gattung nach frühen asiatischen Funden und erkannte sie als urtümlichen Horndinosaurier.' },
+    { year: 2000, location: 'Liaoning, China', discoveredBy: 'Chinese paleontological teams', note: 'Spektakuläre neue Fossilien bewahrten Haut, Borsten und sogar mögliche Jungtiergruppen.' },
+  ],
+  fossilLocations: [
+    { country: 'China', region: 'Liaoning', coordinates: [41.9, 121.7], specimenName: 'Yixian-Formation' },
+    { country: 'Mongolia', region: 'Ömnögovi', coordinates: [44.5, 108.5], specimenName: 'Frühkreidezeitliche Schichten' },
+  ],
 }

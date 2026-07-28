@@ -14,4 +14,16 @@ export default {
     { label: 'Größe', value: '9 Meter, 6 Tonnen', description: 'Einer der größten Ceratopsier, Schädel bis 2,6 m lang einschließlich Nackenschild.' },
     { label: 'Späte Kreidezeit', value: 'Letzte Tage', description: 'Torosaurus lebte ganz am Ende der Kreidezeit, 68–66 Mio. Jahre — kurz vor dem Asteroideneinschlag.' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: 'Nächster Verwandter — wurde zeitweise als dieselbe Art vorgeschlagen' },
+    { id: 'styracosaurus', relationship: 'Ceratopsier-Verwandter' },
+    { id: 'pentaceratops', relationship: 'Früherer Chasmosaurier-Verwandter' },
+  ],
+  discoveries: [
+    { discoveredBy: 'John Bell Hatcher', note: 'Material 1891 von O.C. Marsh beschrieben; weitere Exemplare wurden später in den Lance- und Hell-Creek-Formationen im Westen der USA gefunden.' },
+  ],
+  fossilLocations: [
+    { region: 'Niobrara County, Wyoming (Lance-Formation)', specimenName: 'YPM 1830 — Holotyp, Teilschädel' },
+    { region: 'Harding County, South Dakota (Hell-Creek-Formation)', specimenName: 'Zugewiesene Schädelfunde' },
+  ],
 }

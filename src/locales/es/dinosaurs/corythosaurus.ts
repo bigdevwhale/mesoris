@@ -14,4 +14,14 @@ export default {
     { label: 'Tamaño', value: '9 m', description: 'Un hadrosaurio de tamaño medio-grande' },
     { label: 'Epoca', value: 'Cretacico Tardio', description: '76-75 millones de anos' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: 'Pariente cercano' },
+    { id: 'lambeosaurus', relationship: 'Pariente cercano' },
+  ],
+  discoveries: [
+    { year: 1912, location: 'Alberta, Canada', discoveredBy: 'Barnum Brown', note: 'Primer esqueleto completo descubierto durante una expedicion de la AMNH.' },
+  ],
+  fossilLocations: [
+    { country: 'Canada', region: 'Alberta', coordinates: [50.8, -111.5], specimenName: 'Formacion Dinosaur Park' },
+  ],
 }

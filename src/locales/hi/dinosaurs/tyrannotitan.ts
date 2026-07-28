@@ -14,4 +14,15 @@ export default {
     { label: 'दाँत', value: 'चाकू-धार वाले', description: 'विशिष्ट पुनःवक्र, ब्लेड-जैसे दंतुरित दाँत — विशाल सॉरोपॉड शिकार से माँस काटने के लिए उत्तम।' },
     { label: 'वितरण', value: 'पैटागोनिया', description: 'अर्जेंटीना, पैटागोनिया, चुबुत प्रांत के सीरो बार्सिनो फ़ॉर्मेशन में खोजा गया।' },
   ],
+  relatedDinosaurs: [
+    { id: 'giganotosaurus', relationship: 'कार्करोडोंटोसॉरिड संबंधी' },
+    { id: 'carcharodontosaurus', relationship: 'अफ़्रीकी कार्करोडोंटोसॉरिड संबंधी' },
+    { id: 'concavenator', relationship: 'आधार कार्करोडोंटोसॉरिड संबंधी' },
+  ],
+  discoveries: [
+    { discoveredBy: 'फर्नांडो नोवास और उनकी टीम', note: 'आंशिक पश्चकाय कंकाल का वर्णन कर इसे Tyrannotitan chubutensis नाम दिया गया।' },
+  ],
+  fossilLocations: [
+    { region: 'सीरो बार्सिनो फ़ॉर्मेशन, चुबुत', specimenName: 'MPEF-PV 1156 — होलोटाइप आंशिक कंकाल' },
+  ],
 }

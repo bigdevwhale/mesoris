@@ -14,4 +14,14 @@ export default {
     { label: '骨', value: '海綿状の脊椎', description: '軽量化のために中空で海綿状の脊椎骨を持っていました。' },
     { label: '系統', value: '竜脚類に近縁', description: '竜脚形類の系統樹の基部近くに位置し、巨大竜脚類の進化を理解する上で重要な存在です。' },
   ],
+  relatedDinosaurs: [
+    { id: 'plateosaurus', relationship: '近縁な竜脚形類' },
+    { id: 'eoraptor', relationship: '同時代の初期恐竜' },
+  ],
+  discoveries: [
+    { year: 1967, location: 'La Rioja Province, Argentina', discoveredBy: 'ホセ・ボナパルト', note: 'ロス・コロラドス層で多数の標本が見つかった。1969年にボナパルトが正式に記載し、最もよく知られた三畳紀の竜脚形類の一つとなった。' },
+  ],
+  fossilLocations: [
+    { country: 'Argentina', region: 'ラ・リオハ州、ロス・コロラドス層', coordinates: [-29.5, -67.5], specimenName: 'PVL 3808 — 参照標本、複数個体' },
+  ],
 }

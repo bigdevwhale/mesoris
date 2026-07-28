@@ -14,4 +14,15 @@ export default {
     { label: '栖息地', value: '湖边低地', description: '生活在中国西北准噶尔盆地的内陆湖岸边。' },
     { label: '尾部', value: '四根尖刺的尾锤', description: '尾部末端的尾锤上长有尖刺，用于防御捕食者。' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: '拥有更高骨板的著名近亲' },
+    { id: 'kentrosaurus', relationship: '尖刺装甲近亲' },
+    { id: 'tuojiangosaurus', relationship: '中国剑龙近亲' },
+  ],
+  discoveries: [
+    { discoveredBy: '董枝明', note: '描述并命名了部分颅后骨骼为 Wuerhosaurus homheni。' },
+  ],
+  fossilLocations: [
+    { region: '新疆准噶尔盆地', specimenName: 'IVPP V.4006 — 正模标本部分骨骼' },
+  ],
 }

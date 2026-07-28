@@ -14,4 +14,17 @@ export default {
     { label: 'Naso', value: 'Sulla sommità del cranio', description: 'Le sue narici si trovavano su una cresta bombata sulla sommità del cranio, forse per produrre suoni di risonanza.' },
     { label: 'Zampe', value: 'Più lunghe davanti', description: 'Una morfologia rara tra i dinosauri, dove le zampe anteriori erano più lunghe di quelle posteriori.' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: 'Contemporaneo' },
+    { id: 'allosaurus', relationship: 'Minaccia di predatore' },
+    { id: 'apatosaurus', relationship: 'Contemporaneo' },
+  ],
+  discoveries: [
+    { year: 1900, location: 'Colorado, Stati Uniti', discoveredBy: 'Elmer Riggs', note: 'Primi fossili di Brachiosaurus trovati nella formazione di Morrison.' },
+    { year: 1909, location: 'Tanzania, Africa', discoveredBy: 'Werner Janensch', note: 'Una grande spedizione riportò alla luce scheletri quasi completi a Tendaguru.' },
+  ],
+  fossilLocations: [
+    { country: 'Stati Uniti', region: 'Colorado', coordinates: [39.5, -105.0], specimenName: 'Formazione di Morrison' },
+    { country: 'Tanzania', region: 'Tendaguru', coordinates: [-10.5, 39.5] },
+  ],
 }

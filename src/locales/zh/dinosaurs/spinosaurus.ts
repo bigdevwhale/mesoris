@@ -14,5 +14,17 @@ const translations = {
     { label: '体型', value: '比霸王龙更大', description: '体长15米，是迄今发现的最大肉食性恐龙。' },
     { label: '尾巴', value: '桨状尾', description: '独特的鳍状尾巴，提供强大的水下推进力。' },
   ],
+  relatedDinosaurs: [
+    { id: 'baryonyx', relationship: '近亲' },
+    { id: 'mosasaurus', relationship: '竞争者（水生）' },
+  ],
+  discoveries: [
+    { discoveredBy: '恩斯特·斯特莫', note: '首次发现化石;后在二战中对慕尼黑的轰炸中被毁。' },
+    { discoveredBy: '尼扎尔·易卜拉欣', note: '重大新发现证实了水生生活方式理论。' },
+  ],
+  fossilLocations: [
+    { region: 'Kem Kem 床层', specimenName: '' },
+    { region: '巴哈里亚组', specimenName: '' },
+  ],
 }
 export default translations

@@ -14,4 +14,16 @@ export default {
     { label: 'Biss', value: 'Gezackte Zähne', description: 'Seine klingenartigen, knochenbrechenden Zähne waren darauf ausgelegt, Fleisch von Hadrosauriern und Ceratopsiern zu reißen.' },
     { label: 'Räubergilde', value: 'Top-Jäger von Alberta', description: 'In den campanianischen Überschwemmungsebenen Westkanadas war Gorgosaurus einer der dominanten Spitzenräuber.' },
   ],
+  relatedDinosaurs: [
+    { id: 'albertosaurus', relationship: 'Sehr enger albertosauriner Verwandter' },
+    { id: 'daspletosaurus', relationship: 'Zeitgenössischer, schwerer gebauter Tyrannosauride' },
+    { id: 'tyrannosaurus-rex', relationship: 'Spätere riesige Tyrannosauriden-Linie' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Charles H. Sternberg', note: 'Sammelte Exemplare, die die Grundlage für Lambes Beschreibung bildeten.' },
+    { discoveredBy: 'Lawrence Lambe', note: 'Benannte Gorgosaurus libratus formell und etablierte ihn als eigenständigen Tyrannosauriden.' },
+  ],
+  fossilLocations: [
+    { region: 'Dinosaur Provincial Park, Alberta', specimenName: 'Dinosaur Park Formation Skelette' },
+  ],
 }

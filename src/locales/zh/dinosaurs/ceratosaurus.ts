@@ -14,4 +14,16 @@
     { label: '皮内成骨', value: '背部装甲', description: '与大多数大型兽脚类恐龙不同，角鼻龙背部有一排小骨板。' },
     { label: '体长', value: '6 米', description: '一种中型兽脚类恐龙，与更大更常见的异特龙并肩生活。' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: '竞争者' },
+    { id: 'carnotaurus', relationship: '远亲' },
+  ],
+  discoveries: [
+    { year: 1883, location: '美国科罗拉多州', discoveredBy: '马歇尔·P·费尔奇', note: '首具骨骼在加登帕克发现。' },
+    { year: 2000, location: '葡萄牙', discoveredBy: '奥克塔维奥·马特乌斯', note: '欧洲标本证实了该属广泛的分布范围。' },
+  ],
+  fossilLocations: [
+    { country: '美国', region: '科罗拉多州', coordinates: [38.5, -105.0], specimenName: '莫里森组' },
+    { country: '葡萄牙', region: '洛里尼扬', coordinates: [39.3, -9.3] },
+  ],
 }

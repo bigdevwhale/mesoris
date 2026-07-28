@@ -14,4 +14,14 @@ export default {
     { label: 'Envergure', value: '1,8 m', description: 'Un ptérosaure de taille moyenne' },
     { label: 'Âge', value: '150 millions d\'années', description: 'Jurassique supérieur, Solnhofen' },
   ],
+  relatedDinosaurs: [
+    { id: 'pterodactylus', relationship: 'Contemporain' },
+    { id: 'dimorphodon', relationship: 'Parent plus ancien' },
+  ],
+  discoveries: [
+    { year: 1830, location: 'Bavaria, Germany', discoveredBy: 'Georg August Goldfuss', note: 'Décrit pour la première fois dans les carrières de Solnhofen, aux côtés d\'Archaeopteryx.' },
+  ],
+  fossilLocations: [
+    { country: 'Germany', region: 'Calcaire de Solnhofen, Bavière', coordinates: [48.9, 11.0], specimenName: 'Calcaire de Solnhofen, matériel type' },
+  ],
 }

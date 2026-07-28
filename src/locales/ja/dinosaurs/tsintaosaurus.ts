@@ -14,4 +14,15 @@ export default {
     { label: '音響', value: '音の共鳴器', description: '他のとさかのあるハドロサウルス類と同様、中空構造が発声を増幅し、群れの仲間が遠距離で認識するのに役立ちました。' },
     { label: '生息地', value: '山東省', description: '中国山東省で発見され、アジア最大級の恐竜を産出した化石豊富な地域の注目すべき恐竜の一つです。' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: 'ランベオサウルス亜科のハドロサウルス類近縁種' },
+    { id: 'corythosaurus', relationship: '冠を持つハドロサウルス類近縁種' },
+    { id: 'edmontosaurus', relationship: 'ハドロサウルス類近縁種' },
+  ],
+  discoveries: [
+    { discoveredBy: 'C.C. ヤング', note: '1958年にヤングにより記載された。不完全な保存状態のため冠の形態について数十年にわたり議論が続き、より良い標本が見つかりようやく解決した。' },
+  ],
+  fossilLocations: [
+    { region: '山東省諸城（王氏層群）', specimenName: 'IVPP V725 — 冠を含むホロタイプ頭骨' },
+  ],
 }

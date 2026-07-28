@@ -14,4 +14,16 @@ export default {
     { label: 'Mordisco', value: 'Dientes aserrados', description: 'Sus dientes en forma de hoja, aptos para triturar huesos, estaban adaptados para arrancar la carne de hadrosaurios y ceratópsidos.' },
     { label: 'Gremio', value: 'Cazador superior de Alberta', description: 'En las llanuras aluviales campanianas del oeste de Canadá, Gorgosaurus era uno de los depredadores dominantes.' },
   ],
+  relatedDinosaurs: [
+    { id: 'albertosaurus', relationship: 'Pariente albertosaurino muy cercano' },
+    { id: 'daspletosaurus', relationship: 'Tyrannosáurido contemporáneo de constitución más robusta' },
+    { id: 'tyrannosaurus-rex', relationship: 'Linaje posterior de tyrannosáuridos gigantes' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Charles H. Sternberg', note: 'Recolectó los especímenes que formaron la base para la descripción de Lambe.' },
+    { discoveredBy: 'Lawrence Lambe', note: 'Nombró formalmente Gorgosaurus libratus y lo estableció como un tyrannosáurido distinto.' },
+  ],
+  fossilLocations: [
+    { region: 'Parque Provincial de los Dinosaurios, Alberta', specimenName: 'Esqueletos de la Formación Dinosaur Park' },
+  ],
 }

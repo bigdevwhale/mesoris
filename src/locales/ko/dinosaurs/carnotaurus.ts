@@ -14,4 +14,14 @@ export default {
     { label: '속도', value: '약 50km/h', description: '길고 강력한 뒷다리 덕분에, 대형 수각류 중에서도 가장 발 빠른 종 중 하나였습니다.' },
     { label: '피부', value: '피부 인상 화석', description: '실제 피부 인상이 보존된 몇 안 되는 대형 수각류 화석으로, 큰 비늘과 작은 결절이 있었음을 알 수 있습니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'ceratosaurus', relationship: '근연종' },
+    { id: 'tyrannosaurus-rex', relationship: '수렴적 역할' },
+  ],
+  discoveries: [
+    { year: 1984, location: '아르헨티나 추부트', discoveredBy: '호세 보나파르트', note: '피부 인상이 보존된 거의 완전한 한 개체의 골격 — 믿기 어려울 정도로 드문 발견.' },
+  ],
+  fossilLocations: [
+    { country: '아르헨티나', region: '추부트', coordinates: [-43.3, -65.1], specimenName: '라 콜로니아층' },
+  ],
 }

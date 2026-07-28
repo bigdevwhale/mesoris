@@ -14,4 +14,18 @@ export default {
       { label: 'Скорость', value: '45 км/ч', description: 'Один из самых быстрых крупных хищников своего времени — мог догнать большую часть своей добычи.' },
       { label: 'Распространённость', value: 'Самый обычный', description: 'Самый распространённый крупный хищник формации Моррисон — настоящий лев юрского периода.' },
     ],
+    relatedDinosaurs: [
+      { id: 'stegosaurus', relationship: 'Добыча' },
+      { id: 'diplodocus', relationship: 'Добыча' },
+      { id: 'ceratosaurus', relationship: 'Конкурент' },
+    ],
+    discoveries: [
+      { year: 1877, location: 'Колорадо, США', discoveredBy: 'Отниэль Чарлз Марш', note: 'Впервые описан в ходе «Войн костей».' },
+      { year: 1991, location: 'Вайоминг, США', discoveredBy: 'Кирби Сайбер', note: '«Большой Эл» — один из самых полных скелетов теропод.' },
+    ],
+    fossilLocations: [
+      { country: 'США', region: 'Юта', coordinates: [39.0, -111.0], specimenName: 'Карьер Кливленд-Ллойд' },
+      { country: 'США', region: 'Вайоминг', coordinates: [43.0, -107.5] },
+      { country: 'Португалия', region: 'Лориньян', coordinates: [39.3, -9.3] },
+    ],
   }

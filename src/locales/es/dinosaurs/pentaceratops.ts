@@ -14,4 +14,16 @@ export default {
     { label: 'Tamaño', value: '8 m', description: 'Un ceratopsido grande' },
     { label: 'Epoca', value: 'Cretacico Tardio', description: '~75 millones de anos' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: 'Pariente ceratopsido posterior' },
+    { id: 'styracosaurus', relationship: 'Pariente ceratopsido' },
+    { id: 'protoceratops', relationship: 'Ceratopsiano ancestral' },
+  ],
+  discoveries: [
+    { year: 1921, location: 'Condado de San Juan, Nuevo Mexico, USA', discoveredBy: 'Charles H. Sternberg', note: 'Descubierto por Sternberg y descrito por Henry Fairfield Osborn en 1923; nombrado sternbergii en honor a Sternberg.' },
+    { year: 1975, location: 'Formacion Kirtland, Nuevo Mexico', discoveredBy: 'Expediciones del American Museum', note: 'Especimenes posteriores, incluido el notable craneo gigante NMMNH P-27083, revelaron la extension completa del volante y cimentaron el record de tamaño craneal.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Condado de San Juan, Nuevo Mexico (Formacion Kirtland)', coordinates: [36.7, -108.0], specimenName: 'AMNH 6325 — craneo holotipo; NMMNH P-27083 — record de craneo gigante' },
+  ],
 }

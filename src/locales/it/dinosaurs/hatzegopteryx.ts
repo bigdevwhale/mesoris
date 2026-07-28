@@ -14,4 +14,15 @@ export default {
     { label: 'Collo', value: 'Compatto', description: 'Un collo relativamente corto e massiccio per un azhdarchide, adattato ad affrontare prede grandi.' },
     { label: 'Ecologia', value: 'Apice dell\'isola di Hațeg', description: 'Il superpredatore dell\'isola di Hațeg (Romania) — cacciava dinosauri che vivevano accanto a lui, tra cui piccoli titanosauri.' },
   ],
+  relatedDinosaurs: [
+    { id: 'quetzalcoatlus', relationship: 'Parente azhdarchide gigante' },
+    { id: 'thanatosdrakon', relationship: 'Parente azhdarchide gigante' },
+    { id: 'pteranodon', relationship: 'Parente pterosauro più piccolo' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Dan Grigorescu e team', note: 'Frammenti di cranio, omero e altro materiale descritti e nominati per la prima volta.' },
+  ],
+  fossilLocations: [
+    { region: 'Formazione Densuș-Ciula, Bacino di Hațeg, Transilvania', specimenName: 'BMNH R 3517 / materiale olotipo frammentario' },
+  ],
 }

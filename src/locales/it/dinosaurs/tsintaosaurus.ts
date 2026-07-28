@@ -14,4 +14,15 @@ export default {
     { label: 'Acustica', value: 'Risuonatore sonoro', description: 'La struttura cava della cresta amplificava probabilmente i richiami per riconoscere i membri del branco a grande distanza.' },
     { label: 'Cina', value: 'Provincia dello Shandong', description: 'Trovato nella provincia dello Shandong, ricca di fossili, che ha prodotto alcuni dei più grandi dinosauri dell\'Asia.' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: 'Parente adrosauro lambeosaurino' },
+    { id: 'corythosaurus', relationship: 'Parente adrosauro crestato' },
+    { id: 'edmontosaurus', relationship: 'Parente adrosauro' },
+  ],
+  discoveries: [
+    { discoveredBy: 'C.C. Young', note: 'Descritto da Young nel 1958; la conservazione imperfetta ha portato a decenni di dibattito sulla morfologia della cresta, risolto solo con materiale migliore.' },
+  ],
+  fossilLocations: [
+    { region: 'Zhucheng, provincia dello Shandong (Gruppo di Wangshi)', specimenName: 'IVPP V725 — cranio olotipo con cresta' },
+  ],
 }

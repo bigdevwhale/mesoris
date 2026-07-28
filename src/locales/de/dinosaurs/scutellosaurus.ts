@@ -14,4 +14,15 @@ export default {
     { label: 'Zeitalter', value: 'Frühe Jurazeit', description: '~195 Millionen Jahre' },
     { label: 'Fortbewegung', value: 'Zweibeinig', description: 'Lief wahrscheinlich auf zwei Beinen' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Viel späterer Nachfahre der Thyreophoren' },
+    { id: 'ankylosaurus', relationship: 'Viel späterer Nachfahre der Thyreophoren' },
+    { id: 'scelidosaurus', relationship: 'Eng verwandter früher Thyreophorer' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Edwin H. Colbert', note: '1981 von Colbert aus der Kayenta-Formation beschrieben; wichtig als der am frühesten bekannte Thyreophorer.' },
+  ],
+  fossilLocations: [
+    { region: 'Coconino County, Arizona (Kayenta-Formation)', specimenName: 'UCMP 129015 — Holotyp, Teilskelett' },
+  ],
 }

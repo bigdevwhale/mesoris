@@ -14,4 +14,14 @@ export default {
     { label: 'Corpulence', value: 'Ventre bedonnant', description: 'Un ventre énorme pour fermenter les plantes, un long cou et de minuscules dents en forme de feuilles.' },
     { label: 'Taille', value: '10 mètres', description: 'Un thérizinosaure gigantesque et le plus grand maniraptorien connu.' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'Parent éloigné (maniraptorien)' },
+    { id: 'tyrannosaurus-rex', relationship: 'Parent éloigné (théropode)' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Expédition soviéto-mongole', note: 'Premiers fossiles : seules les griffes géantes furent trouvées. Les scientifiques crurent d\'abord qu\'il s\'agissait de côtes de tortue !' },
+  ],
+  fossilLocations: [
+    { region: 'Désert de Gobi', specimenName: 'Formation Nemegt' },
+  ],
 }

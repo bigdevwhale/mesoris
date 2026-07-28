@@ -14,4 +14,15 @@ export default {
     { label: 'Epoca', value: 'Jurasico Temprano', description: '~195 millones de anos' },
     { label: 'Locomocion', value: 'Bipeda', description: 'Probablemente corria en dos patas' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Descendiente tireóforo mucho más tardío' },
+    { id: 'ankylosaurus', relationship: 'Descendiente tireóforo mucho más tardío' },
+    { id: 'scelidosaurus', relationship: 'Tireóforo temprano cercanamente emparentado' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Edwin H. Colbert', note: 'Descrito por Colbert en 1981 a partir de la Formación Kayenta; importante por ser el tireóforo más antiguo conocido.' },
+  ],
+  fossilLocations: [
+    { region: 'Condado de Coconino, Arizona (Formación Kayenta)', specimenName: 'UCMP 129015 — holotipo, esqueleto parcial' },
+  ],
 }

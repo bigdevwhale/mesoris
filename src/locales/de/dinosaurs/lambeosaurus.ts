@@ -14,4 +14,15 @@ export default {
     { label: 'Sinne', value: 'Scharfes Gehör', description: 'Hervorragendes Hörvermögen — der Kamm half, Schall für die Kommunikation zu verstärken.' },
     { label: 'Alter', value: 'Kamm zeigt Alter', description: 'Jungtiere ohne Kamm, Halbwüchsige mit kleiner Beule, Erwachsene mit voll entwickeltem Prachtkamm.' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: 'Enger Verwandter' },
+    { id: 'corythosaurus', relationship: 'Enger Verwandter' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Lawrence Lambe', note: 'Erstes Exemplar entdeckt.' },
+    { discoveredBy: 'William Parks', note: 'Vollständiges Skelett mit Kamm benannt.' },
+  ],
+  fossilLocations: [
+    { region: 'Alberta, Kanada', specimenName: 'Dinosaur-Park-Formation' },
+  ],
 }

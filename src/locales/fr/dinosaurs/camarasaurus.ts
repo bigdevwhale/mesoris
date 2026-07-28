@@ -14,4 +14,18 @@ export default {
     { label: 'Dents', value: 'En forme de cuillère', description: 'Des dents robustes en forme de cuillère, mieux adaptées au matériel végétal grossier que les dents en piquet d\'autres sauropodes.' },
     { label: 'Taille', value: '15 mètres de long', description: 'Pas le plus long des sauropodes, mais l\'un des plus lourds et des plus robustes de son époque.' },
   ],
+  relatedDinosaurs: [
+    { id: 'brachiosaurus', relationship: 'Parent sauropode macronaire' },
+    { id: 'diplodocus', relationship: 'Sauropode diplodocidé contemporain' },
+    { id: 'apatosaurus', relationship: 'Diplodocidé contemporain de la formation Morrison' },
+  ],
+  discoveries: [
+    { year: 1877, location: 'Garden Park, Colorado, États-Unis', discoveredBy: 'Edward Drinker Cope', note: 'Premiers spécimens décrits par Cope en 1877, au plus fort des guerres des os ; plusieurs espèces établies à partir du matériel de la formation Morrison.' },
+    { year: 1925, location: 'Dinosaur National Monument, Utah, États-Unis', discoveredBy: 'Équipe du Carnegie Museum', note: 'Squelettes partiels articulés remarquables, dont les célèbres juvéniles de « Camarasaurus lentus » qui ont montré la croissance rapide de l\'espèce.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Garden Park, Colorado (formation Morrison)', coordinates: [38.4, -105.1], specimenName: 'AMNH 5761 — matériel type' },
+    { country: 'USA', region: 'Dinosaur National Monument, Utah', coordinates: [40.43, -108.98], specimenName: 'CM 11338 — remarquable juvénile quasi complet' },
+    { country: 'USA', region: 'Como Bluff, Wyoming (formation Morrison)', coordinates: [41.8, -106.0], specimenName: 'Plusieurs spécimens référés' },
+  ],
 }

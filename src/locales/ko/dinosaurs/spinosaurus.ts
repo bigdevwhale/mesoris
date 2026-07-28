@@ -14,4 +14,16 @@ export default {
     { label: '몸길이', value: 'T-렉스보다 크다', description: '전장 15미터로, 지금까지 발견된 최대 육식 공룡.' },
     { label: '꼬리', value: '패들 모양', description: '강력한 수중 추진력을 만들어내는 유니크한 지느러미 같은 꼬리.' },
   ],
+  relatedDinosaurs: [
+    { id: 'baryonyx', relationship: '가까운 친척' },
+    { id: 'mosasaurus', relationship: '경쟁자 (수생)' },
+  ],
+  discoveries: [
+    { discoveredBy: '에른스트 슈트로머', note: '최초 화석 발견. 제2차 세계대전 중 뮌헨 폭격으로 파괴됨.' },
+    { discoveredBy: '니자르 이브라힘', note: '중요한 새로운 발견이 수생 생활 방식 이론을 확인했다.' },
+  ],
+  fossilLocations: [
+    { region: '켐켐층', specimenName: '' },
+    { region: '바하리야층', specimenName: '' },
+  ],
 }

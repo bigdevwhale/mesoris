@@ -14,4 +14,19 @@ export default {
     { label: '脳', value: '高度に発達', description: '優れた視覚と嗅覚を持ち、何マイルも先から獲物を見つけられました。' },
     { label: '前肢', value: '小さくても強力', description: 'わずか1メートルですが200kgを持ち上げられました。科学者にとっていまだ謎です。' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: '被食者' },
+    { id: 'edmontosaurus', relationship: '被食者' },
+    { id: 'daspletosaurus', relationship: '祖先' },
+    { id: 'giganotosaurus', relationship: '収斂進化' },
+  ],
+  discoveries: [
+    { discoveredBy: 'バーナム・ブラウン', note: 'ヘルクリーク層で最初の部分骨格を発見。' },
+    { discoveredBy: 'スーザン・ヘンドリクソン', note: '「スー」 — これまでに発見された最も完全なT. rex骨格、90%以上 intact。' },
+  ],
+  fossilLocations: [
+    { region: 'モンタナ州', specimenName: 'ヘルクリーク層' },
+    { region: 'サウスダコタ州', specimenName: 'スー' },
+    { region: 'ワイオミング州', specimenName: 'ランス層' },
+  ],
 }

@@ -14,4 +14,14 @@ export default {
     { label: 'Dimensioni', value: 'Pioniere minuscolo', description: 'Solo 1 metro di lunghezza e meno di 3 kg — minuscolo persino per un dinosauro triassico.' },
     { label: 'Sito', value: 'Ischigualasto', description: 'Argentina — uno dei più importanti giacimenti di dinosauri primitivi al mondo.' },
   ],
+  relatedDinosaurs: [
+    { id: 'eoraptor', relationship: 'Contemporaneo della stessa formazione' },
+    { id: 'herrerasaurus', relationship: 'Predatore contemporaneo della stessa formazione' },
+  ],
+  discoveries: [
+    { year: 1962, location: 'Ischigualasto, provincia di San Juan, Argentina', discoveredBy: 'Galileo J. Scaglia', note: 'Unico esemplare frammentario raccolto; descritto formalmente da Rodolfo Casamiquela nel 1967.' },
+  ],
+  fossilLocations: [
+    { country: 'Argentina', region: 'Provincia di San Juan, Formazione Ischigualasto', coordinates: [-30.0, -67.9], specimenName: 'PULR 08 — scheletro parziale olotipo' },
+  ],
 }

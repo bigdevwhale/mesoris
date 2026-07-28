@@ -14,5 +14,17 @@ const translations = {
     { label: '羽毛', value: '身披羽毛', description: '作为羽毛驰龙科的近亲，几乎肯定也身披羽毛。' },
     { label: '群体发现', value: '多个个体', description: '多只动物在砂岩中一起被发现——暗示社会行为。' },
   ],
+  relatedDinosaurs: [
+    { id: 'deinonychus', relationship: '近亲' },
+    { id: 'velociraptor', relationship: '体型较小的近亲' },
+    { id: 'acrocanthosaurus', relationship: '同时代的顶级捕食者' },
+  ],
+  discoveries: [
+    { discoveredBy: '吉姆·詹森', note: '早期化石被采集，但当时并未立即被识别为巨型驰龙类。' },
+    { discoveredBy: '詹姆斯·柯克兰、罗伯特·加斯顿和唐纳德·伯吉', note: '正式的描述揭示了已知最大的盗龙类恐龙。' },
+  ],
+  fossilLocations: [
+    { region: '犹他州', specimenName: '雪松山组黄猫段' },
+  ],
 }
 export default translations

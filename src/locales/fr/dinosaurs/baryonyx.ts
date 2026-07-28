@@ -14,4 +14,14 @@ export default {
     { label: 'Régime', value: 'Piscivore', description: 'L\'un des rares dinosaures connus principalement piscivores, avec des restes de poisson trouvés dans l\'estomac.' },
     { label: 'Découverte', value: 'Angleterre, 1983', description: 'Découvert par un collectionneur de fossiles amateur dans une carrière d\'argile du Surrey — l\'une des découvertes de dinosaures les plus passionnantes d\'Europe.' },
   ],
+  relatedDinosaurs: [
+    { id: 'spinosaurus', relationship: 'Proche parent' },
+    { id: 'suchomimus', relationship: 'Proche parent' },
+  ],
+  discoveries: [
+    { year: 1983, location: 'Surrey, Royaume-Uni', discoveredBy: 'William Walker', note: 'Un chasseur de fossiles amateur a trouvé la griffe gigantesque dans une carrière d\'argile.' },
+  ],
+  fossilLocations: [
+    { country: 'Royaume-Uni', region: 'Surrey', coordinates: [51.2, -0.5], specimenName: 'Formation de Weald Clay' },
+  ],
 }

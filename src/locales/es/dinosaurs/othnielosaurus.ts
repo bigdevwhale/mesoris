@@ -14,4 +14,16 @@ export default {
     { label: 'Dieta', value: 'Vegetación baja', description: 'Su pico y dientes laterales eran adecuados para mordisquear helechos y otras plantas blandas del suelo del Jurásico.' },
     { label: 'Historia', value: 'Reorganización taxonómica', description: 'Material antes asignado a Nanosaurus u Othnielia fue revisado, y Othnielosaurus se usa para restos claramente distintos.' },
   ],
+  relatedDinosaurs: [
+    { id: 'dryosaurus', relationship: 'Ornitópodo mayor de hábitats similares' },
+    { id: 'hypsilophodon', relationship: 'Ornitisquio herbívoro pequeño y ágil comparable' },
+    { id: 'camptosaurus', relationship: 'Ornitópodo ramoneador mayor contemporáneo' },
+  ],
+  discoveries: [
+    { year: 1877, location: 'Como Bluff, Wyoming, USA', discoveredBy: 'Equipos de recolección de Marsh', note: 'Material de pequeño ornitisquio recuperado durante las grandes excavaciones de Morrison.' },
+    { year: 2007, location: 'Revisión taxonómica', discoveredBy: 'Peter Galton', note: 'La reevaluación separó a Othnielosaurus de otras asignaciones históricas de pequeños ornitisquios.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Como Bluff, Wyoming (Formación Morrison)', coordinates: [41.8, -106.0], specimenName: 'Material referido de Othnielosaurus' },
+  ],
 }

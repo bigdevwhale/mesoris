@@ -14,4 +14,16 @@ export default {
     { label: 'Collare', value: 'Collare elaborato', description: 'Riccamente vascolarizzato e probabilmente vivacemente colorato — per il riconoscimento, la parata e la termoregolazione.' },
     { label: 'Nuovo Messico', value: 'Formazione Kirtland', description: 'Trovato in Nuovo Messico — insieme ad adrosauri, anchilosauri e tirannosauridi.' },
   ],
+  relatedDinosaurs: [
+    { id: 'triceratops', relationship: 'Parente ceratopside successivo' },
+    { id: 'styracosaurus', relationship: 'Parente ceratopside' },
+    { id: 'protoceratops', relationship: 'Ceratopsiano ancestrale' },
+  ],
+  discoveries: [
+    { year: 1921, location: 'Contea di San Juan, Nuovo Messico, USA', discoveredBy: 'Charles H. Sternberg', note: 'Scoperto da Sternberg e descritto da Henry Fairfield Osborn nel 1923; denominato sternbergii in onore di Sternberg.' },
+    { year: 1975, location: 'Formazione Kirtland, Nuovo Messico', discoveredBy: 'Spedizioni dell\'American Museum', note: 'Esemplari successivi, compreso il notevole cranio gigante NMMNH P-27083, rivelarono la piena estensione del collare e cementarono il record di dimensione del cranio.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Contea di San Juan, Nuovo Messico (Formazione Kirtland)', coordinates: [36.7, -108.0], specimenName: 'AMNH 6325 — cranio olotipo; NMMNH P-27083 — record di cranio gigante' },
+  ],
 }

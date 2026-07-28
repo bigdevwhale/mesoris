@@ -14,4 +14,13 @@ export default {
     { label: 'Nase', value: 'Komplexe Atemwege', description: 'Ein Labyrinth aus Nasengängen — möglicherweise zur Kühlung des Gehirns oder Geräuscherzeugung.' },
     { label: 'Panzerung', value: 'Lückenlos', description: 'Knochenplatten bedeckten fast jede Körperoberfläche in einem lückenlosen Schutzschild.' },
   ],
+  relatedDinosaurs: [
+    { id: 'ankylosaurus', relationship: 'Enger Verwandter' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Lawrence Lambe', note: 'Erstes Exemplar aus der Belly River Group beschrieben.' },
+  ],
+  fossilLocations: [
+    { region: 'Alberta', specimenName: 'Dinosaur Park Formation' },
+  ],
 }

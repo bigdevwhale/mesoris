@@ -14,4 +14,13 @@ export default {
     { label: 'Poids', value: '250 kg', description: 'Étonnamment léger pour sa taille' },
     { label: 'Locomotion', value: 'Quadrupède', description: 'Marchait à quatre pattes avec les ailes repliées' },
   ],
+  relatedDinosaurs: [
+    { id: 'pteranodon', relationship: 'Parent plus petit' },
+  ],
+  discoveries: [
+    { year: 1971, location: 'Texas, USA', discoveredBy: 'Douglas Lawson', note: 'Os d\'aile géant découvert dans le parc national de Big Bend — pris d\'abord pour un dinosaure.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Texas', coordinates: [29.3, -103.2], specimenName: 'Formation de Javelina, parc national de Big Bend' },
+  ],
 }

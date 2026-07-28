@@ -14,4 +14,14 @@ export default {
     { label: 'Sociale', value: 'Branchi', description: 'Viveva in grandi gruppi sociali — la versione a becco d\'anatra di una mandria di gnu.' },
     { label: 'Denti', value: 'Centinaia', description: 'Una batteria dentaria complessa con centinaia di denti per triturare le piante coriacee.' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: 'Parente stretto' },
+    { id: 'lambeosaurus', relationship: 'Parente stretto' },
+  ],
+  discoveries: [
+    { year: 1912, location: 'Alberta, Canada', discoveredBy: 'Barnum Brown', note: 'Primo scheletro completo scoperto durante una spedizione dell\'AMNH.' },
+  ],
+  fossilLocations: [
+    { country: 'Canada', region: 'Alberta', coordinates: [50.8, -111.5], specimenName: 'Formazione Dinosaur Park' },
+  ],
 }

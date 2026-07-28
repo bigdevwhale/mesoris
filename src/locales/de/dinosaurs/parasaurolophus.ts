@@ -14,4 +14,16 @@ export default {
     { label: 'Sozialverhalten', value: 'Groae Herden', description: 'Hochsozialer Hadrosaurier, der in groaen Herden lebte.' },
     { label: 'Zahne', value: 'Hunderte', description: 'Komplexe Zahnbatterie mit hunderten dicht gepackter Mahlzahne.' },
   ],
+  relatedDinosaurs: [
+    { id: 'corythosaurus', relationship: 'Verwandter' },
+    { id: 'lambeosaurus', relationship: 'Naher Verwandter' },
+  ],
+  discoveries: [
+    { year: 1920, location: 'Alberta, Canada', discoveredBy: 'William Parks', note: 'Erster Schadel entdeckt.' },
+    { year: 1999, location: 'New Mexico, USA', discoveredBy: 'Thomas Williamson', note: 'Sehr gut erhaltener Schadel.' },
+  ],
+  fossilLocations: [
+    { country: 'Canada', region: 'Alberta', coordinates: [54.5, -113.0], specimenName: 'Dinosaur-Park-Formation' },
+    { country: 'USA', region: 'New Mexico', coordinates: [36.0, -107.5] },
+  ],
 }

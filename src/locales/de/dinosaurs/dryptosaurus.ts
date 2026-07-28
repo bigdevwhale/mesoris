@@ -14,4 +14,16 @@ export default {
     { label: 'Umfeld', value: 'Jäger der Küstenebene', description: 'Er lebte in feuchten östlichen Küstentiefländern am Rand des Western Interior Seaway.' },
     { label: 'Kunstgeschichte', value: 'Klassisches Gemälde-Ikone', description: 'Das Gemälde „Leaping Laelaps" von 1897 machte Dryptosaurus zu einem der ersten dynamisch und aktiv dargestellten Dinosaurier.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Späterer riesiger Tyrannosauridae-Verwandter' },
+    { id: 'albertosaurus', relationship: 'Stärker abgeleiteter Tyrannosauride aus dem westlichen Nordamerika' },
+    { id: 'gorgosaurus', relationship: 'Eine weitere Linie campanisch-maastrichtischer Tyrannosauroiden' },
+  ],
+  discoveries: [
+    { year: 1866, location: 'Barnsboro, New Jersey, USA', discoveredBy: 'Steinbrucharbeiter; beschrieben von Edward Drinker Cope', note: 'Ursprünglich als Laelaps aquilunguis aus küstennahen Kreideablagerungen benannt.' },
+    { year: 1877, location: 'Taxonomische Revision', discoveredBy: 'Othniel Charles Marsh', note: 'In Dryptosaurus umbenannt, nachdem der Name Laelaps als zuvor vergeben erkannt wurde.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Navesink-Formation, New Jersey', coordinates: [39.82, -75.13], specimenName: 'Material des Holotyps' },
+  ],
 }

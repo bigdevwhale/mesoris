@@ -14,4 +14,18 @@ export default {
     { label: 'Epoca', value: 'Jurasico Tardio', description: '~155 millones de anos' },
     { label: 'Abundancia', value: 'Muy comun', description: 'El sauropodo mas abundante' },
   ],
+  relatedDinosaurs: [
+    { id: 'brachiosaurus', relationship: 'Sauropodo macronario emparentado' },
+    { id: 'diplodocus', relationship: 'Sauropodo diplodocido contemporaneo' },
+    { id: 'apatosaurus', relationship: 'Diplodocido contemporaneo de la Formacion Morrison' },
+  ],
+  discoveries: [
+    { year: 1877, location: 'Garden Park, Colorado, EE. UU.', discoveredBy: 'Edward Drinker Cope', note: 'Primeros especimenes descritos por Cope en 1877 en el apogeo de las Guerras de los Huesos; varias especies establecidas a partir de material de la Formacion Morrison.' },
+    { year: 1925, location: 'Monumento Nacional de los Dinosaurios, Utah, EE. UU.', discoveredBy: 'Equipo del Museo Carnegie', note: 'Esqueletos parciales articulados notables, incluyendo famosos juveniles de "Camarasaurus lentus" que mostraron el rapido crecimiento de la especie.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Garden Park, Colorado (Formacion Morrison)', coordinates: [38.4, -105.1], specimenName: 'AMNH 5761 — material tipo' },
+    { country: 'USA', region: 'Monumento Nacional de los Dinosaurios, Utah', coordinates: [40.43, -108.98], specimenName: 'CM 11338 — notable juvenil casi completo' },
+    { country: 'USA', region: 'Como Bluff, Wyoming (Formacion Morrison)', coordinates: [41.8, -106.0], specimenName: 'Varios especimenes referidos' },
+  ],
 }

@@ -14,4 +14,15 @@ export default {
     { label: '歯', value: '鋸歯状で多様', description: '歯は混合食を示し、小さな獲物、卵、そしておそらく植物質も食べていました。' },
     { label: '手', value: '部分的に対向可能', description: '半対向性の親指で、驚くべき器用さで物をつかむことができました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: '遠い親戚（パラヴェス）' },
+    { id: 'deinonychus', relationship: '関連グループ' },
+  ],
+  discoveries: [
+    { discoveredBy: 'フェルディナント・ヘイデン', note: '単独の歯が発見される — 北米最古の恐竜発見の一つ。' },
+  ],
+  fossilLocations: [
+    { region: 'モンタナ州', specimenName: 'ジュディス・リバー層' },
+    { region: 'アルバータ州' },
+  ],
 }

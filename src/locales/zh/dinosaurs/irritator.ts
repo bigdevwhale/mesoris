@@ -14,4 +14,15 @@
     { label: '分类', value: '巴西棘龙科', description: '一种棘龙科恐龙——与棘龙有密切亲缘关系——证明了该群在冈瓦纳大陆的广泛分布。' },
     { label: '猎物', value: '也吃翼龙', description: '脊椎中的翼龙牙齿——已知稀有的捕食者与翼龙互动的证据之一。' },
   ],
+  relatedDinosaurs: [
+    { id: 'spinosaurus', relationship: '近缘的棘龙亚科近亲' },
+    { id: 'baryonyx', relationship: '近缘的棘龙科近亲' },
+    { id: 'suchomimus', relationship: '非洲的棘龙科近亲' },
+  ],
+  discoveries: [
+    { discoveredBy: '化石商人（确切发现者不明）', note: '头骨被商人购买并修改；后由斯图加特国家自然历史博物馆获得；1996年由 Martill, Cruickshank, Frey 等人描述。' },
+  ],
+  fossilLocations: [
+    { region: '塞阿拉州，桑塔纳组（罗穆阿尔杜段）', specimenName: 'SMNS 58022 — 接近完整的正模头骨' },
+  ],
 }

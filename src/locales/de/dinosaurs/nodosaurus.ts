@@ -14,4 +14,15 @@ export default {
     { label: 'Korperbau', value: 'Panzerartig', description: 'Breiter, flacher Korper mit ovalen Knochenknoten in der zahen Haut.' },
     { label: 'Lebensraum', value: 'Kuste des Binnenmeers', description: 'Lebte an den Ufern des Western Interior Seaway, dem groaen Binnenmeer Nordamerikas.' },
   ],
+  relatedDinosaurs: [
+    { id: 'ankylosaurus', relationship: 'Ankylosaurier-Verwandter (andere Familie, mit Schwanzkeule)' },
+    { id: 'euoplocephalus', relationship: 'Club-tailed Ankylosaurier-Verwandter' },
+    { id: 'stegosaurus', relationship: 'Thyreophorer-Verwandter' },
+  ],
+  discoveries: [
+    { discoveredBy: 'O.C. Marsh', note: '1889 von Marsh beschriebenes fragmentarisches Material; lieferte den Namen für die Nodosauridae, eine der beiden großen Ankylosaurier-Familien.' },
+  ],
+  fossilLocations: [
+    { region: 'Albany County, Wyoming (Mowry Shale), USA', specimenName: 'YPM 1815 — fragmentarisches Holotyp-Material' },
+  ],
 }

@@ -13,4 +13,15 @@ export default {
     { label: 'आकार', value: '15 मीटर तक', icon: 'maximize', description: 'कुछ नमूनों से पता चलता है कि यह 15 मीटर तक पहुँच सकता था — सबसे बड़े हैड्रोसॉरों में से एक।' },
     { label: 'इंद्रियाँ', value: 'तीव्र श्रवण', icon: 'ear', description: 'इसमें उत्कृष्ट श्रवण शक्ति थी — कलंगी ध्वनि को बढ़ाने और संचार के लिए निर्देशित करने में मदद करती थी।' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: 'नज़दीकी रिश्तेदार' },
+    { id: 'corythosaurus', relationship: 'नज़दीकी रिश्तेदार' },
+  ],
+  discoveries: [
+    { discoveredBy: 'लॉरेंस लैम्बे', note: 'पहला नमूना खोजा गया।' },
+    { discoveredBy: 'विलियम पार्क्स', note: 'कलंगी सहित पूर्ण कंकाल को नाम दिया गया।' },
+  ],
+  fossilLocations: [
+    { region: 'अल्बर्टा, कनाडा', specimenName: 'डायनासोर पार्क फॉर्मेशन' },
+  ],
 }

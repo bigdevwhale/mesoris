@@ -14,4 +14,16 @@ export default {
     { label: 'Habitat', value: 'Semi-acuatico', description: 'Unico entre los dinosaurios depredadores, adaptado para nadar' },
     { label: 'Dieta', value: 'Piscivoro', description: 'Principalmente peces, incluyendo peces sierra gigantes' },
   ],
+  relatedDinosaurs: [
+    { id: 'baryonyx', relationship: 'Pariente cercano' },
+    { id: 'mosasaurus', relationship: 'Competidor (acuático)' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Ernst Stromer', note: 'Primeros fósiles encontrados; luego destruidos en el bombardeo de Múnich durante la Segunda Guerra Mundial.' },
+    { discoveredBy: 'Nizar Ibrahim', note: 'Nuevos descubrimientos importantes confirmaron la teoría del estilo de vida acuático.' },
+  ],
+  fossilLocations: [
+    { region: 'Lechos de Kem Kem', specimenName: '' },
+    { region: 'Formación Bahariya', specimenName: '' },
+  ],
 }

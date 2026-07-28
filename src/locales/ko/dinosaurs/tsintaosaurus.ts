@@ -14,4 +14,15 @@ export default {
     { label: '음향', value: '소리 공명기', description: '다른 볏 있는 하드로사우루스류와 마찬가지로 중공 구조가 발성을 증폭하여 무리 동료가 원거리에서 인식하는 데 도움.' },
     { label: '서식지', value: '산둥 성', description: '중국 산둥 성에서 발견되어, 아시아 최대급 공룡을 산출한 화석 풍부 지역의 주목할 만한 공룡 중 하나.' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: '람베오사우루스아과 하드로사우루스 친척' },
+    { id: 'corythosaurus', relationship: '볏 있는 하드로사우루스 친척' },
+    { id: 'edmontosaurus', relationship: '하드로사우루스 친척' },
+  ],
+  discoveries: [
+    { discoveredBy: 'C.C. 영', note: '1958년 영에 의해 기재되었으나, 보존 상태 불량으로 볏 형태에 대해 수십 년간 논쟁이 있었으며 더 양호한 표본이 발견되면서 해결되었다.' },
+  ],
+  fossilLocations: [
+    { region: '산둥 성 주청 (왕씨 층군)', specimenName: 'IVPP V725 — 볏을 포함한 홀로타입 두개골' },
+  ],
 }

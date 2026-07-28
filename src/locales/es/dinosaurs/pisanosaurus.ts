@@ -14,4 +14,14 @@ export default {
     { label: 'Ubicacion', value: 'Argentina', description: 'Sudamerica, Triasico Tardio' },
     { label: 'Importancia', value: 'Ancestral', description: 'Origen de los dinosaurios con pico' },
   ],
+  relatedDinosaurs: [
+    { id: 'eoraptor', relationship: 'Contemporaneo de la misma formacion' },
+    { id: 'herrerasaurus', relationship: 'Depredador contemporaneo de la misma formacion' },
+  ],
+  discoveries: [
+    { year: 1962, location: 'Ischigualasto, Provincia de San Juan, Argentina', discoveredBy: 'Galileo J. Scaglia', note: 'Unico especimen fragmentario recolectado; descrito formalmente por Rodolfo Casamiquela en 1967.' },
+  ],
+  fossilLocations: [
+    { country: 'Argentina', region: 'Provincia de San Juan, Formacion Ischigualasto', coordinates: [-30.0, -67.9], specimenName: 'PULR 08 — esqueleto parcial holotipo' },
+  ],
 }

@@ -14,4 +14,15 @@
     { label: '歯', value: '自己研磨式', description: '片側エナメル質の隆線のある頬歯 — 自己研磨で常にカミソリのように鋭い状態でした。' },
     { label: 'ワイト島', value: 'ウェセックス層', description: '20個体以上の産地 — 群れまたは社会的行動を示唆します。' },
   ],
+  relatedDinosaurs: [
+    { id: 'iguanodon', relationship: 'より大きな鳥脚類の同時代種と近縁' },
+    { id: 'deinonychus', relationship: '同時代の捕食者' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ウィリアム・フォックス (William Fox)', note: '最初の標本が発見された；ウィリアム・フォックス牧師が主要な資料を収集し、本種は彼の栄誉を称えて命名された。' },
+    { discoveredBy: 'T. H. ハクスリー (T. H. Huxley)', note: '1869年にハクスリーが正式に記載；1882年にハクスリーは誤って樹上生活の習性を示唆した。' },
+  ],
+  fossilLocations: [
+    { region: 'ワイト島、ウェセックス層（ウィールデン層群）', specimenName: 'NHMUK PV R192 — ホロタイプ；20個体以上のボーンベッド' },
+  ],
 }

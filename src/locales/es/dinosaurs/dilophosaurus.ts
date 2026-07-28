@@ -14,4 +14,16 @@ export default {
     { label: 'Tamaño', value: '7 m', description: 'Mucho mayor que en el cine' },
     { label: 'Dientes', value: 'Aserrados', description: 'Curvados para desgarrar carne' },
   ],
+  relatedDinosaurs: [
+    { id: 'coelophysis', relationship: 'Pariente terópodo anterior' },
+    { id: 'ceratosaurus', relationship: 'Contraparte terópodo con cresta posterior' },
+    { id: 'allosaurus', relationship: 'Sucesor depredador alfa' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Sam Welles', note: 'El primer esqueleto fue excavado de la Formación Kayenta durante una expedición de la Universidad de California.' },
+    { discoveredBy: 'Sam Welles', note: 'Un mejor ejemplar mostró claramente las dobles crestas distintivas y llevó al nombre Dilophosaurus.' },
+  ],
+  fossilLocations: [
+    { region: 'Arizona', specimenName: 'Formación Kayenta' },
+  ],
 }

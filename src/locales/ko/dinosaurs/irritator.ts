@@ -14,4 +14,15 @@ export default {
     { label: '분류', value: '브라질의 스피노사우루스과', description: '스피노사우루스의 근연종 — 이 그룹의 곤드와나 대륙에서의 넓은 분포를 증명합니다.' },
     { label: '먹이', value: '프테로사우루스도 먹음', description: '척추에 프테로사우루스 이빨 — 알려진 중 드문 포식자-익룡 상호작용 중 하나입니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'spinosaurus', relationship: '가까운 스피노사우루스아과 친척' },
+    { id: 'baryonyx', relationship: '가까운 스피노사우루스과 친척' },
+    { id: 'suchomimus', relationship: '아프리카 스피노사우루스과 친척' },
+  ],
+  discoveries: [
+    { discoveredBy: '상업 딜러들 (정확한 발견자 미상)', note: '두개골이 딜러에 의해 매수 및 개변됨; 슈투트가르트 슈타틀리히스 자연사 박물관에 의해 인수됨; 1996년 Martill, Cruickshank, Frey 등에 의해 기재됨.' },
+  ],
+  fossilLocations: [
+    { region: '세아라주, 산타나층 (로무알두 멤버)', specimenName: 'SMNS 58022 — 거의 완전한 두개골인 홀로타입' },
+  ],
 }

@@ -14,5 +14,18 @@ const translations = {
     { label: '猎物', value: '巨型蜥脚类', description: '可能猎杀蜀龙和峨眉龙等蜥脚类恐龙。' },
     { label: '亲缘关系', value: '中华盗龙科', description: '属于中华盗龙科——一个亚洲异特龙超科类群。' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: '北美异特龙超科近亲' },
+    { id: 'ceratosaurus', relationship: '同时代角鼻龙科' },
+    { id: 'torvosaurus', relationship: '大型侏罗纪捕食者近亲' },
+  ],
+  discoveries: [
+    { discoveredBy: '董枝明、张玉清、李宣明、周世武', note: '正模标本——几乎完整的头骨和部分骨架——于施工时被发现；由董枝明等在1978年描述命名。' },
+    { discoveredBy: '董枝明', note: '第二种 Y. magnus 由大山铺材料描述——略大且更完整。' },
+  ],
+  fossilLocations: [
+    { region: '四川永川（上沙溪庙组）', specimenName: 'CV 00215 — 正模头骨和骨架' },
+    { region: '四川自贡（大山铺组）', specimenName: 'Y. magnus 材料——自贡恐龙博物馆' },
+  ],
 }
 export default translations

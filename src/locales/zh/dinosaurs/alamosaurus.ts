@@ -14,4 +14,17 @@
     { label: '共存', value: '与霸王龙共存', description: '阿拉摩龙与霸王龙共享栖息地——这是北美洲已知唯一这样做的蜥脚类恐龙。' },
     { label: '防御', value: '披甲蜥脚类', description: '作为泰坦龙类，阿拉摩龙的皮肤中有小型骨质皮骨板——这是蜥脚类恐龙中独特的特征。' },
   ],
+  relatedDinosaurs: [
+    { id: 'argentinosaurus', relationship: '南美泰坦龙类近亲' },
+    { id: 'sauroposeidon', relationship: '更早的北美巨型蜥脚类' },
+    { id: 'diplodocus', relationship: '更早的北美蜥脚类（不同科）' },
+  ],
+  discoveries: [
+    { year: 1921, location: '美国新墨西哥州圣胡安县', discoveredBy: '查尔斯·W·吉尔摩', note: '最初由吉尔摩于1922年在新墨西哥州采集并描述；后来在德克萨斯州发现了更大的标本。' },
+    { year: 2003, location: '美国德克萨斯州大弯曲国家公园', discoveredBy: '托马斯·莱曼和肯尼斯·卡彭特', note: '来自德克萨斯州的巨型椎骨和肢骨使体型估计大幅上调，表明阿拉摩龙可与最大的南美泰坦龙类相媲美。' },
+  ],
+  fossilLocations: [
+    { country: '美国', region: '新墨西哥州圣胡安县（奥霍阿拉莫组）', coordinates: [36.5, -108.2], specimenName: 'USNM 10487——正模标本椎骨与前肢' },
+    { country: '美国', region: '德克萨斯州布鲁斯特县，大弯曲（哈维利纳组）', coordinates: [29.3, -103.2], specimenName: '得克萨斯州巨型标本，显示最大体型' },
+  ],
 }

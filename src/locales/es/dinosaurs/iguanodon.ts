@@ -14,4 +14,16 @@ export default {
     { label: 'Postura', value: 'Bipede/cuadrupedo', description: 'Caminaba en dos o cuatro patas' },
     { label: 'Pico', value: 'Sin dientes frontales', description: 'Pico queratinoso para cortar vegetacion' },
   ],
+  relatedDinosaurs: [
+    { id: 'megalosaurus', relationship: 'Primeros dinosaurios descubiertos' },
+    { id: 'maiasaura', relationship: 'Linaje emparentado' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Gideon Mantell / Mary Ann Mantell', note: 'Primeros dientes descubiertos, inicialmente pensados de una iguana gigante.' },
+    { discoveredBy: 'Mineros del carbon', note: '38 esqueletos completos hallados en una mina de carbon a 322 metros de profundidad — un descubrimiento sin precedentes.' },
+  ],
+  fossilLocations: [
+    { region: 'Bernissart', specimenName: 'Mina de carbon Sainte-Barbe' },
+    { region: 'Sussex', specimenName: '—' },
+  ],
 }

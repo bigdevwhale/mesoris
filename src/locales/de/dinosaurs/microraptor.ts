@@ -14,4 +14,16 @@ export default {
     { label: 'Farbe', value: 'Irisierend schwarz', description: 'Mikroskopische Pigmentstrukturen deuten auf glänzende, rabenartige Federn hin.' },
     { label: 'Ernährung', value: 'Alles Bissgroße', description: 'Fossilien enthalten Fisch, Säuger und Vögel im Magen — ein vielseitiges kleines Raubtier.' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'Entfernter Dromaeosaurier-Verwandter' },
+    { id: 'troodon', relationship: 'Vogelähnlicher Theropode' },
+    { id: 'psittacosaurus', relationship: 'Zeitgenössischer Nachbar' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Lokale Fossiliensammler', note: 'Außergewöhnlich erhaltene Exemplare aus der Jehol-Biota enthüllten einen kleinen vierflügeligen Dinosaurier.' },
+    { discoveredBy: 'Xu Xing und Kollegen', note: 'Die formelle Beschreibung machte Microraptor berühmt als einen der klarsten gefiederten Nicht-Vogel-Dinosaurier.' },
+  ],
+  fossilLocations: [
+    { region: 'Liaoning, China', specimenName: 'Jiufotang-Formation' },
+  ],
 }

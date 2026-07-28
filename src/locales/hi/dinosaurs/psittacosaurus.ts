@@ -14,4 +14,17 @@ export default {
     { label: 'पूँछ', value: 'कड़े रोएँ', icon: 'feather', description: 'कुछ नमूनों में पूँछ पर कठोर रोएँ सुरक्षित मिले हैं — डायनासोर शारीर आवरण का एक दुर्लभ प्रकार।' },
     { label: 'विकास', value: 'शिशु-से-वयस्क अभिलेख', icon: 'baby', description: 'जीवाश्मों की विशाल संख्या के कारण वैज्ञानिक शिशुओं, वयस्कों और यहाँ तक कि शावक-पालन व्यवहार भी जानते हैं।' },
   ],
+  relatedDinosaurs: [
+    { id: 'protoceratops', relationship: 'बाद का सिरैटॉप्सियन संबंधी' },
+    { id: 'triceratops', relationship: 'सींगदार दूरस्थ वंशज' },
+    { id: 'microraptor', relationship: 'समकालीन एशियाई पड़ोसी' },
+  ],
+  discoveries: [
+    { year: 1922, location: 'Mongolia', discoveredBy: 'Henry Fairfield Osborn', note: 'ओसबॉर्न ने शुरुआती एशियाई खोजों के आधार पर इस वंश को नाम दिया और इसे आदिम सींगदार डायनासोर के रूप में पहचाना।' },
+    { year: 2000, location: 'Liaoning, China', discoveredBy: 'Chinese paleontological teams', note: 'शानदार नए जीवाश्मों में त्वचा, रोएँ और यहाँ तक कि संभावित शिशु समूह भी सुरक्षित मिले।' },
+  ],
+  fossilLocations: [
+    { country: 'China', region: 'लियाओनिंग', coordinates: [41.9, 121.7], specimenName: 'यीशियन फॉर्मेशन' },
+    { country: 'Mongolia', region: 'ओम्नोगोवी', coordinates: [44.5, 108.5], specimenName: 'प्रारंभिक क्रेटेशस परतें' },
+  ],
 }

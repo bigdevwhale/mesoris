@@ -14,4 +14,15 @@ export default {
     { label: 'Armadura', value: 'Proteccion primitiva', description: 'Carecia de la maza caudal bien desarrollada de los anquilosauridos posteriores: su sistema de osteodermos y placas dermicas representa una condicion defensiva mas ancestral.' },
     { label: 'Tamano', value: 'Alrededor de 4,5 m', description: 'Longitud estimada de unos 4 a 5 metros y varios cientos de kilogramos de masa: un herbivoro cuadrpedo de tamano medio para su formacion.' },
   ],
+  relatedDinosaurs: [
+    { id: 'ankylosaurus', relationship: 'Pariente anquilosáurido posterior' },
+    { id: 'euoplocephalus', relationship: 'Pariente anquilosáurido posterior' },
+    { id: 'nodosaurus', relationship: 'Pariente anquilosaurio (rama nodosáurida)' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Lü Junchang et al.', note: 'Descrito de la Formación Mangchuan; un anquilosáurido primitivo estrechamente emparentado con Gobisaurus y Shamosaurus.' },
+  ],
+  fossilLocations: [
+    { region: 'Provincia de Henan (Formación Mangchuan)', specimenName: 'Formación Mangchuan, Cretácico Temprano' },
+  ],
 }

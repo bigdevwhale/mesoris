@@ -14,4 +14,15 @@ export default {
     { label: '반구', value: '남반구 검룡', description: '남반구 대륙(고원드와나)에서 발견된 몇 안 되는 검룡 중 하나로, 대부분 북반구에서 발견돼요.' },
     { label: '계통', value: '검룡의 조상', description: '검룡류의 초기 분기점을 대표하여, 이 가족의 오래된 기원을 이해하는 데 도움을 줘요.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: '유명한 후기 근연종' },
+    { id: 'loricatosaurus', relationship: '유럽 검룡의 근연종' },
+    { id: 'dacentrurus', relationship: '유럽 검룡' },
+  ],
+  discoveries: [
+    { discoveredBy: '수잔나 메이드먼트와 연구팀', note: '척추뼈와 부분적인 대퇴골이 기재되어 Adratiklit boulahfa로 명명되었어요.' },
+  ],
+  fossilLocations: [
+    { region: '엘 메르스층, 중부 아틀라스 산맥, 불라파', specimenName: 'NHMUK PV R 37166 — 홀로타입 척추뼈' },
+  ],
 }

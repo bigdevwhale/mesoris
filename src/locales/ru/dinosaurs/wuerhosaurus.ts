@@ -14,4 +14,15 @@ export default {
     { label: 'Среда', value: 'Озёрная низменность', description: 'Жил по берегам внутриконтинентальных озёр в Джунгарском бассейне на северо-западе Китая.' },
     { label: 'Хвост', value: 'Четырёхшипный тагомайзер', description: 'Шипастый тагомайзер на конце хвоста, использовавшийся для защиты от хищников.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Известный родственник с более высокими пластинами' },
+    { id: 'kentrosaurus', relationship: 'Шипастый панцирный родственник' },
+    { id: 'tuojiangosaurus', relationship: 'Китайский родственник-стегозавр' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Дун Чжимин', note: 'Частичный посткраниальный скелет описан и назван Wuerhosaurus homheni.' },
+  ],
+  fossilLocations: [
+    { region: 'Джунгарский бассейн, Синьцзян', specimenName: 'IVPP V.4006 — голотип, частичный скелет' },
+  ],
 }

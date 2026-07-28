@@ -14,4 +14,14 @@ export default {
     { label: '사냥', value: '적극적인 사냥꾼', description: '적극적으로 사냥하고 먹잇감과 싸웠다는 증거가 있습니다. 단순한 시체 청소부가 아니었습니다.' },
     { label: '교합력', value: '뼈를 부수는', description: '티렉스를 유명하게 만든 강력한 뼈 부수기 교합력을 이미 발달시키고 있었습니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: '후손' },
+  ],
+  discoveries: [
+    { year: 1921, location: '캐나다 앨버타주', discoveredBy: '찰스 M. 스턴버그', note: '올드맨층에서 최초의 두개골이 발견되었다.' },
+  ],
+  fossilLocations: [
+    { country: '캐나다', region: '앨버타주', coordinates: [49.5, -112.0], specimenName: '올드맨층' },
+    { country: '미국', region: '몬태나주', coordinates: [47.5, -110.5], specimenName: '투 메디슨층' },
+  ],
 }

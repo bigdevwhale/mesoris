@@ -14,4 +14,16 @@
     { label: '食物', value: '蕨类和木贼', description: '其锯齿状喙部非常适合在侏罗纪冲积森林中撕下低矮的植被。' },
     { label: '危险', value: '异特龙的猎物', description: '其中等的体型使它成为顶级捕食者异特龙的主要猎物。' },
   ],
+  relatedDinosaurs: [
+    { id: 'iguanodon', relationship: '近缘的禽龙类亲属' },
+    { id: 'edmontosaurus', relationship: '后期鸭嘴龙后裔谱系' },
+    { id: 'muttaburrasaurus', relationship: '后期鸟脚类亲属' },
+  ],
+  discoveries: [
+    { discoveredBy: '奥塞内尔·查尔斯·马什', note: '在化石战争时期出土了多件标本；马什于1879年命名了该属。' },
+  ],
+  fossilLocations: [
+    { region: '怀俄明州奥尔巴尼县（莫里逊组）', specimenName: 'YPM 1877 — 模式标本' },
+    { region: '犹他州恐龙国家纪念碑', specimenName: '归入的生长系列标本' },
+  ],
 }

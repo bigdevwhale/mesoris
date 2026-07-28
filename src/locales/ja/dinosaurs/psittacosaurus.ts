@@ -14,4 +14,17 @@
     { label: '尾', value: '硬い剛毛', description: '一部の標本は尾に硬い剛毛を示す — 稀な皮膚構造。' },
     { label: '体長', value: '2メートル', description: '大型犬ほどの大きさ、二足歩行姿勢。' },
   ],
+  relatedDinosaurs: [
+    { id: 'protoceratops', relationship: 'より後の角竜類' },
+    { id: 'triceratops', relationship: '遠い角を持つ子孫' },
+    { id: 'microraptor', relationship: '同時代のアジアの隣人' },
+  ],
+  discoveries: [
+    { year: 1922, location: 'Mongolia', discoveredBy: 'Henry Fairfield Osborn', note: 'オズボンが初期のアジアでの発見に基づき属に命名し、原始的な角竜類と認めた。' },
+    { year: 2000, location: 'Liaoning, China', discoveredBy: 'Chinese paleontological teams', note: '新たな化石は皮膚、剛毛、幼体群まで保存していた。' },
+  ],
+  fossilLocations: [
+    { country: 'China', region: '遼寧省', coordinates: [41.9, 121.7], specimenName: '義県層' },
+    { country: 'Mongolia', region: 'オムノゴヴィ', coordinates: [44.5, 108.5], specimenName: '前期白亜紀の地層' },
+  ],
 }

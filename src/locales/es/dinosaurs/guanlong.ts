@@ -14,4 +14,15 @@ export default {
     { label: 'Familia', value: 'Tiranosauroide temprano', description: 'Uno de los tiranosauroides más tempranos y primitivos conocidos, un diminuto ancestro del T. rex.' },
     { label: 'Edad', value: 'Anterior al T. rex', description: 'Vivió unos 90 millones de años antes que T. rex, el pequeño precursor del rey tirano.' },
   ],
+  relatedDinosaurs: [
+    { id: 'proceratosaurus', relationship: 'Primo proceratosáurido con cresta' },
+    { id: 'tyrannosaurus-rex', relationship: 'Descendiente lejano' },
+    { id: 'dilophosaurus', relationship: 'Terópodo crestado contemporáneo' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Xu Xing y equipo', note: 'Dos esqueletos bien preservados recolectados por una expedición conjunta chino-estadounidense.' },
+  ],
+  fossilLocations: [
+    { region: 'Formación Shishugou, Xinjiang', specimenName: 'IVPP V14531 — esqueleto articulado holotipo' },
+  ],
 }

@@ -14,4 +14,15 @@ export default {
     { label: 'Зубы', value: 'Ножевидные', description: 'Отчётливо изогнутые, клиновидные, зазубренные зубы — идеальны для срезания мяса с крупной добычи-завропода.' },
     { label: 'Ареал', value: 'Патагония', description: 'Обнаружен в формации Серро-Барсино, провинция Чубут, Патагония, Аргентина.' },
   ],
+  relatedDinosaurs: [
+    { id: 'giganotosaurus', relationship: 'Родственник-кархародонтозаврид' },
+    { id: 'carcharodontosaurus', relationship: 'Африканский родственник-кархародонтозаврид' },
+    { id: 'concavenator', relationship: 'Базальный родственник-кархародонтозаврид' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Фернандо Новас и команда', note: 'Частичный посткраниальный скелет описан и назван Tyrannotitan chubutensis.' },
+  ],
+  fossilLocations: [
+    { region: 'Формация Серро-Барсино, Чубут', specimenName: 'MPEF-PV 1156 — голотип, частичный скелет' },
+  ],
 }

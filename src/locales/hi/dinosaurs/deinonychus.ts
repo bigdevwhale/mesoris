@@ -14,4 +14,15 @@ export default {
     { label: 'पंख', value: 'संभवतः पंखयुक्त', icon: 'feather', description: 'संबंधित प्रजातियाँ पुष्टि करती हैं कि इसके पंख थे — गर्म-रक्त वाले और चिड़िया जैसे।' },
     { label: 'शिकार', value: 'झुंड शिकारी', icon: 'users', description: 'टेनोंटोसॉरस जीवाश्मों के पास कई व्यक्ति मिले — झुंड शिकार के पक्ष में मज़बूत साक्ष्य।' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'निकट का संबंधी' },
+    { id: 'oviraptor', relationship: 'समकालीन' },
+  ],
+  discoveries: [
+    { year: 1931, location: 'मोंटाना, अमेरिका', discoveredBy: 'बार्नम ब्राउन', note: 'पहले जीवाश्म मिले लेकिन दशकों बाद तक अध्ययन नहीं हुआ।' },
+    { year: 1964, location: 'मोंटाना, अमेरिका', discoveredBy: 'जॉन ऑस्ट्रॉम', note: 'ऑस्ट्रॉम की खोज और 1969 का पेपर डायनासोर विज्ञान में क्रांति लाया।' },
+  ],
+  fossilLocations: [
+    { country: 'अमेरिका', region: 'मोंटाना', coordinates: [45.5, -108.5], specimenName: 'क्लोवरली शैलसमूह' },
+  ],
 }

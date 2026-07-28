@@ -14,4 +14,15 @@ export default {
     { label: 'Flügel', value: 'Schmal und lang', description: 'Lange, schmale Flügel, angepasst an dynamisches Segeln über der Western Interior Seaway — wie ein kreidezeitlicher Albatros.' },
     { label: 'Flug', value: 'Luftfischer', description: 'Segelte über dem kreidezeitlichen Meer und tauchte seinen zahnlosen Schnabel, um Fische zu schöpfen.' },
   ],
+  relatedDinosaurs: [
+    { id: 'pteranodon', relationship: 'Zeitgenössischer Pteranodontidae-Verwandter' },
+    { id: 'dimorphodon', relationship: 'Früherer basaler Pterosaurier' },
+    { id: 'quetzalcoatlus', relationship: 'Entfernter Azhdarchidae-Verwandter' },
+  ],
+  discoveries: [
+    { year: 1876, location: 'Niobrara Chalk, Kansas, USA', discoveredBy: 'O.C. Marsh', note: 'Erster Nyctosaurus, beschrieben aus den Kreideablagerungen von Kansas.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Niobrara-Kreide, Kansas', coordinates: [38.7, -98.5], specimenName: 'Typusmaterial aus der Niobrara-Kreide' },
+  ],
 }

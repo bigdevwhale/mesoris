@@ -14,4 +14,16 @@ export default {
     { label: 'Bonebed', value: 'Massenherden', description: 'Lebte in riesigen Herden von tausenden Tieren.' },
     { label: 'Groae', value: '8 Meter', description: 'Ein groaer Ceratopside von etwa 4 Tonnen.' },
   ],
+  relatedDinosaurs: [
+    { id: 'styracosaurus', relationship: 'Naher Verwandter' },
+    { id: 'triceratops', relationship: 'Verwandter' },
+  ],
+  discoveries: [
+    { year: 1946, location: 'Alberta, Canada', discoveredBy: 'Charles M. Sternberg', note: 'Erster Schadel entdeckt.' },
+    { year: 1970, location: 'Alberta, Canada', discoveredBy: 'Al Lakusta', note: 'Massives Bonebed mit hunderten Individuen.' },
+  ],
+  fossilLocations: [
+    { country: 'Canada', region: 'Alberta', coordinates: [55.0, -118.0], specimenName: 'Wapiti-Formation' },
+    { country: 'USA', region: 'Alaska', coordinates: [69.0, -151.0], specimenName: 'Prince-Creek-Formation' },
+  ],
 }

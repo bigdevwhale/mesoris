@@ -15,4 +15,16 @@ export default {
     { label: 'Größe', value: 'Größer als T-Rex', description: 'Mit 15 Metern Länge der größte je entdeckte fleischfressende Dinosaurier.' },
     { label: 'Schwanz', value: 'Paddelartig', description: 'Ein einzigartiger flossenartiger Schwanz für kraftvollen Unterwasserantrieb.' },
   ],
+  relatedDinosaurs: [
+    { id: 'baryonyx', relationship: 'Enger Verwandter' },
+    { id: 'mosasaurus', relationship: 'Konkurrent (aquatisch)' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Ernst Stromer', note: 'Erste Fossilien gefunden; später im Zweiten Weltkrieg bei der Bombardierung Münchens zerstört.' },
+    { discoveredBy: 'Nizar Ibrahim', note: 'Bedeutende neue Entdeckungen bestätigten die Theorie des aquatischen Lebensstils.' },
+  ],
+  fossilLocations: [
+    { region: 'Kem Kem Beds', specimenName: '' },
+    { region: 'Bahariya-Formation', specimenName: '' },
+  ],
 }

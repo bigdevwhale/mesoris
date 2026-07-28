@@ -14,4 +14,13 @@ export default {
     { label: 'Piccoli', value: 'Prole inetta', description: 'I piccoli non camminavano bene all\'inizio — i genitori portavano il cibo al nido.' },
     { label: 'Crescita', value: 'Molto rapida', description: 'I piccoli passavano da 40 cm a taglia adulta in soli 7–8 anni — incredibilmente veloce.' },
   ],
+  relatedDinosaurs: [
+    { id: 'edmontosaurus', relationship: 'Parente stretto' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Jack Horner', note: 'La colonia di nidificazione «Egg Mountain» — rivoluzionò le vedute sul comportamento dei dinosauri.' },
+  ],
+  fossilLocations: [
+    { region: 'Montana', specimenName: 'Egg Mountain, Formazione Two Medicine' },
+  ],
 }

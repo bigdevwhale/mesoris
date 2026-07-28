@@ -14,4 +14,16 @@
     { label: '姿态', value: '随时间修正', description: '最初被描绘成四足蜥蜴——如今我们知道它主要两足行走。' },
     { label: '食性', value: '多才多艺的植食者', description: '能够咀嚼食物——一种革命性的适应性，用于处理坚韧的植物。' },
   ],
+  relatedDinosaurs: [
+    { id: 'megalosaurus', relationship: '最早被发现的恐龙' },
+    { id: 'maiasaura', relationship: '相关谱系' },
+  ],
+  discoveries: [
+    { discoveredBy: '吉迪恩·曼特尔 / 玛丽·安·曼特尔 (Gideon Mantell / Mary Ann Mantell)', note: '最初发现的牙齿，当时被认为是巨型鬣蜥的牙齿。' },
+    { discoveredBy: '煤矿工人', note: '在322米深的煤矿中发现38具完整骨架——史无前例的发现。' },
+  ],
+  fossilLocations: [
+    { region: '贝尔尼萨', specimenName: '圣巴布煤矿' },
+    { region: '苏塞克斯', specimenName: '——' },
+  ],
 }

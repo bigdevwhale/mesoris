@@ -14,4 +14,15 @@ export default {
     { label: 'Origine', value: 'Gloucestershire', description: 'Trouvé en 1910 dans une briqueterie à Minchinhampton, dans le Gloucestershire, en Angleterre.' },
     { label: 'Famille', value: 'Tyrannosaure primitif', description: 'Appartient aux Proceratosauridae — une famille basale de tyrannosauroidés qui inclut Guanlong et Kileskus.' },
   ],
+  relatedDinosaurs: [
+    { id: 'guanlong', relationship: 'Cousin proceratosauridé à crête' },
+    { id: 'dilophosaurus', relationship: 'Théropode contemporain à crête' },
+    { id: 'tyrannosaurus-rex', relationship: 'Descendant éloigné' },
+  ],
+  discoveries: [
+    { year: 1910, location: 'Minchinhampton, Gloucestershire, England', discoveredBy: 'F. Lewis Bradley', note: 'Crâne partiel trouvé dans une briqueterie ; décrit par Arthur Smith Woodward.' },
+  ],
+  fossilLocations: [
+    { country: 'United Kingdom', region: 'Minchinhampton, Gloucestershire', coordinates: [51.7, -2.2], specimenName: 'NHMUK PV R 4860 — holotype, crâne partiel' },
+  ],
 }

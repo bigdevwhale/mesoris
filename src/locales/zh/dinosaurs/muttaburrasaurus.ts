@@ -14,4 +14,16 @@
     { label: '牙齿', value: '切割型牙齿', description: '具有切割功能的牙齿而非臼齿——暗示以坚韧植物为食。' },
     { label: '隔离', value: '南方大陆', description: '当澳大利亚开始从南极洲分离时，在相对隔离的环境中进化。' },
   ],
+  relatedDinosaurs: [
+    { id: 'iguanodon', relationship: '近亲禽龙类鸟脚类' },
+    { id: 'camptosaurus', relationship: '早期的鸟脚类近亲' },
+  ],
+  discoveries: [
+    { discoveredBy: '道格·兰登', note: '1963年牧民道格·兰登在他的财产上发现了近乎完整的骨架；1981年由巴塞洛迈和莫尔纳正式描述。' },
+    { discoveredBy: '古生物团队', note: '1987年在闪电岭含蛋白石沉积物中发现了第二件标本，提供了额外的解剖学数据。' },
+  ],
+  fossilLocations: [
+    { region: '穆塔布拉，巴卡尔丁地区，昆士兰州，澳大利亚（麦坎达组）', specimenName: 'QM F6140 — 正模标本，近乎完整的骨架' },
+    { region: '闪电岭，新南威尔士州，澳大利亚', specimenName: '部分头骨和颅后材料' },
+  ],
 }

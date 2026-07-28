@@ -14,4 +14,16 @@ export default {
     { label: 'Dents', value: 'Dents cisaillantes', description: 'Des dents coupantes plutôt que broyeuses — suggère un régime de plantes coriaces.' },
     { label: 'Isolement', value: 'Masse continentale australe', description: 'A évolué en relatif isolement alors que l\'Australie commençait à se séparer de l\'Antarctique.' },
   ],
+  relatedDinosaurs: [
+    { id: 'iguanodon', relationship: 'Parent ornithopode iguanodontien proche' },
+    { id: 'camptosaurus', relationship: 'Parent ornithopode antérieur' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Doug Langdon', note: 'Squelette quasi complet trouvé par l\'éleveur Doug Langdon en 1963 sur sa propriété ; formellement décrit par Bartholomai et Molnar en 1981.' },
+    { discoveredBy: 'Équipe paléontologique', note: 'Second spécimen découvert à Lightning Ridge en 1987 dans un sédiment à opales, fournissant des données anatomiques supplémentaires.' },
+  ],
+  fossilLocations: [
+    { region: 'Muttaburra, région de Barcaldine, Queensland, Australie (formation de Mackunda)', specimenName: 'QM F6140 — holotype, squelette quasi complet' },
+    { region: 'Lightning Ridge, Nouvelle-Galles du Sud, Australie', specimenName: 'Crâne partiel et matériel post-crânien' },
+  ],
 }

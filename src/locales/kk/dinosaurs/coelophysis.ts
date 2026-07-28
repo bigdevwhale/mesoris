@@ -14,4 +14,15 @@ export default {
     { label: 'Жаппай бейіт', value: 'Ghost Ranch-тегі жүздеген адамдар', description: 'Мыңдаған қаңқалар Ghost Ranch, Нью-Мексикода табылды - нағыз динозаврлар зиратынан.' },
     { label: 'Каннибализм', value: 'Даулы мәселе', description: 'Асқазан тұсынан табылған сүйектер алғашында каннибализмнің дәлелі деп саналған. Кейін ғалымдар олардың өз төлі емес, жеген балықтың сүйектері болуы мүмкін деген болжам айтты.' },
   ],
+  relatedDinosaurs: [
+    { id: 'herrerasaurus', relationship: 'Заманауи' },
+    { id: 'eoraptor', relationship: 'Заманауи' },
+  ],
+  discoveries: [
+    { year: 1881, location: 'Нью-Мексико, АҚШ', discoveredBy: 'Дэвид Болдуин', note: 'Триас шөгінділерінен бірінші үлгі табылды.' },
+    { year: 1947, location: 'Ghost Ranch, Нью-Мексико, АҚШ', discoveredBy: 'Эдвин Колберт', note: 'Жүздеген толық қаңқалары бар ірі қаңқалық төсе табылды.' },
+  ],
+  fossilLocations: [
+    { country: 'АҚШ', region: 'Нью-Мексико', coordinates: [36.3, -106.0], specimenName: 'Ghost Ranch, Чинле формациясы' },
+  ],
 }

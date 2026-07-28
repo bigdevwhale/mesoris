@@ -14,4 +14,14 @@ export default {
     { label: '発見地', value: 'アフリカ最古の竜脚類', description: 'アフリカから知られている最古の竜脚類の一つで、ジュラ紀前期のパンゲアにおける竜脚類の拡散のマッピングに役立ちます。' },
     { label: '体格', value: 'ずんぐりした体', description: '頑丈で柱状の肢とずんぐりした体格は、より華奢な原竜脚類から真の竜脚類の体重支持構造への移行を示しています。' },
   ],
+  relatedDinosaurs: [
+    { id: 'plateosaurus', relationship: '初期の原竜脚類祖先系統' },
+    { id: 'brachiosaurus', relationship: '後の派生的な竜脚類の近縁種' },
+  ],
+  discoveries: [
+    { discoveredBy: 'マイケル・ラス', note: '玄武岩層の間で部分骨格が発見され、1972年にラスによって正式に記載された。アフリカ最古の竜脚類の一つ。' },
+  ],
+  fossilLocations: [
+    { region: 'マショナランド西州、ヴァルカノドン・ベッドズ、カルィバ湖周辺', specimenName: 'QG 24 — ホロタイプ部分骨格' },
+  ],
 }

@@ -14,4 +14,14 @@ export default {
     { label: 'Site', value: 'Argentine', description: 'Nord-ouest de l\'Argentine' },
     { label: 'Poids', value: '~2 tonnes', description: 'Lourd pour son époque' },
   ],
+  relatedDinosaurs: [
+    { id: 'plateosaurus', relationship: 'Proche parent sauropodomorphe' },
+    { id: 'eoraptor', relationship: 'Dinosaure primitif contemporain' },
+  ],
+  discoveries: [
+    { year: 1967, location: 'La Rioja Province, Argentina', discoveredBy: 'José Bonaparte', note: 'De nombreux spécimens ont été trouvés dans la formation de Los Colorados ; décrit formellement par Bonaparte en 1969, ce qui en fait l\'un des sauropodomorphes triasiques les mieux connus.' },
+  ],
+  fossilLocations: [
+    { country: 'Argentina', region: 'Province de La Rioja, Formation de Los Colorados', coordinates: [-29.5, -67.5], specimenName: 'PVL 3808 — matériel rapporté, plusieurs individus' },
+  ],
 }

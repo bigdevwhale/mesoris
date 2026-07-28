@@ -14,4 +14,14 @@ export default {
     { label: 'Velocità', value: '~40 km/h', description: 'Uno dei grandi teropodi più veloci grazie alle sue lunghe e potenti zampe posteriori.' },
     { label: 'Pelle', value: 'Impronte di pelle conservate', description: 'Uno dei rari fossili di grandi teropodi con impronte di pelle autentiche — con grandi squame e piccoli tubercoli.' },
   ],
+  relatedDinosaurs: [
+    { id: 'ceratosaurus', relationship: 'Parente' },
+    { id: 'tyrannosaurus-rex', relationship: 'Ruolo convergente' },
+  ],
+  discoveries: [
+    { year: 1984, location: 'Chubut, Argentina', discoveredBy: 'Jose Bonaparte', note: 'Unico scheletro quasi completo con impronte di pelle — una scoperta incredibilmente rara.' },
+  ],
+  fossilLocations: [
+    { country: 'Argentina', region: 'Chubut', coordinates: [-43.3, -65.1], specimenName: 'Formazione La Colonia' },
+  ],
 }

@@ -14,5 +14,14 @@ const translations = {
     { label: '体重', value: '250 公斤', description: '就其体型而言轻得惊人。' },
     { label: '运动方式', value: '四足行走', description: '折叠翅膀用四条腿行走。' },
   ],
+  relatedDinosaurs: [
+    { id: 'pteranodon', relationship: '体型较小的近亲' },
+  ],
+  discoveries: [
+    { year: 1971, location: 'Texas, USA', discoveredBy: 'Douglas Lawson', note: '在 Big Bend 国家公园发现的一块巨大翼骨 — 起初被误认为是恐龙。' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: '德克萨斯州', coordinates: [29.3, -103.2], specimenName: 'Javelina 组，Big Bend 国家公园' },
+  ],
 }
 export default translations

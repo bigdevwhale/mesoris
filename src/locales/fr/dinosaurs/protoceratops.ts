@@ -14,4 +14,15 @@ export default {
     { label: 'Collerette', value: 'Petite mais ornée', description: 'Une collerette modeste comparée à Triceratops — mais très variable.' },
     { label: 'Taille', value: '2 mètres', description: 'Environ de la taille d\'un mouton, un herbivore compact.' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'Prédateur' },
+    { id: 'triceratops', relationship: 'Lointainement apparenté' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Roy Chapman Andrews', note: 'Premier Protoceratops et premiers œufs de dinosaure découverts simultanément.' },
+    { discoveredBy: 'Expédition polono-mongole', note: 'Les « Dinosaures combattants » — Protoceratops contre Velociraptor.' },
+  ],
+  fossilLocations: [
+    { region: 'Désert de Gobi', specimenName: 'Formation de Djadochta' },
+  ],
 }

@@ -14,4 +14,16 @@ export default {
     { label: 'Posizione', value: 'Apice della catena', description: 'Condivideva con Allosaurus il ruolo di superpredatore in Morrison, ma con dimensioni maggiori.' },
     { label: 'Eredità', value: 'Nome severo', description: 'Il nome, che significa "signore dei mangiatori di lucertole", riflette il suo dominio nelle pianure del tardo Giurassico.' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: 'Parente allosauride strettissimo; talvolta considerato lo stesso genere' },
+    { id: 'torvosaurus', relationship: 'Un altro predatore giurassico gigante nel Nord America' },
+    { id: 'stegosaurus', relationship: 'Potenziale preda ed erbivoro contemporaneo' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Squadre guidate da J.W. Stovall', note: 'Resti di un grande teropode recuperati dagli strati del Morrison.' },
+    { discoveredBy: 'Daniel Chure', note: 'Il materiale fu nominato Saurophaganax maximus e presentato come distinto da Allosaurus.' },
+  ],
+  fossilLocations: [
+    { region: 'Contea di Cimarron, Oklahoma (Formazione Morrison)', specimenName: 'Materiale tipo di Saurophaganax maximus' },
+  ],
 }

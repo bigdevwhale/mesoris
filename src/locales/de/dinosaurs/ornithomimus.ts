@@ -14,4 +14,16 @@ export default {
     { label: 'Name', value: 'Vogelnachahmer', description: 'Sieht einem heutigen Straua verbluffend ahnlich — gleiche Korperform, gleiche Lebensweise.' },
     { label: 'Groae', value: '4 Meter', description: 'Mittelgroaer Theropode, etwa so groa wie ein groaer Straua.' },
   ],
+  relatedDinosaurs: [
+    { id: 'gallimimus', relationship: 'Enger Verwandter' },
+    { id: 'struthiomimus', relationship: 'Enger Verwandter' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Othniel Charles Marsh', note: 'Erstmals beschrieben während der Bone Wars.' },
+    { discoveredBy: 'Francois Therrien', note: 'Federkleidtragende Exemplare mit erhaltener Befiederung entdeckt.' },
+  ],
+  fossilLocations: [
+    { region: 'Alberta', specimenName: 'Horseshoe-Canyon-Formation' },
+    { region: 'Colorado', specimenName: '' },
+  ],
 }

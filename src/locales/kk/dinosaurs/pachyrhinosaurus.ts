@@ -13,4 +13,16 @@ export default {
     { label: 'Мүйіздері', value: 'Қалқандағы өсінділер', description: 'Мүйіздері маңдайда емес, бас қалқанының артқы жағында орналасқан.' },
     { label: 'Табындары', value: 'Алып табындар', description: 'Өте көп мөлшерде табылған қазба қалдықтары олардың мыңдаған дарақтан тұратын алып табындармен өмір сүргенін көрсетеді.' },
   ],
+  relatedDinosaurs: [
+    { id: 'styracosaurus', relationship: 'Жақын туыс' },
+    { id: 'triceratops', relationship: 'Туыс' },
+  ],
+  discoveries: [
+    { year: 1946, location: 'Альберта, Канада', discoveredBy: 'Чарльз М. Стернберг', note: 'Алғашқы бас сүйегі табылды.' },
+    { year: 1970, location: 'Альберта, Канада', discoveredBy: 'Эл Лакуста', note: 'Жүздеген дарақтан тұратын алып сүйек қабаты.' },
+  ],
+  fossilLocations: [
+    { country: 'Канада', region: 'Альберта', coordinates: [55.0, -118.0], specimenName: 'Уапити формациясы' },
+    { country: 'АҚШ', region: 'Аляска', coordinates: [69.0, -151.0], specimenName: 'Принс-Крик формациясы' },
+  ],
 }

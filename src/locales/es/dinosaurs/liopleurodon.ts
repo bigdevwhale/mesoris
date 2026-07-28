@@ -14,4 +14,17 @@ export default {
     { label: 'Epoca', value: '166 Ma', description: 'Jurasico Medio' },
     { label: 'Fama', value: 'Exagerado', description: 'La television lo agrando' },
   ],
+  relatedDinosaurs: [
+    { id: 'kronosaurus', relationship: 'Análogo pliosaurio posterior' },
+    { id: 'plesiosaurus', relationship: 'Pariente plesiosaurio distante' },
+    { id: 'ichthyosaurus', relationship: 'Contemporáneo marino' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Henri-Émile Sauvage', note: 'Dientes y material mandibular formaron la base para nombrar a Liopleurodon.' },
+    { discoveredBy: 'Numerosos coleccionistas y museos', note: 'Material de Oxford Clay de Gran Bretaña ayudó más tarde a los paleontólogos a entender mejor al animal.' },
+  ],
+  fossilLocations: [
+    { region: 'Pas-de-Calais', specimenName: 'Depósitos marinos del Calloviense' },
+    { region: 'Oxfordshire', specimenName: 'Formación Oxford Clay' },
+  ],
 }

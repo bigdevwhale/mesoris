@@ -14,4 +14,16 @@ export default {
     { label: 'Époque', value: '112 millions d\'années', description: 'Crétacé inférieur' },
     { label: 'Famille', value: 'Brachiosauridés', description: 'Apparenté au Brachiosaure' },
   ],
+  relatedDinosaurs: [
+    { id: 'brachiosaurus', relationship: 'Proche parent' },
+    { id: 'acrocanthosaurus', relationship: 'Menace de prédateur' },
+    { id: 'argentinosaurus', relationship: 'Géant rival' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Richard Cifelli et équipe', note: 'Les vertèbres cervicales gigantes furent d\'abord prises à tort pour des troncs d\'arbre fossilisés avant la préparation.' },
+    { discoveredBy: 'Mathew Wedel, Richard Cifelli et R. Kent Sanders', note: 'La description formelle identifia l\'un des plus grands dinosaures jamais trouvés.' },
+  ],
+  fossilLocations: [
+    { region: 'Oklahoma', specimenName: 'Formation d\'Antlers' },
+  ],
 }

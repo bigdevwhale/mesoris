@@ -46,7 +46,7 @@ const childRoutes: RouteRecordRaw[] = [
   {
     path: 'encyclopedia/:id',
     name: 'encyclopedia-detail',
-    component: () => import('@/views/EncyclopediaView.vue'),
+    component: () => import('@/views/DinoProfileView.vue'),
   },
   {
     path: 'timeline',

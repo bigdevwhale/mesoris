@@ -14,4 +14,18 @@ export default {
     { label: 'Denti', value: 'A lama di sega', description: 'Denti seghettati a forma di lama, perfetti per tagliare la carne.' },
     { label: 'Distribuzione', value: 'Nord America ed Europa', description: 'Fossili scoperti negli Stati Uniti e in Portogallo, indicando un\'ampia distribuzione.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Preda' },
+    { id: 'diplodocus', relationship: 'Preda' },
+    { id: 'ceratosaurus', relationship: 'Concorrente' },
+  ],
+  discoveries: [
+    { year: 1877, location: 'Colorado, Stati Uniti', discoveredBy: 'Othniel Charles Marsh', note: 'Descritto per la prima volta durante le Guerre delle Ossa.' },
+    { year: 1991, location: 'Wyoming, Stati Uniti', discoveredBy: 'Kirby Siber', note: '"Big Al" — uno degli scheletri di teropode più completi mai rinvenuti.' },
+  ],
+  fossilLocations: [
+    { country: 'Stati Uniti', region: 'Utah', coordinates: [39.0, -111.0], specimenName: 'Cava di Cleveland-Lloyd' },
+    { country: 'Stati Uniti', region: 'Wyoming', coordinates: [43.0, -107.5] },
+    { country: 'Portogallo', region: 'Lourinhã', coordinates: [39.3, -9.3] },
+  ],
 }

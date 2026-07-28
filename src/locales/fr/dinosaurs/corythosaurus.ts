@@ -14,4 +14,14 @@ export default {
     { label: 'Social', value: 'Troupeaux', description: 'Vivait en grands groupes sociaux — la version à bec de canard d\'un troupeau de gnous.' },
     { label: 'Dents', value: 'Des centaines', description: 'Une batterie dentaire complexe avec des centaines de dents pour broyer les plantes coriaces.' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: 'Proche parent' },
+    { id: 'lambeosaurus', relationship: 'Proche parent' },
+  ],
+  discoveries: [
+    { year: 1912, location: 'Alberta, Canada', discoveredBy: 'Barnum Brown', note: 'Premier squelette complet découvert lors d\'une expédition de l\'AMNH.' },
+  ],
+  fossilLocations: [
+    { country: 'Canada', region: 'Alberta', coordinates: [50.8, -111.5], specimenName: 'Formation de Dinosaur Park' },
+  ],
 }

@@ -14,4 +14,15 @@
     { label: '骨骼生长', value: '快速生长', description: '骨组织学显示快速而持续的生长速度——恐龙的特征。' },
     { label: '坦桑尼亚', value: '中三叠世', description: '发现于中三叠世的曼达组——最早恐龙形动物出现的时代。' },
   ],
+  relatedDinosaurs: [
+    { id: 'eoraptor', relationship: '后期阿根廷早期恐龙' },
+    { id: 'herrerasaurus', relationship: '后期早期恐龙' },
+  ],
+  discoveries: [
+    { discoveredBy: '雷克斯·帕林顿', note: '骨骼于20世纪30年代采集，但直到2013年才由斯特林·内斯比特及其同事正式描述。' },
+    { discoveredBy: '斯特林·内斯比特等', note: '发表在《生物学快报》上的正式描述将该材料鉴定为可能的世界最古老恐龙。' },
+  ],
+  fossilLocations: [
+    { region: '鲁胡胡盆地，曼达组，鲁伍马区', specimenName: 'NHMUK PV R6856 — 正模标本肱骨和椎骨' },
+  ],
 }

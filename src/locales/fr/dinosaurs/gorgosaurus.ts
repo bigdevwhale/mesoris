@@ -14,4 +14,16 @@ export default {
     { label: 'Morsure', value: 'Dents dentelées', description: 'Ses dents en forme de lame, capables de briser les os, étaient adaptées pour arracher la chair des hadrosaures et des cératopsiens.' },
     { label: 'Guilde de prédateurs', value: 'Prédateur suprême de l\'Alberta', description: 'Dans les plaines alluviales campaniennes de l\'ouest canadien, Gorgosaurus était l\'un des superprédateurs dominants.' },
   ],
+  relatedDinosaurs: [
+    { id: 'albertosaurus', relationship: 'Parent albertosauriné très proche' },
+    { id: 'daspletosaurus', relationship: 'Tyrannosauridé contemporain à la constitution plus robuste' },
+    { id: 'tyrannosaurus-rex', relationship: 'Lignée ultérieure de tyrannosauridés géants' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Charles H. Sternberg', note: 'A collecté les spécimens qui ont servi de base à la description de Lambe.' },
+    { discoveredBy: 'Lawrence Lambe', note: 'A formellement nommé Gorgosaurus libratus et l\'a établi comme un tyrannosauridé distinct.' },
+  ],
+  fossilLocations: [
+    { region: 'Parc provincial des dinosaures, Alberta', specimenName: 'Squelettes de la Formation de Dinosaur Park' },
+  ],
 }

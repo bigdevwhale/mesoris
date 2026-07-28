@@ -14,4 +14,15 @@ export default {
     { label: 'Famiglia', value: 'Tirannosauroide primitivo', description: 'Uno dei tirannosauroidi più antichi e primitivi conosciuti — un minuscolo antenato del T. rex.' },
     { label: 'Età', value: 'Anteriore al T. rex', description: 'Vissuto circa 90 milioni di anni prima del T. rex, il modesto precursore del re tiranno.' },
   ],
+  relatedDinosaurs: [
+    { id: 'proceratosaurus', relationship: 'Cugino proceratosauride dalla cresta' },
+    { id: 'tyrannosaurus-rex', relationship: 'Lontano discendente' },
+    { id: 'dilophosaurus', relationship: 'Teropode contemporaneo crestato' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Xu Xing e il suo team', note: 'Due scheletri ben conservati raccolti da una spedizione congiunta sino-americana.' },
+  ],
+  fossilLocations: [
+    { region: 'Formazione Shishugou, Xinjiang', specimenName: 'IVPP V14531 — scheletro articolato olotipo' },
+  ],
 }

@@ -13,4 +13,15 @@ export default {
       { label: 'Размер', value: 'До 15 м', description: 'Некоторые находки указывают, что он мог достигать 15 метров — это один из крупнейших гадрозавров.' },
       { label: 'Слух', value: 'Очень острый', description: 'Обладал отличным слухом, а гребень помогал усиливать и направлять звуки для общения.' },
     ],
+    relatedDinosaurs: [
+      { id: 'parasaurolophus', relationship: 'Близкий родственник' },
+      { id: 'corythosaurus', relationship: 'Близкий родственник' },
+    ],
+    discoveries: [
+      { discoveredBy: 'Лоуренс Ламб', note: 'Обнаружен первый образец.' },
+      { discoveredBy: 'Уильям Паркс', note: 'Полный скелет с гребнем был назван.' },
+    ],
+    fossilLocations: [
+      { region: 'Альберта, Канада', specimenName: 'Формация Дайносор-Парк' },
+    ],
   }

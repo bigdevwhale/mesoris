@@ -14,4 +14,17 @@
     { label: '前肢', value: '頑丈な三本指', description: 'ティラノサウルス類とは異なり、獲物を捕らえるのに役立つ強力な前肢を持っていました。' },
     { label: '足跡', value: '巨大な足跡化石', description: '白亜紀前期の巨大な足跡の中には、アクロカントサウルスが竜脚類を追跡したものかもしれないものがあります。' },
   ],
+  relatedDinosaurs: [
+    { id: 'carcharodontosaurus', relationship: '近縁種' },
+    { id: 'sauroposeidon', relationship: '同時代の巨大獲物' },
+    { id: 'deinonychus', relationship: '同時代の小型捕食者' },
+  ],
+  discoveries: [
+    { year: 1940, location: 'アメリカ合衆国オクラホマ州', discoveredBy: 'J・ウィリス・ストーヴォルとその共同研究者', note: 'アントラーズ層から発見された重要な化石により、それまで未知だった巨大捕食者が明らかになった。' },
+    { year: 1950, location: 'アメリカ合衆国オクラホマ州', discoveredBy: 'J・ウィリス・ストーヴォルとW・ラングストン・ジュニア', note: '正式な学術記載によりアクロカントサウルスが学界に紹介された。' },
+  ],
+  fossilLocations: [
+    { country: 'アメリカ合衆国', region: 'オクラホマ州', coordinates: [34.4, -96.0], specimenName: 'アントラーズ層' },
+    { country: 'アメリカ合衆国', region: 'テキサス州', coordinates: [32.9, -97.4], specimenName: 'ツインマウンテンズ層' },
+  ],
 }

@@ -14,4 +14,14 @@
     { label: '速度', value: '约 40 公里/时', description: '得益于长而有力的后腿，它是最快的大型兽脚类恐龙之一。' },
     { label: '皮肤', value: '保存了皮肤印痕', description: '少数保存了真实皮肤印痕的大型兽脚类恐龙化石之一——有大鳞片和小结节。' },
   ],
+  relatedDinosaurs: [
+    { id: 'ceratosaurus', relationship: '近亲' },
+    { id: 'tyrannosaurus-rex', relationship: '趋同演化的生态位' },
+  ],
+  discoveries: [
+    { year: 1984, location: '阿根廷丘布特省', discoveredBy: '何塞·波拿巴', note: '一具几乎完整的骨骼，伴有皮肤印痕——极其罕见的发现。' },
+  ],
+  fossilLocations: [
+    { country: '阿根廷', region: '丘布特省', coordinates: [-43.3, -65.1], specimenName: '拉科洛尼亚组' },
+  ],
 }

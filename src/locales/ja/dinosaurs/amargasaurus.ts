@@ -14,4 +14,16 @@
     { label: '分類', value: 'ディクラエオサウルス科', description: '短い首と特異な脊椎の棘で知られる、竜脚類の中でも珍しいグループに属しています。' },
     { label: '生息環境', value: 'パタゴニアの氾濫原', description: '白亜紀前期のパタゴニアで、川や針葉樹に囲まれ、他のユニークな南アメリカの恐竜たちと共存していました。' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: '遠いディプロドクス上科の親戚' },
+    { id: 'argentinosaurus', relationship: '後の南アメリカの巨人' },
+    { id: 'carnotaurus', relationship: '同地域の後の捕食者' },
+  ],
+  discoveries: [
+    { year: 1984, location: 'アルゼンチン・ネウケン', discoveredBy: 'ギジェルモ・ルジェ', note: '模式標本がパタゴニアのラ・アマルガ層から発見された。' },
+    { year: 1991, location: 'アルゼンチン', discoveredBy: 'レオナルド・サルガドとホセ・ボナパルト', note: '正式な記載でこの恐竜の特異な頸椎棘が強調された。' },
+  ],
+  fossilLocations: [
+    { country: 'アルゼンチン', region: 'ネウケン', coordinates: [-38.6, -70.2], specimenName: 'ラ・アマルガ層' },
+  ],
 }

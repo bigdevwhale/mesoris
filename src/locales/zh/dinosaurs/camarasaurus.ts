@@ -14,4 +14,18 @@
     { label: '牙齿', value: '勺子形', description: '粗壮的勺子形牙齿，比其他蜥脚类恐龙的钉状牙齿更适合粗糙的植物材料。' },
     { label: '体长', value: '15 米', description: '不是最长的蜥脚类恐龙，但却是当时最重、最粗壮的之一。' },
   ],
+  relatedDinosaurs: [
+    { id: 'brachiosaurus', relationship: '大鼻龙类蜥脚类近亲' },
+    { id: 'diplodocus', relationship: '同时代的梁龙类蜥脚类' },
+    { id: 'apatosaurus', relationship: '莫里森组的同时代梁龙类' },
+  ],
+  discoveries: [
+    { year: 1877, location: '美国科罗拉多州加登帕克', discoveredBy: '爱德华·德林克·科普', note: '1877年正值"骨头大战"的高峰期，科普描述了首批标本；根据莫里森组的材料建立了多个物种。' },
+    { year: 1925, location: '美国犹他州恐龙国家纪念园', discoveredBy: '卡内基博物馆团队', note: '发掘了引人注目的关节连接的部分骨骼，包括著名的"Camarasaurus lentus"幼体，显示出该物种的快速生长。' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: '科罗拉多州加登帕克（莫里森组）', coordinates: [38.4, -105.1], specimenName: 'AMNH 5761 — 模式标本材料' },
+    { country: 'USA', region: '犹他州恐龙国家纪念园', coordinates: [40.43, -108.98], specimenName: 'CM 11338 — 出色的近完整幼体' },
+    { country: 'USA', region: '怀俄明州科莫布拉夫（莫里森组）', coordinates: [41.8, -106.0], specimenName: '多个归入标本' },
+  ],
 }

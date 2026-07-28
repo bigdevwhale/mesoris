@@ -14,4 +14,16 @@ export default {
     { label: '식성', value: '낮은 식물', description: '부리와 뺨 이빨은 부드러운 양치류와 다른 쥐라기 지표 식물을 뜯기에 적합했습니다.' },
     { label: '역사', value: '분류 재편성', description: '한때 나노사우루스/오스니엘리아에 할당되었던 표본이 나중에 개정되어 오스니엘로사우루스가 다른 유해에 사용되었습니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'dryosaurus', relationship: '유사한 서식지의 더 큰 조반류' },
+    { id: 'hypsilophodon', relationship: '비교 가능한 작은 민첩한 초식 조반류' },
+    { id: 'camptosaurus', relationship: '동시대 더 큰 브라우징 조각류' },
+  ],
+  discoveries: [
+    { year: 1877, location: '코모 블러프, 와이오밍, 미국', discoveredBy: '마시 수집팀', note: '모리슨의 대규모 발굴 중 회수된 작은 조반류 표본.' },
+    { year: 2007, location: '분류학적 재검토', discoveredBy: '피터 걸튼', note: '재평가로 오스니엘로사우루스를 다른 역사적 소형 조반류 할당과 분리했다.' },
+  ],
+  fossilLocations: [
+    { country: '미국', region: '코모 블러프, 와이오밍 (모리슨 층)', coordinates: [41.8, -106.0], specimenName: '참조된 오스니엘로사우루스 표본' },
+  ],
 }

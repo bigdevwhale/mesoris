@@ -13,4 +13,13 @@ export default {
     { label: 'पूँछ क्लब', value: 'गतिज हथियार', icon: 'hammer', description: 'एक शक्तिशाली हड्डी का पूँछ क्लब जिसे विनाशकारी बल के साथ घुमाया जा सकता था।' },
     { label: 'नाक', value: 'जटिल वायुमार्ग', icon: 'nose', description: 'नासिका मार्गों का भूलभुलैया — संभवतः मस्तिष्क को ठंडा करने या आवाज़ निकालने के लिए।' },
   ],
+  relatedDinosaurs: [
+    { id: 'ankylosaurus', relationship: 'निकट संबंधी' },
+  ],
+  discoveries: [
+    { discoveredBy: 'लॉरेंस लैम्ब', note: 'बेली रिवर ग्रुप से पहला नमूना वर्णित।' },
+  ],
+  fossilLocations: [
+    { region: 'अल्बर्टा', specimenName: 'डायनासोर पार्क फॉर्मेशन' },
+  ],
 }

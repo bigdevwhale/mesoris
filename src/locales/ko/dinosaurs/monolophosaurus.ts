@@ -14,4 +14,16 @@ export default {
     { label: '서식지', value: '습윤 환경', description: '쥐라기 중국 서북부의 습윤하고 강이 많은 생태계에 서식했습니다.' },
     { label: '역할', value: '중형 포식자', description: '모놀로포사우루스는 아마도 소형에서 중형 동물을 사냥하고, 기회가 있으면 시체도 먹었을 것입니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'megalosaurus', relationship: '비교 가능한 초기 테타누라급 육식공룡' },
+    { id: 'allosaurus', relationship: '후대의 더 큰 테타누라 포식자' },
+    { id: 'yangchuanosaurus', relationship: '또 다른 중국 쥐라기 수각류 포식자' },
+  ],
+  discoveries: [
+    { discoveredBy: '신장 야외 작업팀', note: '시슈거우 퇴적층에서 최초 화석이 발굴되었다.' },
+    { discoveredBy: '자오 시진과 필립 커리', note: '정식 명명은 단일 볏과 상세한 두개골 해부를 강조했다.' },
+  ],
+  fossilLocations: [
+    { region: '시슈거우층, 신장, 중국', specimenName: '홀로타입 및 연관 골격 자료' },
+  ],
 }

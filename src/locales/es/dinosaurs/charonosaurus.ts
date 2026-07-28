@@ -14,4 +14,15 @@ export default {
     { label: 'Epoca', value: 'Cretacico Tardio', description: '~66 millones de anos' },
     { label: 'Ubicacion', value: 'Noreste de China', description: 'Provincia de Heilongjiang' },
   ],
+  relatedDinosaurs: [
+    { id: 'parasaurolophus', relationship: 'Pariente conocido mas cercano — cresta casi identica' },
+    { id: 'corythosaurus', relationship: 'Pariente hadrosaurio lambeosaurino' },
+    { id: 'lambeosaurus', relationship: 'Pariente hadrosaurio lambeosaurino' },
+  ],
+  discoveries: [
+    { year: 2000, location: 'Jiayin, Provincia de Heilongjiang, China', discoveredBy: 'Pascal Godefroit et al.', note: 'Descrito en 2000 por Godefroit y compania a partir de material recolectado cerca del rio Amur; nombrado por el mitologico Caronte debido a la ubicacion en la frontera del rio.' },
+  ],
+  fossilLocations: [
+    { country: 'China', region: 'Distrito de Jiayin, Provincia de Heilongjiang (Formacion Yuliangze)', coordinates: [48.8, 130.4], specimenName: 'IVPP V12735 — holotipo, craneo parcial y esqueleto' },
+  ],
 }

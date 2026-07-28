@@ -14,4 +14,16 @@ export default {
     { label: 'Arme', value: 'Sehr winzig', description: 'Wie andere Tyrannosaurier hatte er kleine zweifingrige Arme, die von seinem riesigen Kopf in den Schatten gestellt wurden.' },
     { label: 'Verbreitung', value: 'Mongolei', description: 'Der am besten bekannte asiatische Tyrannosaurier aus den Nemegt-Flussebenen.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Enger Verwandter' },
+    { id: 'velociraptor', relationship: 'Regionaler Zeitgenosse' },
+    { id: 'oviraptor', relationship: 'Nemegt-Nachbar' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Sowjetisch-Mongolische Expeditionen', note: 'Frühe Gobi-Expeditionen bargen wichtiges Tyrannosaurier-Material aus dem Nemegt-Becken.' },
+    { discoveredBy: 'Evgeny Maleev', note: 'Maleev benannte Tarbosaurus formell nach mongolischen Fossilien.' },
+  ],
+  fossilLocations: [
+    { region: 'Ömnögovi', specimenName: 'Nemegt-Formation' },
+  ],
 }

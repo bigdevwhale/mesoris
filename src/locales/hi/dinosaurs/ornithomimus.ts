@@ -13,4 +13,16 @@ export default {
     { label: 'पंख', value: 'पुष्ट प्लुमेज', icon: 'feather', description: 'पहले गैर-पक्षी डायनासोरों में से एक जिनमें पिन्नेसस पं होने का प्रमाणित साक्ष्य मिला।' },
     { label: 'नाम', value: '"पक्षी नकलची"', icon: 'bird', description: 'आधुनिक शुतुरमुर्ग के समान — वही शरीर का आकार, वही जीवनशैली।' },
   ],
+  relatedDinosaurs: [
+    { id: 'gallimimus', relationship: 'नज़दीकी रिश्तेदार' },
+    { id: 'struthiomimus', relationship: 'नज़दीकी रिश्तेदार' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ओथनियल चार्ल्स मार्श', note: 'हड्डी युद्धों के दौरान पहली बार वर्णित।' },
+    { discoveredBy: 'फ्रांसुआ थेरियन', note: 'पंख संरक्षित पंखदार नमूने खोजे गए।' },
+  ],
+  fossilLocations: [
+    { region: 'अल्बर्टा', specimenName: 'हॉर्सशू कैन्यन शैलसमूह' },
+    { region: 'कोलोराडो', specimenName: '' },
+  ],
 }

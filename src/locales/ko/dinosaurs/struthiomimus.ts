@@ -14,4 +14,14 @@ export default {
     { label: '식성', value: '진정한 잡식성', description: '식물, 과일, 알, 곤충, 소형 척추동물까지 무엇이든 먹었다.' },
     { label: '속도', value: '시속 약 60km', description: '캄파니안 평원을 놀라운 속도로 달리는 공룡계의 단거리 주자.' },
   ],
+  relatedDinosaurs: [
+    { id: 'gallimimus', relationship: '가까운 근연종' },
+    { id: 'ornithomimus', relationship: '가까운 근연종' },
+  ],
+  discoveries: [
+    { discoveredBy: '로렌스 램', note: '최초 표본이 벨리리버그룹에서 발견되었다.' },
+  ],
+  fossilLocations: [
+    { region: '앨버타주', specimenName: '다이노소어 파크층' },
+  ],
 }

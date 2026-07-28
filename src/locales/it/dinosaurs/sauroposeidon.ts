@@ -14,4 +14,16 @@ export default {
     { label: 'Epoca', value: '112 milioni di anni', description: 'Cretaceo inferiore.' },
     { label: 'Famiglia', value: 'Brachiosauridi', description: 'Imparentato con il Brachiosauro.' },
   ],
+  relatedDinosaurs: [
+    { id: 'brachiosaurus', relationship: 'Parente stretto' },
+    { id: 'acrocanthosaurus', relationship: 'Minaccia di predatore' },
+    { id: 'argentinosaurus', relationship: 'Gigante rivale' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Richard Cifelli e squadra', note: 'Le vertebre cervicali giganti furono inizialmente scambiate per tronchi d\'albero fossilizzati prima della preparazione.' },
+    { discoveredBy: 'Mathew Wedel, Richard Cifelli e R. Kent Sanders', note: 'La descrizione formale identificò uno dei dinosauri più alti mai trovati.' },
+  ],
+  fossilLocations: [
+    { region: 'Oklahoma', specimenName: 'Formazione Antlers' },
+  ],
 }

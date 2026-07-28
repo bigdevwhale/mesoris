@@ -14,4 +14,16 @@ export default {
     { label: 'Habitat', value: 'Compagno di Morrison', description: 'Condivideva il suo ecosistema con Allosaurus, Diplodocus, Stegosaurus e molti altri dinosauri iconici del Giurassico.' },
     { label: 'Storia', value: 'Nome dedicato a un paleontologo', description: 'Il nome onora Othniel Charles Marsh, il grande paleontologo del XIX secolo che descrisse molte forme di Morrison.' },
   ],
+  relatedDinosaurs: [
+    { id: 'dryosaurus', relationship: 'Ornitopode più grande di habitat simili' },
+    { id: 'hypsilophodon', relationship: 'Ornitischio erbivoro piccolo e agile paragonabile' },
+    { id: 'camptosaurus', relationship: 'Ornitopode brucatore più grande contemporaneo' },
+  ],
+  discoveries: [
+    { year: 1877, location: 'Como Bluff, Wyoming, USA', discoveredBy: 'Squadre di raccolta di Marsh', note: 'Materiale di piccolo ornitischio recuperato durante i grandi scavi di Morrison.' },
+    { year: 2007, location: 'Revisione tassonomica', discoveredBy: 'Peter Galton', note: 'La rivalutazione ha separato Othnielosaurus da altre assegnazioni storiche di piccoli ornitischi.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Como Bluff, Wyoming (Formazione Morrison)', coordinates: [41.8, -106.0], specimenName: 'Materiale riferito a Othnielosaurus' },
+  ],
 }

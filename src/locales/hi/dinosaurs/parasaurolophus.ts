@@ -14,4 +14,16 @@ export default {
     { label: 'सामाजिक', value: 'विशाल झुंड', icon: 'users', description: 'विशाल झुंडों में रहता था और संभवतः अत्यधिक सामाजिक जीव था।' },
     { label: 'दाँत', value: 'सैकड़ों', icon: 'combine', description: 'जटिल पीसने वाली बैटरी में सैकड़ों कसकर पैक दाँत थे।' },
   ],
+  relatedDinosaurs: [
+    { id: 'corythosaurus', relationship: 'संबंधी' },
+    { id: 'lambeosaurus', relationship: 'निकट संबंधी' },
+  ],
+  discoveries: [
+    { year: 1920, location: 'अल्बर्टा, कनाडा', discoveredBy: 'विलियम पार्क्स', note: 'पहली खोपड़ी खोजी गई।' },
+    { year: 1999, location: 'न्यू मैक्सिको, अमेरिका', discoveredBy: 'थॉमस विल्यमसन', note: 'बहुत अच्छी तरह से संरक्षित खोपड़ी।' },
+  ],
+  fossilLocations: [
+    { country: 'कनाडा', region: 'अल्बर्टा', coordinates: [54.5, -113.0], specimenName: 'डायनासोर पार्क फॉर्मेशन' },
+    { country: 'USA', region: 'न्यू मैक्सिको', coordinates: [36.0, -107.5] },
+  ],
 }

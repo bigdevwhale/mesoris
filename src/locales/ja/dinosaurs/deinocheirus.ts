@@ -14,4 +14,18 @@ export default {
     { label: 'くちばし', value: 'アヒルのよう', description: 'アヒルのような、幅広くて歯の無いくちばしは、水を漉したり植物を摘み取ったりするのに使われました。' },
     { label: '食性', value: '雑食', description: '胃の内容物は植物、魚、小さな動物が混在していたことを示しています — まさしく白亜紀の雑食動物です。' },
   ],
+  relatedDinosaurs: [
+    { id: 'gallimimus', relationship: 'オルニトミモス類のいとこ' },
+    { id: 'ornithomimus', relationship: 'オルニトミモス類の近縁種' },
+    { id: 'therizinosaurus', relationship: 'コエルロサウルス類の近縁種' },
+    { id: 'velociraptor', relationship: '遠い獣脚類の近縁種' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ポーランド・モンゴル共同調査隊（ゾフィア・キェラン＝ヤヴォロフスカ）', note: '最初の発見化石—巨大な前肢と肩帯のみ。全身は約50年間謎のまま。' },
+    { discoveredBy: '韓国・モンゴル共同調査隊', note: 'ほぼ完全な個体により全身が判明—予想とは全く違う姿だった。' },
+    { discoveredBy: 'ベルギー・モンゴル共同調査隊', note: '頭骨断片と胃内容物を含む追加標本が雑食性を確認。' },
+  ],
+  fossilLocations: [
+    { region: 'ゴビ砂漠、ネメグト盆地', specimenName: 'ネメグト層' },
+  ],
 }

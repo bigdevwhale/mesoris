@@ -14,4 +14,17 @@ export default {
     { label: 'हृदय', value: 'विशाल पम्प', icon: 'heart', description: '9 मीटर की गर्दन से मस्तिष्क तक रक्त पहुँचाने के लिए विशाल हृदय की आवश्यकता होती थी।' },
     { label: 'आहार', value: '1 टन प्रतिदिन', icon: 'utensils-crossed', description: 'रोज़ाना लगभग 1,000 किग्रा वनस्पति खाता था — पत्तियाँ, फ़र्न और शंकुधारी शाखाएँ।' },
   ],
+  relatedDinosaurs: [
+    { id: 'diplodocus', relationship: 'समकालीन' },
+    { id: 'allosaurus', relationship: 'शिकारी का खतरा' },
+    { id: 'apatosaurus', relationship: 'समकालीन' },
+  ],
+  discoveries: [
+    { year: 1900, location: 'कोलोराडो, अमेरिका', discoveredBy: 'एल्मर रिग्स', note: 'मॉरिसन शैलसमूह में ब्रैकियोसॉरस के पहले जीवाश्म मिले।' },
+    { year: 1909, location: 'तंज़ानिया, अफ्रीका', discoveredBy: 'वर्नर यानेंश', note: 'टेंडागुरु में एक बड़े अभियान ने लगभग पूर्ण कंकाल खोजे।' },
+  ],
+  fossilLocations: [
+    { country: 'अमेरिका', region: 'कोलोराडो', coordinates: [39.5, -105.0], specimenName: 'मॉरिसन शैलसमूह' },
+    { country: 'तंज़ानिया', region: 'टेंडागुरु', coordinates: [-10.5, 39.5] },
+  ],
 }

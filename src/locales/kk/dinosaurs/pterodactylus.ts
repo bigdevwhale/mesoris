@@ -13,4 +13,14 @@ export default {
     { label: 'Өлшемі', value: 'Көгершіндей ғана', description: 'Көпшілік елестеткеннен әлдеқайда кішкентай болған. Денесінің көлемі шамамен көгершінмен бірдей еді.' },
     { label: 'Тістері', value: '90+ тіс', description: '90-нан астам өткір тістері балық пен жәндіктерді аулауға көмектескен.' },
   ],
+  relatedDinosaurs: [
+    { id: 'pteranodon', relationship: 'Үлкен ұрпағы' },
+    { id: 'dimorphodon', relationship: 'Ертеректегі туысы' },
+  ],
+  discoveries: [
+    { year: 1784, location: 'Bavaria, Germany', discoveredBy: 'Cosimo Alessandro Collini', note: 'Ғылымда ашылған алғашқы птерозавр қазбасы — Коллини оны суда жүзетін жануар деп ойлаған.' },
+  ],
+  fossilLocations: [
+    { country: 'Germany', region: 'Бавария', coordinates: [48.9, 11.0], specimenName: 'Зольнхофен әктастары' },
+  ],
 }

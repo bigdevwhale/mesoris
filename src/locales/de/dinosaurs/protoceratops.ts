@@ -14,4 +14,15 @@ export default {
     { label: 'Nackenschild', value: 'Klein aber reich verziert', description: 'Ein bescheidener Schild im Vergleich zu Triceratops — aber stark variabel.' },
     { label: 'Größe', value: '2 Meter', description: 'Etwa so groß wie ein Schaf, ein kompakter Pflanzenfresser.' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'Prädator' },
+    { id: 'triceratops', relationship: 'Entfernt verwandt' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Roy Chapman Andrews', note: 'Erster Protoceratops und erste Dinosauriereier gleichzeitig entdeckt.' },
+    { discoveredBy: 'Polnisch-Mongolische Expedition', note: 'Die «Kämpfenden Dinosaurier» — Protoceratops gegen Velociraptor.' },
+  ],
+  fossilLocations: [
+    { region: 'Gobi-Wüste', specimenName: 'Djadochta-Formation' },
+  ],
 }

@@ -14,4 +14,13 @@ export default {
     { label: 'Errore', value: 'Testa dalla parte sbagliata', description: 'Inizialmente montato con la testa dalla PARTE SBAGLIATA — una famosa cantonata paleontologica.' },
     { label: 'Caccia', value: 'Imboscata', description: 'Nuotava vicino alla superficie e usava il lungo collo per sorprendere i banchi di pesci.' },
   ],
+  relatedDinosaurs: [
+    { id: 'plesiosaurus', relationship: 'Antenato' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Theophilus Turner', note: 'Scoperto nei depositi di gesso del Western Interior Seaway.' },
+  ],
+  fossilLocations: [
+    { region: 'Kansas', specimenName: 'Scisti di Pierre' },
+  ],
 }

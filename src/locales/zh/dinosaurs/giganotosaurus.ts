@@ -14,4 +14,14 @@
     { label: '猎物', value: '巨型蜥脚类', description: '捕猎阿根廷龙——最大的陆地动物——可能以群体行动进行。' },
     { label: '大脑', value: '相对于体型较小', description: '大脑比例比霸王龙更小，暗示着不同的狩猎策略。' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: '体型上的对手' },
+    { id: 'spinosaurus', relationship: '体型上的对手' },
+  ],
+  discoveries: [
+    { discoveredBy: '鲁本·卡罗利尼', note: '由业余化石猎人发现的近乎完整的骨骼。' },
+  ],
+  fossilLocations: [
+    { region: '内乌肯', specimenName: '坎德莱罗斯组' },
+  ],
 }

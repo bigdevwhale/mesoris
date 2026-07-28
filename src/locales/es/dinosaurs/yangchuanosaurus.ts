@@ -14,4 +14,17 @@ export default {
     { label: 'Epoca', value: 'Jurasico Tardio', description: '~160 millones de anos' },
     { label: 'Ubicacion', value: 'Sichuan, China', description: 'Formacion Shaximiao' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: 'Pariente alosauroideo norteamericano' },
+    { id: 'ceratosaurus', relationship: 'Ceratosáurido contemporáneo' },
+    { id: 'torvosaurus', relationship: 'Pariente depredador jurásico grande' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Dong Zhiming, Chang Yoichi, Li Xuanmin, Zhou Shiwu', note: 'Holotipo casi completo (cráneo y esqueleto parcial) descubierto durante obras de construcción; descrito por Dong et al. en 1978.' },
+    { discoveredBy: 'Dong Zhiming', note: 'Una segunda especie, Y. magnus, descrita a partir del material de Dashanpu — ligeramente más grande y mejor conocida.' },
+  ],
+  fossilLocations: [
+    { region: 'Yongchuan, provincia de Sichuan (Formación Shangshaximiao)', specimenName: 'CV 00215 — cráneo y esqueleto holotipo' },
+    { region: 'Zigong, provincia de Sichuan (Formación Dashanpu)', specimenName: 'Material de Y. magnus — Museo de Dinosaurios de Zigong' },
+  ],
 }

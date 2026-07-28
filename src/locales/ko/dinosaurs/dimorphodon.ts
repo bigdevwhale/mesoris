@@ -14,4 +14,14 @@ export default {
     { label: '연대', value: '쥐라기 전기', description: '최초의 익룡 중 하나. 비행이 아직 새로운 기술이었던 시대의 생물입니다.' },
     { label: '비행', value: '퍼덕이는 비행', description: '날개는 짧고 넓어, 후기의 활공형 익룡보다 박쥐처럼 날았습니다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'pterodactylus', relationship: '더 진화된 후손' },
+    { id: 'rhamphorhynchus', relationship: '동시대' },
+  ],
+  discoveries: [
+    { year: 1828, location: '영국 도싯', discoveredBy: '메리 애닝', note: '전설적인 화석 수집가 메리 애닝이 쥐라기 해안에서 발견했다.' },
+  ],
+  fossilLocations: [
+    { country: '영국', region: '도싯', coordinates: [50.6, -2.9], specimenName: '블루 라이아스층, 쥐라기 해안' },
+  ],
 }

@@ -14,4 +14,14 @@ export default {
     { label: 'Dieta', value: 'Piscivora', description: 'Primer dinosaurio piscivoro confirmado por contenido estomacal' },
     { label: 'Descubrimiento', value: '1983, Inglaterra', description: 'Encontrado por un aficionado en una cantera de Surrey' },
   ],
+  relatedDinosaurs: [
+    { id: 'spinosaurus', relationship: 'Pariente cercano' },
+    { id: 'suchomimus', relationship: 'Pariente cercano' },
+  ],
+  discoveries: [
+    { year: 1983, location: 'Surrey, Reino Unido', discoveredBy: 'William Walker', note: 'Un cazador de fósiles aficionado encontró la enorme garra en una cantera de arcilla.' },
+  ],
+  fossilLocations: [
+    { country: 'Reino Unido', region: 'Surrey', coordinates: [51.2, -0.5], specimenName: 'Formación Weald Clay' },
+  ],
 }

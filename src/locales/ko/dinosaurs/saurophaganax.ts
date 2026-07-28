@@ -14,4 +14,16 @@ export default {
     { label: '무기', value: '톱니 모양 치아', description: '길고 칼날 같은 치아와 강력한 턱은 거대한 용각류 먹이에서 살을 베어내는 데 적합했다.' },
     { label: '논쟁', value: '별속인가 알로사우루스인가?', description: '일부 연구는 사우로파가낙스를 별속으로 다루고, 다른 연구는 알로사우루스의 매우 큰 종으로 간주한다.' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: '매우 가까운 알로사우루스과 근연종; 때로 같은 속으로 간주되기도 함' },
+    { id: 'torvosaurus', relationship: '북미의 또 다른 거대한 쥐라기 포식자' },
+    { id: 'stegosaurus', relationship: '잠재적 먹이자원 및 동시대 초식공룡' },
+  ],
+  discoveries: [
+    { discoveredBy: 'J.W. Stovall이 이끄는 탐사대', note: '모리슨층에서 대형 수각류 화석이 발굴되었다.' },
+    { discoveredBy: '다니엘 추어', note: 'Saurophaganax maximus로 명명되었으며 Allosaurus와 구별되는 종으로 주장되었다.' },
+  ],
+  fossilLocations: [
+    { region: '오클라호마주 시매런 카운티(모리슨층)', specimenName: 'Saurophaganax maximus 모식표본' },
+  ],
 }

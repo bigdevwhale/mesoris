@@ -14,4 +14,17 @@ export default {
     { label: 'Habitat', value: 'Afrique du Nord', description: 'Parcourait les plaines fluviales et les mangroves du Crétacé dans ce qui est aujourd\'hui l\'Égypte et le Maroc.' },
     { label: 'Contemporain', value: 'Vivait avec Spinosaurus', description: 'Partageait son habitat avec Spinosaurus — les deux plus grands théropodes vivaient côte à côte.' },
   ],
+  relatedDinosaurs: [
+    { id: 'giganotosaurus', relationship: 'Proche parent' },
+    { id: 'spinosaurus', relationship: 'Concurrent contemporain' },
+    { id: 'acrocanthosaurus', relationship: 'Parent nord-américain' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Charles Depéret et J. Savornin', note: 'Le matériel original a établi le géant aux dents de requin d\'Afrique du Nord.' },
+    { discoveredBy: 'Paul Sereno', note: 'Du nouveau matériel crânien a permis aux scientifiques de redécrire l\'animal après la perte des fossiles originaux.' },
+  ],
+  fossilLocations: [
+    { region: 'Couches de Kem Kem', specimenName: 'Groupe Kem Kem' },
+    { region: 'Tegama', specimenName: 'Continental Intercalaire' },
+  ],
 }

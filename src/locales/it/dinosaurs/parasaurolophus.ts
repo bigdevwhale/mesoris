@@ -14,4 +14,16 @@ export default {
     { label: 'Sociale', value: 'Grandi branchi', description: 'Adrosauro molto sociale che viveva in grandi branchi.' },
     { label: 'Denti', value: 'Centinaia', description: 'Batteria dentaria complessa con centinaia di molari strettamente serrati.' },
   ],
+  relatedDinosaurs: [
+    { id: 'corythosaurus', relationship: 'Parente' },
+    { id: 'lambeosaurus', relationship: 'Parente stretto' },
+  ],
+  discoveries: [
+    { year: 1920, location: 'Alberta, Canada', discoveredBy: 'William Parks', note: 'Primo cranio scoperto.' },
+    { year: 1999, location: 'Nuovo Messico, USA', discoveredBy: 'Thomas Williamson', note: 'Cranio molto ben conservato.' },
+  ],
+  fossilLocations: [
+    { country: 'Canada', region: 'Alberta', coordinates: [54.5, -113.0], specimenName: 'Formazione Dinosaur Park' },
+    { country: 'USA', region: 'Nuovo Messico', coordinates: [36.0, -107.5] },
+  ],
 }

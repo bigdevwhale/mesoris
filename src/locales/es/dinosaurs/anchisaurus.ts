@@ -14,4 +14,16 @@ export default {
     { label: 'Postura', value: 'Bipeda/cuadrupeda', description: 'Transicion entre dos y cuatro patas' },
     { label: 'Importancia', value: 'Evolutiva', description: 'Antepasado de los sauropodos gigantes' },
   ],
+  relatedDinosaurs: [
+    { id: 'plateosaurus', relationship: 'Pariente sauropodomorfo cercano' },
+    { id: 'eoraptor', relationship: 'Pariente dinosaurio temprano lejano' },
+  ],
+  discoveries: [
+    { year: 1818, location: 'Condado de Hartford, Connecticut, EE. UU.', discoveredBy: 'Solomon Ellsworth Jr.', note: 'Huesos encontrados al cavar un pozo; clasificados inicialmente como restos humanos antes del reconocimiento formal de los dinosaurios.' },
+    { year: 1885, location: 'Springfield, Massachusetts, EE. UU.', discoveredBy: 'O.C. Marsh', note: 'Marsh describió formalmente y nombró a Anchisaurus basándose en material adicional del Valle del Connecticut.' },
+  ],
+  fossilLocations: [
+    { country: 'EE. UU.', region: 'Condado de Hartford, Connecticut', coordinates: [41.8, -72.7], specimenName: 'Espécimen tipo de la Formación Portland' },
+    { country: 'EE. UU.', region: 'Condado de Hampden, Massachusetts', coordinates: [42.1, -72.6], specimenName: 'Material de cantera de Springfield' },
+  ],
 }

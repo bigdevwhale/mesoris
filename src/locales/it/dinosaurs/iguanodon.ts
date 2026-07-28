@@ -14,4 +14,16 @@ export default {
     { label: 'Postura', value: 'Corretta nel tempo', description: 'Inizialmente mostrato come una lucertola quadrupede — oggi sappiamo che camminava principalmente su due zampe.' },
     { label: 'Dieta', value: 'Erbivoro versatile', description: 'Poteva masticare il cibo — un adattamento rivoluzionario per elaborare le piante coriacee.' },
   ],
+  relatedDinosaurs: [
+    { id: 'megalosaurus', relationship: 'Primi dinosauri scoperti' },
+    { id: 'maiasaura', relationship: 'Lineaggio imparentato' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Gideon Mantell / Mary Ann Mantell', note: 'Primi denti scoperti, inizialmente attribuiti a una gigantesca iguana.' },
+    { discoveredBy: 'Minatori di carbone', note: '38 scheletri completi rinvenuti in una miniera di carbone a 322 metri di profondità — una scoperta senza precedenti.' },
+  ],
+  fossilLocations: [
+    { region: 'Bernissart', specimenName: 'Miniera di carbone Sainte-Barbe' },
+    { region: 'Sussex', specimenName: '—' },
+  ],
 }

@@ -14,4 +14,15 @@ export default {
     { label: 'Hémisphère', value: 'Stégosaure austral', description: 'L\'un des rares stégosaures du Gondwana — la plupart proviennent des continents septentrionaux.' },
     { label: 'Famille', value: 'Ancêtre stégosaure', description: 'Représente une branche ancienne des Stegosauria qui aide à comprendre les origines anciennes de la famille.' },
   ],
+  relatedDinosaurs: [
+    { id: 'stegosaurus', relationship: 'Parent postérieur célèbre' },
+    { id: 'loricatosaurus', relationship: 'Parent stégosaure européen' },
+    { id: 'dacentrurus', relationship: 'Stégosaure européen' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Susannah Maidment et son équipe', note: 'Vertèbres et fémur partiel décrits et nommés Adratiklit boulahfa.' },
+  ],
+  fossilLocations: [
+    { region: 'Groupe El Mers, Moyen Atlas, Boulahfa', specimenName: 'NHMUK PV R 37166 — vertèbres holotypes' },
+  ],
 }

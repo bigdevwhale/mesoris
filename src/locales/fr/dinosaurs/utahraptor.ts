@@ -14,4 +14,16 @@ export default {
     { label: 'Plumes', value: 'Emplumé', description: 'En tant que proche parent des droméosauridés à plumes, il était très certainement emplumé.' },
     { label: 'Découverte groupée', value: 'Plusieurs individus', description: 'Plusieurs animaux trouvés ensemble dans du grès — indice de comportement social.' },
   ],
+  relatedDinosaurs: [
+    { id: 'deinonychus', relationship: 'Proche parent' },
+    { id: 'velociraptor', relationship: 'Petit cousin' },
+    { id: 'acrocanthosaurus', relationship: 'Prédateur apex contemporain' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Jim Jensen', note: 'Les premiers restes ont été collectés mais pas immédiatement reconnus comme ceux d\'un droméosauridé géant.' },
+    { discoveredBy: 'James Kirkland, Robert Gaston et Donald Burge', note: 'La description officielle a révélé le plus grand raptor connu.' },
+  ],
+  fossilLocations: [
+    { region: 'Utah', specimenName: 'Membre de Yellow Cat, Formation de Cedar Mountain' },
+  ],
 }

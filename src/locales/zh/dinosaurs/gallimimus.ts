@@ -14,4 +14,14 @@
     { label: '颈部', value: '长而灵活', description: '像鸵鸟一样的长颈，用来观察周围环境中的危险和食物。' },
     { label: '食性', value: '机会主义', description: '吃植物、小动物和昆虫——长腿的清道夫。' },
   ],
+  relatedDinosaurs: [
+    { id: 'ornithomimus', relationship: '近亲' },
+    { id: 'struthiomimus', relationship: '近亲' },
+  ],
+  discoveries: [
+    { discoveredBy: '波兰-蒙古联合考察队', note: '在耐梅盖特盆地发现了最初的标本。' },
+  ],
+  fossilLocations: [
+    { region: '戈壁沙漠', specimenName: '耐梅盖特组' },
+  ],
 }

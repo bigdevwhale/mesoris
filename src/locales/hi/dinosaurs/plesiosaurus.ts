@@ -13,4 +13,14 @@ export default {
     { label: 'पंख', value: 'चार समान पैडल', icon: 'rotate-cw', description: 'चार बड़े पैडल-जैसे पंखों से तैरता था — जैसे पानी के नीचे उड़ान।' },
     { label: 'खोज', value: 'ऐनिंग की सफलता', icon: 'medal', description: 'मैरी ऐनिंग की 1823 की खोज — अब तक खोजे गए सबसे प्रारंभिक पूर्व-ऐतिहासिक सरीसृपों में से एक।' },
   ],
+  relatedDinosaurs: [
+    { id: 'elasmosaurus', relationship: 'कहीं अधिक बड़ा वंशज' },
+    { id: 'ichthyosaurus', relationship: 'समकालीन' },
+  ],
+  discoveries: [
+    { year: 1823, location: 'लाइम रेजिस, यू.के.', discoveredBy: 'मैरी ऐनिंग', note: 'जुरासिक तट पर खोजा गया पहला संधिवद्ध कंकाल — एक वैज्ञानिक सनसनी।' },
+  ],
+  fossilLocations: [
+    { country: 'यू.के.', region: 'डोरसेट', coordinates: [50.7, -2.9], specimenName: 'ब्लू लायस फॉर्मेशन, जुरासिक तट' },
+  ],
 }

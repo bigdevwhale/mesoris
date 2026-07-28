@@ -14,4 +14,16 @@ export default {
     { label: 'Non è un dinosauro', value: 'Pterosauro', description: 'In realtà un rettile volante (pterosauro), non un vero dinosauro — ma visse al loro fianco.' },
     { label: 'Dieta', value: 'Piscivoro', description: 'Planava sopra il Mare Interno Occidentale catturando pesci con il suo lungo becco.' },
   ],
+  relatedDinosaurs: [
+    { id: 'quetzalcoatlus', relationship: 'Parente più grande' },
+    { id: 'pterodactylus', relationship: 'Parente più piccolo' },
+    { id: 'mosasaurus', relationship: 'Ecosistema condiviso' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Othniel Charles Marsh', note: 'Primi fossili di Pteranodon trovati.' },
+    { discoveredBy: 'S. W. Williston', note: 'Cranio completo che rivelò la caratteristica cresta cefalica.' },
+  ],
+  fossilLocations: [
+    { region: 'Kansas', specimenName: 'Cretaceo di Niobrara' },
+  ],
 }

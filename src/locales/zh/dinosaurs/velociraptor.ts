@@ -14,5 +14,18 @@ const translations = {
     { label: '真实体型', value: '火鸡大小', description: '比电影中小得多——大约一只大火鸡的大小。' },
     { label: '狩猎', value: '群体猎手', description: '证据表明它们群体狩猎，能够猎杀比自身大得多的猎物。' },
   ],
+  relatedDinosaurs: [
+    { id: 'deinonychus', relationship: '近亲' },
+    { id: 'protoceratops', relationship: '猎物' },
+    { id: 'oviraptor', relationship: '竞争者' },
+  ],
+  discoveries: [
+    { discoveredBy: '罗伊·查普曼·安德鲁斯', note: '在著名的 AMNH 考察中发现了第一个标本。' },
+    { discoveredBy: '波兰-蒙古考察队', note: '「搏斗的恐龙」 — 与原角龙搏斗的迅猛龙。' },
+  ],
+  fossilLocations: [
+    { region: '戈壁沙漠', specimenName: '德加多克塔组' },
+    { region: '内蒙古', specimenName: '' },
+  ],
 }
 export default translations

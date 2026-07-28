@@ -14,4 +14,16 @@ export default {
     { label: 'Pico', value: 'Sin dientes', description: 'Pico queratinoso como las aves modernas' },
     { label: 'Tamaño', value: '4 m', description: 'Del tamaño de un avestruz grande' },
   ],
+  relatedDinosaurs: [
+    { id: 'gallimimus', relationship: 'Pariente cercano' },
+    { id: 'struthiomimus', relationship: 'Pariente cercano' },
+  ],
+  discoveries: [
+    { discoveredBy: 'Othniel Charles Marsh', note: 'Descrito por primera vez durante las Guerras de los Huesos.' },
+    { discoveredBy: 'Francois Therrien', note: 'Ejemplares con plumas descubiertos con plumaje preservado.' },
+  ],
+  fossilLocations: [
+    { region: 'Alberta', specimenName: 'Formación Horseshoe Canyon' },
+    { region: 'Colorado', specimenName: '' },
+  ],
 }

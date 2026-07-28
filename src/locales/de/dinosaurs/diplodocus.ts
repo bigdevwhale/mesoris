@@ -14,4 +14,17 @@ export default {
     { label: 'Zähne', value: 'Stiftartig', description: 'Lange, schlanke Zähne zum Abstreifen von Blättern von Zweigen.' },
     { label: 'Nasenlöcher', value: 'Oben am Kopf', description: 'Eine einzelne Nasenöffnung oben auf dem Schädel — Wissenschaftler rätselten jahrzehntelang über ihren Zweck.' },
   ],
+  relatedDinosaurs: [
+    { id: 'apatosaurus', relationship: 'Enger Verwandter' },
+    { id: 'allosaurus', relationship: 'Raubtier' },
+    { id: 'brachiosaurus', relationship: 'Zeitgenosse' },
+  ],
+  discoveries: [
+    { year: 1877, location: 'Colorado, USA', discoveredBy: 'Samuel Wendell Williston', note: 'Erste Fossilien in Canon City gefunden.' },
+    { year: 1899, location: 'Wyoming, USA', discoveredBy: 'AMNH-Expedition', note: 'Vollständigstes Skelett bei Sheep Creek.' },
+  ],
+  fossilLocations: [
+    { country: 'USA', region: 'Wyoming', coordinates: [43.0, -107.5], specimenName: 'Morrison-Formation' },
+    { country: 'USA', region: 'Colorado', coordinates: [39.5, -105.0] },
+  ],
 }

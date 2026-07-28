@@ -14,4 +14,13 @@
     { label: '外見', value: '復元の失敗', description: '初期の復元では巨大なトカゲのように描かれた — 今では二本足で歩いていたことがわかっている。' },
     { label: 'ジュラ紀', value: '中期ジュラ紀', description: 'イギリスの中期ジュラ紀に生息 — アロサウルスやティラノサウルスよりも古い。' },
   ],
+  relatedDinosaurs: [
+    { id: 'allosaurus', relationship: '遠い親戚' },
+  ],
+  discoveries: [
+    { discoveredBy: '採石場の労働者', note: 'ストーンズフィールドの採石場で巨大な骨が発見され、1824年にウィリアム・バックランドによって記載された。' },
+  ],
+  fossilLocations: [
+    { region: 'オックスフォードシャー州、イギリス', specimenName: 'ストーンズフィールド粘板岩' },
+  ],
 }

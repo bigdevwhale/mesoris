@@ -14,4 +14,14 @@ export default {
     { label: 'Envergadura', value: '1,8 m', description: 'Un pterosaurio de tamaño medio' },
     { label: 'Edad', value: '150 Ma', description: 'Jurasico Tardio, Solnhofen' },
   ],
+  relatedDinosaurs: [
+    { id: 'pterodactylus', relationship: 'Contemporáneo' },
+    { id: 'dimorphodon', relationship: 'Pariente más antiguo' },
+  ],
+  discoveries: [
+    { year: 1830, location: 'Bavaria, Germany', discoveredBy: 'Georg August Goldfuss', note: 'Descrito por primera vez en las canteras de Solnhofen, junto con Archaeopteryx.' },
+  ],
+  fossilLocations: [
+    { country: 'Germany', region: 'Calizas de Solnhofen, Baviera', coordinates: [48.9, 11.0], specimenName: 'Calizas de Solnhofen, material tipo' },
+  ],
 }

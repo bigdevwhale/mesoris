@@ -14,4 +14,14 @@
     { label: '顎', value: '柔軟な関節', description: 'ユニークな滑動式の顎関節 — 大きな獲物を飲み込むための初期の革新です。' },
     { label: 'サイト', value: '月の谷', description: 'アルゼンチンのバジェ・デ・ラ・ルナで発見された、世界有数の重要な化石サイトです。' },
   ],
+  relatedDinosaurs: [
+    { id: 'eoraptor', relationship: '同時代' },
+    { id: 'coelophysis', relationship: 'やや後の同時代' },
+  ],
+  discoveries: [
+    { discoveredBy: 'ヴィクトリーノ・エレラ (Victorino Herrera)', note: '月の谷で地元のヤギ飼いが最初の標本を発見した。' },
+  ],
+  fossilLocations: [
+    { region: 'バジェ・デ・ラ・ルナ、イスキグアラスト層', specimenName: 'バジェ・デ・ラ・ルナ、イスキグアラスト層' },
+  ],
 }

@@ -14,4 +14,16 @@ export default {
     { label: 'Dents', value: 'Centrale de broyage', description: 'Plus de 1 000 dents disposées en une batterie de broyage sophistiquée pour mâcher les plantes coriaces.' },
     { label: 'Nez', value: 'Sac gonflable', description: 'Possédait peut-être un sac nasal gonflable pour la parade visuelle et sonore.' },
   ],
+  relatedDinosaurs: [
+    { id: 'tyrannosaurus-rex', relationship: 'Proie' },
+    { id: 'maiasaura', relationship: 'Proche parent' },
+  ],
+  discoveries: [
+    { year: 1892, location: 'Dakota du Sud, États-Unis', discoveredBy: 'Othniel Charles Marsh', note: 'Décrit pour la première fois.' },
+    { year: 1999, location: 'Dakota du Nord, États-Unis', discoveredBy: 'Tyler Lyson', note: '« Dakota » — l\'une des momies de dinosaure les mieux préservées.' },
+  ],
+  fossilLocations: [
+    { country: 'États-Unis', region: 'Dakota du Sud', coordinates: [44.5, -100.0], specimenName: 'Formation de Hell Creek' },
+    { country: 'Canada', region: 'Alberta', coordinates: [53.5, -113.5] },
+  ],
 }

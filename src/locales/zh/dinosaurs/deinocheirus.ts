@@ -14,4 +14,18 @@ export default {
     { label: '喙', value: '鸭嘴状', description: '宽阔、无齿的鸭状喙，用于在水中滤食和切割植物。' },
     { label: '食性', value: '杂食', description: '胃内容物显示它吃植物、鱼类和小型动物——名副其实的白垩纪杂食者。' },
   ],
+  relatedDinosaurs: [
+    { id: 'gallimimus', relationship: '似鸟龙类表亲' },
+    { id: 'ornithomimus', relationship: '似鸟龙类近亲' },
+    { id: 'therizinosaurus', relationship: '虚骨龙类近亲' },
+    { id: 'velociraptor', relationship: '远缘的兽脚类近亲' },
+  ],
+  discoveries: [
+    { discoveredBy: '波兰-蒙古考察队 (佐菲亚·基兰-雅沃罗夫斯卡)', note: '首次发现的化石——只有巨大的前肢和肩带。身体近50年仍是谜。' },
+    { discoveredBy: '韩国-蒙古考察队', note: '一具近乎完整的标本终于揭示了全身——与预期完全不同。' },
+    { discoveredBy: '比利时-蒙古考察队', note: '含头骨碎片和胃内容物的额外标本确认了杂食性。' },
+  ],
+  fossilLocations: [
+    { region: '戈壁沙漠，奈梅格特盆地', specimenName: '奈梅格特组' },
+  ],
 }

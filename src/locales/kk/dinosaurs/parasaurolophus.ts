@@ -14,4 +14,16 @@ export default {
     { label: 'Әлеуметтік тіршілігі', value: 'Ірі табындар', description: 'Өте әлеуметтік жануар болған және үлкен топтармен жүрген.' },
     { label: 'Тістері', value: 'Жүздеген тіс', description: 'Қатты өсімдіктерді шайнауға арналған күрделі тіс батареясы болған.' },
   ],
+  relatedDinosaurs: [
+    { id: 'corythosaurus', relationship: 'Туыс' },
+    { id: 'lambeosaurus', relationship: 'Жақын туыс' },
+  ],
+  discoveries: [
+    { year: 1920, location: 'Альберта, Канада', discoveredBy: 'Уильям Паркс', note: 'Алғашқы бас сүйегі табылды.' },
+    { year: 1999, location: 'Нью-Мексико, АҚШ', discoveredBy: 'Томас Уильямсон', note: 'Өте жақсы сақталған бас сүйек.' },
+  ],
+  fossilLocations: [
+    { country: 'Канада', region: 'Альберта', coordinates: [54.5, -113.0], specimenName: 'Динозавр-парк формациясы' },
+    { country: 'АҚШ', region: 'Нью-Мексико', coordinates: [36.0, -107.5] },
+  ],
 }

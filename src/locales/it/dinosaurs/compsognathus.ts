@@ -14,4 +14,14 @@ export default {
     { label: 'Sito di scoperta', value: 'Solnhofen, Germania', description: 'Trovato nel famoso calcare di Solnhofen, la stessa formazione che ha restituito l\'Archaeopteryx.' },
     { label: 'Velocità', value: 'Fulmineo', description: 'Le sue lunghe zampe posteriori leggere e la coda equilibratrice lo rendevano un corridore estremamente veloce.' },
   ],
+  relatedDinosaurs: [
+    { id: 'velociraptor', relationship: 'Parente lontano' },
+  ],
+  discoveries: [
+    { year: 1859, location: 'Baviera, Germania', discoveredBy: 'Joseph Oberndorfer', note: 'Primo esemplare trovato nel calcare di Solnhofen, gli stessi depositi di Archaeopteryx.' },
+  ],
+  fossilLocations: [
+    { country: 'Germania', region: 'Baviera', coordinates: [48.8, 11.0], specimenName: 'Calcare di Solnhofen' },
+    { country: 'Francia', region: 'Provenza', coordinates: [43.5, 6.5] },
+  ],
 }
