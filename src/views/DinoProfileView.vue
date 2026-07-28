@@ -9,6 +9,7 @@ import {useModeStore} from '@/stores/useModeStore'
 import {useSpeechSynthesis} from '@/composables/useSpeechSynthesis'
 import BaseIcon from '@/components/ui/BaseIcon.vue'
 import BaseButton from '@/components/ui/BaseButton.vue'
+import DinoCardImage from '@/components/ui/DinoCardImage.vue'
 import SeoHead from '@/components/layout/SeoHead.vue'
 
 const {t, locale} = useI18n()
@@ -39,8 +40,6 @@ const SIZE_PILL_CLASS: Record<string, string> = {
   large: 'pill-size-large',
   gigantic: 'pill-size-gigantic',
 }
-
-const activeImage = computed(() => rawDino.value?.images.hero)
 
 // Meter fills — animate from 0 on mount
 const mounted = ref(false)
@@ -181,7 +180,13 @@ watch(() => route.params.id, () => stop())
                 <span class="pill" :class="DIET_PILL_CLASS[rawDino.diet]">{{ t(`ui.encyclopedia.${rawDino.diet}`) }}</span>
                 <span class="pill" :class="SIZE_PILL_CLASS[rawDino.size]">{{ t(`ui.encyclopedia.${rawDino.size}`) }}</span>
               </div>
-              <img v-if="activeImage" :src="activeImage" :alt="dino.displayName" width="900" height="700">
+              <DinoCardImage
+                  v-if="rawDino"
+                  :dino="rawDino"
+                  variant="hero"
+                  aspect-ratio="4 / 3"
+                  priority
+              />
             </div>
           </div>
 
@@ -451,18 +456,6 @@ watch(() => route.params.id, () => stop())
   overflow: hidden;
   border: 1px solid var(--glass-border);
   box-shadow: var(--shadow-modal);
-}
-.prof-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.prof-image::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, transparent 55%, var(--media-fade) 100%);
-  pointer-events: none;
 }
 .prof-pills {
   position: absolute;
