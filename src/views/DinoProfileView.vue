@@ -175,11 +175,6 @@ watch(() => route.params.id, () => stop())
           <!-- LEFT: media -->
           <div class="prof-media">
             <div class="prof-image">
-              <div class="prof-pills">
-                <span class="pill" :class="ERA_PILL_CLASS[rawDino.era]">{{ t(`ui.encyclopedia.${rawDino.era}`) }}</span>
-                <span class="pill" :class="DIET_PILL_CLASS[rawDino.diet]">{{ t(`ui.encyclopedia.${rawDino.diet}`) }}</span>
-                <span class="pill" :class="SIZE_PILL_CLASS[rawDino.size]">{{ t(`ui.encyclopedia.${rawDino.size}`) }}</span>
-              </div>
               <DinoCardImage
                   v-if="rawDino"
                   :dino="rawDino"
@@ -187,6 +182,11 @@ watch(() => route.params.id, () => stop())
                   aspect-ratio="4 / 3"
                   priority
               />
+            </div>
+            <div class="prof-pills">
+              <span class="pill" :class="ERA_PILL_CLASS[rawDino.era]">{{ t(`ui.encyclopedia.${rawDino.era}`) }}</span>
+              <span class="pill" :class="DIET_PILL_CLASS[rawDino.diet]">{{ t(`ui.encyclopedia.${rawDino.diet}`) }}</span>
+              <span class="pill" :class="SIZE_PILL_CLASS[rawDino.size]">{{ t(`ui.encyclopedia.${rawDino.size}`) }}</span>
             </div>
           </div>
 
@@ -458,21 +458,16 @@ watch(() => route.params.id, () => stop())
   box-shadow: var(--shadow-modal);
 }
 .prof-pills {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  z-index: 2;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.45rem;
+  gap: 0.5rem;
 }
 .pill {
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: 0.72rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding: 0.3rem 0.75rem;
+  font-size: 0.875rem;
+  letter-spacing: 0.04em;
+  padding: 0.45rem 0.95rem;
   border-radius: var(--radius-full);
   backdrop-filter: blur(6px);
 }
