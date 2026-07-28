@@ -1,3 +1,8 @@
 User-agent: *
 Allow: /
-Sitemap: https://dinosaurs.example.com/sitemap.xml
+
+# Disallow internal search/404 paths
+Disallow: /404.html
+Disallow: /*?p=
+
+Sitemap: https://dinosaurs.app/sitemap.xml

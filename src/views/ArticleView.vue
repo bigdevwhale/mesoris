@@ -19,6 +19,32 @@ const modeStore = useModeStore()
 const { t, locale } = useI18n()
 const { isSupported: ttsSupported, isSpeaking, speak, stop } = useSpeechSynthesis()
 
+const SITE_URL = 'https://dinosaurs.app'
+
+const articleJsonLd = computed(() => {
+  const a = article.value
+  if (!a) return undefined
+  const title = pickLocale(a.title, a.titleRu, a.titleEs, a.titleDe, a.titleFr, a.titleIt, a.titleJa, a.titleZh, a.titleKo, a.titleKk, a.titleHi)
+  const summary = pickLocale(a.summary, a.summaryRu, a.summaryEs, a.summaryDe, a.summaryFr, a.summaryIt, a.summaryJa, a.summaryZh, a.summaryKo, a.summaryKk, a.summaryHi)
+  const imageUrl = a.image.startsWith('http') ? a.image : `${SITE_URL}${a.image}`
+  return {
+    '@type': 'Article',
+    headline: title,
+    description: summary,
+    image: imageUrl,
+    author: { '@type': 'Organization', name: 'Mesoris' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Mesoris',
+      logo: { '@type': 'ImageObject', url: `${SITE_URL}/pwa-512x512.png` },
+    },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE_URL}/${locale.value}/science/${a.id}` },
+    articleSection: 'Science',
+    inLanguage: locale.value,
+    keywords: a.relatedDinosaurIds.join(', '),
+  }
+})
+
 function pickLocale<T>(en: T, ru: T, es: T, de: T, fr: T, it: T, ja: T, zh: T, ko: T, kk: T, hi: T): T {
   if (locale.value === 'hi') return hi
   if (locale.value === 'kk') return kk
@@ -100,7 +126,7 @@ function toggleSpeech() {
 
 <template>
   <div v-if="article" class="max-w-3xl mx-auto px-4 py-10">
-    <SeoHead :title="seoTitle" :description="pickLocale(article.summary, article.summaryRu, article.summaryEs, article.summaryDe, article.summaryFr, article.summaryIt, article.summaryJa, article.summaryZh, article.summaryKo, article.summaryKk, article.summaryHi)" :og-type="'article'" />
+    <SeoHead :title="seoTitle" :description="pickLocale(article.summary, article.summaryRu, article.summaryEs, article.summaryDe, article.summaryFr, article.summaryIt, article.summaryJa, article.summaryZh, article.summaryKo, article.summaryKk, article.summaryHi)" :og-type="'article'" :article="{ section: 'Science', author: 'Mesoris' }" :json-ld="articleJsonLd" />
     <router-link :to="localRoute({ name: 'science' })" class="flex items-center gap-2 text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors mb-8">
       <BaseIcon name="arrow-left" :size="16" />
       <span class="text-sm">{{ t('ui.science.backToScience') }}</span>

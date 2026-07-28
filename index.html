@@ -7,9 +7,48 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="Mesoris" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="theme-color" content="#0f180f" />
     <meta name="theme-color" content="#f5efde" media="(prefers-color-scheme: light)" />
+    <meta name="color-scheme" content="dark light" />
+
+    <!-- Default SEO — overridden per route by SeoHead.vue via @vueuse/head -->
+    <title>Mesoris — Interactive Prehistoric World</title>
+    <meta name="description" content="Explore the amazing world of dinosaurs. Interactive encyclopedia, timeline, comparisons, science articles and games — for kids and adults. Available in 11 languages." />
+    <meta name="keywords" content="dinosaurs, dinosaur encyclopedia, prehistoric animals, mesozoic, triassic, jurassic, cretaceous, paleontology, fossils, dinosaur games, dinosaur quiz, learn dinosaurs" />
+    <meta name="author" content="Mesoris" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="canonical" href="https://dinosaurs.app/en/" />
+
+    <!-- Performance hints -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+
+    <!-- Open Graph defaults (overridden by SeoHead.vue per route) -->
+    <meta property="og:site_name" content="Mesoris" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Mesoris — Interactive Prehistoric World" />
+    <meta property="og:description" content="Explore the amazing world of dinosaurs. Interactive encyclopedia, timeline, comparisons, science articles and games — for kids and adults. Available in 11 languages." />
+    <meta property="og:image" content="https://dinosaurs.app/images/ui/og-image.webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Mesoris — Interactive Prehistoric World" />
+    <meta property="og:url" content="https://dinosaurs.app/en/" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter defaults -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mesoris — Interactive Prehistoric World" />
+    <meta name="twitter:description" content="Explore the amazing world of dinosaurs. Interactive encyclopedia, timeline, comparisons, science articles and games — for kids and adults." />
+    <meta name="twitter:image" content="https://dinosaurs.app/images/ui/og-image.webp" />
+    <meta name="twitter:image:alt" content="Mesoris — Interactive Prehistoric World" />
+    <meta name="twitter:site" content="@Mesoris_com" />
+    <meta name="twitter:creator" content="@Mesoris_com" />
+
+    <!-- Locale alternates — also emitted by SeoHead.vue but useful for crawlers that don't run JS -->
     <link rel="alternate" hreflang="en" href="https://dinosaurs.app/en/" />
     <link rel="alternate" hreflang="ru" href="https://dinosaurs.app/ru/" />
     <link rel="alternate" hreflang="es" href="https://dinosaurs.app/es/" />
@@ -22,7 +61,7 @@
     <link rel="alternate" hreflang="kk" href="https://dinosaurs.app/kk/" />
     <link rel="alternate" hreflang="hi" href="https://dinosaurs.app/hi/" />
     <link rel="alternate" hreflang="x-default" href="https://dinosaurs.app/en/" />
-    <title>Mesoris — Interactive Prehistoric World</title>
+
     <script>
       // Apply the saved theme before CSS/Vue mount to avoid a flash of the
       // wrong theme. Mirrors useThemeStore's resolution: saved choice wins,
@@ -39,6 +78,38 @@
         }
       })();
     </script>
+
+    <!-- Organization + WebSite JSON-LD (site-wide). Per-route JSON-LD is added by SeoHead.vue -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://dinosaurs.app/#organization",
+          "name": "Mesoris",
+          "url": "https://dinosaurs.app/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://dinosaurs.app/pwa-512x512.png",
+            "width": 512,
+            "height": 512
+          },
+          "sameAs": []
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://dinosaurs.app/#website",
+          "url": "https://dinosaurs.app/",
+          "name": "Mesoris",
+          "description": "Interactive encyclopedia, timeline, comparisons, science articles and games about dinosaurs — for kids and adults. Available in 11 languages.",
+          "inLanguage": ["en", "ru", "es", "de", "fr", "it", "ja", "zh", "ko", "kk", "hi"],
+          "publisher": { "@id": "https://dinosaurs.app/#organization" }
+        }
+      ]
+    }
+    </script>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P9JCN6B5PX"></script>
     <script>

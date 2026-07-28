@@ -20,8 +20,54 @@ const modeStore = useModeStore()
 const {translateDino} = useDinoTranslator()
 const {isSupported: ttsSupported, isSpeaking, speak, stop} = useSpeechSynthesis()
 
+const SITE_URL = 'https://dinosaurs.app'
+
 const rawDino = computed(() => dinosaurs.find(d => d.id === route.params.id) ?? null)
 const dino = computed(() => (rawDino.value ? translateDino(rawDino.value) : null))
+
+// SEO structured data — JSON-LD for dinosaurs.app crawler richness.
+// Emits a schema.org "Thing" with additionalType=Taxon (informally — schema.org
+// has no Dinosaur type, so we describe the animal with as many known properties as
+// we can: taxonRank, scientificName, taxon-name fields, image, description, period).
+const dinoJsonLd = computed(() => {
+  const d = dino.value
+  const r = rawDino.value
+  if (!d || !r) return undefined
+
+  const heroImage = r.images?.hero ?? null
+  const imageUrl = heroImage
+    ? (heroImage.startsWith('http') ? heroImage : `${SITE_URL}${heroImage}`)
+    : `${SITE_URL}/images/ui/og-image.webp`
+
+  const [myaStart, myaEnd] = r.periodRangeMya
+
+  return {
+    '@type': 'Thing',
+    name: d.displayName,
+    alternateName: r.nameMeaning,
+    description: d.description,
+    image: imageUrl,
+    identifier: r.id,
+    additionalType: 'https://schema.org/Taxon',
+    taxonRank: 'species',
+    scientificName: `${r.taxonomy.genus} ${r.taxonomy.species}`,
+    genus: r.taxonomy.genus,
+    family: r.taxonomy.family,
+    order: r.taxonomy.order,
+    habitat: r.livedIn,
+    sameAs: [],
+    subjectOf: {
+      '@type': 'WebPage',
+      url: `${SITE_URL}/${locale.value}/encyclopedia/${r.id}`,
+    },
+    additionalProperty: [
+      { '@type': 'PropertyValue', name: 'diet', value: r.diet },
+      { '@type': 'PropertyValue', name: 'era', value: r.era },
+      { '@type': 'PropertyValue', name: 'size', value: r.size },
+      { '@type': 'PropertyValue', name: 'livedMya', value: `${myaStart}-${myaEnd}` },
+    ],
+  }
+})
 
 // Pills accent classes (era / diet / size) — prototype palette
 const ERA_PILL_CLASS: Record<string, string> = {
@@ -158,7 +204,17 @@ watch(() => route.params.id, () => stop())
 
 <template>
   <div v-if="dino && rawDino" class="profile-page">
-    <SeoHead :title="dino.displayName" :description="dino.description"/>
+    <SeoHead
+      :title="`${dino.displayName} — ${rawDino.nameMeaning}`"
+      :description="dino.description"
+      :image="rawDino.images?.hero ?? '/images/ui/og-image.webp'"
+      og-type="article"
+      :article="{
+        section: t('ui.nav.encyclopedia'),
+        tags: [rawDino.taxonomy.genus, rawDino.era, rawDino.diet, rawDino.size],
+      }"
+      :json-ld="dinoJsonLd"
+    />
 
     <!-- ============ PROFILE HERO ============ -->
     <section class="prof-hero" aria-label="Specimen profile">
