@@ -34,6 +34,6 @@ export const Archaeopteryx: Dinosaur = {
     { country: 'Germany', region: 'Solnhofen, Bavaria', coordinates: [48.9, 10.99], specimenName: 'London specimen (BMNH 37001)' },
     { country: 'Germany', region: 'Eichstätt, Bavaria', coordinates: [48.89, 11.18], specimenName: 'Berlin specimen (HMN 1880)' },
   ],
-  dangerLevel: 3, intelligence: 6, birdRelation: 'Archaeopteryx is among the earliest known avialans and preserves a classic mix of non-avian theropod and bird characters.'
+  dangerLevel: 3, intelligence: 6, birdRelation: '10 / 10'
 }
 

@@ -182,6 +182,7 @@ export default {
     facts: 'तथ्य',
     gallery: 'गैलरी',
     records: { longest: 'सबसे लंबा', heaviest: 'सबसे भारी', fastest: 'सबसे तेज़', oldest: 'सबसे प्राचीन' },
+    units: { meters: 'मी', tons: 'टन', kmh: 'किमी/घं', km: 'किमी', ma: 'मिलियन वर्ष' },
     fullCatalog: 'पूर्ण सूची: {count} प्रजातियाँ',
     gridView: 'ग्रिड',
     listView: 'सूची',

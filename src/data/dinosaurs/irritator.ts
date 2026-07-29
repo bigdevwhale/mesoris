@@ -33,5 +33,5 @@ export const Irritator: Dinosaur = {
     { country: 'Brazil', region: 'Ceará State, Santana Formation (Romualdo Member)', coordinates: [-7.0, -40.0], specimenName: 'SMNS 58022 — holotype near-complete skull' },
   ],
   dangerLevel: 7, intelligence: 5,
-  birdRelation: 'As a theropod spinosaurid, Irritator belongs to the broader group that gave rise to birds, though spinosaurids themselves did not contribute to avian ancestry.',
+  birdRelation: '2 / 10',
 }

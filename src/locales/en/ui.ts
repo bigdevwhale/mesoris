@@ -184,6 +184,7 @@ export default {
     facts: 'Facts',
     gallery: 'Gallery',
     records: { longest: 'Longest', heaviest: 'Heaviest', fastest: 'Fastest', oldest: 'Oldest' },
+    units: { meters: 'm', tons: 't', kmh: 'km/h', km: 'km', ma: 'Ma' },
     fullCatalog: 'Full catalog: {count} species',
     gridView: 'Grid view',
     listView: 'List view',

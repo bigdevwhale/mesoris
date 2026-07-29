@@ -45,5 +45,5 @@ export const Utahraptor: Dinosaur = {
     ],
     dangerLevel: 8,
     intelligence: 7,
-    birdRelation: 'Utahraptor was a dromaeosaur, part of the same close-to-birds branch as feathered raptors and early birds.'
+    birdRelation: '7 / 10'
 }

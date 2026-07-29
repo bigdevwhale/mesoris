@@ -182,6 +182,7 @@ export default {
     facts: '数据',
     gallery: '图库',
     records: { longest: '最长', heaviest: '最重', fastest: '最快', oldest: '最古老' },
+    units: { meters: '米', tons: '吨', kmh: '公里/小时', km: '公里', ma: '百万年前' },
     fullCatalog: '完整目录：{count} 个物种',
     gridView: '网格',
     listView: '列表',

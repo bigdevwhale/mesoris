@@ -32,5 +32,5 @@ export const Proceratosaurus: Dinosaur = {
   fossilLocations: [
     { country: 'United Kingdom', region: 'Minchinhampton, Gloucestershire', coordinates: [51.7, -2.2], specimenName: 'NHMUK PV R 4860 — holotype partial skull' },
   ],
-  dangerLevel: 4, intelligence: 6, birdRelation: 'Proceratosaurus is a coelurosaur and a basal tyrannosauroid, sharing the bird-like features that characterise the wider theropod group.'
+  dangerLevel: 4, intelligence: 6, birdRelation: '3 / 10'
 }

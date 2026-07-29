@@ -33,5 +33,5 @@ export const Nomingia: Dinosaur = {
     { country: 'Mongolia', region: 'Ömnögovi Province, Nemegt Formation', coordinates: [43.5, 100.5], specimenName: 'GIN 100/119 — holotype partial skeleton with pygostyle' },
   ],
   dangerLevel: 3, intelligence: 7,
-  birdRelation: 'Nomingia had a pygostyle, the same fused tail vertebrae that supports the fan tail feathers of modern birds — direct anatomical evidence of the theropod-to-bird transition.',
+  birdRelation: '7 / 10',
 }

@@ -45,5 +45,5 @@ export const Dilophosaurus: Dinosaur = {
     ],
     dangerLevel: 7,
     intelligence: 5,
-    birdRelation: 'Dilophosaurus was an early theropod on the broader branch that eventually gave rise to birds, but it lived long before truly bird-like feathered dinosaurs evolved.'
+    birdRelation: '2 / 10'
 }

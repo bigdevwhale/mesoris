@@ -103,11 +103,12 @@ const records = computed(() => {
   const heaviest = [...dinosaurs].sort((a, b) => b.dimensions.weightKg - a.dimensions.weightKg)[0]
   const fastest = [...dinosaurs].sort((a, b) => b.dimensions.speedKmh - a.dimensions.speedKmh)[0]
   const oldest = [...dinosaurs].sort((a, b) => a.periodRangeMya[1] - b.periodRangeMya[1])[0]
+  const u = (key: 'meters' | 'tons' | 'kmh' | 'ma') => t(`ui.encyclopedia.units.${key}`)
   return [
-    {label: t('ui.encyclopedia.records.longest'), value: `${longest.dimensions.lengthMeters} m`, holder: translateDino(longest).displayName},
-    {label: t('ui.encyclopedia.records.heaviest'), value: `~${Math.round(heaviest.dimensions.weightKg / 1000)} t`, holder: translateDino(heaviest).displayName},
-    {label: t('ui.encyclopedia.records.fastest'), value: `~${fastest.dimensions.speedKmh} km/h`, holder: translateDino(fastest).displayName},
-    {label: t('ui.encyclopedia.records.oldest'), value: `${oldest.periodRangeMya[1]} Ma`, holder: translateDino(oldest).displayName},
+    {label: t('ui.encyclopedia.records.longest'), value: `${longest.dimensions.lengthMeters} ${u('meters')}`, holder: translateDino(longest).displayName, id: longest.id},
+    {label: t('ui.encyclopedia.records.heaviest'), value: `~${Math.round(heaviest.dimensions.weightKg / 1000)} ${u('tons')}`, holder: translateDino(heaviest).displayName, id: heaviest.id},
+    {label: t('ui.encyclopedia.records.fastest'), value: `~${fastest.dimensions.speedKmh} ${u('kmh')}`, holder: translateDino(fastest).displayName, id: fastest.id},
+    {label: t('ui.encyclopedia.records.oldest'), value: `${oldest.periodRangeMya[1]} ${u('ma')}`, holder: translateDino(oldest).displayName, id: oldest.id},
   ]
 })
 
@@ -206,11 +207,18 @@ watch(
           {{ modeStore.isKidsMode ? t('ui.encyclopedia.kidsDescription') : t('ui.encyclopedia.description') }}
         </p>
         <div class="records">
-          <div v-for="rec in records" :key="rec.label" class="record-tile">
+          <router-link
+              v-for="rec in records"
+              :key="rec.label"
+              class="record-tile record-tile-link"
+              :to="localRoute({ name: 'encyclopedia-detail', params: { id: rec.id } })"
+              :aria-label="`${rec.label}: ${rec.holder}`"
+          >
             <span class="record-label">{{ rec.label }}</span>
             <span class="record-value">{{ rec.value }}</span>
             <span class="record-holder">{{ rec.holder }}</span>
-          </div>
+            <BaseIcon name="arrow-right" class="record-arrow" aria-hidden="true" />
+          </router-link>
         </div>
       </div>
     </section>
@@ -401,7 +409,7 @@ watch(
             <div class="dino-body">
               <div class="dino-head">
                 <h3>{{ dino.displayName }}</h3>
-                <span class="dino-period">{{ dino.periodRangeMya[0] }}–{{ dino.periodRangeMya[1] }} Ma</span>
+                <span class="dino-period">{{ dino.periodRangeMya[0] }}–{{ dino.periodRangeMya[1] }} {{ t('ui.encyclopedia.units.ma') }}</span>
               </div>
               <p v-if="dino.genusName !== dino.displayName" class="dino-genus">{{ dino.genusName }}</p>
               <p v-if="dino.nameMeaning" class="dino-meaning">{{ dino.nameMeaning }}</p>
@@ -415,7 +423,7 @@ watch(
                 {{ modeStore.isKidsMode ? dino.kidsDescription : dino.description }}
               </p>
               <div class="dino-footer">
-                <span class="dino-dims">{{ dino.dimensions.lengthMeters }}m · {{ (dino.dimensions.weightKg / 1000).toFixed(1) }}t</span>
+                <span class="dino-dims">{{ dino.dimensions.lengthMeters }} {{ t('ui.encyclopedia.units.meters') }} · {{ (dino.dimensions.weightKg / 1000).toFixed(1) }} {{ t('ui.encyclopedia.units.tons') }}</span>
                 <span class="dino-link">
                   {{ t('ui.encyclopedia.viewDetail') }}
                 </span>
@@ -542,6 +550,38 @@ watch(
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-md);
   padding: 0.9rem 1.1rem;
+}
+.record-tile-link {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.record-tile-link:hover,
+.record-tile-link:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(212, 164, 58, 0.4);
+  box-shadow: 0 4px 18px rgba(212, 164, 58, 0.12);
+  outline: none;
+}
+.record-arrow {
+  position: absolute;
+  top: 0.8rem;
+  right: 0.9rem;
+  width: 14px;
+  height: 14px;
+  color: var(--color-text-tertiary);
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity 0.2s ease, transform 0.2s ease, color 0.2s ease;
+}
+.record-tile-link:hover .record-arrow,
+.record-tile-link:focus-visible .record-arrow {
+  opacity: 1;
+  transform: translateX(0);
+  color: var(--color-brand-amber);
 }
 .record-label {
   display: block;

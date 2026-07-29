@@ -182,6 +182,7 @@ export default {
     facts: 'Fatti',
     gallery: 'Galleria',
     records: { longest: 'Più lungo', heaviest: 'Più pesante', fastest: 'Più veloce', oldest: 'Più antico' },
+    units: { meters: 'm', tons: 't', kmh: 'km/h', km: 'km', ma: 'Ma' },
     fullCatalog: 'Catalogo completo: {count} specie',
     gridView: 'Griglia',
     listView: 'Elenco',

@@ -33,5 +33,5 @@ export const Qianzhousaurus: Dinosaur = {
     { country: 'China', region: 'Nanxiong Formation, Ganzhou, Jiangxi', coordinates: [25.85, 114.95], specimenName: 'GMFPI-PV-001 — holotype skull and skeleton' },
   ],
   dangerLevel: 8, intelligence: 6,
-  birdRelation: 'Like all tyrannosaurids, Qianzhousaurus was a coelurosaur and a distant relative of birds, sharing with them an articulated jaw, a wishbone, and a three-fingered hand.'
+  birdRelation: '3 / 10'
 }

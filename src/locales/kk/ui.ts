@@ -182,6 +182,7 @@ export default {
     facts: 'Деректер',
     gallery: 'Галерея',
     records: { longest: 'Ең ұзын', heaviest: 'Ең ауыр', fastest: 'Ең жылдам', oldest: 'Ең көне' },
+    units: { meters: 'м', tons: 'т', kmh: 'км/с', km: 'км', ma: 'млн жыл' },
     fullCatalog: 'Толық каталог: {count} түр',
     gridView: 'Тор',
     listView: 'Тізім',

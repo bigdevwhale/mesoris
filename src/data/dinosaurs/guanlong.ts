@@ -32,5 +32,5 @@ export const Guanlong: Dinosaur = {
   fossilLocations: [
     { country: 'China', region: 'Shishugou Formation, Xinjiang', coordinates: [43.5, 88.5], specimenName: 'IVPP V14531 — holotype articulated skeleton' },
   ],
-  dangerLevel: 4, intelligence: 6, birdRelation: 'As a coelurosaur and tyrannosauroid, Guanlong is a distant relative of birds, sharing with them hollow bones, a three-fingered hand, and other theropod traits.'
+  dangerLevel: 4, intelligence: 6, birdRelation: '3 / 10'
 }

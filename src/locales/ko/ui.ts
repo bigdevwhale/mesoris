@@ -182,6 +182,7 @@ export default {
     facts: '데이터',
     gallery: '갤러리',
     records: { longest: '가장 긴', heaviest: '가장 무거운', fastest: '가장 빠른', oldest: '가장 오래된' },
+    units: { meters: 'm', tons: 't', kmh: 'km/h', km: 'km', ma: 'Ma' },
     fullCatalog: '전체 카탈로그: {count}종',
     gridView: '격자',
     listView: '목록',

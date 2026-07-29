@@ -33,5 +33,5 @@ export const Neovenator: Dinosaur = {
     { country: 'UK', region: 'Brighstone Bay, Isle of Wight (Wessex Formation)', coordinates: [50.63, -1.42], specimenName: 'MIWG.6348 — holotype ~70% complete skeleton' },
   ],
   dangerLevel: 8, intelligence: 5,
-  birdRelation: 'As an allosauroid theropod, Neovenator belongs to the broad theropod lineage from which birds eventually evolved, though allosauroids themselves are not on the direct avian line.',
+  birdRelation: '2 / 10',
 }

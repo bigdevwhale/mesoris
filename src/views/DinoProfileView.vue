@@ -96,7 +96,14 @@ onMounted(() => {
 })
 const dangerFill = computed(() => (rawDino.value ? rawDino.value.dangerLevel * 10 : 0))
 const intelligenceFill = computed(() => (rawDino.value ? rawDino.value.intelligence * 10 : 0))
-const birdFill = computed(() => (rawDino.value?.birdRelation ? 65 : 0))
+// Bird relation: 0–10 score (10 = a modern bird). Stored as "N / 10"; falls back to 65% if free-form text.
+const birdFill = computed(() => {
+  const r = rawDino.value?.birdRelation
+  if (!r) return 0
+  const m = /^\s*(\d{1,2})\s*\/\s*10\s*$/.exec(r)
+  if (m) return Math.min(100, Number(m[1]) * 10)
+  return 65
+})
 
 // Stat strip — data-driven
 const stats = computed(() => {
@@ -106,7 +113,7 @@ const stats = computed(() => {
   const firstFact = d.facts[0]
   const firstYear = r.discoveries[0]?.year
   return [
-    {tone: 'ember', value: `${r.periodRangeMya[0]}–${r.periodRangeMya[1]} Mya`, label: t('ui.encyclopedia.profile.statLived')},
+    {tone: 'ember', value: `${r.periodRangeMya[0]}–${r.periodRangeMya[1]} ${t('ui.encyclopedia.units.ma')}`, label: t('ui.encyclopedia.profile.statLived')},
     {tone: 'amber', value: firstFact?.value ?? '—', label: firstFact?.label ?? t('ui.encyclopedia.facts')},
     {tone: 'teal', value: `${r.dimensions.speedKmh} ${t('ui.compare.kmhUnit')}`, label: t('ui.compare.speedLabel')},
     {tone: 'moss', value: firstYear != null ? String(firstYear) : '—', label: t('ui.encyclopedia.profile.statFirstDescribed')},

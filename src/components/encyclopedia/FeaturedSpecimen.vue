@@ -144,7 +144,7 @@ onMounted(() => {
           <div class="text-[10px] uppercase tracking-wide text-[var(--color-text-tertiary)]">{{ t('ui.featured.era') }}</div>
         </div>
         <div class="rounded-[var(--radius-sm)] bg-[var(--color-bg-overlay)] border border-[var(--glass-border)] px-3 py-3 text-center">
-          <div class="text-sm font-bold text-[var(--color-brand-ember)] leading-tight mb-1">{{ translated.dimensions.lengthMeters }}m</div>
+          <div class="text-sm font-bold text-[var(--color-brand-ember)] leading-tight mb-1">{{ translated.dimensions.lengthMeters }} {{ t('ui.encyclopedia.units.meters') }}</div>
           <div class="text-[10px] uppercase tracking-wide text-[var(--color-text-tertiary)]">{{ t('ui.featured.length') }}</div>
         </div>
         <div class="rounded-[var(--radius-sm)] bg-[var(--color-bg-overlay)] border border-[var(--glass-border)] px-3 py-3 text-center">

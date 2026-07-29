@@ -182,6 +182,7 @@ export default {
     facts: 'Факты',
     gallery: 'Галерея',
     records: { longest: 'Самый длинный', heaviest: 'Самый тяжёлый', fastest: 'Самый быстрый', oldest: 'Самый древний' },
+    units: { meters: 'м', tons: 'т', kmh: 'км/ч', km: 'км', ma: 'млн лет' },
     fullCatalog: 'Полный каталог: {count} видов',
     gridView: 'Сетка',
     listView: 'Список',

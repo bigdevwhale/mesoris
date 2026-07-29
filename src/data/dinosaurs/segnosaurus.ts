@@ -32,5 +32,5 @@ export const Segnosaurus: Dinosaur = {
     { country: 'Mongolia', region: 'Dornogovi Province, Bayan Shireh Formation', coordinates: [44.0, 108.5], specimenName: 'IGM 100/80 — holotype partial skeleton' },
   ],
   dangerLevel: 4, intelligence: 4,
-  birdRelation: 'Therizinosaurs are maniraptorans — the same broad group as birds — making Segnosaurus one of the closest non-avian relatives of modern birds despite its herbivorous lifestyle.',
+  birdRelation: '6 / 10',
 }

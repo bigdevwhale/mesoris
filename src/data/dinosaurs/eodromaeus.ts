@@ -33,5 +33,5 @@ export const Eodromaeus: Dinosaur = {
     { country: 'Argentina', region: 'San Juan Province, Ischigualasto Formation', coordinates: [-30.0, -67.9], specimenName: 'PVSJ 562 — nearly complete holotype skeleton' },
   ],
   dangerLevel: 4, intelligence: 5,
-  birdRelation: 'As one of the earliest theropods, Eodromaeus sits at the root of the lineage that eventually gave rise to birds over 65 million years later.',
+  birdRelation: '2 / 10',
 }

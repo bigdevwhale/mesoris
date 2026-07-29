@@ -152,7 +152,7 @@ useStaggerReveal(spineRef, '.tl-card', {stagger: 0.1, duration: 0.55, y: 28})
             >
               <span class="band-pill">
                 <h2>{{ eraName(era) }}</h2>
-                <span class="band-range">{{ era.rangeMya[0] }} – {{ era.rangeMya[1] }} Mya</span>
+                <span class="band-range">{{ era.rangeMya[0] }} – {{ era.rangeMya[1] }} {{ t('ui.encyclopedia.units.ma') }}</span>
               </span>
               <p class="band-note">{{ eraDesc(era) }}</p>
             </div>
@@ -166,7 +166,7 @@ useStaggerReveal(spineRef, '.tl-card', {stagger: 0.1, duration: 0.55, y: 28})
             >
               <span class="tl-dot" aria-hidden="true"></span>
               <div class="tl-card">
-                <span class="tl-age">{{ m.mya }} Mya</span>
+                <span class="tl-age">{{ m.mya }} {{ t('ui.encyclopedia.units.ma') }}</span>
                 <h3>{{ m.label }}</h3>
                 <p>{{ m.description }}</p>
               </div>

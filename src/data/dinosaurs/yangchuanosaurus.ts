@@ -35,5 +35,5 @@ export const Yangchuanosaurus: Dinosaur = {
     { country: 'China', region: 'Zigong, Sichuan Province (Dashanpu Formation)', coordinates: [29.36, 104.77], specimenName: 'Y. magnus material — Zigong Dinosaur Museum' },
   ],
   dangerLevel: 9, intelligence: 5,
-  birdRelation: 'As a theropod, Yangchuanosaurus belongs to the broader group from which birds evolved, though this particular allosauroid lineage went extinct without avian descendants.',
+  birdRelation: '2 / 10',
 }

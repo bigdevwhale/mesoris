@@ -46,5 +46,5 @@ export const Velociraptor: Dinosaur = {
     ],
     dangerLevel: 6,
     intelligence: 9,
-    birdRelation: 'Velociraptor is one of the closest non-avian relatives to modern birds. Its feathered body, wishbone, and hollow bones show clear evolutionary links to avian dinosaurs.',
+    birdRelation: '8 / 10'
   }

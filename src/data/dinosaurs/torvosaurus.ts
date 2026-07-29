@@ -35,5 +35,5 @@ export const Torvosaurus: Dinosaur = {
     { country: 'Portugal', region: 'Lourinhã Formation, Torres Vedras', coordinates: [39.1, -9.3], specimenName: 'ML 632 — T. gurneyi holotype; embryo material' },
   ],
   dangerLevel: 9, intelligence: 5,
-  birdRelation: 'Torvosaurus is a megalosaurid theropod — part of the broader theropod lineage that eventually gave rise to birds, though megalosaurids themselves did not contribute avian descendants.',
+  birdRelation: '2 / 10',
 }

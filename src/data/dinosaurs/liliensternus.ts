@@ -33,5 +33,5 @@ export const Liliensternus: Dinosaur = {
     { country: 'Germany', region: 'Thuringia (Trossingen Formation)', coordinates: [48.07, 8.88], specimenName: 'MB.R. 2175 — primary holotype skeleton' },
   ],
   dangerLevel: 7, intelligence: 5,
-  birdRelation: 'As a theropod dinosaur, Liliensternus belongs to the same broad lineage that ultimately gave rise to modern birds, though it predates the bird lineage by tens of millions of years.',
+  birdRelation: '2 / 10',
 }

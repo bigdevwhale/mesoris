@@ -45,5 +45,5 @@ export const Microraptor: Dinosaur = {
     ],
     dangerLevel: 3,
     intelligence: 6,
-    birdRelation: 'Microraptor was extremely close to birds and shows that winged, feathered dinosaurs were common before modern birds fully evolved.'
+    birdRelation: '8 / 10'
 }
